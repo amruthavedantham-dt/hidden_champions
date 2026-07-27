@@ -1,0 +1,47 @@
+{
+  "segmentName": "Women's Ethnic Wear (India)",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary sharply by scope: global ethnic wear ~$89-96B (2025) per most sources, with one outlier estimate as high as $150B; CAGR estimates range ~6.4-8.3%. India specifically: $21.5B (2025) to $32.7B by 2032 (~6.17%/yr) per one source; another cites $26.9B by FY26 at ~10.6%/yr — a wide spread reflecting differing category definitions.",
+    "cagrPctRange": [6.17, 10.6],
+    "exportGeographies": ["United States (largest, diaspora + wedding/festival demand)", "United Kingdom (large South Asian population)", "UAE/Middle East (Dubai as regional gateway)", "Australia", "Canada"],
+    "globalCompetitors": ["not applicable at a global scale — this is a domestically-anchored category; see peers[] for Indian comparables"],
+    "domesticSlice": "Women account for ~70% of the India ethnic wear market; ethnic wear makes up ~67% of the average Indian woman's wardrobe. International online ethnic apparel (diaspora e-commerce) is a smaller ~$2B market growing 25-30%/yr."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Rising disposable income and expanding wedding/festive spending are the primary demand drivers for branded ethnic wear",
+    "Growing organized-retail penetration and rapid e-commerce/D2C adoption are structural growth drivers sector-wide",
+    "Festive/wedding-season seasonality (Diwali, Eid, wedding season) is a recurring demand driver in both domestic and diaspora export markets",
+    "India's diaspora is estimated at ~35.4 million globally (15.85M NRIs + 19.57M PIOs) — the demand base for diaspora-market ethnic wear exports"
+  ],
+  "adoptionStructure": {
+    "note": "Not a repurchase-rate category like seeds; demand follows disposable income growth, wedding/festival seasonality, and fashion-cycle refresh rate rather than a structural forced-repurchase mechanism"
+  },
+  "peers": [
+    { "name": "Biba Apparels (Biba Fashion Ltd)", "revenueCr": 758, "fy": "FY2024", "revenueGrowthPct": -13, "note": "FY24 net loss of ₹95.5 Cr, operating margin fell from ~21% to ~7%, attributed to SAP implementation disruption and weak demand — a cautionary comparable, not a healthy benchmark", "source": "indianstartupnews.com" },
+    { "name": "TCNS Clothing Co. / ABFRL Ethnic segment (W, Aurelia, Wishful)", "revenueCr": 703, "fy": "post-merger, reported ~Feb 2026", "revenueGrowthPct": 20, "note": "acquired 51% by Aditya Birla Fashion & Retail in Sept 2023; consolidated Ethnic segment revenue", "source": "adityabirla.com; afaqs.com" },
+    { "name": "Fabindia Ltd", "revenueCr": 1232, "fy": "FY2024", "note": "broader lifestyle/ethnic retail, not pure ethnic wear; FY24 net loss ₹83.60 Cr", "source": "mstock.com; Tofler" },
+    { "name": "Vedant Fashions Ltd (Manyavar)", "revenueCr_quarterly": 363.15, "fy": "Q4 FY24", "patMarginPct": 30.29, "roePct": 26.0, "note": "primarily men's/wedding wear but the closest profitability benchmark for branded Indian ethnic-occasion wear in this set", "source": "smart-investing.in; business-standard.com" }
+  ],
+  "customerValue": {
+    "drivers": ["design/fashion trend cadence and frequency of new designs", "price/value positioning across tiers (mid-market vs. premium/occasion-wear vs. mass artisanal)", "fabric quality and occasion-appropriateness (festive, daily, bridal)"],
+    "strongestPredictor": "not established from available research — design freshness and brand positioning both surfaced as relevant, no single strongest predictor identified",
+    "source": "industry aggregation"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["design product breadth (sarees, kurta sets, lehengas, kurtis, fusion, festive/bridal)", "extend into adjacent categories (e.g. men's ethnic wear)", "brand & position by design freshness"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house design studio generating high design-refresh rate", "source fabric", "garment construction/stitching, embroidery/embellishment quality control"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against seasonal/festival demand peaks", "manufacture/stitch at scale", "quality-test", "distribute to stores/warehouses"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["operate exclusive brand outlets (omnichannel with online)", "large-format experiential retail formats", "in-store styling/advisory", "manage returns/exchanges"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises (festival/wedding season or everyday wear need)", "customer purchases in-store or online", "fulfil from store/warehouse stock", "repeat purchase on next occasion/season"] }
+  ],
+  "sources": [
+    "https://deepmarketinsights.com/report/indian-ethnic-wear-market-research-report",
+    "https://www.grandviewresearch.com/horizon/outlook/ethnic-wear-market/india",
+    "https://market.us/report/ethnic-wear-market/",
+    "https://indianstartupnews.com/news/biba-group-revenue-drops-by-13-percent-to-rs-758-crore-in-fy24-reports-a-loss-of-rs-95-5-crore-8561773",
+    "https://www.adityabirla.com/media/press-releases/abfrl-to-acquire-controlling-stake-in-tcns-clothing/",
+    "https://www.smart-investing.in/financial-ratios.php"
+  ]
+}

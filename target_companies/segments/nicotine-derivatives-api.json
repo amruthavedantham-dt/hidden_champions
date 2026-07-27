@@ -1,0 +1,40 @@
+{
+  "segmentName": "Nicotine Derivative APIs (pharmaceutical-grade, for NRT/vape formulators)",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates diverge sharply by scope — a genuine methodology problem, not just a range: Grand View Research $69.17B (2023) to $198.71B by 2030 (16.3%/yr); Coherent Market Insights $53.47B (2023) to $105.34B by 2030 (10.2%/yr); Bonafide Research $80.01B (2024) to $186.18B by 2030 (15.44%/yr); a narrower definition elsewhere pegs it at only $6.9B by 2033 (7.99%/yr). The order-of-magnitude spread ($6.9B vs $198.7B) indicates these reports define 'NRT market' very differently (devices/finished products vs. broader nicotine-product categories including e-cigarettes/heat-not-burn) — treat as directional only.",
+    "cagrPctRange": [7.99, 16.3],
+    "exportGeographies": ["not found specifically for this company — domestic and international markets stated generically"],
+    "globalCompetitors": ["Haleon (Nicorette — global NRT brand leader)", "Pfizer", "Johnson & Johnson", "GlaxoSmithKline", "Sanofi", "Glenmark", "Perrigo", "British American Tobacco — note these are brand/formulation owners, not direct nicotine-API peers"],
+    "domesticSlice": "not separately sized; North America ~35.7% share (2026), Asia Pacific ~25.2%, Europe ~19% of the global NRT market"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [
+    { "name": "Vaping/e-cigarette and nicotine-pouch industries", "note": "a demand channel for nicotine API outside traditional NRT (patches/gums/lozenges)" }
+  ],
+  "structureFacts": [
+    "Smoking-cessation campaigns, tobacco taxation increases, and public-smoking bans are cited as key NRT market drivers",
+    "Nicotine-product regulation (pharma-grade purity standards, REACH registration in the EU, WHO-GMP) shapes market access; country-level regulatory detail beyond general REACH/WHO-GMP references not found"
+  ],
+  "adoptionStructure": {
+    "note": "B2B bulk-supply contract driven — not a consumer repurchase-rate category. This is a genuinely niche B2B API segment with very few public financial peers found."
+  },
+  "peers": [],
+  "customerValue": {
+    "drivers": ["pharmaceutical-grade purity (USP/EP compliance)", "WHO-GMP/REACH certification", "consistent tobacco-extract raw-material sourcing/supply reliability"],
+    "strongestPredictor": "pharmaceutical-grade purity and certification, given this feeds regulated NRT/vape product formulators",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer nicotine USP/EP, nicotine polacrilex USP, nicotine bitartrate dihydrate, nicotine alkaloid grades", "position on pharmaceutical-grade purity and certification"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["operate WHO-GMP/ISO-6-grade clean-room extraction and purification from locally-sourced tobacco", "maintain REACH registration"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate dedicated extraction/purification manufacturing facility", "scale to bulk B2B supply volumes"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["provide bulk API supply and technical/quality documentation support", "serve NRT-product formulators (patch/gum/lozenge makers) and vape/e-liquid manufacturers"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["B2B supply contracts with domestic and international pharmaceutical/NRT-brand formulators and vape-industry manufacturers", "fulfil against contract volumes", "reorder tied to formulator's own production cadence"] }
+  ],
+  "sources": [
+    "https://www.grandviewresearch.com/industry-analysis/nicotine-replacement-therapy-market",
+    "https://www.coherentmarketinsights.com/industry-reports/global-nicotine-replacement-therapy-market",
+    "https://www.bonafideresearch.com/press/250978161/global-nicotine-replacement-therapy-market",
+    "https://www.fortunebusinessinsights.com/nicotine-replacement-therapy-nrt-market-103362"
+  ]
+}

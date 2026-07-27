@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "mantra-softech",
+    "series": "Hidden Champions of India",
+    "segmentRef": "biometric-identity-verification",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Private limited, CIN U72200GJ2006PTC048092 (from research, not in HVT row)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Mantra Softech: a deep-tech bet on the next curve in biometric identity.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "An Ahmedabad hardware maker whose devices run India's Aadhaar system, now raising fresh capital to build the AI layer on top.", "tier": "company", "epistemic": "fact", "source": "company site; biometricupdate.com", "fields": ["whatTheyDo", "hqCity", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2006 · Ahmedabad", "tier": "company", "source": "Tofler (MCA incorporation date)", "fields": ["foundedYear", "hqCity"] },
+    { "label": "Revenue", "value": "₹429 Cr · FY24-25", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "Employees", "value": "615 (Tracxn) vs. 1,400+ self-claimed", "tier": "company", "source": "Tracxn; company profile PDF (self-claimed)", "fields": ["employees"] },
+    { "label": "Recent funding", "value": "$14M · first institutional round", "tier": "company", "source": "biometricupdate.com; Business Standard", "fields": ["recentMoves"] },
+    { "label": "Deployments", "value": "1.5B+ biometric transactions, 50+ countries", "tier": "company", "source": "HVT row (company site)", "fields": ["gap_currently_monetized"] },
+    { "label": "PAT / EBITDA / ROE", "value": "not publicly disclosed", "tier": "company", "source": "n/a — private company", "fields": ["financials.patCr", "financials.ebitdaMarginPct", "financials.roePct"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A deep-tech bet on the next curve",
+    "blocks": [
+      { "text": "Mantra Softech doesn't disclose PAT, EBITDA margin or ROE — normal for a private company at this scale — but revenue was ₹429 Cr in FY24-25, and it just closed its **first institutional funding round, $14 million**, led by India SME Fund II with participation from Motilal Oswal Principal Investments.", "tier": "company", "epistemic": "fact", "source": "Tofler; biometricupdate.com; Business Standard", "fields": ["financials.revenueCr.FY25", "recentMoves"] },
+      { "text": "The capital is earmarked for R&D, IP-portfolio expansion, and a new Center of Excellence for AI-powered computer vision and security — a platform bet, not a working-capital raise.", "tier": "company", "epistemic": "fact", "source": "biometricupdate.com", "fields": ["recentMoves"] },
+      { "text": "The technology is real, not just marketing: a US patent for OCT-based fingerprint liveness detection, devices certified to FBI PIV-071006 and STQC L1 (the gate for Aadhaar authentication hardware), and what the company describes as India's first dedicated biometric \"Spoof Lab\" for liveness/anti-spoof testing in Ahmedabad.", "tier": "company", "epistemic": "fact", "source": "radiumblog.com; biometricupdate.com", "fields": ["patents", "certifications"] },
+      { "text": "Hardware is already in production across 50+ countries, having processed over 1.5 billion biometric transactions — a scale claim from the company's own materials, not yet independently corroborated with a transaction-count source.", "tier": "company", "epistemic": "fact", "source": "company site (self-claimed)", "fields": ["exportFootprint"] },
+      { "text": "A licensing deal with Fingerprint Cards AB (Sweden) brings iris-recognition technology in-house, explicitly framed by the company as a step toward new export markets in Africa, the Middle East and Southeast Asia.", "tier": "company", "epistemic": "fact", "source": "Finansavisen (Fingerprint Cards AB disclosure)", "fields": ["recentMoves", "exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **growing faster than most manufacturing categories.**", "evidence": "Global biometric identity verification: $8.88B (2025) to $17.81B by 2030, ~14.9%/yr — among the faster-growing categories in this batch of companies.", "tier": "segment", "epistemic": "fact", "source": "MarketsandMarkets", "fields": ["market.sizeRange", "market.cagr"] },
+      { "point": "India's own market is **anchored by one thing: Aadhaar.**", "evidence": "India biometrics: $2.8B (2024) to $7.36B by 2033, 11.33%/yr, resting on ~1.2B+ Aadhaar enrollments (~95% of the population) and UIDAI's mandatory 'Registered Device' certification regime.", "tier": "segment", "epistemic": "fact", "source": "vocal.media aggregation; cgdev.org", "fields": ["market.domesticSlice"] },
+      { "point": "**Certification is the real moat in this market**, not brand or price.", "evidence": "UIDAI requires STQC L1/FBI-PIV certified 'Registered Devices' for Aadhaar authentication — an uncertified device simply cannot legally serve this market, regardless of price or performance.", "tier": "segment", "epistemic": "fact", "source": "UIDAI ecosystem documentation", "fields": ["customerValue"] },
+      { "point": "The closest domestic peer is **growing even faster off a smaller base.**", "evidence": "Precision Biometric India (Chennai) posted ₹65.4 Cr revenue in FY24-25 with 76% 1-year revenue CAGR and 108% EBITDA CAGR — Mantra is roughly 6.5x its revenue scale but the category itself is clearly in a growth phase for multiple players at once.", "tier": "segment", "epistemic": "fact", "source": "Tracxn / thecompanycheck.com", "fields": ["peers[0]"] },
+      { "point": "Global majors operate at a **different order of magnitude.**", "evidence": "IDEMIA (France) reported ~€2.9B revenue in 2023 before a 2024 restructuring and reported sale process — a scale gap Mantra isn't close to bridging, but also not directly competing against in its current India/Africa/ME/SEA footprint.", "tier": "segment", "epistemic": "fact", "source": "Wikipedia (IDEMIA); biometricupdate.com", "fields": ["market.leaders"] }
+    ],
+    "reflect": { "text": "A certified, patent-holding device maker in a 15%-a-year market, just given fresh capital to build the AI layer on top of hardware it already ships at scale. The story here is what the funding round says about where the company thinks the next curve is.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: MarketsandMarkets (global, India). Peer data: Tracxn / thecompanycheck.com. No marketSharePct is computed — Mantra's revenue isn't cleanly denominated against a single addressable segment (hardware vs. platform vs. services all bundled in the market figures)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "Two places worth watching, both already visible in the company's own recent moves.",
+    "items": [
+      { "lever": "margin", "title": "Turning certified hardware into a software/AI platform", "body": "The fresh funding is explicitly earmarked for an AI/computer-vision Center of Excellence, on top of hardware that already runs 1.5B+ transactions. If that shift lands, the revenue mix moves from one-time hardware sales toward higher-margin software/platform revenue.", "source": "Funding use: biometricupdate.com.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["recentMoves"] },
+      { "lever": "velocity", "title": "The Fingerprint Cards licensing deal as an export lever", "body": "The Sweden-sourced iris technology was licensed explicitly to expand into new export markets. Africa, the Middle East and Southeast Asia are named directly — this is a stated, not speculative, growth direction.", "source": "Finansavisen disclosure.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-2", "fields": ["recentMoves", "exportFootprint"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Mantra's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Pilot one AI/computer-vision feature as a paid add-on", "body": "Before building the full Center of Excellence roadmap, take one AI feature (e.g. advanced liveness scoring) and offer it as a paid add-on to a handful of existing government/enterprise customers, and measure uptake.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } },
+      { "lever": "velocity", "title": "Track the iris-tech launch market by market", "body": "Roll the Fingerprint Cards-licensed iris product out to one new export market at a time (starting with an existing Africa/ME/SEA relationship) and measure adoption before committing wider distribution spend.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-2", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a biometric hardware/device manufacturer in this segment — a directory-depth pass, not yet confirmed against Mantra's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["assess use-case (fingerprint/iris/face, fixed/portable)", "select certified sensor/module", "build SDK/integration layer", "brand & position on certification + liveness performance"], "stepsTier": "segment", "spottedAt": "build SDK/integration layer", "spotted": { "text": "Spotted at \"SDK/integration layer\": this is exactly where an AI/software platform layer would sit on top of certified hardware → the software/AI platform shift.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house R&D (algorithm, liveness/anti-spoof detection)", "pursue patents", "obtain regulatory certification (STQC/UIDAI/FBI-PIV)", "release to production"], "stepsTier": "segment", "spottedAt": "in-house R&D (algorithm, liveness/anti-spoof detection)", "spotted": { "text": "Company facts (US patent on OCT liveness detection, dedicated Spoof Lab) confirm this step is real for Mantra, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["plan production against government/enterprise order cycles", "manufacture hardware", "quality/certification-test each batch", "package & stock"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["sell direct to government/enterprise or via reseller/integrator channel", "onboard/qualify buyer", "field support & recharge/service", "handle spoof/security incident response"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["demand arises (government tender or BFSI/telecom KYC need)", "buyer verifies certification", "order placed", "fulfil at volume", "reorder as programs scale"], "stepsTier": "segment", "spottedAt": "demand arises (government tender or BFSI/telecom KYC need)", "spotted": { "text": "Spotted at \"demand arises\": the Fingerprint Cards deal is explicitly meant to open new-market demand in Africa/ME/SEA that doesn't yet exist for Mantra → the export lever.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-2" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/biometric-identity-verification.json) — no company-specific (A2/pursuit) operational intel was collected for Mantra this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "The hardware is already certified, patented and deployed at scale. What the fresh funding says is that the company itself is betting the **next decade looks like software, not just devices.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Mantra or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler and Tracxn (private company, limited public disclosure); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus company site, radiumblog.com and biometricupdate.com; market data from MarketsandMarkets. PAT, EBITDA margin and ROE are not publicly disclosed for this private company. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Tracxn", "biometricupdate.com", "radiumblog.com", "Business Standard", "Finansavisen", "MarketsandMarkets", "UIDAI", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — actual AI/platform revenue once launched, and true customer retention across the government/enterprise base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

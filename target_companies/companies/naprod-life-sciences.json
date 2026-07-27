@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "naprod-life-sciences",
+    "series": "Hidden Champions of India",
+    "segmentRef": "oncology-anesthesia-formulations",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U24230MH1990PTC057496 (found via research, not in HVT row). A distinct, unrelated entity 'Naprod Pharmaceutical Private Limited' (CIN U24110MH2007PTC167374) also exists — not to be conflated."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Naprod Life Sciences: a patented oncology capability the P&L hasn't caught up to.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "India's lyophilization pioneer, DSIR-confirmed patent holder for a paclitaxel/docetaxel manufacturing method, running at a loss.", "tier": "company", "epistemic": "fact", "source": "HVT row; dsir.gov.in", "fields": ["differentiation", "product_improvement"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1990 (as Neon Antibiotics; renamed 2006)", "tier": "company", "source": "Zaubacorp", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "~₹220 Cr · FY25 (+6.34% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "PAT / EBITDA", "value": "-20.55% / -16.11% YoY (FY24)", "tier": "company", "source": "Tofler", "fields": ["financials.patGrowthPct.FY24"] },
+    { "label": "Net margin / ROE / ROCE", "value": "-2.23% / -2.16% / -3.49%", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct", "financials.roePct", "financials.rocePct"] },
+    { "label": "Patent", "value": "#264627, semi-synthetic paclitaxel/docetaxel method", "tier": "company", "source": "HVT row (dsir.gov.in registry PDF)", "fields": ["product_improvement"] },
+    { "label": "Certifications", "value": "EU-GMP, ANVISA, PIC/S, WHO-GMP", "tier": "company", "source": "medicaldialogues.in", "fields": ["moat"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability the margin hasn't caught up to",
+    "blocks": [
+      { "text": "Revenue grew a modest 6.34% to ~₹220 Cr, but profitability moved the wrong way: PAT down 20.55%, EBITDA down 16.11%, with net margin, ROE and ROCE all negative — a company that is growing its top line while losing money doing it.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.patGrowthPct", "financials.roePct"] },
+      { "text": "The strongest fact in this profile is registry-confirmed, not self-claimed: a DSIR-listed patent (#264627) for a semi-synthetic manufacturing method for paclitaxel and docetaxel, two widely-used oncology drugs — real, checkable IP behind the 'pioneer in lyophilization' positioning.", "tier": "company", "epistemic": "fact", "source": "HVT row; dsir.gov.in registry PDF", "fields": ["product_improvement"] },
+      { "text": "Its Tarapur facility recently secured an ANVISA GMP renewal, on top of EU-GMP, PIC/S and WHO-GMP certification — third-party sourced (medical trade press, not the company's own site), enabling supply to Brazil and other PIC/S-aligned regulated markets.", "tier": "company", "epistemic": "fact", "source": "medicaldialogues.in", "fields": ["moat"] },
+      { "text": "It exports across four continents, with Philippines, Colombia and Peru as top destinations for at least one named product (Cytarabine), and describes itself as a dominant oncology/anesthesia player in India and globally — self-claimed, and the HVT sheet still flags `differentiation` as unresolved despite the patent backing it.", "tier": "company", "epistemic": "fact", "source": "transdatanexus.com; HVT row", "fields": ["exportFootprint", "gap_currently_monetized"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing fast**, especially in the generic sterile-injectable sub-segment Naprod actually competes in.", "evidence": "Oncology injectables overall: $191.5B (2025), 9.19%/yr. Generic oncology sterile injectables specifically: $18.99B (2025) to $33.5B by 2030, ~11.9-12%/yr — faster than the broader category.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group; The Business Research Company", "fields": ["market.sizeRange"] },
+      { "point": "A **major structural wave is opening right on schedule.**", "evidence": "Patent expiries between 2026-2032 are named directly in the HVT sheet's own alignment research as a significant opportunity for Indian generics players — timing that lines up with Naprod's own patented manufacturing capability.", "tier": "segment", "epistemic": "fact", "source": "HVT row (align3_need)", "fields": ["structureFacts"] },
+      { "point": "Listed peers in the same segment show **real, achievable profitability** — Naprod's losses aren't a category-wide problem.", "evidence": "Natco Pharma posts 52.3% EBITDA margin and 25.2% ROE at ₹4,784 Cr revenue; Fresenius Kabi Oncology (India) grew EBITDA 18% YoY at ₹848 Cr revenue.", "tier": "segment", "epistemic": "fact", "source": "equitymaster.com; Tracxn", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A patent-backed, multi-regulator-certified oncology manufacturer losing money while its market grows near double digits and a patent-expiry wave approaches on schedule. The capability looks real; the P&L hasn't caught up yet.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group, The Business Research Company (shared oncology-anesthesia-formulations segment file). Peer data: Natco Pharma, Fresenius Kabi Oncology (India)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Riding the 2026-2032 patent expiry wave", "body": "The HVT sheet's own gap research names this directly: a wave of patent expiries between 2026 and 2032 presents significant opportunity for Indian generics players, and Naprod's own patented manufacturing method and multi-regulator certification put it in a position to capture it.", "source": "HVT gap research (LinkedIn company post).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Naprod's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Diagnose the FY24 margin decline before chasing new patent-expiry products", "body": "Before expanding into new patent-expiry opportunities, isolate whether the FY24 EBITDA/PAT decline came from pricing, input costs, or a specific product line — the patent-expiry opportunity is only worth chasing if the underlying cost structure is fixed first.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an oncology/anesthesia injectable formulations manufacturer in this segment — a directory-depth pass, not yet confirmed against Naprod's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer oncology injectables (cytotoxics) and anesthesia formulations", "position on sterility/quality and regulatory-approval breadth", "market to emerging-market distributors and tenders"], "stepsTier": "segment", "spottedAt": "position on sterility/quality and regulatory-approval breadth", "spotted": { "text": "Company facts (DSIR patent, EU-GMP/ANVISA/PIC/S/WHO-GMP) confirm this step is real for Naprod, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["EU-GMP/WHO-GMP-certified lyophilization and sterile fill-finish capability", "pursue upstream API integration", "maintain multi-regulator approval currency (ANVISA, PIC/S, etc.)"], "stepsTier": "segment", "spottedAt": "EU-GMP/WHO-GMP-certified lyophilization and sterile fill-finish capability", "spotted": { "text": "Company facts (lyophilization pioneer, patented paclitaxel/docetaxel method) confirm this step is real and central for Naprod, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate dedicated oncology/anesthesia manufacturing blocks", "maintain cold-chain-capable production and storage", "scale via commissioned API plants"], "stepsTier": "segment", "spottedAt": "scale via commissioned API plants", "spotted": { "text": "Company facts (commissioned API plant for upstream integration) confirm this step is real for Naprod, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["provide technical/regulatory dossier support for multi-country registration", "maintain supply reliability for hospital/tender fulfillment", "manage cold-chain logistics to destination"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["government/hospital tenders and distributor contracts in emerging markets", "fulfil against tender/contract terms", "reorder on tender renewal or restocking cycle"], "stepsTier": "segment", "spottedAt": "government/hospital tenders and distributor contracts in emerging markets", "spotted": { "text": "Spotted at \"tenders\": the 2026-2032 patent expiry wave is the stated but not-yet-captured next demand source → riding the patent expiry wave.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/oncology-anesthesia-formulations.json) — no company-specific (A2/pursuit) operational intel was collected for Naprod this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A real, government-confirmed patent sitting on top of a losing P&L, right as the market it's built for enters a multi-year patent-expiry wave. **The IP is ahead of the income statement.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Naprod or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed — product_improvement is registry-confirmed via a DSIR government PDF) plus medicaldialogues.in and transdatanexus.com; market data from IMARC Group and The Business Research Company; peer figures from equitymaster.com and Tracxn. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Zaubacorp", "dsir.gov.in", "medicaldialogues.in", "transdatanexus.com", "IMARC Group", "The Business Research Company", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true root cause of the FY24 margin decline, and real customer retention across its four-continent export base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

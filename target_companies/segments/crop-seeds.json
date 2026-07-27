@@ -1,0 +1,117 @@
+{
+  "segmentName": "Crop Seeds (Hybrid & OPV) — India seed houses",
+  "market": {
+    "worldSizeUSD_B_range": "~$3.8B today toward $5B by 2030 (~5.6%/yr, conservative count) to ~$8.6B now headed for $20B by 2034 (~9.7%/yr, bullish count) — estimates vary widely by methodology",
+    "cagrPctRange": [5.6, 9.7],
+    "exportGeographies": ["not company-specific in source data — Eldorado sells domestically only; India is being positioned as a vegetable-seed export hub by 2030 per industry press"],
+    "globalCompetitors": ["Syngenta", "Mahyco", "UPL (Advanta)", "BASF"],
+    "domesticSlice": "India: ~15% of cropped area sown with fresh quality seed, the rest farm-saved; hybrids don't breed true so must be rebought each season, making demand structurally recurring"
+  },
+  "subSegments": [
+    {
+      "name": "Vegetable seeds",
+      "sizeUSD_M_from": 740,
+      "yearFrom": "current",
+      "sizeUSD_M_to": 970,
+      "yearTo": 2030,
+      "hybridSharePct": 79
+    }
+  ],
+  "adjacentMarkets": [
+    {
+      "name": "Crop protection",
+      "sizeUSD_B": 2.6,
+      "lossSplit": { "weeds": 45, "insects": 35, "disease": 20 }
+    }
+  ],
+  "structureFacts": [
+    "Hybrids are ~70% of seed revenue and rising, yielding 25-40% more than traditional varieties",
+    "India is being set up as a vegetable-seed export hub by 2030 (industry press)"
+  ],
+  "adoptionStructure": {
+    "srrNationalPct": 15,
+    "farmSavedPct": 85,
+    "hybridRepurchase": true,
+    "note": "Seed replacement rate; hybrids must be rebought every season since they don't breed true"
+  },
+  "peers": [
+    {
+      "name": "Kaveri Seed",
+      "revenueCr": 1204,
+      "ebitdaMarginPct": 27.6,
+      "roePct": 16.9,
+      "growthPct": 5,
+      "fy": "FY25",
+      "source": "Kaveri Seed filings"
+    }
+  ],
+  "customerValue": {
+    "drivers": ["yield", "affordability", "prior experience", "brand loyalty"],
+    "strongestPredictor": "prior experience and brand loyalty (yield and price decide the category; trust decides the repeat)",
+    "source": "farmer purchase-decision research"
+  },
+  "valueChain": [
+    {
+      "hId": "H5",
+      "hName": "Offers",
+      "steps": [
+        "read the crop & agro-zone",
+        "fit a variety from the range",
+        "bundle with crop-protection (seed-to-harvest)",
+        "brand & price"
+      ]
+    },
+    {
+      "hId": "H4",
+      "hName": "Capability",
+      "steps": [
+        "breed hybrids & OPVs (parent-line development)",
+        "field-trial across agro-zones",
+        "certify (DSIR/NABL) & patent",
+        "release to production"
+      ]
+    },
+    {
+      "hId": "H3",
+      "hName": "Capacity",
+      "steps": [
+        "plan the season's volumes",
+        "multiply the seed in the field (industry norm: contract growers)",
+        "harvest",
+        "process, condition, test purity & germination",
+        "package & stock"
+      ]
+    },
+    {
+      "hId": "H2",
+      "hName": "Customer experience",
+      "steps": [
+        "appoint & stock dealers",
+        "dealer advises the farmer",
+        "farmer buys & plants",
+        "agronomy / advisory support",
+        "repeat next season"
+      ]
+    },
+    {
+      "hId": "H1",
+      "hName": "Orders",
+      "steps": [
+        "demand arises",
+        "dealer orders",
+        "fulfil via supply chain",
+        "deliver",
+        "reorder"
+      ]
+    }
+  ],
+  "sources": [
+    "IMARC",
+    "Mordor Intelligence",
+    "CIMMYT",
+    "agri-extension research",
+    "farmer purchase-decision research",
+    "Kaveri Seed filings"
+  ],
+  "note": "Built from the pre-existing, previously-verified Eldorado Agritech fixture (../../context/hc-profiling/example-eldorado-agritech.json) rather than fresh research — that file's market/peer/customerValue/workflow content was reused as this segment's tier data. Reuse for other crop-seeds companies (e.g. Unisem Agritech, segment_ref 'hybrid-crop-seeds', is a DIFFERENT segment_ref and gets its own file, not this one)."
+}

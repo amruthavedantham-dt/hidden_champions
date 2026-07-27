@@ -1,0 +1,40 @@
+{
+  "segmentName": "Engineering Adhesives & Sealants (industrial/automotive/electronics)",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary by source: $77.08B (2025) to $123.20B by 2033 (6.0%/yr); $85.38B (2025) to $114.94B by 2030 (6%/yr); $86.62B (2025) to $130.06B by 2034 (4.6%/yr); $85.3B (2025) to $128.7B by 2033 (5.5%/yr). Asia Pacific holds the largest regional share (~36.4%, 2025); water-based adhesives are the fastest-growing sub-segment (6.6%/yr).",
+    "cagrPctRange": [4.6, 6.0],
+    "exportGeographies": ["not confirmed for this specific company — general note: engineering adhesive exporters in India typically serve automotive/electronics OEM supply chains regionally and globally"],
+    "globalCompetitors": ["Henkel/Loctite (completed Phase III of its Kurkumbh, Pune plant; separate ₹400 Cr investment in an eighth India plant)", "3M", "Pidilite Industries (FY26 consolidated net sales ₹14,600.83 Cr — but this spans adhesives, sealants, construction chemicals and art materials, not an isolated industrial-adhesives figure)", "H.B. Fuller", "Arkema"],
+    "domesticSlice": "India adhesives market: $3.28B (2026) to $4.58B by 2031 (6.88%/yr)"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Automotive electronics growth (ADAS sensors, camera systems, lane-assist, keyless entry, engine-control computers) is expanding demand for adhesives providing electrical insulation, low ionic contamination, thermal stability, RoHS/REACH compliance",
+    "Bonding is increasingly substituting mechanical fastening/welding in automotive and electronics manufacturing for weight reduction and multi-material joining (qualitative trend, no single quantified India-specific stat found)",
+    "High technical barriers and lengthy OEM qualification cycles for critical automotive/aerospace applications function as a competitive moat in themselves"
+  ],
+  "adoptionStructure": {
+    "note": "Once qualified into a customer's bill-of-materials, an adhesive becomes a locked-in, repeat-purchase line item until requalification is triggered — not a seasonal or SRR-style structure"
+  },
+  "peers": [],
+  "customerValue": {
+    "drivers": ["technical support, formulation range, and application knowledge", "supplier experience with similar production challenges", "application-specific technical performance (electrical insulation, thermal stability, RoHS/REACH compliance) — decisive in electronics bonding specifically"],
+    "strongestPredictor": "OEM qualification-cycle success — once qualified into a BOM, the relationship is largely locked in until requalification",
+    "source": "industry structure inference (appliedadhesives.com, industry sourcing)"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["formulate adhesive chemistry (anaerobic, UV-curing, epoxy, silicone, cyanoacrylate, PU) tailored to substrate/application", "position on technical performance + qualification track record"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["application engineering and technical qualification support with OEM engineering teams", "pass application-specific test protocols (thermal, vibration, chemical resistance)", "maintain quality certification (ISO 9001, IATF-aligned)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["manufacturing/blending plant capacity", "quality control labs", "dedicated coating-line infrastructure/service centers for fastener-coating businesses"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["on-site technical service and application troubleshooting", "operate precoat/adhesive-coating service centers near OEM/Tier-1 manufacturing hubs", "support requalification when specs change"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["OEM/Tier-1 qualifies adhesive into bill-of-materials", "recurring supply contract tied to BOM lock-in", "fulfil against production schedule", "reorder until requalification is triggered"] }
+  ],
+  "sources": [
+    "https://www.grandviewresearch.com/industry-analysis/adhesives-and-sealants-market",
+    "https://www.mordorintelligence.com/industry-reports/adhesives-and-sealants-market",
+    "https://www.mordorintelligence.com/industry-reports/india-adhesives-market",
+    "https://www.printweek.in/news/henkel-opens-new-loctite-plant-in-india-reports-strong-financial-performance-59176",
+    "https://next.henkel-adhesives.com/us/en/industries/automotive/automotive-electronics.html"
+  ]
+}

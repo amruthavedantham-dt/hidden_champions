@@ -1,0 +1,40 @@
+{
+  "segmentName": "Technical Textiles — Nets, Ropes & Geosynthetics (aquaculture/fishing/infra)",
+  "market": {
+    "worldSizeUSD_B_range": "Technical textiles overall: ~$206.14B (2024) to ~$272.33B by 2030, CAGR 4.8%. Geosynthetics alone: estimates diverge by source, ~$18-20B (2025) to ~$32.6-45.3B by 2035, CAGR 6.1-9.5% depending on methodology. Global aquaculture (end-market for nets): ~$334-359B (2025) to ~$418-425B by 2030, CAGR ~5-6%; the aquaculture cage-net sub-segment specifically is smaller and faster-growing, ~$2.3B by 2030 at 8.5% CAGR.",
+    "cagrPctRange": [4.8, 9.5],
+    "exportGeographies": ["UK", "Norway", "Canada", "Australia", "Chile", "Scotland"],
+    "globalCompetitors": ["not cleanly identified — public 'peer group' screens (Raymond, Ginni Filaments, Garnet International, SVP Global Textiles) are generic textile companies, not true netting/geosynthetics comparables; flagged as a data-quality gap, not filled with a guess"],
+    "domesticSlice": "India geosynthetics market: ~$1.5-1.63B (2023-24) to ~$2.73B by 2030, CAGR ~9-10%, driven by National Infrastructure Pipeline (~$1.4T), PM Gati Shakti (~$1.2T), Bharatmala Pariyojana (34,000+ km highways), and rail projects requiring track-bed geosynthetic stabilization"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's infrastructure push (National Infrastructure Pipeline, PM Gati Shakti, Bharatmala, high-speed rail) structurally drives geosynthetics demand for soil/erosion control and track-bed stabilization",
+    "Ghost-gear/marine-plastic-pollution pressure is pushing biodegradable fishing-gear adoption in North America and Europe, though biodegradable nets currently remain less durable than conventional nets — a live substitution risk, not yet a displacement"
+  ],
+  "adoptionStructure": {
+    "note": "No clean seed-replacement-style recurring-demand structure found for this segment; demand is project/contract-driven (infra) and operational-replacement-driven (aquaculture nets wear out and are replaced on a use-cycle, not a seasonal one)"
+  },
+  "peers": [],
+  "customerValue": {
+    "drivers": ["durability/anti-fouling performance in marine environments", "regulatory compliance and sustainability credentials (biodegradability, ghost-gear reduction) — increasingly influential in Europe/North America aquaculture procurement", "infrastructure-grade certification and soil/erosion-control performance specs for geosynthetics buyers (NHAI/PWD/railway contractors)"],
+    "strongestPredictor": "not established by available research — durability and regulatory/infra-spec compliance both surfaced as gating factors, no single strongest predictor identified",
+    "source": "industry press aggregation"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["assess end-use environment (marine/agri/infra)", "select fiber/coating/anti-fouling technology", "customize to application spec", "brand & position by certification/durability"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["polymer extrusion/braiding R&D", "in-house testing for durability/anti-fouling performance", "patent and certify (DSIR, ISO)", "release to production"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against seasonal/project demand", "extrude/braid/weave at scale", "coat/treat for application", "quality-test", "package & stock"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["technical consultation with buyer (fish-farm operator/EPC contractor)", "site/application-specific fitting", "install or supply support", "after-sales/durability warranty support"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises (aquaculture cycle or infra project tender)", "buyer qualifies supplier on certification/spec", "order placed", "fulfil & deliver", "reorder on replacement cycle"] }
+  ],
+  "sources": [
+    "https://www.grandviewresearch.com/industry-analysis/technical-textiles-market",
+    "https://www.futuremarketinsights.com/reports/geosynthetics-market",
+    "https://www.grandviewresearch.com/press-release/global-aquaculture-market",
+    "https://www.researchandmarkets.com/reports/6014039/aquaculture-cage-net-global-market-insights",
+    "https://indianinfrastructure.com/2023/02/03/growing-market-construction-and-infrastructure-projects-drive-demand-for-geosynthetics/",
+    "https://www.sciencedirect.com/science/article/pii/S0025326X25000827"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "nico-orgo-marketing",
+    "series": "Hidden Champions of India",
+    "segmentRef": "nicotine-derivatives-api",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U01409GJ1998PTC033770. Note in HVT sheet: a Tracxn-listed CIN (L72200KA2012PLC065294) conflicted with IndiaMART/Tofler's CIN — the HVT tool itself resolved this in favor of Tofler as the more authoritative registry aggregator; this profile follows that resolution."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Nico Orgo Marketing: a certified niche API supplier in the steepest decline found in this project.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "India's leading USP/EP-grade nicotine derivative manufacturer, whose revenue has more than halved in two years.", "tier": "company", "epistemic": "fact", "source": "HVT row; Tofler", "fields": ["gap_currently_monetized", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1998 (legal entity)", "tier": "company", "source": "Tofler (CIN)", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹70.53 Cr · FY24 (down ~50% YoY)", "tier": "company", "source": "thecompanycheck.com", "fields": ["financials.revenueCr.FY24"] },
+    { "label": "Revenue trend", "value": "₹177 Cr (FY22) → ₹70.53 Cr (FY24)", "tier": "company", "source": "thecompanycheck.com", "fields": ["financials.revenueTrend"] },
+    { "label": "EBITDA / net margin", "value": "-89.27% YoY / -2.64%", "tier": "company", "source": "Tofler", "fields": ["financials.ebitdaGrowthPct", "financials.netMarginPct"] },
+    { "label": "ROCE", "value": "-31.96%", "tier": "company", "source": "Tofler", "fields": ["financials.rocePct"] },
+    { "label": "Certification", "value": "WHO-GMP, ISO 6 Grade clean room, REACH-registered", "tier": "company", "source": "HVT row; nicovaper.com", "fields": ["moat"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A certified niche capability, in genuine and severe decline",
+    "blocks": [
+      { "text": "This is the steepest decline found across every company profiled in this project so far: revenue fell from ~₹177 Cr (FY22) to ₹70.53 Cr (FY24), a roughly 60% drop over two years, with EBITDA down 89.27% year-on-year and both net margin (-2.64%) and ROCE (-31.96%) deeply negative in the most recent period.", "tier": "company", "epistemic": "fact", "source": "thecompanycheck.com; Tofler", "fields": ["financials.revenueCr", "financials.ebitdaGrowthPct", "financials.rocePct"] },
+      { "text": "What survives the decline: a WHO-GMP approved, ISO-6-grade clean-room facility and REACH registration — real, checkable certifications for pharmaceutical-grade nicotine derivatives (USP/EP grade nicotine, nicotine polacrilex, nicotine bitartrate) — plus the HVT sheet's own claim that it is India's leading USP/EP-grade nicotine supplier.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); nicovaper.com", "fields": ["moat", "gap_currently_monetized"] },
+      { "text": "It exports to the USA, Colombia, Australia, South Africa and Bangladesh — a genuinely international customer base for a company this size, per the HVT sheet's own gap research, though the specific % of revenue from exports wasn't found in this pass.", "tier": "company", "epistemic": "fact", "source": "HVT row", "fields": ["exportFootprint"] },
+      { "text": "A separate, unresolved discrepancy: one company-associated source describes the underlying business as founded in 1980 with '40+ years of experience,' likely referring to a predecessor or affiliated entity rather than the legal entity behind this CIN (incorporated 1998) — the HVT sheet doesn't flag this specifically, but it's worth noting alongside the financial picture.", "tier": "company", "epistemic": "fact", "source": "web aggregation, unresolved", "fields": ["foundedYear"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field's own size estimates **disagree by nearly 30x**, a genuine methodology problem worth flagging on its own.", "evidence": "Nicotine replacement therapy market estimates range from just $6.9B by 2033 to $198.71B by 2030, depending on whether 'NRT market' is defined narrowly (patches/gums/lozenges) or broadly (including e-cigarettes/heat-not-burn) — treat any single figure with real caution.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research; GlobeNewswire (two conflicting definitions)", "fields": ["market.sizeRange"] },
+      { "point": "**Regulatory purity and certification are the entry gate**, not brand or price.", "evidence": "Pharmaceutical-grade purity (USP/EP compliance), WHO-GMP and REACH certification are what allow a bulk nicotine-API supplier to sell into regulated NRT/vape formulators at all.", "tier": "segment", "epistemic": "fact", "source": "nicovaper.com", "fields": ["customerValue"] },
+      { "point": "This is a **genuinely thin-peer niche** — no directly comparable listed Indian nicotine-API manufacturer was found.", "evidence": "The named market participants (Haleon/Nicorette, Pfizer, J&J, GSK) are all brand/formulation owners, not API suppliers like Nico Orgo — there's no clean apples-to-apples benchmark available.", "tier": "segment", "epistemic": "fact", "source": "biospace.com", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A certified, internationally-exporting niche API supplier whose revenue has collapsed by more than half in two years, in a market whose own size estimates can't agree within an order of magnitude. This is a company to watch closely, not one to assume will recover.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, Coherent Market Insights, Bonafide Research, GlobeNewswire — figures diverge sharply by methodology, ranges shown rather than a single number. No clean peer set exists for this niche."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, named directly in the company's own gap research — though given the severity of the decline, this reads as a longer-term direction, not an immediate lever.",
+    "items": [
+      { "lever": "velocity", "title": "Leveraging WHO-GMP/ISO-6 certification for expanded market share", "body": "The HVT sheet's own gap research names this directly: the company is a leading supplier in India with international exports already established, and the global pharmaceutical manufacturing market is still growing significantly — but given the current ~60% revenue decline, this reads as a direction to pursue once the underlying business is stabilized, not before.", "source": "HVT gap research (indiamart.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Nico Orgo's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Diagnose the FY22-24 revenue collapse before any expansion move", "body": "A ~60% two-year revenue decline needs a specific cause identified (lost customer, raw-material/tobacco sourcing disruption, regulatory change, demand shift) before any market-expansion opportunity is worth pursuing — the diagnosis, not the opportunity, is the actual next step.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a nicotine derivative/specialty API manufacturer in this segment — a directory-depth pass, not yet confirmed against Nico Orgo's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer nicotine USP/EP, nicotine polacrilex USP, nicotine bitartrate dihydrate, nicotine alkaloid grades", "position on pharmaceutical-grade purity and certification"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["operate WHO-GMP/ISO-6-grade clean-room extraction and purification from locally-sourced tobacco", "maintain REACH registration"], "stepsTier": "segment", "spottedAt": "operate WHO-GMP/ISO-6-grade clean-room extraction and purification from locally-sourced tobacco", "spotted": { "text": "Company facts (WHO-GMP, ISO-6 clean room, R&D Centre and Research Farm) confirm this step is real for Nico Orgo, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate dedicated extraction/purification manufacturing facility", "scale to bulk B2B supply volumes"], "stepsTier": "segment", "spottedAt": "scale to bulk B2B supply volumes", "spotted": { "text": "Spotted at \"scale to bulk B2B supply\": the ~60% two-year revenue decline is most visible right here — capacity utilization has likely fallen sharply.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": null }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["provide bulk API supply and technical/quality documentation support", "serve NRT-product formulators (patch/gum/lozenge makers) and vape/e-liquid manufacturers"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["B2B supply contracts with domestic and international pharmaceutical/NRT-brand formulators and vape-industry manufacturers", "fulfil against contract volumes", "reorder tied to formulator's own production cadence"], "stepsTier": "segment", "spottedAt": "reorder tied to formulator's own production cadence", "spotted": { "text": "Spotted at \"reorder\": exports to USA/Colombia/Australia/South Africa/Bangladesh are named as an existing strength, but the underlying order volume has clearly dropped → leveraging certification for expanded share, once stabilized.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/nicotine-derivatives-api.json) — no company-specific (A2/pursuit) operational intel was collected for Nico Orgo this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Real certifications, a real export base, and the steepest two-year revenue decline in this batch. **What happened between FY22 and FY24 is the question this profile can't answer, but has to be answered first.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Nico Orgo or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from thecompanycheck.com and Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus nicovaper.com (the company's actual operating brand site — neemnico.com, the website in the HVT row, returned HTTP 403 and could not be directly verified); market data from Grand View Research, Coherent Market Insights, Bonafide Research and GlobeNewswire (figures diverge sharply, ranges shown). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["thecompanycheck.com", "Tofler", "nicovaper.com", "Grand View Research", "Coherent Market Insights", "Bonafide Research", "GlobeNewswire", "biospace.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the actual cause of the FY22-24 revenue collapse, and true customer retention across its five export countries — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

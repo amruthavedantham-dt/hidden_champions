@@ -1,0 +1,40 @@
+{
+  "segmentName": "Private-Label / Contract Cosmetics Manufacturing",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary: $10.64B (2024) to $14.39B by 2030 (5.2%/yr, Grand View Research); $11.15B (2024) to $15.46B by 2030 (5.6%/yr); $12.8B (2023) to $23.7B by 2030 (9.1%/yr, Strategic Market Research). Broader cosmetics contract-manufacturing + private-label market: $80B (2024) to $135.41B by 2032 (6.8%/yr).",
+    "cagrPctRange": [5.2, 9.1],
+    "exportGeographies": ["Middle East", "Southeast Asia", "North America", "Western Europe", "Latin America (per GLINT Cosmetics' own self-claimed footprint, 55+ countries)"],
+    "globalCompetitors": ["not applicable globally — this is a fragmented, regionally-served CMO market; see peers[] for Indian comparables"],
+    "domesticSlice": "India has a large, professionalizing contract-manufacturing base historically built around FMCG majors, now scaling to serve the D2C beauty wave; many D2C brands launch entirely asset-light through Indian CMOs. Herbal/Ayurvedic formulations are estimated at 35-40% of total India contract-manufacturing demand."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Clean-beauty/ingredient-transparency trend: brands increasingly demand claims like 'clean,' 'cruelty-free,' 'paraben-free,' pushing brands toward CMOs that support low-MOQ, niche formulations",
+    "D2C beauty brand growth is the primary structural driver of contract-manufacturing demand — many brands launch asset-light entirely through CMOs"
+  ],
+  "adoptionStructure": {
+    "note": "Relationship-driven repeat business once a brand's formulation and supply chain are qualified with a given manufacturer — not a fixed repurchase-rate category"
+  },
+  "peers": [
+    { "name": "Vanesa Cosmetics Private Limited", "revenueCr_range": "₹100-500 Cr band (Tofler) vs ₹159 Cr (thecompanycheck.com) — figures disagree materially, both reported", "fy": "FY2025", "note": "Delhi-based private-label/third-party cosmetics, aerosol, perfume and pharma manufacturer, ~60 years claimed expertise", "source": "tofler.in; thecompanycheck.com" }
+  ],
+  "customerValue": {
+    "drivers": ["brand transparency requirements", "low minimum-order-quantity (MOQ) flexibility to support D2C launch economics", "sustainable/eco-conscious production"],
+    "strongestPredictor": "low-MOQ flexibility — the primary CMO-selection criterion for emerging D2C beauty brands",
+    "source": "dermavends.com"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["formulate, fill and package private-label/white-label personal-care SKUs (skincare, haircare, baby care, color cosmetics)", "sell under client brand names", "support low-MOQ D2C launches"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house R&D/formulation chemistry", "stability and microbiology testing labs", "GMP-compliant production", "maintain regulatory compliance (FDA/Halal/ISO-type certifications) across export markets"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate automated filling/blending lines", "cleanroom production capacity", "packaging and warehousing throughput scaled for both large FMCG-style runs and low-MOQ D2C orders"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["deliver speed-to-market for new formulations", "flexibility on batch sizes", "maintain batch-to-batch quality consistency", "support regulatory filings for export destinations"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["purchase orders/contracts from D2C brands, distributors, export clients", "fulfil against brand's launch/reorder schedule", "repeat business once formulation and supply chain are qualified"] }
+  ],
+  "sources": [
+    "https://www.grandviewresearch.com/industry-analysis/private-label-cosmetics-market-report",
+    "https://www.verifiedmarketresearch.com/product/cosmetics-contract-manufacturing-and-private-label-manufacturing-market/",
+    "https://www.dermavends.com/blog/cosmetic-contract-manufacturers-in-india/",
+    "https://www.tofler.in/vanesa-cosmetics-private-limited/company/U24233DL2008PTC182287"
+  ]
+}

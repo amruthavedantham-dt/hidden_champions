@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "fredun-pharmaceuticals",
+    "series": "Hidden Champions of India",
+    "segmentRef": "pharmaceutical-formulations",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Listed (BSE small-cap), CIN L24239MH1987PLC043662."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Fredun Pharmaceuticals: a wealth-creation engine built almost entirely outside India.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Mumbai-listed small-cap growing profit at 75% a year, with 80-90% of revenue coming from international markets.", "tier": "company", "epistemic": "fact", "source": "theprint.in; HVT row", "fields": ["financials.patCAGRpct", "gap_currently_monetized"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1987", "tier": "company", "source": "Tofler (CIN incorporation)", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹639 Cr · FY26 (+40% YoY)", "tier": "company", "source": "theprint.in press release", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "₹33.21 Cr · FY26 (+60% YoY)", "tier": "company", "source": "theprint.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "EBITDA margin", "value": "14.83% (+276 bps YoY)", "tier": "company", "source": "theprint.in", "fields": ["financials.ebitdaMarginPct.FY26"] },
+    { "label": "ROE / ROCE", "value": "15.8% / 21.5%", "tier": "company", "source": "screener.in", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Export share", "value": "~80-90% of revenue", "tier": "company", "source": "HVT row (bitget.com)", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine",
+    "blocks": [
+      { "text": "Revenue jumped 40% year-on-year to ₹639 Cr (FY26), EBITDA rose 72% to ₹94.79 Cr (margin expanding 276 basis points to 14.83%), and PAT climbed 60% to ₹33.21 Cr — three-way alignment (revenue, margin and profit all improving together), not just a top-line story.", "tier": "company", "epistemic": "fact", "source": "theprint.in", "fields": ["financials.revenueCr", "financials.ebitdaMarginPct", "financials.patCr"] },
+      { "text": "Return on equity is 15.8%, ROCE 21.5% — both healthy — and the 5-year trend is even more striking: profit CAGR of 75.2% against a 37% sales CAGR, meaning profit has been compounding roughly twice as fast as revenue.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.roePct", "financials.rocePct", "derived.patCAGR5yr"] },
+      { "text": "The business is diversified beyond core pharmaceuticals into nutraceuticals, cosmeceuticals, dietary supplements and animal healthcare, manufactured at a WHO-GMP certified facility in Palghar with 400+ active global product registrations.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); theprint.in", "fields": ["differentiation", "moat"] },
+      { "text": "Per the HVT sheet's own gap research, approximately 80-90% of revenue comes from international markets (Africa, Southeast Asia, CIS countries, Latin America) — a structural hedge against India's domestic drug-price-capping regulation.", "tier": "company", "epistemic": "fact", "source": "HVT row (bitget.com)", "fields": ["gap_currently_monetized"] },
+      { "text": "Recent moves back the growth story with real capital allocation: Palghar facility expansion, a credit-rating upgrade to IVR BBB+, a new hormone-therapy range and \"DAULCÉL\" wellness platform launch, plus a board-approved 2:1 bonus share issue.", "tier": "company", "epistemic": "fact", "source": "theprint.in", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing at a healthy clip.**", "evidence": "Pharmaceutical contract manufacturing/CDMO estimates range ~$200-260B+ depending on scope, at 6.9-8.2%/yr — Fredun's own 37% 5-year sales CAGR is running well ahead of the category average.", "tier": "segment", "epistemic": "fact", "source": "MarketsandMarkets; screener.in", "fields": ["market.sizeRange"] },
+      { "point": "**Regulatory approval gates entry**, and Fredun clears the baseline bar.", "evidence": "WHO-GMP certification is the entry-level gate for regulated/semi-regulated export markets — Fredun holds it, though it hasn't (per this research pass) added the deeper USFDA/EU-GMP tier that peers like Gracure carry.", "tier": "segment", "epistemic": "fact", "source": "HVT row; industry structure", "fields": ["certifications"] },
+      { "point": "Against listed peers, Fredun's **combination of growth and margin stands out.**", "evidence": "Windlas Biotech grew 20.65% with 12.4% ROE; Marksans Pharma is far larger (₹2,951 Cr) with 15.5% ROE. Fredun's 40% revenue growth and 15.8% ROE beat Windlas's growth rate while matching Marksans's ROE at a fraction of the scale.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] },
+      { "point": "Its **export concentration is a deliberate structural choice**, not incidental.", "evidence": "80-90% of revenue from international markets explicitly avoids India's domestic price-capping regulation for pharmaceuticals — a structural margin protection most domestic-focused peers don't have.", "tier": "company", "epistemic": "fact", "source": "HVT row gap research", "fields": ["gap_summary"] }
+    ],
+    "reflect": { "text": "A small-cap growing revenue, margin and profit together, at rates ahead of its listed peers, built almost entirely on exports that sidestep domestic price controls. The India-facing part of the business is the smaller story here.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: MarketsandMarkets. Peer data: screener.in (Windlas Biotech, Marksans Pharma, both from the shared pharmaceutical-formulations segment file)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "margin", "title": "Higher margins in emerging export markets", "body": "The HVT sheet's own gap research names this directly: the export-led model already mitigates domestic risk, but the company has room to pursue higher-margin positioning specifically in emerging markets rather than treating all export revenue the same.", "source": "HVT gap research (bitget.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Fredun's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Segment export revenue by market margin", "body": "Break the 80-90% export revenue down by country/region for one quarter, and identify which 2-3 markets already carry the highest margin — then test whether dossier-filing effort can be weighted toward more of those markets.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a pharmaceutical formulations manufacturer in this segment — a directory-depth pass, not yet confirmed against Fredun's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["branded generics / private-label / contract-manufactured formulations", "line extensions (nutraceuticals, cosmeceuticals, animal health)", "position on regulatory approval depth", "market via distributor/export relationships"], "stepsTier": "segment", "spottedAt": "market via distributor/export relationships", "spotted": { "text": "Company facts (400+ global registrations, 80-90% export revenue) confirm this step is real and central for Fredun, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["R&D/formulation development (DSIR-registered centers)", "pipeline development of new products/year", "regulatory dossier preparation (CoPP, DMF, CEP)", "seek GMP/regulator approvals (WHO-GMP, EU-GMP, TGA, USFDA)"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["GMP-certified manufacturing plants (often multi-facility)", "scale production lines to regulated-market batch/documentation standards", "quality-test & release", "maintain certification currency"], "stepsTier": "segment", "spottedAt": "scale production lines to regulated-market batch/documentation standards", "spotted": { "text": "Spotted at \"scale production\": the Palghar facility expansion is exactly this step, in progress — reinforces the export-growth engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["client/regulator qualification audits", "vendor onboarding by pharma companies and export distributors", "compliance documentation support during due diligence", "respond to inspection findings"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["tender wins (institutional/government) or distributor onboarding", "contract manufacturing agreements", "distributor/export order fulfillment", "repeat-order cycles tied to therapy/prescription demand"], "stepsTier": "segment", "spottedAt": "distributor/export order fulfillment", "spotted": { "text": "Spotted at \"distributor/export order fulfillment\": all export markets are currently treated as one channel → segmenting for margin.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/pharmaceutical-formulations.json) — no company-specific (A2/pursuit) operational intel was collected for Fredun this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Revenue, margin and profit all rising together, built on markets that don't cap its prices. The next unlock is **which of those markets pays the most, not finding new ones.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Fredun or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from theprint.in (FY26 results press release) and screener.in; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed); market data from MarketsandMarkets; peer figures from screener.in. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["theprint.in", "screener.in", "Tofler", "MarketsandMarkets", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — margin by individual export market, and true customer/distributor retention across the 400+ product registrations — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

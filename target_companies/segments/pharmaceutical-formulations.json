@@ -1,0 +1,46 @@
+{
+  "segmentName": "Pharmaceutical Formulations (generic / branded / contract manufacturing)",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary by scope: pharmaceutical contract manufacturing ~$209.9B (2025) to $311.95B by 2030 (8.2%/yr); CDMO-for-formulations specifically ~$48.85B (2025) to $103.33B by 2035 (7.78%/yr); broader contract manufacturing + research services ~$263.37B (2024) to $395.23B by 2030 (6.9%/yr). Directional range: ~$200-260B baseline, high single-digit % CAGR.",
+    "cagrPctRange": [6.9, 8.2],
+    "exportGeographies": ["US", "EU/semi-regulated Europe", "Africa", "Southeast Asia", "Latin America", "CIS countries", "Australia"],
+    "globalCompetitors": ["not individually named in this research pass — see peers[] for listed Indian comparables instead"],
+    "domesticSlice": "India domestic formulations: ~₹1.9 trillion (FY23) to ~₹2.8-3.0 trillion by FY28 (9-10%/yr); overall India pharma market ~$42.9B (2025), CAGR estimates 8.1-11.6% depending on source/period"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India PLI Scheme for Pharmaceuticals: 4-10% incentive on incremental sales over the FY2019-20 base year for 5 years, targeting biopharmaceuticals, complex generics, patent-expiry drugs, orphan drugs and complex excipients; a related API/KSM-focused PLI has already avoided ~₹3,591 Cr of API/KSM/intermediate imports",
+    "Patent cliffs in regulated markets (US/EU) continue to drive generics/CDMO demand structurally",
+    "GMP/regulatory approval cycles (WHO-GMP, EU-GMP, TGA, USFDA) are prerequisite gates for regulated/semi-regulated export markets — a facility cannot legally supply these markets without them, independent of price or capacity"
+  ],
+  "adoptionStructure": {
+    "note": "Not a seasonal-repurchase category; demand is tender/contract and prescription-refill driven — institutional/government tender wins and distributor relationships recur on multi-year cycles once a facility clears the regulatory gate for a given market"
+  },
+  "peers": [
+    { "name": "Windlas Biotech", "revenueCr": 777.52, "fy": "FY2025", "revenueGrowthPct": 20.65, "patCr": 60.65, "roePct": 12.4, "source": "screener.in" },
+    { "name": "Marksans Pharma", "revenueCr": 2951, "fy": "FY2025", "patCr": 420, "roePct": 15.5, "source": "web aggregation (equitymaster.com, marketsmojo.com)" },
+    { "name": "Indoco Remedies", "note": "recent margin volatility and quarterly losses — included as a cautionary comparable, not a clean benchmark", "source": "marketsmojo.com" }
+  ],
+  "customerValue": {
+    "drivers": ["regulatory/compliance track record (GMP certifications, audit history) — the strongest driver, since it gates market access before price or capacity matter", "price competitiveness (generics are commoditized)", "consistent quality/batch reliability and manufacturing capacity/lead-time reliability for tender fulfillment"],
+    "strongestPredictor": "regulatory compliance depth — non-compliant facilities cannot legally supply regulated/semi-regulated markets regardless of any other factor",
+    "source": "industry structure, consistent across Gracure/Fredun company profiles"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["branded generics / private-label / contract-manufactured formulations", "line extensions (nutraceuticals, cosmeceuticals, animal health)", "position on regulatory approval depth", "market via distributor/export relationships"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["R&D/formulation development (DSIR-registered centers)", "pipeline development of new products/year", "regulatory dossier preparation (CoPP, DMF, CEP)", "seek GMP/regulator approvals (WHO-GMP, EU-GMP, TGA, USFDA)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["GMP-certified manufacturing plants (often multi-facility)", "scale production lines to regulated-market batch/documentation standards", "quality-test & release", "maintain certification currency"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["client/regulator qualification audits", "vendor onboarding by pharma companies and export distributors", "compliance documentation support during due diligence", "respond to inspection findings"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["tender wins (institutional/government) or distributor onboarding", "contract manufacturing agreements", "distributor/export order fulfillment", "repeat-order cycles tied to therapy/prescription demand"] }
+  ],
+  "sources": [
+    "https://www.marketsandmarkets.com/Market-Reports/pharmaceutical-contract-manufacturing-market-201524381.html",
+    "https://www.precedenceresearch.com/pharmaceutical-cdmo-for-formulations-market",
+    "https://www.grandviewresearch.com/industry-analysis/pharmaceutical-contract-manufacturing-market",
+    "https://www.grandviewresearch.com/horizon/outlook/pharmaceutical-market/india",
+    "https://www.mordorintelligence.com/industry-reports/pharmaceuticals-industry-in-india",
+    "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1775321",
+    "https://www.screener.in/company/WINDLAS/consolidated/"
+  ]
+}

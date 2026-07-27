@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "krish-biotech-research",
+    "series": "Hidden Champions of India",
+    "segmentRef": "agrochemical-pharmaceutical-cro",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U74999WB2007PTC116917 (found via research, not in HVT row). Financial figures show a large, unverified jump between two data points — see p1_engine and sources.md."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Krish Biotech Research: eastern India's only GLP-accredited agrochemical CRO, on numbers that jumped sharply between two readings.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Kolkata-promoted contract research organization with OECD-GLP, NABL and multi-country regulatory accreditation, serving agrochemical and pharma majors' registration testing.", "tier": "company", "epistemic": "fact", "source": "krishbiotech.com; HVT row", "fields": ["moat", "differentiation"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2007 (incorporated) / 2009 (operations)", "tier": "company", "source": "Zaubacorp", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹100-500 Cr band · FY25 (see caveat)", "tier": "company", "source": "Tracxn (unreconciled with a much smaller FY23 Tofler figure)", "fields": ["financials.revenueCr"] },
+    { "label": "PAT / EBITDA margin", "value": "₹88.45 Cr / 49.25% · FY25 (unverified)", "tier": "company", "source": "Tracxn", "fields": ["financials.patCr", "financials.ebitdaMarginPct"] },
+    { "label": "ROE", "value": "45.09% (unverified)", "tier": "company", "source": "Tracxn", "fields": ["financials.roePct"] },
+    { "label": "Certifications", "value": "GLP (NGCMA), NABL/ISO 17025, OECD GLP, CIBRC, CPCSEA, AAALAC, SENASA (Argentina), SENAVE (Paraguay)", "tier": "company", "source": "krishbiotech.com", "fields": ["moat"] },
+    { "label": "Promoter", "value": "Krishi Rasayan Group", "tier": "company", "source": "Zaubacorp", "fields": ["ownershipType"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A certification base that's clearer than the numbers on top of it",
+    "blocks": [
+      { "text": "The financial picture has a real, unresolved gap: a Tofler pull for FY23 shows EBITDA down 62.15% year-on-year on a small revenue base, while a more recent Tracxn estimate for FY25 shows ₹100-500 Cr revenue, ₹88.45 Cr PAT, a 49.25% EBITDA margin and 45.09% ROE — a scale of company that doesn't reconcile cleanly with the FY23 figure. Both are reported here as-is; the FY25 figures should be treated as directional, not confirmed.", "tier": "company", "epistemic": "fact", "source": "Tofler (FY23) vs. Tracxn (FY25) — genuinely inconsistent, both cited", "fields": ["financials.revenueCr", "financials.patCr", "financials.ebitdaMarginPct"] },
+      { "text": "What's independently checkable regardless of the financial uncertainty: it holds GLP accreditation from NGCMA (National GLP Compliance Monitoring Authority), describing itself as the first and only GLP-compliant lab in eastern/north-eastern India, plus NABL ISO/IEC 17025 accreditation, OECD GLP compliance, CIBRC recognition, CPCSEA registration, AAALAC voluntary accreditation, and certifications from Argentina's SENASA and Paraguay's SENAVE.", "tier": "company", "epistemic": "fact", "source": "krishbiotech.com; agribusinessglobal.com", "fields": ["moat"] },
+      { "text": "It operates a 100,000 sq ft facility (per its own site; a separate source cites 13,000 sq meters) in Kalyani, West Bengal, with 85-120+ M.Sc./Ph.D.-level staff, and states its studies comply with regulatory requirements of the USA, Brazil, Australia, Argentina and India.", "tier": "company", "epistemic": "fact", "source": "krishbiotech.com; krishirasayan.com", "fields": ["exportFootprint"] },
+      { "text": "The HVT sheet flags `product_improvement` (its DSIR recognition) as unresolved despite `Verified` review status; its GLP certification renewal was covered in 2025 industry press, a real, dated, independent confirmation of continued accreditation.", "tier": "company", "epistemic": "fact", "source": "HVT row; agropages.com", "fields": ["product_improvement"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **growing fast, with the largest single driver directly relevant to Krish Biotech's own focus.**", "evidence": "Global Agriculture CRO Services market: $10.2-10.89B (2024) to $18.78B by 2029 (11.5%/yr) or $26.2B by 2034 (9.9%/yr). Crop Protection Chemicals — the largest downstream driver — captured >48.7% share of the Agriculture CRO market.", "tier": "segment", "epistemic": "fact", "source": "Market.us; Mordor Intelligence", "fields": ["market.sizeRange"] },
+      { "point": "**Cost economics are pushing agrochemical majors toward outsourced CROs like this one.**", "evidence": "The cost to discover a single new agrochemical active ingredient now exceeds $300 million, making full in-house R&D increasingly uneconomical; global majors (BASF, Bayer, Syngenta) already outsource >70% of production/testing work to Europe, China or India.", "tier": "segment", "epistemic": "fact", "source": "agribusinessglobal.com", "fields": ["structureFacts"] },
+      { "point": "Listed peers in the **broader CRO category show real, achievable margins.**", "evidence": "Syngene International posted a ~30.6% operating EBITDA margin on ₹3,642 Cr FY25 revenue and explicitly offers acute toxicology packages per OECD/OPPTS guidelines for agrochemical clients — a larger-scale validation that CRO margins in this space can be genuinely strong, consistent with (though not proof of) Krish Biotech's own reported 49.25% figure.", "tier": "segment", "epistemic": "fact", "source": "businessupturn.com", "fields": ["peers[0]"] }
+    ],
+    "reflect": { "text": "A genuinely independently-accredited GLP lab in a fast-growing outsourcing market, whose own reported financial scale jumped in a way this research pass couldn't reconcile. The certifications are the more trustworthy half of this story right now.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Market.us, Mordor Intelligence, agribusinessglobal.com. Peer data: Syngene International, Veeda Clinical Research."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "margin", "title": "Multi-residue and antibiotic testing for export commodities", "body": "The HVT sheet's own gap research names this directly: the company has the capability for multi-residue and antibiotic testing on export commodities, currently under-marketed relative to its broader service export activity under the IGST Act.", "source": "HVT gap research (company brochure PDF).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Krish Biotech's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Pilot multi-residue testing for one export commodity category", "body": "Pick one export commodity category with known multi-residue/antibiotic testing demand and actively market Krish Biotech's existing capability against it, before a broader marketing push across all commodities.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an agrochemical/pharmaceutical CRO in this segment — a directory-depth pass, not yet confirmed against Krish Biotech's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer GLP/OECD-compliant toxicology, ecotoxicology, residue chemistry, physico-chemical, mutagenicity and environmental-fate studies", "compile regulatory dossiers for agrochemical/pharma registration"], "stepsTier": "segment", "spottedAt": "offer GLP/OECD-compliant toxicology, ecotoxicology, residue chemistry, physico-chemical, mutagenicity and environmental-fate studies", "spotted": { "text": "Spotted at \"residue chemistry\": multi-residue/antibiotic testing for export commodities is a stated but under-marketed capability → the export-commodity testing opportunity.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["maintain accredited laboratories (GLP, NABL/ISO 17025, OECD GLP)", "employ qualified scientific staff (M.Sc./Ph.D.)", "maintain CPCSEA-registered animal facilities and multi-country regulatory expertise"], "stepsTier": "segment", "spottedAt": "maintain accredited laboratories (GLP, NABL/ISO 17025, OECD GLP)", "spotted": { "text": "Company facts (NGCMA GLP, NABL, SENASA/SENAVE, AAALAC) confirm this step is real and extensive for Krish Biotech, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate physical lab/field-trial infrastructure sized to study volume", "scale instrument throughput and staff headcount to turnaround commitments"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["ensure data defensibility under regulatory audit", "deliver on turnaround speed vs. time-to-market pressure", "maintain transparency/responsiveness during multi-year registration dossiers"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["study contracts/work orders awarded on accreditation status, track record, and cost vs. in-house or Western CRO alternatives", "execute against study timeline", "sponsor returns for subsequent dossiers if satisfied"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/agrochemical-pharmaceutical-cro.json) — no company-specific (A2/pursuit) operational intel was collected for Krish Biotech this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuinely rare accreditation set for eastern India, sitting under a set of financial figures that don't yet add up cleanly across sources. **Verify the numbers before acting on the growth story.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Krish Biotech or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler (FY23) and Tracxn (FY25) — genuinely inconsistent across the two readings, both cited; company facts from the HVT pillar research (differentiation/moat/product_improvement, reviewed) plus krishbiotech.com and krishirasayan.com; market data from Market.us, Mordor Intelligence and agribusinessglobal.com; peer figures from Syngene International (businessupturn.com). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Tracxn", "krishbiotech.com", "krishirasayan.com", "Zaubacorp", "agribusinessglobal.com", "agropages.com", "Market.us", "Mordor Intelligence", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the actual, reconciled revenue and margin figures, and true customer retention among agrochemical/pharma sponsors — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "themis-medicare",
+    "series": "Hidden Champions of India",
+    "segmentRef": "injectable-formulations-apis",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Listed, CIN L24110GJ1969PLC001590."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Themis Medicare: fifty-seven years of patented injectables, four straight years of eroding returns, and a Q4 that just turned.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 1969 Hungarian-Indian pharma joint venture with 50+ patents and multi-regulator certification, whose ROCE fell from 30% to under 3% before a recent rebound.", "tier": "company", "epistemic": "fact", "source": "themismedicare.com; screener.in", "fields": ["foundedYear", "financials.rocePct"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1969, as Themis Chemicals Ltd", "tier": "company", "source": "themismedicare.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹342 Cr · FY26 (down from ₹406 Cr FY25)", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "₹1 Cr · FY26 (down from ₹73 Cr FY22)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "ROCE trend", "value": "30% (FY22) → 2.74% (FY26)", "tier": "company", "source": "screener.in", "fields": ["financials.rocePct"] },
+    { "label": "Q4 FY26 signal", "value": "PAT ₹8.89 Cr, margin 11.62%", "tier": "company", "source": "marketsmojo.com", "fields": ["financials.q4patCr"] },
+    { "label": "Patents", "value": "9 registered (company claims 50+)", "tier": "company", "source": "patsnap.com vs. HVT row (self-claimed)", "fields": ["moat"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "An asset base that just showed its first sign of turning",
+    "blocks": [
+      { "text": "The multi-year trend is a genuine, sustained decline: consolidated revenue fell from ₹395 Cr (FY22) to ₹342 Cr (FY26), PAT collapsed from ₹73 Cr to just ₹1 Cr over the same stretch, and ROCE eroded from 30% to 2.74% — four straight years pointed the wrong way. But Q4 FY26 alone posted PAT of ₹8.89 Cr (11.62% margin), aided partly by non-operating income, and the branded pharma business grew 19% YoY on improved field-force productivity — the first clear break in the downward trend.", "tier": "company", "epistemic": "fact", "source": "screener.in; marketsmojo.com", "fields": ["financials.revenueCr", "financials.patCr", "financials.rocePct"] },
+      { "text": "Founded in 1969 as Themis Chemicals, promoted by two Hungarian pharma companies (Gedeon Richter, Medimpex) alongside Indian company Chemosyn — genuine multi-decade heritage, not a recent entrant.", "tier": "company", "epistemic": "fact", "source": "themismedicare.com", "fields": ["foundedYear"] },
+      { "text": "It holds a real, independently-verified patent count — 9 registered patents in the medical/veterinary science category — against a company-claimed '50+ patents granted' figure in the HVT sheet's own product_improvement pillar (self-claimed, `needs_verify: yes`); the gap between the two is worth noting, not glossing over.", "tier": "company", "epistemic": "fact", "source": "patsnap.com vs. HVT row (self-claimed)", "fields": ["moat", "product_improvement"] },
+      { "text": "Its API facility (Vapi, Gujarat) is WHO-GMP certified, and its Hyderabad formulations facility holds EU-GMP, USFDA, PIC/S and MHRA approvals — a genuinely deep regulatory footprint across four manufacturing facilities, with a 240+ product formulation pipeline and 6 APIs in development.", "tier": "company", "epistemic": "fact", "source": "themismedicare.com", "fields": ["certifications"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing fast**, well ahead of Themis's own recent trajectory.", "evidence": "Global injectable drug delivery: $633.77B (2024) to $1,034.78B by 2030, 8.4%/yr — the formulations sub-segment alone growing 8.8%/yr.", "tier": "segment", "epistemic": "fact", "source": "MarketsandMarkets", "fields": ["market.sizeRange"] },
+      { "point": "Listed peers in the **same segment show what recovery looks like**, at scale.", "evidence": "Gland Pharma posted 22.31% Q4 FY26 revenue growth and ~26% EBITDA margin (base business ~38%); Venus Remedies improved ROE from 5.8% to 8.1% and ROCE from 8.5% to 12.8% year-over-year — proof the segment rewards a turnaround, not just growth.", "tier": "segment", "epistemic": "fact", "source": "marketsmojo.com; equitymaster.com", "fields": ["peers"] },
+      { "point": "**Sterile manufacturing's high barriers to entry cut both ways** — hard to enter, but also hard to lose share once qualified.", "evidence": "Multi-year USFDA/EU-GMP inspection and ANDA/dossier filing cycles constrain new entrants — Themis's existing regulatory footprint (USFDA, EU-GMP, PIC/S, MHRA) is a real asset that a struggling P&L doesn't erase.", "tier": "segment", "epistemic": "fact", "source": "industry structure", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "Four years of real decline, a genuine regulatory moat still intact, and a Q4 that finally moved the other way. Peers in this exact segment show recovery is achievable here — the open question is whether Q4 was the start of one.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: MarketsandMarkets (shared injectable-formulations-apis segment file). Peer data: Gland Pharma, Venus Remedies."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Converting regulatory approvals into deeper export share", "body": "The HVT sheet's own gap research names this directly: Themis already exports to 44+ countries and has stated a strategy to expand further, with untapped potential to leverage its R&D and multi-regulator approvals for greater global market penetration.", "source": "HVT gap research (themismedicare.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Themis's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Confirm the Q4 rebound holds for another quarter before scaling exports", "body": "Before investing in export expansion, verify whether the Q4 FY26 field-force-driven 19% branded-pharma growth continues in Q1 FY27, since it's the only real signal so far that the four-year decline has actually turned.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an injectable formulations/API manufacturer in this segment — a directory-depth pass, not yet confirmed against Themis's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer injectable formulations and APIs across therapeutic areas (anti-TB, antimalarial, cardiovascular, pain management, etc.)", "position on regulatory approval breadth", "market via institutional/export channels"], "stepsTier": "segment", "spottedAt": "position on regulatory approval breadth", "spotted": { "text": "Company facts (Diclofenac 75mg/ml patented injection, EMAL artemisinin derivative) confirm this step is real for Themis, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["maintain WHO-GMP (API) and EU-GMP/USFDA/PIC/S/MHRA (formulations) certified manufacturing", "DSIR-recognized R&D for new APIs, intermediates, fermentation technology and drug-delivery systems"], "stepsTier": "segment", "spottedAt": "DSIR-recognized R&D for new APIs, intermediates, fermentation technology and drug-delivery systems", "spotted": { "text": "Company facts (DSIR-approved research center since 2007, 9-50+ patents depending on source) confirm this step is real for Themis, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate multiple manufacturing facilities across India (API + formulations)", "scale sterile fill-finish capacity", "maintain supply-chain reliability for inputs (vials, stoppers, seals)"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["provide regulatory/dossier support (DMF/CEP filings)", "technical support to institutional and export customers", "maintain audit-ready quality documentation"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["hospital/government tenders and distributor/export contracts", "branded-formulation prescriptions in domestic market", "fulfil against contract terms", "reorder on tender renewal"], "stepsTier": "segment", "spottedAt": "branded-formulation prescriptions in domestic market", "spotted": { "text": "Spotted at \"branded-formulation prescriptions\": Q4 FY26's 19% pharma-business growth came from exactly this step, via field-force productivity → converting approvals into deeper export share.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/injectable-formulations-apis.json) — no company-specific (A2/pursuit) operational intel was collected for Themis this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Fifty-seven years of heritage and real patents carried a company through a four-year profitability collapse. Q4 FY26 is the first quarter that looked like **the asset base finally catching up to the margin, instead of the other way round.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Themis or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in and marketsmojo.com; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment, reviewed) plus themismedicare.com and patsnap.com (independent patent count, differing from the company's own self-claimed figure); market data from MarketsandMarkets; peer figures from marketsmojo.com and equitymaster.com. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "marketsmojo.com", "themismedicare.com", "patsnap.com", "sharescart.com", "MarketsandMarkets", "equitymaster.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — whether the Q4 FY26 rebound is durable, and true customer retention across its 44+ export countries — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

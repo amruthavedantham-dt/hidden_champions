@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "supriya-lifescience",
+    "series": "Hidden Champions of India",
+    "segmentRef": "active-pharmaceutical-ingredients",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Listed, CIN L51900MH2008PLC180452 (from research, not in HVT row)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Supriya Lifescience: a wealth-creation engine built on API filings most competitors don't bother chasing.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Maharashtra API maker that became the first Indian company approved by Brazil's ANVISA for a key antidepressant ingredient, now doubling down with ₹510 Cr of new capacity.", "tier": "company", "epistemic": "fact", "source": "company regulatory filing; press", "fields": ["whatTheyDo", "differentiation", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1987", "tier": "company", "source": "company site", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹828 Cr · FY26 (+18.9% YoY)", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "₹209 Cr · FY26 (+11.3% YoY)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "EBITDA margin", "value": "~35-36%", "tier": "company", "source": "screener.in", "fields": ["financials.ebitdaMarginPct.FY26"] },
+    { "label": "ROE / ROCE", "value": "19.1% / 25.1%", "tier": "company", "source": "screener.in", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Export share", "value": "~80-82% of revenue, 86+ countries", "tier": "company", "source": "press aggregation", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine",
+    "blocks": [
+      { "text": "Revenue grew from ₹570 Cr (FY24) to ₹828 Cr (FY26), and PAT from ₹119 Cr to ₹209 Cr over the same stretch — both growing, EBITDA margin holding around 35-36% throughout.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.revenueCr", "financials.patCr", "financials.ebitdaMarginPct"] },
+      { "text": "Return on equity is 19.1%, return on capital employed 25.1% — a healthy balance-sheet return, not just a top-line growth story.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.roePct", "financials.rocePct"] },
+      { "text": "It was the first Indian company to receive Brazilian ANVISA approval for Esketamine Hydrochloride, and separately developed a low-cost manufacturing route for Atorvastatin — differentiation the company itself flagged in a regulatory filing, not yet independently corroborated beyond that filing and trade press.", "tier": "company", "epistemic": "fact", "source": "company regulatory filing (self-claimed); Medical Dialogues, BioSpectrum India", "fields": ["differentiation"] },
+      { "text": "Regulatory depth backs the claim: three USFDA approvals, two EU-GMP/EDQM certifications, plus WHO-GMP, Korean FDA, Mexican FDA, TGA Australia, PMDA Japan, NMPA China, Health Canada and ANVISA Brazil GMP — 21 US DMFs submitted and 11 CEPs granted by EDQM as of December 2025.", "tier": "company", "epistemic": "fact", "source": "pharmacompass.com; pharmabiz.com", "fields": ["certifications"] },
+      { "text": "It's committing ₹510 Cr to new capacity: ₹160 Cr at Ambernath (commercial operations targeted early 2026) and ₹350 Cr at Patalganga (phased over 2.5-3 years), funded from internal accruals, with a stated target of ₹1,600 Cr revenue within three years — roughly double the current run rate.", "tier": "company", "epistemic": "fact", "source": "Outlook Business; Business Standard", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large, and estimates diverge by research house.**", "evidence": "Global API market: Grand View Research puts it at $359.45B by 2030 (5.85%/yr); MarketsandMarkets at $198.39B by 2030 (6.6%/yr); a third estimate lands at $345.5B by 2030 (6.2%/yr). Overall range ~$232-360B by 2030.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research; MarketsandMarkets", "fields": ["market.sizeRange"] },
+      { "point": "India's own API market is **smaller but growing faster than the global average.**", "evidence": "India API: $13.60B (2024) to $21.99B by 2030, 8.30%/yr — faster than the ~6% global rate, backed by a ₹6,940 Cr PLI scheme covering 35 critical APIs that once accounted for ~67% of India's import dependence.", "tier": "segment", "epistemic": "fact", "source": "Vantage Market Research", "fields": ["market.domesticSlice"] },
+      { "point": "The **China+1 story is real but not one-directional.**", "evidence": "China controls ~80% of global generic-drug API supply, and India itself still sources roughly two-thirds of its own API needs (70-90% of KSMs/basic intermediates) from China — so India's China+1 positioning carries its own upstream dependency, not a clean substitution story.", "tier": "segment", "epistemic": "fact", "source": "drugpatentwatch.com", "fields": ["structureFacts"] },
+      { "point": "Against listed peers, Supriya is **the smallest of a size-differentiated set — and the closest-matched one is doing well.**", "evidence": "Divi's Labs (₹9,360 Cr) and Laurus Labs (₹5,554 Cr) are considerably larger; Neuland Laboratories, the closest scale peer, posted ₹1,477 Cr revenue with 22% EBITDA margin and ~20% ROE in FY25 — Supriya's own 19.1% ROE sits in a similar range despite roughly half Neuland's revenue.", "tier": "segment", "epistemic": "fact", "source": "screener.in (Divi's, Laurus, Neuland)", "fields": ["peers"] },
+      { "point": "Buyer qualification, **not price, gates entry.**", "evidence": "A 12-24+ month audit/qualification cycle typically precedes a new API sourcing relationship; regulatory filing depth (DMF/CEP count, certifications held) is what determines whether a formulator can even consider a supplier.", "tier": "segment", "epistemic": "fact", "source": "industry structure (drugpatentwatch.com)", "fields": ["customerValue"] }
+    ],
+    "reflect": { "text": "A profitable, regulator-approved exporter in a market growing faster in India than globally, now spending its own cash to roughly double capacity. The bet is on filing depth converting into share, not on the market doing the work alone.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, MarketsandMarkets, Vantage Market Research. Peer data: screener.in. marketSharePct not computed — API demand is defined by regulatory-approved product lines, not a single denominator Supriya's revenue can be cleanly divided into."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "Two places worth watching, both already funded and in motion.",
+    "items": [
+      { "lever": "velocity", "title": "Turning the ANVISA approval into Latin American share", "body": "The HVT research itself flags this: the ANVISA approval for Esketamine Hydrochloride is a step, not yet a realized market position, in Brazil and the wider Latin American region. Latin America is currently just 8% of Supriya's export mix, well behind Asia and Europe at 42% each.", "source": "HVT gap research (company filing). Export mix: businessfocusmanufacturing.com.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path", "exportFootprint"] },
+      { "lever": "margin", "title": "The ₹510 Cr capacity bet doubling revenue without doubling headcount", "body": "Ambernath and Patalganga are being funded from internal accruals toward a stated ₹1,600 Cr revenue target within three years. If the new capacity runs at anything close to the existing 35-36% EBITDA margin, the incremental revenue carries disproportionate profit.", "source": "Capex and target: Outlook Business.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-2", "fields": ["recentMoves", "financials.ebitdaMarginPct"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Supriya's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Target one Latin American distributor relationship first", "body": "Rather than a broad regional push, identify one or two distributors in Brazil already active in Esketamine's therapeutic category and test a direct commercial relationship before building out wider Latin American coverage.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } },
+      { "lever": "margin", "title": "Track margin at Ambernath from first commercial batch", "body": "As Ambernath comes online in early 2026, track its unit economics separately from day one rather than blending into consolidated figures, to confirm the new capacity actually holds the 35-36% margin before Patalganga's larger spend follows the same playbook.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-2", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an API manufacturer in this segment — a directory-depth pass, not yet confirmed against Supriya's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["identify off-patent/generic API opportunity", "develop synthesis route", "file DMF/CEP with target-market regulator", "market via regulatory-filing-backed product catalog"], "stepsTier": "segment", "spottedAt": "file DMF/CEP with target-market regulator", "spotted": { "text": "Company facts (21 US DMFs, 11 EDQM CEPs, first-in-India ANVISA approval) confirm this step is real and differentiated for Supriya, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["cGMP process development", "validate against multiple regulators (USFDA/EDQM/WHO-GMP/etc.)", "scale synthesis route", "maintain regulatory filing currency"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["plan production against multi-year offtake", "phased capex/reactor capacity expansion", "manufacture at cGMP-validated sites", "batch-test & release"], "stepsTier": "segment", "spottedAt": "phased capex/reactor capacity expansion", "spotted": { "text": "Spotted at \"phased capex\": the ₹510 Cr Ambernath/Patalganga expansion is exactly this step, in progress now → the margin-on-new-capacity question.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-2" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["support buyer qualification/audit process (12-24+ months)", "maintain consistent quality/documentation", "respond to regulatory inspection findings", "technical support for formulator's own filings"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["formulator qualifies API source", "multi-year supply agreement negotiated", "recurring purchase orders against contract", "renew/expand on China+1 or capacity-driven diversification"], "stepsTier": "segment", "spottedAt": "renew/expand on China+1 or capacity-driven diversification", "spotted": { "text": "Spotted at \"renew/expand\": Latin America sits at only 8% of export mix despite the ANVISA approval already in hand → turning approval into share.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/active-pharmaceutical-ingredients.json) — no company-specific (A2/pursuit) operational intel was collected for Supriya this pass, so every step is marked generic per contract discipline, though several company facts from the HVT row overlay cleanly onto specific steps."
+  },
+  "takeaway": { "text": "A profitable API exporter with real regulatory depth just put ₹510 Cr of its own cash behind doubling capacity. The ANVISA approval sitting mostly unmonetized in Latin America is the **same kind of unclaimed wealth** the new capacity is chasing at scale.", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Supriya or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus pharmacompass.com, pharmabiz.com, Outlook Business and Business Standard; market data from Grand View Research, MarketsandMarkets and Vantage Market Research; peer figures from screener.in (Divi's Labs, Laurus Labs, Neuland Laboratories). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "pharmacompass.com", "pharmabiz.com", "Outlook Business", "Business Standard", "Grand View Research", "MarketsandMarkets", "Vantage Market Research", "drugpatentwatch.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics at the new Ambernath/Patalganga capacity, and real customer retention across the 1,200-1,500+ customer base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

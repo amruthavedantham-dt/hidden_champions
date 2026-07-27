@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "gracure-pharmaceuticals",
+    "series": "Hidden Champions of India",
+    "segmentRef": "pharmaceutical-formulations",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Unlisted public, CIN U24232DL1992PLC049002 (from research, not in HVT row)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Gracure Pharmaceuticals: a regulator-certified formulation house whose own financial numbers don't yet match its footprint.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Delhi-headquartered formulation manufacturer certified across five regulatory regimes, exporting to 29 countries, with financial ratios that look inconsistent with its growth story.", "tier": "company", "epistemic": "fact", "source": "gracure.com; Tofler", "fields": ["certifications", "exportFootprint"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1992", "tier": "company", "source": "Zaubacorp", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹287 Cr · FY25 (+27% YoY)", "tier": "company", "source": "Tracxn", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "Net worth", "value": "₹245.3 Cr · Mar 2025", "tier": "company", "source": "Tofler", "fields": ["financials.netWorthCr"] },
+    { "label": "PAT margin / ROE", "value": "-0.81% / 0.37% (flagged — see below)", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct", "financials.roePct"] },
+    { "label": "Export footprint", "value": "29 countries", "tier": "company", "source": "gracure.com", "fields": ["exportFootprint"] },
+    { "label": "Certifications", "value": "WHO-GMP, EU-GMP, TGA Australia + 3 more", "tier": "company", "source": "pharmacompass.com", "fields": ["certifications"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability the numbers don't yet confirm",
+    "blocks": [
+      { "text": "Revenue grew 27% year-on-year, ₹226 Cr to ₹287 Cr, and net worth stood at ₹245.3 Cr as of March 2025 — but the free-tier financial ratios available (net profit margin -0.81%, ROE 0.37%) look inconsistent with that growth, unusually low for a company scaling revenue this fast. These figures should be treated as needing verification against MCA/ROC filings, not taken as the final word.", "tier": "company", "epistemic": "fact", "source": "Tracxn; Tofler (flagged as needing verification)", "fields": ["financials.revenueCr", "financials.netMarginPct", "financials.roePct"] },
+      { "text": "The regulatory footprint is real and independently checkable: WHO-GMP certified at its Bhiwadi facility, plus EU-GMP, TGA Australia, SAUMP Ukraine, FDA Philippines and FMHACA Ethiopia approvals — a broader certification spread than most companies in this batch.", "tier": "company", "epistemic": "fact", "source": "pharmacompass.com; gracure.com", "fields": ["certifications"] },
+      { "text": "It runs a DSIR-registered R&D center with 35+ scientists, capable of developing up to 10 new products a year, with 10 currently in the pipeline — the HVT sheet itself flags this pillar (`product_improvement`) as unresolved despite a `Verified` review status, so it's presented here as self-claimed rather than confirmed.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); gracure.com", "fields": ["product_improvement"] },
+      { "text": "It exports to 29 countries across every continent — Belgium, Canada, Australia, UK, Vietnam, Germany, Philippines, Malaysia, Peru among them — from two manufacturing facilities (Delhi HQ, Bhiwadi 8,000 sq m unit).", "tier": "company", "epistemic": "fact", "source": "gracure.com", "fields": ["exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing at a healthy clip.**", "evidence": "Pharmaceutical contract manufacturing/CDMO estimates range from ~$200B to $260B+ depending on scope, at 6.9-8.2%/yr; India's own domestic formulations market is growing faster still, ~9-10%/yr toward ₹2.8-3.0 trillion by FY28.", "tier": "segment", "epistemic": "fact", "source": "MarketsandMarkets; Grand View Research", "fields": ["market.sizeRange"] },
+      { "point": "**Regulatory approval, not price, is what actually gates entry.**", "evidence": "WHO-GMP, EU-GMP, TGA and USFDA approvals are prerequisite gates for regulated/semi-regulated export markets — Gracure's five-regime certification spread is unusually broad for a company this size.", "tier": "segment", "epistemic": "fact", "source": "industry structure", "fields": ["customerValue"] },
+      { "point": "**Policy is a direct tailwind.**", "evidence": "India's PLI scheme for pharma offers 4-10% incentives on incremental sales for five years, targeting complex generics and orphan drugs; a related API/KSM-linked PLI has already avoided ~₹3,591 Cr in imports.", "tier": "segment", "epistemic": "fact", "source": "pib.gov.in", "fields": ["structureFacts"] },
+      { "point": "Listed comparables show **what the segment can look like at healthier margins.**", "evidence": "Windlas Biotech (₹778 Cr revenue, 12.4% ROE) and Marksans Pharma (₹2,951 Cr revenue, 15.5% ROE) both post ROE figures an order of magnitude above Gracure's reported 0.37% — reinforcing that Gracure's own ratios look like a data-quality issue worth chasing down rather than a structural feature of the segment.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A five-regime-certified exporter growing revenue 27% a year, whose own reported profitability ratios don't match either the growth or what comparable listed peers post. The next step here is a financial-statement check, not a strategy question.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: MarketsandMarkets, Grand View Research. Peer data: screener.in (Windlas Biotech, Marksans Pharma). Gracure's own PAT margin/ROE figures came from Tofler's free-tier summary and are explicitly flagged as unverified in this profile."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Turning R&D and capacity into contract manufacturing", "body": "The company's own gap research names this directly: it already provides contract development and manufacturing services, but the HVT research flags this as under-leveraged relative to its DSIR-approved R&D center and production capacity.", "source": "HVT gap research (gracure.com/r-d/).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Gracure's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Pitch one existing certification to a new CDMO client", "body": "Pick one of the five regulatory certifications (e.g. TGA Australia) and actively pitch contract manufacturing capacity to a client already selling into that specific regulated market, rather than waiting for inbound demand.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a pharmaceutical formulations manufacturer in this segment — a directory-depth pass, not yet confirmed against Gracure's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["branded generics / private-label / contract-manufactured formulations", "line extensions (nutraceuticals, cosmeceuticals, animal health)", "position on regulatory approval depth", "market via distributor/export relationships"], "stepsTier": "segment", "spottedAt": "market via distributor/export relationships", "spotted": { "text": "Spotted at \"market via distributor/export relationships\": contract manufacturing is already offered but not actively pushed → turning R&D/capacity into contract manufacturing.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["R&D/formulation development (DSIR-registered centers)", "pipeline development of new products/year", "regulatory dossier preparation (CoPP, DMF, CEP)", "seek GMP/regulator approvals (WHO-GMP, EU-GMP, TGA, USFDA)"], "stepsTier": "segment", "spottedAt": "seek GMP/regulator approvals (WHO-GMP, EU-GMP, TGA, USFDA)", "spotted": { "text": "Company facts (5-regime certification, DSIR R&D with 35+ scientists) confirm this step is real for Gracure, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["GMP-certified manufacturing plants (often multi-facility)", "scale production lines to regulated-market batch/documentation standards", "quality-test & release", "maintain certification currency"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["client/regulator qualification audits", "vendor onboarding by pharma companies and export distributors", "compliance documentation support during due diligence", "respond to inspection findings"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["tender wins (institutional/government) or distributor onboarding", "contract manufacturing agreements", "distributor/export order fulfillment", "repeat-order cycles tied to therapy/prescription demand"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/pharmaceutical-formulations.json) — no company-specific (A2/pursuit) operational intel was collected for Gracure this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Five regulatory regimes, 29 export countries, 27% revenue growth — and profitability ratios that don't add up yet. **Verification comes before strategy here.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Gracure or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tracxn and Tofler (flagged as needing verification — figures look inconsistent with the company's own growth); company facts from the HVT pillar research (differentiation/moat/product_improvement, reviewed) plus gracure.com and pharmacompass.com; market data from MarketsandMarkets and Grand View Research; peer figures from screener.in. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tracxn", "Tofler", "gracure.com", "pharmacompass.com", "MarketsandMarkets", "Grand View Research", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the real reason behind the ROE/margin figures, and true customer retention across the 29-country export base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

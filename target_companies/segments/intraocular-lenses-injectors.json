@@ -1,0 +1,43 @@
+{
+  "segmentName": "Intraocular Lenses (IOLs) & Injector Devices",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates diverge by research house: $4.46B (2024) to $7.16B by 2033 (Fortune Business Insights); ~$5.1B (2025, ResearchNester); $6.17B by 2030 (MarketsandMarkets); $7.34B (2026) to $10.09B by 2031 (Mordor Intelligence).",
+    "cagrPctRange": [6.0, 6.57],
+    "exportGeographies": ["global — HOYA's broader Life Care/vision-care distribution network spans 150+ countries; no IOL-specific export dataset found"],
+    "globalCompetitors": ["Alcon", "Johnson & Johnson Vision", "Bausch + Lomb", "Carl Zeiss Meditec", "HOYA Surgical Optics itself (3rd or 4th-largest globally by share, sources disagree)"],
+    "domesticSlice": "India cataract burden: ~30.34M prevalence (2018), ~6.66M surgeries performed that year (~22% treated); Aravind Eye Hospital alone performs close to 1M cataract surgeries/year; historical data shows a persistent capacity gap (~3.8M annual incidence vs. ~1.6-1.9M annual surgical throughput)"
+  },
+  "subSegments": [
+    { "name": "Preloaded IOL injector systems", "note": "projected to capture ~72% revenue share of the injector market by 2026, driven by sterility and operational efficiency" }
+  ],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Global aging population is the consistently cited structural demand driver across all market reports reviewed",
+    "India's cataract-surgery capacity gap (incidence outpacing surgical throughput) suggests unmet demand rather than a saturated market"
+  ],
+  "adoptionStructure": {
+    "note": "Hospital/ASC tender and distributor-agreement driven; surgeon brand preference translates into repeat institutional orders rather than a fixed replacement rate"
+  },
+  "peers": [
+    { "name": "Bausch + Lomb", "note": "Q4 2025 premium-IOL revenue grew 20% YoY (reported basis); full-year 2025 segment revenue grew ~4% constant-currency vs FY2024", "source": "ir.bausch.com" }
+  ],
+  "customerValue": {
+    "drivers": ["consistent lens-power availability", "injector ergonomics and single-handed deployment", "low complication/damage rates", "responsive technical/surgical support"],
+    "strongestPredictor": "not established from available research",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer IOL range (monofocal, toric, multifocal/EDOF, trifocal)", "offer companion preloaded/reusable injector delivery systems", "sell as an integrated platform to surgeons and hospital procurement"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["precision optical-grade polymer/acrylic molding", "cleanroom sterile manufacturing", "injector mechanical engineering", "regulatory/clinical affairs (CE, FDA, India CDSCO), ISO 13485-class quality systems"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate sterile cleanroom manufacturing lines", "injection molding and lens-finishing capacity", "packaging/sterilization throughput calibrated to surgical-volume demand"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["surgeon training/support", "maintain lens-power availability", "provide responsive technical support during surgery scheduling"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["hospital/ASC tenders and distributor agreements", "government/insurance-linked bulk procurement (public cataract programs)", "fulfil against surgical volume", "repeat institutional orders driven by surgeon brand preference"] }
+  ],
+  "sources": [
+    "https://www.mordorintelligence.com/industry-reports/global-intra-ocular-lens-market-industry",
+    "https://www.fortunebusinessinsights.com/industry-reports/intraocular-lens-market-101220",
+    "https://www.hoya.com/ir/2025/en/review/lifecare.html",
+    "https://ir.bausch.com/press-releases/bausch-lomb-announces-fourth-quarter-and-full-year-2025-results-provides-2026",
+    "https://www.medrxiv.org/content/10.1101/2023.09.24.23296031v1.full"
+  ]
+}

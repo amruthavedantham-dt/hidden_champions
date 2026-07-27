@@ -1,0 +1,59 @@
+{
+  "segmentName": "Phenol, acetone & IPA petrochemicals (India)",
+  "segments": [
+    {
+      "key": "phenol-acetone-ipa",
+      "nature": "differentiated-within-mature-petrochemical",
+      "market": {
+        "indiaSizeUSD_M_2025": 828.3,
+        "indiaSizeUSD_M_2034": 1162.5,
+        "cagrPct_range": [3.72, 6.8],
+        "globalSizeUSD_B_2025": 18.6,
+        "globalSizeUSD_B_2035": 25.2,
+        "globalCagrPct": 3.1,
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "figures shown are India-specific unless noted global; this is a mature, moderate-growth industrial chemicals market, not a fast-emerging one"
+      },
+      "shareIsMeaningful": true,
+      "shareNote": "Unlike other companies profiled in this batch, Deepak Phenolics enters this segment as a genuine capacity leader, not a small challenger — see structureFacts."
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Before Deepak Phenolics' 2015-era entry, India reportedly manufactured only ~60,000 TPA of phenol domestically — Deepak Phenolics' own 330,000 TPA capacity is more than 5x that prior national base, a genuine domestic-capacity leadership position (light source citation, see sources file).",
+    "Growth drivers named: pharmaceutical solvent demand and incremental capacity investment in downstream resins and coatings.",
+    "This is a mature, moderate-growth petrochemical market (~3.7-6.8% CAGR depending on scope), a different growth profile from the fast-emerging-tech segments (EV, solar, smart metering) researched elsewhere in this project."
+  ],
+  "adoptionStructure": {
+    "note": "Demand is driven by downstream industrial consumption (resins, coatings, pharmaceutical solvents), not a consumer or tender-driven market."
+  },
+  "peers": [
+    { "name": "Hindustan Organic Chemicals Ltd (HOCL)", "note": "A long-established, India-listed phenol producer; raised phenol prices in India in March 2025, reflecting market dynamics." },
+    { "name": "ION Chemicals", "note": "Named as a major India phenol market player; no financials found in this pass." },
+    { "name": "Haldia Petrochemicals Ltd", "note": "Named peer; no financials found in this pass." },
+    { "name": "Prasol Chemicals Pvt Ltd", "note": "Named peer; no financials found in this pass." },
+    { "name": "Vizag Chemicals", "note": "Named peer; no financials found in this pass." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Domestic capacity/supply reliability — India's phenol market was capacity-constrained before Deepak Phenolics' entry.",
+      "Technology/process credibility (licensed technology from established global process houses matters for downstream buyer confidence in product consistency).",
+      "Credit/counterparty strength for long-term supply contracts — a real, rated balance sheet matters at this contract scale."
+    ],
+    "strongestPredictor": "Domestic capacity share and supply reliability, given the historically capacity-constrained nature of India's phenol market."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify downstream buyer need (resins, coatings, pharma solvents)", "quote against capacity and price", "win via supply reliability and technology credibility", "supply phenol/acetone/IPA"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["operate licensed process technology (KBR phenol/acetone, UOP cumene)", "maintain credit rating and financial strength", "invest in R&D for downstream applications", "manage feedstock/gas supply relationships"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against demand forecasts", "secure feedstock and gas supply", "manufacture at scale (Dahej complex)", "manage capacity expansion execution risk"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard as a qualified supplier", "supply per long-term contract terms", "support technical/quality queries", "maintain the relationship for contract renewal"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from downstream resin/coating/pharma production", "contract/order placed", "fulfil at scale", "recurring reorder tied to downstream production volumes"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "TechSci Research, IMARC Group, ChemAnalyst, Fact.MR, Verified Market Research (global/India phenol-acetone market sizing)",
+    "ChemAnalyst (peer landscape, HOCL pricing action)"
+  ]
+}

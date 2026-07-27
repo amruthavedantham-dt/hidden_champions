@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "sandstorm-equipment-co",
+    "series": "Hidden Champions of India",
+    "segmentRef": "blasting-peening-systems",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Sole proprietorship (per HVT row's ownership_type) — no CIN exists, confirmed by research."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Sandstorm Equipment Co.: a thirty-year surface-finishing specialist the public record barely sees.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Bengaluru sole proprietorship that says it supplies India's armed forces — with almost no public financial trail to check it against.", "tier": "company", "epistemic": "fact", "source": "IndiaMART profile; HVT row", "fields": ["whatTheyDo", "ownershipType", "moat"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1995 · Bengaluru", "tier": "company", "source": "IndiaMART profile", "fields": ["foundedYear", "hqCity"] },
+    { "label": "Employees", "value": "26-50 (self-reported band)", "tier": "company", "source": "IndiaMART profile (self-claimed)", "fields": ["employees"] },
+    { "label": "Ownership", "value": "Sole proprietorship — no CIN", "tier": "company", "source": "HVT row; confirmed by research (no MCA entity found)", "fields": ["ownershipType"] },
+    { "label": "Export claim", "value": "20-40% (self-claimed) vs. 8 shipments/2 buyers on record", "tier": "company", "source": "IndiaMART (self-claimed) vs. Volza trade data", "fields": ["exportFootprint"] },
+    { "label": "Revenue / PAT / ROE", "value": "not publicly available", "tier": "company", "source": "n/a — sole proprietorship, no ROC filing obligation", "fields": ["financials.revenueCr", "financials.patCr", "financials.roePct"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability with almost no public paper trail",
+    "blocks": [
+      { "text": "Sandstorm Equipment Co. has essentially no public financial disclosure — revenue, PAT, margins and ROE are all genuinely not found, not merely hard to find, and that is expected for a sole proprietorship with no MCA/ROC filing obligation rather than a sign of distress.", "tier": "company", "epistemic": "fact", "source": "no matching MCA/Zaubacorp entity found", "fields": ["financials.availability"] },
+      { "text": "The HVT sheet records a claim of being a trusted supplier of surface-finishing and coating equipment to the Indian Armed Forces (Army, Navy, Air Force) — self-claimed, sourced to a directory listing, and not independently corroborated in this research pass.", "tier": "company", "epistemic": "fact", "source": "HVT row (moat); justdial.com listing", "fields": ["moat"] },
+      { "text": "Its own export claim doesn't fully hold up against trade-shipment data: the company states 20-40% export share across the UAE, Saudi Arabia, Egypt, UK and Germany, but Volza's trade-shipment records show only 8 recorded shipments to 2 buyers historically, almost entirely to the UAE.", "tier": "company", "epistemic": "fact", "source": "IndiaMART (self-claimed) vs. Volza trade data", "fields": ["exportFootprint"] },
+      { "text": "No patents, certifications (including any AS9100-style qualification a defense/aerospace-adjacent supplier would typically carry) or R&D headcount were found — the product range (blast cabinets, peening machines, paint booths, dust collectors) is real and documented, but the technical-differentiation evidence beyond the company's own claims is thin.", "tier": "company", "epistemic": "fact", "source": "IndiaMART; company website (sandstorm.net.in)", "fields": ["certifications", "patents"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "Estimates for the field **diverge sharply by source.**", "evidence": "Shot blasting machines alone: ~$1.3-1.5B (2024-26) to ~$2.05-2.68B by 2032-35, 3.65-7.70%/yr depending on methodology. Shot peening + blasting combined: ~$1.2B (2023) to ~$2.1B by 2032, 6.3%/yr.", "tier": "segment", "epistemic": "fact", "source": "Fortune Business Insights; Valuates Reports", "fields": ["market.sizeRange"] },
+      { "point": "The field is **led by a global major several hundred times Sandstorm's scale.**", "evidence": "Wheelabrator Group (part of Norican Group), the acknowledged global leader, reports ~$776.5M in revenue across 1,000-5,000 employees and 35 locations.", "tier": "segment", "epistemic": "fact", "source": "ZoomInfo", "fields": ["market.leaders"] },
+      { "point": "**No clean public peer set exists** for a small Indian player in this exact niche.", "evidence": "Named comparable Indian manufacturers (Aerowheel Surface Finishing, Surface International) have no disclosed revenue or margin figures; other global names (Sinto America, Empire Airblast, Gostol TST, Rösler) have no segment-specific financials either.", "tier": "segment", "epistemic": "fact", "source": "aerowheel.co competitor listing", "fields": ["peers"] },
+      { "point": "The structural demand drivers are **real but not Sandstorm-specific.**", "evidence": "Aerospace fatigue-resistance specs and automotive lightweighting both drive precision shot-peening/blasting demand generally; Industry 4.0 (sensors, monitoring, predictive maintenance) is being integrated into blasting lines industry-wide.", "tier": "segment", "epistemic": "fact", "source": "IndexBox industry analysis", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A 30-year-old specialist in a market growing mid-single-digits, with a defense-supplier claim and an export claim that both outrun what's independently checkable. The gap between what's said and what's on record is itself the thing worth noting here.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Fortune Business Insights, Valuates Reports, IndexBox. No India-specific market-size figure was found for this segment. shareIsMeaningful: false — no revenue figure exists to compute a share against."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, built on the company's own stated growth market.",
+    "items": [
+      { "lever": "velocity", "title": "The global airless blast equipment market", "body": "The HVT row's own gap research cites a growing global airless blast equipment market (~$850M by 2030, per industry press). Sandstorm's actual recorded exports (8 shipments, 2 buyers) suggest this growth hasn't yet translated into meaningful order volume abroad.", "source": "Market figure: openpr.com (via HVT row gap_source). Export reality: Volza trade data.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path", "exportFootprint"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Sandstorm's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Convert one existing UAE relationship into a repeat account", "body": "Trade data shows real, if thin, UAE shipment history. Before chasing new geographies, test whether the existing UAE buyer relationship can be turned into a recurring order rather than a one-off.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a surface-finishing equipment manufacturer in this segment — a directory-depth pass, not yet confirmed against Sandstorm's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["assess surface-treatment need (blasting/peening/finishing)", "select or customize equipment configuration", "quote against application spec", "brand & position on customization + delivery"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house engineering/design", "R&D and quality-control function (where present)", "pursue certifications relevant to target end-market (aerospace/defense)", "release design to production"], "stepsTier": "segment", "spottedAt": "pursue certifications relevant to target end-market (aerospace/defense)", "spotted": { "text": "Spotted at \"certifications\": no formal certification was found despite a claimed defense-supplier relationship — a real, visible gap rather than an omission.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": null }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["plan production against order backlog", "fabricate/assemble equipment", "test unit performance", "package & ship"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["direct B2B sales (often via IndiaMART/TradeIndia-style listings for smaller players)", "site/application-specific configuration support", "installation support", "after-sales service"], "stepsTier": "segment", "spottedAt": "direct B2B sales (often via IndiaMART/TradeIndia-style listings for smaller players)", "spotted": { "text": "Confirmed for Sandstorm specifically — its primary public presence is IndiaMART/Justdial-style directory listings, not a direct enterprise sales operation.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["demand arises (OEM capex or defense/industrial procurement)", "buyer qualifies supplier", "order placed", "fabricate & deliver", "reorder on capacity expansion or replacement"], "stepsTier": "segment", "spottedAt": "demand arises (OEM capex or defense/industrial procurement)", "spotted": { "text": "Spotted at \"demand arises\": the airless-blast-equipment growth market is a stated opportunity, but recorded export order volume (8 shipments) suggests demand hasn't translated into that channel yet → the airless blast equipment market.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/blasting-peening-systems.json) — no company-specific (A2/pursuit) operational intel was collected for Sandstorm this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Thirty years in one workshop, a defense-supplier claim, and almost nothing independently checkable behind either. The next step here is verification, not scale.", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Sandstorm or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No public financial filings exist for this sole proprietorship. Company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus IndiaMART, Justdial, and the company's own website; export-claim cross-check via Volza trade data; market data from Fortune Business Insights, Valuates Reports and IndexBox. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["IndiaMART", "Justdial", "sandstorm.net.in", "Volza", "Fortune Business Insights", "Valuates Reports", "IndexBox", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — actual revenue, the real scope of the defense-supplier relationship, and true export order volume — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

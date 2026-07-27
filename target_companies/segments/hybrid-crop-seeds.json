@@ -1,0 +1,47 @@
+{
+  "segmentName": "Hybrid Crop Seeds (vegetable/field crop hybrids, India)",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates diverge sharply by methodology: $25.6-30.9B (2025/26, Mordor Intelligence / Market Data Forecast / Coherent Market Insights) to $59.7-65.1B (2025, Expert Market Research / Future Market Insights) — nearly a 2x spread depending on scope/definition. CAGR clusters ~6.4-8.2%/yr across sources.",
+    "cagrPctRange": [6.4, 8.2],
+    "exportGeographies": ["Bangladesh (~59% of India's hybrid seed export shipments)", "Ghana (~8%)", "Sri Lanka (~7%)", "Nepal", "other Africa (~8% of vegetable seed exports)", "Southeast Asia", "Middle East"],
+    "globalCompetitors": ["Kaveri Seed Company", "Nuziveedu Seeds (largest Bt cotton seed company in India)", "Advanta Seeds (UPL Limited subsidiary)"],
+    "domesticSlice": "India domestic seed market: $8.6B (2025) to $20.2B by 2034"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Seed Replacement Rate (SRR) structure: hybrids require ~100% annual repurchase since they lose yield potential (heterosis) if farm-saved and replanted, versus 25-33% SRR targets for self/cross-pollinated crops — this is the core recurring-demand driver for a hybrid-seed business specifically",
+    "Hybrid seed delivers a 25-40% yield increase over traditional/open-pollinated varieties",
+    "Draft Seeds Bill 2025 and the National Food Security & Nutrition Mission (2025-26) are cited policy tailwinds; states are increasingly mandating QR-based seed authentication/traceability"
+  ],
+  "adoptionStructure": {
+    "srrNationalPct": null,
+    "hybridRepurchase": true,
+    "note": "Near-100% annual repurchase for true F1 hybrids specifically (distinct from the ~15% national fresh-seed SRR figure used in the crop-seeds/Eldorado segment file, which blends hybrids with self-pollinated crops) — hybrid-specific demand is structurally the most recurring tier within the broader seed category"
+  },
+  "peers": [
+    { "name": "Kaveri Seed Company", "revenueCr": 1202, "fy": "FY2025", "patCr": 282, "ebitdaMarginPct": 24, "roePct": 18, "note": "~17x Unisem's revenue scale — a structural 'at scale' benchmark, not a size peer", "source": "screener.in/company/KSCL/consolidated/" },
+    { "name": "Nuziveedu Seeds", "revenueCr": ">1000", "fy": "FY2025", "revenueCAGR1yrPct": 24, "roePct": -2.85, "note": "largest Bt cotton seed company in India; data across sources inconsistent (EBITDA both +38% CAGR and -9.92% YoY cited) — treat cautiously, may reflect a loss-affected or restated year", "source": "tofler.in; thecompanycheck.com" }
+  ],
+  "customerValue": {
+    "drivers": ["yield and agronomic performance (drought/pest/disease resistance)", "brand loyalty and prior experience — the strongest predictor of repeat choice, especially when a preferred variety is unavailable", "price acts as a quality-signaling cue rather than the primary driver"],
+    "strongestPredictor": "brand loyalty / prior experience",
+    "source": "farmer purchase-decision research (sciencedirect.com, ncbi.nlm.nih.gov)"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["breed proprietary germplasm / hybrid traits (disease tolerance, yield)", "select via genetic markers, QTL mapping, marker-assisted selection", "brand & position on yield/agronomic performance"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["field-trial and validate hybrids across agro-climatic zones", "seed multiplication through contract growers", "certify (DSIR, horticultural research institute recognition)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["seed processing: sorting, grading, packing", "quality testing labs (purity, germination)", "warehousing"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["dealer/distributor network servicing farmers", "agronomic advisory, demo plots", "brand-building at point of sale"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["farmer purchases seed each season (near-100% SRR for true hybrids)", "dealer orders against demand", "fulfil ahead of sowing window", "repeat next season — structurally forced, not optional, for true hybrids"] }
+  ],
+  "sources": [
+    "https://www.expertmarketresearch.com/reports/hybrid-seeds-market",
+    "https://www.futuremarketinsights.com/reports/hybrid-seeds-market",
+    "https://www.mordorintelligence.com/industry-reports/hybrid-seeds-market",
+    "https://www.imarcgroup.com/seed-industry-in-india",
+    "https://www.ibef.org/blogs/india-s-seeds-reform-and-agricultural-productivity-enhancement",
+    "https://www.screener.in/company/KSCL/consolidated/",
+    "https://www.volza.com/p/hybrid-seeds/export/export-from-india/"
+  ]
+}

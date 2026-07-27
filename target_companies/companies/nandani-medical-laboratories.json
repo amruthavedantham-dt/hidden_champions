@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "nandani-medical-laboratories",
+    "series": "Hidden Champions of India",
+    "segmentRef": "pharmaceutical-formulations",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U24232MP1993PTC007447."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Nandani Medical Laboratories: a sterile-injectable maker growing profit twice as fast as revenue.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Madhya Pradesh manufacturer of human and veterinary sterile injectables, now using AI-enabled inspection to cut defect rates 70% on select product lines.", "tier": "company", "epistemic": "fact", "source": "HVT row; pharmabiz.com", "fields": ["differentiation", "gap_currently_monetized"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1993 (incorporated) / self-described 1998", "tier": "company", "source": "Tofler vs. company site", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹55.89 Cr · FY24 (+37.09% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY24"] },
+    { "label": "Net margin", "value": "6.6% (+106% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct.FY24"] },
+    { "label": "ROE / ROCE", "value": "6.37% / 8.91%", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Certifications", "value": "WHO-GMP, ISO 9001:2015", "tier": "company", "source": "nandanilab.net", "fields": ["moat"] },
+    { "label": "Export reach", "value": "18 named countries across Africa/Asia/LatAm/CIS", "tier": "company", "source": "nandanilab.net", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability compounding faster than the top line",
+    "blocks": [
+      { "text": "Revenue grew 37% year-on-year to ₹55.89 Cr, but net margin more than doubled to 6.6% (up 106% YoY) and EBITDA grew nearly 95% — profit is compounding meaningfully faster than revenue, a genuinely healthy pattern even though ROE (6.37%) and ROCE (8.91%) are still modest in absolute terms.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.netMarginPct", "financials.roePct", "financials.rocePct"] },
+      { "text": "It manufactures sterile injectables for both human and veterinary healthcare, positioning on 'over two decades of experience' — the HVT sheet flags this differentiation claim `needs_verify: no` but sources it to an Instagram post, a weaker source than most other companies' differentiation claims in this batch.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation"] },
+      { "text": "It holds WHO-GMP and ISO 9001:2015 certification, and the HVT sheet's own gap research cites a concrete, specific claim: a 70% improvement in detection efficiency for liquid injections (ampoules and vials) and dry powder injection vials from AI-enabled visual inspection systems — currently applied to specific product lines, with room to expand to others.", "tier": "company", "epistemic": "fact", "source": "HVT row; pharmabiz.com", "fields": ["moat", "gap_currently_monetized"] },
+      { "text": "It exports across a genuinely broad, specific country list — Liberia, Brazil, Colombia, Chile, Venezuela, Peru, Ecuador, Uzbekistan, Kazakhstan, Tajikistan, Azerbaijan, Kenya, Ivory Coast, Gambia, Burundi, Myanmar, Cambodia, Yemen — spanning Africa, Asia, Latin America and CIS regions, though the % of revenue from exports wasn't found.", "tier": "company", "epistemic": "fact", "source": "nandanilab.net", "fields": ["exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing at a healthy clip.**", "evidence": "Pharmaceutical contract manufacturing/CDMO: ~$200-260B+ depending on scope, 6.9-8.2%/yr; India's own domestic formulations market growing faster still, ~9-10%/yr.", "tier": "segment", "epistemic": "fact", "source": "MarketsandMarkets; Grand View Research", "fields": ["market.sizeRange"] },
+      { "point": "**Regulatory approval, not price, is what gates entry** to the export markets Nandani already serves.", "evidence": "WHO-GMP is the entry-level certification for regulated/semi-regulated markets — Nandani holds it, though it hasn't (per this research pass) added the deeper USFDA/EU-GMP tier some peers in this batch carry.", "tier": "segment", "epistemic": "fact", "source": "industry structure; HVT row", "fields": ["certifications"] },
+      { "point": "Listed peers show **what's achievable at scale** in this same segment.", "evidence": "Windlas Biotech posts 12.4% ROE at ₹778 Cr revenue; Marksans Pharma posts 15.5% ROE at ₹2,951 Cr — both well above Nandani's current 6.37%, suggesting real margin headroom as scale grows, consistent with the profit-outpacing-revenue trend already visible.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A sterile-injectable exporter to 18 named countries, with profit compounding faster than revenue and a concrete AI-quality-control win already banked. The scale is still small; the trajectory looks like it's pointed the right way.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: MarketsandMarkets, Grand View Research (shared pharmaceutical-formulations segment file). Peer data: screener.in (Windlas Biotech, Marksans Pharma)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "margin", "title": "Extending AI inspection beyond current product lines", "body": "The HVT sheet's own gap research names this directly: the 70% detection-efficiency improvement from AI-enabled visual inspection is currently focused on specific product lines (liquid and dry-powder injections), with clear room to extend to other products or manufacturing stages.", "source": "HVT gap research (pharmabiz.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Nandani's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Pilot AI inspection on one additional product line", "body": "Take the AI-enabled visual inspection system proven on liquid and dry-powder injections and pilot it on one adjacent product line or manufacturing stage, measuring the defect-detection improvement before a full rollout.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a pharmaceutical formulations manufacturer in this segment — a directory-depth pass, not yet confirmed against Nandani's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["branded generics / private-label / contract-manufactured formulations", "line extensions (nutraceuticals, cosmeceuticals, animal health)", "position on regulatory approval depth", "market via distributor/export relationships"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["R&D/formulation development (DSIR-registered centers)", "pipeline development of new products/year", "regulatory dossier preparation (CoPP, DMF, CEP)", "seek GMP/regulator approvals (WHO-GMP, EU-GMP, TGA, USFDA)"], "stepsTier": "segment", "spottedAt": "regulatory dossier preparation (CoPP, DMF, CEP)", "spotted": { "text": "Company facts (WHO-GMP, ISO 9001:2015, DSIR-recognized R&D) confirm this step is real for Nandani, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["GMP-certified manufacturing plants (often multi-facility)", "scale production lines to regulated-market batch/documentation standards", "quality-test & release", "maintain certification currency"], "stepsTier": "segment", "spottedAt": "quality-test & release", "spotted": { "text": "Spotted at \"quality-test\": AI-enabled visual inspection already delivers a 70% detection-efficiency improvement on specific product lines → extending AI inspection further.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["client/regulator qualification audits", "vendor onboarding by pharma companies and export distributors", "compliance documentation support during due diligence", "respond to inspection findings"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["tender wins (institutional/government) or distributor onboarding", "contract manufacturing agreements", "distributor/export order fulfillment", "repeat-order cycles tied to therapy/prescription demand"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/pharmaceutical-formulations.json) — no company-specific (A2/pursuit) operational intel was collected for Nandani this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Revenue up 37%, profit up over 100% — and a concrete quality-control win still confined to part of the product line. **The next AI-inspection rollout looks like the cheapest margin gain on the table.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Nandani or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus nandanilab.net and pharmabiz.com; market data from MarketsandMarkets and Grand View Research; peer figures from screener.in. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "thecompanycheck.com", "nandanilab.net", "pharmabiz.com", "MarketsandMarkets", "Grand View Research", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics post-AI-inspection rollout, and real customer retention across the 18-country export base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

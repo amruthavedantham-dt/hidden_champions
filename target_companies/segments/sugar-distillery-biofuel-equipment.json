@@ -1,0 +1,45 @@
+{
+  "segmentName": "Sugar, Distillery & Biofuel Process Equipment",
+  "market": {
+    "worldSizeUSD_B_range": "Sugar processing equipment: ~$5.2B (2024) to ~$8.7B by 2033 (~6.1%/yr). Sugar crystallization equipment sub-segment specifically (core to this segment's product line): ~$1.5B (2024) to ~$2.8B by 2033 (~7.5%/yr). Global sugar mill machinery alone: ~$2.62B (2024).",
+    "cagrPctRange": [6.1, 7.5],
+    "exportGeographies": ["Africa", "Southeast Asia", "Latin America", "Middle East (sugar-producing nations)"],
+    "globalCompetitors": ["Bosch Projects", "GEA Group", "Fives Group (commonly cited but not independently verified in this research pass)"],
+    "domesticSlice": "India: achieved its E20 (20% ethanol blending) target in 2025, five years ahead of the original 2030 deadline; ethanol production capacity grew from <2B litres (2014) to ~20B litres; government targets E27 by 2030. A December 2025 government directive curtailed sugarcane-juice/syrup-based ethanol diversion over domestic sugar-availability concerns, creating near-term uncertainty for sugar-linked distillery capex specifically."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [
+    { "name": "Global biofuels market", "sizeUSD_B_range": "$90-167B (2024) to $131-285B by 2030 depending on definition/source, CAGR ~6.5-8.2%", "note": "the demand pull behind distillery/ethanol plant capex, not an equipment-market figure itself" }
+  ],
+  "structureFacts": [
+    "India's ethanol blending programme has already earned distilleries ~₹1.96 lakh crore cumulatively through 2025 via procurement",
+    "A Dec-2025 government directive curtailing sugarcane-juice-based ethanol (over domestic sugar-availability concerns) creates near-term policy uncertainty specifically for sugar-linked (as opposed to grain-based) distillery capex",
+    "Sugar mill capex is structurally seasonal, tied to pre-crushing-season maintenance/upgrade windows"
+  ],
+  "adoptionStructure": {
+    "note": "Not a repurchase category; capital-equipment demand tied to sugar-mill capex cycles (seasonal, pre-crushing-window) and policy-driven greenfield ethanol/biofuel plant builds"
+  },
+  "peers": [
+    { "name": "Praj Industries", "revenueCr": 3228, "fy": "FY2025", "patCr": 218.9, "ebitdaMarginPct": 10.06, "note": "margin compressed sharply to ~4.79% by FY26, ROE ~2% (FY26) — reflecting recent order-book/margin pressure in the bioenergy EPC segment industry-wide, not company-specific", "source": "praj.net Q4 FY25 results release" }
+  ],
+  "customerValue": {
+    "drivers": ["guaranteed steam/energy-savings performance commitments", "reference-installation track record (trust-building via prior deployments)", "engineering-to-order technical consultative selling, not commodity equipment supply"],
+    "strongestPredictor": "not established from available research — treated as an open question",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["position as energy-efficiency/process-engineering solutions provider, not just equipment fabricator", "bundle evaporation/crystallization/heat-exchange/automation systems", "attach guaranteed steam/energy-savings performance commitments"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house process R&D (DSIR-recognized)", "develop/patent proprietary process IP", "certify to quality-environment-safety standards (ISO 9001/14001/45001)", "design/engineering + automation integration"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate heavy-vessel fabrication plants", "large-format welding/fabrication shop floors", "field project-execution teams for on-site installation", "commission at customer plants (often brownfield expansions)"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["plant audits/feasibility studies", "engineering-to-order proposals", "post-commissioning service and AMC support", "reference-installation-driven trust building"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["engineering tenders/RFQs tied to seasonal capex cycles or policy-mandated greenfield builds", "milestone-based project contracts (6-24 month cycles)", "execute against payment milestones", "repeat/upsell on next capex cycle"] }
+  ],
+  "sources": [
+    "https://datahorizzonresearch.com/sugar-crystallization-equipment-market-36168",
+    "https://marketintelo.com/report/sugar-processing-equipment-market",
+    "https://www.cognitivemarketresearch.com/sugar-mill-machinery-market-report",
+    "https://www.drishtiias.com/daily-updates/daily-news-analysis/indias-ethanol-blending-programme-and-the-path-to-e100",
+    "https://synergiafoundation.org/2026/07/03/blend-at-your-own-risk/",
+    "https://www.praj.net/wp-content/uploads/2025/04/Praj-Q4-FY25-Results-Release.pdf"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "tatva-chintan-pharma-chem",
+    "series": "Hidden Champions of India",
+    "segmentRef": "phase-transfer-catalysts",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Listed, CIN L24232GJ1996PLC029894."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Tatva Chintan Pharma Chem: a deep-tech bet on the battery curve, carried by a business the P&L doesn't flatter yet.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "India's only commercial maker of a zeolite catalyst most drivers have never heard of, now building a ₹200 Cr plant aimed at the electrolyte salts battery-makers need.", "tier": "company", "epistemic": "fact", "source": "HVT row; press", "fields": ["moat", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1996", "tier": "company", "source": "screener.in", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹506 Cr · FY26", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "₹42 Cr · FY26 (recovering from ₹6 Cr FY25)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "EBITDA margin", "value": "~18% (recovered from ~9% FY25)", "tier": "company", "source": "screener.in", "fields": ["financials.ebitdaMarginPct.FY26"] },
+    { "label": "ROE / ROCE", "value": "6% / 7% (both historically thin)", "tier": "company", "source": "screener.in", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "New capex", "value": "₹200 Cr · Dahej-III greenfield unit", "tier": "company", "source": "marketscreener.com", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A deep-tech bet on the next curve",
+    "blocks": [
+      { "text": "The financial trend here is genuinely volatile, not a clean growth story: revenue moved ₹394 Cr (FY24) to conflicting FY25/26 figures (₹383-506 Cr depending on source), while PAT crashed from ₹30 Cr (FY24) to just ₹6 Cr (FY25) before recovering to ₹42 Cr (FY26). EBITDA margin followed the same dip-and-recover pattern, 17% to 9% to 18%.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.revenueCr", "financials.patCr", "financials.ebitdaMarginPct"] },
+      { "text": "Return on equity has stayed thin throughout — 6% (FY24), a 3-year average of 4% — and ROCE only recovered to 7% in FY26 from 1% the year prior. Q1 FY27 shows the recovery continuing: revenue up 42.95% YoY, PAT up 140.3% YoY.", "tier": "company", "epistemic": "fact", "source": "screener.in; Business Standard", "fields": ["financials.roePct", "financials.rocePct"] },
+      { "text": "What the weak numbers don't show: it says it is the largest and only commercial Indian manufacturer of Structure Directing Agents (SDA) for zeolites, the world's second-largest SDA producer, India's largest producer of Electrolyte Salts (ESS) for supercapacitor batteries, and the largest domestic producer of glymes — self-claimed and flagged `needs_verify` in the HVT sheet, but backed by a DSIR-recognized ~36,000 sq ft R&D facility in Vadodara.", "tier": "company", "epistemic": "fact", "source": "HVT row (differentiation/moat, self-claimed); tatvachintan.com", "fields": ["differentiation", "moat"] },
+      { "text": "Product mix in FY26: SDA 41% of revenue, PTC (phase transfer catalysts) 23%, ESS just 3% today — the electrolyte-salts line is small but is exactly what the new capex is aimed at growing.", "tier": "company", "epistemic": "fact", "source": "aggregated company/analyst material", "fields": ["financials.revenueMixPct"] },
+      { "text": "The board approved a new Greenfield unit at Dahej-III — ₹200 Cr, 344 KL of additional reactor capacity, ~21-month build, targeting ₹300 Cr of revenue potential — alongside raising the company's borrowing limit from ₹300 Cr to ₹1,000 Cr, subject to shareholder approval.", "tier": "company", "epistemic": "fact", "source": "marketscreener.com; whalesbook.com", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The **core PTC/SDA field is genuinely niche**, and estimates vary widely.", "evidence": "Global phase transfer catalyst market: $1.25B (2024) to $1.68B by 2030 (6.0%/yr) per Grand View Research; other estimates range up to $2.4B by 2035 (6.3%/yr).", "tier": "segment", "epistemic": "fact", "source": "Grand View Research", "fields": ["market.sizeRange"] },
+      { "point": "The **adjacent market the new capex targets is much larger and faster-growing.**", "evidence": "Global lithium-ion battery electrolyte market: $6.5B (2026) to $20.6B by 2036, 12.2%/yr — and India's own electrolyte market is projected to grow even faster, ~18.1%/yr (2026-2036), cited as the world's fastest-growing region at 14.0%/yr.", "tier": "segment", "epistemic": "fact", "source": "openpr.com; futuremarketinsights.com", "fields": ["adjacentMarkets"] },
+      { "point": "**Euro-7 emissions standards are a direct tailwind** for the company's largest current product line.", "evidence": "Tighter emissions standards are expected to sharpen zeolite-based catalytic-converter demand, the end-market for the SDA line that's 41% of current revenue.", "tier": "segment", "epistemic": "fact", "source": "industry press aggregation", "fields": ["structureFacts"] },
+      { "point": "Named IPO-offer-document peers are **considerably larger and more stable.**", "evidence": "Aarti Industries, Navin Fluorine, Alkyl Amines Chemicals, Vinati Organics and Fine Organics were named as comparables at IPO; detailed peer financials weren't available in this research pass, but Tatva Chintan's own market cap (~₹2,582 Cr) sits above the named peer-group median (~₹1,213 Cr) despite its thinner, more volatile margins.", "tier": "segment", "epistemic": "fact", "source": "lemonn.co.in", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A company whose P&L has been genuinely rocky, betting real capex on an electrolyte market growing roughly twice as fast as its core niche. The 3% of revenue that ESS represents today is the whole thesis for where the ₹200 Cr is going.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, OpenPR/Future Market Insights (electrolyte). Detailed peer financials for the named PTC-adjacent comparables were not found in this pass — flagged rather than estimated."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, already funded.",
+    "items": [
+      { "lever": "velocity", "title": "The growing electrolyte-salts line", "body": "ESS is just 3% of revenue today, in a market (batteries/electrolytes) growing roughly twice as fast as the company's core PTC/SDA business, with India specifically cited as the world's fastest-growing regional electrolyte market. The Dahej-III capex is a direct bet on this line scaling.", "source": "Product mix: aggregated company/analyst material. Market growth: openpr.com, futuremarketinsights.com.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["financials.revenueMixPct", "adjacentMarkets", "recentMoves"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Tatva Chintan's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Track ESS as its own reporting line through the Dahej-III ramp", "body": "As the new 344 KL capacity comes online, report ESS revenue and margin separately rather than blended into the total, so the electrolyte bet's actual returns are visible before the next capex decision.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a specialty chemical/catalyst manufacturer in this segment — a directory-depth pass, not yet confirmed against Tatva Chintan's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["identify application need (catalyst/battery/pharma intermediate)", "develop or adapt quaternary ammonium/phosphonium salt chemistry", "qualify with OEM/Tier-1 customer", "position as functional process input, not finished good"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["process chemistry R&D (DSIR-recognized facility)", "scale-up expertise", "certify purity/performance to customer spec", "maintain multi-application product portfolio"], "stepsTier": "segment", "spottedAt": "process chemistry R&D (DSIR-recognized facility)", "spotted": { "text": "Company facts (~36,000 sq ft DSIR-recognized R&D facility) confirm this step is real for Tatva Chintan, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["plan reactor capacity against automotive/battery demand cycles", "manufacture at multi-site facilities", "phased capex for greenfield expansion", "quality-test & release"], "stepsTier": "segment", "spottedAt": "phased capex for greenfield expansion", "spotted": { "text": "Spotted at \"phased capex\": the ₹200 Cr Dahej-III unit is exactly this step, in progress now, aimed squarely at the ESS/electrolyte line → the growing electrolyte-salts line.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["technical co-development with OEM/Tier-1 customers", "support qualification/certification process", "maintain consistent high-purity output", "respond to spec changes (e.g. new emissions standards)"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["demand arises (emissions-standard cycle or battery-maker qualification)", "multi-year supply contract negotiated", "recurring orders against contract", "spot/intermediate orders from pharma/agrochem customers"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/phase-transfer-catalysts.json) — no company-specific (A2/pursuit) operational intel was collected for Tatva Chintan this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "The P&L has been rocky for two years running. The ₹200 Cr going into Dahej-III is a bet that the **3% of revenue in electrolyte salts today is where the next decade actually comes from.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Tatva Chintan or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus tatvachintan.com, marketscreener.com and whalesbook.com; market data from Grand View Research, OpenPR and Future Market Insights. Detailed peer financials for the named comparables were not found. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "tatvachintan.com", "marketscreener.com", "whalesbook.com", "Grand View Research", "openpr.com", "futuremarketinsights.com", "lemonn.co.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true unit economics of the ESS line specifically, and real customer retention across the 25+ export countries — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,533 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "eldorado-agritech",
+    "series": "Hidden Champions of India",
+    "segmentRef": "india-seeds",
+    "researchDepth": "pursuit",
+    "verified": true,
+    "generatedAt": "2026-07-10",
+    "provenance": "Hand-converted from the Tarun-approved authored HTML (outputs/eldorado-agritech.html, 2026-06-30). This file is the Phase-2 seed fixture and Plan C's acceptance target. Text markers: **…** = emphasis."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": {
+      "text": "Eldorado Agritech: a wealth-creation engine, hidden in plain sight.",
+      "tier": "universal",
+      "epistemic": "interpretation",
+      "source": "DT framing"
+    },
+    "subhead": {
+      "text": "A Hyderabad seed house that turns its own research into products farmers plant, now filing for a ₹1,000 crore IPO.",
+      "tier": "company",
+      "epistemic": "fact",
+      "source": "DRHP",
+      "fields": [
+        "whatTheyDo",
+        "hqCity",
+        "ipo.sizeCr"
+      ]
+    }
+  },
+  "snapshot": [
+    {
+      "label": "Founded",
+      "value": "2009 · Hyderabad",
+      "tier": "company",
+      "source": "company-reported",
+      "fields": [
+        "foundedYear",
+        "hqCity"
+      ]
+    },
+    {
+      "label": "Revenue",
+      "value": "₹441 Cr · FY25",
+      "tier": "company",
+      "source": "DRHP",
+      "fields": [
+        "financials.revenueCr.FY25"
+      ]
+    },
+    {
+      "label": "PAT",
+      "value": "₹72 Cr · FY25",
+      "tier": "company",
+      "source": "DRHP",
+      "fields": [
+        "financials.patCr.FY25"
+      ]
+    },
+    {
+      "label": "EBITDA margin",
+      "value": "25.2%",
+      "tier": "company",
+      "source": "DRHP",
+      "fields": [
+        "financials.ebitdaMarginPct.FY25"
+      ]
+    },
+    {
+      "label": "Return on equity",
+      "value": "34.6%",
+      "tier": "company",
+      "source": "DRHP",
+      "fields": [
+        "financials.roePct_FY25"
+      ]
+    },
+    {
+      "label": "IPO",
+      "value": "₹1,000 Cr · filed",
+      "tier": "company",
+      "source": "DRHP",
+      "fields": [
+        "ipo.sizeCr",
+        "ipo.drhpFiled"
+      ]
+    }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine",
+    "blocks": [
+      {
+        "text": "Revenue grew from ₹270 crore in FY23 to **₹441 crore in FY25**, about 28% a year. Profit grew faster: PAT from ₹29 crore to ₹72 crore, roughly 56% a year.",
+        "tier": "company",
+        "epistemic": "fact",
+        "source": "DRHP",
+        "fields": [
+          "financials.revenueCr",
+          "financials.patCr",
+          "derived.revenueCAGRpct_FY23_25"
+        ]
+      },
+      {
+        "text": "Margins widened as it grew, EBITDA from 16.8% to 25.2%, and return on equity reached 34.6%.",
+        "tier": "company",
+        "epistemic": "fact",
+        "source": "DRHP",
+        "fields": [
+          "financials.ebitdaMarginPct",
+          "financials.roePct_FY25"
+        ]
+      },
+      {
+        "text": "For scale, the listed leader Kaveri Seed earned a 27.6% EBITDA margin and a 16.9% return on equity in FY25 on ₹1,204 crore, growing about 5%. Eldorado is roughly a third its size, growing about six times faster, at near-double the return on equity, though its smaller, pre-IPO equity base flatters that last figure.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "Kaveri Seed filings",
+        "fields": [
+          "peers[0]"
+        ]
+      },
+      {
+        "text": "It breeds its own seed: 66 of its 1,371 employees work in research; nine patents; labs certified to DSIR, NABL and ISO/IEC 17025. Seeds are 63% of revenue, with bio-stimulants, agrochemicals and fertilizers the rest, reaching farmers across 18 states through 16,987 dealers, sold as Srikar Seeds.",
+        "tier": "company",
+        "epistemic": "fact",
+        "source": "company-reported; CARE Ratings",
+        "fields": [
+          "rdHeadcount",
+          "employees",
+          "patents",
+          "certifications",
+          "financials.revenueMixPct_FY25",
+          "distribution",
+          "brands"
+        ]
+      },
+      {
+        "text": "In September 2025 it filed for a **₹1,000 crore IPO** (₹340 crore fresh, ₹660 crore offer for sale). The price is not set yet; the listed leader trades at about 16 times earnings, the yardstick for when it is.",
+        "tier": "company",
+        "epistemic": "fact",
+        "source": "DRHP; market data",
+        "fields": [
+          "ipo.sizeCr",
+          "ipo.freshCr",
+          "ipo.ofsCr",
+          "ipo.drhpFiled"
+        ]
+      }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      {
+        "point": "The field is **large, and counted differently by different houses.**",
+        "evidence": "From ~$3.8B today toward $5B by 2030 (≈5.6%/yr), to ~$8.6B now headed for $20B by 2034 (≈9.7%) on the bullish count. Eldorado, at ~₹441 Cr (~$53M), holds **around 1%** of it.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "IMARC; Mordor Intelligence",
+        "fields": [
+          "market.sizeRange",
+          "derived.marketSharePct"
+        ]
+      },
+      {
+        "point": "It is shifting toward **exactly what Eldorado breeds.**",
+        "evidence": "Hybrids are ~70% of seed revenue and rising, and yield 25-40% more than traditional varieties.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "IMARC; Mordor Intelligence",
+        "fields": [
+          "market.hybridSharePct",
+          "market.hybridYieldPremium"
+        ]
+      },
+      {
+        "point": "And most of the market **has not converted yet.**",
+        "evidence": "About 15% of India's cropped area is sown with fresh quality seed; the rest is farm-saved. Hybrids, which don't breed true, must be rebought every season, so demand for them is structurally recurring. Seed-replacement-rate data: agri-extension sources.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "agri-extension research",
+        "fields": [
+          "market.seedReplacementRate"
+        ]
+      },
+      {
+        "point": "Vegetable seeds, which it entered in 2024-25, are a **$740M market headed to ~$970M by 2030**, already ~79% hybrid.",
+        "evidence": "",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "Mordor Intelligence",
+        "fields": [
+          "market.vegetableSeed",
+          "recentMoves"
+        ]
+      },
+      {
+        "point": "Its crop-care adjacency sits in a **~$2.6B+ crop-protection market.**",
+        "evidence": "Weeds, insects and disease still take roughly 45 / 35 / 20% of what farmers could harvest.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "Mordor Intelligence",
+        "fields": [
+          "market.cropProtection"
+        ]
+      },
+      {
+        "point": "The field is led by **global majors.**",
+        "evidence": "Syngenta, Mahyco, UPL's Advanta, BASF. Value growth is mid-single-digit, so share here is taken, not ridden.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "IMARC; Mordor Intelligence",
+        "fields": [
+          "market.leaders"
+        ]
+      },
+      {
+        "point": "Farmers buy on yield and price, but **repeat on trust.**",
+        "evidence": "Research on Indian seed buyers finds yield and affordability decide the category, while prior experience and brand loyalty are the strongest predictors of which brand a farmer picks. Farmer purchase-decision research.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "farmer purchase-decision research",
+        "fields": [
+          "customerValue"
+        ]
+      }
+    ],
+    "reflect": {
+      "text": "A patent-holding ~1% player, in a multi-billion-dollar market moving structurally toward hybrids and backed by food-security policy, against global scale. The size of the field, and the size of the slice, are both worth sitting with.",
+      "tier": "derived",
+      "epistemic": "interpretation"
+    },
+    "sourceNote": "Market data: IMARC; Mordor Intelligence (India seed, vegetable seed, crop protection). Estimates vary by methodology; ranges shown."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "Five places the company could grow, each built on something it already has or a market that is already moving.",
+    "items": [
+      {
+        "lever": "margin",
+        "title": "Pricing the patents",
+        "body": "Hybrid seed yields 25-40% more than ordinary seed and sells for more. Eldorado holds nine patents. Worth asking: does the price reflect the extra yield the science gives?",
+        "source": "Hybrid yield premium: IMARC, Mordor Intelligence. Patents: company-reported.",
+        "tier": "derived",
+        "epistemic": "opportunity",
+        "opportunityRef": "opp-1",
+        "fields": [
+          "patents",
+          "market.hybridYieldPremium"
+        ]
+      },
+      {
+        "lever": "velocity",
+        "title": "The dealers already signed",
+        "body": "Eldorado has 16,987 dealers; 7,705 are active. The other ~9,000 are already signed up, and reaching a dealer you already have is easier than finding a new one.",
+        "source": "Dealer count & active number: company-reported.",
+        "tier": "derived",
+        "epistemic": "opportunity",
+        "opportunityRef": "opp-2",
+        "fields": [
+          "distribution.dealersTotal",
+          "distribution.dealersActive"
+        ]
+      },
+      {
+        "lever": "velocity",
+        "title": "The new vegetable-seed line",
+        "body": "Eldorado started selling vegetable seeds in 2024-25. India's vegetable-seed market is about 79% hybrid and is expected to grow from $740M to $970M by 2030. The company has entered a market that is already growing.",
+        "source": "Vegetable-seed market, growth & hybrid share: Mordor Intelligence. Entry: company-reported.",
+        "tier": "derived",
+        "epistemic": "opportunity",
+        "opportunityRef": "opp-3",
+        "fields": [
+          "recentMoves",
+          "market.vegetableSeed"
+        ]
+      },
+      {
+        "lever": "margin",
+        "title": "The rest of the basket",
+        "body": "Eldorado also sells crop-protection, bio-stimulants and fertilizers. Crop protection in India is about a $2.6B market, and weeds, insects and disease still take roughly 45%, 35% and 20% of crops. The farmer who buys the seed needs these too.",
+        "source": "Crop-protection market & loss split: Mordor Intelligence. Product range: company-reported.",
+        "tier": "derived",
+        "epistemic": "opportunity",
+        "opportunityRef": "opp-4",
+        "fields": [
+          "products.categories",
+          "market.cropProtection"
+        ]
+      },
+      {
+        "lever": "velocity",
+        "title": "Room to grow geographically",
+        "body": "Eldorado sells in 18 of India's 28 states, and only inside India. India is being set up as a vegetable-seed export hub by 2030. There are more states, and markets abroad, it has not yet reached.",
+        "source": "States & domestic focus: company-reported. Export-hub outlook: industry press.",
+        "tier": "derived",
+        "epistemic": "opportunity",
+        "opportunityRef": "opp-5",
+        "fields": [
+          "distribution.statesCount",
+          "distribution.geographyScope"
+        ]
+      }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": {
+      "text": "Possibilities, not prescriptions. Which would work, and how much, only Eldorado's own data and people can tell. Each is small, made to learn fast.",
+      "tier": "universal"
+    },
+    "items": [
+      {
+        "lever": "margin",
+        "title": "Test the price on a few varieties",
+        "body": "Take two or three of the strongest varieties, put their field-trial yield numbers in front of dealers and farmers, and see whether they sell at a higher price than the rest.",
+        "tier": "derived",
+        "epistemic": "interpretation",
+        "opportunityRef": "opp-1",
+        "flags": {
+          "gated": true
+        }
+      },
+      {
+        "lever": "velocity",
+        "title": "Reactivate a sample of dormant dealers",
+        "body": "Pick a few hundred of the roughly 9,000 inactive dealers, give them one clear reason to reorder, and count how many come back and what it cost.",
+        "tier": "derived",
+        "epistemic": "interpretation",
+        "opportunityRef": "opp-2",
+        "flags": {
+          "gated": true
+        }
+      },
+      {
+        "lever": "velocity",
+        "title": "Track where the vegetable line lands",
+        "body": "Follow the new vegetable-seed varieties dealer by dealer, see which regions take to them fastest, and put more behind those.",
+        "tier": "derived",
+        "epistemic": "interpretation",
+        "opportunityRef": "opp-3",
+        "flags": {
+          "gated": true
+        }
+      },
+      {
+        "lever": "margin",
+        "title": "Offer the matching input",
+        "body": "For farmers buying a given seed, offer the crop-protection or fertilizer that goes with it, and measure how many take both.",
+        "tier": "derived",
+        "epistemic": "interpretation",
+        "opportunityRef": "opp-4",
+        "flags": {
+          "gated": true
+        }
+      },
+      {
+        "lever": "velocity",
+        "title": "Pilot one new state or market",
+        "body": "Use trade and agro-zone data to pick one state, or one export market, where a current variety should do well, and test it small before scaling.",
+        "tier": "derived",
+        "epistemic": "interpretation",
+        "opportunityRef": "opp-5",
+        "flags": {
+          "gated": true
+        }
+      }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": {
+      "text": "A workflow is the set of steps a company runs to get a result. Below is how seed companies operate, matched to what Eldorado states about its own. Each opening in Part 3 sits on a step.",
+      "tier": "universal"
+    },
+    "horizontals": [
+      {
+        "hId": "H5",
+        "hName": "Offers",
+        "steps": [
+          "read the crop & agro-zone",
+          "fit a variety from the range (226 hybrids/OPVs, 47 crops)",
+          "bundle with crop-protection (seed-to-harvest)",
+          "brand & price as Srikar Seeds"
+        ],
+        "stepsTier": "A2",
+        "spottedAt": "brand & price as Srikar Seeds",
+        "spotted": {
+          "text": "Spotted at \"price\": set against the channel, not the variety's yield → pricing the patents.",
+          "tier": "derived",
+          "epistemic": "opportunity",
+          "opportunityRef": "opp-1"
+        },
+        "source": "company site; CARE Ratings",
+        "flags": {
+          "gated": true,
+          "generic": false
+        }
+      },
+      {
+        "hId": "H4",
+        "hName": "Capability",
+        "steps": [
+          "PhD scientists develop parent lines",
+          "breed hybrids & OPVs",
+          "field-trial across agro-zones on 188 acres of R&D farms",
+          "certify (DSIR/NABL) & patent",
+          "release to production"
+        ],
+        "stepsTier": "A2",
+        "spottedAt": "field-trial across agro-zones on 188 acres of R&D farms",
+        "spotted": {
+          "text": "Spotted at \"field-trial\": the yield proof stays in R&D, not carried to the dealer or the price → carry the proof to price.",
+          "tier": "derived",
+          "epistemic": "opportunity",
+          "opportunityRef": "opp-1"
+        },
+        "source": "DRHP business; CIMMYT",
+        "flags": {
+          "gated": true,
+          "generic": false
+        }
+      },
+      {
+        "hId": "H3",
+        "hName": "Capacity",
+        "steps": [
+          "plan the season's volumes",
+          "multiply the seed in the field (industry norm: contract growers)",
+          "harvest",
+          "process, condition, test purity & germination",
+          "package & stock"
+        ],
+        "stepsTier": "A2",
+        "spottedAt": "plan the season's volumes",
+        "spotted": {
+          "text": "Spotted at \"plan volumes\": the new vegetable line and new regions need multiplication set a season ahead → the growing veg segment.",
+          "tier": "derived",
+          "epistemic": "opportunity",
+          "opportunityRef": "opp-3"
+        },
+        "source": "seed value-chain research (CIMMYT) matched to company-stated operations",
+        "flags": {
+          "gated": true,
+          "generic": false
+        }
+      },
+      {
+        "hId": "H2",
+        "hName": "Customer experience",
+        "steps": [
+          "appoint & stock dealers (16,000+)",
+          "dealer advises the farmer",
+          "farmer buys & plants",
+          "agronomy / advisory support",
+          "repeat next season"
+        ],
+        "stepsTier": "A2",
+        "spottedAt": "repeat next season",
+        "spotted": {
+          "text": "Spotted at \"repeat\": dealers signed but not selling → reactivate the dormant.",
+          "tier": "derived",
+          "epistemic": "opportunity",
+          "opportunityRef": "opp-2"
+        },
+        "source": "company site; CARE Ratings",
+        "flags": {
+          "gated": true,
+          "generic": false
+        }
+      },
+      {
+        "hId": "H1",
+        "hName": "Orders",
+        "steps": [
+          "demand arises (18 states, India only)",
+          "dealer orders",
+          "fulfil via the integrated supply chain",
+          "deliver",
+          "reorder"
+        ],
+        "stepsTier": "A2",
+        "spottedAt": "demand arises (18 states, India only)",
+        "spotted": {
+          "text": "Spotted at \"demand arises\": 18 of 28 states, none abroad → more states and export.",
+          "tier": "derived",
+          "epistemic": "opportunity",
+          "opportunityRef": "opp-5"
+        },
+        "source": "company-reported",
+        "flags": {
+          "gated": true,
+          "generic": false
+        }
+      }
+    ],
+    "sourceNote": "Steps: how seed companies run (CIMMYT, seed value-chain research) matched to Eldorado's stated operations (company site, CARE Ratings). Figures: company-reported."
+  },
+  "takeaway": {
+    "text": "The forgone margin and the dormant network are both wealth that **already exists, unclaimed.** For a Hidden Champion, the next decade of growth is often not built. It is collected.",
+    "tier": "universal",
+    "epistemic": "interpretation"
+  },
+  "cta": {
+    "label": "Spot an opportunity →",
+    "note": "See one we missed, in Eldorado or in your own business? The best eyes on a company are often inside it.",
+    "tier": "universal"
+  },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials and the IPO from Eldorado's DRHP and public filings; other company facts company-reported; market data from IMARC and Mordor Intelligence; peer figures from Kaveri Seed filings; seed-replacement and farmer-choice data from agri-extension research; workflow steps from seed value-chain research (CIMMYT) matched to Eldorado's stated operations. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": [
+      "DRHP",
+      "Kaveri Seed filings",
+      "IMARC",
+      "Mordor Intelligence",
+      "CIMMYT",
+      "agri-extension research",
+      "farmer purchase-decision research",
+      "CARE Ratings",
+      "company-reported"
+    ]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see, repeat-purchase and retention, and what farmers most value, is what a closer engagement establishes.",
+    "items": [
+      "retention",
+      "customerValue(company-specific)",
+      "trueUnitEconomics"
+    ]
+  }
+}

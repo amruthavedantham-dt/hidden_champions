@@ -1,0 +1,60 @@
+{
+  "segmentName": "Home textile & furnishing retail (India — bedding, curtains, table/kitchen linen)",
+  "segments": [
+    {
+      "key": "india-home-textile",
+      "nature": "differentiated",
+      "market": {
+        "indiaSizeUSD_B_2023": 10.78,
+        "indiaSizeUSD_B_2032": 23.32,
+        "cagrPct_2024_2033": 8.5,
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "India-specific figures (Facts & Factors); used as the primary market-size source here in preference to a second source (Custom Market Insights) whose 'bedsheet' sub-category figure was larger than its own 'whole home textile' figure — an internal inconsistency not resolved, so not used."
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's home-textile market is large and growing steadily (~8.4-8.6% CAGR across sources), roughly doubling in size over the coming decade.",
+    "The category spans two very different competitor tiers: large, listed, export-scale manufacturers (Welspun India, Indo Count Industries, Trident, Bombay Dyeing, Himatsingka Seide, GHCL, Arvind's home-textiles division) and branded, retail-facing D2C/omnichannel players closer to Swayam's own positioning (Portico New York, Spaces, D'Decor, Sarita Handa, Fabindia, Maspar).",
+    "COVID-19 (2020-2021) created a temporary, government-licensed PPE/mask manufacturing opportunity for textile companies broadly — a real, documented industry-wide pivot (many home-textile and garment makers, including Swayam, became certified PPE suppliers) that has since wound down as demand normalized."
+  ],
+  "adoptionStructure": {
+    "note": "A discretionary, repeat-purchase retail category (bedding/curtains/linens), sold through owned retail counters, multi-brand retail-chain concessions (Shopper's Stop, Pantaloons, @Home, etc.), and online — not a subscription or tender-driven market."
+  },
+  "peers": [
+    { "name": "Welspun India", "note": "Large, listed, export-scale home-textile manufacturer — a different tier from Swayam's retail-facing branded-goods positioning." },
+    { "name": "Indo Count Industries", "note": "Large, listed home-textile exporter." },
+    { "name": "Trident Limited", "note": "Large, listed home-textile and paper manufacturer." },
+    { "name": "Bombay Dyeing & Manufacturing", "note": "Large, listed, long-established home-textile brand." },
+    { "name": "Portico New York", "note": "Branded, retail-facing home-furnishing peer — closer in positioning/scale to Swayam than the large listed exporters above." },
+    { "name": "Spaces", "note": "Branded, retail-facing home-furnishing peer." },
+    { "name": "D'Decor", "note": "Branded, retail-facing home-furnishing peer, also strong in export/hospitality." },
+    { "name": "Fabindia", "note": "Larger, more diversified lifestyle-retail brand with a home-furnishing line among several categories." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Design/aesthetic appeal and print variety — a discretionary, style-driven purchase.",
+      "Availability across recognized multi-brand retail chains (Shopper's Stop, Pantaloons, @Home, EVOK, Hometown, Spencer's, Hypercity) — trust transfers partly from the retail channel itself.",
+      "Basic quality/safety assurance (colorfastness, skin-safety) rather than international eco-certification, for the domestically-focused segment of this market."
+    ],
+    "strongestPredictor": "Retail distribution breadth (counters × cities × recognized retail-chain presence) — in a discretionary, browse-and-buy category, being physically present where the shopper already is matters as much as the product itself."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify buyer (retail shopper, online customer, or bulk/corporate gifting buyer)", "design and curate seasonal print/product range", "win via design, price, and retail-channel availability", "supply via owned counters, multi-brand retail chains, or online"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house design team develops seasonal collections", "manufacture in-house (Gurugram facility)", "maintain basic quality/safety testing (colorfastness, skin-safety)", "manage a broad multi-category catalogue (bedding, curtains, bags, kids, accessories)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against seasonal/retail-chain order volume", "manufacture at the Gurugram facility", "warehouse and distribute to 400+ counters across 70+ cities", "fulfil online/D2C orders separately"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["shop via owned store, retail-chain concession, or website", "purchase (in-store or online)", "30-day return policy; customer support via email/WhatsApp", "repeat purchase on style refresh or replacement need"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from a home-refresh or replacement need", "order placed (retail counter or online)", "fulfil", "recurring reorder tied to seasonal/style cycles, not fixed schedule"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "Facts & Factors (India home-textile market size and CAGR)",
+    "Custom Market Insights, IMARC (secondary market-size references — flagged internal inconsistency, not used as primary)",
+    "Business Standard (COVID-era PPE manufacturing pivot, industry-wide)",
+    "Company/press-reported retail-chain partnerships"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "glint-cosmetics",
+    "series": "Hidden Champions of India",
+    "segmentRef": "private-label-cosmetics-manufacturing",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U24246MH2004PTC143913 (found via research, not in HVT row). **Important: the HVT sheet's own gap research surfaced a real FDA warning letter/import alert against this company — see p1_engine, this is not a routine 'opportunity.'**"
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "GLINT Cosmetics: a 55-country private-label exporter whose own 'FDA certified' claim sits next to a real FDA warning letter.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Navi Mumbai contract manufacturer of 3,500+ personal-care products, currently under a US FDA import alert that has suspended its American exports.", "tier": "company", "epistemic": "fact", "source": "HVT row; fda.gov", "fields": ["differentiation", "gap_currently_monetized"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2004", "tier": "company", "source": "Zaubacorp; glintcosmetics.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹100-150 Cr band · FY25 (+16.84% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "Net margin / ROE", "value": "1.87% / 7.07%", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct", "financials.roePct"] },
+    { "label": "Net profit growth", "value": "+85.83% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.patGrowthPct"] },
+    { "label": "US market status", "value": "Exports suspended — FDA import alert", "tier": "company", "source": "HVT row (fda.gov warning letter)", "fields": ["gap_currently_monetized"] },
+    { "label": "Product range claimed", "value": "3,500+ SKUs, 55+ countries", "tier": "company", "source": "HVT row (self-claimed)", "fields": ["differentiation"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability claim with a real, independently-documented exception",
+    "blocks": [
+      { "text": "The single most important fact in this profile isn't in the financials: the HVT sheet's own gap research cites a real FDA warning letter (fda.gov, an independent government source, not a company claim) documenting CGMP violations and unapproved new drugs, which has led to US exports being suspended under an FDA import alert. This directly contradicts the company's own moat claim of being 'FDA certified' — the HVT sheet marked that moat claim `needs_verify: no`, which this profile treats as a real gap in the HVT tool's own verification, not a settled fact.", "tier": "company", "epistemic": "fact", "source": "HVT row; fda.gov warning letter (independent, authoritative source)", "fields": ["moat", "gap_currently_monetized"] },
+      { "text": "Financially, the company is growing: revenue up 16.84% to a ₹100-150 Cr band, net profit up 85.83% year-on-year — though still on thin margins (net margin 1.87%, ROE 7.07%), and a separate Tracxn estimate puts revenue in a wider ₹100-500 Cr band for the same period, an unreconciled discrepancy.", "tier": "company", "epistemic": "fact", "source": "Tofler; Tracxn", "fields": ["financials.revenueCr", "financials.netMarginPct", "financials.patGrowthPct"] },
+      { "text": "It describes itself as an end-to-end manufacturer, white-label supplier and exporter of 3,500+ skincare, baby care, bath and personal care products to 55+ countries, with a DSIR-approved R&D unit — all self-claimed, and the HVT sheet flags `product_improvement` unresolved despite `Verified` review status.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation", "product_improvement"] },
+      { "text": "Founded in 2004 by B.M. Chopra, still family-directed (Puneet, Maneesh, Madhuri and Akshata Chopra as directors) — a genuinely long-running, closely-held business, not a recent entrant, which makes the US regulatory issue more notable rather than less.", "tier": "company", "epistemic": "fact", "source": "zaubacorp.com; indiamart.com", "fields": ["ownershipType"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing at a healthy clip**, with global D2C beauty as the structural driver.", "evidence": "Private-label cosmetics: $10.64-12.8B (2023/24) to $14.39-23.7B by 2030 depending on source (5.2-9.1%/yr); the broader private-label manufacturing service market is larger still, $45.4B (2024) to $81.6B by 2032 (8%/yr).", "tier": "segment", "epistemic": "fact", "source": "Grand View Research; Credence Research", "fields": ["market.sizeRange"] },
+      { "point": "**Low-MOQ flexibility, not scale, is the real CMO-selection criterion** — GLINT's stated model fits this.", "evidence": "Emerging D2C beauty brands select contract manufacturers primarily on low minimum-order-quantity flexibility to support launch economics, alongside brand transparency and sustainable production.", "tier": "segment", "epistemic": "fact", "source": "dermavends.com", "fields": ["customerValue"] },
+      { "point": "But **regulatory compliance is the other half of the gate, and it's exactly where GLINT has a documented problem.**", "evidence": "Emerging brands expanding into global markets face strict regulatory and documentation requirements, per the HVT sheet's own alignment research — the same requirement the FDA warning letter shows the company currently failing to meet for the US market specifically.", "tier": "segment", "epistemic": "fact", "source": "HVT row (align2_need); fda.gov", "fields": ["customerValue", "gap_currently_monetized"] },
+      { "point": "The closest named peer shows **the same data-quality pattern seen elsewhere in this batch.**", "evidence": "Vanesa Cosmetics Private Limited's revenue is reported inconsistently across sources (a -52% CAGR per one aggregator vs. a flat ₹159 Cr per another) — private-company financial data in this segment is generally thin and unreliable, not unique to GLINT.", "tier": "segment", "epistemic": "fact", "source": "tofler.in; thecompanycheck.com", "fields": ["peers[0]"] }
+    ],
+    "reflect": { "text": "A growing private-label exporter in a genuinely expanding market, whose own regulatory story is more complicated than its marketing claims suggest. The FDA issue is the fact that actually determines whether the US market opportunity is real right now.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, Credence Research, Verified Market Research. The FDA warning letter is the single highest-priority source in this profile — fda.gov, independent and authoritative."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place named in the company's own gap research — though it should be read as remediation, not growth, until resolved.",
+    "items": [
+      { "lever": "velocity", "title": "Resolving the FDA import alert to resume US exports", "body": "The HVT sheet's own gap research names this directly: the company has manufacturing capability that could serve the US drug-product export market, but a standing FDA import alert (CGMP violations, unapproved new drugs) currently blocks it. This is a compliance remediation project, not a market-entry opportunity, until the underlying violations are addressed and confirmed resolved.", "source": "HVT gap research (fda.gov warning letter).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only GLINT's own data and people can tell. Each is small, made to learn fast — but this one starts with verification, not a pilot.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Independently verify current FDA import-alert status before any US-market planning", "body": "Before any strategic discussion of the US market, get a current, direct confirmation of the import-alert status from FDA's own database (rather than relying on the 2019-dated warning letter cited in the HVT sheet) — the situation may have changed materially since then in either direction.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a private-label cosmetics manufacturer in this segment — a directory-depth pass, not yet confirmed against GLINT's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["formulate, fill and package private-label/white-label personal-care SKUs (skincare, haircare, baby care, color cosmetics)", "sell under client brand names", "support low-MOQ D2C launches"], "stepsTier": "segment", "spottedAt": "sell under client brand names", "spotted": { "text": "Company facts (3,500+ SKU claim, 55+ country reach) confirm this step is real in scope for GLINT, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house R&D/formulation chemistry", "stability and microbiology testing labs", "GMP-compliant production", "maintain regulatory compliance (FDA/Halal/ISO-type certifications) across export markets"], "stepsTier": "segment", "spottedAt": "maintain regulatory compliance (FDA/Halal/ISO-type certifications) across export markets", "spotted": { "text": "Spotted at \"maintain regulatory compliance\": this is exactly where the documented FDA warning letter shows a real, current gap → resolving the FDA import alert.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate automated filling/blending lines", "cleanroom production capacity", "packaging and warehousing throughput scaled for both large FMCG-style runs and low-MOQ D2C orders"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["deliver speed-to-market for new formulations", "flexibility on batch sizes", "maintain batch-to-batch quality consistency", "support regulatory filings for export destinations"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["purchase orders/contracts from D2C brands, distributors, export clients", "fulfil against brand's launch/reorder schedule", "repeat business once formulation and supply chain are qualified"], "stepsTier": "segment", "spottedAt": "purchase orders/contracts from D2C brands, distributors, export clients", "spotted": { "text": "Spotted at \"purchase orders\": US-market orders for drug products are currently blocked at the regulatory-compliance step upstream, not at demand → the entire US order channel depends on resolving the FDA issue first.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/private-label-cosmetics-manufacturing.json) — no company-specific (A2/pursuit) operational intel was collected for GLINT this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Real scale, real growth, and a real FDA warning letter sitting directly underneath the company's own 'FDA certified' claim. **Verify the compliance status before anything else here.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in GLINT or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler and Tracxn (figures conflict, both cited); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus zaubacorp.com and, critically, an independent US FDA warning letter (fda.gov) that contradicts the company's own 'FDA certified' moat claim; market data from Grand View Research and Credence Research; peer figures from tofler.in (Vanesa Cosmetics). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Tracxn", "zaubacorp.com", "fda.gov", "glintcosmetics.com", "Grand View Research", "Credence Research", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the current, up-to-date FDA compliance status, and true customer retention across the claimed 55-country footprint — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

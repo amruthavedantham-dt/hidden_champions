@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "jaishil-sulphur-chemical",
+    "series": "Hidden Champions of India",
+    "segmentRef": "micronized-sulphur-zinc-formulations",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Partnership firm per HVT row's ownership_type — a proposed CIN found in research appears to belong to a different, unrelated entity and was not used."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Jaishil Sulphur & Chemical Industries: an OMRI-certified formulator whose real scale is hard to check.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Mumbai sulphur-and-zinc agri-input maker selling into 30+ countries, with a genuine organic certification and almost no public financial trail.", "tier": "company", "epistemic": "fact", "source": "jaishilsulphur.com; omri.org", "fields": ["differentiation", "moat"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1979 (per company profile — not independently confirmed)", "tier": "company", "source": "IndiaMART (self-claimed)", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "~$5.3M (aggregator estimate, self-claimed tier)", "tier": "company", "source": "ZoomInfo-type aggregator", "fields": ["financials.revenueUSD"] },
+    { "label": "Ownership", "value": "Partnership firm", "tier": "company", "source": "IndiaMART; HVT row", "fields": ["ownershipType"] },
+    { "label": "Production capacity", "value": "50,000+ MT/annum", "tier": "company", "source": "jaishilsulphur.com (self-claimed)", "fields": ["capacity"] },
+    { "label": "Certification", "value": "OMRI-certified (organic)", "tier": "company", "source": "omri.org/mfg/jai (independent registry)", "fields": ["certifications"] },
+    { "label": "Manufacturing footprint", "value": "6 locations across India", "tier": "company", "source": "jaishilsulphur.com", "fields": ["capacity"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability with a genuine, checkable certification behind it",
+    "blocks": [
+      { "text": "Financials here are thin: the only revenue figure found is an aggregator's estimate (~$5.3M), self-claimed tier, with no PAT, EBITDA margin or ROE available — expected for a partnership firm without ROC filing obligations, but a real limit on how much can be confirmed.", "tier": "company", "epistemic": "fact", "source": "aggregator estimate (self-claimed)", "fields": ["financials.revenueUSD"] },
+      { "text": "One claim genuinely clears independent verification: Jaishil is OMRI-listed (Organic Materials Review Institute), a real third-party organic-input registry, not a self-issued certificate — a meaningfully stronger credibility tier than most of this company's other claims.", "tier": "company", "epistemic": "fact", "source": "omri.org/mfg/jai (independent registry, not company-controlled)", "fields": ["certifications"] },
+      { "text": "It claims 50,000+ MT/annum capacity across six India locations (Navi Mumbai, Surat, Gandhidham, Vizag, Kolkata, Chennai), a government CIR registration (CIR-32624/2000) for its Sulphur 80% WDG product distributed by UPL Sustainable Agri Solutions, and India's first low-dosage zinc fertilizer (NutriZin 700) — all self-claimed, and the HVT sheet flags all three pillars (`differentiation`, `moat`, `product_improvement`) as unresolved despite `Verified` review status.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed, needs_verify: yes); keralaagriculture.gov.in (CIR registration listing)", "fields": ["differentiation", "moat", "product_improvement"] },
+      { "text": "Founding year is also genuinely uncertain: the company's own materials say 1979, but a separate aggregator lists a 2013 incorporation with a CIN that, on inspection, appears to belong to a different, unrelated Haryana-registered entity — treated here as not reliably confirmed rather than picked between.", "tier": "company", "epistemic": "fact", "source": "IndiaMART vs. aggregator mismatch", "fields": ["foundedYear"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **modest-sized but growing steadily, anchored to a real, documented deficiency.**", "evidence": "India micronutrient fertilizer market: $0.81B (2025) to $1.12B by 2030 (6.70%/yr); zinc specifically grows faster (8.24%/yr) and was already the largest micronutrient category by consumption share in India in 2022 (26.9%).", "tier": "segment", "epistemic": "fact", "source": "Mordor Intelligence", "fields": ["market.sizeRange"] },
+      { "point": "The deficiency driving demand is **structural and geographically documented, not a marketing claim.**", "evidence": "An estimated 36.5% of Indian soils are zinc-deficient per ICAR data, reaching as high as 60% in some states.", "tier": "segment", "epistemic": "fact", "source": "ICAR data (via crops.zinc.org whitepaper)", "fields": ["structureFacts"] },
+      { "point": "**Government subsidy policy is a direct tailwind.**", "evidence": "The Nutrient-Based Subsidy scheme now incorporates Magnesium/Zinc/Boron/Sulphur-fortified NPK as of Kharif 2024; Andhra Pradesh has already run a state-level micronutrient subsidy model using Soil Health Card data that other states may replicate.", "tier": "segment", "epistemic": "fact", "source": "pib.gov.in", "fields": ["structureFacts"] },
+      { "point": "The closest listed comparable shows **healthier margins than Jaishil's own figures suggest for itself.**", "evidence": "Aries Agro Limited (broader micronutrient/animal-nutrition player, not sulphur-specialist) posted ₹957 Cr revenue (FY26, +18.93%) at 9.29% EBITDA margin, 13.7% ROE — a useful structural benchmark, though not a size-comparable peer to Jaishil.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers[0]"] }
+    ],
+    "reflect": { "text": "A real organic certification and a documented soil-deficiency tailwind sit behind a company whose own scale and history can't be independently pinned down. The certification is the one thing here that doesn't need to be taken on faith.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Mordor Intelligence, GMInsights, ICAR (via crops.zinc.org). Sulphur Mills Limited was identified as the closest direct competitor but has no public financials (private company)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "North America as the fastest-growing agrochemical geography", "body": "The HVT sheet's own gap research names North America specifically as poised for the fastest CAGR growth in agricultural chemicals — a market Jaishil's current 30+ country footprint doesn't yet emphasize per available research.", "source": "HVT gap research (databridgemarketresearch.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Jaishil's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Lead with the OMRI certification in one new market", "body": "Of everything claimed, OMRI certification is the one independently verifiable asset. Test whether leading with it specifically (rather than the broader, harder-to-verify scale claims) opens doors in one new organic-focused export market.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an agrochemical formulation manufacturer in this segment — a directory-depth pass, not yet confirmed against Jaishil's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["micronized sulphur products (agri + industrial grade)", "zinc-sulphur combination fertilizers", "crop protection formulations", "position on dosage-efficiency + certification"], "stepsTier": "segment", "spottedAt": "position on dosage-efficiency + certification", "spotted": { "text": "Company facts (OMRI certification, NutriZin low-dosage claim) confirm this step is real for Jaishil, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["formulation R&D for particle-size micronization and nutrient delivery", "pursue registration (state agri-department, CIR)", "pursue certification (ISI, OMRI organic, industry-body approvals)", "release to production"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["multi-site manufacturing", "scale production for domestic bulk + export packaging", "quality-test", "package & stock"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["distributor/dealer network management", "farmer education/demo trials", "compliance with state agri-department and subsidy documentation", "respond to registration renewals"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["distributor/wholesale orders", "government tender/subsidy-scheme-linked bulk procurement", "export orders via trading/import-export channels", "reorder tied to sowing season"], "stepsTier": "segment", "spottedAt": "export orders via trading/import-export channels", "spotted": { "text": "Spotted at \"export orders\": North America is named as the fastest-growing agrochemical geography but isn't yet a stated focus market → the North America opportunity.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/micronized-sulphur-zinc-formulations.json) — no company-specific (A2/pursuit) operational intel was collected for Jaishil this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "One real, independently verifiable certification (OMRI) sits inside a company whose scale, revenue and even founding year mostly rest on self-description. That asymmetry is **the thing to resolve before anything else.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Jaishil or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No reliable public financials exist for this partnership firm. Company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus jaishilsulphur.com and omri.org (independent certification registry); market data from Mordor Intelligence, GMInsights and ICAR (via crops.zinc.org). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["jaishilsulphur.com", "omri.org", "keralaagriculture.gov.in", "IndiaMART", "Mordor Intelligence", "GMInsights", "crops.zinc.org", "pib.gov.in", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — actual revenue and production volume, and true customer retention across the claimed 30+ export countries — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

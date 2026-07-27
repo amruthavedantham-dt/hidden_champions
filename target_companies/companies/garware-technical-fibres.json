@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "garware-technical-fibres",
+    "series": "Hidden Champions of India",
+    "segmentRef": "nets-ropes-geosynthetics",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment, reviewed) + fresh financial/market research this session. CIN L25209MH1976PLC018939, listed (NSE/BSE: GARFIBRES)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Garware Technical Fibres: a patent-holding net-maker, in a market turning its way — the margin hasn't caught up yet.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A fifty-year-old Mumbai-listed exporter that dominates salmon-cage-net supply in several countries, now betting on offshore wind.", "tier": "company", "epistemic": "fact", "source": "company site; screener.in", "fields": ["whatTheyDo", "foundedYear", "exportFootprint"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1976", "tier": "company", "source": "company history (Indian Textile Magazine)", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹1,529 Cr · FY25-26", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "₹199 Cr · FY25-26 (down ~14% YoY)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "EBITDA margin", "value": "~19% (down from ~21%)", "tier": "company", "source": "screener.in", "fields": ["financials.ebitdaMarginPct.FY26"] },
+    { "label": "Return on equity", "value": "18.07% · Q4 FY26", "tier": "company", "source": "marketsmojo.com result analysis", "fields": ["financials.roePct_FY26"] },
+    { "label": "Export share", "value": "~61% of revenue, 75+ countries", "tier": "company", "source": "Indian Textile Magazine; leveragedgrowth.in", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability the margin hasn't caught up to",
+    "blocks": [
+      { "text": "Revenue was roughly flat, ₹1,540 Cr to ₹1,529 Cr (down ~0.7%), while PAT fell about 14%, ₹232 Cr to ₹199 Cr, as EBITDA margin compressed from ~21% to ~19% — Q2 FY26 operating margin touched an 8-quarter low of 13.92% before partly recovering.", "tier": "company", "epistemic": "fact", "source": "screener.in; marketsmojo.com", "fields": ["financials.revenueCr", "financials.patCr", "financials.ebitdaMarginPct"] },
+      { "text": "Return on equity still held at 18.07% in Q4 FY26 — the balance sheet stayed healthy even as the P&L softened.", "tier": "company", "epistemic": "fact", "source": "marketsmojo.com", "fields": ["financials.roePct_FY26"] },
+      { "text": "The company holds a dominant niche position most financials don't show: roughly 90% of Canada's, 80% of Scotland's, and 30-35% each of Chile's and Norway's aquaculture cage-net supply, on patented anti-fouling ('V2') net technology from a DSIR-registered R&D unit with a reported ~90-101 patents filed.", "tier": "company", "epistemic": "fact", "source": "leveragedgrowth.in; indiascienceandtechnology.gov.in", "fields": ["marketShareByGeography", "patents", "certifications"] },
+      { "text": "Recognized a Four Star Export House by India's DGFT; ISO 9001:2015 and ISO 14001:2015 certified; sells in 75+ countries through six overseas offices, with export share rising from ~57% (FY24) to ~61% (H1 FY25).", "tier": "company", "epistemic": "fact", "source": "company site; Indian Textile Magazine", "fields": ["certifications", "exportFootprint"] },
+      { "text": "In July 2025 it acquired two Norway-based firms — Offshore & Trawl Supply (ropes) and Advanced Mooring Supply (offshore wind mooring) — plus a new UK subsidiary, moving beyond aquaculture/infra netting into offshore wind-energy mooring.", "tier": "company", "epistemic": "fact", "source": "leveragedgrowth.in; aquafeed.co.uk", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The **technical-textiles field is large and growing steadily.**", "evidence": "Global technical textiles: ~$206B (2024) to ~$272B by 2030, ~4.8%/yr. Geosynthetics specifically: estimates range ~$18-20B (2025) to ~$32-45B by 2035, 6.1-9.5%/yr depending on source.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research; Future Market Insights", "fields": ["market.sizeRange"] },
+      { "point": "Its **home niche — aquaculture netting — is smaller but faster-growing.**", "evidence": "Global aquaculture: ~$334-359B (2025) to ~$418-425B by 2030 (~5-6%/yr); the cage-net sub-segment specifically is projected to $2.3B by 2030 at 8.5%/yr, outpacing the broader aquaculture market.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research; Research and Markets", "fields": ["market.aquacultureCageNet"] },
+      { "point": "A clean **market-share percentage isn't the right number here** — this is a fragmented, regionally-won market, not one with a single addressable-market denominator Garware competes for as a whole.", "evidence": "Garware's real position shows up as dominant regional share (90% Canada, 80% Scotland) rather than a global aquaculture-market percentage, since most of that $334B+ figure is fish farming spend, not netting.", "tier": "derived", "epistemic": "interpretation", "source": "derived from market + company figures", "fields": ["derived.shareIsMeaningful"] },
+      { "point": "**India's own infrastructure build-out** is a second, distinct demand driver for the geosynthetics side of the business.", "evidence": "India geosynthetics: ~$1.5-1.63B (2023-24) to ~$2.73B by 2030 (~9-10%/yr), pulled by the National Infrastructure Pipeline (~$1.4T), PM Gati Shakti (~$1.2T), Bharatmala's 34,000+ km of highway, and new rail lines needing track-bed stabilization.", "tier": "segment", "epistemic": "fact", "source": "Indian Infrastructure magazine", "fields": ["market.domesticSlice"] },
+      { "point": "Sustainability pressure cuts **both ways.**", "evidence": "Ghost-gear and marine-plastic-pollution concern is pushing biodegradable fishing-gear adoption in North America and Europe — a future substitution risk to conventional netting — but biodegradable nets are today less durable, so it hasn't displaced Garware's product yet.", "tier": "segment", "epistemic": "fact", "source": "ScienceDirect (marine pollution research)", "fields": ["market.sustainabilityRisk"] }
+    ],
+    "reflect": { "text": "A regionally dominant, patent-holding netmaker whose margin just compressed even as its underlying markets (aquaculture, infrastructure, now offshore wind) keep expanding. The capability looks ahead of what the P&L currently shows.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, Future Market Insights, Research and Markets, Indian Infrastructure magazine. Estimates vary by methodology; ranges shown. No clean public peer set was found for direct netting/geosynthetics comparables (see colophon)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "Two places worth asking a question, each built on something already documented.",
+    "items": [
+      { "lever": "velocity", "title": "The offshore wind mooring line", "body": "The July 2025 acquisitions of Offshore & Trawl Supply and Advanced Mooring Supply moved Garware into offshore wind-energy mooring — a new, higher-value adjacency to its core rope/net manufacturing. It has entered a market that is only starting to build out.", "source": "Acquisitions: leveragedgrowth.in, aquafeed.co.uk.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["recentMoves"] },
+      { "lever": "margin", "title": "Pricing the anti-fouling patent", "body": "Garware holds a documented patent portfolio and DSIR-recognized R&D behind its anti-fouling net technology, yet EBITDA margin compressed from ~21% to ~19% over the last year. Worth asking whether the patented performance is priced at the premium the science supports, or absorbed into a flat headline price.", "source": "Patents/DSIR: indiascienceandtechnology.gov.in. Margin: screener.in.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-2", "fields": ["patents", "financials.ebitdaMarginPct"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Garware's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Pilot one offshore-wind mooring contract end to end", "body": "Take the Norway mooring acquisitions and run one project through the full cycle — bid, deliver, service — before deciding how much capacity to commit to the line.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } },
+      { "lever": "margin", "title": "Test a price differential on the anti-fouling line", "body": "Take the anti-fouling ('V2') net range specifically and test a price gap against standard netting in one or two export markets, measuring whether buyers pay for the documented performance difference.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-2", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a technical-textiles/netting manufacturer in this segment — a directory-depth pass, not yet confirmed against Garware's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["assess end-use environment (marine/agri/infra)", "select fiber/coating/anti-fouling technology", "customize to application spec", "brand & position by certification/durability"], "stepsTier": "segment", "spottedAt": "brand & position by certification/durability", "spotted": { "text": "Spotted at \"brand & position\": patented anti-fouling performance exists but isn't confirmed to carry a price premium → pricing the patent.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-2" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["polymer extrusion/braiding R&D", "in-house testing for durability/anti-fouling performance", "patent and certify (DSIR, ISO)", "release to production"], "stepsTier": "segment", "spottedAt": "patent and certify (DSIR, ISO)", "spotted": { "text": "Company facts (DSIR-registered unit, ~90-101 patents filed) confirm this step is real for Garware, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact", "opportunityRef": "opp-2" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["plan production against seasonal/project demand", "extrude/braid/weave at scale", "coat/treat for application", "quality-test", "package & stock"], "stepsTier": "segment", "spottedAt": "plan production against seasonal/project demand", "spotted": { "text": "Spotted at \"plan production\": the new offshore-wind mooring line needs its own capacity planning, separate from the aquaculture/infra cycle → the offshore wind mooring line.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["technical consultation with buyer (fish-farm operator/EPC contractor)", "site/application-specific fitting", "install or supply support", "after-sales/durability warranty support"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["demand arises (aquaculture cycle or infra project tender)", "buyer qualifies supplier on certification/spec", "order placed", "fulfil & deliver", "reorder on replacement cycle"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/nets-ropes-geosynthetics.json) — no company-specific (A2/pursuit) operational intel was collected for Garware this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A dominant regional net-maker with real patents and a margin that just slipped. The offshore-wind bet and the pricing question are both **already sitting in its own numbers.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Garware or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in and result-analysis press (marketsmojo.com); company facts from the HVT pillar research (differentiation/moat/product_improvement, reviewed) plus company site and Indian Textile Magazine; market data from Grand View Research, Future Market Insights, Research and Markets, and Indian Infrastructure magazine. No clean public peer set was located for direct netting/geosynthetics financial comparables — flagged, not filled. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "marketsmojo.com", "Indian Textile Magazine", "leveragedgrowth.in", "aquafeed.co.uk", "indiascienceandtechnology.gov.in", "Grand View Research", "Future Market Insights", "Research and Markets", "Indian Infrastructure magazine", "ScienceDirect", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics on the anti-fouling premium, and customer retention/repeat-order rates by geography — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

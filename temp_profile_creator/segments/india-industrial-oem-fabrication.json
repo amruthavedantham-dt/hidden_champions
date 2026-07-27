@@ -1,0 +1,117 @@
+{
+  "segmentName": "India industrial OEM fabrication (auto + power/T&D)",
+  "segments": [
+    {
+      "key": "auto-rail-oem-fabrication",
+      "nature": "differentiated-within-commodity",
+      "market": {
+        "worldSizeUSD_B": null,
+        "indiaSizeINR_lakhCr": 7.6,
+        "indiaSizeUSD_B": 85.9,
+        "period": "FY2025-26",
+        "cagrRangePct": [10.67, 17.0],
+        "cagrNote": "10.67% (FY25-29 forecast, one source) up to 17% (trailing FY21-26 CAGR); varies by source/period",
+        "exportGeographies": ["global OEM supply chains de-risking from China ('China+1')"],
+        "globalCompetitors": [],
+        "domesticSlice": "figure above is India-specific; India is a major auto-component exporter but this stat is domestic turnover"
+      },
+      "shareIsMeaningful": false
+    },
+    {
+      "key": "power-td-switchgear-fabrication",
+      "nature": "differentiated",
+      "market": {
+        "worldSizeUSD_B": null,
+        "indiaSizeUSD_B_range": [5.38, 13.76],
+        "indiaSizeNote": "estimates vary widely by scope (switchgear-only vs broader T&D equipment) and source",
+        "broaderTD_USD_B_2030": 33.7,
+        "cagrRangePct": [6.1, 9.1],
+        "exportGeographies": [],
+        "globalCompetitors": ["Siemens", "ABB", "Schneider Electric"],
+        "domesticSlice": "India-specific figures; policy-driven (RDSS, transmission capex)"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Government-funded T&D capex of ~INR 9.1 lakh crore (~USD 109B) planned by FY32, plus the Revamped Distribution Sector Scheme (RDSS), are the stated demand drivers for the power/switchgear side.",
+    "India's auto-component industry turnover reached INR 7.6 lakh crore (~USD 85.9B) in FY2025-26, +12.7% YoY, more than doubling over five years."
+  ],
+  "adoptionStructure": {
+    "note": "Not a repeat-purchase/replacement-rate market like seeds — demand here is OEM production-volume-driven (auto) and capex-cycle-driven (power/T&D), not a recurring-consumable pattern."
+  },
+  "peers": [],
+  "peersNote": "No directly comparable named peer (a diversified auto+power OEM fabricator at similar scale) was found in this research pass — this is a narrower niche than 'auto components' broadly. Left empty rather than force a mismatched comparison (e.g. a pure-play Tier-1 auto supplier is not a clean peer for a company that also does PGCIL-adjacent power fabrication). Revisit if a pursuit-pass digs up a real comparable.",
+  "customerValue": {
+    "drivers": [
+      "Certification as the gating factor: IATF 16949 described as the minimum standard to supply major OEMs (Maruti Suzuki, Tata Motors, Hyundai, Mahindra) — a condition of supplier approval, not a differentiator once held.",
+      "Process control increasingly valued over unit price: SPC, automated optical inspection, CMM-based dimensional checks, full production traceability.",
+      "Cost still matters: Indian labour cost cited as 30-50% lower than China for comparable skill grades.",
+      "Scalability and supply-chain reliability (on-time delivery, logistics) as additional named factors."
+    ],
+    "strongestPredictor": "Certification currency (holding the CURRENT standard, not a lapsed one) — several sources describe this as a pass/fail gate for major-OEM eligibility, ahead of price."
+  },
+  "valueChain": [
+    {
+      "hId": "H5",
+      "hName": "Offers",
+      "steps": [
+        "OEM issues a technical drawing/spec",
+        "quote against capability + current certification",
+        "win the order via a qualification audit",
+        "deliver the customized fabricated assembly"
+      ]
+    },
+    {
+      "hId": "H4",
+      "hName": "Capability",
+      "steps": [
+        "maintain certified quality systems (ISO/IATF)",
+        "operate CNC, fabrication, painting and electrical-assembly lines",
+        "pass customer/registry audits (OEM QA, sector-specific approvals)",
+        "sustain in-house design-support capability"
+      ]
+    },
+    {
+      "hId": "H3",
+      "hName": "Capacity",
+      "steps": [
+        "plan production against OEM order forecasts",
+        "procure raw material (steel, electrical components)",
+        "fabricate, assemble, paint, and test",
+        "package and ship"
+      ]
+    },
+    {
+      "hId": "H2",
+      "hName": "Customer experience",
+      "steps": [
+        "onboard as an approved vendor",
+        "supply per OEM production schedule",
+        "handle quality complaints and warranty",
+        "maintain approval status via periodic re-audit"
+      ]
+    },
+    {
+      "hId": "H1",
+      "hName": "Orders",
+      "steps": [
+        "OEM demand arises from vehicle or grid capex cycles",
+        "purchase order issued against an annual rate contract",
+        "fulfil and invoice",
+        "recurring reorder tied to the OEM's own production volumes"
+      ]
+    }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "ACMA / autoguideindia.com (auto-component industry turnover & growth)",
+    "IBEF (auto components industry)",
+    "IMARC Group (India automotive components market, India switchgear market)",
+    "Grand View Research (India T&D equipment market outlook)",
+    "6Wresearch, MarketsAndData (India switchgear market CAGR)",
+    "Industry commentary: JPM Group blog, getisocertificate.com (OEM certification/vendor-selection standards) — secondary/blog-tier, not a primary research report"
+  ]
+}

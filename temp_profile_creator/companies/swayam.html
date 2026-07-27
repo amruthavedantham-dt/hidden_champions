@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Swayam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#4a3a0e; --field-deep:#332708; --leaf:#c9922e; --sprout:#f0c368;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(51,39,8,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .flag{background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.3); border-left:3px solid var(--soil); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .flag b{color:var(--soil);}
+  .confirm{background:rgba(201,146,46,.12); border:1px solid rgba(201,146,46,.35); border-left:3px solid var(--leaf); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .confirm b{color:var(--field);}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(201,146,46,.08);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+  .generictag{display:inline-block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.1); border:1px solid rgba(138,90,43,.3); border-radius:3px; padding:2px 6px; margin-left:8px;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  .verifybanner{background:#e4f2d9; color:#2f4a1c; font-family:"Spline Sans Mono",monospace; font-size:11.5px; letter-spacing:.03em; text-align:center; padding:9px 16px; border-bottom:2px solid #7fae4f;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <div class="verifybanner">meta.verified: true — sources checked against Zauba Corp/Tofler/Tracxn/Business Standard and the analyst's own direct fetches</div>
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Swayam: a 24-year family home-furnishings brand with one unexpectedly real chapter — becoming a licensed pandemic PPE manufacturer.</h1>
+    <p class="subhead">A Gurugram bedsheets-and-curtains brand sold across 400+ counters in India's best-known retail chains, self-funded for 24 years — with a real, government-certified 2020 pivot to PPE manufacturing, and a recent revenue dip still worth asking about.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">2001 · Gurugram</p></div>
+    <div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹55.6 Cr · FY25 (-5% YoY)</p></div>
+    <div class="snap"><p class="snap-label">Employees</p><p class="snap-value">501-1,000</p></div>
+    <div class="snap"><p class="snap-label">Retail footprint</p><p class="snap-value">400+ counters · 70+ cities</p></div>
+    <div class="snap"><p class="snap-label">Retail chains</p><p class="snap-value">Shopper's Stop, Pantaloons, @Home & more</p></div>
+    <div class="snap"><p class="snap-label">Funding</p><p class="snap-value">Unfunded · 24 years bootstrapped</p></div>
+  </section>
+
+  <div class="body">
+
+    <!-- PART 1 -->
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A steady family business, a real pandemic pivot, and a recent dip worth asking about</h2>
+      <p class="prose">Swayam is a brand of <b>Linen Design Company Private Limited</b> (CIN U51909HR2008PTC037949), founded in <b>2001</b> in Gurugram by <b>Manoj Garg and Neerja Garg</b> — Neerja holds a Master's in Textile and Clothing from Lady Irwin College, New Delhi. Twenty-four years on, the business remains under the same founder-family ownership and has never raised outside capital (Tracxn classifies it as "unfunded") — a long, quietly self-sustaining run rather than a venture-backed growth story.</p>
+      <p class="prose">Revenue stands at <b>₹55.6 crore for FY25</b>, down <b>5% year-on-year</b> — a real, if modest, softening rather than growth or distress. No cause is independently confirmed in this pass; it's worth asking directly rather than assuming either a category-wide slowdown or a company-specific issue. The business employs 501-1,000 people.</p>
+      <p class="prose">Swayam sells through <b>400+ counters across 70+ cities</b> (per its own About page; a separate franchise-partner page cites 40+ cities, likely a narrower high-tier-partner subset of the same footprint) — including placement in genuinely major Indian retail chains: <b>Shopper's Stop, Pantaloons, @Home, Hometown, EVOK, Spencer's, and Hypercity.</b> That named, checkable retail-chain presence is a stronger form of evidence than the bare counter-count alone.</p>
+      <div class="confirm"><b>The most distinctive real fact in this profile:</b> in 2020, Swayam became one of 500+ government-licensed manufacturers producing PPE for India's COVID-19 response — 3-ply masks, body coveralls, gloves, face shields, and shoe covers, sold as a "single point supplier" package. The Ministry of Textiles ran a joint program authorizing SITRA, DRDO, and the Ordnance Factory Board to issue Unique Certification Codes for PPE manufacturers during this period, which is the real basis for Swayam's DRDO/SITRA association — a genuine, verified, but time-bound manufacturing pivot, not an ongoing medical-textile division.</div>
+      <p class="prose">No OEKO-TEX, GOTS, or ISO certification is held — Swayam relies on domestic quality benchmarks (colorfastness testing, skin-safety/allergen testing) rather than international eco-textile audits, consistent with a domestically-focused retail brand rather than a certified export-scale manufacturer.</p>
+    </section>
+
+    <!-- PART 2 (LOCKED) -->
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">A large, steadily growing market — split between giant exporters and branded retail peers Swayam actually competes with</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">India's home-textile market is <b>large and growing at a healthy, steady pace.</b></p><p class="ev">$10.78 billion (2023) heading toward $23.32 billion by 2032 — roughly doubling over the decade, an ~8.5% CAGR.</p></li>
+        <li class="insight"><p class="point">The category splits into <b>two very different competitor tiers</b> — and Swayam sits in the smaller one.</p><p class="ev">Large, listed, export-scale manufacturers (Welspun India, Indo Count Industries, Trident, Bombay Dyeing) operate at a completely different scale from branded, retail-facing peers like Portico New York, Spaces, D'Decor, and Fabindia — the tier Swayam's own ₹55.6 crore revenue and retail-chain distribution model actually belongs to.</p></li>
+        <li class="insight"><p class="point">In this category, <b>being on the shelf matters as much as the product.</b></p><p class="ev">It's a discretionary, browse-and-buy retail purchase — distribution breadth (counters × cities × recognized retail-chain presence) is the strongest predictor of a sale, more than any single design or fabric claim.</p></li>
+        <li class="insight"><p class="point">The 2020 PPE pivot was <b>real, but industry-wide, not unique to Swayam.</b></p><p class="ev">Many Indian textile and garment manufacturers became licensed PPE suppliers during the same period — Swayam's participation is genuine and verifiable, but it was one of 500+ companies doing the same thing, not a singular achievement.</p></li>
+      </ul>
+      <p class="reflect">Swayam is a real, stable, self-funded family business with genuine national retail-chain distribution — that part is solid. It competes in the smaller of two tiers in a large, steadily growing market, without the international certifications or export scale of the category's biggest names. Its most distinctive asset — a proven, government-certified capability to pivot into PPE/technical-textile manufacturing at volume — is real, but currently dormant.</p>
+      <p class="src">Market data: Facts & Factors. Peer and category-structure research: IMARC, company/press research. PPE-pivot context: Business Standard.</p>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">Four places worth a closer look, each built on something Swayam already has or a gap already visible in its own numbers.</p>
+      <div class="opp"><p class="tag">Margin</p><h4>Diagnose the -5% decline directly</h4><p>A single-digit revenue decline after 24 years of operation isn't alarming on its own, but it isn't self-explanatory either. Pinning down whether it's channel mix, competitive pricing pressure, or a specific product-line issue would turn a vague data point into an actionable fix.</p><p class="oppsrc">Tracxn (FY25 revenue and CAGR).</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Formalize and publicize the retail-chain roster</h4><p>Placement in Shopper's Stop, Pantaloons, @Home, and similar chains is real, checkable, credible evidence of retail trust — currently scattered across press mentions rather than presented as a unified, prominent credential.</p><p class="oppsrc">press/directory search (named retail chains).</p></div>
+      <div class="opp"><p class="tag">Margin</p><h4>Pursue an actual international certification</h4><p>An OEKO-TEX or GOTS certification would let Swayam compete on the same credibility ground as the category's larger exporters and appeal to increasingly eco-conscious retail buyers — a concrete, achievable step up from domestic-only quality testing.</p><p class="oppsrc">certification-gap finding (direct research pass).</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Revisit the dormant PPE/technical-textile capability</h4><p>The 2020 pivot proved Swayam can manufacture government-certified technical textiles at volume on short notice. That capability has sat unused since demand normalized — worth asking whether any institutional, hospitality, or healthcare-adjacent B2B channel could reactivate it outside of a crisis.</p><p class="oppsrc">Business Standard; Swayam's own 2020 blog post.</p></div>
+    </section>
+
+    <!-- PART 4 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only Swayam's own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Break FY25 revenue down by channel</h5><p>Split the ₹55.6 crore FY25 figure by owned-counter, retail-chain-concession, and online sales to see exactly which channel softened — a very different fix follows from each answer.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Build one page naming every retail-chain partnership</h5><p>A single, prominent "where to find us" page naming Shopper's Stop, Pantaloons, @Home, and the rest would convert scattered credibility into a clear trust signal for both consumers and prospective new retail partners.</p></div>
+        <div class="hvt"><p class="tag">Margin</p><h5>Scope the cost/timeline for a first OEKO-TEX certification</h5><p>Start with the highest-volume product line (bedsheets) to test whether the certification cost is justified by the pricing power or retail-chain access it unlocks before certifying the full catalogue.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Pitch the PPE-era capability to one institutional buyer</h5><p>Approach a single hospital chain, hospitality group, or corporate-gifting client with the proven 2020 technical-textile manufacturing story as a differentiator, and see whether it opens a genuinely new B2B channel.</p></div>
+      </div>
+    </section>
+
+    <!-- PART 5 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below is how a branded home-textile retailer generally operates, matched wherever Swayam's own stated facts confirm a step; unconfirmed steps are marked as the segment's generic scaffold.</p>
+        <div class="hrow">
+          <div class="hlabel">H5<span>Offers</span></div>
+          <div><p class="steps">identify buyer (retail shopper, online customer, or corporate-gifting buyer) → design and curate seasonal print/product range → <b>win via design, price, and retail-channel availability</b> → supply via counters, retail-chain concessions, or online</p><p class="hopp"><span class="k">Spotted at "retail-channel availability"</span> real, named retail-chain presence exists but isn't consolidated into one clear credibility asset → formalize and publicize the retail-chain roster.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H4<span>Capability</span></div>
+          <div><p class="steps">in-house design team develops seasonal collections → manufacture in-house at the Gurugram facility → maintain domestic quality/safety testing → <b>proved technical-textile capability during 2020 PPE production</b></p><p class="hopp"><span class="k">Spotted at "2020 PPE production"</span> a real, certified manufacturing capability that has sat unused since demand normalized → revisit the dormant PPE/technical-textile capability.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H3<span>Capacity</span></div>
+          <div><p class="steps"><b>plan production</b> against seasonal/retail-chain order volume → manufacture at the Gurugram facility → warehouse and distribute to 400+ counters across 70+ cities → fulfil online/D2C orders separately <span class="generictag">generic</span></p><p class="hopp"><span class="k">Spotted at "plan production"</span> FY25's -5% revenue implies softer order volume somewhere in this chain, not yet isolated by channel → diagnose the -5% decline directly.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H2<span>Customer experience</span></div>
+          <div><p class="steps">shop via owned store, retail-chain concession, or website → purchase → 30-day return policy; <b>support via email/WhatsApp</b> → repeat purchase on style refresh or replacement need</p><p class="hopp"><span class="k">Spotted at "support"</span> no international quality certification is presented to reassure buyers beyond domestic testing → pursue an actual international certification.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H1<span>Orders</span></div>
+          <div><p class="steps">demand arises from a home-refresh or replacement need → order placed (counter or online) → fulfil → <b>recurring reorder tied to seasonal/style cycles</b> <span class="generictag">generic</span></p><p class="hopp"><span class="k">Spotted at "recurring reorder"</span> a mature, 24-year-old demand base with a recent softening — the cause sits upstream in this chain, not in demand existing at all → diagnose the -5% decline directly.</p></div>
+        </div>
+        <p class="hsrc">Steps: generic home-textile retail value chain, matched against Swayam's own confirmed facts where available (company site, Business Standard, direct fetches); unconfirmed steps marked generic.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>The most interesting thing about Swayam isn't its bedsheets — it's that a modest, self-funded, 24-year family business proved, when it mattered, that it could stand up government-certified technical-textile manufacturing at national scale in a matter of weeks. <span class="hi">That capability is real, verified, and currently doing nothing.</span> Everything else here — the retail-chain distribution, the steady if softening revenue, the missing international certifications — is a smaller, plainer story than that one dormant fact.</p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Swayam or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Identity from Zauba Corp and Tofler; financials from Tracxn; the 2020 PPE-manufacturing pivot confirmed via Business Standard and the company's own dated blog post; retail-chain distribution from press/directory research; market data from Facts & Factors. Opportunities are DeepThought's reading. A supplied year-by-year revenue table and a supplied macroeconomic explanation for the FY25 revenue decline were independently checked and not used beyond their verifiable core.<br>
+    What an outside profile cannot see — the specific cause of the FY25 revenue decline, true per-channel unit economics, and whether the PPE-era manufacturing capability could be commercially reactivated — is what a closer engagement establishes.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

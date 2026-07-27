@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Nav Bharati Chemicals (v2)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#4a3423; --field-deep:#33230f; --leaf:#a06a3a; --sprout:#d9a86a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(51,35,15,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .flag{background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.3); border-left:3px solid var(--soil); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .flag b{color:var(--soil);}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(160,106,58,.08);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+  .generictag{display:inline-block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.1); border:1px solid rgba(138,90,43,.3); border-radius:3px; padding:2px 6px; margin-left:8px;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  .verifybanner{background:#fff2cc; color:#5c4400; font-family:"Spline Sans Mono",monospace; font-size:11.5px; letter-spacing:.03em; text-align:center; padding:9px 16px; border-bottom:2px solid #d9a441;}
+  .versiontag{background:#2f8a7a; color:#f3eedf; font-family:"Spline Sans Mono",monospace; font-size:11.5px; letter-spacing:.03em; text-align:center; padding:7px 16px;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <div class="versiontag">VERSION 2 — softer tone, same facts as Version 1</div>
+  <div class="verifybanner">DRAFT — meta.verified: false — do not upload until the analyst has checked every source below</div>
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Nav Bharati Chemicals: three decades processing the mineral the world's cooking oil runs on.</h1>
+    <p class="subhead">A Hyderabad manufacturer of bleaching earth and bentonite for oil refiners, agriculture, and aviation fuel, in a market growing steadily worldwide.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Brand since</p><p class="snap-value">1993 · Hyderabad</p></div>
+    <div class="snap"><p class="snap-label">Incorporated</p><p class="snap-value">4 Jul 2014</p></div>
+    <div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹31.88 Cr · FY25</p></div>
+    <div class="snap"><p class="snap-label">Revenue growth</p><p class="snap-value">-5% YoY</p></div>
+    <div class="snap"><p class="snap-label">EBITDA trend</p><p class="snap-value">-13% YoY (FY25)</p></div>
+    <div class="snap"><p class="snap-label">Ownership</p><p class="snap-value">Private · 25–26 employees</p></div>
+  </section>
+
+  <div class="body">
+
+    <!-- PART 1 -->
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">Three decades of operating history, a market moving its way</h2>
+      <p class="prose">Nav Bharati Chemicals Private Limited was incorporated on 4 July 2014 in Hyderabad, though the underlying brand has manufactured bleaching earth and bentonite products since 1993. It is led by directors Alok Nandkishore Bansal and Chakravarthy Kalyan Marisetty, on ₹1.1 crore of fully-paid capital, with a team of 25–26 people.</p>
+      <p class="prose">Revenue for the year ending March 2025 came in at <b>₹31.88 crore</b>, down 5% year on year, with EBITDA down 13% over the same period — margins have been under pressure for a few years running, echoing a steeper EBITDA decline (54.46%) in the last fully-detailed earlier snapshot (FY22). A headline "+621% profit CAGR" also appears in one source; because FY22's base was already a loss and FY25's actual net-profit figure is locked/undisclosed, that number is more likely a base-year artifact than a turnaround signal, and isn't read as one here — the real trend is worth confirming once fuller figures are available.</p>
+      <p class="prose">The company manufactures activated bleaching earth/Fuller's Earth, activated carbon, and bentonite powder/granules, serving edible and non-edible oil refining, agriculture (fertilizer/pesticide additives), aviation turbine fuel filtration, and pet-care applications — with export claims to Malaysia, Indonesia, Nigeria, Bangladesh and other markets. Its stated R&D wing works on new bentonite-based formulations, though no patent or DSIR recognition was found for it.</p>
+      <div class="flag"><b>Still open, not confirmed either way:</b> an active ISO, REACH, or DSIR registration; and the current status of a claimed Kosher (KLBD) certification, whose registry page could not be opened on two attempts. A separate check of these was made using an unverifiable source with no certificate numbers or registry links — it was rejected rather than reflected here.</div>
+    </section>
+
+    <!-- PART 2 (LOCKED) -->
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">A growing commodity market, run on cost, not certification</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">The activated bleaching earth market is <b>large and steadily growing.</b></p><p class="ev">Global market size estimates for 2024 range from ~$2.6B to ~$3.0B, growing at roughly 5.2-5.9% a year. Edible oil and fats applications account for over 76.9% of global revenue, and Asia-Pacific holds over 64.6% of the market.</p></li>
+        <li class="insight"><p class="point">India's own import pattern points to <b>future domestic refining demand.</b></p><p class="ev">India imported 16 million tonnes of edible oil in 2025, with 99.7% of palm-group volumes arriving in unrefined (crude) form — a large gap that, if domestic refining capacity grows to close it, pulls directly on this product category.</p></li>
+        <li class="insight"><p class="point">This is a <b>cost game, not a certification game.</b></p><p class="ev">Global majors (Clariant, Imerys, Oil-Dri, Musim Mas, Taiko) hold ~40-45% combined share; the rest is split among small-scale regional producers competing chiefly on cost-per-tonne and consistent grade quality — a different dynamic than the certification-gated segments researched elsewhere in this project.</p></li>
+      </ul>
+      <p class="reflect">A small player in a steadily growing, globally-dominated commodity-mineral market, where competing on cost — not certification — is the real game, and where its own numbers show it has been losing ground on exactly that question for several years running.</p>
+      <p class="src">Market data: QYResearch, Grand View Research, DataIntelo, Fortune Business Insights, SphericalInsights, DataBridge Market Research, Mordor Intelligence. Estimates vary by scope; ranges shown.</p>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">Three places worth a closer look, grounded in a real peer comparison and a real structural demand signal.</p>
+      <div class="opp"><p class="tag">Margin</p><h4>Learn from what's already working in the category</h4><p>Ashapura Perfoclay, a peer in the exact same product line, grew net profit ~65% year on year (₹29 Cr to ₹48 Cr) with EBITDA up 40% — real proof that stronger margins are achievable in this exact business. Worth studying what's different: scale, product mix, or cost structure, and borrowing whichever of those travels.</p><p class="oppsrc">Ashapura Perfoclay financials: Tofler, Tracxn. Nav Bharati financials: Tofler, TheCompanyCheck, Tracxn.</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Ride India's growing edible-oil refining gap</h4><p>India imported 16 million tonnes of edible oil in 2025, mostly unrefined — a structural signal pointing toward more domestic refining capacity ahead, which is exactly what consumes this product.</p><p class="oppsrc">Import/refining structure data: industry research.</p></div>
+      <div class="opp"><p class="tag">Margin</p><h4>Close out one open certification this quarter</h4><p>Kosher, ISO, and REACH status are all currently unresolved for this company — not confirmed active, not confirmed absent. Settling even one turns an open question into a sellable fact.</p><p class="oppsrc">Certification status: this research's own checks, all inconclusive.</p></div>
+    </section>
+
+    <!-- PART 4 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only the company's own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Get a full financial-statement read before the next conversation</h5><p>Pull the actual filed P&L (not just an aggregator's CAGR headline) to know the real profit trend — the "+621%" figure is very likely a low-base-year distortion.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Track import-refining announcements as a lead list</h5><p>Watch for new or expanding edible-oil refining capacity announcements in India, and reach out ahead of demand rather than waiting for it to arrive.</p></div>
+        <div class="hvt"><p class="tag">Margin</p><h5>Pick one certification and finish it</h5><p>Rather than three open, unresolved certification questions, resolve one and use it as a concrete, checkable claim.</p></div>
+      </div>
+    </section>
+
+    <!-- PART 5 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1) <span class="generictag">generic</span></span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below is the generic path an activated-bleaching-earth/bentonite manufacturer in this segment runs — the call covered consent only, so this is the segment's scaffold, not confirmed against this company's specific process.</p>
+        <div class="hrow">
+          <div class="hlabel">H5<span>Offers</span></div>
+          <div><p class="steps">identify buyer → quote against grade specification and price → win the order on <b>cost-per-tonne and reliability</b> → supply the product line</p><p class="hopp"><span class="k">Spotted at "cost-per-tonne"</span> this is exactly the axis where the peer comparison shows real headroom → learn from what's already working in the category.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H4<span>Capability</span></div>
+          <div><p class="steps">source raw clay/mineral inputs → process via acid or thermal activation → maintain in-house oil-testing lab for QC → pursue/maintain <b>certifications</b></p><p class="hopp"><span class="k">Spotted at "certifications"</span> all three checked in this profile are currently unresolved → close out one open certification this quarter.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H3<span>Capacity</span></div>
+          <div><p class="steps"><b>plan production</b> against buyer/seasonal demand → procure raw material → activate and grade the product → package and ship</p><p class="hopp"><span class="k">Spotted at "plan production"</span> India's growing crude-oil import gap is a demand signal that should inform this planning → ride India's growing edible-oil refining gap.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H2<span>Customer experience</span></div>
+          <div><p class="steps">onboard as an approved supplier → supply per buyer's order pattern → support quality queries via in-house lab → maintain the relationship for <b>repeat orders</b></p><p class="hopp"><span class="k">Spotted at "repeat orders"</span> what keeps a buyer coming back is exactly where the category's stronger performers pull ahead → learn from what's already working in the category.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H1<span>Orders</span></div>
+          <div><p class="steps"><b>demand arises</b> from oil-refining/agriculture/aviation-fuel consumption → purchase order placed → fulfil via owned or third-party transport → recurring reorder</p><p class="hopp"><span class="k">Spotted at "demand arises"</span> a structural refining-capacity gap in India is exactly this → ride India's growing edible-oil refining gap.</p></div>
+        </div>
+        <p class="hsrc">Steps: generic activated-bleaching-earth/bentonite manufacturing value chain, built from industry sourcing research — not confirmed against this company's actual internal process. Figures: company site, Tofler, TheCompanyCheck, Tracxn.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>Three decades of operating history sit inside a market that's only getting bigger. <span class="hi">The clearest next chapter isn't a new bet — it's closing a margin gap a peer in the same business has already shown is closeable.</span></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Nav Bharati Chemicals or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Identity and financials from MCA records via Tofler, TheCompanyCheck, and Tracxn; company facts self-reported (company website, industry directories); market data from QYResearch, Grand View Research, DataIntelo, Fortune Business Insights, SphericalInsights, DataBridge Market Research, Mordor Intelligence; peer financials (Ashapura Perfoclay) from Tofler and Tracxn. Opportunities are DeepThought's reading. One candidate source on certification status was checked and rejected as unverifiable.<br>
+    What an outside profile cannot see — the real FY25 net profit figure, actual certification status, and true cost structure versus larger peers — is what a closer engagement establishes.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

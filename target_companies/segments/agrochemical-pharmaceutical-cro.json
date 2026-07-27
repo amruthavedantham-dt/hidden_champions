@@ -1,0 +1,43 @@
+{
+  "segmentName": "Agrochemical & Pharmaceutical Contract Research (CRO)",
+  "market": {
+    "worldSizeUSD_B_range": "Global Agriculture CRO Services Market: $10.2-10.89B (2024) to $18.78B by 2029 (11.5%/yr) or $26.2B by 2034 (9.9%/yr) — two differing estimates. Crop Protection Chemicals segment (the largest downstream driver) captured >48.7% share of the Agriculture CRO market; overall crop-protection-chemicals market is $85.1-96.05B (2024).",
+    "cagrPctRange": [9.9, 11.5],
+    "exportGeographies": ["studies comply with regulatory requirements of USA, Brazil, Australia, Argentina, India"],
+    "globalCompetitors": ["not individually named at global scale — global agrochemical majors (BASF, Bayer, Syngenta) are CUSTOMERS outsourcing to CROs like this segment, not competitors"],
+    "domesticSlice": "not separately sized; India positioned as a favorable CRO/manufacturing destination as global majors outsource >70% of production/testing work to Europe, China or India"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Agrochemical registration dossiers require chemical/physical characterization per EC Methods, CIPAC Handbook, OECD Guidelines, and OPPTS series; pesticide residue data must follow OECD GLP guidelines and FAO crop-residue guidelines",
+    "Regulatory agencies hold the sponsor (not the CRO) ultimately accountable for submitted study data quality/integrity",
+    "Cost to discover a single new agrochemical active ingredient now exceeds $300 million, making full in-house R&D increasingly uneconomical for majors and pushing outsourcing to specialized CROs",
+    "COVID-19 and rising European costs accelerated India's positioning as a CRO/manufacturing destination"
+  ],
+  "adoptionStructure": {
+    "note": "Study-contract/work-order driven, awarded per registration dossier — not a repurchase-rate category, though a sponsor typically returns for subsequent dossiers if satisfied"
+  },
+  "peers": [
+    { "name": "Syngene International", "revenueCr": 3642, "fy": "FY2025", "ebitdaMarginPct": 30.6, "note": "offers acute toxicology packages per OECD/OPPTS guidelines for agrochemical clients alongside core pharma CRO work", "source": "businessupturn.com" },
+    { "name": "Veeda Clinical Research", "revenueCr": 621, "fy": "FY2025", "revenueCAGR1yrPct": 52, "note": "serves pharmaceutical, biopharmaceutical, agrochemical and industrial chemicals clients", "source": "Tracxn" }
+  ],
+  "customerValue": {
+    "drivers": ["need to reduce time-to-market (CRO partnerships can cut time-to-market by up to 2 years)", "need for specialized capabilities (advanced toxicology, multi-site field trials) without heavy in-house capex", "navigating rapidly changing/harmonized global regulatory guidelines requiring more extensive data packages"],
+    "strongestPredictor": "accreditation status (GLP/OECD compliance) combined with track record on regulatory audit defensibility",
+    "source": "agribusinessglobal.com"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer GLP/OECD-compliant toxicology, ecotoxicology, residue chemistry, physico-chemical, mutagenicity and environmental-fate studies", "compile regulatory dossiers for agrochemical/pharma registration"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain accredited laboratories (GLP, NABL/ISO 17025, OECD GLP)", "employ qualified scientific staff (M.Sc./Ph.D.)", "maintain CPCSEA-registered animal facilities and multi-country regulatory expertise"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate physical lab/field-trial infrastructure sized to study volume", "scale instrument throughput and staff headcount to turnaround commitments"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["ensure data defensibility under regulatory audit", "deliver on turnaround speed vs. time-to-market pressure", "maintain transparency/responsiveness during multi-year registration dossiers"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["study contracts/work orders awarded on accreditation status, track record, and cost vs. in-house or Western CRO alternatives", "execute against study timeline", "sponsor returns for subsequent dossiers if satisfied"] }
+  ],
+  "sources": [
+    "https://market.us/report/agriculture-cro-services-market/",
+    "https://www.mordorintelligence.com/industry-reports/agriculture-cro-services-market",
+    "https://www.agribusinessglobal.com/agrochemicals/the-heightened-importance-of-cros-for-agrochemical-companies/",
+    "https://www.businessupturn.com/business/corporates/syngene-q4-fy25-results-revenue-up-11-yoy-to-rs-1018-crore-profit-down-3-to-rs-183-crore/"
+  ]
+}

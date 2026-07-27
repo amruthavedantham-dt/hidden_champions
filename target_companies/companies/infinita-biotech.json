@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "infinita-biotech",
+    "series": "Hidden Champions of India",
+    "segmentRef": "industrial-enzymatic-solutions",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Private, CIN U24100GJ2015PTC084081 (from research, not in HVT row)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Infinita Biotech: a DSIR-recognized enzyme maker, in a market turning green — the margin hasn't caught up to the capability yet.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Vadodara enzyme formulator exporting to 55+ countries, growing profit fast off a thin margin base.", "tier": "company", "epistemic": "fact", "source": "company site; Tofler", "fields": ["whatTheyDo", "exportFootprint"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2015 (incorporated)", "tier": "company", "source": "Zaubacorp", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹59.9 Cr · FY25 (+14.5% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "PAT/EBITDA growth", "value": "+91% YoY (both)", "tier": "company", "source": "Tofler", "fields": ["financials.patGrowthPct.FY25"] },
+    { "label": "Net margin / ROCE", "value": "3.35% / 13.89%", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct", "financials.rocePct"] },
+    { "label": "Employees", "value": "93 (Aug 2025)", "tier": "company", "source": "Tracxn aggregation", "fields": ["employees"] },
+    { "label": "Export footprint", "value": "55+ countries claimed, 200+ products", "tier": "company", "source": "company site (self-claimed)", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability the margin hasn't caught up to",
+    "blocks": [
+      { "text": "Revenue was ₹59.9 Cr in FY25, up 14.5% year-on-year, but the more striking number is profit growth: both net profit and EBITDA grew about 91% YoY off a small base — net margin is still thin at 3.35%, though ROCE (13.89%) is more solid.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.patGrowthPct", "financials.netMarginPct", "financials.rocePct"] },
+      { "text": "It's a genuinely small, closely-held company — 93 employees as of August 2025, ₹6.25 lakh paid-up capital, directors Sonalben and Adarsh Alok Desai — with a real regulatory footprint for its size: DSIR-recognized R&D unit, ISO 9001:2008 certified, ZED Gold MSME certification.", "tier": "company", "epistemic": "fact", "source": "Tofler; Zaubacorp; infinitabiotech.com", "fields": ["certifications", "employees"] },
+      { "text": "It won India's National Startup Award (2022, Ministry of Commerce and Industry) and was runner-up for Most Innovative Company at ASSOCHAM's 9th MSME Excellence Awards (2023) — independent recognition, not just self-description.", "tier": "company", "epistemic": "fact", "source": "infinitabiotech.com", "fields": ["certifications"] },
+      { "text": "The company claims presence in 55+ countries with 200+ enzyme products across 17+ industrial applications, but the only independently trackable export figure — a formal trade-shipment record — shows just $1.20M in tracked turnover over a full year (Dec 2024-Nov 2025), which likely undercounts total exports but is a much smaller number than the 55-country claim implies on its own.", "tier": "company", "epistemic": "fact", "source": "company site (self-claimed) vs. exportgenius.in trade data", "fields": ["exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **mid-sized and growing steadily, with a wide estimate range.**", "evidence": "Global industrial enzymes: $6.4-8.4B (2024/25) to $8.2-12B by 2030, 4.3-7.3%/yr depending on source.", "tier": "segment", "epistemic": "fact", "source": "Precedence Research; GlobeNewswire aggregation", "fields": ["market.sizeRange"] },
+      { "point": "India's market is **smaller, faster-growing, and already concentrated.**", "evidence": "India enzymes: $440.5M (2023), 7.8%/yr; industrial enzymes are 54.7% of that; the top players already hold 75%+ share, meaning Infinita competes in a market where a handful of firms dominate.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research", "fields": ["market.domesticSlice"] },
+      { "point": "The closest domestic peer is **roughly ten times its size.**", "evidence": "Advanced Enzyme Technologies posted ₹637 Cr revenue (FY25) at 31% EBITDA margin and 10% ROE, present in 70+ countries — a scale-differentiated benchmark, not a direct peer, but it shows what margin looks like at scale in this category.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers[0]"] },
+      { "point": "The structural tailwind is **real and policy-backed.**", "evidence": "Enzymes are being positioned as sustainable substitutes for harsh industrial chemicals (textile bleaching, pulp/paper, biodegradable detergents); cold-water detergent adoption in North America/Europe and EU green-chemistry policy both directly favor enzyme-based processing.", "tier": "segment", "epistemic": "fact", "source": "industry press aggregation", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A small, independently-recognized, DSIR-backed enzyme maker growing profit fast off a thin margin, in a market a tenth of Advanced Enzyme's size is already navigating at 31% margin. The gap between the two is the whole opportunity.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Precedence Research, GlobeNewswire, Grand View Research. Peer data: screener.in (Advanced Enzyme Technologies). marketSharePct not computed — Infinita's revenue is too small relative to the market range to produce a meaningful percentage."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, visible in the gap between its export claim and its trackable trade data.",
+    "items": [
+      { "lever": "margin", "title": "Closing the gap to Advanced Enzyme's margin", "body": "Advanced Enzyme Technologies runs at 31% EBITDA margin at ~10x Infinita's scale. Infinita's net margin is 3.35% despite fast profit growth — worth asking how much of that gap is scale economics that capacity growth alone would close, versus pricing/mix questions independent of scale.", "source": "Advanced Enzyme figures: screener.in. Infinita figures: Tofler.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["financials.netMarginPct", "peers[0]"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Infinita's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Break down margin by product line", "body": "Before assuming the margin gap is purely a scale story, break EBITDA margin down across the 200+ product portfolio for one quarter, and see whether a handful of applications are already close to Advanced Enzyme's margin while others are dragging the average down.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an industrial enzyme manufacturer in this segment — a directory-depth pass, not yet confirmed against Infinita's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["assess application need (food/beverage/detergent/textile/etc.)", "select or custom-blend enzyme formulation", "package as powder/liquid", "position on application-specific performance"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["fermentation/formulation R&D (DSIR-recognized unit)", "develop custom blends per customer process requirement", "certify (ISO, Kosher/Halal where relevant)", "release to production"], "stepsTier": "segment", "spottedAt": "fermentation/formulation R&D (DSIR-recognized unit)", "spotted": { "text": "Company facts (DSIR recognition, ISO 9001, National Startup Award) confirm this step is real for Infinita, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["plan production against customer order volumes", "run dedicated powder/liquid production lines", "quality/potency-test each batch", "package & stock"], "stepsTier": "segment", "spottedAt": "plan production against customer order volumes", "spotted": { "text": "Spotted at \"plan production\": at 93 employees and ₹60 Cr revenue, capacity scale is the likely lever behind the margin gap to Advanced Enzyme → closing the margin gap.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["technical support for dosing/process integration", "respond to customer process-change requests", "maintain batch-to-batch consistency", "certification/compliance documentation support"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["customer production run creates recurring consumable demand", "purchase order placed against production volume", "fulfil & deliver", "reorder tied to customer's own manufacturing cadence"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/industrial-enzymatic-solutions.json) — no company-specific (A2/pursuit) operational intel was collected for Infinita this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A DSIR-recognized, award-winning enzyme maker growing profit at 91% a year off a margin a tenth of what the category leader gets. The gap itself is **the clearest number in this whole profile.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Infinita or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus infinitabiotech.com and Zaubacorp; market data from Precedence Research, GlobeNewswire and Grand View Research; peer figures from screener.in (Advanced Enzyme Technologies). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Zaubacorp", "infinitabiotech.com", "Precedence Research", "GlobeNewswire", "Grand View Research", "screener.in", "exportgenius.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics by product line, and real customer retention across the claimed 55-country footprint — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

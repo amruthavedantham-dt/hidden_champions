@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — GruBox</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#4a3a0e; --field-deep:#332708; --leaf:#c9922e; --sprout:#f0c368;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(51,39,8,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .flag{background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.3); border-left:3px solid var(--soil); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .flag b{color:var(--soil);}
+  .confirm{background:rgba(201,146,46,.12); border:1px solid rgba(201,146,46,.35); border-left:3px solid var(--leaf); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .confirm b{color:var(--field);}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(201,146,46,.08);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+  .generictag{display:inline-block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.1); border:1px solid rgba(138,90,43,.3); border-radius:3px; padding:2px 6px; margin-left:8px;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  .verifybanner{background:#e4f2d9; color:#2f4a1c; font-family:"Spline Sans Mono",monospace; font-size:11.5px; letter-spacing:.03em; text-align:center; padding:9px 16px; border-bottom:2px solid #7fae4f;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <div class="verifybanner">meta.verified: true — sources checked against Zauba Corp/Tofler/Tracxn/TechPluto and the analyst's own direct fetches + LinkedIn</div>
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">GruBox: real certifications, real clients, a decade in — but not the pioneer its own story tells.</h1>
+    <p class="subhead">A Gurugram vending-and-office-food startup with FSSAI-licensed kitchens, ISO-certified operations, and enterprise clients like American Express and KPMG — still sized like a ten-person team, in a category one much bigger rival already dominates.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">2016 (brand) · Gurugram</p></div>
+    <div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹3.29 Cr · FY24</p></div>
+    <div class="snap"><p class="snap-label">Employees</p><p class="snap-value">13 · Aug 2025</p></div>
+    <div class="snap"><p class="snap-label">Total funding</p><p class="snap-value">$1.26M · 5 rounds (last 2020)</p></div>
+    <div class="snap"><p class="snap-label">Certifications</p><p class="snap-value">ISO 9001:2015 & 14001:2015; FSSAI kitchens</p></div>
+    <div class="snap"><p class="snap-label">Competitive rank</p><p class="snap-value">11th of 22 tracked peers</p></div>
+  </section>
+
+  <div class="body">
+
+    <!-- PART 1 -->
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A real, small player whose growth hasn't matched its own story</h2>
+      <p class="prose">Revenue grew from ₹51 lakh (FY18) to ~₹2 crore (FY19) to <b>₹3.29 crore (FY24)</b>, with Tracxn's current live listing showing a ₹0-10 crore range for FY25 — roughly 65% total growth across five years (FY19-FY24). That's real but modest, sitting in real tension with the company's own "India's largest and fastest-growing smart vending network" language. As of August 2025, GruBox employs <b>13 people</b> — worth weighing directly against its claimed "200+ companies," "500+ vendor partners," "4M+ orders served," and "80+ corporate partnerships."</p>
+      <p class="prose">The legal entity, <b>My Phygital Cafe Private Limited</b> (CIN U52100DL2014PTC269122), was incorporated in Delhi in 2014; the GruBox brand itself launched in 2016 from Gurugram, founded by <b>Prerna Singh and Nishant Misra</b> — IIT Kanpur and ISB Hyderabad alumni. Misra is <b>Co-Founder & CEO</b> (confirmed directly against his LinkedIn profile).</p>
+      <div class="flag"><b>The core claim — "India's first ML-driven vending store" — does not survive a direct competitor check.</b> Two contemporaries were independently verified: <b>Vendiman</b>, founded in 2013, three years before GruBox, now at 550+ clients, 2,000+ machines, and $11.4M raised; and <b>Vendekin</b>, founded in 2016, the same year as GruBox, holding actual patents in the US, UK, EU, and India for its vending platform — a registry-backed IP claim GruBox itself does not have. No patent or trademark filing was found for GruBox despite site language implying IP protection; the only text found was generic Terms-of-Service boilerplate, which is not evidence of an actual filing.</div>
+      <div class="confirm"><b>What is real and confirmed:</b> ISO 9001:2015 (quality) and ISO 14001:2015 (environmental) certified operations, and FSSAI-licensed partner kitchens ("All meals are prepared in state-of-the-art, FSSAI-certified kitchens" — confirmed directly on a live GruBox page). Also real: enterprise client logos currently displayed on the company's own site, including American Express, KPMG, Sun Life, Aon, and Clifford.</div>
+      <p class="prose">Total funding is modest and has gone quiet: <b>$1.26M across 5 rounds</b>, all between 2018 and 2020 — seed ($235.9K, Jan 2018), pre-series (Oct 2018), and a ~₹15 crore bridge round (Oct 2020, Pravega Ventures + BEENEXT, plus a smaller contribution from angel investor Khushagra Sharma). No funding events were found after 2020, even as the company's own positioning has visibly expanded from vending-machines-first toward a much broader "full corporate food-tech" pitch (managed cafeterias, ERP, AI-driven ordering).</p>
+    </section>
+
+    <!-- PART 2 (LOCKED) -->
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">A modest, slow-growing category, reaching toward a much bigger one — with a dominant incumbent already in the way</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">GruBox's actual category — <b>vending machines</b> — is real but growing slowly.</p><p class="ev">India's vending-machine market: $728.2 million (2025) heading to $1,041.7 million by 2034, a 3.94% CAGR (IMARC Group).</p></li>
+        <li class="insight"><p class="point">The broader office/institutional food-services market GruBox is now reaching for is <b>much bigger and growing much faster.</b></p><p class="ev">India's whole food-services market: $80 billion (2024), growing at 10-11% CAGR through 2030 (RedSeer + NRAI, "The Big Bite") — nearly three times the growth rate of vending alone.</p></li>
+        <li class="insight"><p class="point">The category already has a <b>clear, dominant winner</b> — and it isn't GruBox.</p><p class="ev">HungerBox commands roughly 35% of India's organized institutional food-tech market and facilitates $250M+ in annual GMV across 25 cities. Against that, GruBox's ₹3.29 crore FY24 revenue is a rounding error.</p></li>
+        <li class="insight"><p class="point">GruBox was one of <b>several similarly-timed entrants</b>, not a lone pioneer.</p><p class="ev">Vendiman (2013), GruBox and Vendekin (both 2016) all launched within a few years of each other. The ones that separated from the pack did so on funding scale (Vendiman: $11.4M) or registry-backed IP (Vendekin: multi-jurisdiction patents) — not on being first.</p></li>
+      </ul>
+      <p class="reflect">GruBox is a real, certified, operating business with genuine enterprise clients — that part checks out. But it sits in a slow-growing category behind a dominant incumbent, reaching toward a much larger market via a food-tech pivot it hasn't yet meaningfully scaled into, thirteen employees and no new funding since 2020. The gap between that picture and the company's own "largest and fastest-growing" language is the most useful thing this profile surfaces.</p>
+      <p class="src">Market data: IMARC Group (vending machines), RedSeer/NRAI (food services). Peer data: Tracxn, Vendekin, SiliconIndia, BusinessToday/CXOToday-derived commentary on HungerBox.</p>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">Four places worth a closer look, each built on something GruBox already has or a gap already visible in its own story.</p>
+      <div class="opp"><p class="tag">Margin</p><h4>Reconcile the story with the numbers</h4><p>"India's first / largest / fastest-growing" sits uneasily next to a 13-person team and ₹3.29 crore revenue. A pitch built on what's actually verifiable — a decade-old, ISO/FSSAI-certified operator with real enterprise clients — may land more credibly than an unverifiable superlative a direct competitor check can undercut.</p><p class="oppsrc">Tracxn (employees, revenue); competitor verification (Vendekin, Vendiman).</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Chase the bigger market it's already reaching for</h4><p>GruBox's pivot from vending-only toward managed cafeterias, ERP, and deliveries reaches into the $80B, 10-11%-growing food-services market instead of the slower 3.94% vending-only category. Being explicit about which market it's actually competing in now — and resourcing accordingly — matters more as that pivot deepens.</p><p class="oppsrc">IMARC Group; RedSeer/NRAI.</p></div>
+      <div class="opp"><p class="tag">Margin</p><h4>Put the IP claim on the record</h4><p>If the proprietary AI/ML technology is real, an actual filed patent — like Vendekin's, in four jurisdictions — would convert an unverifiable marketing claim into a real, defensible asset against the category's dominant incumbent.</p><p class="oppsrc">Vendekin (comparator); IP India search (no GruBox filing found).</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Raise again, or be clear about why not</h4><p>No institutional funding has been found since the October 2020 bridge round. Either a more recent round exists and simply isn't public yet, or five years without new capital is itself a data point worth being direct about, especially given how much the company's positioning has expanded since then.</p><p class="oppsrc">Tracxn; TechPluto.</p></div>
+    </section>
+
+    <!-- PART 4 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only GruBox's own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>A/B test the pitch: superlative claim vs. verifiable credentials</h5><p>Run the same enterprise-sales pitch two ways — one leaning on "first/largest/fastest-growing," one leaning on ISO/FSSAI certification plus named clients like American Express and KPMG — and see which actually closes more corporate accounts.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Track managed-cafeteria revenue separately from vending revenue</h5><p>Split reporting between the original vending-machine line and the newer managed-cafeteria/ERP/delivery lines to see which is actually growing into the bigger food-services opportunity, rather than reporting one blended number.</p></div>
+        <div class="hvt"><p class="tag">Margin</p><h5>File a provisional patent on the core AI/ML claim</h5><p>If the queue-management, personalization, or supply-chain-prediction technology is genuinely novel, a provisional filing is a low-cost first step toward the kind of registry-backed asset a rival (Vendekin) already holds.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Test investor appetite with a small bridge ahead of a full round</h5><p>Given five years without disclosed funding, a small bridge round (similar in shape to the 2020 raise) would both extend runway and serve as a real-time signal of whether the current pivot is landing with investors.</p></div>
+      </div>
+    </section>
+
+    <!-- PART 5 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below is how a corporate vending/food-tech operator generally runs, matched wherever GruBox's own stated facts confirm a step; unconfirmed steps are marked as the segment's generic scaffold.</p>
+        <div class="hrow">
+          <div class="hlabel">H5<span>Offers</span></div>
+          <div><p class="steps">identify buyer (corporate facilities/HR team) → pitch machine/kiosk + catalogue + app → <b>win via price, footprint fit, and the managed-service promise</b> → install machine, kiosk, or delivery route</p><p class="hopp"><span class="k">Spotted at "win via"</span> the pitch currently leans on unverifiable superlatives rather than the verifiable credentials GruBox actually holds → reconcile the story with the numbers.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H4<span>Capability</span></div>
+          <div><p class="steps"><b>build/maintain app + inventory software (claimed AI/ML-driven)</b> → curate catalogue with vendor partners/dark kitchens → maintain machine hardware fleet → hold ISO 9001:2015 / 14001:2015 certified operations</p><p class="hopp"><span class="k">Spotted at "AI/ML-driven"</span> real marketing language, no filed patent behind it, unlike peer Vendekin → put the IP claim on the record.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H3<span>Capacity</span></div>
+          <div><p class="steps">plan restocking against per-machine demand → <b>source from vendor partners and FSSAI-licensed dark kitchens</b> → restock and maintain machines/kiosks → manage delivery logistics</p><p class="hopp"><span class="k">Spotted at "FSSAI-licensed"</span> a real, confirmed credential — the question is whether it's leveraged as the food-services pivot's trust foundation → chase the bigger market it's already reaching for.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H2<span>Customer experience</span></div>
+          <div><p class="steps">onboard client office → employee orders via app or machine → cashless transaction + fulfilment → support/restock cycle; <b>retain the corporate account</b> (e.g. American Express, KPMG, Sun Life, Aon)</p><p class="hopp"><span class="k">Spotted at "retain"</span> real named accounts exist, but the exact current client roster isn't consistent across the company's own site pages → reconcile the story with the numbers.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H1<span>Orders</span></div>
+          <div><p class="steps">demand arises from office snack/meal need → order placed (app or touchscreen) → fulfil (vend or deliver) → <b>recurring reorder as part of daily office routine</b> <span class="generictag">generic</span></p><p class="hopp"><span class="k">Spotted at "recurring reorder"</span> revenue has grown slowly across many years of recurring demand — the lever is more clients, which paused funding would accelerate → raise again, or be clear about why not.</p></div>
+        </div>
+        <p class="hsrc">Steps: generic corporate vending/food-tech value chain, matched against GruBox's own confirmed facts where available (company site, direct fetches, Tracxn); unconfirmed steps marked generic.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>The real asset here isn't the "first" story — GruBox isn't verifiably first, and a same-year rival already holds the patents it doesn't. <span class="hi">The real asset is a decade of actually running FSSAI- and ISO-certified operations for genuine enterprise clients</span>, in a market one much bigger rival dominates. That's a smaller, plainer story than GruBox tells about itself — but it's the one the evidence actually supports.</p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in GruBox or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Identity from Zauba Corp and Tofler; financials and competitive ranking from Tracxn; funding history from TechPluto; certifications and client logos confirmed directly on GruBox's own site; competitor verification from Vendekin's own site and SiliconIndia; market data from IMARC Group and RedSeer/NRAI. Opportunities are DeepThought's reading. Two supplied AI-generated analyses were independently checked and partly rejected during research.<br>
+    What an outside profile cannot see — true active-client count versus displayed logos, per-machine/per-account unit economics, and whether any funding has occurred since 2020 — is what a closer engagement establishes.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

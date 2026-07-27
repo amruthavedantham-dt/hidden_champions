@@ -1,0 +1,101 @@
+row,company_name,segment_ref,status,slug,note
+1,Spray Engineering Devices Limited,sugar-distillery-biofuel-equipment,done,spray-engineering-devices,batch 1
+2,GRACURE PHARMACEUTICALS LTD,pharmaceutical-formulations,done,gracure-pharmaceuticals,batch 1
+3,Eldorado Agritech Pvt. Ltd.,crop-seeds,done,eldorado-agritech,batch 1
+4,Natesan Synchrocones Pvt. Ltd.,transmission-synchro-rings,done,natesan-synchrocones,batch 1
+5,Garware Technical Fibres Ltd,nets-ropes-geosynthetics,done,garware-technical-fibres,batch 1
+6,Spaco Technologies (I) Pvt. Ltd.,carburettors-throttle-bodies,done,spaco-technologies,batch 1
+7,Mantra Softech (India) Pvt. Ltd.,biometric-identity-verification,done,mantra-softech,batch 1
+8,FREDUN PHARMACEUTICALS LTD,pharmaceutical-formulations,done,fredun-pharmaceuticals,batch 1
+9,JAISHIL SULPHUR & CHEMICAL INDUSTRIES,micronized-sulphur-zinc-formulations,done,jaishil-sulphur-chemical,batch 1
+10,"LITMUS ORGANICS PVT. LTD.,",,deferred,,missing sector/segment_ref/cin (Identity step never run)
+11,SUPRIYA LIFESCIENCE LTD.,active-pharmaceutical-ingredients,done,supriya-lifescience,batch 1
+12,TATVA CHINTAN PHARMA CHEM LIMITED,phase-transfer-catalysts,done,tatva-chintan-pharma-chem,batch 1
+13,SANDSTORM EQUIPMENT CO.,blasting-peening-systems,done,sandstorm-equipment-co,batch 1
+14,Infinita Biotech Pvt. Ltd.,industrial-enzymatic-solutions,done,infinita-biotech,batch 1
+15,Unisem Agritech Pvt. Ltd.,hybrid-crop-seeds,done,unisem-agritech,batch 1
+16,Metlok Pvt. Ltd.,engineering-adhesives-sealants,done,metlok,batch 1
+17,Nandani Medical Laboratories Pvt. Ltd.,pharmaceutical-formulations,done,nandani-medical-laboratories,batch 2
+18,Ador Powertron Ltd.,electrostatic-precipitators-tr-sets,done,ador-powertron,batch 2
+19,IP Rings Ltd.,piston-rings-cold-formed-transmission-products,done,ip-rings,batch 2
+20,Naprod Life Sciences Pvt. Ltd.,oncology-anesthesia-formulations,done,naprod-life-sciences,batch 2
+21,Mitra Industries Pvt. Ltd.,peritoneal-dialysis-systems,deferred,,zero pillar data (differentiation/moat/product_improvement/alignment/gap all blank)
+22,Krish Biotech Research Pvt. Ltd.,agrochemical-pharmaceutical-cro,done,krish-biotech-research,batch 2
+23,RV Lifesciences Ltd.,generic-finished-dosage-formulations,done,rv-lifesciences,batch 2
+24,Biophore India Pharmaceuticals Pvt. Ltd.,active-pharmaceutical-ingredients,done,biophore-india-pharmaceuticals,batch 2
+25,Themis Medicare Ltd.,injectable-formulations-apis,done,themis-medicare,batch 2
+26,Nico Orgo Marketing Pvt. Ltd.,nicotine-derivatives-api,done,nico-orgo-marketing,batch 2
+27,Stanford Laboratories Pvt. Ltd.,pharmaceutical-formulations,done,stanford-laboratories,batch 2
+28,HOYA Surgical Optics,intraocular-lenses-injectors,done,hoya-surgical-optics,batch 2
+29,Raghu Vamsi Group,aerospace-defense-components-uavs,done,raghu-vamsi-group,batch 2
+30,PTC Industries Limited,aerospace-industrial-titanium-castings,done,ptc-industries,batch 2
+31,GLINT COSMETICS PVT. LTD.,private-label-cosmetics-manufacturing,done,glint-cosmetics,batch 2
+32,SHR Lifestyles Pvt Ltd,women-ethnic-wear,done,shr-lifestyles,batch 2
+33,Goodwear Fashions Pvt. Ltd.,woven-knitted-non-woven-interlinings,pending,,
+34,Nexco Pharma,porcine-liver-extract-formulations,pending,,
+35,CHANDRA BHAGAT PHARMA PVT LTD,life-saving-pharmaceutical-formulations,pending,,
+36,HINDUSTAN PHARMACEUTICALS,herbal-extracts-medicines,pending,,
+37,LYKA BDR INTERNATIONAL LTD,life-saving-pharmaceutical-formulations,pending,,
+38,NGL FINE CHEM LTD,animal-human-apis-specialty-chemicals,pending,,
+39,OM BIOTEC,generic-pharmaceutical-formulations,pending,,
+40,THEMIS MEDICARE LTD,injectable-formulations-apis,duplicate,themis-medicare,"exact duplicate of row 25 (same CIN L24110GJ1969PLC001590), already profiled in batch 2"
+41,SANJAY TECHNO PRODUCTS PRIVATE LIMITED,automotive-injection-molded-plastic-components,pending,,
+42,DANISH POWER LIMITED,power-distribution-transformers-substations,pending,,
+43,TARANG ENGINEERING PVT LTD,transformer-radiators,pending,,
+44,R.V. INDUSTRIALS,high-precision-pump-shafts-flanges,pending,,
+45,MAGADH PRECISION EQUIPMENT LIMITED,cold-rolling-mill-equipment,pending,,
+46,MENON BEARINGS LTD,engine-bearings-bushes-thrust-washers,pending,,
+47,UNITED OVERSEAS BOLTS AND NUTS PRIVATE LIMITED,high-tensile-industrial-fasteners,pending,,
+48,RECAERO INDIA PVT. LTD.,aerospace-precision-machined-components,pending,,
+49,Vinod Medical Systems Pvt Ltd,hospital-furniture-xray-films,pending,,
+50,Welspun Living Limited,towels-bedding-rugs,pending,,
+51,GRACE BIO CARE PRIVATE LIMITED,bio-pesticides-plant-growth-regulators,pending,,
+52,NIKITA CHEMICAL INDUSTRIES,active-pharmaceutical-ingredients,pending,,
+53,RATNAKAR INDIA LTD,crop-protection-agrochemicals,pending,,
+54,CHENNAI METCO,metallography-petrography-equipment-consumables,pending,,
+55,HINDUSTAN HYDRAULICS PVT. LTD,press-brake-cnc-fiber-laser-machines,pending,,
+56,IMPERIAL PRODUCTS OF INDIA,coil-processing-forming-lines,pending,,
+57,INDOTECH INDUSTRIES (I) PVT. LTD,band-saw-machines,pending,,
+58,KAUSHICO MACHINE TOOLS PVT. LTD,mechanical-power-presses,pending,,
+59,MIVEN MAYFRAN CONVEYORS PVT. LTD,chip-coolant-scrap-conveyors,pending,,
+60,Devendra Autocom Private Limited,diesel-fuel-injection-parts,pending,,
+61,Magal Engineering Co. India Pvt. Ltd.,sheet-metal-forming-machines,pending,,
+62,Tripura Bio-Tech Ltd.,bio-pesticides-plant-growth-regulators,pending,,
+63,Ipower Batteries Pvt. Ltd.,lithium-ion-batteries,pending,,
+64,SURIN AUTOMOTIVE PRIVATE LIMITED,automotive-construction-equipment-components,pending,,
+65,Siddharth Foundry Pvt Ltd,pump-cast-components,pending,,
+66,ARMSTRONG INTERNATIONAL PVT. LTD.,steam-air-hot-water-solutions,pending,,
+67,ROYAL ENGITECH PVT. LTD.,precision-machined-components-assemblies,pending,,
+68,SAMARTH AIRCON PVT. LTD.,enclosures-cabinets-racks,pending,,
+69,SNL BEARINGS LIMITED,needle-roller-bearings,pending,,
+70,KALPA ELECTRIKAL PVT LTD,control-instrument-distribution-transformers,pending,,
+71,TRIVENI CONDUCTORS LTD,copper-winding-wires,pending,,
+72,UNIQUE PUNCH SYSTEMS PVT.LTD,precision-sheet-metal-components,pending,,
+73,MANGAL INDUSTRIES LIMITED,emerging-market-business-intelligence,pending,,
+74,LNM AUTO INDUSTRIES PVT. LTD.,precision-forged-machined-components,pending,,
+75,INSTAA PRECISION TOOLS LLP,cnc-punch-press-brake-tooling,pending,,
+76,MECH CHOICE TOOLS,hand-tools-oem-private-label,pending,,
+77,VISHAL TOOLS & FORGINGS PVT. LTD.,hand-tools-oem-private-label,pending,,
+78,SHANTHALA SPHEROCAST PRIVATE LIMITED,ductile-grey-iron-castings,pending,,
+79,CMR GREEN TECHNOLOGIES LIMITED,aluminium-zinc-alloy-recycling,pending,,
+80,Indo Smc Limited,frp-smc-products-junction-boxes,pending,,
+81,Kunal Plastics Pvt Ltd,multilayer-polyolefin-copolymer-films,pending,,
+82,ITL INDUSTRIES LTD,band-circular-sawing-machines,pending,,
+83,Armatech Associates,magnetic-non-magnetic-workholding-tools,pending,,
+84,Lathia Rubber Manufacturing Co. Pvt. Ltd.,industrial-rubber-rollers,pending,,
+85,SBEM Pvt. Ltd,level-flow-pressure-temperature-sensors,pending,,
+86,Mali Agri Tech Pvt. Ltd.,hybrid-crop-seeds,pending,,
+87,Vanaz Engineers Ltd.,gas-cylinder-valves-regulators,pending,,
+88,Pluss Advanced Technologies Pvt. Ltd.,phase-change-materials-specialty-polymers,pending,,
+89,Chem Process Systems Pvt. Ltd.,vacuum-ejectors-systems,pending,,
+90,Fortune Gourmet Specialities Pvt. LTD,gourmet-food-import-distribution,pending,,
+91,GRAND PRIX ENGINEERING PVT. LTD.,industrial-filters-strainers-separators,pending,,
+92,LYOPHILIZATION SYSTEMS INDIA PVT LTD.,lyophilization-freeze-drying-equipment,pending,,
+93,AUTOMAT IRRIGATION PRIVATE LIMITED,agricultural-irrigation-systems,pending,,
+94,POLYMAK PRIVATE LIMITED,abrasives-grinding-cutting-wheels,pending,,
+95,FLEXATHERM EXPANLLOW PVT. LTD.,expansion-bellows-hoses-dampers,pending,,
+96,SCHUF SPECIALITY VALVES INDIA PVT. LTD.,specialty-process-valves,pending,,
+97,TINITA ENGINEERING PRIVATE LIMITED,heat-exchangers-pressure-vessels,pending,,
+98,Aero Plast Limited,flexible-paper-packaging,pending,,
+99,C K Fabrics Private Limited,pp-spunbond-non-woven-fabric,pending,,
+100,Hp Composites Llp,frp-smc-composite-products,pending,,

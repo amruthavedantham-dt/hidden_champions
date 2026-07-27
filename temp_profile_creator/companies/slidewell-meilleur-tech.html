@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Slidewell Meilleur-Tech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#1c2b3a; --field-deep:#101c27; --leaf:#3b6b8a; --sprout:#7fa8c9;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .flag{background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.3); border-left:3px solid var(--soil); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .flag b{color:var(--soil);}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(59,107,138,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+  .generictag{display:inline-block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.1); border:1px solid rgba(138,90,43,.3); border-radius:3px; padding:2px 6px; margin-left:8px;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  .verifybanner{background:#fff2cc; color:#5c4400; font-family:"Spline Sans Mono",monospace; font-size:11.5px; letter-spacing:.03em; text-align:center; padding:9px 16px; border-bottom:2px solid #d9a441;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <div class="verifybanner">DRAFT — meta.verified: false — do not upload until the analyst has checked every source below</div>
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Slidewell Meilleur-Tech: a fabrication house quietly compounding margin across auto and power.</h1>
+    <p class="subhead">A Nashik OEM component fabricator in business since 1988, where profit is growing nearly six times faster than revenue.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Operating since</p><p class="snap-value">1988 · Nashik</p></div>
+    <div class="snap"><p class="snap-label">Incorporated</p><p class="snap-value">2011 (Pvt Ltd)</p></div>
+    <div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹150–200 Cr · FY24</p></div>
+    <div class="snap"><p class="snap-label">Revenue growth</p><p class="snap-value">+16.2% YoY</p></div>
+    <div class="snap"><p class="snap-label">Profit growth</p><p class="snap-value">+91.7% YoY</p></div>
+    <div class="snap"><p class="snap-label">Return on equity</p><p class="snap-value">8.78%</p></div>
+  </section>
+
+  <div class="body">
+
+    <!-- PART 1 -->
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A margin story, ahead of a capability story</h2>
+      <p class="prose">Revenue grew <b>16.2% year on year</b> to a ₹150–200 crore band in FY24 — but profit grew far faster, up <b>91.7%</b>, with EBITDA up 50.5%. Profit is compounding roughly six times faster than the top line: real evidence of margin expansion inside an existing revenue base, not just growth.</p>
+      <p class="prose">Return on equity reached 8.78% and net profit margin 3.48%, on a small, unlisted balance sheet (₹6.4 crore paid-up against ₹10 crore authorized capital) with clean leverage — debt-to-equity of 0.09.</p>
+      <p class="prose">In business since 1988 and incorporated as a private limited entity in 2011, the company fabricates out of its Nashik base — window assemblies, vacuum circuit breaker panels, and vehicle-accessory components — for named customers spanning automotive, power, and rail-adjacent OEMs: Mahindra &amp; Mahindra, ABB, Siemens India, JCB India, Crompton Greaves, and T I Cycles of India.</p>
+      <div class="flag"><b>Confirmed via IAF CertSearch:</b> the company's ISO&nbsp;9001:2015 certificate (QM&nbsp;01&nbsp;00793/01), covering both its Nashik plants, is currently <b>EXPIRED</b> (a renewal may exist under a different certificate number, not yet located). <b>Still not confirmed:</b> no patent or DSIR-recognized R&amp;D unit was found, its claimed Power Grid Corporation of India (PGCIL) vendor approval has no independent confirmation and was not raised on the company's own call, and its IATF&nbsp;16949 (automotive) certification status has not yet been checked.</div>
+    </section>
+
+    <!-- PART 2 (LOCKED) -->
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">Two growing markets, one shared bar</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">The auto-component field it sits in is <b>large and compounding fast.</b></p><p class="ev">India's auto-component industry turned over ₹7.6 lakh crore (~$85.9B) in FY2025-26, up 12.7% year on year, and has more than doubled in five years (~10.7–17% CAGR depending on period/source).</p></li>
+        <li class="insight"><p class="point">The power-equipment side it also serves is smaller but <b>policy-backed.</b></p><p class="ev">India's switchgear market is estimated at $5.4–$13.8B depending on scope, growing ~6–9%/yr, inside a broader T&amp;D equipment market headed toward $33.7B by 2030 — backed by ~₹9.1 lakh crore (~$109B) of planned transmission capex by FY32 and the government's RDSS grid-upgrade scheme.</p></li>
+        <li class="insight"><p class="point">Both OEM buyers are converging on the same bar: <b>certification, not price.</b></p><p class="ev">IATF 16949 is described as the minimum standard to supply major OEMs (Maruti Suzuki, Tata Motors, Hyundai, Mahindra), and evaluators increasingly weight process control — SPC, automated inspection, full traceability — over unit price. This is exactly the bar Slidewell's (unconfirmed-current) certifications would need to clear.</p></li>
+      </ul>
+      <p class="reflect">A diversified fabricator sitting across two growing, certification-gated markets — India's compounding auto-component base and a policy-funded T&D buildout — where the real open question is not demand, but whether its own qualifications are current enough to keep clearing the bar its customers are raising.</p>
+      <p class="src">Market data: ACMA, IBEF, IMARC, Grand View Research, 6Wresearch, MarketsAndData. Estimates vary by scope and source; ranges shown.</p>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">Three places worth a closer look, each built on something already visible in the numbers or the market.</p>
+      <div class="opp"><p class="tag">Margin</p><h4>Renew the lapsed ISO 9001 certificate</h4><p>IAF CertSearch confirms the ISO 9001:2015 certificate covering both Nashik plants (QM 01 00793/01) is currently expired — a renewal may exist under a new number but hasn't been located yet. Closing this out is inexpensive next to the OEM-eligibility risk of an active customer audit finding it lapsed.</p><p class="oppsrc">IAF CertSearch, certificate QM 01 00793/01 (confirmed expired, checked 2026-07-18).</p></div>
+      <div class="opp"><p class="tag">Margin</p><h4>Price the qualification, not just the part</h4><p>Profit growth (91.7%) already outpaced revenue growth (16.2%) — real margin expansion is underway. The higher-certification power/T&D work plausibly carries better economics than commodity auto/rail fabrication; worth testing whether mix, not just cost control, is driving the recent margin gain.</p><p class="oppsrc">Financials: Tofler. Segment margin comparison: DeepThought's reading, unverified.</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>One blue-chip roster, two growing markets</h4><p>The same fabricator already supplies an auto/rail OEM base (Mahindra &amp; Mahindra, T I Cycles) and a power-equipment base (ABB, Siemens, Crompton Greaves) — a natural bridge to lean harder into whichever market's capex cycle is moving faster in a given year.</p><p class="oppsrc">Customer names: company/directory listings. Market cycles: ACMA; Grand View Research.</p></div>
+    </section>
+
+    <!-- PART 4 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only Slidewell's own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Confirm the ISO 9001 renewal and IATF 16949 status</h5><p>The ISO 9001:2015 certificate is confirmed expired — find out if a renewal already exists under a different number, and separately check IATF 16949 (automotive) status on the IATF Customer Portal. Also worth settling PGCIL vendor-approval status directly with the company, since it never came up on the call.</p></div>
+        <div class="hvt"><p class="tag">Margin</p><h5>Break out margin by segment for one quarter</h5><p>Tag job-costing by auto vs. power/T&D work for a single quarter and see whether the recent EBITDA jump is genuinely a power-segment mix effect or a company-wide cost change.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Pick the faster-moving segment for the next sales push</h5><p>Compare order inflow growth, auto vs. power, over the last two quarters, and shift business-development effort toward whichever is actually accelerating right now.</p></div>
+      </div>
+    </section>
+
+    <!-- PART 5 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1) <span class="generictag">generic</span></span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below is the generic path an OEM fabrication vendor in this segment runs — the call with Slidewell covered consent only, so this is the segment's scaffold, not confirmed against their specific process.</p>
+        <div class="hrow">
+          <div class="hlabel">H5<span>Offers</span></div>
+          <div><p class="steps">OEM issues a technical drawing/spec → quote against capability + <b>current certification</b> → win the order via a qualification audit → deliver the customized fabricated assembly</p><p class="hopp"><span class="k">Spotted at "current certification"</span> pricing implicitly bundles auto and power work at similar rates → price the qualification, not just the part.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H4<span>Capability</span></div>
+          <div><p class="steps">maintain <b>certified quality systems</b> (ISO/IATF) → operate CNC, fabrication, painting and electrical-assembly lines → pass customer/registry audits → sustain in-house design-support capability</p><p class="hopp"><span class="k">Spotted at "certified quality systems"</span> the exact fact this profile could not confirm as current → recertify to the current standard.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H3<span>Capacity</span></div>
+          <div><p class="steps"><b>plan production</b> against OEM order forecasts → procure raw material → fabricate, assemble, paint, and test → package and ship</p><p class="hopp"><span class="k">Spotted at "plan production"</span> forecasting isn't broken out by which market is accelerating → break out margin by segment.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H2<span>Customer experience</span></div>
+          <div><p class="steps">onboard as an approved vendor → supply per OEM production schedule → handle quality complaints and warranty → maintain approval status via <b>periodic re-audit</b></p><p class="hopp"><span class="k">Spotted at "re-audit"</span> the same certification-currency question sits here too → recertify to the current standard.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H1<span>Orders</span></div>
+          <div><p class="steps"><b>demand arises</b> from vehicle or grid capex cycles → PO issued against an annual rate contract → fulfil and invoice → recurring reorder tied to the OEM's own volumes</p><p class="hopp"><span class="k">Spotted at "demand arises"</span> one vendor sitting across two differently-paced capex cycles → one blue-chip roster, two growing markets.</p></div>
+        </div>
+        <p class="hsrc">Steps: generic OEM-fabrication value chain, built from industry sourcing/certification research — not confirmed against Slidewell's actual internal process. Figures: company/directory listings, Tofler.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>The certification question is small to answer and large in consequence. Slidewell's growth and margin trend are real and sourced — whether its qualifications are current enough to keep clearing its customers' rising bar is <span class="hi">the one fact standing between a good quarter and a durable one.</span></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Slidewell or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Identity and financials from MCA filings via Tofler/ZaubaCorp; company facts self-reported (company website, IndiaMART, ExportersIndia) and not independently confirmed for two flagged claims (PGCIL approval, current certification status); market data from ACMA, IBEF, IMARC, Grand View Research, 6Wresearch. Opportunities are DeepThought's reading.<br>
+    What an outside profile cannot see — current certification/audit status, real segment-level margins, and the true health of individual OEM relationships — is what a closer engagement establishes.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

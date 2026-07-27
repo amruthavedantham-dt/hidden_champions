@@ -1,0 +1,54 @@
+{
+  "segmentName": "Smart metering / AMI & AMISP (India)",
+  "segments": [
+    {
+      "key": "smart-metering-amisp",
+      "nature": "differentiated-within-policy-driven-buildout",
+      "market": {
+        "indiaSizeUSD_M_2025": 297.9,
+        "indiaSizeUSD_M_2034": 3605.0,
+        "cagrPct_range": [30.96, 34.1],
+        "structuralNote": "Government's RDSS (Revamped Distribution Sector Scheme) is the policy driver; trade press frames this as a '₹2 lakh crore opportunity' / '₹1.3 lakh crore AMI revolution' behind a 25-crore-meter installation push nationally.",
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "figures are India-specific; policy (RDSS) driven, not an export story for the India entity"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "The AMISP (Advanced Metering Infrastructure Service Provider) model is annuity-like: providers collect recurring monthly fees per meter for the lifetime of the deployment, with contracts often spanning a decade — a structurally different revenue pattern from a one-time equipment sale.",
+    "India's smart-meter installation push targets roughly 25 crore (250 million) meters nationally, under the RDSS scheme."
+  ],
+  "adoptionStructure": {
+    "note": "Demand is driven by state utility tenders under RDSS, awarded via the DBFOOT (Design-Build-Finance-Own-Operate-Transfer) model — a government/utility-tender-driven market, not consumer-facing demand."
+  },
+  "peers": [
+    { "name": "Genus Power Infrastructures", "founded": 1992, "note": "The dominant incumbent: 80M+ meters deployed lifetime, an executable order book of ~₹27,217 Cr covering ~2.75 crore smart meters (2.5 crore already supplied), commanding ~45% market share of installed units. Operates as an AMISP under the DBFOOT model." },
+    { "name": "HPL Electric & Power", "founded": 1992, "orderBookCr": 3100, "note": "Order book ~₹3,100 Cr, over 99% from smart metering projects." },
+    { "name": "Secure Meters Ltd", "note": "Specializes in RF mesh/NB-IoT technology; operates as an AMISP in Madhya Pradesh and other states." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Winning state utility tenders under RDSS — the primary demand-generation mechanism.",
+      "AMISP financing/operational capability (DBFOOT model) — providers effectively finance and operate the metering infrastructure, not just sell hardware.",
+      "Technology fit (RF mesh, NB-IoT, prepayment, group metering) for the specific utility's grid characteristics."
+    ],
+    "strongestPredictor": "Order-book size and tender win-rate under RDSS — the segment's real scoreboard, led decisively by Genus Power's ~45% installed-unit share."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify state utility tender under RDSS", "bid using DBFOOT financing model", "win the tender", "supply and deploy smart meters"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["design/manufacture meters (hardware + firmware)", "operate AMISP financing and data-management platforms", "maintain field service and O&M capability", "integrate with utility billing systems"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against awarded tender volumes", "source components", "manufacture and test meters", "install and commission at scale"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard as the utility's AMISP", "operate/maintain meters over the contract term (often a decade)", "collect recurring monthly per-meter fees", "handle service/maintenance requests"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from state RDSS rollout schedules", "tender bid submitted", "win and contract signed", "recurring revenue over the multi-year AMISP term"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "IMARC Group, Astute Analytica, TechSci Research (India smart meter/AMI market sizing)",
+    "CIOnLabs, NES India (RDSS policy context, ₹ lakh-crore opportunity framing)",
+    "Genus Power Infrastructures' own site, TradeBrains (peer order books/market share)"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "spaco-technologies",
+    "series": "Hidden Champions of India",
+    "segmentRef": "carburettors-throttle-bodies",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Private, CIN U50100MH1970PTC014595."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Spaco Technologies: India's carburettor pioneer, pivoting into a market that's leaving carburettors behind.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Pune-founded, debt-free manufacturer growing revenue 34% a year, already diversifying into throttle bodies and non-carburettor components as EFI and EVs reshape its core product.", "tier": "company", "epistemic": "fact", "source": "thecompanycheck.com; indiamart.com", "fields": ["differentiation", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1970 (ops began 1971, Chinchwad)", "tier": "company", "source": "thecompanycheck.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹127.1 Cr · FY24-25 (+34% YoY)", "tier": "company", "source": "thecompanycheck.com", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "Net margin / ROE", "value": "5.23% / 5.34%", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct", "financials.roePct"] },
+    { "label": "Debt", "value": "Zero (debt-to-equity 0.0)", "tier": "company", "source": "Tofler", "fields": ["financials.debtToEquity"] },
+    { "label": "R&D", "value": "DSIR-recognized in-house unit (registry-confirmed)", "tier": "company", "source": "HVT row (govt PDF)", "fields": ["product_improvement"] },
+    { "label": "Output", "value": "2.5M+ carburettors/year", "tier": "company", "source": "indiamart.com (self-claimed)", "fields": ["products"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability the market is moving away from — and toward — at once",
+    "blocks": [
+      { "text": "Revenue grew 34% to ₹127.1 Cr, with a 5.23% net margin, 5.34% ROE and zero net debt — modest profitability, but real growth on a debt-free balance sheet.", "tier": "company", "epistemic": "fact", "source": "thecompanycheck.com; Tofler", "fields": ["financials.revenueCr", "financials.netMarginPct", "financials.roePct"] },
+      { "text": "It calls itself the pioneer of 2 & 3-wheeler carburettors in India, manufacturing over 2.5 million units a year for OEM customers including Bajaj Auto, Hero Motors, TVS Motors and Kinetic — a self-claimed differentiation flagged `needs_verify: yes` in the HVT sheet.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); indiamart.com", "fields": ["differentiation"] },
+      { "text": "Its DSIR-recognized R&D status is the strongest-credibility fact in this profile: it's `registry-confirmed`, sourced directly to a government PDF listing, not a company claim — one of only two companies in this entire batch of 15 with that credibility tier (the other being Garware).", "tier": "company", "epistemic": "fact", "source": "cdnbbsr.s3waas.gov.in (government registry PDF)", "fields": ["product_improvement"] },
+      { "text": "It has already diversified beyond carburettors into throttle bodies, plus non-carburettor components (alternator/starter motor covers and brackets, shock-absorber canisters/brackets, master cylinder pistons, brake caliper pistons) — a real hedge against the industry-wide carburettor-to-fuel-injection/EV transition, though no specific dated 2024-2025 product launch was confirmed in this pass.", "tier": "company", "epistemic": "fact", "source": "indiamart.com (self-claimed)", "fields": ["products"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The **core carburettor market is structurally shrinking as a share of the parent category**, even where the parent category is growing fast.", "evidence": "India's overall auto components market is projected to grow ~14.8%/yr (2025-2030) — far faster than the carburettor sub-segment's own 3.8-6.5%/yr range, meaning carburettors are a shrinking slice of a growing pie.", "tier": "segment", "epistemic": "fact", "source": "Reports and Data; India auto component market projections (HVT row)", "fields": ["market.sizeRange", "structureFacts"] },
+      { "point": "The **throttle body line it's diversifying into is exactly where the growth is.**", "evidence": "Electronic throttle bodies specifically are growing at ~8.2%/yr, more than double the carburettor category's rate — directly reflecting the BS-VI/EFI transition.", "tier": "segment", "epistemic": "fact", "source": "Cognitive Market Research", "fields": ["subSegments"] },
+      { "point": "The closest listed peer shows **what happens to a company that doesn't diversify fast enough.**", "evidence": "UCAL Limited, a direct carburettor/fuel-systems peer with a Mikuni JV, has swung into consolidated net losses (₹13.15 Cr in Q4 FY26) with ROE turning negative (~-7.15%) — a cautionary comparable that makes Spaco's own modest-but-positive, debt-free numbers look comparatively disciplined.", "tier": "segment", "epistemic": "fact", "source": "marketsmojo.com", "fields": ["peers[0]"] },
+      { "point": "India's two-wheeler market alone still consumes **~8 million carburettors a year** — the largest single-country base globally, meaning the core business isn't disappearing overnight even as it shrinks in relative share.", "evidence": "", "tier": "segment", "epistemic": "fact", "source": "market aggregation", "fields": ["market.domesticSlice"] }
+    ],
+    "reflect": { "text": "A debt-free, government-registry-confirmed R&D shop growing 34% a year in a category the industry is structurally leaving behind — while its closest listed peer shows what happens if that transition isn't managed. Spaco's own diversification is already underway; the question is pace.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Reports and Data, Cognitive Market Research, Market Research Future. Peer data: UCAL Limited via screener.in/marketsmojo.com."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Expanding direct exports beyond the initial venture", "body": "The HVT sheet's own gap research names this directly: the company has already ventured into direct exports across 17 countries (Bangladesh to the USA), but the research flags this as an early-stage move with room to expand and diversify further.", "source": "HVT gap research (superautomats.co.in).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Spaco's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Track throttle-body revenue as its own line", "body": "Report throttle-body and other non-carburettor component revenue separately from the core carburettor business for a few quarters, to see the diversification's actual pace against the segment's 8.2%/yr growth rate before committing further R&D budget.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a carburettor/throttle-body manufacturer in this segment — a directory-depth pass, not yet confirmed against Spaco's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["precision fuel-metering components (carburettors)", "diversify into throttle bodies/EFI-adjacent parts", "diversify further into adjacent brake/suspension precision parts", "position on machining precision + emissions compliance"], "stepsTier": "segment", "spottedAt": "diversify into throttle bodies/EFI-adjacent parts", "spotted": { "text": "Company facts (throttle bodies, non-carburettor components already in the product range) confirm this step is real and active for Spaco, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house tooling and die-casting/precision-machining engineering", "maintain IATF 16949/ISO 14001 quality systems", "operate calibration and flow-testing labs", "grow R&D emphasis on transitioning mix toward electronic throttle bodies"], "stepsTier": "segment", "spottedAt": "operate calibration and flow-testing labs", "spotted": { "text": "Company facts (registry-confirmed DSIR R&D unit) confirm this step is real and independently verified for Spaco, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["multi-plant precision casting, machining and assembly lines", "calibrate for millions of units/year", "dedicated testing/QA per production line", "rebalance capacity toward non-carburettor lines as demand shifts"], "stepsTier": "segment", "spottedAt": "calibrate for millions of units/year", "spotted": { "text": "Company facts (2.5M+ carburettors/year, plants in Pune and Gujarat) confirm this step is real for Spaco, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["OEM part-approval process (PPAP-style) with two/three-wheeler and stationary-engine OEMs", "maintain embedded-supplier relationships with major domestic OEMs", "manage parallel aftermarket/export distributor channel", "support product-mix transition conversations with OEMs"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["OEM production schedules under annual/multi-year supply agreements (JIT delivery)", "distributor/stockist purchase orders for aftermarket/export", "fulfil & deliver", "volumes structurally pressured by fuel-injection/EV shift, requiring mix rebalancing toward throttle bodies"], "stepsTier": "segment", "spottedAt": "distributor/stockist purchase orders for aftermarket/export", "spotted": { "text": "Spotted at \"distributor/stockist purchase orders\": direct export venture already started but flagged as early-stage → expanding direct exports.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/carburettors-throttle-bodies.json) — no company-specific (A2/pursuit) operational intel was collected for Spaco this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Growing, debt-free, and already diversifying out of a shrinking core product — with the one certification in this batch that's independently government-confirmed, not self-claimed. **The pivot is real; the pace is the open question.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Spaco or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from thecompanycheck.com and Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed — product_improvement is registry-confirmed via a government PDF, not self-claimed) plus indiamart.com; market data from Reports and Data, Cognitive Market Research and Market Research Future; peer figures from screener.in/marketsmojo.com (UCAL Limited). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["thecompanycheck.com", "Tofler", "cdnbbsr.s3waas.gov.in", "indiamart.com", "Reports and Data", "Cognitive Market Research", "Market Research Future", "marketsmojo.com", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — throttle-body-specific unit economics, and true customer retention across the Bajaj/Hero/TVS OEM relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

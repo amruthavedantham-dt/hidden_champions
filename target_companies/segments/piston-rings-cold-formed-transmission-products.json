@@ -1,0 +1,42 @@
+{
+  "segmentName": "Automotive Piston Rings & Cold-Formed Transmission Products",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary widely by scope ($2.3-4.6B depending on whether industrial/marine segments are included), CAGR 3.8-5.9%/yr through 2030-2033. Aftermarket specifically: ~$3.8B by 2031 at 5.1%/yr, now >50% of total piston ring sales.",
+    "cagrPctRange": [3.8, 5.9],
+    "exportGeographies": ["not confirmed for the specific companies in this segment — general OEM-linked export via Japanese/global technical collaborations (e.g. Nippon Piston Ring)"],
+    "globalCompetitors": ["not individually named — see peers[] for listed Indian comparables"],
+    "domesticSlice": "not separately sized"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "EV adoption is a genuine long-term headwind — EVs eliminate piston-ring demand outright, estimated to have already reduced potential unit demand by 300 million units in 2023",
+    "Mitigants: ICE vehicles are projected to remain the majority of the global fleet for 10+ years; hybrids still need piston rings (hybrid-compatible ring production +18%); the large in-operation ICE parc sustains aftermarket demand largely independent of new-vehicle sales cycles"
+  ],
+  "adoptionStructure": {
+    "note": "OEM production-schedule driven for the OEM channel; a large, cycle-independent aftermarket replacement stream tied to the existing ICE vehicle parc provides a secondary, more resilient demand base"
+  },
+  "peers": [
+    { "name": "Shriram Pistons & Rings Ltd", "revenueCr": 4571.3, "fy": "FY2026", "patCr": 561.4, "netMarginPct": 14.15, "roePct": 18.6, "note": "much larger, more diversified than a pure piston-ring/transmission-component peer", "source": "whalesbook.com; alphastreet.com" },
+    { "name": "Menon Pistons Ltd", "revenueCr": 304, "fy": "TTM", "patCr": 25.6, "roePct": 14.86, "note": "closer in scale/product focus to a mid-sized piston-ring/transmission-component maker", "source": "screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["OEM engine-platform qualification/design-in status", "compliance with tightening emission norms (e.g. BS VI) requiring low-friction/low-oil-consumption ring designs", "durability/surface-coating technology"],
+    "strongestPredictor": "not established from available research — inferred from company positioning, not directly sourced",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer piston-ring grades/coatings (high-carbon/high-alloy steel, nodular iron)", "offer adjacent cold-formed transmission components (gears, pinions, synchro-rings)", "serve both OEM engine platforms and aftermarket"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["metallurgical and surface-coating R&D (chrome/moly coatings, low-friction designs)", "precision cold-forming/forging expertise for tight tolerances", "maintain technical collaboration/licensing with global technology leaders"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate dedicated piston-ring and precision-forging manufacturing divisions", "size to OEM platform volumes plus aftermarket demand"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["undergo OEM design-in cycles requiring long qualification/validation lead times", "maintain credibility via technology-partner endorsement", "support aftermarket distributor relationships"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["OEM engine-program production schedules drive one order stream", "large, cycle-independent aftermarket replacement stream from the existing ICE parc drives the other", "fulfil and deliver", "reorder on next platform cycle or replacement need"] }
+  ],
+  "sources": [
+    "https://www.kingsresearch.com/piston-rings-market-83",
+    "https://www.fortunebusinessinsights.com/automotive-piston-ring-market-105493",
+    "https://www.openpr.com/news/4060801/piston-rings-aftermarket-to-reach-us-3-8-bn-by-2031-growing-at",
+    "https://www.futuremarketinsights.com/articles/ice-hybrid-and-ev-transition-in-connecting-rods-how-long-will-demand-remain-resilient",
+    "https://www.screener.in/company/MENNPIS/consolidated/"
+  ]
+}

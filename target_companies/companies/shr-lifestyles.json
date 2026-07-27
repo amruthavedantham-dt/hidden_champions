@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "shr-lifestyles",
+    "series": "Hidden Champions of India",
+    "segmentRef": "women-ethnic-wear",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Private, CIN U19200DL2011PTC224111. Financial figures show a real internal inconsistency — see p1_engine and sources.md."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "SHR Lifestyles (Shree): a deep-tech bet on large-format retail, funded and already underway.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A homegrown women's ethnic-wear brand backed by $11.5M in funding, betting on a new large-format store concept to reach ₹1,000 crore by 2031.", "tier": "company", "epistemic": "fact", "source": "pixr8.com; bwretailworld.com", "fields": ["recentMoves", "gap_activation_path"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2011 (entity) / brand ~2009-2010", "tier": "company", "source": "Tracxn; yourstory.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹78.2 Cr FY25 (Tracxn) vs. ₹150 Cr self-stated — disputed", "tier": "company", "source": "Tracxn vs. bwretailworld.com", "fields": ["financials.revenueCr"] },
+    { "label": "Funding", "value": "$11.5M Series A (2019), Alpha Capital Advisors", "tier": "company", "source": "pixr8.com", "fields": ["recentMoves"] },
+    { "label": "Retail footprint", "value": "~130 outlets, expanding to 300-400", "tier": "company", "source": "bwretailworld.com", "fields": ["gap_activation_path"] },
+    { "label": "Revenue target", "value": "₹900-1,000 Cr by 2030-31", "tier": "company", "source": "pulse.d2cinsider.com", "fields": ["recentMoves"] },
+    { "label": "International presence", "value": "Dubai, Abu Dhabi, Riyadh, Sharjah", "tier": "company", "source": "bwretailworld.com", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A deep-tech bet on the next curve — funded and already in motion",
+    "blocks": [
+      { "text": "The company's own financial figures don't cleanly resolve: Tracxn shows FY24-25 revenue in a ₹50-100 Cr band (₹78.2 Cr specifically), while press coverage cites a current revenue of ₹150 Cr as the base for its ₹900 Cr-by-2030 growth target — a real, unreconciled gap presented here as-is rather than picked between. Tracxn's own EBITDA (₹84.27 Cr) and PAT (₹68.55 Cr) figures for the same period look internally inconsistent against its own ₹78.2 Cr revenue figure — margins that high on that revenue base aren't plausible for a retail apparel business, and are flagged as a likely data-extraction issue rather than used as fact.", "tier": "company", "epistemic": "fact", "source": "Tracxn (flagged as internally inconsistent); bwretailworld.com", "fields": ["financials.revenueCr"] },
+      { "text": "What's clearer: it raised $11.5 million in a Series A round in 2019 from Alpha Capital Advisors — real institutional capital behind a homegrown brand that began as an e-commerce-first business around 2009-2010.", "tier": "company", "epistemic": "fact", "source": "pixr8.com", "fields": ["recentMoves"] },
+      { "text": "It's now betting that capital on a new large-format retail concept, 'Beyond Special' (5,000-6,000 sq ft stores, ~₹5 Cr/store/year target, flagship stores like Lajpat Nagar targeted at ~₹10 Cr/year), scaling its network from ~130 exclusive brand outlets today toward 300-400 over 3-5 years, including 25-30 Beyond Special flagships.", "tier": "company", "epistemic": "fact", "source": "bwretailworld.com; infashionbusiness.com", "fields": ["recentMoves"] },
+      { "text": "It launched a men's ethnic wear line in 2025 (a category extension) and is expanding internationally into Dubai, Abu Dhabi, Riyadh and Sharjah — serving Indian diaspora demand directly rather than through third-party export channels. The HVT sheet's own moat claim ('customer trust from quality and appealing designs') is self-claimed but the in-house R&D/design-centre claim is third-party sourced, a stronger tier.", "tier": "company", "epistemic": "fact", "source": "HVT row; bwretailworld.com", "fields": ["moat", "product_improvement", "exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large, India-anchored, and growing at a healthy clip**, though estimates vary by definition.", "evidence": "India ethnic wear: $21.5B (2025) to $32.7B by 2032 (~6.17%/yr) per one source; another cites $26.9B by FY26 at ~10.6%/yr. Women account for ~70% of the category.", "tier": "segment", "epistemic": "fact", "source": "deepmarketinsights.com; apparelresources.com", "fields": ["market.sizeRange"] },
+      { "point": "The **listed peer set shows the sector is genuinely volatile right now**, not just SHR.", "evidence": "Biba Fashion posted a FY24 net loss of ₹95.5 Cr on 13% revenue decline; Fabindia posted an FY24 net loss of ₹83.60 Cr — SHR's own funded expansion bet is happening while established, larger peers are struggling.", "tier": "segment", "epistemic": "fact", "source": "indianstartupnews.com; mstock.com", "fields": ["peers"] },
+      { "point": "One peer shows **what strong execution in occasion-wear can look like.**", "evidence": "Vedant Fashions (Manyavar) posted 30.29% PAT margin and 26.0% ROE in FY24 — a profitability benchmark far above the volatile mid-market peers, though it competes primarily in men's/wedding wear, not SHR's core category.", "tier": "segment", "epistemic": "fact", "source": "smart-investing.in", "fields": ["peers"] },
+      { "point": "The **diaspora export market is smaller but growing fast**, and SHR's own international stores sit right in its geography.", "evidence": "International online ethnic apparel (diaspora-focused e-commerce): ~$2B market growing 25-30%/yr; India's diaspora is ~35.4 million globally, concentrated in exactly the Gulf markets (Dubai, Abu Dhabi, Riyadh, Sharjah) SHR has entered.", "tier": "segment", "epistemic": "fact", "source": "apparelresources.com; firstresort.in", "fields": ["exportFootprint"] }
+    ],
+    "reflect": { "text": "A funded brand making an aggressive retail-format bet while two much larger listed peers post real losses in the same category. The market itself isn't soft — the format and execution bet is what will decide whether SHR's numbers end up looking like Manyavar's or like Biba's.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Deep Market Insights, Grand View Research, Apparel Resources. Peer data: indianstartupnews.com (Biba), mstock.com (Fabindia), smart-investing.in (Vedant Fashions/Manyavar), afaqs.com (TCNS/ABFRL)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, already funded and named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Scaling to 400 outlets, including 25-30 'Beyond Special' flagships", "body": "The HVT sheet's own gap research names this directly: the retail-footprint expansion to 400 outlets, anchored by the new large-format 'Beyond Special' concept, is the explicit path to the company's ₹1,000 Cr revenue target by 2031.", "source": "HVT gap research (Instagram company post).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only SHR's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Validate the Beyond Special unit economics on the first few flagships", "body": "Before committing to 25-30 Beyond Special flagships, track actual revenue-per-store against the ~₹5-10 Cr/year targets on the first handful already opened (e.g. Lajpat Nagar), and use that real data — not the target — to size the rest of the rollout.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a women's ethnic wear manufacturer/retailer in this segment — a directory-depth pass, not yet confirmed against SHR's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["design product breadth (sarees, kurta sets, lehengas, kurtis, fusion, festive/bridal)", "extend into adjacent categories (e.g. men's ethnic wear)", "brand & position by design freshness"], "stepsTier": "segment", "spottedAt": "extend into adjacent categories (e.g. men's ethnic wear)", "spotted": { "text": "Company facts (2025 men's ethnic wear launch) confirm this step is real and recent for SHR, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house design studio generating high design-refresh rate", "source fabric", "garment construction/stitching, embroidery/embellishment quality control"], "stepsTier": "segment", "spottedAt": "in-house design studio generating high design-refresh rate", "spotted": { "text": "Company facts (in-house R&D/design centre, ~10-12 new designs/day claimed) confirm this step is real for SHR, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["plan production against seasonal/festival demand peaks", "manufacture/stitch at scale", "quality-test", "distribute to stores/warehouses"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["operate exclusive brand outlets (omnichannel with online)", "large-format experiential retail formats", "in-store styling/advisory", "manage returns/exchanges"], "stepsTier": "segment", "spottedAt": "large-format experiential retail formats", "spotted": { "text": "Company facts (Beyond Special 5,000-6,000 sq ft format) confirm this step is real and central to SHR's current strategy, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["demand arises (festival/wedding season or everyday wear need)", "customer purchases in-store or online", "fulfil from store/warehouse stock", "repeat purchase on next occasion/season"], "stepsTier": "segment", "spottedAt": "customer purchases in-store or online", "spotted": { "text": "Spotted at \"customer purchases\": the outlet network is scaling from ~130 to 300-400 to capture more of this step → scaling to 400 outlets.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/women-ethnic-wear.json) — no company-specific (A2/pursuit) operational intel was collected for SHR this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Funded, expanding, and betting on a new store format while larger peers post real losses in the same category. The revenue figures themselves are **the one thing this profile could not pin down.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in SHR or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tracxn (flagged as internally inconsistent) and press coverage (bwretailworld.com, pulse.d2cinsider.com); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus yourstory.com and pixr8.com; market data from Deep Market Insights, Grand View Research and Apparel Resources; peer figures from indianstartupnews.com, mstock.com, smart-investing.in. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tracxn", "bwretailworld.com", "pulse.d2cinsider.com", "pixr8.com", "yourstory.com", "infashionbusiness.com", "Deep Market Insights", "Grand View Research", "Apparel Resources", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the actual, reconciled revenue figure, and true store-level unit economics on the Beyond Special format — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

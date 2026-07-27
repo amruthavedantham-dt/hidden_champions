@@ -1,0 +1,66 @@
+{
+  "segmentName": "Solar module & cell manufacturing (India, ALMM-qualified)",
+  "segments": [
+    {
+      "key": "solar-module-cell-manufacturing",
+      "nature": "differentiated-within-policy-driven-buildout",
+      "market": {
+        "indiaSizeGW_2025": 12.4,
+        "indiaSizeGW_2034": 83.7,
+        "cagrPct": 22.94,
+        "pvModuleMarketUSD_M_2025": 9538.8,
+        "pvModuleMarketUSD_M_2032": 20908.6,
+        "pvModuleCagrPct": 11.86,
+        "almmListedCapacityGW_2014": 2.3,
+        "almmListedCapacityGW_2025": 100,
+        "operationalCapacityGW_modules_2025": 120,
+        "operationalCapacityGW_cells_2025": 29.3,
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "figures are India-specific; this is a domestic policy-driven build-out story (PLI, ALMM), not primarily an export market"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "ALMM (Approved List of Models and Manufacturers), enforced by MNRE, is legally required for government-funded solar projects — a hard regulatory gate, not a nice-to-have certification.",
+    "From June 2026, module manufacturers on ALMM List-I will be required to buy cells only from List-II manufacturers for modules installed in India — a structural rule that rewards vertically-integrated module+cell manufacturers.",
+    "The Production Linked Incentive (PLI) scheme supports 48.3 GW of solar cell manufacturing capacity expansion, of which ~36.5% has already been established — real, large-scale policy support driving the build-out.",
+    "REAL RISK, not just upside: Wood Mackenzie flags India's solar manufacturing capacity set to exceed 125 GW, creating an overcapacity challenge with inventory reaching 29 GW — the sector is not simply short of supply; new entrants are scaling into a market with a real glut risk."
+  ],
+  "adoptionStructure": {
+    "note": "Demand is driven by government tender cycles and private EPC contracting, gated by ALMM qualification — not a consumer replacement-rate market."
+  },
+  "peers": [
+    { "name": "Waaree Energies", "revenueCr_FY26": 26536.77, "revenueGrowthPct_FY26": 84, "patCr_FY26": 3884.15, "note": "India's largest solar manufacturer, ~26 GW capacity, order book ~₹53,000 Cr, planning ~₹30,000 Cr further investment across clean-energy verticals." },
+    { "name": "Premier Energies", "revenueCr_FY26": 7824.30, "patCr_FY26": 1509.68, "note": "India's second-largest solar manufacturer by revenue." },
+    { "name": "Emmvee", "revenueCr_FY26": 5049.88, "patCr_FY26": 1081.55, "note": "" },
+    { "name": "Vikram Solar", "revenueCr_FY26": 4860.77, "note": "" },
+    { "name": "Saatvik Green", "revenueCr_FY26": 4548.40, "note": "" },
+    { "name": "Adani Solar", "note": "Adani Group's solar arm; describes itself as India's largest vertically integrated cell and module manufacturer; targeting 10 GW integrated capacity by mid-2026, up from a current 4 GW." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "ALMM qualification is the hard gate for government-funded projects — the single most important credential in this segment.",
+      "From June 2026, module-cell vertical integration becomes structurally rewarded (List-I makers must source cells from List-II).",
+      "Price and delivery reliability against a large order-book/tender pipeline, same as any large-scale industrial supplier."
+    ],
+    "strongestPredictor": "ALMM listing status and eventual module+cell vertical integration, ahead of the June 2026 sourcing rule."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify buyer (government tender, EPC, distributor)", "quote against ALMM-listed capacity and price", "win via ALMM qualification and group synergies", "supply modules (and eventually cells)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["build out module (and targeted cell) manufacturing lines", "maintain ALMM listing", "integrate group synergies (hybrid, O&M, supply/EPC)", "scale toward targeted capacity"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against order book/tender pipeline", "source polysilicon/wafer inputs", "manufacture modules/cells", "package and ship to project sites"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard as an ALMM-qualified supplier", "supply per EPC/tender schedule", "support O&M via group synergy", "maintain relationship for repeat/expansion orders"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from government solar tenders and private EPC contracts", "bid/quote", "win via ALMM qualification and price", "fulfil and recurring reorder as capacity scales"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "OpenPR, Mordor Intelligence, Coherent Market Insights (India solar panel/PV module market sizing)",
+    "Wood Mackenzie (capacity/overcapacity risk)",
+    "IEEFA, MNRE (PLI scheme, ALMM framework)",
+    "Saur Energy (peer revenue/PAT rankings, FY26)"
+  ]
+}

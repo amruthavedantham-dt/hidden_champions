@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "spray-engineering-devices",
+    "series": "Hidden Champions of India",
+    "segmentRef": "sugar-distillery-biofuel-equipment",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-25",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Unlisted public, CIN U00000CH2004PLC027625."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Spray Engineering Devices: a deep-tech bet on the next curve, while its core sugar-equipment business softens.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Chandigarh process-equipment maker with 100+ patents, just contracted by LanzaTech to build a next-generation ethanol biorefinery, even as profit fell 72% this year.", "tier": "company", "epistemic": "fact", "source": "globenewswire.com; wwipl.com", "fields": ["recentMoves", "financials.patCr"] }
+  },
+  "snapshot": [
+    { "label": "Legal entity since", "value": "2004 (business origin 1992)", "tier": "company", "source": "Tofler; ipfonline.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹461 Cr · FY24-25 (down ~16% YoY)", "tier": "company", "source": "wwipl.com", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "PAT", "value": "₹15 Cr · FY24-25 (down ~72% YoY)", "tier": "company", "source": "wwipl.com", "fields": ["financials.patCr.FY25"] },
+    { "label": "ROE", "value": "9.15% · FY24-25 (down from 54.75%)", "tier": "company", "source": "wwipl.com", "fields": ["financials.roePct.FY25"] },
+    { "label": "Patents", "value": "100+ patented technologies", "tier": "company", "source": "HVT row; sprayengineering.com", "fields": ["patents"] },
+    { "label": "Reach", "value": "500+ sugar factories, 40+ countries", "tier": "company", "source": "sprayengineering.com", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A deep-tech bet on the next curve",
+    "blocks": [
+      { "text": "This is honestly a down year on the P&L: revenue fell ~16% (₹547 Cr to ₹461 Cr), PAT fell ~72% (₹53 Cr to ₹15 Cr), and ROE dropped from 54.75% to 9.15% — not a company to lead with growth-story financials right now.", "tier": "company", "epistemic": "fact", "source": "wwipl.com", "fields": ["financials.revenueCr", "financials.patCr", "financials.roePct"] },
+      { "text": "What the P&L doesn't show: it holds 100+ patented technologies (including its own MVR-based Low Temperature Evaporation 'LTE®' system), a DSIR-recognized R&D center, and ISO 9001/14001/45001 certification — plus 500+ sugar-factory installations across 40+ countries.", "tier": "company", "epistemic": "fact", "source": "HVT row; sprayengineering.com", "fields": ["patents", "certifications", "exportFootprint"] },
+      { "text": "In January 2026 it was awarded a contract by LanzaTech to build a commercial-scale 24,000 MTA second-generation ethanol facility in Uttar Pradesh, using up to 300 tonnes/day of sugarcane bagasse — expected operational within roughly two years, and framed by the company as part of its own 'SED Smart Village' concept.", "tier": "company", "epistemic": "fact", "source": "globenewswire.com", "fields": ["recentMoves"] },
+      { "text": "The core business is still active in parallel: it delivered a falling-film-evaporator and spray-continuous-pan-chamber modernization enabling Parag Agro Foods' Ravadewadi (Pune) plant to expand to 7,000 TCD crushing capacity, cutting steam consumption from ~32% to 21-22% on cane.", "tier": "company", "epistemic": "fact", "source": "ipfonline.com", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The core field is **mid-sized and growing at a healthy pace.**", "evidence": "Sugar processing equipment: ~$5.2B (2024) to ~$8.7B by 2033 (~6.1%/yr); the crystallization-equipment sub-segment central to SED's product line grows faster still, ~7.5%/yr.", "tier": "segment", "epistemic": "fact", "source": "DataHorizzon Research", "fields": ["market.sizeRange"] },
+      { "point": "**India's ethanol-blending programme has been a major structural tailwind — with a fresh policy complication.**", "evidence": "India hit its E20 target five years early (2025) and targets E27 by 2030, with ethanol procurement earning distilleries ~₹1.96 lakh crore cumulatively — but a December 2025 government directive curtailed sugarcane-juice-based ethanol specifically, over domestic sugar-availability concerns, creating near-term uncertainty for exactly the kind of sugar-linked distillery capex SED builds equipment for.", "tier": "segment", "epistemic": "fact", "source": "drishtiias.com; synergiafoundation.org", "fields": ["structureFacts"] },
+      { "point": "The closest listed peer shows **the whole segment under margin pressure, not just SED.**", "evidence": "Praj Industries (₹3,228 Cr revenue, FY25) saw EBITDA margin contract sharply from ~10.06% to ~4.79% by FY26, with ROE falling to ~2% — a segment-wide bioenergy-EPC margin squeeze SED's own numbers echo.", "tier": "segment", "epistemic": "fact", "source": "praj.net", "fields": ["peers[0]"] },
+      { "point": "The LanzaTech deal points at a **much larger adjacent market.**", "evidence": "Global biofuels overall: $90-167B (2024) to $131-285B by 2030 depending on definition — the 2G ethanol/SAF direction SED is now building toward is a different, larger order of magnitude than sugar-mill equipment alone.", "tier": "segment", "epistemic": "fact", "source": "Cognitive Market Research; Virtue Market Research", "fields": ["adjacentMarkets"] }
+    ],
+    "reflect": { "text": "A patent-holding equipment maker having a genuinely rough year in its core business, at the exact moment the whole bioenergy-EPC segment is under margin pressure — while placing a real, contracted bet (LanzaTech, 2G ethanol) on a much bigger adjacent curve.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: DataHorizzon Research, Cognitive Market Research, Virtue Market Research, Drishti IAS. Peer data: Praj Industries via praj.net. This is the company generation-spec.md's own framework uses as its 'forward-bet' worked example — financials soft/down, credible tech/platform bet in progress."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, already contracted and in progress.",
+    "items": [
+      { "lever": "velocity", "title": "Scaling the SED Smart Village concept beyond one plant", "body": "The HVT row's own gap research names this directly: the LanzaTech-backed 2G ethanol facility is one build within a broader 'SED Smart Village' concept aimed at shifting carbon demand toward higher-value green chemicals, polymers, aviation fuels and e-fuels — a much larger opportunity than the single contracted plant represents on its own.", "source": "HVT gap research (ir.lanzatech.com press release).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_latent", "gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Spray Engineering Devices' own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Track the LanzaTech plant's economics before committing to a second site", "body": "Run the Uttar Pradesh 2G ethanol facility through its first full operating cycle, and use its actual unit economics — not just the contract win — to decide whether a second 'SED Smart Village' site is warranted.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a sugar/distillery/biofuel process-equipment maker in this segment — a directory-depth pass, not yet confirmed against SED's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["position as energy-efficiency/process-engineering solutions provider, not just equipment fabricator", "bundle evaporation/crystallization/heat-exchange/automation systems", "attach guaranteed steam/energy-savings performance commitments"], "stepsTier": "segment", "spottedAt": "bundle evaporation/crystallization/heat-exchange/automation systems", "spotted": { "text": "Company facts (LTE® patented system, LanzaTech 2G ethanol contract) confirm this step is real and expanding for SED, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house process R&D (DSIR-recognized)", "develop/patent proprietary process IP", "certify to quality-environment-safety standards (ISO 9001/14001/45001)", "design/engineering + automation integration"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate heavy-vessel fabrication plants", "large-format welding/fabrication shop floors", "field project-execution teams for on-site installation", "commission at customer plants (often brownfield expansions)"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["plant audits/feasibility studies", "engineering-to-order proposals", "post-commissioning service and AMC support", "reference-installation-driven trust building"], "stepsTier": "segment", "spottedAt": "reference-installation-driven trust building", "spotted": { "text": "Company facts (500+ installations, 40+ countries) confirm this step is real for SED, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["engineering tenders/RFQs tied to seasonal capex cycles or policy-mandated greenfield builds", "milestone-based project contracts (6-24 month cycles)", "execute against payment milestones", "repeat/upsell on next capex cycle"], "stepsTier": "segment", "spottedAt": "milestone-based project contracts (6-24 month cycles)", "spotted": { "text": "Spotted at \"milestone-based project contracts\": the LanzaTech contract is exactly this step, live now, aimed at the larger Smart Village concept → scaling beyond one plant.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/sugar-distillery-biofuel-equipment.json) — no company-specific (A2/pursuit) operational intel was collected for SED this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "This year's numbers are weak, and the whole bioenergy-EPC segment is under margin pressure right now. The LanzaTech contract is the **one live signal that the next curve is already being built, not just planned.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Spray Engineering Devices or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from wwipl.com (unlisted-shares data provider) and Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus globenewswire.com and ipfonline.com; market data from DataHorizzon Research, Cognitive Market Research and Drishti IAS; peer figures from praj.net. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["wwipl.com", "Tofler", "sprayengineering.com", "globenewswire.com", "ipfonline.com", "DataHorizzon Research", "Cognitive Market Research", "Drishti IAS", "praj.net", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the actual unit economics of the LanzaTech plant once operational, and true customer retention across the 500+ sugar-mill installation base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "ip-rings",
+    "series": "Hidden Champions of India",
+    "segmentRef": "piston-rings-cold-formed-transmission-products",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Listed, CIN L28920TN1991PLC020232, part of the Amalgamations Group (~₹17,000 Cr)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "IP Rings: a deep-tech bet on emissions technology, recovering from three years of losses.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "India's only Orbital Cold Forming precision-parts maker, back to profit after a JV with UK's Eminox to build emission-control systems for the new TREM V and BS VI Stage 2 norms.", "tier": "company", "epistemic": "fact", "source": "HVT row; autocarpro.in", "fields": ["differentiation", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1991", "tier": "company", "source": "iprings.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹337 Cr · FY25-26", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "~₹2 Cr · FY25-26 (recovering from losses)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "ROE (3-yr avg)", "value": "-1.57% to -2% (negative)", "tier": "company", "source": "screener.in", "fields": ["financials.roePct"] },
+    { "label": "ROCE", "value": "8.26%", "tier": "company", "source": "screener.in", "fields": ["financials.rocePct"] },
+    { "label": "Group", "value": "Amalgamations Group (~₹17,000 Cr)", "tier": "company", "source": "autocarpro.in", "fields": ["ownershipType"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A deep-tech bet, just turning the corner on losses",
+    "blocks": [
+      { "text": "The recent P&L has been genuinely weak: losses of ₹3-4 Cr in FY24 and FY25, before a small return to profit (~₹2 Cr) in FY25-26. Revenue itself has been nearly flat for three years (₹317 Cr → ₹303 Cr → ₹337 Cr, 3-year sales growth of just 1%), though 3-year profit growth on a TTM basis is 14% — the recovery is real but small.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.revenueCr", "financials.patCr"] },
+      { "text": "It positions itself as the pioneer and leader in specialty-steel piston rings and the only Indian company running the Orbital Cold Forming process for precision components — self-claimed, `needs_verify: yes` per the HVT sheet, sourced to its own group's website.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation"] },
+      { "text": "In 2022 it formed a 50:50 joint venture, IPR Eminox Technologies, with UK's Eminox (part of the £135m Hexadex Group) to design and manufacture Exhaust Aftertreatment Systems (EATS) for India's new TREM V (off-highway) and BS VI Stage 2 (on-highway) emission norms — a genuine platform bet on where automotive regulation is heading, not incremental piston-ring work.", "tier": "company", "epistemic": "fact", "source": "autocarpro.in; truckandbusbuilder.com", "fields": ["recentMoves"] },
+      { "text": "More recently, IP Rings acquired the JV's own manufacturing division for a nominal Re. 1 (assuming its liabilities) — consolidating the EATS manufacturing operation directly into the parent company rather than leaving it in the JV structure.", "tier": "company", "epistemic": "fact", "source": "whalesbook.com", "fields": ["recentMoves"] },
+      { "text": "It carries ISO/TS 16949, ISO 14001 and OHSAS 18001 certification, and its R&D lab was formally accredited in 2004, having developed a ring pack specifically for SUV diesel vehicles — the HVT sheet flags both `differentiation` and `product_improvement` as unresolved despite `Verified` review status.", "tier": "company", "epistemic": "fact", "source": "HVT row", "fields": ["moat", "product_improvement"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The core field is **modest-sized and estimates vary by scope**, with a real long-term headwind.", "evidence": "Global piston ring market: ~$2.3-4.6B depending on scope, 3.8-5.9%/yr. EVs have already reduced potential piston-ring unit demand by an estimated 300 million units in 2023 — a genuine structural threat to the core business.", "tier": "segment", "epistemic": "fact", "source": "Kings Research; Future Market Insights", "fields": ["market.sizeRange", "structureFacts"] },
+      { "point": "But **the ICE fleet and aftermarket provide real runway**, independent of new-vehicle sales cycles.", "evidence": "Aftermarket now represents over 50% of total piston-ring sales, and ICE vehicles are projected to remain the majority of the global fleet for 10+ years — the large in-operation ICE parc sustains demand largely independent of EV adoption rates.", "tier": "segment", "epistemic": "fact", "source": "OpenPR (aftermarket data)", "fields": ["adoptionStructure"] },
+      { "point": "Listed peers show **the range of outcomes in this exact segment.**", "evidence": "Shriram Pistons & Rings posts 18.6% ROE at ₹4,571 Cr revenue; Menon Pistons, closer in scale, posts 14.86% ROE at ₹304 Cr — both solidly positive, a contrast IP Rings' own negative 3-year ROE average sits well below.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] },
+      { "point": "The **EATS/emissions-technology bet points at a genuinely new, regulation-driven demand curve**, distinct from the piston-ring business's EV headwind.", "evidence": "TREM V and BS VI Stage 2 are new Indian emission norms creating fresh compliance-driven demand for exhaust aftertreatment systems — a business line growing because of tightening regulation, not despite it.", "tier": "segment", "epistemic": "fact", "source": "autocarpro.in", "fields": ["recentMoves"] }
+    ],
+    "reflect": { "text": "A precision-components maker just returning to profit, with a legacy product facing a real EV-driven headwind and a genuine new platform bet (emissions technology) aimed at a regulation-driven tailwind instead. The Re. 1 acquisition of the JV's manufacturing arm suggests the company is committing to that bet, not just testing it.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Kings Research, Fortune Business Insights, Future Market Insights. Peer data: screener.in (Shriram Pistons & Rings, Menon Pistons)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "Two places worth watching, one already funded and moving, one named in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Scaling the EATS business post-consolidation", "body": "Having taken full ownership of the Eminox JV's manufacturing arm, the natural next step is scaling EATS output to meet the new TREM V and BS VI Stage 2 compliance deadlines — a demand curve moving toward the company, not one it has to create.", "source": "autocarpro.in; whalesbook.com.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["recentMoves"] },
+      { "lever": "velocity", "title": "Deeper European market penetration", "body": "The HVT sheet's own gap research names this directly: the company already exports to Thailand, the USA and Europe, with room for deeper European penetration by leveraging the new Maraimalai Nagar facility and capacity expansion.", "source": "HVT gap research (Trendlyne).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-2", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only IP Rings' own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Report EATS as its own line item", "body": "Now that the EATS manufacturing arm is fully owned, report its revenue and margin separately from the core piston-ring business for a few quarters, to see how quickly the emissions-technology bet is actually scaling.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } },
+      { "lever": "velocity", "title": "Target one new European OEM relationship", "body": "Use the Maraimalai Nagar facility upgrade as the credibility anchor to pursue one specific new European OEM or Tier-1 relationship, rather than a broad regional push.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-2", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a piston-ring/precision-transmission-component manufacturer in this segment — a directory-depth pass, not yet confirmed against IP Rings' own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer piston-ring grades/coatings (high-carbon/high-alloy steel, nodular iron)", "offer adjacent cold-formed transmission components (gears, pinions, synchro-rings)", "serve both OEM engine platforms and aftermarket"], "stepsTier": "segment", "spottedAt": "offer adjacent cold-formed transmission components (gears, pinions, synchro-rings)", "spotted": { "text": "Company facts (EATS/emissions systems now a core offer, not just piston rings) confirm the offer set has expanded beyond the segment's traditional scope — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["metallurgical and surface-coating R&D (chrome/moly coatings, low-friction designs)", "precision cold-forming/forging expertise for tight tolerances", "maintain technical collaboration/licensing with global technology leaders"], "stepsTier": "segment", "spottedAt": "maintain technical collaboration/licensing with global technology leaders", "spotted": { "text": "Company facts (Nippon Piston Ring technical collaboration since founding, Eminox JV for EATS) confirm this step is real for IP Rings, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate dedicated piston-ring and precision-forging manufacturing divisions", "size to OEM platform volumes plus aftermarket demand"], "stepsTier": "segment", "spottedAt": "size to OEM platform volumes plus aftermarket demand", "spotted": { "text": "Company facts (acquired the Eminox JV's manufacturing division for Re. 1) confirm this step just expanded for IP Rings, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["undergo OEM design-in cycles requiring long qualification/validation lead times", "maintain credibility via technology-partner endorsement", "support aftermarket distributor relationships"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["OEM engine-program production schedules drive one order stream", "large, cycle-independent aftermarket replacement stream from the existing ICE parc drives the other", "fulfil and deliver", "reorder on next platform cycle or replacement need"], "stepsTier": "segment", "spottedAt": "fulfil and deliver", "spotted": { "text": "Spotted at \"fulfil and deliver\": European export presence exists but with room for deeper penetration → deeper European market penetration.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-2" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/piston-rings-cold-formed-transmission-products.json) — no company-specific (A2/pursuit) operational intel was collected for IP Rings this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Three years of near-flat revenue and thin losses, turning the corner just as a real emissions-technology bet gets fully absorbed into the company. **The EATS acquisition is the signal worth watching, not the piston-ring numbers.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in IP Rings or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus autocarpro.in, truckandbusbuilder.com and whalesbook.com; market data from Kings Research, Fortune Business Insights and Future Market Insights; peer figures from screener.in (Shriram Pistons & Rings, Menon Pistons). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "iprings.com", "autocarpro.in", "truckandbusbuilder.com", "whalesbook.com", "Kings Research", "Fortune Business Insights", "Future Market Insights", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the EATS business's true standalone unit economics, and real customer retention across its Ford/Suzuki/Fiat/Hyundai/Honda/Tata OEM relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

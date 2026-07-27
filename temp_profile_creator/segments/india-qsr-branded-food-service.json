@@ -1,0 +1,67 @@
+{
+  "segmentName": "Branded QSR + adjacent packaged/FMCG food (India)",
+  "segments": [
+    {
+      "key": "india-qsr",
+      "nature": "differentiated",
+      "market": {
+        "worldSizeUSD_B_note": "domestic market, no global figure sought — India QSR is the relevant frame here",
+        "indiaSizeUSD_B_2025": 27.80,
+        "indiaSizeUSD_B_2026": 30.37,
+        "indiaSizeUSD_B_2031": 47.28,
+        "cagrPct_2026_2031": 9.26,
+        "organizedSegmentCagrPct_2023_2026": 15,
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "India-only figures; QSR is inherently a domestic consumption category"
+      },
+      "shareIsMeaningful": false
+    },
+    {
+      "key": "india-packaged-food-fmcg",
+      "nature": "differentiated",
+      "market": {
+        "indiaFoodServiceSizeUSD_B_2025": 56.24,
+        "indiaFoodServiceSizeUSD_B_2034": 138.21,
+        "cagrPct_2026_2034": 9.98,
+        "note": "Broader food-service market context for the QSR-to-FMCG crossover play; packaged/ambient foods (noodles, frozen snacks) sit inside this broader market, not separately sized here"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's QSR market is growing near double digits (9.26% CAGR 2026-2031, Mordor Intelligence), driven by urbanization, rising disposable income, online delivery platform growth, and QSR expansion into Tier-2/3 cities.",
+    "The organized (branded chain) segment of India's restaurant industry is growing faster than the market overall (~15% CAGR 2023-2026), meaning branded chains are taking share from unorganized/local competition, not just riding overall market growth.",
+    "Quick commerce (Blinkit, Instamart, Zepto, Flipkart Minutes) has become a major distribution channel for packaged/frozen food brands crossing over from restaurant-only formats into retail — a structural shift that rewards QSR brands able to package their core product for grocery shelves and app-based delivery."
+  ],
+  "adoptionStructure": {
+    "note": "Two distinct demand patterns bundled in one company: QSR is habitual, delivery/dine-out discretionary spend; packaged/FMCG (frozen momos, instant noodles) is a repeat grocery purchase competing directly with mainstream packaged-food categories, not just other restaurant chains."
+  },
+  "peers": [
+    { "name": "Rebel Foods (EatSure, cloud-kitchen model)", "revenueCr_FY25": 1617.4, "revenueCr_FY24": 1420.2, "revenueGrowthPct_FY25": 13.9, "ebitdaMarginPct_FY25": -8, "ebitdaMarginPct_FY24": -12, "netLossCr_FY25": 336.6, "netLossCr_FY24": 380.3, "note": "The closest scaled comparator — another VC-backed, IPO-track, multi-brand Indian food company. Roughly 3.4x Wow! Momo's FY25 revenue, but still EBITDA-negative (though improving) versus Wow! Momo's EBITDA-positive FY24. Also chasing an IPO. A useful contrast: Wow! Momo is smaller but closer to operating profitability." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Convenience and habitual repeat purchase (QSR) — price-accessible, familiar format, wide physical + delivery-app availability.",
+      "Trust in a known brand when crossing into packaged/frozen retail — a consumer already familiar with the restaurant brand is a lower-friction convert to buying the same brand's frozen/packaged product at a grocery shelf or on a quick-commerce app.",
+      "Category-level differentiation (momo-led) in a QSR market otherwise dominated by burger/pizza/chicken formats — a distinct cuisine niche rather than head-on competition with global chains."
+    ],
+    "strongestPredictor": "Physical + digital distribution density (store count, quick-commerce presence, modern-trade shelf placement) — in a habitual/repeat-purchase category, being everywhere the customer already is matters more than any single product claim."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify buyer (QSR walk-in/delivery customer, or FMCG grocery/quick-commerce shopper)", "curate menu/product range across brand verticals", "win via brand recognition, price, and availability", "supply via restaurant counter or packaged retail unit"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["central kitchen/commissary product development", "maintain quality/consistency across company-owned and franchise outlets", "build packaged-goods manufacturing and shelf-life capability for the FMCG line", "brand-build across multiple sub-brands"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against store network + retail/quick-commerce order volume", "central commissary production and cold-chain logistics", "supply outlets (company-owned + franchise) and retail/distribution partners", "manage frozen/ambient inventory for the packaged-goods line"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard via outlet, delivery app, or retail/quick-commerce shelf", "fulfil order (dine-in/delivery, or retail purchase)", "support/retain via loyalty, delivery-app ratings, and repeat grocery purchase", "cross-sell across QSR and FMCG touchpoints"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from QSR craving or grocery restock need", "order placed (outlet, delivery app, retail shelf, or quick-commerce app)", "fulfil", "recurring reorder/repeat purchase"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "Mordor Intelligence (India QSR market size and CAGR)",
+    "IMARC Group (India food service market size)",
+    "Restroworks (organized-segment growth rate)",
+    "Entrackr/Inc42 (Rebel Foods FY24/FY25 financials, peer comparator)"
+  ]
+}

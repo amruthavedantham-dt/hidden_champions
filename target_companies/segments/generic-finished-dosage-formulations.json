@@ -1,0 +1,43 @@
+{
+  "segmentName": "Generic Finished-Dosage Pharmaceutical Formulations",
+  "market": {
+    "worldSizeUSD_B_range": "Global Oral Solid Dosage (OSD) formulation market: two differing estimates — $651.2B (2025) to $888.0B by 2030 (6.4%/yr), or $635.77B (2025) to $795.35B by 2030 (4.58%/yr).",
+    "cagrPctRange": [4.58, 6.4],
+    "exportGeographies": ["US/North America (a major destination for Indian generic-formulation exporters)", "not otherwise itemized for this specific segment"],
+    "globalCompetitors": ["not individually named at global scale — see peers[] for Indian comparables"],
+    "domesticSlice": "not separately sized"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Patent cliff 2025-2030 represents an estimated $217-236B in annual brand-drug sales facing generic erosion — a major market-entry window for generic-finished-dose manufacturers",
+    "Regulatory pressure (US FDA inspections, EU GMP standards) is consolidating market share toward larger, compliant manufacturers",
+    "Complex generics (sterile injectables, transdermal, inhaled, ophthalmic) offer higher-margin niches with fewer than 5 global competitors in some categories (~$40-60B of the market)",
+    "India's formulation industry still sources a significant share of APIs from Chinese manufacturers for older generic categories — a supply-chain dependency risk"
+  ],
+  "adoptionStructure": {
+    "note": "Tender/distributor-order driven — being first-vs-third generic entrant in a tender can mean the difference between ~40% share and none in some regulated markets (e.g. Germany)"
+  },
+  "peers": [
+    { "name": "Windlas Biotech", "revenueCr": 760, "fy": "FY2025", "patCr": 61, "opmPct": 12, "roePct": 16, "source": "screener.in" },
+    { "name": "Marksans Pharma", "revenueCr": 2623, "fy": "FY2025", "revenueGrowthPct": 20.5, "patCr": 381, "patMarginPct": 14, "roePct": 13, "note": "US/North America contributed 47% of revenue", "source": "simplywall.st" }
+  ],
+  "customerValue": {
+    "drivers": ["WHO-GMP/US FDA/EU-GMP compliance as a baseline market-access requirement", "price competitiveness given genericization", "reliability of supply/tender fulfillment", "capability in complex/differentiated dosage forms for margin protection"],
+    "strongestPredictor": "regulatory compliance baseline combined with tender-fulfillment reliability",
+    "source": "drugpatentwatch.com"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer finished-dose generic formulations (tablets, capsules, syrups) across therapeutic categories", "pursue complex/differentiated dosage forms for margin protection", "market via distributor/tender channels"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain WHO-GMP/US FDA/EU-GMP-approved manufacturing", "formulation R&D (bioequivalence, stability, dosage design)", "regulatory dossier/ANDA-DMF filing capability"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate installed production capacity (billions of tablets/capsules/year)", "maintain multi-site manufacturing network", "manage API sourcing/supply-chain resilience"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain batch quality and audit performance consistency", "ensure tender/order fulfillment reliability", "respond to regulatory-agency queries and country-specific registration requirements"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win tenders and supply contracts from domestic distributors, international generic marketers, and government/institutional buyers", "fulfil on price, compliance status, and delivery track record", "reorder on tender renewal"] }
+  ],
+  "sources": [
+    "https://www.drugpatentwatch.com/blog/the-generic-gold-rush-a-strategic-playbook-for-turning-patent-cliffs-into-market-dominance/",
+    "https://www.drugpatentwatch.com/blog/the-future-of-generic-drug-development-for-emerging-markets-opportunities-and-challenges/",
+    "https://www.screener.in/company/WINDLAS/",
+    "https://simplywall.st/stocks/in/pharmaceuticals-biotech/nse-marksans/marksans-pharma-shares/news/marksans-pharma-full-year-2025-earnings-in-line-with-expecta/amp"
+  ]
+}

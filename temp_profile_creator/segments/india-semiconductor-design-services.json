@@ -1,0 +1,63 @@
+{
+  "segmentName": "Semiconductor design & verification services (India)",
+  "segments": [
+    {
+      "key": "semiconductor-design-verification-services",
+      "nature": "differentiated-within-crowded-services-market",
+      "market": {
+        "globalSizeUSD_B_2025": 8.2,
+        "globalSizeUSD_B_2034": 18.6,
+        "globalCagrPct": 10.3,
+        "asiaPacificShareUSD_B_2025": 3.47,
+        "asiaPacificSharePct": 42.3,
+        "indiaSemiconductorMarketUSD_B_2026": 12.41,
+        "indiaSemiconductorMarketUSD_B_2031": 17.42,
+        "indiaSemiconductorCagrPct": 7.02,
+        "exportGeographies": ["global — India is a design-services export/R&D-center hub, not a domestic-consumption story for this segment"],
+        "globalCompetitors": [],
+        "domesticSlice": "India is a major global supply base for this segment, not primarily a domestic buyer"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Over 20% of the world's semiconductor design engineers are based in India, supporting global R&D centers for Intel, Qualcomm, MediaTek, Nvidia, and Texas Instruments — the same company Dyumnin's founder previously worked at as a Design Lead.",
+    "India's semiconductor landscape entered an accelerated growth phase from 2024, driven by India Semiconductor Mission (ISM) policy incentives and rising domestic demand.",
+    "As of May 2026, India has 431 active semiconductor design and manufacturing services companies — a crowded, well-established field, not an emerging niche."
+  ],
+  "adoptionStructure": {
+    "note": "A B2B services/consulting relationship market — demand is won through client engagements and reputation, not tenders or consumer purchase."
+  },
+  "peers": [
+    { "name": "Tata Elxsi", "note": "Large, listed design-services major; a giant relative to Dyumnin's scale." },
+    { "name": "HCL Technologies", "note": "Large, listed IT/engineering services major offering chip design services among many other lines." },
+    { "name": "Wipro Limited", "note": "Large, listed IT services major, same category as HCL." },
+    { "name": "L&T Technology Services", "note": "Large, listed engineering services major." },
+    { "name": "eInfochips (an Arrow Company)", "note": "A specialized VLSI/embedded design services firm, part of Arrow Electronics — closer in specialization to Dyumnin, but vastly larger in scale." },
+    { "name": "Sasken Technologies", "note": "Specializes in wireless/multimedia SoC design services, 5G and AI accelerators — a mid-size specialist, larger than Dyumnin." },
+    { "name": "Tessolve Semiconductor", "note": "Named design/test services peer; no financials found in this pass." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Technical credibility, often demonstrated through public open-source contributions and named engineering reputation rather than certifications.",
+      "Specialization depth in a specific tooling/methodology niche (e.g. cocotb-based verification) versus broad-service generalists.",
+      "Cost and talent-pool access — the core reason global majors have outsourced chip design/verification work to India since the mid-1980s."
+    ],
+    "strongestPredictor": "Demonstrated, checkable technical reputation (open-source contributions, conference talks, prior big-company pedigree) — especially important for a tiny boutique competing for attention against much larger, brand-name design-services firms."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify a fabless/chip company's design or verification need", "propose a scoped engagement (design, IP, or verification service)", "win via technical reputation and demonstrated expertise", "deliver the design/verification service or IP"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain deep expertise in specific tools/methodologies (e.g. cocotb, RAL)", "publish open-source tools and contributions to build reputation", "develop reusable IP (interconnect generators, verification IP)", "stay current with client platforms (e.g. Xilinx/AMD FPGA families)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["staff engagements (founder plus interns/collaborators)", "scope and estimate project effort", "deliver against client timelines", "manage concurrent client engagements"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard as a trusted technical partner", "deliver against project milestones", "support integration/handoff", "maintain the relationship for repeat engagements"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from a client's chip design/verification need", "engagement scoped and contracted", "delivered", "recurring engagement or referral-driven new business"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "Mordor Intelligence, IMARC Group, MarknTel Advisors (India semiconductor market sizing)",
+    "MarketIntelo (global semiconductor design services market)",
+    "Built In, various industry directories (peer landscape)"
+  ]
+}

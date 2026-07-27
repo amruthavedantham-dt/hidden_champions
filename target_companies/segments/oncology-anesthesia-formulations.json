@@ -1,0 +1,43 @@
+{
+  "segmentName": "Oncology Injectable & Anesthesia Formulations",
+  "market": {
+    "worldSizeUSD_B_range": "Oncology injectables: $191.5B (2025), 9.19%/yr (2026-2034). Generic oncology sterile injectable sub-segment: $18.99B (2025) to $33.5B by 2030, ~11.9-12%/yr — faster-growing than the broader oncology injectables category. Anesthesia drugs: ~$7.51B (2025, Mordor/Straits) to a higher $8.629B (2025) estimate at 4.18%/yr (Market Research Future) — figures vary materially by market definition.",
+    "cagrPctRange": [3.2, 12.0],
+    "exportGeographies": ["Philippines", "Colombia", "Peru", "Mexico", "UK", "Russia/ex-CIS", "UAE", "broader Asia/EU/Latin America/Africa"],
+    "globalCompetitors": ["not individually named at global scale — see peers[] for Indian comparables"],
+    "domesticSlice": "North America currently dominates the oncology drugs market on care-access and diagnosis rates; India's role is primarily as a generic/export manufacturer rather than a large domestic oncology-drug consumption market"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Rising global cancer incidence and post-patent-expiry generic oncology drug demand are the core growth drivers",
+    "Cold-chain and specialized sterile/lyophilized manufacturing are structural requirements, raising barriers to entry",
+    "Supply chains for oncology injectables prioritize cold-chain reliability, inventory visibility, and shortage-risk mitigation"
+  ],
+  "adoptionStructure": {
+    "note": "Government/hospital tender and distributor-contract driven in emerging markets — not a repurchase-rate category"
+  },
+  "peers": [
+    { "name": "Natco Pharma", "revenueCr": 4784, "fy": "FY2025", "ebitdaMarginPct": 52.3, "roePct": 25.2, "rocePct": 30.6, "source": "aggregated Equitymaster/Nirmal Bang" },
+    { "name": "Fresenius Kabi Oncology (India)", "revenueCr": 848, "fy": "FY2025", "revenueCAGR1yrPct": 4, "ebitdaCAGR1yrPct": 18, "source": "Tracxn" },
+    { "name": "Shilpa Medicare", "revenueCr": 1286, "fy": "FY2025", "ebitdaMarginPct": "26-27", "note": "broader API/biosimilar business with a strong oncology-API franchise (30+ oncology APIs), partial comparability to a pure oncology-injectable formulator", "source": "screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["regulatory-approval status (EU-GMP/WHO-GMP/ANVISA/PIC/S)", "cold-chain reliability", "sterility/quality assurance", "price competitiveness in hospital/government tenders"],
+    "strongestPredictor": "regulatory-approval status combined with cold-chain reliability",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer oncology injectables (cytotoxics) and anesthesia formulations", "position on sterility/quality and regulatory-approval breadth", "market to emerging-market distributors and tenders"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["EU-GMP/WHO-GMP-certified lyophilization and sterile fill-finish capability", "pursue upstream API integration", "maintain multi-regulator approval currency (ANVISA, PIC/S, etc.)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate dedicated oncology/anesthesia manufacturing blocks", "maintain cold-chain-capable production and storage", "scale via commissioned API plants"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["provide technical/regulatory dossier support for multi-country registration", "maintain supply reliability for hospital/tender fulfillment", "manage cold-chain logistics to destination"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["government/hospital tenders and distributor contracts in emerging markets", "fulfil against tender/contract terms", "reorder on tender renewal or restocking cycle"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/oncology-injectables-market",
+    "https://www.thebusinessresearchcompany.com/report/generic-oncology-sterile-injectable-global-market-report",
+    "https://www.mordorintelligence.com/industry-reports/global-anesthesia-drugs-market-industry",
+    "https://www.equitymaster.com/research-it/annual-results-analysis/NTPH/NATCO-PHARMA-2024-25-Annual-Report-Analysis/13114"
+  ]
+}

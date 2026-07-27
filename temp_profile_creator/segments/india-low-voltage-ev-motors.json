@@ -1,0 +1,56 @@
+{
+  "segmentName": "Low-voltage BLDC motors & controllers for light EVs (India)",
+  "segments": [
+    {
+      "key": "low-voltage-ev-motors-controllers",
+      "nature": "differentiated-within-growing-market",
+      "market": {
+        "indiaSizeUSD_M_2024": 581.4,
+        "indiaSizeUSD_M_2033": 961.7,
+        "cagrPct": 5.32,
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "figures are India-specific; this is primarily a domestic-demand story tied to India's own EV adoption curve"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [
+    { "name": "Electric two-wheelers", "note": "Largest share of the India EV motor market by volume — 1.40 million units sold in FY2025-26, driven by India's large two-wheeler base and urban scooter adoption." }
+  ],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Electric mobility and robotics are named as the two key growth propellers expanding the application base for low-voltage motors — compact design, high torque density, and thermal management are the technical axes buyers care about.",
+    "Electric two-wheelers lead EV component demand by volume in India (1.40M units, FY2025-26), making that the largest single demand pool for this component category."
+  ],
+  "adoptionStructure": {
+    "note": "Demand is driven by design-in relationships with EV OEMs (B2B), not direct consumer purchase — a company at this tier succeeds by being specified into other companies' vehicles, not by winning end-customers directly."
+  },
+  "peers": [
+    { "name": "Compage Automation", "location": "Faridabad", "note": "BLDC/PMSM motors for EV applications, 400W to 22kW, 24V to 144V range — a broader power/voltage range than Gremot's stated <100V focus. No financials found." },
+    { "name": "Shakti Pumps", "location": "near Indore", "note": "BLDC motor production capacity of 20,000 motors/month; currently making motors and controllers for electric 3-wheelers. A much larger-scale operation (an established pump manufacturer diversifying into EV motors). No EV-specific financials found." },
+    { "name": "Sona Comstar", "note": "A large, listed component maker — BLDC/PMSM motors, motor controllers, e-axles, with a technology partnership with Equipmake (UK) for patented powertrain tech. Operates at a vastly larger scale than Gremot; included here as the top of the competitive range, not a close peer." },
+    { "name": "Tsuyo", "note": "Full EV powertrain solutions across bike, e-scooter, 3W, and 4W applications — broader vehicle-class coverage than Gremot's light-EV/<100V focus. No financials found." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Technical fit: compact design, high torque density, thermal management — named as the specific attributes buyers select on.",
+      "Design-in relationships with EV OEMs, since this is a B2B component sale, not a direct-to-consumer product.",
+      "Production capacity and reliability at volume, once past the design-in stage (e.g. Shakti Pumps' 20,000 motors/month capacity as a benchmark)."
+    ],
+    "strongestPredictor": "Winning and keeping OEM design-in slots — the component-tier equivalent of the certification-gating seen in other segments researched, but relationship/spec-driven rather than registry-driven."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify an EV OEM/integrator need", "propose a motor/controller spec fit for the application", "win the design-in slot", "supply the motor/controller"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["design and engineer motor/controller technology (e.g. IPM, FOC control)", "prototype and validate", "compete for and win innovation grants/incubation", "iterate based on OEM feedback"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against OEM order forecasts", "source components (magnets, windings, electronics)", "assemble and test", "package and ship"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard as a qualified component supplier", "supply per OEM production schedule", "support technical integration queries", "maintain the relationship for the next vehicle generation"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from OEM vehicle production plans", "purchase order issued", "fulfil", "recurring reorder tied to OEM production volumes"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "Mobility Foresights, IMARC Group (India low-voltage electric motor market sizing)",
+    "EVreporter (EV powertrain component manufacturer landscape)",
+    "Bauaelectric, MarkNtel Advisors (BLDC motor manufacturer landscape, EV motor market)"
+  ]
+}

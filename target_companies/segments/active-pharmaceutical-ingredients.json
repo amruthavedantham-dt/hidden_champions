@@ -1,0 +1,47 @@
+{
+  "segmentName": "Active Pharmaceutical Ingredients (API) manufacturing",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary by research firm: Grand View Research puts it at $359.45B by 2030 (CAGR 5.85%, 2025-2030); MarketsandMarkets: $144.2B (2025) to $198.39B by 2030 (CAGR 6.6%); a third estimate: $240.8B (2024) to $345.5B by 2030 (CAGR 6.2%). Overall range: ~$232-360B by 2030, CAGR ~5.85-6.6%.",
+    "cagrPctRange": [5.85, 6.6],
+    "exportGeographies": ["US", "EU", "Japan", "China (reverse flow — see China+1 note below)"],
+    "globalCompetitors": ["large multinational API/CDMO players (not individually named in this research pass)"],
+    "domesticSlice": "India API market: $13.60B (2024) to $21.99B by 2030 (CAGR 8.30%) per Vantage Market Research; a second estimate: $16.01B (2026) to $27.62B by 2033 (CAGR 8.1%). India hosts 650+ USFDA-approved manufacturing plants (most of any country outside the US), supplies 40%+ of US generic drugs and 25% of UK medicines."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "China+1 sourcing shift: China controls ~80% of global generic-drug API supply, but India itself sources roughly two-thirds of its own API needs (70-90% of KSMs/basic APIs) from China — so India's 'China+1' positioning carries its own upstream dependency, not a clean substitution story",
+    "India's PLI scheme for APIs: ₹6,940 Cr budget (approved 2020), ~21 projects sanctioned for 35 critical APIs that previously accounted for ~67% of India's import dependence, combined installed capacity 33,895 tonnes; separate ₹3,000 Cr Bulk Drug Parks scheme (Himachal Pradesh, Gujarat, Andhra Pradesh)",
+    "Regulatory approval cycles (DMF/CEP filings, USFDA/EU-GMP audits) are a multi-year gating process, not a fast-moving competitive variable"
+  ],
+  "adoptionStructure": {
+    "note": "Not a seasonal-repurchase category; demand is qualification-and-contract driven — a 12-24+ month buyer qualification/audit cycle typically precedes a new API sourcing relationship, after which orders recur on a multi-year supply-contract basis"
+  },
+  "peers": [
+    { "name": "Divi's Laboratories", "revenueCr": 9360, "ebitdaMarginPct": 32, "roePct": 20, "fy": "FY2025", "note": "largest-scale peer, considerably larger than most companies in this batch", "source": "screener.in/company/DIVISLAB/consolidated/" },
+    { "name": "Laurus Labs", "revenueCr": 5554, "ebitdaMarginPct": 19, "patCr": 358, "fy": "FY2025", "source": "screener.in/company/LAURUSLABS/consolidated/" },
+    { "name": "Neuland Laboratories", "revenueCr": 1477, "ebitdaMarginPct": 22, "roePct": 20, "patCr": 260, "fy": "FY2025", "note": "closest scale/comparability peer among these three", "source": "screener.in/company/NEULANDLAB/consolidated/" }
+  ],
+  "customerValue": {
+    "drivers": ["cGMP-compliant synthesis capability validated by multiple national regulators", "DMF/CEP filing depth as a signal of process/documentation maturity", "consistent batch-to-batch quality and regulatory audit performance"],
+    "strongestPredictor": "regulatory approval depth (DMF/CEP count, certifications held) — this gates whether a formulator can even qualify the supplier, before price or relationship matter",
+    "source": "drugpatentwatch.com industry analysis"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify off-patent/generic API opportunity", "develop synthesis route", "file DMF/CEP with target-market regulator", "market via regulatory-filing-backed product catalog"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["cGMP process development", "validate against multiple regulators (USFDA/EDQM/WHO-GMP/etc.)", "scale synthesis route", "maintain regulatory filing currency"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against multi-year offtake", "phased capex/reactor capacity expansion", "manufacture at cGMP-validated sites", "batch-test & release"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["support buyer qualification/audit process (12-24+ months)", "maintain consistent quality/documentation", "respond to regulatory inspection findings", "technical support for formulator's own filings"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["formulator qualifies API source", "multi-year supply agreement negotiated", "recurring purchase orders against contract", "renew/expand on China+1 or capacity-driven diversification"] }
+  ],
+  "sources": [
+    "https://www.prnewswire.com/news-releases/active-pharmaceutical-ingredients-api-market-to-amass-359-45-billion-by-2030-at-cagr-5-85---grand-view-research-inc-302441076.html",
+    "https://www.marketsandmarkets.com/PressReleases/api.asp",
+    "https://www.vantagemarketresearch.com/industry-report/india-active-pharmaceutical-ingredients-api-market-2479",
+    "https://www.drugpatentwatch.com/blog/the-role-of-china-in-the-global-generic-drug-api-market/",
+    "https://www.drugpatentwatch.com/blog/indias-growing-importance-in-generic-drug-api-manufacturing/",
+    "https://www.screener.in/company/DIVISLAB/consolidated/",
+    "https://www.screener.in/company/LAURUSLABS/consolidated/",
+    "https://www.screener.in/company/NEULANDLAB/consolidated/"
+  ]
+}

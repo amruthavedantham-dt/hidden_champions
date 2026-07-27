@@ -1,0 +1,41 @@
+{
+  "segmentName": "Industrial Enzymes & enzymatic solutions",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary: $6.4B (2024) to $8.2B by 2030 (CAGR 4.3%, most conservative); $7.7B (2024) to $11.3B by 2030 (CAGR 6.6%); $7.9B (2024) to $11.7B by 2030 (CAGR 6.8%); $8.42B (2025) to $12.01B by 2030 (CAGR 7.3%, most bullish). Range: ~$6.4-8.4B (2024/25) to ~$8.2-12B by 2030, CAGR 4.3-7.3% depending on source.",
+    "cagrPctRange": [4.3, 7.3],
+    "exportGeographies": ["Europe", "Asia", "North America", "Middle East"],
+    "globalCompetitors": ["Novozymes", "DuPont (IFF)", "BASF SE"],
+    "domesticSlice": "India enzymes market: $440.5M (2023), CAGR 7.8% (2024-2030); industrial enzymes held 54.7% share of the India enzymes market in 2023; the India market is consolidated, with top players holding 75%+ share"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Enzymes are positioned as sustainable substitutes for harsh industrial chemicals — more reaction-specific, lower-toxicity by-products — used in textile bleaching, pulp/paper bio-bleaching, biodegradable detergents",
+    "Cold-water detergent adoption in North America and Europe amplifies detergent-enzyme demand, since enzymes catalyze cleaning at 20-40°C where conventional chemistry underperforms",
+    "EU green-chemistry policy actively supports enzyme adoption in detergents, food processing and agri-biotech"
+  ],
+  "adoptionStructure": {
+    "note": "Not a seasonal-repurchase category; enzymes are a recurring consumable input tied directly to customer production volumes (detergent formulators, textile mills, food processors reorder as they manufacture)"
+  },
+  "peers": [
+    { "name": "Advanced Enzyme Technologies", "revenueCr": 637, "ebitdaMarginPct": 31, "roePct": 10, "patCr": 134, "fy": "FY2025", "note": "~10x Infinita's revenue scale — a scale-differentiated rather than direct peer; 2nd-highest market share among Indian enzyme companies, present in 70+ countries", "source": "screener.in/company/ADVENZYMES/consolidated/" }
+  ],
+  "customerValue": {
+    "drivers": ["consistency of enzyme activity/potency batch-to-batch — the core quality metric", "technical support for dosing/process integration into the customer's own manufacturing line", "application-specific formulation/custom blending capability"],
+    "strongestPredictor": "not established from available research",
+    "source": "industry press aggregation"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["assess application need (food/beverage/detergent/textile/etc.)", "select or custom-blend enzyme formulation", "package as powder/liquid", "position on application-specific performance"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["fermentation/formulation R&D (DSIR-recognized unit)", "develop custom blends per customer process requirement", "certify (ISO, Kosher/Halal where relevant)", "release to production"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against customer order volumes", "run dedicated powder/liquid production lines", "quality/potency-test each batch", "package & stock"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["technical support for dosing/process integration", "respond to customer process-change requests", "maintain batch-to-batch consistency", "certification/compliance documentation support"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["customer production run creates recurring consumable demand", "purchase order placed against production volume", "fulfil & deliver", "reorder tied to customer's own manufacturing cadence"] }
+  ],
+  "sources": [
+    "https://www.globenewswire.com/news-release/2025/04/10/3059084/0/en/Industrial-Enzymes-Global-Overview-2025-Market-to-Reach-11-3-Billion-by-2030-with-North-America-Leading-with-35-4-Share-in-2024.html",
+    "https://www.precedenceresearch.com/industrial-enzymes-market",
+    "https://www.grandviewresearch.com/industry-analysis/india-enzymes-market-report",
+    "https://www.screener.in/company/ADVENZYMES/consolidated/"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "segmentName": "Aerospace/Defense Precision Components & UAVs",
+  "market": {
+    "worldSizeUSD_B_range": "Aerospace & defense parts manufacturing: $643.31B (2024) to $961.38B by 2032 (5.15%/yr), or $1,003.0B (2025) to $1,426.9B by 2033 (5.4%/yr). Global UAV market: $26.12B (2025) to $40.56B by 2030 (9.2%/yr), or $32B (2024) to $63.1B by 2030 (12%/yr). Commercial drone market: $30.02B (2024) to $54.64B by 2030 (10.6%/yr).",
+    "cagrPctRange": [5.15, 12.0],
+    "exportGeographies": ["USA", "UK", "Europe", "Singapore"],
+    "globalCompetitors": ["Rolls-Royce, GE Aviation, Honeywell, Boeing, Safran, Collins Aerospace as OEM customers (not competitors) — the primary competitive comparison is against other Indian precision-component makers, see peers[]"],
+    "domesticSlice": "India drone market: $654M (2024) to $1,437M by 2029 (17.0%/yr) — faster-growing than the global UAV rate. India's Union Budget 2024-25 allocated ~$68.3B to defense including ~$20.8B capital outlay."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Government drone-sector policy push: PLI scheme for drones, 'Drone Shakti' initiative, liberalized Drone Rules 2021; GST cut to 5% on commercial drones and abolished on military drones/critical defence equipment",
+    "DRDO allocated ~$4B in 2024 for drone-system development",
+    "Defence Ministry reportedly executing its largest-ever indigenous drone procurement program, splitting orders across multiple domestic manufacturers to build parallel production lines"
+  ],
+  "adoptionStructure": {
+    "note": "Order flow is driven by defense capital-outlay budgets, indigenization/Make-in-India mandates, and specific program wins rather than open-market demand — not a repurchase-rate category"
+  },
+  "peers": [
+    { "name": "Azad Engineering Ltd", "revenueCr": 603, "fy": "latest available", "patCr": 134, "note": "the most directly comparable listed peer (precision-forged aerospace/defense components); delivered India's first indigenous expendable turbojet engine to DRDO in 2026", "source": "screener.in" },
+    { "name": "Data Patterns (India) Ltd", "note": "defence electronics — same end-market but different product type (systems/electronics, not precision components/UAV hardware)", "ebitdaMarginPctRange": "38-45%", "roePctRange": "15-25%", "source": "aggregated Screener/ICICI Direct/Tijori data" },
+    { "name": "Paras Defence and Space Technologies Ltd", "revenueCr": 477, "fy": "FY", "patCr": 89.5, "patMarginPct": 22.70, "roePct": 9.24, "source": "screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["AS9100 certification — a de facto requirement for defense-ministry/OEM approved-vendor-list status", "NADCAP accreditation for specific critical processes (heat treatment, coatings, welding, NDT), complementary to and dependent on AS9100"],
+    "strongestPredictor": "AS9100/NADCAP certification status — without it, a supplier is simply not on the approved vendor list",
+    "source": "getisocertificate.com; advisera.com"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer precision-machined/composite/sheet-metal aerostructure components", "offer finished UAV/autonomous-systems platforms (airframes, engine parts, avionics housings)", "span legacy component supply and newer platform-level products"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["multi-axis CNC machining, composite layup, sheet-metal fabrication, PCB assembly, engineering design (CAD/CAM)", "maintain AS9100/NADCAP-certified processes", "pursue defense-ministry/OEM qualification"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate dedicated manufacturing campuses/facilities", "scale for both prototype/low-volume defense programs and larger indigenous-production mandates"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["undergo long qualification cycles with global OEMs and defense agencies", "become an 'approved vendor' via certification and successful pilot programs", "maintain the relationship as the gate to recurring orders"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["order flow driven by defense capital-outlay budgets and indigenization mandates", "specific program wins (MOUs, PSU/prime contracts)", "fulfil against multi-year program schedules", "expand as indigenization scales"] }
+  ],
+  "sources": [
+    "https://blog.tbrc.info/2024/10/global-aerospace-and-defense-market-forecast/",
+    "https://www.marketsandmarkets.com/Market-Reports/unmanned-aerial-vehicles-uav-market-662.html",
+    "https://droneintelligence.ai/intelligence/india-defence-drone-market",
+    "https://www.india-briefing.com/news/indias-defense-manufacturing-sector-policy-support-top-exports-key-firms-35946.html/",
+    "https://www.screener.in/company/AZAD/consolidated/",
+    "https://www.screener.in/company/PARAS/consolidated/"
+  ]
+}

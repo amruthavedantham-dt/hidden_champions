@@ -1,0 +1,40 @@
+{
+  "segmentName": "Shot Blasting & Shot Peening Equipment (surface finishing)",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary widely by source: shot blasting machine market ~$1.3-1.5B (2024-26) to ~$2.05-2.68B by 2032-35, CAGR ~3.65-7.70% depending on methodology. Shot peening + shot blasting combined: ~$1.2B (2023) to ~$2.1B by 2032, CAGR 6.3%.",
+    "cagrPctRange": [3.65, 7.70],
+    "exportGeographies": ["UAE", "Saudi Arabia", "Egypt", "UK", "Germany (per Sandstorm's own claim — actual trade-data records only 8 shipments to 2 buyers historically, mostly UAE, so treat the wider list as aspirational/self-claimed rather than confirmed volume)"],
+    "globalCompetitors": ["Wheelabrator Group (part of Norican Group) — global leader, revenue ~$776.5M, 1,000-5,000 employees across 35 locations", "Sinto America", "Empire Airblast", "Gostol TST", "Rösler Group (revenue/margin not found for any of these in this segment specifically)"],
+    "domesticSlice": "No India-specific market-size figure found; Asia Pacific held 36.9% of the global shot blasting machine market (2025) per aggregated secondary sourcing, not independently verified against a single primary source"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Aerospace fatigue-resistance specs (turbine blades, gear systems, airframe components) drive precision shot-peening adoption",
+    "Automotive lightweighting (high-strength aluminum/steel alloys) increases demand for stress-relief surface treatment",
+    "Industry 4.0 (sensors, real-time monitoring, predictive maintenance) is being integrated into blasting/peening lines"
+  ],
+  "adoptionStructure": {
+    "note": "Not a recurring-repurchase category; capital-equipment demand tied to OEM capex cycles and qualification renewals, not a seasonal or replacement-rate structure"
+  },
+  "peers": [],
+  "customerValue": {
+    "drivers": ["certification/qualification for aerospace-grade work (e.g. AS9100) — likely relevant though not confirmed held by every player in this niche", "fatigue-life/compressive-residual-stress performance specs for aerospace/automotive OEM qualification", "customization and delivery reliability"],
+    "strongestPredictor": "not established — this is a fragmented, largely private-company segment with little public buyer research available",
+    "source": "industry press aggregation"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["assess surface-treatment need (blasting/peening/finishing)", "select or customize equipment configuration", "quote against application spec", "brand & position on customization + delivery"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house engineering/design", "R&D and quality-control function (where present)", "pursue certifications relevant to target end-market (aerospace/defense)", "release design to production"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against order backlog", "fabricate/assemble equipment", "test unit performance", "package & ship"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["direct B2B sales (often via IndiaMART/TradeIndia-style listings for smaller players)", "site/application-specific configuration support", "installation support", "after-sales service"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises (OEM capex or defense/industrial procurement)", "buyer qualifies supplier", "order placed", "fabricate & deliver", "reorder on capacity expansion or replacement"] }
+  ],
+  "sources": [
+    "https://www.fortunebusinessinsights.com/shot-blasting-machine-market-108874",
+    "https://reports.valuates.com/market-reports/QYRE-Auto-5P8141/global-shot-peening-shot-blasting-machines",
+    "https://www.indexbox.io/blog/shot-peening-machine-market-forecast-points-higher-toward-2035-driven-by-aerospace-and-semiconductor-demand/",
+    "https://www.zoominfo.com/c/wheelabrator-group-inc/128221228",
+    "https://aerowheel.co/top-shot-blasting-machine-manufacturers-in-the-industry/"
+  ]
+}

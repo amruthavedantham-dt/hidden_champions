@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "unisem-agritech",
+    "series": "Hidden Champions of India",
+    "segmentRef": "hybrid-crop-seeds",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Converted from private to public limited company in Sept 2025 ahead of a BSE SME IPO (listed Dec 2025); CIN U01100KA2016PTC096390 (HVT row) — research shows the post-conversion CIN as U01100KA2016PLC096390 (PLC not PTC), consistent with the conversion, not a discrepancy."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Unisem Agritech: a wealth-creation engine that just went public, on a nine-year-old seed business.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Karnataka hybrid-seed house that doubled profit in a year, listed on the BSE SME platform in December 2025.", "tier": "company", "epistemic": "fact", "source": "jmfinancialservices.in; business-standard.com", "fields": ["financials.patCr", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2016 (incorporated)", "tier": "company", "source": "tofler.in", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹69.08 Cr · FY25 (+13% YoY)", "tier": "company", "source": "DRHP (via jmfinancialservices.in)", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "PAT", "value": "₹4.27 Cr · FY25 (+98% YoY)", "tier": "company", "source": "DRHP (via jmfinancialservices.in)", "fields": ["financials.patCr.FY25"] },
+    { "label": "ROE / ROCE", "value": "57-62% / 38.89% (thin pre-IPO equity base)", "tier": "company", "source": "DRHP (via indiaipo.in)", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "IPO", "value": "₹21.45 Cr fresh issue · BSE SME, Dec 2025", "tier": "company", "source": "business-standard.com", "fields": ["ipo"] },
+    { "label": "Distribution", "value": "1,147 distributors nationwide", "tier": "company", "source": "unisem.in", "fields": ["distribution"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine",
+    "blocks": [
+      { "text": "Revenue grew from ₹46.91 Cr (FY23) to ₹69.08 Cr (FY25), and PAT nearly doubled year-on-year in FY25 alone, ₹2.15 Cr to ₹4.27 Cr (+98%), with EBITDA climbing from ₹4.03 Cr to ₹7.10 Cr over the same year.", "tier": "company", "epistemic": "fact", "source": "DRHP (via jmfinancialservices.in)", "fields": ["financials.revenueCr", "financials.patCr", "financials.ebitdaCr"] },
+      { "text": "Return on equity is reported at 57-62% (two DRHP-derived figures from different summaries) with ROCE at 38.89% — genuinely strong, though as with Eldorado Agritech's own pre-IPO figures, a small, pre-IPO equity base flatters ROE specifically; the post-listing equity base will be a fairer read going forward.", "tier": "company", "epistemic": "fact", "source": "DRHP (via indiaipo.in)", "fields": ["financials.roePct", "financials.rocePct"] },
+      { "text": "Note: screener.in shows materially different figures on a different consolidation/restatement basis (FY24 ₹50.31 Cr, FY25 ₹58.38 Cr, FY26 ₹81.03 Cr) — this profile uses the DRHP-sourced figures as primary since they trace to the regulatory filing, but the discrepancy is real and worth resolving before publishing.", "tier": "company", "epistemic": "fact", "source": "screener.in vs. DRHP — flagged discrepancy", "fields": ["financials.revenueCr"] },
+      { "text": "It listed on the BSE SME platform in December 2025 (₹21.45 Cr fresh issue, ₹63-65/share price band, 2.28x subscribed) — but the stock opened flat with no listing premium, and proceeds are earmarked for working capital, debt repayment, and expanding seed-processing capacity, R&D and distribution.", "tier": "company", "epistemic": "fact", "source": "business-standard.com; indiaipo.in", "fields": ["ipo", "recentMoves"] },
+      { "text": "R&D runs on 30+ acres of farmland plus lab facilities using genetic markers, QTL mapping and marker-assisted selection, recognized by both the Indian Institute of Horticultural Research and DSIR — the HVT sheet flags this pillar `needs_verify: yes` despite the dual recognition claim.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); unisem.in", "fields": ["product_improvement"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large, with estimates that genuinely disagree by nearly 2x.**", "evidence": "Global hybrid seed market: $25.6-30.9B (2025/26) on the conservative count, to $59.7-65.1B (2025) on the bullish count — a wider spread than most segments in this batch. India's domestic seed market: $8.6B (2025) to $20.2B by 2034.", "tier": "segment", "epistemic": "fact", "source": "Mordor Intelligence; Expert Market Research; IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "Demand is **structurally recurring by design.**", "evidence": "True F1 hybrids require near-100% annual repurchase since farm-saved seed loses yield potential (heterosis) — a stronger recurring-demand structure than the ~15% national fresh-seed rate that blends in self-pollinated crops.", "tier": "segment", "epistemic": "fact", "source": "IBEF; agri-extension research", "fields": ["market.adoptionStructure"] },
+      { "point": "**Export markets closely match where Unisem already has partnerships.**", "evidence": "Bangladesh, Ghana and Sri Lanka together account for ~74% of India's hybrid seed export shipments — and Unisem's own stated partner markets (Nepal, Bangladesh, Sri Lanka, Botswana, other African markets) sit squarely inside that pattern.", "tier": "segment", "epistemic": "fact", "source": "Volza trade data; unisem.in", "fields": ["exportFootprint"] },
+      { "point": "Listed peers are **15-20x its scale, but not necessarily healthier.**", "evidence": "Kaveri Seed (₹1,202 Cr revenue, 18% ROE, 24% EBITDA margin) is the clean at-scale benchmark; Nuziveedu Seeds shows genuinely inconsistent figures across sources (ROE reported as low as -2.85% in one pull), suggesting scale alone doesn't guarantee Unisem's current profitability profile.", "tier": "segment", "epistemic": "fact", "source": "screener.in; Tofler (Nuziveedu)", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A newly-listed, fast-compounding hybrid seed house whose export partnerships already sit in exactly the countries that absorb most of India's hybrid seed exports. The scale gap to Kaveri Seed is real, but the growth rate is running well ahead of it.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Mordor Intelligence, Expert Market Research, IMARC Group, Volza trade data. Peer data: screener.in (Kaveri Seed), Tofler (Nuziveedu Seeds, flagged as inconsistent across sources)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Beyond 2 verified export buyers", "body": "The HVT sheet's own gap research names this precisely: Unisem's export trade data shows 46 shipments but only 2 verified buyers, across markets that already align with where India's hybrid seed exports concentrate (Bangladesh, Ghana, Sri Lanka). The partnerships exist; the buyer base within them is thin.", "source": "HVT gap research (volza.com company profile).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path", "exportFootprint"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Unisem's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Convert the existing export code into 3-5 new buyers in one market", "body": "Rather than opening new geographies, use IPO proceeds earmarked for distribution to find 3-5 new buyers within the two markets (Bangladesh, Botswana) where relationships already exist, before spending on new-market entry.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a hybrid-seed company in this segment — a directory-depth pass, not yet confirmed against Unisem's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["breed proprietary germplasm / hybrid traits (disease tolerance, yield)", "select via genetic markers, QTL mapping, marker-assisted selection", "brand & position on yield/agronomic performance"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["field-trial and validate hybrids across agro-climatic zones", "seed multiplication through contract growers", "certify (DSIR, horticultural research institute recognition)"], "stepsTier": "segment", "spottedAt": "certify (DSIR, horticultural research institute recognition)", "spotted": { "text": "Company facts (30+ acres R&D farmland, IIHR + DSIR recognition, disease-tolerant hybrids in tomato/chili/okra/cucumber/watermelon) confirm this step is real for Unisem, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["seed processing: sorting, grading, packing", "quality testing labs (purity, germination)", "warehousing"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["dealer/distributor network servicing farmers", "agronomic advisory, demo plots", "brand-building at point of sale"], "stepsTier": "segment", "spottedAt": "dealer/distributor network servicing farmers", "spotted": { "text": "Company facts (1,147 distributors nationwide) confirm this step is real for Unisem, not just generic — see snapshot.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["farmer purchases seed each season (near-100% SRR for true hybrids)", "dealer orders against demand", "fulfil ahead of sowing window", "repeat next season"], "stepsTier": "segment", "spottedAt": "repeat next season", "spotted": { "text": "Spotted at \"repeat\": the export side of this same loop has only 2 verified international buyers despite 46 shipments → beyond 2 verified buyers.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/hybrid-crop-seeds.json) — no company-specific (A2/pursuit) operational intel was collected for Unisem this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A profit nearly doubled in a year, a fresh public listing, and an export relationship in exactly the right two countries — that's only reaching two actual buyers so far. **The market fit is proven; the buyer base isn't built out yet.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Unisem or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from the company's DRHP (via jmfinancialservices.in, indiaipo.in) — flagged against a conflicting screener.in figure set; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus unisem.in; market data from Mordor Intelligence, Expert Market Research, IMARC Group and Volza trade data; peer figures from screener.in and Tofler. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["jmfinancialservices.in", "indiaipo.in", "screener.in", "business-standard.com", "unisem.in", "Mordor Intelligence", "Expert Market Research", "IMARC Group", "Volza", "Tofler", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true buyer retention beyond the 2 verified export accounts, and unit economics by crop/variety — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

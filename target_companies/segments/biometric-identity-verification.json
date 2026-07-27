@@ -1,0 +1,43 @@
+{
+  "segmentName": "Biometric Identity Verification — hardware & devices",
+  "market": {
+    "worldSizeUSD_B_range": "Biometric identity verification market: $8.88B (2025) to $17.81B by 2030, CAGR 14.9%. Broader biometric systems market: ~$53.22B (2025) to $95.14B by 2030, CAGR ~12.3%.",
+    "cagrPctRange": [12.3, 14.9],
+    "exportGeographies": ["Africa", "Middle East", "Southeast Asia"],
+    "globalCompetitors": ["IDEMIA (France, ~€2.9B revenue 2023, order-of-magnitude larger)", "Thales (France, biometrics-segment revenue not separately disclosed)"],
+    "domesticSlice": "India biometrics market: $2.8B (2024) to $7.36B by 2033, CAGR 11.33%, anchored by Aadhaar (1.2B+ enrolled, ~95% of population) and UIDAI's mandatory 'Registered Device' certification regime for authentication hardware"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "UIDAI mandates STQC L1/FBI-PIV certified 'Registered Devices' for Aadhaar authentication — a hard regulatory gate on the domestic device market, not just a quality signal",
+    "e-KYC substantially lowers verification cost vs paper-based methods, a structural driver behind BFSI/telecom biometric adoption",
+    "Global demand is also driven by border-security and fraud-prevention mandates outside India"
+  ],
+  "adoptionStructure": {
+    "note": "Not a seasonal-repurchase category like seeds; demand is procurement-cycle driven (government tenders, BFSI onboarding volumes) rather than a fixed replacement rate"
+  },
+  "peers": [
+    { "name": "Precision Biometric India Pvt Ltd", "revenueCr": 65.4, "fy": "FY2024-25", "revenueCAGR1yrPct": 76, "ebitdaCAGR1yrPct": 108, "employees": 129, "source": "Tracxn / thecompanycheck.com" }
+  ],
+  "customerValue": {
+    "drivers": ["UIDAI-mandated device registration/certification (STQC L1, FBI PIV) — a hard gate, not optional", "liveness/spoof-detection capability, increasingly required", "cost and field-durability for rural/handheld enrollment use cases"],
+    "strongestPredictor": "regulatory certification (UIDAI Registered Device status) — without it, a device cannot legally serve the Aadhaar-linked market at all",
+    "source": "UIDAI ecosystem documentation; industry press"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["assess use-case (fingerprint/iris/face, fixed/portable)", "select certified sensor/module", "build SDK/integration layer", "brand & position on certification + liveness performance"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house R&D (algorithm, liveness/anti-spoof detection)", "pursue patents", "obtain regulatory certification (STQC/UIDAI/FBI-PIV)", "release to production"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against government/enterprise order cycles", "manufacture hardware", "quality/certification-test each batch", "package & stock"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["sell direct to government/enterprise or via reseller/integrator channel", "onboard/qualify buyer", "field support & recharge/service", "handle spoof/security incident response"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises (government tender or BFSI/telecom KYC need)", "buyer verifies certification", "order placed", "fulfil at volume", "reorder as programs scale"] }
+  ],
+  "sources": [
+    "https://www.marketsandmarkets.com/PressReleases/biometric-identity-verification.asp",
+    "https://www.marketsandmarkets.com/Market-Reports/next-generation-biometric-technologies-market-697.html",
+    "https://vocal.media/futurism/india-biometrics-market-set-for-strong-growth-as-digital-identity-and-security-demands-accelerate",
+    "https://www.cgdev.org/publication/building-digital-id-inclusive-services-lessons-india",
+    "https://uidai.gov.in/en/ecosystem/authentication-devices-documents/biometric-devices.html",
+    "https://en.wikipedia.org/wiki/IDEMIA"
+  ]
+}

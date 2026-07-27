@@ -1,0 +1,66 @@
+{
+  "segmentName": "Activated bleaching earth & bentonite (industrial minerals for oil refining)",
+  "segments": [
+    {
+      "key": "activated-bleaching-earth-oil-refining",
+      "nature": "commodity",
+      "market": {
+        "worldSizeUSD_B_range": [2.61, 3.01],
+        "period": "2024",
+        "cagrRangePct_range": [5.2, 5.91],
+        "applicationShare": { "edibleOilAndFats": 0.769 },
+        "regionalShare": { "asiaPacific": 0.646 },
+        "exportGeographies": ["global, Asia-Pacific-weighted"],
+        "globalCompetitors": ["Clariant", "Imerys", "Oil-Dri", "Musim Mas", "Taiko"],
+        "domesticSlice": "figures are global; ~40-45% combined share held by the 5 majors above, rest split among small-scale regional/Indian/Chinese producers"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [
+    { "name": "Fuller's Earth (broader category)", "note": "Wet-technology segment ~43.2% of the global Fuller's Earth market (2025), ~$1.21B" }
+  ],
+  "structureFacts": [
+    "~5-8 kg of activated bleaching earth is consumed per metric ton of refined palm oil — a high-volume, structurally recurring input, not a discretionary purchase.",
+    "India imported 16 million tonnes of edible oil in 2025, 99.7% of palm-group volumes in crude (unrefined) form — a large, currently-unmet domestic refining opportunity that would pull directly on this product category if refining capacity expands.",
+    "Acid-activated bentonite is described as delivering the lowest cost-per-tonne outcome for bulk edible-oil bleaching under GRAS/EU food-additive clearances, sustaining its dominance over alternatives."
+  ],
+  "adoptionStructure": {
+    "note": "A recurring industrial-consumable market (bleaching earth is consumed/discarded per refining batch, not a durable good), driven by edible-oil refining volumes — not a subscription or replacement-rate market in the agri-seed sense."
+  },
+  "peers": [
+    {
+      "name": "Ashapura Perfoclay Limited",
+      "cin": "U14108MH1997PLC107300",
+      "revenueCr_FY24": "367-383",
+      "netProfitCr_FY24": 47.78,
+      "netProfitCr_FY23": 29.03,
+      "ebitdaGrowthPct_FY24": 40.37,
+      "ebitdaCagr3yr": 28,
+      "note": "A much larger, listed peer in the exact same product category (bleaching earth and clay catalyst) — among India's largest bentonite exporters. Real, useful benchmark: net profit grew ~65% YoY on a ~10x-larger revenue base, while Nav Bharati's own EBITDA kept declining over a comparable period."
+    }
+  ],
+  "peersNoteOthers": "Other named competitors (20 Microns Limited, Refoil Earth Pvt Ltd, Indian Clay & Mineral Co, HRP Industries, Global Bleach Chem, Korvi Activated Earth, Manek Active Clay) surfaced but no financials were found for them in this research pass.",
+  "customerValue": {
+    "drivers": [
+      "Cost-per-tonne is the primary competitive axis in this category — unlike the certification-gated dynamics seen in auto-OEM or medical-device segments, this is closer to a scale/cost commodity game.",
+      "Consistent grade/quality control and reliable, prompt delivery are named differentiators among smaller regional suppliers (e.g. Refoil Earth's positioning).",
+      "Regulatory clearances (GRAS, EU food-additive status) matter at the product-category level, not as a company-specific certification battle."
+    ],
+    "strongestPredictor": "Cost-per-tonne competitiveness at consistent quality — not a single gating certification the way IATF 16949 or ISO 13485 function in the other two segments researched."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify buyer (oil refiner, agriculture, aviation-fuel, pet-care)", "quote against grade specification and price", "win the order on cost-per-tonne and reliability", "supply the bleaching-earth/bentonite/activated-carbon product line"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["source raw clay/mineral inputs", "process via acid or thermal activation", "maintain in-house oil-testing lab for QC", "pursue/maintain certifications (ISO, Kosher, REACH) where sought by buyers"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against buyer/seasonal demand", "procure raw material", "activate and grade the product", "package and ship domestically and for export"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard as an approved supplier", "supply per buyer's ongoing order pattern", "support quality queries via in-house lab", "maintain the relationship for repeat orders"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from oil-refining/agriculture/aviation-fuel consumption", "purchase order placed (domestic or export)", "fulfil via owned or third-party transport", "recurring reorder tied to ongoing consumption"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "QYResearch, Grand View Research, DataIntelo, Fortune Business Insights, SphericalInsights, DataBridge Market Research (global activated bleaching earth / Fuller's Earth market sizing)",
+    "Mordor Intelligence, industry directories (India manufacturer landscape, global competitor share)",
+    "Tofler, Tracxn (Ashapura Perfoclay peer financials)"
+  ]
+}

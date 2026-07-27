@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Glint Cosmetics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">GLINT Cosmetics: a 55-country private-label exporter whose own &#x27;FDA certified&#x27; claim sits next to a real FDA warning letter.</h1>
+    <p class="subhead">A Navi Mumbai contract manufacturer of 3,500+ personal-care products, currently under a US FDA import alert that has suspended its American exports.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">2004</p></div><div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹100-150 Cr band · FY25 (+16.84% YoY)</p></div><div class="snap"><p class="snap-label">Net margin / ROE</p><p class="snap-value">1.87% / 7.07%</p></div><div class="snap"><p class="snap-label">Net profit growth</p><p class="snap-value">+85.83% YoY</p></div><div class="snap"><p class="snap-label">US market status</p><p class="snap-value">Exports suspended — FDA import alert</p></div><div class="snap"><p class="snap-label">Product range claimed</p><p class="snap-value">3,500+ SKUs, 55+ countries</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A capability claim with a real, independently-documented exception</h2>
+      <p class="prose">The single most important fact in this profile isn&#x27;t in the financials: the HVT sheet&#x27;s own gap research cites a real FDA warning letter (fda.gov, an independent government source, not a company claim) documenting CGMP violations and unapproved new drugs, which has led to US exports being suspended under an FDA import alert. This directly contradicts the company&#x27;s own moat claim of being &#x27;FDA certified&#x27; — the HVT sheet marked that moat claim `needs_verify: no`, which this profile treats as a real gap in the HVT tool&#x27;s own verification, not a settled fact.</p><p class="prose">Financially, the company is growing: revenue up 16.84% to a ₹100-150 Cr band, net profit up 85.83% year-on-year — though still on thin margins (net margin 1.87%, ROE 7.07%), and a separate Tracxn estimate puts revenue in a wider ₹100-500 Cr band for the same period, an unreconciled discrepancy.</p><p class="prose">It describes itself as an end-to-end manufacturer, white-label supplier and exporter of 3,500+ skincare, baby care, bath and personal care products to 55+ countries, with a DSIR-approved R&amp;D unit — all self-claimed, and the HVT sheet flags `product_improvement` unresolved despite `Verified` review status.</p><p class="prose">Founded in 2004 by B.M. Chopra, still family-directed (Puneet, Maneesh, Madhuri and Akshata Chopra as directors) — a genuinely long-running, closely-held business, not a recent entrant, which makes the US regulatory issue more notable rather than less.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">The field is <b>large and growing at a healthy clip</b>, with global D2C beauty as the structural driver.</p><p class="ev">Private-label cosmetics: $10.64-12.8B (2023/24) to $14.39-23.7B by 2030 depending on source (5.2-9.1%/yr); the broader private-label manufacturing service market is larger still, $45.4B (2024) to $81.6B by 2032 (8%/yr).</p></li><li class="insight"><p class="point"><b>Low-MOQ flexibility, not scale, is the real CMO-selection criterion</b> — GLINT&#x27;s stated model fits this.</p><p class="ev">Emerging D2C beauty brands select contract manufacturers primarily on low minimum-order-quantity flexibility to support launch economics, alongside brand transparency and sustainable production.</p></li><li class="insight"><p class="point">But <b>regulatory compliance is the other half of the gate, and it&#x27;s exactly where GLINT has a documented problem.</b></p><p class="ev">Emerging brands expanding into global markets face strict regulatory and documentation requirements, per the HVT sheet&#x27;s own alignment research — the same requirement the FDA warning letter shows the company currently failing to meet for the US market specifically.</p></li><li class="insight"><p class="point">The closest named peer shows <b>the same data-quality pattern seen elsewhere in this batch.</b></p><p class="ev">Vanesa Cosmetics Private Limited&#x27;s revenue is reported inconsistently across sources (a -52% CAGR per one aggregator vs. a flat ₹159 Cr per another) — private-company financial data in this segment is generally thin and unreliable, not unique to GLINT.</p></li>
+      </ul>
+      <p class="reflect">A growing private-label exporter in a genuinely expanding market, whose own regulatory story is more complicated than its marketing claims suggest. The FDA issue is the fact that actually determines whether the US market opportunity is real right now.</p>
+      <p class="src">Market data: Grand View Research, Credence Research, Verified Market Research. The FDA warning letter is the single highest-priority source in this profile — fda.gov, independent and authoritative.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">One place named in the company&#x27;s own gap research — though it should be read as remediation, not growth, until resolved.</p>
+      <div class="opp"><p class="tag">Velocity</p><h4>Resolving the FDA import alert to resume US exports</h4><p>The HVT sheet&#x27;s own gap research names this directly: the company has manufacturing capability that could serve the US drug-product export market, but a standing FDA import alert (CGMP violations, unapproved new drugs) currently blocks it. This is a compliance remediation project, not a market-entry opportunity, until the underlying violations are addressed and confirmed resolved.</p><p class="oppsrc">HVT gap research (fda.gov warning letter).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only GLINT&#x27;s own data and people can tell. Each is small, made to learn fast — but this one starts with verification, not a pilot.</p>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Independently verify current FDA import-alert status before any US-market planning</h5><p>Before any strategic discussion of the US market, get a current, direct confirmation of the import-alert status from FDA&#x27;s own database (rather than relying on the 2019-dated warning letter cited in the HVT sheet) — the situation may have changed materially since then in either direction.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for a private-label cosmetics manufacturer in this segment — a directory-depth pass, not yet confirmed against GLINT&#x27;s own stated process, so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">formulate, fill and package private-label/white-label personal-care SKUs (skincare, haircare, baby care, color cosmetics) → sell under client brand names → support low-MOQ D2C launches<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;sell under client brand names&quot;</span> Company facts (3,500+ SKU claim, 55+ country reach) confirm this step is real in scope for GLINT, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">in-house R&amp;D/formulation chemistry → stability and microbiology testing labs → GMP-compliant production → maintain regulatory compliance (FDA/Halal/ISO-type certifications) across export markets<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;maintain regulatory compliance (FDA/Halal/ISO-type certifications) across export markets&quot;</span> resolving the FDA import alert.</p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate automated filling/blending lines → cleanroom production capacity → packaging and warehousing throughput scaled for both large FMCG-style runs and low-MOQ D2C orders<span class="genericflag">generic scaffold</span></p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">deliver speed-to-market for new formulations → flexibility on batch sizes → maintain batch-to-batch quality consistency → support regulatory filings for export destinations<span class="genericflag">generic scaffold</span></p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">purchase orders/contracts from D2C brands, distributors, export clients → fulfil against brand&#x27;s launch/reorder schedule → repeat business once formulation and supply chain are qualified<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;purchase orders/contracts from D2C brands, distributors, export clients&quot;</span> the entire US order channel depends on resolving the FDA issue first.</p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/private-label-cosmetics-manufacturing.json) — no company-specific (A2/pursuit) operational intel was collected for GLINT this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>Real scale, real growth, and a real FDA warning letter sitting directly underneath the company&#x27;s own &#x27;FDA certified&#x27; claim. <b>Verify the compliance status before anything else here.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in GLINT or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. Financials from Tofler and Tracxn (figures conflict, both cited); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus zaubacorp.com and, critically, an independent US FDA warning letter (fda.gov) that contradicts the company&#x27;s own &#x27;FDA certified&#x27; moat claim; market data from Grand View Research and Credence Research; peer figures from tofler.in (Vanesa Cosmetics). Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Pioneer Embroideries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#27314d; --field-deep:#1a2236; --leaf:#9c7637; --sprout:#d8a85a;
+    --paper:#f5f1e7; --grain:#e3dccb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#e7e1d2; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(26,34,54,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:52ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(156,118,55,.09);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Pioneer Embroideries: a high-mix maker at scale, in a market turning its way.</h1>
+    <p class="subhead">A 35-year Mumbai textile house built for short runs and 300,000-plus designs, the flexibility that fast fashion and China-plus-one buyers increasingly pay for, with the margin not yet catching up to the value of it.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">1991 · Mumbai</p></div>
+    <div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹375 Cr · FY25</p></div>
+    <div class="snap"><p class="snap-label">EBITDA</p><p class="snap-value">₹31.6 Cr · FY25</p></div>
+    <div class="snap"><p class="snap-label">PAT</p><p class="snap-value">₹4.6 Cr · FY25</p></div>
+    <div class="snap"><p class="snap-label">Return on equity</p><p class="snap-value">0.87%</p></div>
+    <div class="snap"><p class="snap-label">In-house designs</p><p class="snap-value">300,000+</p></div>
+  </section>
+
+  <div class="body">
+
+    <!-- PART 1 -->
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A high-mix maker at scale</h2>
+      <p class="prose">Pioneer is built to make <b>many things in small runs, fast</b>. Its embroidery plants produce about 1.2 billion stitches a year from an in-house library of <b>300,000-plus designs</b>; for scale, a notable Chinese lace specialist cites around 20,000 patterns. Its Dhule unit recently replaced 32 older machines with eight high-end Schiffli units, the kind of move that buys flexibility, not just volume. Alongside it runs a 26,000-tonne-a-year specialty yarn line at Kala Amb, and Hakoba, an embroidered-clothing brand held since 2001.</p>
+      <p class="prose">That capability, high-mix, low-volume manufacturing at scale, is what the market has started asking for. Fast fashion and SKU proliferation keep shrinking run lengths, and buyers increasingly want low order minimums, speed and last-minute change. Sourcing this way is not just a convenience: low-MOQ supply has been linked to <b>30-50% better sell-through</b>, and a large proprietary design library is a real switching cost for the buyer. For exporters de-risking China, an Indian maker that can do small-and-flexible at scale is a "China plus one" answer.</p>
+      <p class="prose">The financials have not yet caught up to that. Revenue rose from ₹226 crore in FY21 to <b>₹375 crore in FY25</b>, about 8% a year, but profit moved the other way: net profit fell from ₹19 crore to about ₹4.6 crore, the operating margin from 12% to 7%, return on equity to about 0.87%, and the stock trades near 0.45 times book. Read against the capability, the gap is less a verdict than a question: the flexibility is being sold at close to commodity prices, when the market is paying a premium for exactly it.</p>
+      <p class="prose">The company has also been building a second edge: a waterless yarn process that saves about 2.8 million litres a day, recycled SILKOLITE now more than a fifth of yarn volume, rooftop solar, GOTS-certified fabric, and camouflage yarn developed for defence. Management's stated priority is to restore profitability through cost control, renewable energy and value-added products; domestic sales grew 18.3% in FY25 and embroidery revenue 12%, while US and Eurozone exports contracted on tariff uncertainty the company expects to revive.</p>
+    </section>
+
+    <!-- PART 2 -->
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The markets it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">Most of its revenue sits in a <b>vast commodity market.</b></p><p class="ev">Global polyester filament yarn is worth about $67-81B, growing ~5.7-8.7% a year, with draw-textured yarn ~69% of volume and Asia-Pacific over 60% of it. Pioneer, at ~$45M, is around <b>0.06%</b>. Here, share is not the frame.</p></li>
+        <li class="insight"><p class="point">The premium sits in the <b>part Pioneer has been building toward.</b></p><p class="ev">Recycled and biodegradable yarn is the growth and premium sub-segment, and EU and North American buyers increasingly pay for certified-sustainable inputs. <span class="fig">PFY market: Global Growth Insights, Mordor.</span></p></li>
+        <li class="insight"><p class="point">And the way buyers want to buy is <b>moving toward what Pioneer can do.</b></p><p class="ev">High-mix, low-volume sourcing (low order minimums, speed, frequent change) is now the fashion norm, and it pays: low-MOQ supply is linked to <b>30-50% better sell-through</b>, and buyers accept a higher per-unit price for it. Design library and speed, not raw scale, decide who wins here. <span class="fig">HMLV / low-MOQ: 3ERP, Fictiv, Lever Style.</span></p></li>
+        <li class="insight"><p class="point">Its second engine sits in <b>two smaller, growing markets.</b></p><p class="ev">Global embroidery is ~$1.5B headed to ~$2.78B by 2034 (~6.4%); lace fabric ~$3.2B to ~$5.6B by 2033 (~6.5%).</p></li>
+        <li class="insight"><p class="point">The wind is <b>partly at its back.</b></p><p class="ev">"China Plus One" sourcing favours Indian suppliers (China still leads on 7-day small-batch turnaround, so the opening is for a credible alternative), and certified-sustainable demand rewards the recycled, GOTS-certified, waterless work Pioneer has done.</p></li>
+        <li class="insight"><p class="point">And partly <b>against it.</b></p><p class="ev">Power-cost escalation (including the withdrawal of a duty exemption in Himachal Pradesh, where Kala Amb sits) compresses yarn-maker margins, and 2025 export demand in developed markets slowed.</p></li>
+      </ul>
+      <p class="reflect">A tiny slice of a giant commodity market, and a real position in two smaller markets where differentiation, not scale, pays. Which of the two a maker leans into is, in the end, a choice about where the margin is.</p>
+      <p class="src">Market data: Global Growth Insights; Mordor Intelligence; Cognitive Market Research; DataHorizzon; Virtue Market Research. Estimates vary by methodology; ranges shown.</p>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">Five places the company could grow, each built on something it already has. For a maker whose flexibility outruns its margin, the first ones are about price.</p>
+      <div class="opp"><p class="tag">Margin · the cornered resource</p><h4>Price the flexibility, not the yarn</h4><p>High-mix, low-volume, short-run production at scale is the hard thing to build, and Pioneer has it: 300,000-plus designs, Schiffli flexibility, low order minimums. The market pays a premium for exactly this. Sold as commodity output, it earns a commodity price; sold as flexibility, it may not have to.</p><p class="glaser">The capability buyers are now paying a premium for is already built and running. The opening is to charge for what it is.</p><p class="oppsrc">Design library &amp; flexibility: company-reported (Indian Textile Magazine, pelhakoba.com). Low-MOQ premium &amp; sell-through: 3ERP, Fictiv, Lever Style. Library benchmark: MarryLace.</p></div>
+      <div class="opp"><p class="tag">Margin</p><h4>Charge for the green process and certification</h4><p>A waterless line, rooftop solar, recycled SILKOLITE (already a fifth of volume) and GOTS certification are not commodity DTY, and EU and North American buyers increasingly pay more for certified-sustainable inputs. The work is done; worth asking whether the price reflects it.</p><p class="oppsrc">Process, recycled share, certification: company-reported (Indian Textile Magazine, silkolite.in). Sustainable-input demand: market press.</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>The China-plus-one alternative for export buyers</h4><p>China still leads fast small-batch, but buyers are actively looking to de-risk it. An Indian maker that can do small, flexible and fast at scale is the answer they are searching for, just as US and EU demand is set to revive.</p><p class="oppsrc">China+1 &amp; small-batch turnaround: market press (Lever Style, sourcing outlook). Export revival: company-reported.</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>The brand, sold direct</h4><p>Hakoba is a heritage embroidered-clothing brand the company has held since 2001, already listed on Amazon and Myntra. A recognised brand with a marketplace presence is a demand channel that does not need a new factory.</p><p class="oppsrc">Hakoba brand &amp; channels: company-reported (pelhakoba.com).</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>The assets, run fuller</h4><p>The company itself names working-capital constraints as a limit on capacity utilisation. The yarn and stitch lines are already built and paid for; output that fills them carries little extra fixed cost.</p><p class="glaser">The plants are already standing. Part of the opportunity is simply to let them run.</p><p class="oppsrc">Working-capital constraint on utilisation: company-reported (Indian Textile Magazine).</p></div>
+    </section>
+
+    <!-- PART 4 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only Pioneer's own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Quote the recycled line as its own product</h5><p>Take the recycled and GOTS-certified yarn to a few sustainability-minded buyers as a distinct, certified product with its own price, and see whether it holds above the commodity grade.</p></div>
+        <div class="hvt"><p class="tag">Margin</p><h5>Put a number on the green story</h5><p>Translate the waterless saving and solar generation into a per-order sustainability figure a buyer can cite, and test whether it changes the price or the close rate.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Free a slice of working capital</h5><p>Pick one line running below capacity, fund a short production run, and measure the contribution the extra output throws off against the working capital it ties up.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Push one Hakoba category online</h5><p>Take one strong Hakoba category, give it a focused run on Amazon and Myntra, and read the demand the brand pulls without a new line behind it.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Move volume toward the open pool</h5><p>Shift a measured share of capacity from the contracted export markets toward domestic accounts and embroidery, and track margin and reorder rate against the export base.</p></div>
+      </div>
+    </section>
+
+    <!-- PART 5 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below is how a textile maker like this operates, matched to what Pioneer states about its own. Each opening in Part 3 sits on a step.</p>
+        <div class="hrow">
+          <div class="hlabel">H5<span>Offers</span></div>
+          <div><p class="steps">design yarn &amp; lace ranges (<b>300k+ designs, low-MOQ / short-run capability</b>) → fit to the application (carpet, athleisure, defence, fashion, home) → brand (SILKOLITE, Hakoba) → <b>price</b></p><p class="hopp"><span class="k">Spotted at "price"</span> high-mix flexibility the market pays a premium for, sold near the commodity price → price the flexibility, not the yarn.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H4<span>Capability</span></div>
+          <div><p class="steps">process &amp; material R&amp;D (<b>waterless extrusion, pre-pigment, recycled, bio-based, defence camouflage</b>) → sample &amp; develop designs (Schiffli) → certify (GOTS) → scale to line</p><p class="hopp"><span class="k">Spotted at "certify"</span> the certified, sustainable edge is built but not yet carried to the price → the premium the green work has earned.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H3<span>Capacity</span></div>
+          <div><p class="steps">plan volumes → run Kala Amb yarn (26,000 MTPA) + stitch plants (1.2B stitches) → <b>working capital gates utilisation</b> → quality &amp; finish</p><p class="hopp"><span class="k">Spotted at "working capital"</span> built assets running below capacity → the assets, run fuller.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H2<span>Customer experience</span></div>
+          <div><p class="steps">B2B yarn &amp; fabric accounts → <b>Hakoba retail (offline + Amazon + Myntra)</b> → service &amp; reorder</p><p class="hopp"><span class="k">Spotted at "Hakoba retail"</span> a heritage brand with marketplace presence, under-pushed → the brand, sold direct.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H1<span>Orders</span></div>
+          <div><p class="steps"><b>demand (domestic +18.3%; export to US/EU contracted)</b> → order → fulfil from the integrated supply chain → deliver &amp; reorder</p><p class="hopp"><span class="k">Spotted at "demand"</span> buyers de-risking China want a flexible maker at scale → the China-plus-one alternative.</p></div>
+        </div>
+        <p class="hsrc">Steps: how textile makers run (PFY &amp; embroidery value-chain) matched to Pioneer's stated operations (Indian Textile Magazine 2025 feature; pelhakoba.com; silkolite.in). Figures: company-reported.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>The margin Pioneer is missing is not gone. It is sitting in a capability the market is only now learning to pay for, <span class="hi">high-mix, low-volume making at scale</span>, sold so far at close to commodity prices. For a maker like this, the next move is less a new build than a <span class="hi">re-pricing of what is already built.</span></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Pioneer or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Financials from Pioneer Embroideries' consolidated results via Screener.in (FY21-FY25) and a 2025 Indian Textile Magazine feature; operations and the sustainability programme company-reported (Indian Textile Magazine, pelhakoba.com, silkolite.in); market data from Global Growth Insights, Mordor Intelligence, Cognitive Market Research, DataHorizzon and Virtue Market Research; workflow steps from textile value-chain practice matched to Pioneer's stated operations. Opportunities are DeepThought's reading.<br>
+    What an outside profile cannot see, the reorder and retention by account, the true margin by yarn type and design, and the specific path from a 7% operating margin back toward double digits, is what a closer engagement establishes.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

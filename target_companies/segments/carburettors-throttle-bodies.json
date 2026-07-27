@@ -1,0 +1,43 @@
+{
+  "segmentName": "Carburettors & Throttle Bodies (two/three-wheeler fuel-metering components)",
+  "market": {
+    "worldSizeUSD_B_range": "Carburettor market estimates diverge by scope: $1.5B (2024) to $2.8B by 2034 (6.5%/yr); or $2.1B (2023) to $3.5B by 2032 (5.2%/yr); or up to $3.5B (2023) to $5.2B by 2032 (4.5%/yr) under a broader definition. Two-wheeler carburettor sub-segment specifically: ~$1.35B (2025), ~32.5% of total market value, 3.8%/yr through 2034.",
+    "cagrPctRange": [3.8, 6.5],
+    "exportGeographies": ["Bangladesh", "Colombia", "Italy", "Indonesia", "Malaysia", "Mauritius", "Netherlands", "Peru", "Singapore", "Sudan", "Sri Lanka", "Thailand", "Taiwan", "UK", "USA", "UAE", "Vietnam"],
+    "globalCompetitors": ["Mikuni Corporation (Japan)", "Keihin Group (Japan, now part of Hitachi Astemo)", "Walbro (USA)", "DellOrto (Italy)", "ZAMA (Japan)", "Chinese makers: Ruixing, Fuding Huayi, Zhanjiang Deni, TK Carburettor"],
+    "domesticSlice": "India's two-wheeler market alone consumes ~8 million carburetors annually — the largest single-country carburetor demand base globally; absolute India market size in USD not found"
+  },
+  "subSegments": [
+    { "name": "Automotive throttle body (adjacent, growth product line)", "sizeUSD_B_range": "$4.7-4.8B (2025) to $6.5-7.6B by 2034/35, 3.2-5.3%/yr for mechanical/assembly; electronic throttle body sub-segment specifically growing faster: $5.2B (2024) to $10.3B by 2033, ~8.2%/yr, reflecting the EFI/EV transition" }
+  ],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "The segment is under structural pressure: BS-VI emissions norms and the industry-wide shift to fuel injection/EVs are displacing carburettors, forcing product-mix rebalancing toward throttle bodies and other non-carburettor components",
+    "India auto component market overall: projected to grow ~14.8%/yr (2025-2030) — much faster than the carburettor sub-segment specifically, reinforcing that staying carburettor-only is a shrinking-share strategy even in a growing parent market"
+  ],
+  "adoptionStructure": {
+    "note": "OEM production-schedule driven (JIT delivery under annual/multi-year supply agreements) for the OEM channel; distributor/stockist purchase orders for the aftermarket/export channel. Structurally declining unit demand for pure carburettors as EFI/EV adoption rises."
+  },
+  "peers": [
+    { "name": "UCAL Limited (formerly UCAL Fuel Systems)", "revenueCr": 838, "fy": "FY2025", "note": "direct, closest public peer (1987 JV with Mikuni Corporation); PAT swung from ₹1.16 Cr to ₹22.6 Cr in FY25 before deteriorating again — Q4 FY26 consolidated net losses widened to ₹13.15 Cr, ROE turned negative (~-7.15%) most recently — a cautionary comparable showing the segment's structural pressure, not a healthy benchmark", "source": "screener.in; marketsmojo.com" }
+  ],
+  "customerValue": {
+    "drivers": ["machining precision and flow-calibration accuracy", "emissions-compliance (BS-VI) performance", "OEM part-approval (PPAP-style) track record"],
+    "strongestPredictor": "not established from available research — likely shifting from pure price/precision toward EFI/throttle-body technical capability given the structural transition",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["precision fuel-metering components (carburettors)", "diversify into throttle bodies/EFI-adjacent parts", "diversify further into adjacent brake/suspension precision parts", "position on machining precision + emissions compliance"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house tooling and die-casting/precision-machining engineering", "maintain IATF 16949/ISO 14001 quality systems", "operate calibration and flow-testing labs", "grow R&D emphasis on transitioning mix toward electronic throttle bodies"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["multi-plant precision casting, machining and assembly lines", "calibrate for millions of units/year", "dedicated testing/QA per production line", "rebalance capacity toward non-carburettor lines as demand shifts"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["OEM part-approval process (PPAP-style) with two/three-wheeler and stationary-engine OEMs", "maintain embedded-supplier relationships with major domestic OEMs", "manage parallel aftermarket/export distributor channel", "support product-mix transition conversations with OEMs"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["OEM production schedules under annual/multi-year supply agreements (JIT delivery)", "distributor/stockist purchase orders for aftermarket/export", "fulfil & deliver", "volumes structurally pressured by fuel-injection/EV shift, requiring mix rebalancing toward throttle bodies"] }
+  ],
+  "sources": [
+    "https://www.reportsanddata.com/report-detail/automobile-carburetor-market",
+    "https://www.marketresearchfuture.com/reports/automotive-throttle-body-market-34928",
+    "https://www.cognitivemarketresearch.com/automotive-electronic-throttle-body-market-report",
+    "https://www.marketsmojo.com/news/result-analysis/ucal-ltd-q4-fy26-deepening-losses-and-margin-erosion-signal-structural-distress-4020419",
+    "https://www.screener.in/company/UCAL/consolidated/"
+  ]
+}

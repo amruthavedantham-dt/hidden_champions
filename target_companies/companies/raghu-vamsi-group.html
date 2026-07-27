@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Raghu Vamsi Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Raghu Vamsi Group: a deep-tech bet on indigenous UAVs, built across a group whose own shape isn&#x27;t fully public.</h1>
+    <p class="subhead">A Hyderabad precision-engineering group supplying Rolls-Royce and GE Aviation, now opening a defense DeepTech facility and unveiling six indigenous UAV product lines.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">1976 (Comprotech) / 2003-2004 (Group narrative)</p></div><div class="snap"><p class="snap-label">Comprotech revenue</p><p class="snap-value">₹50-75 Cr band, FY25</p></div><div class="snap"><p class="snap-label">Comprotech PAT / ROE</p><p class="snap-value">-33.88% YoY / -3.69%</p></div><div class="snap"><p class="snap-label">Group order book (self-claimed)</p><p class="snap-value">₹1,500 Cr over 3 years; ₹500 Cr+ revenue this year</p></div><div class="snap"><p class="snap-label">New facility</p><p class="snap-value">&gt;₹100 Cr DeepTech UAV/defense campus, Hyderabad</p></div><div class="snap"><p class="snap-label">Named customers</p><p class="snap-value">Rolls-Royce, GE Aviation, Boeing, Safran, Adani (JV)</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A deep-tech bet across a group whose full shape isn&#x27;t public</h2>
+      <p class="prose">The one entity with actual filed financials — Comprotech Engineering, the flagship legal entity behind the HVT row&#x27;s own website — shows real strain: revenue in a ₹50-75 Cr band for FY25, PAT down 33.88% YoY, ROE -3.69%, even as EBITDA grew 12.71%. This is not the whole group&#x27;s financial picture; no consolidated figure exists.</p><p class="prose">The HVT sheet&#x27;s own gap research states a group-wide order book of ₹1,500 crore over the next three years and expected revenue crossing ₹500 crore this year — self-claimed, and roughly 7-10x the one filed financial figure available (Comprotech alone), consistent with a genuinely multi-entity group rather than a single company understating its size.</p><p class="prose">It carries AS9100C certification for high-precision engineering components and mechanical sub-assemblies, and its named customer list is a genuine tier-one aerospace roster: Rolls-Royce, GE Aviation, Honeywell, Boeing, Safran, Collins Aerospace, plus domestic PSU/DRDO customers (DRDL, BEL, HAL Koraput) — a joint venture with ITP Group (a Rolls-Royce subsidiary, Spain) covers aircraft-engine-component manufacturing specifically.</p><p class="prose">In 2025-2026 it opened a new &gt;₹100 Cr, 25,000 sq ft &#x27;DeepTech&#x27; design-to-integration facility at Hyderabad&#x27;s Hardware Park, unveiling six indigenous UAV/autonomous-defence product categories — loitering munitions, decoy drones, target drones, tethered surveillance drones, micro turbojet engines, and unmanned ground vehicles — with MOUs signed with the Indian Army, Bharat Dynamics Limited, IIIT Hyderabad and ARCI.</p><p class="prose">The founding narrative and even current leadership identity show real conflicts across sources: one profile credits G. Thrimuthulu as 2003 founder with Vamsi Vikas Ganesula (IIM Kolkata) taking over in 2004 at age 23; another names Comprotech&#x27;s own 1976 founding by P.K. Reddy, with Vamsi Vikas taking over that specific entity only in 2018. A stated aspirational target (&#x27;$100 million company, ~1,000 employees&#x27;) should be read as a goal, not a reported figure.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">The field is <b>large and growing across every sub-segment it touches.</b></p><p class="ev">Aerospace &amp; defense parts manufacturing: $643B-$1,003B (2024/25) growing to $961B-$1,427B by 2032-33 (5.15-5.4%/yr). Global UAV market: $26-32B (2024/25) to $41-63B by 2030 (9.2-12%/yr). India&#x27;s own drone market specifically grows fastest of all: $654M (2024) to $1,437M by 2029 (17.0%/yr).</p></li><li class="insight"><p class="point"><b>Government policy is a direct, well-funded tailwind</b> for exactly the UAV bet the group just made.</p><p class="ev">India&#x27;s Union Budget 2024-25 allocated ~$68.3B to defense including ~$20.8B capital outlay; DRDO allocated ~$4B in 2024 for drone-system development; GST on military drones/critical defence equipment was fully abolished.</p></li><li class="insight"><p class="point">The most directly comparable <b>listed peer shows real momentum in the exact product category.</b></p><p class="ev">Azad Engineering (precision-forged aerospace/defense components) posted ₹603 Cr revenue and delivered India&#x27;s first indigenous expendable turbojet engine to DRDO in 2026 — a similar product-and-customer profile to Raghu Vamsi&#x27;s own turbojet/UAV ambitions, at a scale the group&#x27;s stated ₹500 Cr+ target would approach.</p></li><li class="insight"><p class="point">AS9100/NADCAP certification is <b>the actual gate</b>, not scale or brand.</p><p class="ev">AS9100 certification functions as a de facto requirement for defense-ministry/OEM approved-vendor-list status; NADCAP is process-specific and complementary, required by name for specific critical manufacturing processes by OEM customers like Safran.</p></li>
+      </ul>
+      <p class="reflect">A group with genuinely blue-chip aerospace customers and a real, funded UAV platform bet, whose actual consolidated size cannot currently be verified from public filings. The story here is as much about corporate structure as about the technology.</p>
+      <p class="src">Market data: aggregated aerospace/defense/UAV market research (shared aerospace-defense-components-uavs segment file). Peer data: screener.in (Azad Engineering, Data Patterns, Paras Defence).</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">One place worth watching, named directly in the company&#x27;s own gap research — with a structural caveat.</p>
+      <div class="opp"><p class="tag">Velocity</p><h4>Scaling production to match the new order book</h4><p>The HVT sheet&#x27;s own gap research names this directly: significant investment has gone into new facilities and R&amp;D for UAVs and autonomous systems, but the current revenue and order book indicate room for further monetization — production scale-up, not demand generation, is the stated bottleneck.</p><p class="oppsrc">HVT gap research (The Hindu).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only Raghu Vamsi&#x27;s own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Take one UAV product category from prototype to first production order</h5><p>Of the six unveiled UAV/autonomous-defence categories, pick the one closest to a signed MOU (e.g. with the Indian Army or BDL) and drive it specifically to a first production order, rather than scaling all six in parallel.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for an aerospace/defense precision-component and UAV manufacturer in this segment — a directory-depth pass, not yet confirmed against the group&#x27;s own stated process, so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">offer precision-machined/composite/sheet-metal aerostructure components → offer finished UAV/autonomous-systems platforms (airframes, engine parts, avionics housings) → span legacy component supply and newer platform-level products<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;offer finished UAV/autonomous-systems platforms (airframes, engine parts, avionics housings)&quot;</span> Company facts (six unveiled indigenous UAV/autonomous-defence product categories) confirm this step is real and very recent for the group, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">multi-axis CNC machining, composite layup, sheet-metal fabrication, PCB assembly, engineering design (CAD/CAM) → maintain AS9100/NADCAP-certified processes → pursue defense-ministry/OEM qualification<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;maintain AS9100/NADCAP-certified processes&quot;</span> Company facts (AS9100C certification, NADCAP-approved surface-treatment processes) confirm this step is real for the group, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate dedicated manufacturing campuses/facilities → scale for both prototype/low-volume defense programs and larger indigenous-production mandates<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;operate dedicated manufacturing campuses/facilities&quot;</span> scaling production to match the order book.</p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">undergo long qualification cycles with global OEMs and defense agencies → become an &#x27;approved vendor&#x27; via certification and successful pilot programs → maintain the relationship as the gate to recurring orders<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;undergo long qualification cycles with global OEMs and defense agencies&quot;</span> Company facts (Rolls-Royce, GE Aviation, Boeing, Safran customer relationships; ITP Group JV) confirm this step is real and mature for the group, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">order flow driven by defense capital-outlay budgets and indigenization mandates → specific program wins (MOUs, PSU/prime contracts) → fulfil against multi-year program schedules → expand as indigenization scales<span class="genericflag">generic scaffold</span></p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/aerospace-defense-components-uavs.json) — no company-specific (A2/pursuit) operational intel was collected for Raghu Vamsi this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>Blue-chip aerospace customers, a new defense facility, six unveiled UAV products — sitting on top of a corporate structure that, on the public record, doesn&#x27;t resolve to one clean entity. <b>Get the structure straight before anything else here.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Raghu Vamsi or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. Comprotech Engineering (the one entity with filed financials) via Tofler; group-level narrative facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus theceo.in, cxodigitalpulse.com and themanufacturingfrontier.com; market data from aggregated aerospace/defense/UAV research; peer figures from screener.in (Azad Engineering, Data Patterns, Paras Defence). A multi-entity corporate-structure ambiguity was confirmed, not resolved — see meta.provenance and sources.md. Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "stanford-laboratories",
+    "series": "Hidden Champions of India",
+    "segmentRef": "pharmaceutical-formulations",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U74899DL1985PTC022656. Research also surfaced that Stanford Laboratories is described as a subsidiary of La Renon Healthcare Private Limited — corroborated by only one source, not independently confirmed."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Stanford Laboratories: forty years of established brands, carrying financials that are genuinely lagging.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Delhi-headquartered maker of life-saving drugs under decades-old brand names, now running a new plant in Himachal Pradesh while its own numbers show real strain.", "tier": "company", "epistemic": "fact", "source": "ambitionbox.com; Tofler", "fields": ["differentiation", "financials.roePct"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1985 (incorporated)", "tier": "company", "source": "Tofler (CIN)", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹178.12 Cr · FY25 (+3.00% YoY)", "tier": "company", "source": "thecompanycheck.com", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "Net margin", "value": "-3.03% · FY24 (down 394% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct.FY24"] },
+    { "label": "ROE / ROCE", "value": "-18.13% / -23.67% · FY24", "tier": "company", "source": "Tofler", "fields": ["financials.roePct.FY24", "financials.rocePct.FY24"] },
+    { "label": "Certification", "value": "WHO-GMP certified", "tier": "company", "source": "chemdmart.com", "fields": ["moat"] },
+    { "label": "Established brands", "value": "Dynaford, Stanex", "tier": "company", "source": "ambitionbox.com", "fields": ["differentiation"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "An asset base ahead of its margin",
+    "blocks": [
+      { "text": "This is a genuinely distressed year on the P&L: FY24 net profit margin was -3.03% (down 394% YoY), ROE -18.13%, ROCE -23.67%, EBITDA down nearly 80% year-on-year, and net worth declined 13%. Revenue itself is still growing, just barely — ₹178.12 Cr in FY25, up 3.00% — but that's cold comfort against the profitability collapse.", "tier": "company", "epistemic": "fact", "source": "Tofler; thecompanycheck.com", "fields": ["financials.revenueCr", "financials.netMarginPct", "financials.roePct", "financials.rocePct"] },
+      { "text": "What the distressed numbers sit on top of: 40 years of operation, WHO-GMP certification, and a portfolio of established brands (Dynaford, Stanex) across ATT, antibiotics, anti-arthritic, anti-asthmatic, cardiovascular and diabetic-control drugs — real stored brand equity, not a shell.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); ambitionbox.com", "fields": ["differentiation"] },
+      { "text": "It operates a new, self-described 'ultra-modern' plant in Himachal Pradesh with its own R&D department — and is still actively hiring for production roles there, a small but real signal of continued operational commitment rather than retrenchment.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); naukri.com job posting", "fields": ["product_improvement"] },
+      { "text": "One source describes it as a subsidiary of La Renon Healthcare Private Limited, with 1 subsidiary of its own — if accurate, this means a parent company's balance sheet may sit behind the standalone distress shown here, a materially different read than an independent company in this position. Not independently corroborated in this pass.", "tier": "company", "epistemic": "fact", "source": "thecompanycheck.com (single source, unconfirmed)", "fields": ["ownershipType"] },
+      { "text": "HDFC Bank holds a ₹23.7 Cr charge on the company (created July 2023) — a real, filed financial obligation, consistent with the distressed-but-operating picture rather than a company that has stopped functioning.", "tier": "company", "epistemic": "fact", "source": "Tofler (MCA charge filing)", "fields": ["financials.debtCr"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing at a healthy clip** — Stanford's own distress isn't a market-wide problem.", "evidence": "Pharmaceutical contract manufacturing/CDMO: ~$200-260B+ depending on scope, 6.9-8.2%/yr; India's domestic formulations market growing faster, ~9-10%/yr toward ₹2.8-3.0 trillion by FY28.", "tier": "segment", "epistemic": "fact", "source": "MarketsandMarkets; Grand View Research", "fields": ["market.sizeRange"] },
+      { "point": "Listed peers in the **same segment show real, achievable profitability** — the gap isn't structural to the category.", "evidence": "Windlas Biotech (12.4% ROE), Marksans Pharma (15.5% ROE), Fredun Pharmaceuticals (15.8% ROE, from an earlier batch) all post positive, healthy returns at comparable or larger scale than Stanford's ₹178 Cr revenue.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] },
+      { "point": "**Regulatory approval, not brand alone, gates the export markets** its established brands would need to reach beyond Northern India.", "evidence": "WHO-GMP is the entry-level certification Stanford already holds; deeper USFDA/EU-GMP tiers, which some peers in this batch carry, weren't found for Stanford in this pass.", "tier": "segment", "epistemic": "fact", "source": "industry structure; HVT row", "fields": ["certifications"] }
+    ],
+    "reflect": { "text": "A 40-year brand portfolio and a real new plant, sitting on top of a genuinely bad year of financials. Peers in the identical segment show the profitability gap is fixable, not structural — which is exactly what makes this a turnaround story rather than a decline story.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: MarketsandMarkets, Grand View Research (shared pharmaceutical-formulations segment file). Peer data: screener.in (Windlas Biotech, Marksans Pharma) plus Fredun Pharmaceuticals from an earlier batch of this same project."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Foreign collaborations beyond Northern India", "body": "The HVT sheet's own gap research names this directly: the company currently operates majorly in Northern India on established brand names, with untapped potential for global market expansion through foreign collaborations — though given the current financial distress, this is more a medium-term direction than an immediate move.", "source": "HVT gap research (ambitionbox.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Stanford's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Stabilize the Himachal Pradesh plant's economics before any export push", "body": "Before pursuing foreign collaborations, use the new Himachal Pradesh facility's first full operating cycle to establish whether the current margin distress is a ramp-up cost or a structural problem — the answer changes what an export push should even look like.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a pharmaceutical formulations manufacturer in this segment — a directory-depth pass, not yet confirmed against Stanford's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["branded generics / private-label / contract-manufactured formulations", "line extensions (nutraceuticals, cosmeceuticals, animal health)", "position on regulatory approval depth", "market via distributor/export relationships"], "stepsTier": "segment", "spottedAt": "position on regulatory approval depth", "spotted": { "text": "Company facts (established Dynaford/Stanex brands, WHO-GMP) confirm this step is real for Stanford, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["R&D/formulation development (DSIR-registered centers)", "pipeline development of new products/year", "regulatory dossier preparation (CoPP, DMF, CEP)", "seek GMP/regulator approvals (WHO-GMP, EU-GMP, TGA, USFDA)"], "stepsTier": "segment", "spottedAt": "seek GMP/regulator approvals (WHO-GMP, EU-GMP, TGA, USFDA)", "spotted": { "text": "Company facts (new Himachal Pradesh plant with own R&D department) confirm this step is real and recently invested-in for Stanford, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["GMP-certified manufacturing plants (often multi-facility)", "scale production lines to regulated-market batch/documentation standards", "quality-test & release", "maintain certification currency"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["client/regulator qualification audits", "vendor onboarding by pharma companies and export distributors", "compliance documentation support during due diligence", "respond to inspection findings"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["tender wins (institutional/government) or distributor onboarding", "contract manufacturing agreements", "distributor/export order fulfillment", "repeat-order cycles tied to therapy/prescription demand"], "stepsTier": "segment", "spottedAt": "distributor/export order fulfillment", "spotted": { "text": "Spotted at \"distributor/export order fulfillment\": operations concentrated in Northern India, with foreign collaboration named as the untapped path → foreign collaborations beyond Northern India.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/pharmaceutical-formulations.json) — no company-specific (A2/pursuit) operational intel was collected for Stanford this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Forty years of brand equity and a freshly built plant, weighed down by a genuinely bad year of numbers. The peers in its own segment prove the fix is **operational, not structural.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Stanford or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler and thecompanycheck.com (FY24 profitability figures show real distress); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus ambitionbox.com and chemdmart.com; market data from MarketsandMarkets and Grand View Research; peer figures from screener.in. The La Renon Healthcare parent-company relationship is single-sourced and unconfirmed. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "thecompanycheck.com", "ambitionbox.com", "chemdmart.com", "naukri.com", "MarketsandMarkets", "Grand View Research", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the actual cause of the FY24 profitability collapse, and whether a parent company (La Renon Healthcare) provides balance-sheet support — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

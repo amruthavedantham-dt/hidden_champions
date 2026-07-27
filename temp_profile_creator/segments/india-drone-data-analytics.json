@@ -1,0 +1,58 @@
+{
+  "segmentName": "Drone-data analytics / geospatial SaaS (India)",
+  "segments": [
+    {
+      "key": "india-drone-uav-market",
+      "nature": "differentiated",
+      "market": {
+        "indiaSizeUSD_B_2025": 1.32,
+        "indiaSizeUSD_B_2034": 2.73,
+        "cagrPct_2025_2034": 8.45,
+        "altSizeUSD_B_2024": 1.58,
+        "altSizeNote": "A second source puts 2024 India drone-market size at $1.58B — broadly consistent in magnitude with the $1.32B (2025) figure from the primary source, not reconciled to one number.",
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "India-specific figures; drone regulation (DGCA) and government procurement make this largely a domestic-policy-driven market"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's drone market is growing at a healthy ~8.45% CAGR, with real government policy support: a proposed PLI 2.0 scheme (~₹1,000 crore) targeting 30% local drone production, on top of an existing ₹120 crore PLI allocation for drone/UAS manufacturing.",
+    "The market's most-cited major players (ideaForge, Garuda Aerospace, Asteria Aerospace) are primarily drone HARDWARE/manufacturing companies — a different business model and a different competitive tier from a drone-data/analytics-only SaaS company like Kesowa.",
+    "Skylark Drones is the closer business-model analog to Kesowa — a drone-data-and-analytics services company rather than a hardware manufacturer — and is the more meaningful peer comparison even though it is not itself independently sized here.",
+    "Government/PSU procurement (municipal corporations, pollution control boards, coal/mining PSUs) is a real, recurring demand channel for drone-survey services in India, distinct from the consumer/hobbyist or defense segments of the broader drone market."
+  ],
+  "adoptionStructure": {
+    "note": "A project/contract-based B2B and B2G (business-to-government) services model — survey/mapping engagements and SaaS platform access, not a subscription-only or hardware-sale model."
+  },
+  "peers": [
+    { "name": "Skylark Drones", "note": "The closer business-model analog — drone-data-and-analytics services, not hardware manufacturing. Not independently sized in this pass; flagged as the more meaningful comparison than the larger hardware makers below." },
+    { "name": "ideaForge", "note": "A much larger, listed drone HARDWARE manufacturer — a different business model and tier than Kesowa's data/software layer. Won ~₹100 crore in additional defense procurement in Nov 2025 alone (Zolt, SWITCH 2 UAVs)." },
+    { "name": "Garuda Aerospace", "note": "A large drone hardware manufacturer, including defense/military-focused product lines — different tier and business model than Kesowa." },
+    { "name": "Asteria Aerospace", "note": "Another large, established drone hardware/technology player — different tier and business model than Kesowa." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Speed and safety versus manual survey methods — e.g. avoiding a dangerous manual walk-through of an unstable mine haul road after heavy rain.",
+      "Government/PSU trust built through direct project delivery (municipal corporations, pollution control boards, coal-mining subsidiaries) rather than broad brand marketing.",
+      "Data usability (organized, analyzable geospatial output) rather than raw imagery alone — the actual value-add of a software/analytics layer over a drone flight."
+    ],
+    "strongestPredictor": "Delivered project outcomes with real government/PSU counterparties — in a B2G services model, one credible, specific case study (like a named mine-safety survey) does more for the next contract than broad platform feature claims."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify buyer (government/PSU agency or corporate client with a survey/monitoring need)", "scope the specific survey/mapping/monitoring problem", "win via prior project credibility and price", "deliver via drone survey + ARU platform analytics"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain the ARU Skynet software platform (upload, organize, analyze, collaborate)", "develop/maintain AI models (Tree Count AI, Visual Pollution Index)", "coordinate drone flight operations (own team and/or partner pilots — not independently confirmed which)", "produce client deliverables (3D models, imagery, analysis reports)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan drone flights against project scope and site access", "capture aerial imagery/data on-site", "process and upload data via the ARU platform", "deliver analyzed output to the client"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard client (government tender or direct engagement)", "execute the survey/monitoring project", "deliver analysis and support interpretation", "pursue repeat/expanded engagements with the same agency"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from a specific government/PSU monitoring or safety need", "project scoped and won (often via tender)", "fulfil via drone survey + platform analytics", "recurring/repeat engagement if the relationship holds"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "IMARC Group / Custom Market Insights / Expert Market Research (India drone market sizing, via search synthesis — not independently cross-checked against one named report)",
+    "Nexdigm, MarketsandMarkets (India drone/anti-drone market context)",
+    "Company/press research (Skylark Drones, ideaForge, Garuda Aerospace, Asteria Aerospace as named peers)"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "ador-powertron",
+    "series": "Hidden Champions of India",
+    "segmentRef": "electrostatic-precipitators-tr-sets",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. Unlisted public, CIN U31103PN1995PLC084268, part of the ~110-year-old Ador Group."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Ador Powertron: a deep-tech bet on green hydrogen and EV charging, from a 50-year power-electronics R&D base.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Pune power-electronics maker with DSIR recognition since 1973, now building a 500MW green-hydrogen manufacturing plant and a 30kW EV fast-charger module — while its legacy transformer-rectifier business softens.", "tier": "company", "epistemic": "fact", "source": "DSIR registry PDF; advanceh2.com", "fields": ["product_improvement", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1995 (legal entity); Ador Group ~110 years", "tier": "company", "source": "Tofler", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹150-200 Cr band, FY25", "tier": "company", "source": "Tofler / Tracxn", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "PAT / EBITDA", "value": "Both declining YoY (FY25)", "tier": "company", "source": "Tofler / Tracxn", "fields": ["financials.patGrowthPct.FY25"] },
+    { "label": "R&D recognition", "value": "DSIR-recognized in-house unit since 1973", "tier": "company", "source": "HVT row (dsir.gov.in registry PDF)", "fields": ["product_improvement"] },
+    { "label": "New capacity", "value": "500MW green-hydrogen power-electronics plant, Pune", "tier": "company", "source": "advanceh2.com; h2-view.com", "fields": ["recentMoves"] },
+    { "label": "Reach", "value": "20,000+ TR units, 200+ clients, 82 countries (self-claimed)", "tier": "company", "source": "adorpowertron.com", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A deep-tech bet, funded while the legacy business softens",
+    "blocks": [
+      { "text": "The picture is mixed: revenue sits in a ₹150-200 Cr band with growth estimates ranging 14-24% depending on source, but PAT, EBITDA and ROE all declined year-on-year in FY25 (PAT -7.93%, ROE direction -5.38%) even as net worth grew sharply (+63.95%) — likely reflecting fresh capital going into the new green-hydrogen plant rather than organic profitability.", "tier": "company", "epistemic": "fact", "source": "Tofler; Tracxn (figures conflict somewhat across sources, both cited)", "fields": ["financials.revenueCr", "financials.patGrowthPct", "financials.roePct"] },
+      { "text": "The R&D claim here is the strongest-tier fact in the whole profile: a DSIR-recognized in-house R&D unit since 1973 — over 50 years — confirmed by the government's own registry PDF, not a company claim. This is the second company in this project (after Spaco Technologies) with `registry-confirmed` product_improvement credibility.", "tier": "company", "epistemic": "fact", "source": "HVT row; dsir.gov.in registry PDF", "fields": ["product_improvement"] },
+      { "text": "It launched a 500MW-capacity green-hydrogen power-electronics manufacturing plant in Pune (IGBT/SiC/thyristor-based megawatt transformers and rectifiers) aimed at Europe and India's own renewable targets, with a further ₹50 Cr expansion planned over 3 years — plus a separate 30kW power module for EV fast chargers, with self-stated capacity to produce 100,000 AC-DC converter modules annually.", "tier": "company", "epistemic": "fact", "source": "advanceh2.com; h2-view.com; evreporter.com", "fields": ["recentMoves"] },
+      { "text": "It also claims to be the only Indian manufacturer with a full Advanced Traffic Management Systems (ATMS) and road-safety solutions line — a differentiation the HVT sheet flags `needs_verify: yes`, sourced to an Instagram reel rather than an independent source.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed, weak source)", "fields": ["differentiation"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The **legacy field is mid-sized and steady**, not where the growth story is.", "evidence": "Global ESP market: $8.98-9.4B (2024/25) to $12.25-12.7B by 2030, 5.2-6.4%/yr. TR market: $1.94-2.1B to $2.66-3.67B by 2032-35, 4.6-6.4%/yr.", "tier": "segment", "epistemic": "fact", "source": "Mordor Intelligence; Coherent Market Insights", "fields": ["market.sizeRange"] },
+      { "point": "The **new bets sit in much faster-moving, policy-backed markets.**", "evidence": "India's own target of 500 GW non-fossil-fuel power by 2030 and the extended PM E-DRIVE scheme for public EV charging are named directly in the HVT row's own alignment research as the demand pull behind both new product lines.", "tier": "segment", "epistemic": "fact", "source": "HVT row (align1_need)", "fields": ["market.policyTailwind"] },
+      { "point": "The **listed peer in the adjacent pollution-control space shows modest but real profitability**, a useful benchmark for what Ador's legacy TR business could look like well-run.", "evidence": "Thermax Ltd (₹10,389 Cr revenue, +11.4% YoY, 11.5% 3-yr avg ROE) — though pollution control is only one of several Thermax business lines.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers[0]"] },
+      { "point": "The EV-charger bet points at **export potential the company itself has quantified but not yet captured.**", "evidence": "The HVT sheet's own gap research states the company has capacity for 100,000 AC-DC converter modules/year, currently focused on the domestic market, with explicit potential to export to G7 economies.", "tier": "segment", "epistemic": "fact", "source": "HVT row (gap research)", "fields": ["gap_latent"] }
+    ],
+    "reflect": { "text": "A 50-year power-electronics R&D base, government-confirmed, now pointed at two fast-growing policy-backed markets (green hydrogen, EV charging) while the legacy TR/ESP business softens. The bet is real and funded; whether it pays off before the legacy business erodes further is the open question.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Mordor Intelligence, Coherent Market Insights (shared electrostatic-precipitators-tr-sets segment file). Peer data: screener.in (Thermax)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, quantified directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Exporting AC-DC converter modules to G7 economies", "body": "The HVT sheet's own gap research is specific: the company has capacity for 100,000 AC-DC converter modules a year for EV fast chargers, currently supporting only the domestic charger-OEM and Charge Point Operator market, with explicit room to scale exports to G7 economies leveraging its energy-transition expertise.", "source": "HVT gap research (Business Standard).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Ador Powertron's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Pilot a G7 export order for the AC-DC converter module", "body": "Before committing to broad G7 export infrastructure, secure and fulfil one pilot order with a European or North American charge-point operator, using the domestic 30kW module launch as the reference product.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an industrial pollution-control/power-electronics manufacturer in this segment — a directory-depth pass, not yet confirmed against Ador's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["assess pollution-control need by plant type (power/cement/steel/pulp&paper)", "customize ESP/TR system for boiler/kiln size, fuel type, emission target", "quote against compliance deadline"], "stepsTier": "segment", "spottedAt": "quote against compliance deadline", "spotted": { "text": "Company facts (new green-hydrogen and EV-charger product lines) show the offer set has expanded well beyond the segment's traditional ESP/TR scope — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house power-electronics design (rectifier/transformer engineering, control systems, high-voltage insulation)", "technology partnerships/licensing for precipitator controls", "keep pace with IGBT/SiC advances"], "stepsTier": "segment", "spottedAt": "keep pace with IGBT/SiC advances", "spotted": { "text": "Company facts (DSIR R&D since 1973, IGBT/SiC/thyristor-based green-hydrogen plant) confirm this step is real and current for Ador, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["manufacture at domestic facilities", "scale for both new-build and large retrofit programs", "produce export-grade units"], "stepsTier": "segment", "spottedAt": "produce export-grade units", "spotted": { "text": "Company facts (100,000 AC-DC converter modules/year capacity) confirm this step is real for Ador, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["commissioning support", "spares availability", "after-sales/retrofit engineering service over the 10-30+ year equipment life"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["order flow driven by regulatory compliance deadlines and utility/industrial capex cycles", "government retrofit mandate tenders", "long-cycle project execution", "spares/service reorder over equipment lifetime"], "stepsTier": "segment", "spottedAt": "order flow driven by regulatory compliance deadlines and utility/industrial capex cycles", "spotted": { "text": "Spotted at \"order flow\": current EV-charger orders come only from domestic Charge Point Operators; G7 export orders are the stated but unclaimed next step → exporting to G7 economies.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/electrostatic-precipitators-tr-sets.json) — no company-specific (A2/pursuit) operational intel was collected for Ador this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Fifty years of government-confirmed R&D just produced two real new product lines in green hydrogen and EV charging, funded while the legacy business softens. The **export capacity is already built — the export orders aren't yet.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Ador Powertron or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler and Tracxn (figures conflict somewhat, both cited); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed — product_improvement is registry-confirmed via a DSIR government PDF) plus advanceh2.com, h2-view.com and evreporter.com; market data from Mordor Intelligence and Coherent Market Insights; peer figures from screener.in. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Tracxn", "dsir.gov.in", "advanceh2.com", "h2-view.com", "evreporter.com", "adorpowertron.com", "Mordor Intelligence", "Coherent Market Insights", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the actual unit economics of the green-hydrogen and EV-charger lines separately from the legacy TR/ESP business, and true customer retention across the 200+ client base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "segmentName": "Electrostatic Precipitators & Transformer-Rectifier Sets (industrial pollution control / power electronics)",
+  "market": {
+    "worldSizeUSD_B_range": "ESP market: $8.98-9.4B (2024/25) to $12.25-12.7B by 2030 (5.2-6.4%/yr); one longer-horizon estimate reaches $18.48B by 2037 (6.5%/yr). Global TR (transformer-rectifier) market specifically: $1.94-2.1B (2025/26) to $2.66-3.67B by 2032-35 (4.6-6.4%/yr).",
+    "cagrPctRange": [4.6, 6.5],
+    "exportGeographies": ["82 countries across 6 continents (per Ador Powertron's own claim)"],
+    "globalCompetitors": ["Redkoh (precipitator-controls technology partner, US — described by Ador as the world's foremost precipitator-controls company, financials private)"],
+    "domesticSlice": "Asia-Pacific accounts for ~46% of the global TR market; dry ESP systems held ~70% share (2024), plate configuration 86.6% of installations"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's MoEF&CC has notified emission norms (SPM/SOx/NOx) for coal-based thermal power plants, mandating ESP/FGD/NOx-control technologies; the FGD retrofit program alone covers 440 power units totaling 166.5 GW capacity",
+    "Cement and steel industries face parallel particulate-emission compliance requirements driving ESP/TR retrofit demand",
+    "Equipment life-cycles run 10-30+ years, so order flow is driven by regulatory compliance deadlines and capex cycles, not repeat consumer-style purchasing"
+  ],
+  "adoptionStructure": {
+    "note": "Not a repurchase category; demand is compliance-deadline and retrofit-cycle driven, with a long tail of spares/service revenue after initial installation"
+  },
+  "peers": [
+    { "name": "Thermax Ltd", "revenueCr": 10389, "fy": "FY2024-25", "revenueGrowthPct": 11.4, "roePct": 11.5, "note": "air pollution control is one of several business lines alongside boilers/heaters/chillers/water treatment, not a pure-play comparable", "source": "screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["regulatory compliance deadlines (SPM/SOx/NOx norms) are the primary driver for new installations and retrofits"],
+    "strongestPredictor": "regulatory compliance deadline proximity",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["assess pollution-control need by plant type (power/cement/steel/pulp&paper)", "customize ESP/TR system for boiler/kiln size, fuel type, emission target", "quote against compliance deadline"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house power-electronics design (rectifier/transformer engineering, control systems, high-voltage insulation)", "technology partnerships/licensing for precipitator controls", "keep pace with IGBT/SiC advances"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["manufacture at domestic facilities", "scale for both new-build and large retrofit programs", "produce export-grade units"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["commissioning support", "spares availability", "after-sales/retrofit engineering service over the 10-30+ year equipment life"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["order flow driven by regulatory compliance deadlines and utility/industrial capex cycles", "government retrofit mandate tenders", "long-cycle project execution", "spares/service reorder over equipment lifetime"] }
+  ],
+  "sources": [
+    "https://www.mordorintelligence.com/industry-reports/electrostatic-precipitator-market",
+    "https://www.coherentmarketinsights.com/industry-reports/transformer-rectifier-market",
+    "https://cercind.gov.in/chapter2.pdf",
+    "https://www.screener.in/company/THERMAX/consolidated/"
+  ]
+}

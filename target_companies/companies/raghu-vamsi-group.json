@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "raghu-vamsi-group",
+    "series": "Hidden Champions of India",
+    "segmentRef": "aerospace-defense-components-uavs",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial/market research this session. **Confirmed multi-entity structure — read before using this profile**: 'Raghu Vamsi Group' is not one legal entity. Research identified at least four separate CINs (Comprotech Engineering Pvt Ltd U29199TG1976PTC002062 — the flagship entity behind the HVT row's own website comprotechengineering.in; Raghu Vamsi Aerospace Pvt Ltd U35122TG2015PTC100718; Raghu Vamsi Siri Aerospace Pvt Ltd U35900TG2016PTC111810; Raghu Vamsi Machine Tools Pvt Ltd U28299TG1992PTC013990) plus other named related entities. No consolidated group-wide CIN or financial statement exists. Financial figures below are for Comprotech Engineering specifically unless stated otherwise; narrative facts (customers, certifications, the new UAV facility) are group-level claims that may span multiple of these entities."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Raghu Vamsi Group: a deep-tech bet on indigenous UAVs, built across a group whose own shape isn't fully public.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Hyderabad precision-engineering group supplying Rolls-Royce and GE Aviation, now opening a defense DeepTech facility and unveiling six indigenous UAV product lines.", "tier": "company", "epistemic": "fact", "source": "theceo.in; cxodigitalpulse.com", "fields": ["exportFootprint", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1976 (Comprotech) / 2003-2004 (Group narrative)", "tier": "company", "source": "Tofler vs. theceo.in — dates conflict", "fields": ["foundedYear"] },
+    { "label": "Comprotech revenue", "value": "₹50-75 Cr band, FY25", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "Comprotech PAT / ROE", "value": "-33.88% YoY / -3.69%", "tier": "company", "source": "Tofler", "fields": ["financials.patGrowthPct", "financials.roePct"] },
+    { "label": "Group order book (self-claimed)", "value": "₹1,500 Cr over 3 years; ₹500 Cr+ revenue this year", "tier": "company", "source": "HVT row (self-claimed)", "fields": ["gap_currently_monetized"] },
+    { "label": "New facility", "value": ">₹100 Cr DeepTech UAV/defense campus, Hyderabad", "tier": "company", "source": "cxodigitalpulse.com", "fields": ["recentMoves"] },
+    { "label": "Named customers", "value": "Rolls-Royce, GE Aviation, Boeing, Safran, Adani (JV)", "tier": "company", "source": "theceo.in; comprotechengineering.com", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A deep-tech bet across a group whose full shape isn't public",
+    "blocks": [
+      { "text": "The one entity with actual filed financials — Comprotech Engineering, the flagship legal entity behind the HVT row's own website — shows real strain: revenue in a ₹50-75 Cr band for FY25, PAT down 33.88% YoY, ROE -3.69%, even as EBITDA grew 12.71%. This is not the whole group's financial picture; no consolidated figure exists.", "tier": "company", "epistemic": "fact", "source": "Tofler (Comprotech Engineering specifically)", "fields": ["financials.revenueCr", "financials.patGrowthPct", "financials.roePct"] },
+      { "text": "The HVT sheet's own gap research states a group-wide order book of ₹1,500 crore over the next three years and expected revenue crossing ₹500 crore this year — self-claimed, and roughly 7-10x the one filed financial figure available (Comprotech alone), consistent with a genuinely multi-entity group rather than a single company understating its size.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed, sourced to The Hindu)", "fields": ["gap_currently_monetized"] },
+      { "text": "It carries AS9100C certification for high-precision engineering components and mechanical sub-assemblies, and its named customer list is a genuine tier-one aerospace roster: Rolls-Royce, GE Aviation, Honeywell, Boeing, Safran, Collins Aerospace, plus domestic PSU/DRDO customers (DRDL, BEL, HAL Koraput) — a joint venture with ITP Group (a Rolls-Royce subsidiary, Spain) covers aircraft-engine-component manufacturing specifically.", "tier": "company", "epistemic": "fact", "source": "theceo.in", "fields": ["moat", "exportFootprint"] },
+      { "text": "In 2025-2026 it opened a new >₹100 Cr, 25,000 sq ft 'DeepTech' design-to-integration facility at Hyderabad's Hardware Park, unveiling six indigenous UAV/autonomous-defence product categories — loitering munitions, decoy drones, target drones, tethered surveillance drones, micro turbojet engines, and unmanned ground vehicles — with MOUs signed with the Indian Army, Bharat Dynamics Limited, IIIT Hyderabad and ARCI.", "tier": "company", "epistemic": "fact", "source": "cxodigitalpulse.com; themanufacturingfrontier.com", "fields": ["recentMoves"] },
+      { "text": "The founding narrative and even current leadership identity show real conflicts across sources: one profile credits G. Thrimuthulu as 2003 founder with Vamsi Vikas Ganesula (IIM Kolkata) taking over in 2004 at age 23; another names Comprotech's own 1976 founding by P.K. Reddy, with Vamsi Vikas taking over that specific entity only in 2018. A stated aspirational target ('$100 million company, ~1,000 employees') should be read as a goal, not a reported figure.", "tier": "company", "epistemic": "fact", "source": "theceo.in vs. comprotechengineering.com — conflicting", "fields": ["foundedYear"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing across every sub-segment it touches.**", "evidence": "Aerospace & defense parts manufacturing: $643B-$1,003B (2024/25) growing to $961B-$1,427B by 2032-33 (5.15-5.4%/yr). Global UAV market: $26-32B (2024/25) to $41-63B by 2030 (9.2-12%/yr). India's own drone market specifically grows fastest of all: $654M (2024) to $1,437M by 2029 (17.0%/yr).", "tier": "segment", "epistemic": "fact", "source": "aggregated market research", "fields": ["market.sizeRange"] },
+      { "point": "**Government policy is a direct, well-funded tailwind** for exactly the UAV bet the group just made.", "evidence": "India's Union Budget 2024-25 allocated ~$68.3B to defense including ~$20.8B capital outlay; DRDO allocated ~$4B in 2024 for drone-system development; GST on military drones/critical defence equipment was fully abolished.", "tier": "segment", "epistemic": "fact", "source": "india-briefing.com", "fields": ["structureFacts"] },
+      { "point": "The most directly comparable **listed peer shows real momentum in the exact product category.**", "evidence": "Azad Engineering (precision-forged aerospace/defense components) posted ₹603 Cr revenue and delivered India's first indigenous expendable turbojet engine to DRDO in 2026 — a similar product-and-customer profile to Raghu Vamsi's own turbojet/UAV ambitions, at a scale the group's stated ₹500 Cr+ target would approach.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers[0]"] },
+      { "point": "AS9100/NADCAP certification is **the actual gate**, not scale or brand.", "evidence": "AS9100 certification functions as a de facto requirement for defense-ministry/OEM approved-vendor-list status; NADCAP is process-specific and complementary, required by name for specific critical manufacturing processes by OEM customers like Safran.", "tier": "segment", "epistemic": "fact", "source": "getisocertificate.com", "fields": ["customerValue"] }
+    ],
+    "reflect": { "text": "A group with genuinely blue-chip aerospace customers and a real, funded UAV platform bet, whose actual consolidated size cannot currently be verified from public filings. The story here is as much about corporate structure as about the technology.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: aggregated aerospace/defense/UAV market research (shared aerospace-defense-components-uavs segment file). Peer data: screener.in (Azad Engineering, Data Patterns, Paras Defence)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, named directly in the company's own gap research — with a structural caveat.",
+    "items": [
+      { "lever": "velocity", "title": "Scaling production to match the new order book", "body": "The HVT sheet's own gap research names this directly: significant investment has gone into new facilities and R&D for UAVs and autonomous systems, but the current revenue and order book indicate room for further monetization — production scale-up, not demand generation, is the stated bottleneck.", "source": "HVT gap research (The Hindu).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Raghu Vamsi's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Take one UAV product category from prototype to first production order", "body": "Of the six unveiled UAV/autonomous-defence categories, pick the one closest to a signed MOU (e.g. with the Indian Army or BDL) and drive it specifically to a first production order, rather than scaling all six in parallel.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an aerospace/defense precision-component and UAV manufacturer in this segment — a directory-depth pass, not yet confirmed against the group's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer precision-machined/composite/sheet-metal aerostructure components", "offer finished UAV/autonomous-systems platforms (airframes, engine parts, avionics housings)", "span legacy component supply and newer platform-level products"], "stepsTier": "segment", "spottedAt": "offer finished UAV/autonomous-systems platforms (airframes, engine parts, avionics housings)", "spotted": { "text": "Company facts (six unveiled indigenous UAV/autonomous-defence product categories) confirm this step is real and very recent for the group, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["multi-axis CNC machining, composite layup, sheet-metal fabrication, PCB assembly, engineering design (CAD/CAM)", "maintain AS9100/NADCAP-certified processes", "pursue defense-ministry/OEM qualification"], "stepsTier": "segment", "spottedAt": "maintain AS9100/NADCAP-certified processes", "spotted": { "text": "Company facts (AS9100C certification, NADCAP-approved surface-treatment processes) confirm this step is real for the group, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate dedicated manufacturing campuses/facilities", "scale for both prototype/low-volume defense programs and larger indigenous-production mandates"], "stepsTier": "segment", "spottedAt": "operate dedicated manufacturing campuses/facilities", "spotted": { "text": "Spotted at \"operate dedicated manufacturing campuses\": the new >₹100 Cr DeepTech facility is exactly this step, freshly built → scaling production to match the order book.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["undergo long qualification cycles with global OEMs and defense agencies", "become an 'approved vendor' via certification and successful pilot programs", "maintain the relationship as the gate to recurring orders"], "stepsTier": "segment", "spottedAt": "undergo long qualification cycles with global OEMs and defense agencies", "spotted": { "text": "Company facts (Rolls-Royce, GE Aviation, Boeing, Safran customer relationships; ITP Group JV) confirm this step is real and mature for the group, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["order flow driven by defense capital-outlay budgets and indigenization mandates", "specific program wins (MOUs, PSU/prime contracts)", "fulfil against multi-year program schedules", "expand as indigenization scales"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/aerospace-defense-components-uavs.json) — no company-specific (A2/pursuit) operational intel was collected for Raghu Vamsi this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Blue-chip aerospace customers, a new defense facility, six unveiled UAV products — sitting on top of a corporate structure that, on the public record, doesn't resolve to one clean entity. **Get the structure straight before anything else here.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Raghu Vamsi or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Comprotech Engineering (the one entity with filed financials) via Tofler; group-level narrative facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus theceo.in, cxodigitalpulse.com and themanufacturingfrontier.com; market data from aggregated aerospace/defense/UAV research; peer figures from screener.in (Azad Engineering, Data Patterns, Paras Defence). A multi-entity corporate-structure ambiguity was confirmed, not resolved — see meta.provenance and sources.md. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "theceo.in", "cxodigitalpulse.com", "themanufacturingfrontier.com", "comprotechengineering.com", "aggregated aerospace/UAV market research", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the actual consolidated group structure and financials, and true customer retention across its OEM relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

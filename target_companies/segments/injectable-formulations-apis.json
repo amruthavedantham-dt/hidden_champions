@@ -1,0 +1,43 @@
+{
+  "segmentName": "Injectable Pharmaceutical Formulations & APIs",
+  "market": {
+    "worldSizeUSD_B_range": "Global injectable drug delivery market: $633.77B (2024) to $1,034.78B by 2030 (8.4%/yr); the formulations sub-segment specifically: $434.0B (2025) to $661.1B by 2030 (8.8%/yr), driven by biologics/specialty pharma growth. Broader API market: $144.2B (2025) to $198.39B by 2030 (6.6%/yr).",
+    "cagrPctRange": [6.6, 8.8],
+    "exportGeographies": ["regulated markets enabled by WHO-GMP/EU-GMP/USFDA/PIC/S/MHRA approvals — specific country breakdown not found"],
+    "globalCompetitors": ["not individually named at global scale — see peers[] for Indian comparables"],
+    "domesticSlice": "not separately sized"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Injectable demand growth outpaces the broader API market, driven by biologics, monoclonal antibodies and complex/specialty formulations",
+    "Sterile manufacturing carries high regulatory barriers to entry — multi-year approval cycles (USFDA/EU-GMP inspections, ANDA/dossier filings) constrain new entrants",
+    "Core inputs (APIs, water-for-injection, glass vials, rubber stoppers, aluminum seals) create a specific, capital-intensive supply chain"
+  ],
+  "adoptionStructure": {
+    "note": "Hospital/government tender and distributor-contract driven — not a repurchase-rate category"
+  },
+  "peers": [
+    { "name": "Gland Pharma", "revenueCr_quarterly": 1742.79, "fy": "Q4 FY26", "revenueGrowthPct": 22.31, "ebitdaMarginPct": 26, "roePct": 11.08, "note": "base business runs at ~38% EBITDA margin; blended lower by the Cenexi CDMO acquisition", "source": "marketsmojo.com" },
+    { "name": "Shilpa Medicare", "revenueCr": 1286, "fy": "FY2025", "ebitdaMarginPct": "26-27", "roePctRange": "3-5.8%", "source": "screener.in / analyst aggregation" },
+    { "name": "Venus Remedies", "revenueCr": 647, "fy": "FY2025", "patCr": 45, "patMarginPct": 7.0, "ebitdaMarginPct": 11.3, "roePct": 8.1, "rocePct": 12.8, "source": "equitymaster.com; screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["regulatory dossier/registration status", "consistent sterile-manufacturing quality", "capacity reliability", "price competitiveness in institutional/hospital tenders"],
+    "strongestPredictor": "regulatory dossier/registration status",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer injectable formulations and APIs across therapeutic areas (anti-TB, antimalarial, cardiovascular, pain management, etc.)", "position on regulatory approval breadth", "market via institutional/export channels"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain WHO-GMP (API) and EU-GMP/USFDA/PIC/S/MHRA (formulations) certified manufacturing", "DSIR-recognized R&D for new APIs, intermediates, fermentation technology and drug-delivery systems"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate multiple manufacturing facilities across India (API + formulations)", "scale sterile fill-finish capacity", "maintain supply-chain reliability for inputs (vials, stoppers, seals)"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["provide regulatory/dossier support (DMF/CEP filings)", "technical support to institutional and export customers", "maintain audit-ready quality documentation"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["hospital/government tenders and distributor/export contracts", "branded-formulation prescriptions in domestic market", "fulfil against contract terms", "reorder on tender renewal"] }
+  ],
+  "sources": [
+    "https://www.marketsandmarkets.com/Market-Reports/injectable-drug-delivery-market-150.html",
+    "https://www.marketsmojo.com/news/result-analysis/gland-pharma-q4-fy26-stellar-profit-surge-masks-margin-volatility-concerns-3994270",
+    "https://www.equitymaster.com/research-it/annual-results-analysis/VSRM/VENUS-REMEDIES-2024-25-Annual-Report-Analysis/12915",
+    "https://www.screener.in/company/VENUSREM/consolidated/"
+  ]
+}

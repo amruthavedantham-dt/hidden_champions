@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Deepak Phenolics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#1f3324; --field-deep:#142219; --leaf:#4d7a4a; --sprout:#94c288;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(20,34,25,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .flag{background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.3); border-left:3px solid var(--soil); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .flag b{color:var(--soil);}
+  .confirm{background:rgba(77,122,74,.1); border:1px solid rgba(77,122,74,.35); border-left:3px solid var(--leaf); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .confirm b{color:var(--field);}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(77,122,74,.08);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+  .generictag{display:inline-block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.1); border:1px solid rgba(138,90,43,.3); border-radius:3px; padding:2px 6px; margin-left:8px;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  .verifybanner{background:#fff2cc; color:#5c4400; font-family:"Spline Sans Mono",monospace; font-size:11.5px; letter-spacing:.03em; text-align:center; padding:9px 16px; border-bottom:2px solid #d9a441;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <div class="verifybanner">DRAFT — meta.verified: false — do not upload until the analyst has checked every source below</div>
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Deepak Phenolics: the company that gave India roughly five times its phenol capacity, almost overnight.</h1>
+    <p class="subhead">A Deepak Nitrite subsidiary running licensed global process technology at Dahej, Gujarat, rated AA-stable by ICRA.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Incorporated</p><p class="snap-value">Mar 2011 · Vadodara</p></div>
+    <div class="snap"><p class="snap-label">Parent</p><p class="snap-value">Deepak Nitrite Limited (listed)</p></div>
+    <div class="snap"><p class="snap-label">Capacity</p><p class="snap-value">Up to 350K phenol / 200K acetone / 60K IPA TPA</p></div>
+    <div class="snap"><p class="snap-label">Revenue / PAT</p><p class="snap-value">₹5,805 Cr / ₹591 Cr · FY25</p></div>
+    <div class="snap"><p class="snap-label">Credit rating</p><p class="snap-value">[ICRA]AA (Stable) / A1+</p></div>
+    <div class="snap"><p class="snap-label">Technology</p><p class="snap-value">KBR (phenol/acetone) + UOP (cumene)</p></div>
+  </section>
+
+  <div class="body">
+
+    <!-- PART 1 -->
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">Licensed technology, real scale, and a strong credit rating behind it</h2>
+      <p class="prose">Deepak Phenolics Limited was incorporated in March 2011 in Vadodara, Gujarat, and promoted in 2015 as a wholly-owned subsidiary of Deepak Nitrite Limited (NSE/BSE-listed). It runs on ₹560 crore authorized / ₹280 crore paid-up capital, with 438 employees as of late 2024.</p>
+      <p class="prose">Its phenol and acetone process technology is licensed from <b>Kellogg Brown &amp; Root International Inc (KBR)</b>, and its cumene technology from <b>UOP LLC</b> (a Honeywell subsidiary) — both confirmed directly in ICRA's own 2016 rating report, genuine and globally respected petrochemical process licensors. The Dahej, Gujarat complex was commissioned in November 2018 at a base 200,000 TPA phenol / 120,000 TPA acetone; after a Q3 FY2025 debottlenecking it now runs <b>up to 350,000 TPA of phenol</b>, with IPA capacity doubled to 60,000 TPA following a December 2021 expansion. ICRA states plainly: <b>"the company has a leading market position in most of its product segments across the domestic and global markets,"</b> noting that domestic phenol/acetone demand "far exceeds domestic production" and that DPL has captured <b>"a significant market share in the Indian market"</b> given limited domestic competition — a rating-agency-confirmed claim, not a self-claim.</p>
+      <div class="confirm"><b>Confirmed:</b> [ICRA]AA (Stable) / [ICRA]A1+ on ₹729.02 crore of rated instruments, reaffirmed 11 August 2025. A genuinely tellable credit story: DPL's very first rating, back in November 2016 before the plant was even built, was only [ICRA]BBB — a project-stage rating reflecting high construction risk. It has climbed to AA over the ~9 years since commissioning. The 2025 outlook revision to Stable from Positive reflects real execution risk from the Deepak Group's sizeable capex plans over the next couple of years — an honest, analyst-flagged consideration, not a mark against the company.</div>
+      <p class="prose">Revenue reached <b>₹5,805 crore for the year ending March 2025 (audited), up 16% year on year — with profit growing even faster, PAT up 24.8% to ₹591 crore.</b> A separate, related entity, <b>Deepak Chem Tech Limited (DCTL)</b>, is a sibling wholly-owned Deepak Nitrite subsidiary running a much larger expansion than earlier estimated: ₹2,400 crore commissioning through FY2026, plus a further ₹11,000-11,500 crore over FY2026-FY2028 for a new 165 KTPA polycarbonate resin line plus 300 KTPA phenol, 185 KTPA acetone, and 100 KTPA IPA capacity. Notably, the polycarbonate plant's technology was purchased from Trinseo Plc for $52.5 million and is being relocated from Stade, Germany to India. This is kept distinct here, since DCTL is a different legal entity from Deepak Phenolics, not an addition to Deepak Phenolics' own capacity.</p>
+    </section>
+
+    <!-- PART 2 (LOCKED) -->
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">A mature, moderate-growth market — where this company became the capacity leader</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">India's phenol market is <b>stable and moderately growing</b>, not a fast-emerging story.</p><p class="ev">Valued at $828.3M in 2025, projected to reach $1,162.5M by 2034 — a ~3.7% CAGR, driven by pharmaceutical solvent demand and incremental downstream resin/coating capacity. Globally, the phenol-acetone market grows more slowly still (~3.1% CAGR).</p></li>
+        <li class="insight"><p class="point">But the real story is that <b>this company became the domestic capacity leader</b>, not a challenger fighting for share.</p><p class="ev">India reportedly had only ~60,000 TPA of domestic phenol capacity before Deepak Phenolics' plant — its own 330,000 TPA is more than five times that. A different competitive position from most other companies profiled in this series.</p></li>
+        <li class="insight"><p class="point">Named peers include <b>established, long-standing players.</b></p><p class="ev">Hindustan Organic Chemicals Ltd (HOCL — raised phenol prices in India in March 2025), ION Chemicals, Haldia Petrochemicals, Prasol Chemicals, and Vizag Chemicals.</p></li>
+      </ul>
+      <p class="reflect">A mature, moderate-growth market where the real story isn't beating giants — it's that Deepak Phenolics itself became the giant, turning a capacity-constrained domestic market into a well-supplied one largely on its own.</p>
+      <p class="src">Market data: TechSci Research, IMARC Group, ChemAnalyst, Fact.MR, Verified Market Research.</p>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">Three places worth a closer look, each about sharpening a real story rather than inventing one.</p>
+      <div class="opp"><p class="tag">Margin</p><h4>Price the confirmed market-leadership position, not just the volume</h4><p>ICRA itself, independently, states DPL holds "a leading market position" with "limited domestic competition." Worth testing whether long-term supply contracts fully reflect that position, rather than being priced as if the product were a pure commodity.</p><p class="oppsrc">ICRA rationale (August 2025), read in full.</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Get ahead of the gas-supply risk with the Equinor contract</h4><p>The West Asia conflict disrupting gas supply is a real, external risk already reflected in the credit rating watch. The Equinor contract (from May 2026) is a real, dated mitigant worth tracking and publicizing once live.</p><p class="oppsrc">India Infoline; ICRA rating notices.</p></div>
+      <div class="opp"><p class="tag">Margin</p><h4>Keep Deepak Chem Tech's expansion clearly distinct in outside communication</h4><p>Since DCTL's new capacity is a separate legal entity from Deepak Phenolics, being precise about which entity owns which capacity avoids overstating or confusing either company's own scale to outside audiences.</p><p class="oppsrc">ICIS; ChemAnalyst (DCTL expansion coverage).</p></div>
+    </section>
+
+    <!-- PART 4 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only the company's own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Test premium pricing on one contract renewal</h5><p>Use the next long-term supply contract renewal to test whether the confirmed market-leadership position can command better terms than a standard commodity-priced roll-over.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Track and publicize the Equinor contract's actual supply impact</h5><p>Once live in May 2026, a real, checkable milestone showing the gas-supply risk has been substantively addressed.</p></div>
+        <div class="hvt"><p class="tag">Margin</p><h5>Publish a clear, simple explainer distinguishing DPL from Deepak Chem Tech</h5><p>Avoids confusion for anyone reading press coverage of the Group's expansion plans, given the two entities' close financial ties.</p></div>
+      </div>
+    </section>
+
+    <!-- PART 5 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1) <span class="generictag">generic</span></span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below is the generic path a phenol/acetone/IPA petrochemical manufacturer in this segment runs — the call covered consent only, so this is the segment's scaffold, not confirmed against this company's specific process.</p>
+        <div class="hrow">
+          <div class="hlabel">H5<span>Offers</span></div>
+          <div><p class="steps">identify downstream buyer need → quote against capacity and price → win via <b>supply reliability and technology credibility</b> → supply phenol/acetone/IPA</p><p class="hopp"><span class="k">Spotted at "technology credibility"</span> ICRA's own confirmed leadership language is exactly the leverage point here → price the confirmed market-leadership position, not just the volume.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H4<span>Capability</span></div>
+          <div><p class="steps">operate licensed process technology → maintain credit rating and financial strength → invest in R&amp;D → manage <b>feedstock/gas supply relationships</b></p><p class="hopp"><span class="k">Spotted at "gas supply relationships"</span> this is exactly the current macro risk and its named mitigant → get ahead of the gas-supply risk with the Equinor contract.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H3<span>Capacity</span></div>
+          <div><p class="steps">plan production against demand forecasts → secure feedstock and gas supply → manufacture at scale → manage <b>capacity expansion execution risk</b></p><p class="hopp"><span class="k">Spotted at "expansion execution risk"</span> this is exactly where DPL and DCTL's expansions need to stay clearly distinguished → keep Deepak Chem Tech's expansion clearly distinct in outside communication.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H2<span>Customer experience</span></div>
+          <div><p class="steps">onboard as a qualified supplier → supply per long-term contract terms → support technical/quality queries → maintain the relationship for <b>contract renewal</b></p><p class="hopp"><span class="k">Spotted at "contract renewal"</span> this is exactly where the confirmed leadership position could be priced in → price the confirmed market-leadership position, not just the volume.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H1<span>Orders</span></div>
+          <div><p class="steps"><b>demand arises</b> from downstream resin/coating/pharma production → contract/order placed → fulfil at scale → recurring reorder</p><p class="hopp"><span class="k">Spotted at "demand arises"</span> consistent, priced-in supply depends on the gas-risk mitigant landing on schedule → get ahead of the gas-supply risk with the Equinor contract.</p></div>
+        </div>
+        <p class="hsrc">Steps: generic phenol/acetone/IPA petrochemical value chain, built from industry sourcing research — not confirmed against this company's actual internal process. Figures: Tofler, Tracxn, India Infoline, ICIS, ChemAnalyst.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>The technology is licensed from real global process houses, the capacity is real and dominant, and the rating agency's own words confirm the leadership position — not just the company's. <span class="hi">A rating that started at BBB before the plant existed is AA today; the next chapter is pricing that leadership into contracts, not just producing at scale.</span></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Deepak Phenolics or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Identity from MCA records via Tofler and Tracxn; technology, capacity, credit rating, and expansion context from ICRA's own rating rationale reports (2016 and August 2025, read in full); market data from TechSci Research, IMARC Group, Fact.MR, and Verified Market Research. Opportunities are DeepThought's reading.<br>
+    What an outside profile cannot see — real-time gas-supply contract terms, the true operational split between Deepak Phenolics and Deepak Chem Tech, and actual contract-level pricing — is what a closer engagement establishes.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

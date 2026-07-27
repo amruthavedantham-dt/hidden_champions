@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "acme-corp",
+    "series": "Hidden Champions of India",
+    "segmentRef": "india-demo-widgets",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-18",
+    "provenance": "DEMO FIXTURE — all figures invented for platform testing. Do not publish as a real profile."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": {
+      "text": "Acme Corp: a demo wealth-creation engine, hidden in plain sight.",
+      "tier": "universal",
+      "epistemic": "interpretation",
+      "source": "DT framing"
+    },
+    "subhead": {
+      "text": "A fictional Pune widget maker that turns its own tooling R&D into products OEMs specify, used here to test the profile renderer end to end.",
+      "tier": "company",
+      "epistemic": "fact",
+      "source": "demo data",
+      "fields": ["whatTheyDo", "hqCity"]
+    }
+  },
+  "snapshot": [
+    {
+      "label": "Founded",
+      "value": "1998 · Pune",
+      "tier": "company",
+      "source": "demo data",
+      "fields": ["foundedYear", "hqCity"]
+    },
+    {
+      "label": "Revenue",
+      "value": "₹250 Cr · FY25",
+      "tier": "company",
+      "source": "demo data",
+      "fields": ["financials.revenueCr.FY25"]
+    },
+    {
+      "label": "PAT",
+      "value": "₹38 Cr · FY25",
+      "tier": "company",
+      "source": "demo data",
+      "fields": ["financials.patCr.FY25"]
+    },
+    {
+      "label": "EBITDA margin",
+      "value": "21.4%",
+      "tier": "company",
+      "source": "demo data",
+      "fields": ["financials.ebitdaMarginPct.FY25"]
+    },
+    {
+      "label": "Return on equity",
+      "value": "—",
+      "tier": "company",
+      "source": "demo data",
+      "fields": ["financials.roePct_FY25"],
+      "flags": { "needsInput": true }
+    }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine",
+    "blocks": [
+      {
+        "text": "Revenue grew from ₹160 crore in FY23 to **₹250 crore in FY25**, about 25% a year. Profit grew faster: PAT from ₹18 crore to ₹38 crore.",
+        "tier": "company",
+        "epistemic": "fact",
+        "source": "demo data",
+        "fields": ["financials.revenueCr", "financials.patCr", "derived.revenueCAGRpct_FY23_25"]
+      },
+      {
+        "text": "It designs its own tooling: 22 of its 410 employees work in R&D, with 4 patents and an NABL-certified test lab. Widgets are 70% of revenue; fasteners and coatings the rest, sold to 300+ OEMs as AcmeGrip.",
+        "tier": "company",
+        "epistemic": "fact",
+        "source": "demo data",
+        "fields": ["rdHeadcount", "employees", "patents", "certifications", "financials.revenueMixPct_FY25", "brands"]
+      },
+      {
+        "text": "For scale, the fictional listed leader WidgetWorks earned an 18% EBITDA margin on ₹900 crore, growing about 6%. Acme is smaller, growing four times faster.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "WidgetWorks filings (demo)",
+        "fields": ["peers[0]"]
+      }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      {
+        "point": "The field is **large, and counted differently by different houses.**",
+        "evidence": "From ~$1.2B today toward $2B by 2030 (≈8%/yr) on the demo count. Acme, at ~₹250 Cr (~$30M), holds around 2.5% of it.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "Demo Research House",
+        "fields": ["market.sizeRange", "derived.marketSharePct"]
+      },
+      {
+        "point": "OEMs buy on spec and price, but **repeat on delivery reliability.**",
+        "evidence": "Demo buyer research finds qualification cost keeps a supplier in once approved; switching is rare below a 5% price gap.",
+        "tier": "segment",
+        "epistemic": "fact",
+        "source": "demo buyer research",
+        "fields": ["customerValue"]
+      }
+    ],
+    "reflect": {
+      "text": "A patent-holding ~2.5% player in a market growing high single digits, with switching costs on its side. Demo text to verify the reflect block renders.",
+      "tier": "derived",
+      "epistemic": "interpretation"
+    },
+    "sourceNote": "All market data invented for testing."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "Two demo openings, each built on something the fictional company already has.",
+    "items": [
+      {
+        "lever": "margin",
+        "title": "Pricing the patents",
+        "body": "AcmeGrip widgets outlast the commodity part by 2x in demo test data, yet are priced at channel parity. Worth asking: does the price reflect the extra life?",
+        "source": "Durability figures: demo data.",
+        "tier": "derived",
+        "epistemic": "opportunity",
+        "opportunityRef": "opp-1",
+        "fields": ["patents", "market.durabilityPremium"]
+      },
+      {
+        "lever": "velocity",
+        "title": "The OEMs already qualified",
+        "body": "Acme is approved at 300 OEMs but actively ships to 180. The other 120 have already paid the qualification cost — reaching them is easier than winning new ones.",
+        "source": "OEM counts: demo data.",
+        "tier": "derived",
+        "epistemic": "opportunity",
+        "opportunityRef": "opp-2",
+        "fields": ["distribution.oemsQualified", "distribution.oemsActive"]
+      }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": {
+      "text": "Possibilities, not prescriptions. Which would work, and how much, only Acme's own data and people can tell. Each is small, made to learn fast.",
+      "tier": "universal"
+    },
+    "items": [
+      {
+        "lever": "margin",
+        "title": "Test the price on two SKUs",
+        "body": "Put the 2x-life test data in front of ten OEM buyers and see whether two flagship SKUs sell at a 10% premium.",
+        "tier": "derived",
+        "epistemic": "interpretation",
+        "opportunityRef": "opp-1",
+        "flags": { "gated": true }
+      },
+      {
+        "lever": "velocity",
+        "title": "Reactivate a sample of dormant OEMs",
+        "body": "Pick 20 of the 120 qualified-but-inactive OEMs, give them one clear reason to order, and count how many come back and what it cost.",
+        "tier": "derived",
+        "epistemic": "interpretation",
+        "opportunityRef": "opp-2",
+        "flags": { "gated": true }
+      }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": {
+      "text": "A workflow is the set of steps a company runs to get a result. Below is how widget makers operate, matched to what the demo company states about its own.",
+      "tier": "universal"
+    },
+    "horizontals": [
+      {
+        "hId": "H4",
+        "hName": "Capability",
+        "steps": [
+          "design the widget in-house",
+          "prototype & bench-test in the NABL lab",
+          "qualify at the OEM",
+          "patent & release to production"
+        ],
+        "stepsTier": "A2",
+        "spottedAt": "qualify at the OEM",
+        "spotted": {
+          "text": "Spotted at \"qualify\": the durability proof stays in the lab, not carried to the price → pricing the patents.",
+          "tier": "derived",
+          "epistemic": "opportunity",
+          "opportunityRef": "opp-1"
+        },
+        "source": "demo data",
+        "flags": { "gated": true, "generic": false }
+      },
+      {
+        "hId": "H1",
+        "hName": "Orders",
+        "steps": [
+          "OEM raises a schedule",
+          "plan the production run",
+          "fulfil & deliver",
+          "reorder next cycle"
+        ],
+        "stepsTier": "segment",
+        "spottedAt": "reorder next cycle",
+        "spotted": {
+          "text": "Spotted at \"reorder\": 120 qualified OEMs never reorder → reactivate the dormant.",
+          "tier": "derived",
+          "epistemic": "opportunity",
+          "opportunityRef": "opp-2"
+        },
+        "source": "industry norm (demo)",
+        "flags": { "gated": true, "generic": true }
+      }
+    ],
+    "sourceNote": "Steps: generic widget-industry scaffold, demo only. Figures: invented."
+  },
+  "takeaway": {
+    "text": "The forgone premium and the dormant OEM list are both wealth that **already exists, unclaimed.** Demo takeaway text to verify rendering.",
+    "tier": "universal",
+    "epistemic": "interpretation"
+  },
+  "cta": {
+    "label": "Spot an opportunity →",
+    "note": "See one we missed, in Acme or in your own business? The best eyes on a company are often inside it.",
+    "tier": "universal"
+  },
+  "colophon": {
+    "text": "Hidden Champions of India — DEMO PROFILE. Every figure on this page is invented test data used to verify the publishing pipeline. No real company is described.",
+    "tier": "universal",
+    "sources": ["demo data", "Demo Research House", "WidgetWorks filings (demo)"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — retention, customer value, true unit economics — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

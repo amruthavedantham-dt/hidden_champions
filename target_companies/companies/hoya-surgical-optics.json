@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "hoya-surgical-optics",
+    "series": "Hidden Champions of India",
+    "segmentRef": "intraocular-lenses-injectors",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment, reviewed) + fresh financial research this session. India entity: HOYA Medical India Private Limited, CIN U51909DL2011FTC226966 (FTC = foreign company subsidiary of Japan's HOYA Corporation, Tokyo Stock Exchange listed). HVT sheet's own notes field already resolved a Singapore-vs-India identity question in favor of the Indian CIN — this profile follows that resolution."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "HOYA Surgical Optics: a global top-tier IOL maker's India arm, still thin on margin at this scale.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "The Indian subsidiary of a Japanese vision-care major with FDA-approved lens technology and dual R&D centers in Japan and Singapore.", "tier": "company", "epistemic": "fact", "source": "ophthalmologytimes.com; hoya.com", "fields": ["moat", "product_improvement"] }
+  },
+  "snapshot": [
+    { "label": "India entity founded", "value": "2011 (parent: HOYA Corp, 1941)", "tier": "company", "source": "Tofler", "fields": ["foundedYear"] },
+    { "label": "India revenue", "value": "₹100-150 Cr band · FY25 (+18.72% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "India net margin / ROE", "value": "1.05% / 3.35%", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct", "financials.roePct"] },
+    { "label": "Global IOL rank", "value": "3rd or 4th-largest (sources disagree)", "tier": "company", "source": "hoya.com IR vs. pharmaboardroom.com", "fields": ["market.leaders"] },
+    { "label": "Life Care segment (parent)", "value": "64% of HOYA Corp total revenue, FY ending Mar 2025", "tier": "company", "source": "hoya.com/ir", "fields": ["financials.parentSegmentSharePct"] },
+    { "label": "R&D", "value": "Dual centers: Japan + Singapore", "tier": "company", "source": "HVT row (hoya.com PDF)", "fields": ["product_improvement"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability the India margin hasn't caught up to",
+    "blocks": [
+      { "text": "India-entity revenue grew 18.72% to a ₹100-150 Cr band in FY25, with net profit up 49.93% YoY and EBITDA up 66.7% YoY — but off a thin base, with net margin just 1.05% and ROE 3.35%, on a debt-free balance sheet (D/E 0.0).", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.netMarginPct", "financials.roePct"] },
+      { "text": "The parent company's global position is real and independently checkable: HOYA's own 2025 investor materials claim 3rd-largest global IOL market share (an independent industry directory instead ranks it 4th — both cited), driven by its Vivinex/multiSert preloaded lens platform.", "tier": "company", "epistemic": "fact", "source": "hoya.com/ir; pharmaboardroom.com", "fields": ["differentiation"] },
+      { "text": "It holds FDA approval for commercial distribution of clear foldable hydrophobic acrylic IOLs — third-party sourced (ophthalmology trade press, not the company's own site), the strongest-credibility moat claim in this profile.", "tier": "company", "epistemic": "fact", "source": "ophthalmologytimes.com", "fields": ["moat"] },
+      { "text": "R&D runs from two centers — Japan (legacy) and a newer global center in Singapore for new IOL products and technologies — positioned directly against the growing cataract burden, especially in Asia, per the HVT sheet's own alignment research.", "tier": "company", "epistemic": "fact", "source": "HVT row; hoya.com PDF", "fields": ["product_improvement"] },
+      { "text": "At the parent level, Life Care (the vision-care segment HOYA Surgical Optics sits inside) makes up 64% of HOYA Corporation's total group revenue as of FY ending March 2025 — this is not a side business for the parent, it's the core of the company.", "tier": "company", "epistemic": "fact", "source": "hoya.com/ir", "fields": ["ownershipType"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing steadily**, with estimates diverging moderately by methodology.", "evidence": "Global IOL market: $4.46B (2024) to $7.16B by 2033 on the conservative end; up to $7.34B (2026) to $10.09B by 2031 on a more bullish estimate.", "tier": "segment", "epistemic": "fact", "source": "Fortune Business Insights; Mordor Intelligence", "fields": ["market.sizeRange"] },
+      { "point": "**India's own cataract burden shows real unmet demand**, not a saturated market.", "evidence": "Historical data shows annual cataract-blindness incidence of ~3.8 million against annual surgical throughput of only ~1.6-1.9 million operations — a persistent capacity gap, not a mature, fully-served market.", "tier": "segment", "epistemic": "fact", "source": "frontiersin.org / IJO literature (via research aggregation)", "fields": ["market.domesticSlice"] },
+      { "point": "The **preloaded-injector sub-segment is the fastest-growing part of the category**, and it's exactly HOYA's own product line.", "evidence": "Preloaded IOL injector systems are projected to capture ~72% revenue share of the injector market by 2026, driven by sterility and operational efficiency — directly aligned with HOYA's own preloaded-lens positioning.", "tier": "segment", "epistemic": "fact", "source": "industry aggregation", "fields": ["subSegments"] },
+      { "point": "Named global competitors (Alcon, J&J Vision, Bausch + Lomb, Carl Zeiss) operate at **comparable or larger scale**, though segment-specific figures are mostly undisclosed.", "evidence": "Bausch + Lomb's premium-IOL revenue grew 20% YoY in Q4 2025 — one of the few peers with a disclosed IOL-specific growth figure.", "tier": "segment", "epistemic": "fact", "source": "ir.bausch.com", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A top-tier global IOL maker's India operation, growing fast but still thin on margin, inside a parent whose Life Care segment is genuinely its core business, not a diversification. India's own capacity gap suggests real room to grow regardless of how the global share numbers are counted.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Fortune Business Insights, Mordor Intelligence (shared intraocular-lenses-injectors segment file). Peer data: Bausch + Lomb (ir.bausch.com) — the only peer with disclosed IOL-specific growth figures."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, grounded in India's own documented capacity gap.",
+    "items": [
+      { "lever": "velocity", "title": "Closing India's cataract-surgery capacity gap", "body": "India's own historical data shows annual cataract-blindness incidence outpacing surgical throughput by roughly 2x — a structural, documented demand gap that a global-scale IOL/injector maker with dual R&D centers is positioned to help close as India's surgical capacity expands.", "source": "Cataract burden data: frontiersin.org/IJO literature aggregation.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["market.domesticSlice"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only HOYA Surgical Optics India's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Partner with one high-volume surgical program", "body": "Identify one high-volume cataract-surgery provider (e.g. a large eye-hospital network) and deepen the supply relationship specifically around India's capacity gap, using it as a template before a broader distribution push.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an intraocular lens/injector manufacturer in this segment — a directory-depth pass, not yet confirmed against HOYA's own stated India process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer IOL range (monofocal, toric, multifocal/EDOF, trifocal)", "offer companion preloaded/reusable injector delivery systems", "sell as an integrated platform to surgeons and hospital procurement"], "stepsTier": "segment", "spottedAt": "offer companion preloaded/reusable injector delivery systems", "spotted": { "text": "Company facts (Vivinex/multiSert preloaded platform) confirm this step is real and central for HOYA, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["precision optical-grade polymer/acrylic molding", "cleanroom sterile manufacturing", "injector mechanical engineering", "regulatory/clinical affairs (CE, FDA, India CDSCO), ISO 13485-class quality systems"], "stepsTier": "segment", "spottedAt": "regulatory/clinical affairs (CE, FDA, India CDSCO), ISO 13485-class quality systems", "spotted": { "text": "Company facts (FDA approval for clear foldable hydrophobic acrylic IOLs) confirm this step is real for HOYA, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate sterile cleanroom manufacturing lines", "injection molding and lens-finishing capacity", "packaging/sterilization throughput calibrated to surgical-volume demand"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["surgeon training/support", "maintain lens-power availability", "provide responsive technical support during surgery scheduling"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["hospital/ASC tenders and distributor agreements", "government/insurance-linked bulk procurement (public cataract programs)", "fulfil against surgical volume", "repeat institutional orders driven by surgeon brand preference"], "stepsTier": "segment", "spottedAt": "government/insurance-linked bulk procurement (public cataract programs)", "spotted": { "text": "Spotted at \"bulk procurement\": India's documented surgical-capacity gap is exactly where public/hospital program orders would grow → closing the cataract-surgery capacity gap.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/intraocular-lenses-injectors.json) — no company-specific (A2/pursuit) operational intel was collected for HOYA India this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuinely top-tier global lens maker's India arm, growing fast on a still-thin margin, inside a documented surgical-capacity gap the parent's own R&D is built to close. **The scale is global; the margin is still local.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in HOYA Surgical Optics or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. India-entity financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment, reviewed — moat is third-party via ophthalmology trade press) plus hoya.com investor materials; market data from Fortune Business Insights and Mordor Intelligence; peer figures from ir.bausch.com. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "hoya.com", "ophthalmologytimes.com", "pharmaboardroom.com", "Fortune Business Insights", "Mordor Intelligence", "ir.bausch.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — India-specific patient/surgeon retention, and true unit economics for the India entity separate from the global parent — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

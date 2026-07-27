@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "ptc-industries",
+    "series": "Hidden Champions of India",
+    "segmentRef": "aerospace-industrial-titanium-castings",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Listed, CIN L27109UP1963PLC002931."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "PTC Industries: a wealth-creation engine putting India on the global aerospace-titanium map.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 62-year-old Lucknow foundry, now Safran's titanium casting supplier for the LEAP jet engine, building India's first advanced vacuum-arc-remelt titanium facility.", "tier": "company", "epistemic": "fact", "source": "safran-group.com; ptcil.com press release", "fields": ["recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1963, Lucknow", "tier": "company", "source": "Wikipedia (corporate history)", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹603 Cr · latest FY (TTM growth ~96%)", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr"] },
+    { "label": "PAT", "value": "₹102 Cr · latest FY", "tier": "company", "source": "screener.in", "fields": ["financials.patCr"] },
+    { "label": "5-yr revenue / profit CAGR", "value": "~30% / ~101%", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCAGR5yr", "financials.patCAGR5yr"] },
+    { "label": "ROE / ROCE", "value": "7% / 8.43% (modest, given heavy capex)", "tier": "company", "source": "screener.in", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Export share", "value": ">80% (FY25) → ~64% (9M FY26, domestic defense mix rising)", "tier": "company", "source": "ptcil.com investor filing", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine, still reinvesting harder than it distributes",
+    "blocks": [
+      { "text": "Revenue nearly doubled in the latest year alone (TTM growth ~96%, ₹257 Cr to ₹603 Cr over three years), PAT grew from ₹42 Cr to ₹102 Cr over the same stretch, and the 5-year trend is even sharper — ~30% revenue CAGR, ~101% profit CAGR. Market cap sits at ₹26,869 Cr, a scale disproportionate to current revenue, reflecting the market's own read on the growth trajectory.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.revenueCr", "financials.patCr", "financials.revenueCAGR5yr", "financials.patCAGR5yr"] },
+      { "text": "ROE (7%) and ROCE (8.43%) are modest relative to that growth — a company-level figure that reflects heavy, ongoing capex (a ₹1,000 crore program at Lucknow, described as fully funded) diluting near-term returns rather than weak underlying profitability.", "tier": "company", "epistemic": "fact", "source": "screener.in; scanx.trade", "fields": ["financials.roePct", "financials.rocePct"] },
+      { "text": "In November 2023 it signed a multi-year contract with Safran Aircraft Engines to supply titanium casting parts for the CFM LEAP engine (the engine powering single-aisle jets like the Airbus A320neo and Boeing 737 MAX family) — a genuinely tier-one global aerospace OEM relationship, not a domestic-only story.", "tier": "company", "epistemic": "fact", "source": "safran-group.com", "fields": ["recentMoves"] },
+      { "text": "Domestic defense momentum is building fast alongside the export story: a ₹110 Cr order from BrahMos Aerospace (August 2025) and, in 2026, an order from ISRO's VSSC for double-VAR-melted aerospace-grade titanium ingots — plus subsidiary Aerolloy Technologies commissioning a Vacuum Arc Remelting furnace (1,500 MT/year capacity) and a 600-tonne plasma arc melting furnace, building an integrated titanium production chain that PTC itself frames as putting India on the global aerospace-titanium map.", "tier": "company", "epistemic": "fact", "source": "business-standard.com; ptcil.com press releases", "fields": ["recentMoves"] },
+      { "text": "It holds AS9100, NADCAP special-process accreditation, DGQA Ministry of Defence approval, and marine classification approvals from Bureau Veritas, DNV GL, Lloyd's Register, ABS and RINA — a genuinely broad certification spread across aerospace, defense and industrial end-markets, plus a DSIR-recognized R&D lab behind its own licensed technologies (Replicast®, Rapidcast™, Forgecast™).", "tier": "company", "epistemic": "fact", "source": "ptcil.com certifications page", "fields": ["moat", "product_improvement"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **growing fast, and global capacity is genuinely constrained right now.**", "evidence": "Aerospace titanium market: $4.1-4.5B (2022-25) to $4-7B by 2030-2035, 5.3-9.0%/yr. Precision Castparts (Berkshire Hathaway) committed over $628 million in new capacity, including a $500 million titanium melt facility, direct evidence of a global capacity squeeze tied to Boeing/Airbus production ramps.", "tier": "segment", "epistemic": "fact", "source": "Kings Research; aviationoutlook.substack.com", "fields": ["market.sizeRange", "structureFacts"] },
+      { "point": "**NADCAP/AS9100 certification is the actual competitive gate**, and PTC already clears it.", "evidence": "NADCAP lets OEMs/Tier-1s fast-track supplier audits, cutting weeks-to-months out of new-supplier qualification — PTC's certification spread (including DGQA Green Channel Status) puts it inside that pre-validated circle already.", "tier": "segment", "epistemic": "fact", "source": "metaltek.com", "fields": ["customerValue"] },
+      { "point": "Listed Indian peers show **a wide range of outcomes even within the same niche.**", "evidence": "MTAR Technologies posts a steadier 13% ROE at ₹876 Cr revenue; Azad Engineering, closer to PTC's own growth profile, saw ROE fall from 9.1% to 6.2% as heavy capacity capex weighed on returns — the same dynamic visible in PTC's own modest ROE despite explosive revenue growth.", "tier": "segment", "epistemic": "fact", "source": "screener.in; equitymaster.com", "fields": ["peers"] },
+      { "point": "Management guidance itself frames this as a **multi-year scale-up, not a one-off contract win.**", "evidence": "Guidance points to 90-100% revenue growth in FY26 and a target of 10-15x revenue growth over the next 5-7 years — an aggressive, publicly-stated trajectory, not a conservative baseline.", "tier": "company", "epistemic": "fact", "source": "scanx.trade", "fields": ["recentMoves"] }
+    ],
+    "reflect": { "text": "A 62-year-old foundry that just became India's entry point into a globally capacity-constrained aerospace-titanium market, growing revenue and profit at rates most Indian industrials never reach. The modest ROE isn't weakness — it's the visible cost of reinvesting into that position faster than most companies would dare.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Kings Research, TechSci Research, aviationoutlook.substack.com. Peer data: screener.in (MTAR Technologies, Azad Engineering)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place worth watching, already funded and named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Scaling the Mehsana (Gujarat) facility for global supply chain capture", "body": "The HVT sheet's own gap research names this directly: PTC is increasing capacity multiple times over the next few years at its Gujarat facility with advanced manufacturing equipment, robotic systems and automated fettling technologies — specifically to capture global supply-chain realignment as manufacturers diversify away from concentrated sourcing.", "source": "HVT gap research (ptcil.com press release).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only PTC Industries' own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Track ROE/ROCE recovery as the Lucknow and Mehsana capex programs complete", "body": "Since the current modest ROE looks capex-driven rather than structural, track it specifically as the ₹1,000 Cr Lucknow program and Mehsana expansion move from build-out to full utilization, to confirm the returns actually follow the revenue growth.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an aerospace/industrial titanium casting manufacturer in this segment — a directory-depth pass, not yet confirmed against PTC's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer investment-cast and forged titanium/superalloy structural and rotating components", "serve aero-engine, airframe, and defense/industrial applications", "win named OEM programs (e.g. LEAP engine casting parts)"], "stepsTier": "segment", "spottedAt": "win named OEM programs (e.g. LEAP engine casting parts)", "spotted": { "text": "Company facts (Safran LEAP engine contract, BrahMos order, ISRO/VSSC order) confirm this step is real and expanding fast for PTC, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["operate vacuum arc remelting (VAR)/vacuum induction melting (VIM)/plasma arc melting for alloy purity", "precision investment-casting and open-die forging process control", "maintain NADCAP-accredited special processes and AS9100 quality systems"], "stepsTier": "segment", "spottedAt": "operate vacuum arc remelting (VAR)/vacuum induction melting (VIM)/plasma arc melting for alloy purity", "spotted": { "text": "Company facts (sole Indian supplier of advanced titanium VAR technology, licensed Replicast®/Rapidcast™/Forgecast™ processes) confirm this step is real and uniquely positioned for PTC, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["scale melt-furnace throughput, casting cell capacity, forging press tonnage", "match capacity to OEM production-rate ramps"], "stepsTier": "segment", "spottedAt": "scale melt-furnace throughput, casting cell capacity, forging press tonnage", "spotted": { "text": "Spotted at \"scale melt-furnace throughput\": the ₹1,000 Cr Lucknow capex and Mehsana expansion (robotic systems, automated fettling) are exactly this step, in progress → scaling Mehsana for global supply chain capture.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["deliver on-time to OEM production schedules", "maintain first-pass-yield/low defect rates", "collaborate on castability/design-for-manufacture during qualification and PPAP"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win long-term supply agreements through multi-year OEM/Tier-1 sourcing programs", "become single- or dual-sourced once qualified", "fulfil against production ramps", "expand via new program wins"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/aerospace-industrial-titanium-castings.json) — no company-specific (A2/pursuit) operational intel was collected for PTC this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Sixty-two years of foundry heritage just turned into a Safran LEAP engine contract and India's own advanced titanium VAR facility. The modest ROE is the **visible cost of building the next decade, not a sign it isn't working.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in PTC Industries or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in and equitymaster.com; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus safran-group.com, business-standard.com and ptcil.com investor press releases; market data from Kings Research, TechSci Research and aviationoutlook.substack.com; peer figures from screener.in (MTAR Technologies, Azad Engineering). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "equitymaster.com", "safran-group.com", "business-standard.com", "ptcil.com", "Wikipedia", "Kings Research", "TechSci Research", "aviationoutlook.substack.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics once the Lucknow/Mehsana capex programs reach full utilization, and real customer retention across the Safran/BrahMos/ISRO relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

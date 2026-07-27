@@ -1,0 +1,60 @@
+{
+  "segmentName": "EV retrofit kits for three-wheelers (India)",
+  "segments": [
+    {
+      "key": "ev-retrofit-three-wheeler",
+      "nature": "differentiated-within-growing-market",
+      "market": {
+        "indiaSizeUSD_B_range": [1.328, 1.62],
+        "period": "2025-2026",
+        "indiaSizeUSD_B_2034": 3.844,
+        "cagrRangePct_range": [12.15, 14.12],
+        "structuralNote": "e-3W sales hit 699,073 units in FY2025 (+11% YoY), now 57% of all three-wheeler sales in India — a real, fast electrification wave.",
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "figures are India-specific; this is a domestic-demand story, not an export one"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Retrofit kits specifically are a narrow, largely UNCOUNTED slice of the broader electric three-wheeler market — most market-sizing research explicitly excludes 'kit retrofits, e-carts confined to private campuses, and prototypes not yet homologated' and focuses on purpose-built EVs instead. This means the large headline market figures above overstate the retrofit-specific opportunity.",
+    "North India currently dominates electric three-wheeler market share, driven by urbanization and policy support — the retrofit segment's own regional distribution is less documented."
+  ],
+  "adoptionStructure": {
+    "note": "Demand is driven by individual driver economics (fuel cost savings vs. kit cost + payback period), not a subscription/replacement-rate pattern."
+  },
+  "peers": [
+    {
+      "name": "RACEnergy",
+      "location": "Hyderabad",
+      "note": "A close product/business-model comparable — battery-swap 3W retrofit kit priced around ₹50,000, claims 40-50% running-cost savings and a 12-15 month payback with ~100km range per swap. No financials found, but a useful benchmark for the kind of concrete, provable economic claim a retrofit company can lead with."
+    },
+    { "name": "GoGreenBOV", "note": "2W/3W/4W retrofit, batteries, charging, after-sales — no financials found." },
+    { "name": "GOGOA1", "note": "46 approved 2W conversion models; actively developing 3W kits — no financials found." },
+    { "name": "doReal Motors", "note": "Battery retrofitting for 2W/3W/4W, also serves OEMs — no financials found." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Operating-cost savings (fuel vs. electric) and a short, provable payback period — RACEnergy's 12-15 month claim is the kind of concrete number this segment's buyers respond to.",
+      "RTO-legal re-registration and insurance eligibility, which depends on the retrofit kit holding real ARAI type approval — a regulatory gate, not just a technical one.",
+      "Installation speed/downtime (a driver's vehicle is their income; less downtime to convert matters directly)."
+    ],
+    "strongestPredictor": "A concrete, provable payback period and confirmed RTO/ARAI legality — trust in the specific economic claim, more than brand or scale claims."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify an auto-rickshaw driver/fleet", "quote against the retrofit kit spec and price", "win via RTO-legal ARAI type-approval status", "install and convert (claimed ~99 minutes)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["design/engineer the retrofit kit (battery, motor, charging)", "obtain ARAI type approval", "pitch at accelerator/investor events", "refine via performance monitoring (claimed)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["source battery/drivetrain components", "assemble kits", "distribute via service-center network", "scale installation capacity"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["driver purchases/finances the kit", "installation", "ongoing battery lease/monitoring (claimed)", "renewal/support"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from driver operating-cost pressure", "lead generation", "conversion", "recurring revenue via kit sale + battery lease (claimed model)"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "IMARC Group, Mordor Intelligence, MarkNtel Advisors, ExpertMarketResearch (India electric three-wheeler / e-rickshaw market sizing)",
+    "e-vehicleinfo.com, DIYguru, EVMechanica (EV retrofit company landscape)",
+    "The Better India (retrofit startup coverage, RACEnergy figures)"
+  ]
+}

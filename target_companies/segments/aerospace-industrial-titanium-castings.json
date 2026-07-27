@@ -1,0 +1,43 @@
+{
+  "segmentName": "Aerospace & Industrial Titanium Castings",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary by scope: general titanium casting ~$3.5B (2023) at 6.5%/yr; aerospace titanium specifically: $4.1-4.5B (2022-2025) to $4-7B by 2030-2035, CAGR 5.3-9.0%/yr depending on source.",
+    "cagrPctRange": [5.3, 9.0],
+    "exportGeographies": ["North America and Europe (OEM-driven, via Safran/GE-linked programs) — no aggregated export dataset found"],
+    "globalCompetitors": ["Precision Castparts (Berkshire Hathaway) — FY2024 revenue $10.4B, committed >$628M in capacity investment including a $500M titanium melt facility in West Virginia", "Howmet Aerospace"],
+    "domesticSlice": "not separately sized; India's defense/aerospace indigenization push ('Make in India') is the explicit domestic policy driver"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Global titanium-melt capacity squeeze tied to Boeing/Airbus production ramps — Precision Castparts' new melt facility investment is direct evidence of this",
+    "NADCAP accreditation lets OEMs/Tier-1s fast-track supplier audits, cutting weeks-to-months out of new-supplier qualification timelines — a pre-validated process-control credential accepted across all subscribing prime contractors"
+  ],
+  "adoptionStructure": {
+    "note": "Long-term supply agreements won through multi-year OEM/Tier-1 sourcing programs, often single- or dual-sourced once qualified, creating high switching costs and revenue visibility — not a repurchase-rate category"
+  },
+  "peers": [
+    { "name": "MTAR Technologies", "revenueCr": 876, "fy": "TTM", "patCr": 95, "opmPct": 20, "roePct": 13, "note": "exotic-metallurgy incl. titanium, precision manufacturing — a comparable peer though not pure aerospace-titanium-casting", "source": "screener.in" },
+    { "name": "Azad Engineering", "revenueCr": 467.9, "fy": "FY2025", "netMarginPct": 18.9, "roePct": 6.2, "note": "ROE/ROCE fell YoY attributed to heavy capacity capex — airfoils/blades/vanes for jet engines and gas turbines", "source": "equitymaster.com" }
+  ],
+  "customerValue": {
+    "drivers": ["AS9100 (aerospace QMS) — effectively mandatory for OEM/prime-contractor supplier status", "NADCAP accreditation for safety-critical special processes (welding, heat treat, NDT) — required by Boeing D1-9000, Airbus, Safran supplier-qualification procedures"],
+    "strongestPredictor": "AS9100 + NADCAP certification status",
+    "source": "metaltek.com"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer investment-cast and forged titanium/superalloy structural and rotating components", "serve aero-engine, airframe, and defense/industrial applications", "win named OEM programs (e.g. LEAP engine casting parts)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["operate vacuum arc remelting (VAR)/vacuum induction melting (VIM)/plasma arc melting for alloy purity", "precision investment-casting and open-die forging process control", "maintain NADCAP-accredited special processes and AS9100 quality systems"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["scale melt-furnace throughput, casting cell capacity, forging press tonnage", "match capacity to OEM production-rate ramps"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["deliver on-time to OEM production schedules", "maintain first-pass-yield/low defect rates", "collaborate on castability/design-for-manufacture during qualification and PPAP"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win long-term supply agreements through multi-year OEM/Tier-1 sourcing programs", "become single- or dual-sourced once qualified", "fulfil against production ramps", "expand via new program wins"] }
+  ],
+  "sources": [
+    "https://www.kingsresearch.com/aerospace-titanium-market-35",
+    "https://www.techsciresearch.com/report/aerospace-titanium-market/22651.html",
+    "https://aviationoutlook.substack.com/p/precision-castparts-company-analysis-outlook-report",
+    "https://www.screener.in/company/MTARTECH/",
+    "https://www.equitymaster.com/research-it/annual-results-analysis/AZAD/AZAD-ENGINEERING-LTD-2024-25-Annual-Report-Analysis/14195",
+    "https://www.metaltek.com/blog/what-is-nadcap-certification-and-do-you-need-it/"
+  ]
+}

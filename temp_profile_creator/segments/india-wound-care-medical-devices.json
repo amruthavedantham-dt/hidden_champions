@@ -1,0 +1,105 @@
+{
+  "segmentName": "Wound care & first-aid medical devices (India export manufacturing)",
+  "segments": [
+    {
+      "key": "wound-care-first-aid-devices",
+      "nature": "differentiated-within-commodity",
+      "market": {
+        "worldSizeUSD_B_range": [23.89, 26.14],
+        "period": "2026",
+        "cagrRangePct_range": [4.33, 7.5],
+        "cagrNote": "varies by scope (advanced vs traditional wound care) and source/period",
+        "exportGeographies": ["USA", "Germany", "Australia", "UAE", "100+ countries overall for Indian medical-disposables exporters"],
+        "globalCompetitors": [],
+        "domesticSlice": "figures are global; India is described as an export hub, not primarily a domestic-consumption story for this company type"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [
+    {
+      "name": "Advanced wound dressings (foam, antimicrobial, alginate)",
+      "note": "~44.27% share of the wound-care market in 2026 and growing fastest — a different, higher-value product tier than this company's traditional gauze/bandage/plaster line."
+    },
+    {
+      "name": "Traditional wound care (gauze, tape, cotton, bandages, plasters)",
+      "note": "This company's actual product line — commonly used in standard first-aid, a large but slower-growing/more commoditized tier than advanced dressings."
+    }
+  ],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India exports medical devices and disposables to 100+ countries; US, Germany, Australia, and UAE are named as top buyers for this category.",
+    "Himachal Pradesh (including Baddi), Gujarat, and Rajasthan are named manufacturing hubs for this product category, with many units CDSCO-approved and internationally certified.",
+    "ISO, CE, and FDA compliance are described as what makes Indian manufacturers 'preferred partners for global procurement' in this category."
+  ],
+  "adoptionStructure": {
+    "note": "Not a subscription/replacement-rate market — demand is driven by healthcare/hospital consumption and general first-aid retail/institutional demand, recurring but not seasonal in the way agri-inputs are."
+  },
+  "peers": [],
+  "peersNote": "Named competitors surfaced (Medilivescare, Saava Surgical, OM Surgical Industries, Everest Group) but no financials were found for any of them in this research pass — left empty rather than force an unsupported comparison. Revisit if a pursuit-pass or a paid database turns up comparable numbers.",
+  "customerValue": {
+    "drivers": [
+      "Certification as the gating factor for global procurement: ISO 13485 (medical-device QMS), CE marking, and US FDA compliance are named as what global hospital/distributor buyers require.",
+      "Manufacturing hygiene/GMP compliance, given the sterile/medicated nature of some products.",
+      "Export-scale capacity and breadth of product range (dressings + patches + antiseptics + first-aid) to serve as a one-stop supplier."
+    ],
+    "strongestPredictor": "Certification currency and scope match (does the certificate cover the specific product categories sold) — the same 'currency matters more than the claim' pattern seen in the industrial-fabrication segment."
+  },
+  "valueChain": [
+    {
+      "hId": "H5",
+      "hName": "Offers",
+      "steps": [
+        "identify buyer need (hospital, distributor, retail first-aid)",
+        "quote against certified product scope (ISO 13485 / CE / FDA)",
+        "win the order via buyer's quality/compliance review",
+        "supply the certified dressing/bandage/patch product line"
+      ]
+    },
+    {
+      "hId": "H4",
+      "hName": "Capability",
+      "steps": [
+        "maintain ISO 13485 / GMP / GLP certified quality systems",
+        "operate sterile/hygienic production lines for medicated and non-medicated products",
+        "pass certification-body and (where applicable) CDSCO audits",
+        "sustain product R&D (e.g. transdermal patch formulations)"
+      ]
+    },
+    {
+      "hId": "H3",
+      "hName": "Capacity",
+      "steps": [
+        "plan production against order/seasonal demand",
+        "procure raw material (textiles, adhesives, active ingredients)",
+        "manufacture, sterilize, and package under controlled conditions",
+        "batch-test and release"
+      ]
+    },
+    {
+      "hId": "H2",
+      "hName": "Customer experience",
+      "steps": [
+        "onboard as a certified/approved supplier",
+        "supply per buyer's ongoing order pattern",
+        "handle quality complaints and regulatory queries",
+        "maintain certification through periodic re-audit"
+      ]
+    },
+    {
+      "hId": "H1",
+      "hName": "Orders",
+      "steps": [
+        "demand arises from hospital/institutional/retail first-aid consumption",
+        "purchase order placed (direct or via distributor)",
+        "fulfil and export/ship",
+        "recurring reorder tied to ongoing consumption"
+      ]
+    }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "Coherent Market Insights, Fortune Business Insights, Grand View Research, MarketsandMarkets, Technavio (global wound care market sizing — wide variance by scope/source)",
+    "Industry directory commentary (India medical-disposables export hubs, CDSCO-approved manufacturing clusters)"
+  ]
+}

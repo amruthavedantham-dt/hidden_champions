@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "biophore-india-pharmaceuticals",
+    "series": "Hidden Champions of India",
+    "segmentRef": "active-pharmaceutical-ingredients",
+    "researchDepth": "directory",
+    "verified": false,
+    "generatedAt": "2026-07-26",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U24232TG2007PTC053381 (found via research, not in HVT row)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Biophore India Pharmaceuticals: 150+ patents and a top-10 US DMF filing record, on margins that are still catching up.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Hyderabad niche-API maker with four US FDA and EU approved facilities and a 400-scientist R&D team, growing profit fast off a thin margin base.", "tier": "company", "epistemic": "fact", "source": "HVT row; indiapharmaoutlook.com", "fields": ["moat", "product_improvement"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2007", "tier": "company", "source": "Zaubacorp", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹457 Cr · FY25 (Tracxn) / ₹300-400 Cr est. (Tofler)", "tier": "company", "source": "Tracxn vs. Tofler — both cited", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "Net margin / ROE", "value": "4.25% / 2.14%", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct", "financials.roePct"] },
+    { "label": "Net profit growth", "value": "+45.37% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.patGrowthPct"] },
+    { "label": "Patents / DMFs", "value": "150+ patents; 120+ global DMFs (90+ US)", "tier": "company", "source": "indiapharmaoutlook.com; pharmacompass.com", "fields": ["product_improvement"] },
+    { "label": "R&D team", "value": "400 scientists across 2 facilities", "tier": "company", "source": "indiapharmaoutlook.com", "fields": ["product_improvement"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A patent portfolio the margin hasn't caught up to",
+    "blocks": [
+      { "text": "Net profit grew 45.37% and EBITDA 44.47% year-on-year, but off thin margins — net margin just 4.25%, ROE only 2.14% — even as net worth grew 33.09% to ₹291.3 Cr and total assets reached ₹499.8 Cr. Revenue itself shows a real gap between sources: ₹457 Cr (Tracxn) versus a Tofler estimate of ₹300-400 Cr, both cited here rather than reconciled.", "tier": "company", "epistemic": "fact", "source": "Tracxn; Tofler", "fields": ["financials.revenueCr", "financials.netMarginPct", "financials.roePct", "financials.patGrowthPct"] },
+      { "text": "The patent and filing record is genuinely deep: 150+ patents held, ranking among the top 10 US DMF filers over the past five years with 120+ global DMFs filed (90+ in the US) — a scale of regulatory filing activity well beyond most companies in this batch.", "tier": "company", "epistemic": "fact", "source": "indiapharmaoutlook.com; pharmacompass.com", "fields": ["product_improvement"] },
+      { "text": "It operates four US FDA and EU approved API manufacturing facilities across Pharma City, Visakhapatnam, backed by an R&D team of 400 scientists spread across facilities in Hyderabad and Visakhapatnam — the HVT sheet flags `product_improvement` unresolved despite `Verified` review status, but the DMF/patent counts are independently corroborated by pharmacompass.com, not just the company's own claims.", "tier": "company", "epistemic": "fact", "source": "HVT row; pharmacompass.com", "fields": ["moat", "product_improvement"] },
+      { "text": "It won 'Excellence in R&D' recognition at CPHI India's 2023 India Pharma Awards, and holds a written EU confirmation for exporting active substances for human medicinal products — real regulatory access to the EU market, though the HVT sheet's own gap research notes the scope of current monetization isn't fully detailed.", "tier": "company", "epistemic": "fact", "source": "indiapharmaoutlook.com; HVT row (cdsco.gov.in)", "fields": ["gap_currently_monetized"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large, and India's own slice is growing faster than the global rate.**", "evidence": "Global API market: ~$232-360B by 2030 depending on source, 5.85-6.6%/yr. India API market: $13.60B (2024) to $21.99B by 2030, 8.30%/yr, backed by a ₹6,940 Cr PLI scheme covering 35 critical APIs.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research; Vantage Market Research", "fields": ["market.sizeRange", "market.domesticSlice"] },
+      { "point": "**DMF/patent filing depth is exactly what gates entry** into the regulated markets Biophore already serves.", "evidence": "Buyer qualification typically runs 12-24+ months and hinges on DMF/CEP filing depth as a signal of process and documentation maturity — Biophore's top-10 US DMF filer status is a direct, structural advantage in exactly this gate.", "tier": "segment", "epistemic": "fact", "source": "industry structure (drugpatentwatch.com)", "fields": ["customerValue"] },
+      { "point": "Against listed peers, its **margins lag even the closer-scale comparable.**", "evidence": "Neuland Laboratories, the closest scale peer from an earlier batch's API segment research, posts 22% EBITDA margin and ~20% ROE at ₹1,477 Cr revenue — both well above Biophore's own 4.25% net margin and 2.14% ROE at roughly a third the scale.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A genuinely deep patent and DMF portfolio, growing profit fast off margins that still lag the segment's better performers. The filing depth is a real structural asset in a market where regulatory depth is the actual moat — the margin question is where the story is unfinished.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, Vantage Market Research (shared active-pharmaceutical-ingredients segment file from an earlier batch). Peer data: screener.in (Neuland Laboratories, from the same shared segment)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "margin", "title": "Fully monetizing the EU export confirmation", "body": "The HVT sheet's own gap research names this directly: Biophore holds a written EU confirmation to export active substances for human medicinal products, but the scope of current monetization against that confirmation isn't fully detailed — a real regulatory door that may not be pushed open as far as it could be.", "source": "HVT gap research (CDSCO government document).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Biophore's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Audit margin by product line against the DMF portfolio", "body": "With 120+ DMFs filed, break down margin by product to see whether the thin 4.25% company-wide average is masking a subset of genuinely high-margin, patent-protected products worth prioritizing — before assuming the whole portfolio needs a pricing fix.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an API manufacturer in this segment — a directory-depth pass, not yet confirmed against Biophore's own stated process, so marked generic throughout (segment file reused from an earlier batch).", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["identify off-patent/generic API opportunity", "develop synthesis route", "file DMF/CEP with target-market regulator", "market via regulatory-filing-backed product catalog"], "stepsTier": "segment", "spottedAt": "file DMF/CEP with target-market regulator", "spotted": { "text": "Company facts (top-10 US DMF filer, 120+ global DMFs) confirm this step is real and unusually deep for Biophore, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["cGMP process development", "validate against multiple regulators (USFDA/EDQM/WHO-GMP/etc.)", "scale synthesis route", "maintain regulatory filing currency"], "stepsTier": "segment", "spottedAt": "cGMP process development", "spotted": { "text": "Company facts (400-scientist R&D team, 150+ patents) confirm this step is real and heavily resourced for Biophore, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["plan production against multi-year offtake", "phased capex/reactor capacity expansion", "manufacture at cGMP-validated sites", "batch-test & release"], "stepsTier": "segment", "spottedAt": "manufacture at cGMP-validated sites", "spotted": { "text": "Company facts (4 US FDA/EU approved facilities, Pharma City Visakhapatnam) confirm this step is real for Biophore, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["support buyer qualification/audit process (12-24+ months)", "maintain consistent quality/documentation", "respond to regulatory inspection findings", "technical support for formulator's own filings"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["formulator qualifies API source", "multi-year supply agreement negotiated", "recurring purchase orders against contract", "renew/expand on China+1 or capacity-driven diversification"], "stepsTier": "segment", "spottedAt": "multi-year supply agreement negotiated", "spotted": { "text": "Spotted at \"multi-year supply agreement\": the EU export confirmation is a real credential not yet fully leveraged into orders → fully monetizing the EU export confirmation.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/active-pharmaceutical-ingredients.json, shared with Supriya Lifescience from an earlier batch) — no company-specific (A2/pursuit) operational intel was collected for Biophore this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "One of the deepest patent and DMF portfolios in this entire project, held by a company whose margins are still thin. **The filing depth is the moat; the pricing is the unfinished part of the story.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Biophore or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tracxn and Tofler (revenue figures conflict, both cited); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus indiapharmaoutlook.com and pharmacompass.com (independent DMF-count corroboration); market data from Grand View Research and Vantage Market Research; peer figures from screener.in (Neuland Laboratories). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tracxn", "Tofler", "Zaubacorp", "indiapharmaoutlook.com", "pharmacompass.com", "Grand View Research", "Vantage Market Research", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true margin by product line, and real customer retention across its top-10 DMF-filer relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

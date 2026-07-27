@@ -1,0 +1,47 @@
+{
+  "segmentName": "Phase Transfer Catalysts & related specialty chemicals (SDA, ESS, glymes)",
+  "market": {
+    "worldSizeUSD_B_range": "A genuinely niche market with divergent estimates: $1.25B (2024) to $1.68B by 2030 (CAGR 6.0%, Grand View Research); $1.43B (2026) to $2.30B by 2034 (CAGR 6.10%); $1.3B (2025) to $2.4B by 2035 (CAGR 6.3%).",
+    "cagrPctRange": [6.0, 6.3],
+    "exportGeographies": ["USA", "UK", "China", "Germany", "Japan", "South Africa"],
+    "globalCompetitors": ["not cleanly sized for this specific niche — see peers[] for named comparables from the broader specialty-chemicals set instead"],
+    "domesticSlice": "Not separately sized; treated as part of India's broader specialty/fine chemicals manufacturing base"
+  },
+  "subSegments": [
+    { "name": "Structure Directing Agents (SDA) for zeolites", "note": "serves automotive catalytic-converter (NOx removal) and petrochemical refining/cracking end-markets" },
+    { "name": "Electrolyte Salts & Solutions (ESS)", "note": "serves lithium-ion battery/supercapacitor end-markets" }
+  ],
+  "adjacentMarkets": [
+    { "name": "Lithium-ion battery electrolyte market", "sizeUSD_B_range": "$6.5B (2026) to $20.6B by 2036, global CAGR 12.2%; India-specific electrolyte market CAGR ~18.1% (2026-2036), cited as the world's fastest-growing regional market at 14.0% CAGR", "note": "directly relevant to the ESS product line" }
+  ],
+  "structureFacts": [
+    "Euro-7 emissions standards are expected to sharpen zeolite-based catalytic-converter demand, a direct tailwind for the SDA line",
+    "EV/energy-storage deployment growth is widening electrolyte-salts demand",
+    "Pharmaceutical/agrochemical innovation pipelines sustain outsourced intermediate procurement from India-based specialty chemical makers"
+  ],
+  "adoptionStructure": {
+    "note": "Demand is tied to automotive emissions-standard compliance cycles and battery-maker qualification timelines rather than a seasonal repurchase pattern; supplemented by more spot-like intermediate demand from pharma/agrochem customers"
+  },
+  "peers": [
+    { "name": "note", "detail": "Named IPO-offer-document peers for Tatva Chintan: Aarti Industries, Navin Fluorine, Alkyl Amines Chemicals, Vinati Organics, Fine Organics. Other named competitors: Camlin Fine Sciences, Vishnu Chemicals, Paushak, Styrenix Performance, Valiant Organics. Detailed peer financials (revenue/EBITDA/ROE) were NOT found for these in this research pass — would need dedicated per-company lookups. Market-cap context only: Tatva Chintan ~₹2,582 Cr vs peer-group median ~₹1,213 Cr.", "source": "lemonn.co.in/stocks/tatva/peer-comparison" }
+  ],
+  "customerValue": {
+    "drivers": ["technical co-development / OEM qualification with zeolite and battery-material customers", "consistency of high-purity output (catalytic/electrochemical performance is purity-sensitive)", "regulatory-cycle timing (Euro-7, battery-maker qualification windows)"],
+    "strongestPredictor": "not established from available research — treated as an open question",
+    "source": "industry press aggregation"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify application need (catalyst/battery/pharma intermediate)", "develop or adapt quaternary ammonium/phosphonium salt chemistry", "qualify with OEM/Tier-1 customer", "position as functional process input, not finished good"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["process chemistry R&D (DSIR-recognized facility)", "scale-up expertise", "certify purity/performance to customer spec", "maintain multi-application product portfolio"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan reactor capacity against automotive/battery demand cycles", "manufacture at multi-site facilities", "phased capex for greenfield expansion", "quality-test & release"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["technical co-development with OEM/Tier-1 customers", "support qualification/certification process", "maintain consistent high-purity output", "respond to spec changes (e.g. new emissions standards)"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises (emissions-standard cycle or battery-maker qualification)", "multi-year supply contract negotiated", "recurring orders against contract", "spot/intermediate orders from pharma/agrochem customers"] }
+  ],
+  "sources": [
+    "https://www.grandviewresearch.com/press-release/global-phase-transfer-catalyst-market",
+    "https://www.fortunebusinessinsights.com/phase-transfer-catalyst-market-116671",
+    "https://www.openpr.com/news/4448100/global-lithium-ion-electrolyte-market-expands-rapidly-india",
+    "https://www.futuremarketinsights.com/reports/lithium-and-lithium-ion-battery-electrolytes-market",
+    "https://lemonn.co.in/stocks/tatva/peer-comparison"
+  ]
+}

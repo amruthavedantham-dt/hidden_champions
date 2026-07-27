@@ -1,0 +1,70 @@
+{
+  "segmentName": "Corporate smart vending + on-demand office food-tech (India)",
+  "segments": [
+    {
+      "key": "india-vending-machines",
+      "nature": "differentiated",
+      "market": {
+        "indiaSizeUSD_M_2025": 728.2,
+        "indiaSizeUSD_M_2034": 1041.7,
+        "cagrPct_2026_2034": 3.94,
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "India-specific figures; this is a domestic B2B/institutional hardware+service category"
+      },
+      "shareIsMeaningful": false
+    },
+    {
+      "key": "india-food-services-broad",
+      "nature": "differentiated",
+      "market": {
+        "indiaSizeUSD_B_2024": 80,
+        "cagrPct_2024_2030": 10.5,
+        "note": "Broader context only — food services overall (dine-in, delivery, catering, etc.), not vending or corporate-catering specific. GruBox's actual addressable category is the narrower vending-machine market above."
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [
+    { "name": "India catering services (broader than vending, food-prep focused)", "sizeUSD_B": 5.3, "lossSplit": "" }
+  ],
+  "structureFacts": [
+    "India's vending-machine market is growing modestly (3.94% CAGR, IMARC) compared to the much faster broader food-services market (10-11% CAGR, RedSeer/NRAI) — vending/smart-cafeteria is a smaller, slower-growing slice of a much bigger, faster-growing office/institutional food opportunity.",
+    "The corporate cafeteria/food-tech category has one clearly dominant incumbent (HungerBox, ~35% share of the organized institutional segment, $250M+ annual GMV across 25 cities) — this is a category with real winner-take-most dynamics, not an even playing field of many similarly-sized players.",
+    "Several similarly-aged, India-based smart-vending competitors emerged in the same 2013-2016 window (Vendiman 2013, GruBox and Vendekin both 2016) — this was a genuine wave of similar startups, not a single pioneer, and the surviving players have differentiated mainly on funding/scale (Vendiman $11.4M, Vendekin $3.24M with multi-jurisdiction patents) rather than on being first."
+  ],
+  "adoptionStructure": {
+    "note": "B2B/institutional recurring-service model (machine placement + restocking + software), not a one-time hardware sale — revenue depends on active machine count and per-machine transaction volume, similar in structure to a recurring SaaS+hardware-lease business."
+  },
+  "peers": [
+    { "name": "HungerBox", "note": "The dominant incumbent — ~35% share of India's organized institutional food-tech market, $250M+ annual GMV across 25 cities (as of early 2026). Co-founded 2016 by Sandipan Mitra. Far larger scale than any vending-specific player in this set." },
+    { "name": "Vendiman", "revenueNote": "not disclosed", "fundingUSD_M": 11.4, "note": "Founded 2013 (predates GruBox by 3 years), Mumbai. 550+ clients, 2,000+ machines, 20+ cities, 2.5M+ monthly transactions. $11.4M raised over 7 rounds — the largest, most-scaled pure vending-focused peer found." },
+    { "name": "Vendekin Technologies", "fundingUSD_M": 3.24, "note": "Founded 2016 (same year as GruBox), Pune. Holds multiple patents in the US, UK, EU, and India for its vending/unattended-retail platform (Retrobox, vNetra) — the only peer in this set with confirmed, registry-backed IP." },
+    { "name": "SmartQ (Compass Group)", "note": "A Compass Group-backed digital cafeteria platform, operating since June 2015 in Bangalore — backed by a large multinational parent, unlike the independently-funded startups in this set." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Convenience and 24/7 automated access for offices without full cafeteria infrastructure (\"dry pantries\").",
+      "Cashless, app-based ordering and personalization — reduces friction versus a traditional staffed pantry or vendor.",
+      "Trust in hygiene/food-safety credentials (FSSAI-licensed kitchens, ISO-certified operations) — a baseline requirement, not a differentiator, but its absence would be disqualifying for enterprise clients.",
+      "Reliability of restocking/maintenance — a 'fully managed service' reduces the facilities-management burden on the client office, which is the actual buyer (not the end employee eating the snack)."
+    ],
+    "strongestPredictor": "Machine uptime + restocking reliability + client account retention — in a recurring B2B service model, the buyer (office facilities/HR) cares most about the service running without their intervention, more than any single feature."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify buyer (corporate facilities/HR team seeking pantry/cafeteria solution)", "pitch machine/kiosk + snack/meal catalogue + app", "win via price, footprint fit, and managed-service promise", "install vending machine, kiosk, or set up delivery route"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["build/maintain app + inventory-management software", "curate snack/meal catalogue with vendor partners and dark kitchens", "maintain machine hardware fleet", "build data/personalization layer (claimed AI/ML-driven)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan restocking against per-machine demand", "source from vendor partners/dark kitchens (FSSAI-licensed)", "restock and maintain machines/kiosks", "manage delivery logistics for office-snack/meal orders"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard client office (install + integrate app/payment)", "employee orders via app or walks up to machine", "cashless transaction + fulfilment", "support/restock cycle; retain the corporate account"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from office employee snack/meal need", "order placed (app or machine touchscreen)", "fulfil (vend or deliver)", "recurring reorder as part of daily office routine"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "IMARC Group (India Vending Machines Market)",
+    "RedSeer Strategy Consultants / NRAI (\"The Big Bite\" India food services report)",
+    "IMARC Group (India catering services market, comparator)",
+    "BusinessToday, CXOToday (HungerBox market-position commentary)",
+    "Vendekin, Vendiman, Tracxn (peer company profiles)"
+  ]
+}

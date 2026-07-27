@@ -1,0 +1,54 @@
+{
+  "segmentName": "Specialty & single-estate tea (India, D2C + B2B)",
+  "segments": [
+    {
+      "key": "specialty-single-estate-tea",
+      "nature": "differentiated",
+      "market": {
+        "indiaSizeCr_5yrsAgo": 300,
+        "indiaSizeCr_now": 1000,
+        "growthNote": "roughly tripled over five years",
+        "broaderPremiumTeaMarketTons_2025": 1.20,
+        "broaderPremiumTeaMarketTons_2035": 1.81,
+        "broaderPremiumTeaCagrPct": 4.20,
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "figures are India-specific; this is a domestic urban/D2C demand story"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's speciality tea market has grown roughly 3x over five years (from ~₹300 crore to ~₹1,000 crore), driven by Gen Z/millennial demand for premium and wellness-oriented teas — a much faster growth rate than the broader, more mature premium tea market (~4.2% CAGR).",
+    "Online tea sales grew 9% in 2024 — D2C brands can reach national scale without heavy distributor networks, which matters for a small, single-city-based brand like Namhah."
+  ],
+  "adoptionStructure": {
+    "note": "A discretionary, premium consumer purchase (plus a B2B HORECA/gifting channel) — not a recurring-replacement or tender-driven market."
+  },
+  "peers": [
+    { "name": "Vahdam India", "note": "A much larger, VC-backed D2C specialty tea brand — raised ₹25 crore from SIDBI Venture Capital in March 2025. Scaling carbon-neutral certified exports and single-origin Assam/Darjeeling micro-batches. A significantly better-funded and more prominent competitor in the same single-origin positioning space as Namhah." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Provenance and traceability — single-estate/garden-direct sourcing as the core value proposition, differentiating from mass-market blended tea.",
+      "Wellness/premium positioning appealing to younger, urban consumers.",
+      "Online convenience and national reach without physical distribution infrastructure."
+    ],
+    "strongestPredictor": "Credible, verifiable provenance story and online distribution reach — brand trust in a category where quality claims are hard for consumers to verify directly."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify buyer (D2C consumer or B2B/HORECA/gifting buyer)", "curate and price single-estate tea selections", "win via provenance story and brand trust", "supply loose-leaf/packaged tea"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain direct garden/estate relationships", "curate quality across varieties", "build brand/content (site, press features)", "manage multi-channel distribution (own site, marketplaces, B2B)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan sourcing against estate harvest cycles", "procure and hand-process tea", "pack and warehouse (Guwahati)", "ship (D2C) or bulk-supply (B2B/HORECA)"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard via own site, marketplace, or B2B relationship", "fulfil orders (24-hour shipping claimed)", "support/retain via reviews and repeat purchase", "maintain gifting/HORECA account relationships"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from premium/wellness tea interest or B2B need", "order placed (online or bulk contract)", "fulfil", "recurring reorder/repeat purchase"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "ExpertMarketResearch, Fortune Business Insights, IMARC Group (India premium/specialty tea market sizing)",
+    "Agro & Food Processing (India speciality tea market growth, ₹300cr → ₹1,000cr)",
+    "Ken Research (Vahdam India funding, D2C landscape)"
+  ]
+}

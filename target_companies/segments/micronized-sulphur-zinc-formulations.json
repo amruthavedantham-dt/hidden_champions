@@ -1,0 +1,45 @@
+{
+  "segmentName": "Micronized Sulphur & Zinc Agri-Input Formulations",
+  "market": {
+    "worldSizeUSD_B_range": "India micronutrient fertilizer market: $0.81B (2025) to $1.12B by 2030 (6.70%/yr). Global sulfur-based micronutrients: $411.9M (2023), 9%/yr (2024-2032). Standalone micronized-sulphur market size not found.",
+    "cagrPctRange": [6.70, 9.0],
+    "exportGeographies": ["North America", "Latin America", "Europe", "Africa", "Australia", "Asia (per Jaishil's own claim of 30+ countries)"],
+    "globalCompetitors": ["Sulphur Mills Limited (world's leading sulphur-based agri-input producer per its own claim)", "Coromandel International (diversified agri-inputs major, also makes zinc sulphate)"],
+    "domesticSlice": "Zinc-specific sub-segment: 8.24%/yr CAGR (2025-2030); zinc was the largest micronutrient category by consumption share in India in 2022 (26.9%)"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Soil zinc deficiency affects an estimated 36.5% of Indian soils per ICAR data (up to 60% in some states) — a structural, geography-anchored demand driver",
+    "Government Nutrient-Based Subsidy (NBS) scheme incentivizes sulphur and micronutrient (zinc, boron) fertilizers; from Kharif 2024, NPK fortified with Magnesium/Zinc/Boron/Sulphur was incorporated into the subsidy scheme",
+    "State-level precedent (Andhra Pradesh) has run a targeted micronutrient subsidy using Soil Health Card data to reach zinc-deficient areas — a model other states may replicate",
+    "OMRI (Organic Materials Review Institute) certification is a recognized entry point for organic/export-oriented crop-input formulations"
+  ],
+  "adoptionStructure": {
+    "note": "Demand follows the agricultural sowing calendar and government subsidy-scheme cycles rather than a hybrid-seed-style mandatory annual repurchase — soil-deficiency correction is a recurring but not strictly forced purchase"
+  },
+  "peers": [
+    { "name": "Aries Agro Limited", "revenueCr": 956.88, "fy": "FY2026", "revenueGrowthPct": 18.93, "ebitdaMarginPct": 9.29, "roePct": 13.7, "rocePct": 21.2, "note": "broader micronutrient/animal-nutrition player, not sulphur-specialist, but the closest listed proxy for the category", "source": "screener.in / business-standard.com" }
+  ],
+  "customerValue": {
+    "drivers": ["product efficacy validated against documented soil deficiency, combined with price/dosage-efficiency (cost-per-hectare matters heavily to price-sensitive farmers)", "government subsidy/NBS-scheme eligibility — subsidy-listed products move faster", "distributor network reach and certification (ISI, OMRI-organic, industry-body approvals)"],
+    "strongestPredictor": "dosage-efficiency / cost-per-hectare — explicitly how Jaishil markets its own NutriZin 700 product",
+    "source": "industry structure inference from company positioning"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["micronized sulphur products (agri + industrial grade)", "zinc-sulphur combination fertilizers", "crop protection formulations", "position on dosage-efficiency + certification"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["formulation R&D for particle-size micronization and nutrient delivery", "pursue registration (state agri-department, CIR)", "pursue certification (ISI, OMRI organic, industry-body approvals)", "release to production"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["multi-site manufacturing", "scale production for domestic bulk + export packaging", "quality-test", "package & stock"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["distributor/dealer network management", "farmer education/demo trials", "compliance with state agri-department and subsidy documentation", "respond to registration renewals"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["distributor/wholesale orders", "government tender/subsidy-scheme-linked bulk procurement", "export orders via trading/import-export channels", "reorder tied to sowing season"] }
+  ],
+  "sources": [
+    "https://www.mordorintelligence.com/industry-reports/india-micronutrient-fertilizer-market",
+    "https://www.gminsights.com/industry-analysis/sulfur-based-micronutrients-market",
+    "https://sml-ltd.com/about-us/",
+    "https://www.screener.in/company/ARIES/consolidated/",
+    "https://crops.zinc.org/wp-content/uploads/sites/11/2025/01/Whitepaper-on-Micronutrients-in-India.pdf",
+    "https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=156820&ModuleId=3&reg=1&lang=1",
+    "https://www.omri.org/mfg/jai"
+  ]
+}
