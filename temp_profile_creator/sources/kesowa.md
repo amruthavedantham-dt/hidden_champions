@@ -1,5 +1,129 @@
 # Kesowa — sources for verification
 
+## V2 UPDATE (2026-07-31) — major identity resolution + primary-source documents + founder interview
+Following a direct call with founder/CEO Prayush Poddar, the client supplied five primary-source
+PDFs and a call transcript, plus new framing direction. This section documents what changed.
+
+**Identity, resolved further — a second, older, more significant entity identified.** Every one of
+the five supplied documents (NKDA's original e-tender, its Letter of Intent/AOC, its final work
+completion certificate, and a CESC purchase order) names the contracting party not as "Kesowa
+Infinite Ventures Private Limited" but as **Federal Synergies (India) Private Limited**, CIN
+`U45400WB2008PTC129039`, incorporated **3 September 2008** — 11 years before Kesowa's own 2019
+founding — registered at the identical address (AMP Vaisaakkhi, AG-112, Sector-II, Salt Lake City,
+Kolkata 700091). Authorized/paid-up capital ₹1 crore (20x Kesowa Infinite Ventures' ₹5 lakh).
+MCA activity: "architecture, engineering activities, technical testing and analysis activities, and
+wholesale trading" — a broader, older technical-services entity, not an IT-consulting shell.
+**Directors: Arjun Navada, Vrint Poddar, Prayush Poddar, Uday Kumar Ghose** — Vrint and Prayush
+Poddar are common to both entities; Arjun Navada and Uday Kumar Ghose are new names not previously
+found. Independently corroborated: Prayush Poddar's own LinkedIn title reads "Kesowa / Federal
+Synergies." Source: ZaubaCorp, Tofler, ClearTax, LinkedIn.
+
+**Working theory, stated plainly as inference, not fact**: Federal Synergies India Pvt Ltd appears
+to be the real operating/contracting vehicle for large government and private drone-survey work
+(NKDA, CESC), while Kesowa Infinite Ventures Pvt Ltd houses the ARU software/data-platform brand.
+This would mechanically explain the previously "unexplained" 39% FY25 revenue decline flagged in
+this file's V1 pass: if NKDA's 4-year O&M contract (scheduled and confirmed completed 31/05/2024)
+was booked through Federal Synergies rather than Kesowa Infinite Ventures, its wind-down would show
+up as a revenue drop specifically in Kesowa Infinite Ventures' own MCA filings without needing any
+other explanation. **Not independently confirmed** — Federal Synergies' own financials were not
+pulled in this pass — but a materially better-supported theory than anything available before.
+
+**The flagship case study is now primary-source verified, not self-published.** Four government/
+private documents, cross-checked against each other and internally consistent:
+- **NKDA's Notice Inviting e-Tender** (No. 08/EE-E/NKDA/2020-21, 2nd Call, dated 8 Dec 2020) —
+  "Drone Technology for Managing COVID-19," estimated value ₹3,88,14,252.42, EMD ₹7,76,285,
+  3 months installation + 36 months O&M. Real eligibility criteria required ≥₹5 crore average
+  turnover over 3 years — meaning whichever entity bid (almost certainly Federal Synergies, given
+  its 2008 incorporation and larger capital base) had to meet a real financial bar.
+- **NKDA's Letter of Intent / Acceptance of Contract** (Memo 313/EE-E, dated 22 Jan 2021), addressed
+  to **M/S Federal Synergies India Private Limited**, confirming acceptance at ₹3,88,14,250.
+- **NKDA's Work Completion Certificate** (Memo 1088/E-322831, dated 7 Feb 2025), addressed to the
+  same entity, confirming: work commenced 01/02/2021, scheduled completion 31/05/2024, **actual
+  completion 31/05/2024 — on schedule, no penalty imposed** during the extended period (marked
+  "NA"). Completion cost ₹3,81,78,096.20. This is a genuine, government-issued, dated closure
+  document for a 4-year, ~₹3.88 crore contract — a materially stronger form of evidence than
+  almost anything else surfaced in this project.
+- **CESC Limited Purchase Order** (No. 15262/MISC/MAINS/CAPEX/23, dated 23 May 2022), to Federal
+  Synergies India Pvt Ltd, for "Drone Based LT Network Surveillance" — 50 units at ₹25,100 each,
+  total order value ₹14,80,900 (inclusive of 18% GST). CESC is a real, large private power utility
+  in Kolkata — this is a genuine, named, non-government commercial client with a real PO in hand,
+  materially upgrading the earlier "unconfirmed client relationships" concern from the V1 pass
+  (that concern was about Reliance Industries/Polycab-style bare logos elsewhere; this is a
+  different, independently strong finding specific to the drone-survey business).
+
+**Company's own strategic monetization plan — real, dated, specific.** A "Drone & GIS Data
+Monetization Plan for NKDA" (dated 6 February 2024, company-authored) proposes six concrete revenue
+use cases against NKDA's own drone/GIS data: per-plot residential reports (₹2,000/report), commercial
+plot reports with photos/video (₹30,000/5 years), high-resolution map data resale to mobility/GIS
+companies (benchmarked explicitly against Satellite WorldView-3 pricing — $42/sq km at 30cm
+resolution — arguing drone data's 3cm resolution justifies a ~10x premium), block intelligence
+reports for housing societies/banks (₹5,000/report), solar-rooftop thermal inspection (₹5,000-35,000/
+plot), and public map monetization (₹1,000/listing/year). This is real, specific, dated evidence of
+Kesowa's own "data utility" thinking predating the framing direction given for this profile — not
+something invented to fit the new narrative.
+
+**Superlative claim, corrected.** The company's actual public claim (its own site) is **"India's
+first drone call center,"** not "world's first" — no source anywhere, including a direct search for
+a global superlative, supports "world's first." The requested framing ("world's first drone data
+call center pilot for a city") is not used in this profile; "India's first" is used instead, still
+flagged as self-claimed/needs_verify given it's an exclusivity claim per this project's standing
+discipline. Separately, the company's own site states the NKDA pilot has run **2,442 missions over
+3 years, including 1,233 high-resolution mapping projects**, inaugurated by **Mr. Debasish Sen** of
+NKDA in **April 2021** — self-reported operational detail, plausible and consistent with (though not
+independently itemized against) the verified contract dates above.
+
+**Founder interview (call transcript, 2026, Prayush Poddar) — the real story, in his own words.**
+Treated here as first-party operator intelligence (the project's "pursuit pass" tier), not a
+polished pitch:
+- He explicitly rejects being profiled as a drone-service contractor: *"I have not dressed it to
+  position Kesova as a drone service provider. I think country has more than 500 such companies.
+  There's no sense."*
+- The NKDA engagement was framed from the start as a **pilot for a model**, not an end in itself:
+  *"We did this for a four-year period for a city in India, in Calcutta. That was the pilot."* His
+  ask to government has been to convert future contracts from one-off procurement into a
+  **"data utility"** model — i.e., recurring, SLA-based, monetizable infrastructure, not a
+  single paid survey.
+- **Why the government model hasn't scaled, in his account**: officers who championed the pilot
+  rotate out; the data was never made public; *"If 500 rupees being spent, hardly 100 rupees were
+  the value being generated right now."* Hyderabad specifically has spent "more than 300 crores on
+  drone service" that the public has never seen, per his claim — self-reported by the founder,
+  not independently verified here, flagged accordingly.
+- **Why the company isn't chasing more contracts**: *"We got more contract options but we declined
+  all of them. We don't want to become another contractor... if you play on the numbers, it is a
+  very dismal story."* He states the company can't compete on price against VC-funded contractors
+  willing to burn cash on government tenders.
+- **Real investor interest, no round closed**: Insight Partners (a real, named New York venture
+  fund) proactively reached out and spoke with him twice over the past year, but — in his account —
+  balked specifically because India lacks the policy dialogue to support a utility model.
+  Self-reported, plausible given Insight Partners is real and does invest in this space, not
+  independently confirmed.
+- **The company's current state is precarious**: *"We've let go of all our employees in the recent
+  past. We are... a single man guy right now... until we see a change in this direction, pretty
+  much, I think I'm gonna close the company."* This is a direct, first-party statement of
+  existential risk — treated as fact-of-what-was-said, not editorialized.
+- A second real project was named: a 2025 3D drone survey of **Aarey Colony, Mumbai**, during
+  monsoon, to help identify the **Mithi River's** monsoon-fed catchment (Mumbai's Powai Lake water
+  source) — a specific, plausible, but not independently corroborated project claim.
+
+**Market/policy context, now more precisely sourced.** India's **National Geospatial Policy 2022**
+(notified 28 December 2022) is real and substantial: it replaced a prior security-clearance/prior-
+approval regime for geospatial data collection with self-certification, and introduced a "negative
+list" of restricted attributes rather than blanket restriction — genuinely liberalizing **who can
+collect** geospatial data in India. **This is a distinct and narrower change than what the founder
+is describing**: the policy addresses collection rights, not a mandate to make city-level data
+collected under government contracts (like NKDA's) **publicly available** the way Google/Apple
+Maps operate internationally. That distinction is worth keeping precise in the profile rather than
+conflating "India liberalized geospatial policy in 2022" with "India has an open-city-data model" —
+the founder's complaint is specifically about the latter, which the 2022 policy does not address.
+Separately, Google's own Photorealistic 3D Tiles product (a real, current product) covers "over
+2,500 cities across 49 countries" per Google's own Maps Platform materials — a real, sourced,
+specific figure, though whether India is among those 49 was not independently confirmed in this
+pass. The founder's own claim that "100 of ~189-216 countries" have made city data public via
+platforms like Google Maps is his own estimate, not independently verified here, and should be
+presented as his claim, not as an independently confirmed statistic.
+
+## Original research (V1) — retained below
+
 ## Identity
 - **Legal entity: Kesowa Infinite Ventures Private Limited**, CIN
   `U31906WB2020PTC240808`, incorporated **24 October 2020**, registered

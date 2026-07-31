@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "siddharth-foundry",
+    "series": "Hidden Champions of India",
+    "segmentRef": "pump-cast-components",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited. IDENTITY NOTE (per HVT's own row-level notes, 2026-07-14): the company's own website lists CIN U27320PN2017PTC172131, while Tracxn shows CIN U27310PN2014PTC151576 for the same website/company name — this profile uses the Tracxn CIN as HVT's research judged it more consistent with the company's private-limited filing pattern, but the discrepancy is not resolved and is flagged here again."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Siddharth Foundry: strong returns, real OEM awards, and a CIN that doesn't match its own website.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A pump-casting specialist with 20%+ ROE, EEPC and Kirloskar Brothers vendor awards, and exports to 12+ countries — sitting inside a Siddharth Group lineage the company traces to 1991.", "tier": "company", "epistemic": "fact", "source": "Tofler; siddharthfoundry.com", "fields": ["financials.roePct", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2014 (this CIN's incorporation); company traces the Siddharth Group lineage to 1991 under founder Jaykumar Parikh", "tier": "company", "source": "Tofler vs. siddharthfoundry.com", "fields": ["foundedYear"] },
+    { "label": "CIN discrepancy", "value": "Company website shows U27320PN2017PTC172131; Tracxn shows U27310PN2014PTC151576 for the same entity — unresolved, flagged", "tier": "company", "source": "HVT row notes (2026-07-14)", "fields": ["cin"] },
+    { "label": "Revenue", "value": "₹70.53 Cr FY25 (+21% YoY); FY22 band ₹25-50 Cr (+56.09% YoY)", "tier": "company", "source": "thecompanycheck.com; Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Margins (FY22)", "value": "Operating 3.58%, Net 3.36%; EBITDA +391.16% YoY, Net Profit +642.8% YoY (off a small base)", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct"] },
+    { "label": "ROE / ROCE (FY22)", "value": "20.23% / 19.94%, Debt-to-Equity 0.06 (low leverage)", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Employees", "value": "113 (Apr 2024, this entity); company claims 400+ across the wider Siddharth Group", "tier": "company", "source": "thecompanycheck.com; siddharthfoundry.com", "fields": ["employees"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Genuinely strong returns, inside a group lineage with an unresolved identity wrinkle",
+    "blocks": [
+      { "text": "FY25 revenue reached ₹70.53 Cr (+21% YoY); an earlier FY22 filing shows ROE of 20.23% and ROCE of 19.94% — genuinely healthy returns for a manufacturer, though the most recent PAT/EBITDA absolute figures are paywalled and this specific return data point is now a few years dated. EBITDA and net profit both grew explosively in FY22 (+391.16%, +642.8% YoY) off a small base, and debt-to-equity remains low at 0.06.", "tier": "company", "epistemic": "fact", "source": "Tofler; thecompanycheck.com", "fields": ["financials.revenueCr", "financials.roePct", "financials.rocePct"] },
+      { "text": "It manufactures and exports cast iron and ductile iron pump components, pipe fittings, and municipal castings with N9 & N10 surface finish, and runs an in-house R&D department and casting/machining facility explicitly aimed at reducing lead time and developing new products.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation", "product_improvement"] },
+      { "text": "It holds ISO 9001:2008 and ISO 45001:2018 certification, with its works also TÜV Germany-audited — a genuine third-party quality signal beyond self-certification. It has produced lost-foam castings up to 120 kg and 750mm max component size, at an annual volume of 1,800 metric tons, and won an EEPC India Export Excellence Award plus 2nd Prize in the Casting Category at the 2023-24 KBL (Kirloskar Brothers) Vendor Meet, alongside quality recognitions from Shakti Pump and KSB.", "tier": "company", "epistemic": "fact", "source": "siddharthfoundry.com", "fields": ["recentMoves"] },
+      { "text": "The company's own website states a founding date of 2014 tied to CIN U27320PN2017PTC172131, while Tracxn lists a different CIN (U27310PN2014PTC151576) for what appears to be the same company and website — this discrepancy was flagged by HVT's own research and is not resolved here; the Tracxn CIN is used in this profile as HVT's own research judgment, not as a confirmed fact.", "tier": "company", "epistemic": "fact", "source": "HVT row notes", "fields": ["cin"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A **large, fast-growing India foundry market**, with pump castings as a specialized, quality-gated sub-segment.", "evidence": "India Foundry and Casting Market: $22.0B (2025) to $57.9B by 2034 (10.78%/yr); India's global casting export share is historically ~2-3%, with the Ministry of Heavy Industries targeting a doubling to 6-7%.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "**Named downstream pump-OEM customers are a genuinely strong, independently plausible customer list**, not just self-claimed positioning.", "evidence": "Siddharth Foundry names Shakti Pumps, Kirloskar Brothers (KBL), KSB Ltd, DAB Pumps, Goulds Pumps, SPX Flow Technology, ITT Corporation, Atlas Copco, and Mather & Platt Pumps as customers — corroborated in part by the documented KBL Vendor Meet award and Shakti Pump/KSB quality recognitions.", "tier": "segment", "epistemic": "fact", "source": "siddharthfoundry.com", "fields": ["peers"] },
+      { "point": "**Larger integrated foundry peers exist** (Kirloskar Ferrous, Nelcast, Electrosteel) but none with directly comparable financial disclosure found this pass.", "evidence": "Kirloskar Ferrous Industries explicitly manufactures pump castings and cylinder-block castings; Nelcast and Electrosteel Castings are cited as major foundry competitors, though revenue/margin/ROE figures for these peers were not retrieved this pass.", "tier": "segment", "epistemic": "fact", "source": "kirloskarferrous.com; aggregated search summary", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A genuinely strong operator by the numbers — real ROE, a corroborated OEM award history, and a third-party-audited quality system — sitting inside a corporate-identity wrinkle (the CIN mismatch between the company's own site and Tracxn) that should be resolved directly before treating any single data source here as fully authoritative.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group, Market.us (shared pump-cast-components segment file). Peer data: Kirloskar Ferrous, Nelcast, Electrosteel Castings, Bharat Foundry."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "product-expansion", "title": "Scaling lost-foam casting capability for complex geometries", "body": "The HVT sheet's own gap research names the lost-foam casting process — currently proven up to 120 kg / 750mm components at 1,800 MT/year — as having further, not-yet-fully-detailed potential for complex geometries and broader market penetration, a credible lever given the process is already operational, not aspirational.", "source": "HVT gap research (siddharthfoundry.com lost-foam page).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is resolving the CIN discrepancy before anything else.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Resolve the CIN mismatch between the company's own site and Tracxn directly with the company", "body": "Since this is a two-source, unresolved discrepancy on the single most basic identity fact (CIN), confirming the correct registration directly with the company should precede any deeper financial or diligence work — this is foundational, not a nuance.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a pump-casting manufacturer in this segment — a directory-depth pass, not yet confirmed against Siddharth Foundry's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer cast iron and ductile (SG) iron pump castings", "offer machined sub-assemblies for submersible, centrifugal, and vertical turbine pumps and pump motors", "offer lost-foam castings for complex geometries"], "stepsTier": "segment", "spottedAt": "offer lost-foam castings for complex geometries", "spotted": { "text": "Company facts (operational lost-foam capability up to 120kg/750mm at 1,800 MT/year) confirm this step is real for Siddharth Foundry — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run green sand casting process with metallurgical/melting control", "run CNC/VMC machining", "maintain in-house quality lab (ISO-certified / TÜV-audited)"], "stepsTier": "segment", "spottedAt": "maintain in-house quality lab (ISO-certified / TÜV-audited)", "spotted": { "text": "Company facts (ISO 9001:2008, ISO 45001:2018, TÜV Germany-audited works) confirm this step is real for Siddharth Foundry — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a plant sized in MT/year with a defined component weight range", "operate combined group capacity across sister foundries"], "stepsTier": "segment", "spottedAt": "operate combined group capacity across sister foundries", "spotted": { "text": "Company facts (Siddharth Foundry + Jayshil Foundry combined ~450 MT/month) confirm this step is real for Siddharth Foundry — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain vendor-qualification and quality-audit relationships with major pump OEMs", "win quality awards from OEM customers at vendor meets"], "stepsTier": "segment", "spottedAt": "win quality awards from OEM customers at vendor meets", "spotted": { "text": "Company facts (EEPC Export Excellence Award, KBL Vendor Meet 2nd Prize, Shakti Pump/KSB quality recognitions) confirm this step is real for Siddharth Foundry — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil direct supply contracts with pump OEMs domestically and internationally", "manage export logistics to multiple countries"], "stepsTier": "segment", "spottedAt": "manage export logistics to multiple countries", "spotted": { "text": "Company facts (exports to 12+ countries including USA, Germany, Sweden, Italy) confirm this step is real for Siddharth Foundry — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/pump-cast-components.json) — no company-specific (A2/pursuit) operational intel was collected for Siddharth Foundry this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A strong-returns pump-casting specialist with real OEM award validation — sitting on top of an unresolved CIN discrepancy between its own website and third-party registries. **Resolving that identity question is the necessary first step before deeper diligence.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Siddharth Foundry or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler and thecompanycheck.com; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed, including a row-level CIN-discrepancy note dated 2026-07-14) plus siddharthfoundry.com; market data from IMARC Group and Market.us. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "thecompanycheck.com", "siddharthfoundry.com", "IMARC Group", "Market.us", "kirloskarferrous.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the correct authoritative CIN, and current (post-FY22) ROE/ROCE data to confirm returns remain strong — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

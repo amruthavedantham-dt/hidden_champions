@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "chennai-metco",
+    "series": "Hidden Champions of India",
+    "segmentRef": "metallography-petrography-equipment-consumables",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U27109TN2000PTC046315, incorporated 17 Dec 2000."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Chennai Metco: a 25-year-old lab-instrument maker showing up at EMO Hannover while its own balance sheet is still in the red.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "Genuinely global reach — dealers in Germany, UK, and France, exports across three continents — built on thin, currently negative returns.", "tier": "company", "epistemic": "fact", "source": "Tofler; company export data", "fields": ["financials.roePct", "exportFootprint"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2000 (incorporated); a third-party listing separately cites 1995 for pre-incorporation business activity", "tier": "company", "source": "Zaubacorp; Metoree", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹50-75 Cr band FY23 (+30.81% YoY); a third-party estimate cites ~₹107 Cr (2026) — wide variance, flagged", "tier": "company", "source": "Tofler; RocketReach/ZoomInfo", "fields": ["financials.revenueCr"] },
+    { "label": "Margins", "value": "Net -2.85%, Operating -3.75%, Gross -6.4% (FY23) — currently negative", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct"] },
+    { "label": "ROE / ROCE", "value": "-0.94% / 2.16% (FY23)", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Employees", "value": "93 (MCA filing basis, FY24); third-party estimates range 51-200/125", "tier": "company", "source": "Tofler-aggregated MCA data; Metoree; ZoomInfo", "fields": ["employees"] },
+    { "label": "Export reach", "value": "Dealers in Germany, UK, France; exhibited at IMTEX 2025 and EMO Hannover 2025", "tier": "company", "source": "chennaimetco.com; EMO Hannover exhibitor listing", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Real global reach, thin domestic returns",
+    "blocks": [
+      { "text": "Revenue sits in the ₹50-75 Cr band (FY23, +30.81% YoY per Tofler), though a separate third-party estimate puts it as high as ~₹107 Cr — the two don't reconcile and the higher figure is treated with caution. What's clear either way: margins are currently negative (net -2.85%, operating -3.75%, gross -6.4%) and ROE sits at -0.94%, though ROCE is still marginally positive at 2.16% and both EBITDA and net profit grew modestly YoY (+8.35%, +7.69%).", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.netMarginPct", "financials.roePct", "financials.rocePct"] },
+      { "text": "It manufactures and globally supplies metallography and petrography equipment and consumables, including turnkey lab setups, and provides direct support for qualification and industrial certification around metallography inspection — a genuinely technical, quality-lab-facing niche.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation"] },
+      { "text": "It holds CE and ISO certification (specific standard not disclosed) and leverages in-house R&D to customize machines and develop new products, including carbide rod cutting — the kind of incremental capability build typical of a niche lab-instrument manufacturer.", "tier": "company", "epistemic": "fact", "source": "chennaimetco.com; mmindia.co.in", "fields": ["product_improvement"] },
+      { "text": "Export reach is real and independently corroborated: dealers in Germany, UK, and France, with shipment activity spanning the USA, Russia, Italy, Spain, Turkey, Argentina, Mexico, UAE, Japan, Thailand, and Malaysia over the company's history — though customs data shows current annual import/export turnover of only $0-0.15M (June 2024-May 2025), meaning that country list reflects lifetime customer reach, not current annual volume. It exhibited at IMTEX 2025 and EMO Hannover 2025, a major international machine-tool trade fair, signalling an active push for further European growth.", "tier": "company", "epistemic": "fact", "source": "ExportGenius; Volza; EMO Hannover exhibitor listing", "fields": ["exportFootprint", "recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A **modest but genuinely growing niche**, with sample-prep equipment as its dominant sub-slice.", "evidence": "Global metallography sample-preparation equipment: $1.2B (2024) to $2.0B by 2033 (7.2%/yr); sample-prep equipment holds ~42.7% share of the broader metallography equipment market ($650.75M-$1,120.30M by 2033).", "tier": "segment", "epistemic": "fact", "source": "Verified Market Reports; Future Market Report", "fields": ["market.sizeRange"] },
+      { "point": "**Global leaders operate at a totally different scale** — Chennai Metco competes on niche/regional reach, not head-to-head scale.", "evidence": "Struers (~$750M revenue), Buehler (ITW-owned), and LECO Corporation ($310.8M revenue) together account for ~40% of the global metallographic sample-cutting-machine market — all far larger than Chennai Metco's ₹50-75 Cr scale.", "tier": "segment", "epistemic": "fact", "source": "PitchBook; ZoomInfo/RocketReach", "fields": ["peers"] },
+      { "point": "**Rising QC/R&D lab investment** in metals, automotive, and aerospace is a real, structural demand driver.", "evidence": "India material testing equipment market: $278.80M (2024) to $415.35M by 2033, with growth explicitly tied to QC/R&D lab investment and stricter regulatory/quality standards.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A real, technically-capable niche exporter riding a genuinely growing global demand curve — but one whose own balance sheet hasn't yet turned that demand into positive returns. The EMO Hannover push is exactly the kind of move that could change that, if it converts into actual European dealer volume rather than just booth presence.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Verified Market Reports, Future Market Report, IMARC Group (shared metallography-petrography-equipment-consumables segment file). Peer data: Struers, Buehler, LECO Corporation."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "market-access", "title": "Converting trade-show presence into new European dealer territory", "body": "The HVT sheet's own gap research names specific untapped markets — Slovenia, Slovakia, Romania, Bulgaria — alongside the existing German/UK/French dealer base, with EMO Hannover 2025 explicitly framed as the vehicle for new partnerships. Given currently negative net margins, the real test is whether new dealer volume actually improves unit economics rather than just adding revenue at the same thin margins.", "source": "HVT gap research (LinkedIn / Modern Manufacturing India).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is confirming whether new export volume actually clears a positive margin.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Track margin on new European dealer volume separately from legacy business", "body": "As new Slovenia/Slovakia/Romania/Bulgaria dealer relationships convert from the EMO Hannover push, report their margin contribution separately to confirm European expansion is actually accretive before treating it as the growth story.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a metallography-equipment manufacturer in this segment — a directory-depth pass, not yet confirmed against Chennai Metco's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer metallography/petrography sample-preparation equipment (cutters, mounting presses, grinders/polishers)", "offer hardness testers and metallurgical microscopes/image analysis systems", "offer related consumables (abrasives, mounting compounds)"], "stepsTier": "segment", "spottedAt": "offer metallography/petrography sample-preparation equipment (cutters, mounting presses, grinders/polishers)", "spotted": { "text": "Company facts (turnkey lab setups, carbide rod cutting product development) confirm this step is real for Chennai Metco, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run in-house manufacturing and technical/applications expertise", "offer calibration, installation, and training services", "customize machines and develop new products"], "stepsTier": "segment", "spottedAt": "customize machines and develop new products", "spotted": { "text": "Company facts (in-house R&D producing carbide rod cutting capability) confirm this step is real for Chennai Metco — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a modest, single-cluster manufacturing footprint typical of Indian metallography-equipment makers", "maintain separate office/tech-center and factory facilities"], "stepsTier": "segment", "spottedAt": "maintain separate office/tech-center and factory facilities", "spotted": { "text": "Company facts (two Chennai facilities in Ambattur Industrial Estate) confirm this step is real for Chennai Metco — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["provide customer support, product guidance, calibration and installation support to metallurgical/materials-testing labs", "build dealer networks in export markets"], "stepsTier": "segment", "spottedAt": "build dealer networks in export markets", "spotted": { "text": "Company facts (existing dealers in Germany, UK, France) confirm this step is real for Chennai Metco — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["source export orders through international trade-show presence (IMTEX, EMO Hannover)", "source domestic orders via metallurgical/QC labs in metals, automotive, and aerospace industries"], "stepsTier": "segment", "spottedAt": "source export orders through international trade-show presence (IMTEX, EMO Hannover)", "spotted": { "text": "Company facts (IMTEX 2025 and EMO Hannover 2025 exhibitor participation) confirm this step is real and current for Chennai Metco — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/metallography-petrography-equipment-consumables.json) — no company-specific (A2/pursuit) operational intel was collected for Chennai Metco this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuinely global niche exporter with real dealer relationships and trade-show momentum — but one that hasn't yet turned that reach into positive margins. **Whether the EMO Hannover push converts to profitable European volume is the thing to watch.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Chennai Metco or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus chennaimetco.com, ExportGenius and Volza trade data; market data from Verified Market Reports, Future Market Report and IMARC Group; peer figures from PitchBook and ZoomInfo/RocketReach. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Zaubacorp", "chennaimetco.com", "ExportGenius", "Volza", "Verified Market Reports", "Future Market Report", "IMARC Group", "PitchBook", "ZoomInfo", "RocketReach", "EMO Hannover exhibitor listing", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true current export volume by destination, and whether EMO Hannover leads convert into profitable new dealer territory — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

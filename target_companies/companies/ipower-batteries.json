@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "ipower-batteries",
+    "series": "Hidden Champions of India",
+    "segmentRef": "lithium-ion-batteries",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U27200DL2019PTC359433, incorporated Dec 2019, spun out from parent Computech Systems (est. 1992) in April 2020."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Ipower Batteries: certified, OEM-embedded, and financially unreadable — three sources, three different revenue pictures.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "AIS 156, ICAT, and TSEC certifications back a real EV-battery capability supplying 15 of India's top 20 two-wheeler makers — while three separate data sources disagree materially on both revenue and its direction.", "tier": "company", "epistemic": "fact", "source": "evreporter.com; conflicting Tracxn/Tofler data", "fields": ["moat", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "Incorporated Dec 2019, spun out from parent Computech Systems (est. 1992) April 2020", "tier": "company", "source": "company history (search-aggregated)", "fields": ["foundedYear"] },
+    { "label": "Revenue (conflicting)", "value": "₹50 Cr (FY20-21, press) vs. ₹50-100 Cr band (FY25, Tracxn, -62% 1-yr CAGR) vs. ₹100-500 Cr band (FY24, Tofler, EBITDA +49.84% YoY)", "tier": "company", "source": "press account; Tracxn; Tofler — materially conflicting, flagged", "fields": ["financials.revenueCr"] },
+    { "label": "Employees", "value": "87 (Aug 2025, Tracxn) vs. ~200 (2021-22 press account)", "tier": "company", "source": "Tracxn; press account", "fields": ["employees"] },
+    { "label": "Certifications", "value": "AIS 156 (Amendment III) Phase 2, ICAT (NMC and LFP), TSEC (Telecom) — all third-party/registry credentials", "tier": "company", "source": "evreporter.com", "fields": ["moat"] },
+    { "label": "OEM reach", "value": "~100 OEMs including 15 of India's top 20 EV two-wheeler makers (Gemopai, Benling, Okinawa, Ampere, Hero Electric named)", "tier": "company", "source": "company positioning (search-aggregated)", "fields": ["gap_currently_monetized"] },
+    { "label": "Capacity", "value": ">500 packs/day at a 50,000 sq ft Kundli, Haryana facility (ISO 9001/14001/45001 certified)", "tier": "company", "source": "company facility data (search-aggregated)", "fields": ["employees"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Real certifications and OEM reach, financials that don't agree with each other",
+    "blocks": [
+      { "text": "This is a genuine three-way financial conflict, not a minor discrepancy: a 2021-22 press account cites ₹50 Cr revenue (FY20-21); Tracxn shows a ₹50-100 Cr band for FY25 with a striking -62% 1-year revenue CAGR (i.e., a sharp recent decline); Tofler separately shows a ₹100-500 Cr band for FY24 with EBITDA growing +49.84% YoY (i.e., strong recent growth) — the Tracxn and Tofler pictures point in opposite directions for adjacent fiscal years. None of the three sources is dismissed here; all three are reported so the conflict is visible rather than resolved by guessing.", "tier": "company", "epistemic": "fact", "source": "press account; Tracxn; Tofler", "fields": ["financials.revenueCr"] },
+      { "text": "It develops IoT-enabled lithium-ion batteries for multi-category electric vehicles, with proprietary BMS, CAN, IoT, GPS/GPRS, and remote-monitoring capabilities — and unlike many self-claimed capability statements in this batch, the underlying certifications are independently confirmed: AIS 156 (Amendment III) Phase 2 and ICAT certification for NMC and LFP battery chemistries, plus TSEC approval for telecom batteries.", "tier": "company", "epistemic": "fact", "source": "evreporter.com (third-party trade press)", "fields": ["differentiation", "moat"] },
+      { "text": "It is DSIR-registered with a documented history of developing NMC, LFP, and LMFP (Rugpro series) batteries, plus graphene-based batteries for electric two-wheelers — a registry-confirmed R&D credential, not merely self-claimed.", "tier": "company", "epistemic": "fact", "source": "DSIR registry (indiascienceandtechnology.gov.in)", "fields": ["product_improvement"] },
+      { "text": "It supplies roughly 100 OEMs, including 15 of India's top 20 EV two-wheeler makers (Gemopai, Benling, Okinawa, Ampere, and Hero Electric named), operates 200+ service centers, and runs a Kundli, Haryana facility certified to ISO 9001/14001/45001 with a government-recognized in-house R&D centre, producing 500+ packs/day. A collaboration with e-Rise EV to install a first-of-its-kind battery service center — with staff training included — is the concrete example of this OEM-facing service model in action. No external funding round was found; cells are imported from Japan/Korea/China while other components are made in-house.", "tier": "company", "epistemic": "fact", "source": "company facility data; auto.economictimes.indiatimes.com", "fields": ["gap_currently_monetized"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A **large, genuinely fast-growing India market** with a real, funded government tailwind.", "evidence": "India lithium-ion battery market: $3.59B-$6.73B (2025-26) projected to reach $9.79B-$15.92B by 2030-2034 (11.78-17.65%/yr); India's PLI/ACC scheme allocates ₹18,100 Cr for 50GWh of domestic advanced-chemistry-cell capacity by 2030.", "tier": "segment", "epistemic": "fact", "source": "aggregated market-size research", "fields": ["market.sizeRange"] },
+      { "point": "**Certification is a must-have gate, not a nice-to-have** — and Ipower already clears it, unlike many aspirants.", "evidence": "OEM battery qualification requires AIS 156 Amendment III Phase 2, ICAT for NMC/LFP chemistries, and TSEC approval for telecom — Ipower holds all three, a genuine differentiator versus segment entrants still working toward certification.", "tier": "segment", "epistemic": "fact", "source": "evreporter.com", "fields": ["structureFacts"] },
+      { "point": "**Segment execution risk is real, even for well-funded players** — a caution that makes Ipower's own unfunded, certification-led approach worth watching either way.", "evidence": "Exide Industries (ROE 7.05%) and Amara Raja (ROE 14.0%) show established players can be profitable; Log9 Materials entered NCLT insolvency by Nov 2025 despite raising $56.1M — a genuine cautionary data point on capital intensity and execution risk in this segment.", "tier": "segment", "epistemic": "fact", "source": "aggregated financial data; aggregated search summary", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "The certification stack and 15-of-top-20-OEM reach are the most concrete, independently-anchored facts in this profile — genuinely hard to fake and genuinely valuable. The financial picture is the opposite: three sources that don't agree, including one showing a sharp recent decline and another showing strong recent growth. Both can't be simultaneously true, and this should be resolved directly before treating either revenue trajectory as decided.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: aggregated (PLI/ACC scheme, India li-ion market sizing) (shared lithium-ion-batteries segment file, new this batch). Peer data: Exide Industries, Amara Raja, Log9 Materials, Livguard."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "customer-diversification", "title": "Scaling the battery-service-center model beyond the e-Rise EV pilot", "body": "The HVT sheet's own gap research names the e-Rise EV first-of-its-kind battery service center and staff-training collaboration as a template for a comprehensive network — a credible lever given Ipower already operates 200+ service centers and supplies ~100 OEMs, suggesting the infrastructure to scale this exists already.", "source": "HVT gap research (auto.economictimes.indiatimes.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is resolving the three-way revenue conflict before anything else.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Reconcile the Tracxn (-62% CAGR) vs. Tofler (+49.84% EBITDA growth) revenue conflict directly", "body": "Since these two sources point in opposite directions for adjacent fiscal years, a direct confirmation of actual current revenue trajectory with the company should precede any capacity, funding, or expansion conversation — the certification/OEM story is strong regardless, but the financial trajectory genuinely isn't known from outside sources alone.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a lithium-ion battery manufacturer in this segment — a directory-depth pass, not yet confirmed against Ipower Batteries' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer IoT-enabled lithium-ion battery packs for EVs (NMC, LFP, LMFP chemistries)", "offer graphene-based batteries for electric two-wheelers", "offer telecom backup batteries"], "stepsTier": "segment", "spottedAt": "offer IoT-enabled lithium-ion battery packs for EVs (NMC, LFP, LMFP chemistries)", "spotted": { "text": "Company facts (proprietary BMS/CAN/IoT/GPS/GPRS, NMC/LFP/LMFP Rugpro series, graphene-based batteries) confirm this step is real for Ipower — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["engineer proprietary BMS, CAN, IoT, GPS/GPRS and remote-monitoring systems", "run a DSIR-registered in-house R&D unit", "obtain AIS 156/ICAT/TSEC certification across chemistries"], "stepsTier": "segment", "spottedAt": "obtain AIS 156/ICAT/TSEC certification across chemistries", "spotted": { "text": "Company facts (AIS 156 Amendment III Phase 2, ICAT NMC/LFP, TSEC Telecom certifications) confirm this step is real for Ipower — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a dedicated pack-assembly facility with defined daily output capacity", "import cells from Japan/Korea/China while manufacturing other components in-house"], "stepsTier": "segment", "spottedAt": "operate a dedicated pack-assembly facility with defined daily output capacity", "spotted": { "text": "Company facts (50,000 sq ft Kundli, Haryana facility, 500+ packs/day) confirm this step is real for Ipower — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["build and operate a battery service-center and training network for OEM/fleet partners", "supply ~100 OEMs including major two-wheeler EV makers"], "stepsTier": "segment", "spottedAt": "build and operate a battery service-center and training network for OEM/fleet partners", "spotted": { "text": "Company facts (e-Rise EV collaboration, 200+ service centers) confirm this step is real for Ipower — see p3_opportunities.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win direct OEM supply contracts with EV two-wheeler makers", "win telecom-infrastructure battery orders via TSEC approval"], "stepsTier": "segment", "spottedAt": "win direct OEM supply contracts with EV two-wheeler makers", "spotted": { "text": "Company facts (15 of India's top 20 EV two-wheeler makers as customers, incl. Gemopai, Benling, Okinawa, Ampere, Hero Electric) confirm this step is real for Ipower — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/lithium-ion-batteries.json) — no company-specific (A2/pursuit) operational intel was collected for Ipower Batteries this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A certification-strong, OEM-embedded battery maker whose own financial data sources flatly disagree with each other. **Resolving the Tracxn-vs-Tofler revenue conflict is the single most important next step.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Ipower Batteries or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tracxn and Tofler (materially conflicting, both reported); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus evreporter.com, the DSIR registry and auto.economictimes.indiatimes.com; market data from aggregated PLI/ACC-scheme and India li-ion market research. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tracxn", "Tofler", "evreporter.com", "DSIR registry (indiascienceandtechnology.gov.in)", "auto.economictimes.indiatimes.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true current revenue trajectory (resolving the Tracxn/Tofler conflict), and actual funding status — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "segmentName": "Electric fan & fan-component manufacturing (India)",
+  "segments": [
+    {
+      "key": "india-electric-fan-market",
+      "nature": "differentiated",
+      "market": {
+        "indiaSizeUSD_B_2024": 1.94,
+        "indiaSizeUSD_B_2030": 3.72,
+        "cagrPct_2024_2030": 11,
+        "organizedMarketCr": 8500,
+        "organizedSharePct": 20,
+        "unorganizedMarketCr_currentFY": 1500,
+        "projectedMarketCr_2027_28": 16000,
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "India-specific figures; largely a domestic-consumption category"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's electric fan market is large and growing quickly (~11% CAGR), but the organized/branded segment is only an estimated ~20% of it — the majority of the market remains unorganized, which is both a competitive threat (price-driven, low-differentiation competition) and a headroom opportunity (formalization/branding upside) for any established manufacturer.",
+    "The branded/organized segment is dominated by a small number of large, listed, national names (Crompton Greaves, Havells, Orient Electric, Usha International, Bajaj Electricals, Khaitan Electricals, Surya Roshni, Almonard, Luminous) plus Polycab, which itself both makes fans and sources components — creating a real OEM/component-supply layer beneath the branded majors that a smaller manufacturer can occupy without competing head-on for retail shelf space.",
+    "The Indian Fan Manufacturers Association (IFMA) is a real, active industry trade body that runs recognized award competitions (e.g. the AM Competition) — a credible, checkable venue for industry standing distinct from a government registry."
+  ],
+  "adoptionStructure": {
+    "note": "A mix of B2C retail demand (branded consumer fans) and B2B/OEM component supply (parts and sub-assemblies sold into larger brands' supply chains) — the second channel is less visible publicly but can be a substantial, stable revenue base for a specialized manufacturer."
+  },
+  "peers": [
+    { "name": "Crompton Greaves Consumer Electricals", "note": "Large, listed, national fan brand — a different tier and business model (branded B2C) than a component/OEM manufacturer." },
+    { "name": "Havells India", "note": "Large, listed, national electricals conglomerate with a major fan business; also runs/sponsors industry recognition (e.g. via IFMA) that smaller manufacturers can be recognized within." },
+    { "name": "Orient Electric", "note": "Large, listed, national fan brand." },
+    { "name": "Usha International", "note": "Large, established national fan brand." },
+    { "name": "Polycab India", "note": "Large, listed electricals major that both manufactures fans and sources components — the most plausible type of counterparty for a component/OEM supplier's client relationship." },
+    { "name": "Bajaj Electricals, Khaitan Electricals, Surya Roshni, Almonard, Luminous", "note": "Other large or established named players in the organized segment — grouped here as the broader competitive set, not individually sized." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Reliability and consistency of component supply for OEM/B2B relationships — a supplier that has run continuously for 67 years under stable family ownership is a lower-risk long-term vendor.",
+      "Price and quality within the largely price-driven unorganized-adjacent segment.",
+      "Certification/compliance credentials (ISO, industry-body recognition) as a baseline trust signal for institutional/B2B buyers, distinct from consumer brand appeal."
+    ],
+    "strongestPredictor": "Demonstrated manufacturing consistency and technical capability over a long operating history — in a component-supply relationship, a buyer cares more about a vendor's ability to keep delivering to spec for years than about brand marketing."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify buyer (branded fan major sourcing components, or direct consumer/retail demand)", "quote against product spec and price", "win via manufacturing consistency, certifications, and long operating history", "supply finished fans or fan parts/accessories"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain in-house-engineered production machinery (coil-winding, forming machines)", "hold quality/environmental/safety certifications (ISO 9001/14001/45001)", "apply founder/family technical knowledge accumulated over decades", "adapt production to OEM client specifications"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production against order volume", "manufacture fans/components in the Kolkata facility", "quality-check against certification standards", "package and ship to OEM clients or retail channels"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard client (OEM contract or retail/distributor relationship)", "fulfil recurring orders", "maintain quality consistency over the relationship", "retain long-term B2B accounts"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from OEM client production needs or seasonal consumer demand", "order placed/contracted", "fulfil", "recurring reorder as part of an ongoing supply relationship"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "Yahoo Finance/GlobeNewswire (India electric fan market sizing, 2022-2030 reports)",
+    "Havells India investor presentations (organized/unorganized market split, via search)",
+    "PR Newswire (India fans market unit-shipment projections)",
+    "Indian Fan Manufacturers Association (IFMA) — industry body context"
+  ]
+}

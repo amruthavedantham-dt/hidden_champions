@@ -1,0 +1,42 @@
+{
+  "segmentName": "Industrial Rubber Rollers",
+  "market": {
+    "worldSizeUSD_B_range": "Global Industrial Rubber Rollers Market: $2.5B (2024) to $3.8B by 2033 (5.2%/yr) per one vendor, or $3.2B (2024) to $4.8B by 2033 (5.0%/yr) per another. A narrower 'Rubber Roller market' scope is cited at $555.6M (2025) by a third vendor — much smaller, likely reflecting a narrower product-scope definition. India Industrial Rubber Market (broader, not roller-specific): 4.93 lakh tonnes (2024) to 6.22 lakh tonnes by 2030 (4.16%/yr).",
+    "cagrPctRange": [4.16, 5.2],
+    "exportGeographies": ["Kenya/East Africa (textile-industry trade-show presence confirmed, ITME Africa & Middle East 2023)"],
+    "globalCompetitors": [],
+    "domesticSlice": "Anar Rub Tech Pvt Ltd (Ahmedabad, est. 1978) claims ~₹120 Cr turnover. Indian Roller Industries Pvt Ltd ('Sunny Rubber' brand, est. 1990) has 69 employees (Mar 2024); revenue not found. Asia-Pacific is the fastest-growing region, driven by India/China industrialization."
+  },
+  "subSegments": ["pickling/squeegee/damming/wringer/sink/acid-wash rollers for steel-industry acidic/caustic environments"],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Manufacturing process: steel core/tube (rolled & welded, sometimes outsourced) → rubber compounding (carbon black, silica, plasticizers, vulcanizing agents) → covering/vulcanizing onto core → precision grinding/finishing",
+    "No specific regulatory driver or government scheme was identified for this segment"
+  ],
+  "adoptionStructure": {
+    "note": "Durability/wear-resistance in acidic-caustic mill environments, minimizing downtime/re-covering frequency, and manufacturer's process know-how for tailored solutions drive vendor selection."
+  },
+  "peers": [
+    { "name": "Anar Rub Tech Pvt Ltd (Ahmedabad, est. 1978)", "turnoverCr_claimed": 120, "source": "rubberrollerindia.com (company-claimed)" },
+    { "name": "Indian Roller Industries Pvt Ltd ('Sunny Rubber', est. 1990)", "employees_Mar2024": 69, "note": "revenue not found", "source": "Tracxn" },
+    { "name": "Krishna Engineering Works, Sigma Rollers, K.D. Joshi, Siva Rollers", "note": "named, scale/revenue not found", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["durability/wear-resistance in acidic-caustic mill environments", "minimizing downtime/re-covering frequency", "manufacturer's tailored process know-how"],
+    "strongestPredictor": "durability/wear-resistance combined with tailored process know-how",
+    "source": "iqsdirectory.com; industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer tailored rubber-covering solutions for steel-industry manufacturing challenges", "offer custom rollers for pickling, squeegee, damming, wringer, sink, acid-wash/rinse applications"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run steel core/tube fabrication (rolled & welded)", "run rubber compounding and covering/vulcanizing onto core, precision grinding/finishing"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing base sized for steel-mill-cycle order volume", "maintain DSIR-recognized in-house R&D capacity"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-standing steel-industry customer relationships", "pursue international trade-show presence for new regional markets"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil repeat/re-covering orders tied to roller wear cycles", "fulfil new-installation orders for steel-mill capacity expansions"] }
+  ],
+  "sources": [
+    "https://www.iqsdirectory.com/articles/rubber-roller.html",
+    "https://www.techsciresearch.com/report/india-industrial-rubber-market/2927.html",
+    "https://www.rubberrollerindia.com",
+    "https://www.lathia.in/steel-industry-new/"
+  ]
+}

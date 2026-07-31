@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "imperial-products-of-india",
+    "series": "Hidden Champions of India",
+    "segmentRef": "coil-processing-forming-lines",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Sole proprietorship, no CIN (not required for a proprietorship), GST/IEC-registered, founded 1980 (Chandigarh). NOTE: the HVT sheet's website field (www.imperialpartieveier.com) does not resolve — no live domain found under that name; the company's actual public presence is via IndiaMART, Connect2India, TradeIndia, ExportersIndia, and Dun & Bradstreet listings. Flagged prominently since this is a direct data-quality issue in the source row."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Imperial Products of India: a 45-year-old Chandigarh proprietorship building coil-processing lines, with no public financials and a dead website on file.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A small, sole-proprietor shop with real CAD/CAM engineering and ISO certification — but the HVT sheet's own website field points nowhere, and no MCA-style revenue figure exists to check.", "tier": "company", "epistemic": "fact", "source": "IndiaMART; DNS lookup", "fields": ["website", "financials"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1980, established as a proprietorship in Chandigarh (one source cites 1978 as a minor variant)", "tier": "company", "source": "Connect2India; IndiaMART", "fields": ["foundedYear"] },
+    { "label": "Structure", "value": "Sole proprietorship — no CIN by design (not MCA-registrable); GST- and IEC-registered", "tier": "company", "source": "IndiaMART", "fields": ["ownershipType"] },
+    { "label": "Revenue", "value": "Not found — no MCA/Tofler/Tracxn record exists for a sole proprietorship", "tier": "company", "source": "N/A", "fields": ["financials.revenueCr"] },
+    { "label": "Employees", "value": "26-50", "tier": "company", "source": "IndiaMART", "fields": ["employees"] },
+    { "label": "Website flag", "value": "HVT sheet's listed domain (www.imperialpartieveier.com) does not resolve; real presence is IndiaMART/Connect2India/TradeIndia/ExportersIndia", "tier": "company", "source": "direct DNS verification", "fields": ["website"] },
+    { "label": "Certification", "value": "ISO 9001:2008 (one listing cites ISO 9001:2000); CE Certificate of Compliance for products", "tier": "company", "source": "IndiaMART", "fields": ["moat"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A real 45-year shop, but no financial trail to check it against",
+    "blocks": [
+      { "text": "As a sole proprietorship, Imperial Products has no CIN and is not required to file MCA financials — so no revenue, PAT, EBITDA, or ROE figure could be found from any source, and none should be assumed. This is a structural gap, not a red flag in itself, but it means every claim below rests on the company's own directory listings rather than any independently filed number.", "tier": "company", "epistemic": "fact", "source": "IndiaMART; MCA registration rules", "fields": ["financials"] },
+      { "text": "It manufactures hi-power and precision-engineered coil-processing machines — coil slitting lines, cut-to-length lines, recoilers, decoilers, surface grinders, cold rolling mills, strip straighteners, and bending machines — designed using CAD software (SolidWorks 2018) and CAM software (SolidCAM 2018) on in-house Vertical Machining Centers and Turning Centers, a genuinely modern design toolchain for a small shop of this size.", "tier": "company", "epistemic": "fact", "source": "IndiaMART product listing", "fields": ["differentiation", "product_improvement"] },
+      { "text": "It holds ISO 9001 certification (2008 or 2000 depending on source) and markets a CE Certificate of Compliance for its products — though the HVT sheet itself flags this pillar `needs_verify: yes`, since it rests entirely on the company's own directory listings with no independent registry check performed.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed, needs_verify: yes)", "fields": ["moat"] },
+      { "text": "Operating from roughly 1,000 sq. yard premises in Chandigarh with 26-50 employees, it is led by CEO J Singh and Marketing Director R Singh/Ravi Inder Singh, and describes serving 'clients all over the globe' — though no specific export country or export-revenue percentage was found to substantiate that reach.", "tier": "company", "epistemic": "fact", "source": "IndiaMART", "fields": ["exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market with **real 'Make in India' tailwinds**, though India-specific sizing for this exact niche wasn't found.", "evidence": "Global coil processing line market: ~$5.8B (2023) to $8.9B by 2032 (5.0%/yr); global cut-to-length line market: $3.58B-$4.1B (2024-25 depending on source) growing 4.04-5.6%/yr; India-specific coil-processing market size was not located despite search.", "tier": "segment", "epistemic": "fact", "source": "dataintelo.com; Emergen Research", "fields": ["market.sizeRange"] },
+      { "point": "**No named peer with disclosed financials** exists to benchmark against, even at the segment level.", "evidence": "The Bronx Group (UK/global, since 1940) and MMC Technologies (India) are the only named players found in this niche, and neither discloses revenue for the coil-processing-line business specifically.", "tier": "segment", "epistemic": "fact", "source": "thebronxgroup.com; mpmac.in", "fields": ["peers"] },
+      { "point": "**Precision-machining demand from automotive/appliance/construction** is the generic structural driver, without India-specific consumption data.", "evidence": "Growth drivers cited across reports: increasing demand for precision metal processing, expanding automotive and construction industries, rising investment in steel processing facilities.", "tier": "segment", "epistemic": "fact", "source": "aggregated market report summary", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A genuinely old, technically-equipped small shop operating in a real but thinly-documented niche — the honest read here is that there simply isn't enough independently verifiable data (financial or competitive) to say much more than: it exists, it has real CAD/CAM capability, and its own web presence needs fixing before anything else about its reach can be trusted.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: dataintelo.com, Emergen Research, Verified Market Reports (shared coil-processing-forming-lines segment file). No independently financialed peer was found for direct comparison."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "product-expansion", "title": "Turning custom-build R&D into standardized products", "body": "The HVT sheet's own gap research names the company's R&D team and engineering talent as capable of developing standardized new products beyond one-off custom builds — a credible lever for a shop that has real CAD/CAM capability but currently monetizes only via bespoke, per-client machines.", "source": "HVT gap research (IndiaMART profile).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is simply fixing the company's own online identity before any growth move.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Reconcile the company's actual live web presence with its directory listings", "body": "Confirm and publish one authoritative, live company domain (the HVT sheet's listed www.imperialpartieveier.com does not resolve) before investing further in export-market outreach — a broken or non-existent primary domain undercuts credibility with new international buyers regardless of product quality.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a coil-processing-line manufacturer in this segment — a directory-depth pass, not yet confirmed against Imperial Products' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer coil slitting lines and cut-to-length lines", "offer cold rolling mills, tension leveling lines, and strip straighteners", "offer decoilers/uncoilers, recoilers/coilers, and roll-forming/bending lines"], "stepsTier": "segment", "spottedAt": "offer coil slitting lines and cut-to-length lines", "spotted": { "text": "Company facts (full coil-processing product range on IndiaMART) confirm this step is real for Imperial Products — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["design custom-built machines using CAD/CAM software", "manufacture in-house on Vertical Machining Centers and Turning Centers", "run ISO-certified manufacturing"], "stepsTier": "segment", "spottedAt": "design custom-built machines using CAD/CAM software", "spotted": { "text": "Company facts (SolidWorks 2018 / SolidCAM 2018 in-house design toolchain) confirm this step is real for Imperial Products — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a permanent urban manufacturing premises sized for custom/small-batch orders", "scale a small technical/engineering team for design and build"], "stepsTier": "segment", "spottedAt": "operate a permanent urban manufacturing premises sized for custom/small-batch orders", "spotted": { "text": "Company facts (~1,000 sq. yard Chandigarh premises, 26-50 employees) confirm this step is real for Imperial Products — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["market quality assurance and prompt after-sales service", "serve clients directly for custom-built, client-specified machines"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil GST/IEC-registered export orders", "manufacture custom-built machines per specific client requirements"], "stepsTier": "segment", "spottedAt": "manufacture custom-built machines per specific client requirements", "spotted": { "text": "Company facts (gap research confirms custom-build-only monetization model) confirm this step is real for Imperial Products — see p3_opportunities.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/coil-processing-forming-lines.json) — no company-specific (A2/pursuit) operational intel was collected for Imperial Products this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A real 45-year-old proprietorship with genuine CAD/CAM engineering chops and no financial trail to verify it against. **The website mismatch flagged in the source data should be fixed before any outreach happens.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Imperial Products of India or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No MCA-filed financials exist for this sole proprietorship; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus IndiaMART, Connect2India and TradeIndia listings; market data from dataintelo.com and Emergen Research. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["IndiaMART", "Connect2India", "TradeIndia", "ExportersIndia", "dataintelo.com", "Emergen Research", "Verified Market Reports", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — actual revenue scale, true export destinations, and whether the website issue reflects a lapsed domain or a data-entry error in the source sheet — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

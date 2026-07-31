@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "mali-agri-tech",
+    "series": "Hidden Champions of India",
+    "segmentRef": "hybrid-crop-seeds",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U01111WB2000PTC091595, incorporated 3 Apr 2000 (Ranaghat, Nadia, West Bengal). Substituted into batch 5 in place of Mech Choice Tools (deferred for zero pillar data)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Mali Agri Tech: an eastern-India rice/mustard seed breeder whose HVT-flagged 'unverified' R&D claim is actually confirmed.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A DNA-fingerprinting molecular lab and a specific DSIR registration number this session tracked down directly — resolving a gap the HVT tool's own research had left open.", "tier": "company", "epistemic": "fact", "source": "maliseeds.in/rnd (direct verification)", "fields": ["moat", "product_improvement"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2000 (CIN incorporation), Ranaghat, Nadia, West Bengal", "tier": "company", "source": "ZaubaCorp", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "Declined 6.49% YoY FY25 (exact ₹ paywalled)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Returns (mixed)", "value": "Net Profit Margin 7.03%, ROE 7.53%, ROCE -2.41% (negative), Net Profit +190.59% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Employees", "value": "51-100", "tier": "company", "source": "IndiaMART", "fields": ["employees"] },
+    { "label": "DSIR registration (resolved)", "value": "F.NO. TU/IV-RD/4309/2018, R&D unit established 2010 at Kumarsatpur, Ranaghat — HVT's own proof_status was 'not-found'; this session found the exact registration directly", "tier": "company", "source": "maliseeds.in/rnd (direct fetch)", "fields": ["product_improvement"] },
+    { "label": "Diversification", "value": "Also sells vegetables, ayurvedic medicine, mouth freshener, vanilla beans per IndiaMART listing — more diversified than a pure hybrid-seed company", "tier": "company", "source": "IndiaMART", "fields": ["differentiation"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A confirmed real R&D program, on a financially mixed base",
+    "blocks": [
+      { "text": "Financial signals are mixed: revenue declined 6.49% YoY, yet net profit rose sharply (+190.59% YoY, off what is likely a small base), with net profit margin at 7.03% and ROE at 7.53% — modestly positive — while ROCE was actually negative at -2.41%, a genuine inconsistency across return measures worth noting rather than smoothing over. Debt-to-equity is low at 0.18.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.roePct"] },
+      { "text": "It offers high-quality maize, paddy, mustard, and vegetable seeds with expert agricultural support, and uses DNA fingerprinting to create unique genetic IDs for varieties, protecting intellectual property — a real, technically substantive moat claim.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation", "moat"] },
+      { "text": "**This is the clearest verification win in this batch**: the HVT sheet itself marked the DSIR R&D recognition claim `proof_status: not-found` despite citing a DSIR PDF URL — meaning the HVT tool's own research process flagged this as unresolved. This session directly fetched maliseeds.in/rnd and found the exact registration: F.NO. TU/IV-RD/4309/2018, recognizing the R&D unit established in 2010 at Kumarsatpur, Ranaghat, Nadia, West Bengal. Two specific labs are confirmed: a Quality Laboratory (rice quality/cooking parameter testing) and a Molecular Laboratory (genetic purity testing, grow-out field trials, DNA fingerprinting, marker-assisted breeding) — directly substantiating the moat claim with real, named infrastructure, not just a self-claim.", "tier": "company", "epistemic": "fact", "source": "maliseeds.in/rnd (direct fetch)", "fields": ["product_improvement", "moat"] },
+      { "text": "It maintains real research collaborations: AICRIP (via ICAR-IIRR), the All India Coordinated Research Project on Rapeseed-Mustard, IRRI, Punjab Agricultural University, University of Calcutta, and the Indian Institute of Rice Research — a genuinely credible research network for a company of this scale. Its IndiaMART listing also shows diversification beyond pure seed sales into vegetables, ayurvedic medicine, mouth freshener, and vanilla beans.", "tier": "company", "epistemic": "fact", "source": "maliseeds.in/rnd", "fields": ["gap_summary"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "Mali Agri Tech sits in a **distinct eastern-India, rice/mustard-centric geography**, different from the Telangana/Maharashtra concentration typical of many Indian hybrid-seed players covered elsewhere in this project.", "evidence": "Its base in Ranaghat, Nadia, West Bengal, and its specific crop focus (maize, paddy, mustard, vegetables) represents real geographic and crop-focus diversity within India's hybrid-seed sector, not a repeat of the same regional pattern.", "tier": "segment", "epistemic": "fact", "source": "company registration data", "fields": ["structureFacts"] },
+      { "point": "This segment file (hybrid-crop-seeds) is **shared with Unisem Agritech Pvt. Ltd.** from an earlier batch — no new peer-company facts beyond generic market sizing were found this session specific to Mali Agri Tech's eastern-India positioning.", "evidence": "Per the research instructions for this company, full segment/market research was not re-run given the existing shared segment file; this session focused on company-level verification instead.", "tier": "segment", "epistemic": "fact", "source": "segment reuse note", "fields": ["market.sizeRange"] },
+      { "point": "**Real research-institution partnerships (IRRI, ICAR-IIRR, PAU)** are a genuine credibility signal in a sector where many smaller players' R&D claims go unverified.", "evidence": "Collaborations with internationally recognized rice research institutions (IRRI) and India's national agricultural research bodies (ICAR-IIRR, PAU) represent real, checkable institutional relationships rather than self-claimed capability.", "tier": "segment", "epistemic": "fact", "source": "maliseeds.in/rnd", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A financially modest, geographically distinct hybrid-seed breeder whose R&D claim — flagged as unresolved even by the HVT tool's own research process — checked out cleanly under direct verification this session, right down to the specific registration number. The mixed ROE/ROCE signals (positive ROE, negative ROCE) are worth a closer look, but the underlying R&D infrastructure claim is now on solid ground.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: shared hybrid-crop-seeds segment file (reused from batch 1's Unisem Agritech profile), no new market-sizing research this pass. Peer/institutional data: IRRI, ICAR-IIRR, Punjab Agricultural University."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "market-access", "title": "Building an e-commerce presence for agricultural supplies", "body": "The HVT sheet's own gap research names this directly — an untapped opportunity in agricultural supplies e-commerce given rising rural internet penetration — a plausible lever given the company's own product diversification (vegetables, ayurvedic products) beyond pure seed sales already shows a willingness to broaden distribution.", "source": "HVT gap research (intelmarketresearch.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is reconciling the positive ROE against the negative ROCE.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Reconcile the positive ROE (7.53%) against the negative ROCE (-2.41%)", "body": "These two return measures point in different directions for the same fiscal year — confirming the underlying capital structure (e.g., unusual working-capital or debt treatment) directly with the company would clarify which figure better reflects the business's true return profile.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a hybrid-crop-seed breeder in this segment — a directory-depth pass, not yet confirmed against Mali Agri Tech's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer bio-fertilizers, plant nutrients, wetting agents, biopesticides/bio-insecticides, plant growth regulators", "position on biodegradability/organic certification"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold (shared hybrid-crop-seeds file)", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["manufacture biodegradable/organic-input formulations", "run in-house R&D for crop-protection innovation", "pursue organic/quality certification"], "stepsTier": "segment", "spottedAt": "run in-house R&D for crop-protection innovation", "spotted": { "text": "Company facts (confirmed DSIR registration F.NO. TU/IV-RD/4309/2018, Quality Lab and Molecular Lab with DNA fingerprinting) confirm this step is real for Mali Agri Tech — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate manufacturing facility (liquid and powder forms)", "scale production against domestic and export demand"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["serve manufacturer-cum-exporter relationships across Indian Subcontinent and export markets", "engage subsidy-linked institutional buyers where applicable"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["distributor/direct farmer orders domestically", "export orders", "reorder tied to crop cycle and farming season"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/hybrid-crop-seeds.json, reused from batch 1's Unisem Agritech profile) — no company-specific (A2/pursuit) operational intel was collected for Mali Agri Tech this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A financially modest but geographically distinct hybrid-seed breeder whose R&D infrastructure claim — left unresolved even by the HVT tool's own process — checked out cleanly under this session's direct verification. **The mixed ROE/ROCE signals are the one thing worth a closer look.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Mali Agri Tech or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed and independently confirmed via direct fetch of maliseeds.in/rnd, resolving the HVT tool's own unresolved DSIR proof_status); market data reused from the shared hybrid-crop-seeds segment file. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "maliseeds.in", "ZaubaCorp", "IndiaMART", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the reconciliation of the positive ROE against the negative ROCE, and current export/e-commerce plans — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

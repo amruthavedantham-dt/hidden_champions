@@ -1,0 +1,42 @@
+{
+  "segmentName": "High-Tensile Industrial Fasteners",
+  "market": {
+    "worldSizeUSD_B_range": "Global industrial fasteners: $103.92B (2025) to $153.71B by 2033 (5.1%/yr) per one estimate; $124.2B (2024) to $173.8B by 2034 (3.4%/yr) per another.",
+    "cagrPctRange": [3.4, 8.7],
+    "exportGeographies": ["Italy", "United States", "Spain (per United Overseas Bolts and Nuts' own trade-shipment data)"],
+    "globalCompetitors": ["not individually named at global scale — see peers[] for listed Indian comparables"],
+    "domesticSlice": "India industrial fasteners market growing faster than the global rate across all sources checked: ~$9.09B by 2033 (8.7%/yr) per one estimate; $9.06B (2022) to $17.87B by 2030 (7.9%/yr) per another; $6.08B (FY2025) to $10.04B by FY2033 (6.31%/yr) per a third"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Automotive sector is the single biggest demand driver (domestic sales +7.3%, exports +19.2% cited in industry reporting)",
+    "Infrastructure/construction growth via 'Make in India' and schemes like the Smart Towns Mission (100 smart towns) boosts fastener demand for roads, bridges, urban development",
+    "Increasing use of high-tensile-strength, corrosion-resistant bolts in offshore and aerospace applications, plus EV-driven lightweight/advanced-material shift, are cited as demand drivers"
+  ],
+  "adoptionStructure": {
+    "note": "Mix of large industrial/infrastructure project orders and recurring OEM/export orders — not a fixed repurchase rate"
+  },
+  "peers": [
+    { "name": "Sundram Fasteners", "revenueCr": 5209.74, "fy": "FY2025", "patCr_range": "540-547", "note": "major diversified auto-fastener player, far larger in scale than a typical mid-sized fastener maker — an industry benchmark, not a scale-comparable peer", "source": "motoring-trends.com" }
+  ],
+  "customerValue": {
+    "drivers": ["metallurgical/heat-treatment capability to achieve high-tensile grades", "in-house application/design engineering support", "quality systems (ISO 9001, IATF-equivalent) and PPAP process for new-part approval", "reliability/consistency of supply to blue-chip industrial clients"],
+    "strongestPredictor": "reliability of supply and traceability/documentation for regulated end-uses",
+    "source": "industry aggregation"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer fastener types/grades (hex bolts, nuts, stud bolts, HSFG bolts, washers, threaded bars) across material grades", "serve multiple end-industries (oil/petrochemical, power, railway, chemical, automotive, infrastructure)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["achieve high-tensile grades via metallurgical/heat-treatment capability", "provide in-house application/design engineering support", "maintain quality systems (ISO 9001, IATF-equivalent) and PPAP process"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate multi-site manufacturing/semi-finishing footprint", "flex volume between high-volume commodity and lower-volume specialized/high-tensile orders", "manage export logistics"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain reliability/consistency of supply to blue-chip industrial clients", "respond to customized/non-standard fastener specs", "provide traceability and documentation for regulated end-uses"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win large industrial/infrastructure project orders (power, rail, oil & gas)", "fulfil recurring OEM/export orders", "reorder tied to project cycles or OEM production schedules"] }
+  ],
+  "sources": [
+    "https://www.grandviewresearch.com/industry-analysis/industrial-fasteners-market",
+    "https://www.imarcgroup.com/industrial-fasteners-market",
+    "https://www.grandviewresearch.com/horizon/outlook/industrial-fasteners-market/india",
+    "https://straitsresearch.com/report/industrial-fasteners-market/india",
+    "https://motoring-trends.com/auto-components/sundram-fasteners-reports-record-q4-and-fy25-results-driven-by-export-growth-and-domestic-demand"
+  ]
+}

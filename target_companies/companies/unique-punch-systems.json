@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "unique-punch-systems",
+    "series": "Hidden Champions of India",
+    "segmentRef": "precision-sheet-metal-components",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U31109KA1994PTC015319, incorporated 07 Dec 1994 (Nelamangala, Karnataka)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Unique Punch Systems: real precision equipment and multi-industry reach, sliding into a genuinely negative year.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "TRUMPF and AMADA-class machines serving healthcare, aerospace, and defence customers — while FY2024 revenue and profit both fell sharply after a negative FY2023 ROE.", "tier": "company", "epistemic": "fact", "source": "Tofler; uniquepunch.in", "fields": ["financials.revenueCr", "financials.roePct"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1994 (CIN incorporation, consistent with company's own '30+ years' claim)", "tier": "company", "source": "ZaubaCorp; uniquepunch.in", "fields": ["foundedYear"] },
+    { "label": "Revenue trend", "value": "₹150-200 Cr band FY23 (+19.94% YoY) → FY24 revenue declined 31.06% YoY, profit fell 47.55% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "ROE (FY23)", "value": "-0.22% — negative, despite the same-year revenue growth", "tier": "company", "source": "Tofler", "fields": ["financials.roePct"] },
+    { "label": "ROCE (FY23)", "value": "4.7%, Debt-to-Equity -0.18 (net cash)", "tier": "company", "source": "Tofler", "fields": ["financials.rocePct"] },
+    { "label": "Employees (wide conflict)", "value": "200 (self-claimed) vs. 25 (LinkedIn) vs. 70-91 (other directories) — genuinely unreconciled", "tier": "company", "source": "ResearchGate; LinkedIn; directories", "fields": ["employees"] },
+    { "label": "Certification (unclear)", "value": "\"ISO 2000\" per HVT sheet — could not clarify exact standard/version; company site shows a badge without a legible standard number", "tier": "company", "source": "uniquepunch.in", "fields": ["moat"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Real capability and diversified customers, working through a genuinely negative year",
+    "blocks": [
+      { "text": "This is a real, concerning financial trend, not just noise: FY2023 showed revenue growth (+19.94% YoY) alongside EBITDA growth (+31.87% YoY), but ROE that same year was already negative (-0.22%) despite the growth. The picture worsened materially in FY2024, with revenue declining 31.06% YoY and profit falling 47.55% YoY — a genuine reversal that should be reflected directly, not smoothed into a pure growth narrative.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.roePct"] },
+      { "text": "It manufactures precision-engineered sheet metal components for automotive, medical, electronics, and aerospace industries, described by the company itself as serving healthcare, aerospace, electrical, consumables, renewable energy, and defence — a genuinely diversified customer base, using confirmed premium equipment (TRUMPF and AMADA-class CNC machines).", "tier": "company", "epistemic": "fact", "source": "uniquepunch.in", "fields": ["differentiation"] },
+      { "text": "The HVT sheet's self-claimed 'ISO 2000' certification (an unusual, possibly garbled name) could not be clarified this session — the company's website shows a certification badge without a legible standard number, and no independent certification-body registry listing was found confirming whether this is ISO 9001:2000 (a legacy, since-superseded version), a typo, or something else entirely.", "tier": "company", "epistemic": "fact", "source": "uniquepunch.in (direct fetch)", "fields": ["moat"] },
+      { "text": "Employee count is genuinely unresolved across four conflicting sources: the company's own claim of ~200 people (via a published organizational-behavior case study), LinkedIn showing only 25, and other directories showing 70-91 — no single figure could be reconciled. It offers rapid prototyping and small-batch production, and the HVT sheet's own gap research cites exports to Germany, Finland, USA, Spain, Israel, and China, though this session could not independently corroborate the specific country list.", "tier": "company", "epistemic": "fact", "source": "ResearchGate; LinkedIn; company-reported", "fields": ["employees", "exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A modestly growing India market, with **AS9100/NADCAP certification as the structural gateway to higher-margin aerospace work** the company's own positioning gestures toward.", "evidence": "India sheet metal fabrication market: $152.3M (2024) to $262.1M by 2033 (5.76%/yr); AS9100 and NADCAP adoption is cited as a structural shift enabling Indian sheet-metal players to access higher-margin aero-engine component export business.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "**No directly comparable peer with disclosed financials was found** to benchmark the FY2024 revenue decline against.", "evidence": "Craftsman Automation (listed, much larger) covers a sheet-metal sub-segment but doesn't disclose it separately; no other named India peer (Ambani Metals, Roll Fast) had financials available — making it hard to tell whether Unique Punch's decline is company-specific or sector-wide.", "tier": "segment", "epistemic": "fact", "source": "craftsmanautomation.com; aggregated search summary", "fields": ["peers"] },
+      { "point": "**Multi-industry diversification (healthcare, aerospace, defence, renewables) is a real structural strength** even amid the recent financial softness.", "evidence": "A customer base spanning healthcare, aerospace, electronics, and defence — rather than concentration in a single cyclical end market like automotive alone — is a genuine risk-diversification feature, independent of the current earnings dip.", "tier": "segment", "epistemic": "fact", "source": "uniquepunch.in", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A real, equipment-capable, multi-industry sheet-metal manufacturer working through a genuinely negative financial stretch — FY2023's already-negative ROE followed by a sharp FY2024 revenue and profit decline. The diversified customer base is a real long-term strength; the immediate priority should be understanding what drove the FY2024 reversal before treating this as a straightforward capability story.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group (shared precision-sheet-metal-components segment file, new this batch). No independently financialed direct peer found for comparison."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research — with a real financial caveat attached.",
+    "items": [
+      { "lever": "market-access", "title": "Expanding export market share given India's manufacturing growth position", "body": "The HVT sheet's own gap research names this directly, but given the FY2024 revenue decline and FY2023's already-negative ROE, this reads as an opportunity that needs the recent financial reversal understood and addressed first, not a standalone growth lever to pursue immediately.", "source": "HVT gap research (scribd.com DB-AI Report).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is diagnosing the FY2024 revenue and profit decline.", "tier": "universal" },
+    "items": [
+      { "lever": "diagnosis", "title": "Diagnose the FY2024 revenue/profit reversal before pursuing export expansion", "body": "With revenue down 31.06% and profit down 47.55% in FY2024 following an already-negative FY2023 ROE, understanding the specific cause (customer loss, input costs, one-off items) should precede any export-expansion investment — otherwise new market entry risks compounding an unresolved core-business problem.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a precision sheet-metal-components manufacturer in this segment — a directory-depth pass, not yet confirmed against Unique Punch Systems' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer precision sheet metal components/assemblies via laser cutting, punching, forming, welding, coating", "serve automotive, medical, electronics, aerospace, defence, renewable energy customers"], "stepsTier": "segment", "spottedAt": "serve automotive, medical, electronics, aerospace, defence, renewable energy customers", "spotted": { "text": "Company facts (serves healthcare, aerospace, electrical, consumables, renewable energy, defence) confirm this step is real for Unique Punch Systems — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run engineering (rapid prototyping, design-for-manufacturability, tooling design)", "run manufacturing (CNC punching/laser cutting, forming, welding, surface finishing, assembly)", "maintain in-house QC"], "stepsTier": "segment", "spottedAt": "run manufacturing (CNC punching/laser cutting, forming, welding, surface finishing, assembly)", "spotted": { "text": "Company facts (confirmed TRUMPF and AMADA-class CNC equipment) confirm this step is real for Unique Punch Systems — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a machine fleet (e.g. TRUMPF/AMADA-class equipment)", "scale production against OEM/Tier-1 order volume"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain direct OEM/Tier-1 relationships via RFQ-based multi-year component-supply contracts", "handle export orders via international customer qualification processes"], "stepsTier": "segment", "spottedAt": "handle export orders via international customer qualification processes", "spotted": { "text": "Company facts (self-claimed exports to Germany, Finland, USA, Spain, Israel, China, unconfirmed this pass) noted here — see p1_engine.", "tier": "company", "epistemic": "interpretation" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win orders via RFQ-based OEM/Tier-1 relationships", "procure sheet metal coil/stock (steel, aluminium, specialty alloys) and consumables"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/precision-sheet-metal-components.json) — no company-specific (A2/pursuit) operational intel was collected for Unique Punch Systems this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A real, equipment-capable, multi-industry precision manufacturer working through a genuinely negative financial year — FY2023's already-negative ROE followed by a sharp FY2024 revenue and profit decline. **Understanding what drove the reversal matters more than any new-market opportunity right now.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Unique Punch Systems or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus uniquepunch.in and a ResearchGate employee-engagement study; market data from IMARC Group. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "uniquepunch.in", "ZaubaCorp", "IMARC Group", "ResearchGate", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the specific cause of the FY2024 revenue/profit decline, and true current employee headcount — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

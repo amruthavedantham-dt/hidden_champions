@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "goodwear-fashions",
+    "series": "Hidden Champions of India",
+    "segmentRef": "woven-knitted-non-woven-interlinings",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U74899DL1998PTC092004. Founding-year claims genuinely conflict across the company's own materials — see p1_engine."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Goodwear Fashions: an interlining specialist BESTSELLER trusts, on financials that stopped being public years ago.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Rudrapur, Uttarakhand interlining maker with 4 million meters/month capacity and a GRS-certified, BESTSELLER-approved supply relationship.", "tier": "company", "epistemic": "fact", "source": "goodwear.in; HVT row", "fields": ["moat", "gap_currently_monetized"] }
+  },
+  "snapshot": [
+    { "label": "Founding claims", "value": "1989 (company) / 1998 (legal entity) / 2005 (differentiation claim)", "tier": "company", "source": "goodwear.in vs. Zaubacorp vs. HVT row — all conflicting", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹70.6 Cr · FY22 (dated, unverified)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY22"] },
+    { "label": "Employees", "value": "300+", "tier": "company", "source": "goodwear.in", "fields": ["employees"] },
+    { "label": "Certifications", "value": "Oeko-Tex, GRS, Higg Index, TQP", "tier": "company", "source": "goodwear.in", "fields": ["moat"] },
+    { "label": "Named customer relationship", "value": "Approved supplier for BESTSELLER's CTF", "tier": "company", "source": "HVT row", "fields": ["moat"] },
+    { "label": "Capacity", "value": "4M+ meters/month, 5M+ meters ready stock", "tier": "company", "source": "goodwear.in", "fields": ["product_improvement"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A certified capability, financials that stopped updating",
+    "blocks": [
+      { "text": "The only revenue figure found — ₹70.6 Cr for FY ending March 2022 — is dated and unverified against a primary source; no PAT, EBITDA margin or ROE figure was found for any year, and the company's own founding narrative is genuinely inconsistent: 1989 per its own 'about' page, 1998 for the legal entity's MCA registration, and a 2005 date embedded in the HVT sheet's own differentiation claim.", "tier": "company", "epistemic": "fact", "source": "Tofler; goodwear.in; Zaubacorp — all conflicting", "fields": ["financials.revenueCr", "foundedYear"] },
+      { "text": "Its GRS (Global Recycled Standard) certification and named status as an approved supplier for BESTSELLER's CTF (a real, identifiable European fashion group's compliance program) is a genuine, checkable customer-trust signal — though the HVT sheet still sources it to the company's own LinkedIn page rather than an independent confirmation.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); goodwear.in", "fields": ["moat"] },
+      { "text": "It runs at 4M+ meters/month production capacity with 5M+ meters of ready stock across four warehouses, serving 500+ certified customers with 10 product families in-house — real operational scale, whatever the exact revenue figure behind it.", "tier": "company", "epistemic": "fact", "source": "goodwear.in", "fields": ["product_improvement"] },
+      { "text": "A 2014-dated industry article (outside this project's usual 'recent moves' window) described 80-85% share of India's warp-knit weft-inserted suit-interlining niche and ₹15 Cr+ invested in German weaving/coating lines — a real historical data point, but too old to treat as current fact.", "tier": "company", "epistemic": "fact", "source": "apparelresources.com (2014, dated)", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **modest-sized and steadily growing**, tightly linked to India's own garment-export base.", "evidence": "Global garment interlining market: $3.65B (2025) to $4.67B by 2030 (5.0-5.3%/yr); India's shirt-interlining sub-segment specifically is estimated at ~$0.90B, ~20% of the global category, growing ~6.8%/yr.", "tier": "segment", "epistemic": "fact", "source": "Research and Markets", "fields": ["market.sizeRange"] },
+      { "point": "The field is **led by one dominant global player**, and India competes on price-performance against it.", "evidence": "Freudenberg is the acknowledged global market leader with 150+ locations worldwide — Indian players like Goodwear compete on price-performance for mid-to-high-end garment exporters rather than head-to-head on scale.", "tier": "segment", "epistemic": "fact", "source": "apparelsearch.com", "fields": ["market.leaders"] },
+      { "point": "The only named comparable Indian peer shows **a much smaller operation than Goodwear's own claimed capacity.**", "evidence": "Bindal Cotex Pvt. Ltd. (Delhi, since 1991/1993) operates at 21 employees and 500,000+ meters/month capacity — roughly an eighth of Goodwear's self-claimed 4M+ meters/month.", "tier": "segment", "epistemic": "fact", "source": "Tracxn; btx.co.in", "fields": ["peers[0]"] }
+    ],
+    "reflect": { "text": "A large-scale interlining maker by its own claimed capacity, with a real named fashion-brand relationship (BESTSELLER) and genuine sustainability certifications — but financial reporting that stopped in 2022 and a founding story that can't settle on one year.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Research and Markets, apparelsearch.com (shared woven-knitted-non-woven-interlinings segment file). Peer data: Tracxn (Bindal Cotex)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Capturing more of the growing eco-friendly textile market", "body": "The HVT sheet's own gap research names this directly: significant production capacity and R&D capabilities are already in place, but the extent of actual market capture in the growing, sustainability-driven textile industry isn't fully detailed — the GRS certification and DSIR recognition are the stated levers for pursuing it.", "source": "HVT gap research (LinkedIn company page).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Goodwear Fashions' own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Use the BESTSELLER relationship as a reference for one new eco-conscious brand", "body": "Approach one new eco-conscious apparel brand using the existing BESTSELLER CTF-approved, GRS-certified relationship as a concrete reference case, rather than a general sustainability pitch.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an interlining fabric manufacturer in this segment — a directory-depth pass, not yet confirmed against Goodwear's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer woven, knitted, and non-woven interlining fabrics (fusible and sew-in)", "differentiate by GSM, stretch behavior, and certifications (Oeko-Tex/GRS)"], "stepsTier": "segment", "spottedAt": "differentiate by GSM, stretch behavior, and certifications (Oeko-Tex/GRS)", "spotted": { "text": "Company facts (GRS certification, BESTSELLER CTF approval, Oeko-Tex, Higg Index) confirm this step is real for Goodwear, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run in-house weaving/knitting/coating lines", "develop application-specific formulations", "maintain testing labs for bonding-strength/shrinkage/wash-durability", "hold certification compliance"], "stepsTier": "segment", "spottedAt": "maintain testing labs for bonding-strength/shrinkage/wash-durability", "spotted": { "text": "Company facts (DSIR-certified R&D centre) confirm this step is real for Goodwear, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate installed production throughput", "maintain ready-stock inventory and multi-city warehousing to meet fast-fashion lead times"], "stepsTier": "segment", "spottedAt": "operate installed production throughput", "spotted": { "text": "Company facts (4M+ meters/month, 5M+ meters ready stock, 4 warehouses) confirm this step is real for Goodwear, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["provide technical consultancy/testing support bundled with product", "deliver fast sampling turnaround", "compete on price-performance vs. European incumbents"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["receive recurring bulk/contract orders from garment manufacturers and export houses", "fulfil against seasonal fashion-buying cycles", "reorder tied to underlying apparel-export order books"], "stepsTier": "segment", "spottedAt": "receive recurring bulk/contract orders from garment manufacturers and export houses", "spotted": { "text": "Spotted at \"recurring bulk orders\": the BESTSELLER relationship is a stated, named success, but broader market capture beyond it isn't detailed → capturing more of the eco-friendly textile market.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/woven-knitted-non-woven-interlinings.json) — no company-specific (A2/pursuit) operational intel was collected for Goodwear this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A named, certified relationship with a real European fashion group, and financial reporting that quietly stopped years ago. **The capability looks real; the paper trail hasn't kept up with it.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Goodwear Fashions or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler (dated, FY22); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus goodwear.in; market data from Research and Markets and apparelsearch.com; peer figures from Tracxn (Bindal Cotex). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "goodwear.in", "Zaubacorp", "apparelresources.com", "Research and Markets", "apparelsearch.com", "Tracxn", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — current revenue and margin, and the true breadth of eco-conscious brand relationships beyond BESTSELLER — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

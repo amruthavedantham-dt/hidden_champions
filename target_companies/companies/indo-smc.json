@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "indo-smc",
+    "series": "Hidden Champions of India",
+    "segmentRef": "frp-smc-products-junction-boxes",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. STATUS UPDATE: originally incorporated as Indo SMC Private Limited (27 Sep 2021), converted to public company 7 Aug 2024, and completed a BSE SME IPO — listed 21 Jan 2026 at ₹149 (flat/at-par vs. issue price). The HVT sheet's 'unlisted-public' ownership tag is now outdated; company is LISTED. CIN updated to L71100GJ2021PLC125904 (the 'L' prefix reflecting listed status) from the pre-listing 'U71100GJ2021PLC125904."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Indo SMC: a freshly-listed FRP junction-box maker growing revenue 249% over 3 years, with real ROE to match.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "Revenue went from ₹7.29 Cr (FY23) to ₹310 Cr (FY26) with a 34.1% ROE — and a first confirmed export shipment to Oman landed just this year.", "tier": "company", "epistemic": "fact", "source": "screener.in; whalesbook.com", "fields": ["financials.revenueCr", "financials.roePct"] }
+  },
+  "snapshot": [
+    { "label": "Status update", "value": "Newly listed on BSE SME (21 Jan 2026, ~₹92 Cr raised via fresh issue); HVT's 'unlisted-public' tag is outdated", "tier": "company", "source": "angelone.in; chittorgarh.com", "fields": ["ownershipType"] },
+    { "label": "Revenue trajectory", "value": "₹7.29 Cr (FY23) → ₹28.03 Cr (FY24) → ₹138.78 Cr (FY25, +395% YoY) → ₹310 Cr (FY26)", "tier": "company", "source": "aggregated IPO documentation; screener.in", "fields": ["financials.revenueCr"] },
+    { "label": "PAT", "value": "₹15.44 Cr FY25 (+414% YoY); FY26 ₹32 Cr", "tier": "company", "source": "screener.in", "fields": ["financials.patCr"] },
+    { "label": "ROE / ROCE", "value": "34.1% (1-yr) / 43% (3-yr) ROE; 33.9% ROCE; 3-yr Sales CAGR 249%", "tier": "company", "source": "screener.in", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Order book", "value": "₹144.58 Cr (Jul 2025) → ₹283.19 Cr (Nov 2025), growing; includes a ~₹66.6 Cr Indian Railways order", "tier": "company", "source": "tradebrains.in; equitybulls.com", "fields": ["recentMoves"] },
+    { "label": "Export milestone", "value": "First FRP export shipment to Oman confirmed Q1 FY27 (quarter ended Jun 2026)", "tier": "company", "source": "whalesbook.com", "fields": ["gap_currently_monetized"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Explosive, real growth — now with public-market capital to fund the next phase",
+    "blocks": [
+      { "text": "This is a genuinely explosive, independently-confirmed growth trajectory: revenue grew from ₹7.29 Cr (FY23) to ₹28.03 Cr (FY24) to ₹138.78 Cr (FY25, +395% YoY) to ₹310 Cr (FY26) — a 3-year sales CAGR of 249% per screener.in. PAT grew 414% YoY in FY25 to ₹15.44 Cr, reaching ₹32 Cr by FY26. ROE stands at 34.1% (1-yr) and 43% (3-yr average), with ROCE at 33.9% — among the strongest return profiles of any company profiled in this project.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.revenueCr", "financials.roePct"] },
+      { "text": "It designs and manufactures products for electrical, industrial, and infrastructure applications — FRP gratings, manhole covers, junction boxes, and electricity meter boxes — meeting BIS standards IS:13410 and IS:14772 for SMC junction boxes, with a real, independently-found certification stack (ISO 9001:2015, ISO 14001:2015) that the HVT sheet itself left blank on the moat pillar.", "tier": "company", "epistemic": "fact", "source": "aggregated IPO/DRHP documentation", "fields": ["differentiation", "moat"] },
+      { "text": "It completed a BSE SME IPO — listing 21 Jan 2026 at ₹149 (flat vs. issue price), raising ~₹92 Cr via a fresh issue of 61.71 lakh shares — meaning the HVT sheet's 'unlisted-public' ownership tag is now outdated and should be corrected to 'listed.' It operates four manufacturing facilities across Gujarat, Maharashtra, and Rajasthan across three business divisions: SMC (energy meter enclosures), FRP (gratings and allied products), and Electrical Components (CTs/PTs, feeder pillars, switchgears).", "tier": "company", "epistemic": "fact", "source": "angelone.in; chittorgarh.com", "fields": ["ownershipType"] },
+      { "text": "**The HVT sheet's own gap research (Oman/Gulf exports with US/Germany samples) is now confirmed and updated**: the company achieved its first actual FRP export shipment to Oman in Q1 FY27, and newly installed pultrusion machines at its Ahmedabad plant now enable structural composite products including pultruded spar caps. Q1 FY27 revenue grew 135.96% YoY to ₹88.12 Cr, and the order book grew from ₹144.58 Cr (Jul 2025) to ₹283.19 Cr (Nov 2025), including a ~₹66.6 Cr order from Indian Railways. Independent confirmation of ASTM certification status for full US/Germany market entry was not found this session.", "tier": "company", "epistemic": "fact", "source": "whalesbook.com; tradebrains.in", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A real, growing SMC/FRP market with **direct policy-linked demand from India's grid and infrastructure spend**.", "evidence": "Global SMC market: $1.1B (2024) to $1.8B by 2033 (6.2%/yr), with India's EV and renewable-energy sectors reportedly boosting SMC usage by 24%; BIS standards IS:13410/IS:14772 set the domestic compliance bar Indo SMC's products already meet.", "tier": "segment", "epistemic": "fact", "source": "Verified Market Reports", "fields": ["market.sizeRange"] },
+      { "point": "**Sintex is the established brand incumbent**, but no disclosed financials were found to benchmark Indo SMC's exceptional growth rate against.", "evidence": "Sintex is named as a major established SMC junction-box/electrical-enclosure brand in India, but revenue/margin figures were not independently found — meaning Indo SMC's 249% 3-year sales CAGR can't be directly compared to the incumbent's growth rate.", "tier": "segment", "epistemic": "fact", "source": "aggregated search summary", "fields": ["peers"] },
+      { "point": "**Government tender demand (Indian Railways) is a real, large, and growing order-book component**, not just private-sector growth.", "evidence": "The ~₹66.6 Cr Indian Railways order and the order book's growth from ₹144.58 Cr to ₹283.19 Cr in just four months (Jul-Nov 2025) both point to genuine institutional demand momentum, independent of the company's own IPO narrative.", "tier": "segment", "epistemic": "fact", "source": "tradebrains.in; equitybulls.com", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "One of the strongest growth-and-returns profiles in this entire project — a genuinely explosive, independently-confirmed 3-year revenue trajectory backed by real ROE/ROCE, a growing government-linked order book, and a fresh public listing to fund further capacity. The main open question is durability: whether 249% 3-year CAGR growth is sustainable or reflects a low, early-stage base that naturally decelerates.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Verified Market Reports, Growth Market Reports (shared frp-smc-products-junction-boxes segment file, new this batch). Peer data: Sintex (no disclosed financials)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research — already showing real movement.",
+    "items": [
+      { "lever": "market-access", "title": "Converting the Oman export beachhead into broader US/Germany market entry via ASTM certification", "body": "The HVT sheet's own gap research named this directly, and this session confirms real progress: the first Oman FRP export shipment landed in Q1 FY27. Pursuing ASTM certification to unlock the larger US/Germany markets (where only samples have been sent so far) is the credible next step, building on demonstrated export execution rather than starting from zero.", "source": "HVT gap research (whalesbook.com Q1 FY27 update).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is stress-testing whether the 249% growth rate is durable.", "tier": "universal" },
+    "items": [
+      { "lever": "diagnosis", "title": "Assess whether the exceptional growth rate reflects a durable demand curve or a low early-stage base", "body": "A 3-year sales CAGR of 249% is exceptional by any standard — confirming what share of that growth came from a genuinely expanding addressable market (grid infrastructure, EV, government tenders) versus simply scaling off a very small FY23 base would clarify how much of this growth rate to expect going forward.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an FRP/SMC products and junction-box manufacturer in this segment — a directory-depth pass, not yet confirmed against Indo SMC's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer SMC energy-meter enclosure boxes, FRP gratings, junction boxes, feeder pillars, HT/LT transformers", "offer pultruded structural profiles (spar caps, handrails)"], "stepsTier": "segment", "spottedAt": "offer pultruded structural profiles (spar caps, handrails)", "spotted": { "text": "Company facts (newly installed pultrusion machines at Ahmedabad plant enabling spar-cap production) confirm this step is real and current for Indo SMC — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run SMC compounding and moulding, FRP grating fabrication", "run pultrusion and assembly/finishing of enclosures and switchgear components"], "stepsTier": "segment", "spottedAt": "run SMC compounding and moulding, FRP grating fabrication", "spotted": { "text": "Company facts (BIS IS:13410/IS:14772 compliant products, ISO 9001:2015/14001:2015 certified) confirm this step is real for Indo SMC — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate multi-site manufacturing to serve regional infrastructure and utility customers", "source resin/fiberglass raw materials"], "stepsTier": "segment", "spottedAt": "operate multi-site manufacturing to serve regional infrastructure and utility customers", "spotted": { "text": "Company facts (four facilities across Gujarat, Maharashtra, Rajasthan) confirm this step is real for Indo SMC — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["respond to government/utility tenders and infrastructure EPC contractors", "pursue export sales development (Gulf entry, ASTM certification for US/Germany)"], "stepsTier": "segment", "spottedAt": "pursue export sales development (Gulf entry, ASTM certification for US/Germany)", "spotted": { "text": "Company facts (confirmed first Oman FRP export shipment, Q1 FY27) confirm this step is real for Indo SMC — see p3_opportunities.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil purchase orders/tenders from state electricity boards, railways, industrial/infrastructure contractors", "fulfil orders from international distributors in new export markets"], "stepsTier": "segment", "spottedAt": "fulfil purchase orders/tenders from state electricity boards, railways, industrial/infrastructure contractors", "spotted": { "text": "Company facts (~₹66.6 Cr Indian Railways order, order book growing to ₹283.19 Cr) confirm this step is real for Indo SMC — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/frp-smc-products-junction-boxes.json) — no company-specific (A2/pursuit) operational intel was collected for Indo SMC this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "One of the strongest growth-and-returns stories in this entire project — a real 249% 3-year sales CAGR, 34.1% ROE, and a fresh IPO to fund the next phase, now backed by a confirmed first export shipment to Oman. **Whether this growth rate is durable as the base scales up is the one open question.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Indo SMC or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in and IPO/DRHP documentation; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed and updated for the company's now-listed status) plus angelone.in, chittorgarh.com, whalesbook.com, and tradebrains.in; market data from Verified Market Reports and Growth Market Reports. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "angelone.in", "chittorgarh.com", "whalesbook.com", "tradebrains.in", "equitybulls.com", "Verified Market Reports", "Growth Market Reports", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — whether the exceptional growth rate is durable at scale, and current ASTM certification status for full US/Germany market entry — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

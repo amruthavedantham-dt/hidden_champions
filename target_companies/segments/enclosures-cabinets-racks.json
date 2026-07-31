@@ -1,0 +1,39 @@
+{
+  "segmentName": "Server Racks, Enclosures, Cabinets & Panels",
+  "market": {
+    "worldSizeUSD_B_range": "Global server rack cabinet enclosures market: $3.4B (2025) to $5.0B by 2035 (3.9%/yr) per one estimate, vs. a broader-scope global data center rack & enclosure market of $4.25B (2025) to $9.01B by 2034 (~8.71%/yr) per another — substantial vendor disagreement, likely differing scope (server-cabinet-only vs. full data-center-rack ecosystem). Asia-Pacific server-cabinet sub-segment: ~$1.57B (2025). An India-specific data center rack estimate of $3.41M-$11.96M (2024-2031) was found but looks implausibly small relative to India's data-center buildout — flagged as possibly unreliable/narrow-scope, use with caution.",
+    "cagrPctRange": [3.9, 8.71],
+    "exportGeographies": [],
+    "globalCompetitors": ["Rittal", "Legrand", "nVent", "Schneider Electric", "Panduit", "Chatsworth Products", "CommScope", "Tripp Lite", "Black Box"],
+    "domesticSlice": "India-focused manufacturers include NetRack Enclosures, Valrack Modular Systems, Eabel, BCH India, RackOm System, Pyrotech Electronics — none with disclosed public financials found."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Growth driven by data center/cloud infrastructure buildout and 5G/telecom network densification in India",
+    "Increasing demand for IP55/65-rated outdoor cabinets (telecom, industrial) and thermally-optimized enclosures as edge-computing and telecom densification grow",
+    "India's push for domestic data center capacity (state DC policies, Digital India) indirectly drives local enclosure demand; specific applicable scheme not confirmed this pass"
+  ],
+  "adoptionStructure": {
+    "note": "Precision/finish quality (sheet-metal tolerances, powder-coat durability), speed of custom/contract-manufacturing turnaround, ability to do full box-build (design through dispatch), certifications for regulated environments (data center, defence), and price competitiveness vs. Chinese imports drive purchasing."
+  },
+  "peers": [
+    { "name": "NetRack Enclosures, Valrack Modular Systems, Eabel, BCH India, RackOm System, Pyrotech Electronics", "note": "India-focused manufacturers; no public financial data found for any of them", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["sheet-metal tolerance/finish quality", "custom/contract-manufacturing turnaround speed", "full box-build capability (design through dispatch)", "certifications for regulated environments", "price competitiveness vs. imports"],
+    "strongestPredictor": "full box-build capability combined with fast custom-manufacturing turnaround",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer server racks, data-center enclosures, HVAC panels, outdoor telecom cabinets, electrical control panels, kiosks", "offer contract manufacturing/box-build services"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run CNC punching, laser cutting, CNC bending, power press, fabrication/welding", "run powder coating, assembly and testing"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a factory/plant sized for design-through-dispatch contract manufacturing", "maintain sheet-metal machinery (laser cutters, CNC brakes, powder-coat line)"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["provide custom enclosure design per customer spec", "handle export logistics for overseas customers"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win orders via data-center/telecom capex cycles", "win orders via OEM outsourcing decisions as an approved contract manufacturer"] }
+  ],
+  "sources": [
+    "aggregated market-size research across multiple vendor reports (server rack, data center enclosure markets)",
+    "https://www.indiamart.com/samarth-aircon-limited/aboutus.html"
+  ]
+}

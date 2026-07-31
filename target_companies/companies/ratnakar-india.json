@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "ratnakar-india",
+    "series": "Hidden Champions of India",
+    "segmentRef": "crop-protection-agrochemicals",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Unlisted public, CIN U24299GJ2018PLC105558 (this CIN's 2018 incorporation date likely reflects a later re-registration/conversion — company itself states founding in 2011)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Ratnakar India: a deep-tech bet on cutting China out of its own supply chain, funded by debt it hasn't yet earned back.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 400-product agrochemical formulator whose new Dahej technical-manufacturing plant is explicitly aimed at import substitution — while current returns run negative.", "tier": "company", "epistemic": "fact", "source": "aninews.in; Tofler", "fields": ["recentMoves", "financials.rocePct"] }
+  },
+  "snapshot": [
+    { "label": "Founded (company-stated)", "value": "2011 (this CIN incorporated 2018)", "tier": "company", "source": "ratnakarindia.com vs. Zaubacorp", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹241 Cr · FY24 (+32% 1-yr CAGR)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY24"] },
+    { "label": "OPM / Net margin", "value": "2.17% / 0.81% (thin)", "tier": "company", "source": "Tofler", "fields": ["financials.opmPct", "financials.netMarginPct"] },
+    { "label": "ROE / ROCE", "value": "1.89% / -21.02% (negative)", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Debt-to-equity", "value": "2.45 (high leverage)", "tier": "company", "source": "Tofler", "fields": ["financials.debtToEquity"] },
+    { "label": "New plant", "value": "Dahej technical-manufacturing unit, ₹60 Cr Phase 1 (Sept 2024), ₹150 Cr total planned", "tier": "company", "source": "aninews.in", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A deep-tech bet, currently running at a loss on returns",
+    "blocks": [
+      { "text": "Revenue grew a strong 32% (1-year CAGR) to ₹241 Cr, with EBITDA growth reported at 134-157% — but margins are thin (2.17% operating, 0.81% net) and returns are genuinely negative: ROE just 1.89%, and ROCE at -21.02%. Debt-to-equity of 2.45 signals a heavily leveraged balance sheet, consistent with a company mid-way through a large debt-funded capex program.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.opmPct", "financials.roePct", "financials.rocePct", "financials.debtToEquity"] },
+      { "text": "It holds ISO 14001:2015 certification, a Good Manufacturing Practice system, over 100 BIS certifications, and has registered more than 400 agrochemical products in India — a genuinely broad registered-product portfolio, though the HVT sheet marks `moat` `needs_verify: yes` since it's entirely self-sourced.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["moat"] },
+      { "text": "In September 2024 it launched a new technical-manufacturing plant at Dahej — Phase 1 investment ₹60 Cr, with the total project (including Phase 2) targeted at ₹150 Cr by 2025 — explicitly framed as reducing import dependence on China for agrochemical technicals. Capacity figures for this plant conflict across sources (1,000 MT/month per the company's own site vs. 12,000 MT/month per a press release) and were not reconciled.", "tier": "company", "epistemic": "fact", "source": "aninews.in; ratnakarindia.com", "fields": ["recentMoves"] },
+      { "text": "It operates two formulation plants, one technical manufacturing plant, one packaging unit and an Ahmedabad corporate office, plus one overseas branch office in Hong Kong, and describes itself as 'export-ready' on 200+ products — though the HVT sheet's own gap research doesn't specify an actual export percentage.", "tier": "company", "epistemic": "fact", "source": "ratnakarindia.com", "fields": ["exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and India holds a meaningful, growing global share.**", "evidence": "India crop protection chemicals: $2.59B (2025) to $3.21B by 2030 (4.35%/yr); the broader India agrochemicals market including fertilizers: $33.17B (2023) to $51.29B by 2030 (6.4%/yr); India accounted for ~12.2% of the global agrochemicals market in 2023.", "tier": "segment", "epistemic": "fact", "source": "Mordor Intelligence; Grand View Research", "fields": ["market.sizeRange"] },
+      { "point": "**China-import-substitution is a real, well-timed structural theme**, and it's exactly what the Dahej plant targets.", "evidence": "Backward integration into technical (active-ingredient) manufacturing to reduce China import dependence is a structural theme across the segment right now — Ratnakar's own stated Dahej rationale sits squarely inside this trend, not ahead of or behind it.", "tier": "segment", "epistemic": "fact", "source": "aninews.in", "fields": ["structureFacts"] },
+      { "point": "Listed peers show **what healthy returns look like in this same segment** — a real contrast to Ratnakar's own negative ROCE.", "evidence": "PI Industries posts 19.09% ROE with ~27% EBITDA margin; Rallis India (Tata Group) grew PAT 47% YoY to ₹184 Cr in FY26 on a 3-year average ROE of 8.41% — both solidly positive, unlike Ratnakar's current -21.02% ROCE.", "tier": "segment", "epistemic": "fact", "source": "business-standard.com; tatachemicals.com", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A genuinely well-timed capacity bet — cutting China out of the technical-manufacturing supply chain — funded with debt heavy enough that current returns are negative. The Dahej plant is exactly the kind of move the segment's own structural trend rewards; whether the balance sheet survives long enough to collect on it is the real question.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Mordor Intelligence, Grand View Research (shared crop-protection-agrochemicals segment file). Peer data: UPL, PI Industries, Rallis India — all showing healthier returns than Ratnakar's own current figures."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research — with a real financial caveat attached.",
+    "items": [
+      { "lever": "margin", "title": "Capturing more of the growing global agrochemicals market", "body": "The HVT sheet's own gap research names this directly, citing the global agrochemicals market's growth toward $328B+ by 2033 as headroom beyond Ratnakar's current 400+ registered products and 200+ export-ready SKUs — but given the company's own negative ROCE, this reads as an opportunity contingent on the Dahej plant reaching profitable utilization first, not a standalone growth lever.", "source": "HVT gap research (sphericalinsights.com agrochemicals market report).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is confirming the Dahej plant's own unit economics before broader market-capture plans.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Track Dahej's technical-manufacturing margin as its own line", "body": "Report the Dahej plant's output and margin separately from the rest of the business as it ramps, to confirm the import-substitution bet is actually improving returns before committing further capex or pursuing broader market-share opportunities.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a crop-protection agrochemical manufacturer in this segment — a directory-depth pass, not yet confirmed against Ratnakar's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer formulated crop-protection products (insecticides, fungicides, herbicides, plant growth regulators)", "offer technical-grade active ingredients", "maintain a broad registered-product portfolio"], "stepsTier": "segment", "spottedAt": "maintain a broad registered-product portfolio", "spotted": { "text": "Company facts (400+ registered agrochemical products) confirm this step is real for Ratnakar, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["backward-integrate into technical (active-ingredient) manufacturing", "run formulation R&D", "maintain regulatory registration capability (CIB&RC, FAO specification compliance)"], "stepsTier": "segment", "spottedAt": "backward-integrate into technical (active-ingredient) manufacturing", "spotted": { "text": "Company facts (Dahej technical-manufacturing plant, explicitly China-import-substitution framed) confirm this step is real and in progress for Ratnakar, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate multiple formulation plants plus a technical-manufacturing plant and packaging unit", "expand capacity to reduce import dependence and capture higher-margin technical-grade production"], "stepsTier": "segment", "spottedAt": "expand capacity to reduce import dependence and capture higher-margin technical-grade production", "spotted": { "text": "Spotted at \"expand capacity\": the Dahej plant is exactly this step, funded by debt that has pushed ROCE negative → confirming Dahej's own unit economics.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["distribute through dealer/distributor networks reaching farmers", "serve institutional/international buyers via overseas offices", "differentiate on price competitiveness and breadth of registered molecules"], "stepsTier": "segment", "spottedAt": "serve institutional/international buyers via overseas offices", "spotted": { "text": "Company facts (Hong Kong overseas branch office) confirm this step is real for Ratnakar, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil seasonal agricultural buying cycles (kharif/rabi)", "fulfil export orders to Latin America/Africa/Asia driven by generic off-patent molecule demand", "navigate regulatory-registration-gated market access in each destination country"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/crop-protection-agrochemicals.json) — no company-specific (A2/pursuit) operational intel was collected for Ratnakar this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A well-timed bet on cutting China out of its own supply chain, made with debt heavy enough to push current returns negative. **Whether Dahej pays back before the balance sheet strains further is the whole story here.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Ratnakar India or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus aninews.in and ratnakarindia.com; market data from Mordor Intelligence and Grand View Research; peer figures from business-standard.com (PI Industries), tatachemicals.com (Rallis India) and upl-ltd.com. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Zaubacorp", "aninews.in", "ratnakarindia.com", "Mordor Intelligence", "Grand View Research", "business-standard.com", "tatachemicals.com", "upl-ltd.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the Dahej plant's actual standalone unit economics, and true customer retention across its 200+ export-ready product relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

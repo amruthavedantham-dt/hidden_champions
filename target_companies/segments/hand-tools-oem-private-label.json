@@ -1,0 +1,42 @@
+{
+  "segmentName": "Hand Tools (OEM & Private Label Manufacturing)",
+  "market": {
+    "worldSizeUSD_B_range": "India hand tools market: $859.5M (2025) to $1,245.0M by 2034 (3.99%/yr, 2026-2034) per IMARC, vs. $825M (2025) to $1,372M by 2035 (4.4%/yr) per OMR — the two diverge on both base value and endpoint. Global hand tools market: $26.69B (2025) to $39.87B by 2032 (5.9%/yr). India's hand tool exports: $600M in 2025 (1.8% global market share); India's broader hand-and-power-tools sector is targeted to reach $25B in exports by 2035 per IBEF.",
+    "cagrPctRange": [3.99, 5.9],
+    "exportGeographies": ["UK", "Europe", "USA", "Canada", "Mexico", "Central & South America", "Australia", "Japan", "Southeast Asia"],
+    "globalCompetitors": [],
+    "domesticSlice": "Jalandhar and Ludhiana together account for ~80% of India's hand-tool exports, with 12 of the top 15 Indian hand-tool manufacturers based in this cluster. Eastman Cast & Forge Ltd (Ludhiana) is a real, larger comparable — ~₹221 Cr FY2024 operating revenue (down ~4.4% YoY), 25+ distributors, 1,400+ dealers, exports to 40+ countries with 500+ SKUs."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Government export-incentive schemes (Star Export House status) reward scaled exporters",
+    "Buyer-compliance certifications (BSCI, SA8000, GS-mark) increasingly gate access to EU/US retail and industrial-distribution channels",
+    "OEM/private-label model lets Indian manufacturers compete on landed cost against China+1 diversification strategies by global tool retailers"
+  ],
+  "adoptionStructure": {
+    "note": "Price competitiveness at OEM/private-label cost points, compliance certification (BSCI/SA8000/GS-mark) as a pre-condition for large retail buyers, consistent quality (forged vs. cast distinctions for professional-grade tools), and reliable large-volume capacity for private-label programs drive vendor selection."
+  },
+  "peers": [
+    { "name": "Eastman Cast & Forge Ltd (Ludhiana)", "revenueCr_FY2024": 221, "revenueChangePct": -4.4, "note": "25+ distributors, 1,400+ dealers across India; exports to 40+ countries with 500+ SKUs; one source cites a much larger ₹2,273 Cr group-wide turnover figure, likely reflecting multi-entity consolidation, not this single entity — flagged as inconsistent", "source": "CRISIL Ratings" },
+    { "name": "Ajay Industries, HRI Tools, Hira Tools Corporation (since 1965)", "note": "named Jalandhar/Ludhiana players; no financials found", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["price competitiveness at OEM/private-label cost points", "compliance certification (BSCI/SA8000/GS-mark)", "consistent forged-vs-cast quality", "reliable large-volume capacity"],
+    "strongestPredictor": "compliance certification combined with reliable large-volume capacity",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer finished hand tools (spanners, pliers, hammers, garden tools) under own brand and private-label/OEM programs", "sell to global retail/industrial-distribution buyers"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["pass buyer audits (BSCI social-compliance audits, factory inspections) as a precondition to vendor approval", "run sample approval and private-label packaging/branding customization"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["schedule production against capacity across forging, heat-treat, finishing lines", "run in-house R&D/CAD-CAM-driven NPD cycles"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain a distributor/dealer network (e.g. 25+ distributors, 1,400+ dealers as a comparable model)", "handle export logistics across multiple regions"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil container-load export orders against distributor/wholesaler POs", "fulfil repeat seasonal ordering cycles tied to hardware retail demand"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/india-hand-tools-market",
+    "https://www.omrglobal.com/industry-reports/indian-hand-tools-market",
+    "https://www.ibef.org/blogs/india-s-hand-and-power-tools-sector-is-set-to-unlock-us-25-billion-in-exports",
+    "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/EastmanCastandForgeLimited_August%2028_%202024_RR_350609.html"
+  ]
+}

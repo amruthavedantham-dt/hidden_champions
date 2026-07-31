@@ -1,0 +1,42 @@
+{
+  "segmentName": "Crop Protection Agrochemicals (pesticides, herbicides, fungicides)",
+  "market": {
+    "worldSizeUSD_B_range": "India crop protection chemicals market: $2.59B (2025) to $3.21B by 2030 (4.35%/yr). Broader India agrochemicals market (incl. fertilizers + crop protection + other): $33.17B (2023) to $51.29B by 2030 (6.4%/yr). Global agrochemicals market: $230.61B (2025) to $301.34B by 2033 (3.4%/yr) — India accounted for ~12.2% of the global market in 2023.",
+    "cagrPctRange": [3.4, 6.4],
+    "exportGeographies": ["other Asian countries (~33% of FY2020 baseline exports)", "Latin America (~26%)", "Africa", "Asia-Pacific (regions of fastest-growing footprint expansion)"],
+    "globalCompetitors": ["UPL Limited (5th-largest global agrochemical company, 43 manufacturing facilities worldwide)"],
+    "domesticSlice": "India accounted for ~12.2% of the global agrochemicals market in 2023; herbicides/insecticides (2,4-D, Glufosinate, Lambda Cyhalothrin, Bifenthrin) are in strongest demand in Latin America/Africa/Asia export markets"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Backward integration into technical (active-ingredient) manufacturing reduces import dependence, notably on China — a structural theme across the segment right now, not company-specific",
+    "Registration breadth (CIB&RC in India, FAO specification compliance for export markets) is itself a competitive moat given lengthy approval timelines"
+  ],
+  "adoptionStructure": {
+    "note": "Seasonal agricultural buying cycles (kharif/rabi in India), plus export orders tied to generic off-patent molecule demand as older patents expire and regulatory-registration-gated market access in each destination country"
+  },
+  "peers": [
+    { "name": "UPL Limited", "revenueCr": 46640, "fy": "FY25", "patCr": 900, "patGrowthPct": 175, "ebitdaCr": 8120, "ebitdaGrowthPct": 47, "ebitdaMarginPct": 17.4, "source": "upl-ltd.com press release" },
+    { "name": "PI Industries", "roePct": 19.09, "ebitdaMarginPct_Q3FY25": 27.0, "patCr_Q4FY25": 331, "source": "business-standard.com; profitfromit.co.in" },
+    { "name": "Rallis India (Tata Group)", "revenueCr_FY25": 2663, "patCr_FY25": 125, "roePct3yrAvg": 8.41, "revenueCr_FY26": 2897, "revenueGrowthPct_FY26": 9, "patCr_FY26": 184, "patGrowthPct_FY26": 47, "source": "tatachemicals.com; global-agriculture.com" }
+  ],
+  "customerValue": {
+    "drivers": ["distributor/dealer network reach to farmers", "price competitiveness of off-patent generics", "breadth of registered molecules"],
+    "strongestPredictor": "registration breadth and price competitiveness combined",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer formulated crop-protection products (insecticides, fungicides, herbicides, plant growth regulators)", "offer technical-grade active ingredients", "maintain a broad registered-product portfolio"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["backward-integrate into technical (active-ingredient) manufacturing", "run formulation R&D", "maintain regulatory registration capability (CIB&RC, FAO specification compliance)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate multiple formulation plants plus a technical-manufacturing plant and packaging unit", "expand capacity to reduce import dependence and capture higher-margin technical-grade production"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["distribute through dealer/distributor networks reaching farmers", "serve institutional/international buyers via overseas offices", "differentiate on price competitiveness and breadth of registered molecules"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil seasonal agricultural buying cycles (kharif/rabi)", "fulfil export orders to Latin America/Africa/Asia driven by generic off-patent molecule demand", "navigate regulatory-registration-gated market access in each destination country"] }
+  ],
+  "sources": [
+    "https://www.mordorintelligence.com/industry-reports/india-crop-protection-pesticides-market",
+    "https://www.grandviewresearch.com/industry-analysis/india-agrochemicals-market-report",
+    "https://www.upl-ltd.com/press_release/UZSclfta7rQjpFI6F4Y6HttzPXYJxLesonHzZvuW.pdf",
+    "https://www.tatachemicals.com/tata/sites/default/files/2025-07/Rallis-Q4FY24-25-pr-audited-financial-results-.pdf"
+  ]
+}

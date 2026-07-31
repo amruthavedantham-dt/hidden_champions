@@ -1,0 +1,44 @@
+{
+  "segmentName": "Life-Saving / Essential Pharmaceutical Formulations (India NLEM/DPCO category)",
+  "market": {
+    "worldSizeUSD_B_range": "India pharmaceutical market overall: ~$55B (2025, Bain & Co estimate), projected to $120-130B by 2030.",
+    "cagrPctRange": [7.0, 10.0],
+    "exportGeographies": ["Myanmar", "Kenya", "Ethiopia", "Nepal", "Egypt", "broader Latin America, Middle East, Southeast Asia"],
+    "globalCompetitors": ["Sun Pharma", "Cipla", "Abbott India (large-cap players with significant NLEM-listed domestic revenue)"],
+    "domesticSlice": "Regulatory clarification: India's government has formally stated there is no official 'life-saving drugs' legal category — the operative mechanism is the National List of Essential Medicines (NLEM) combined with the Drugs (Prices Control) Order, 2013 (DPCO). Scheduled (price-controlled) drugs are ~15% of the pharma market by value; NLEM stands at 923-935 scheduled formulations as of 2024-2025."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "DPCO caps ceiling prices on NLEM-scheduled formulations via the National Pharmaceutical Pricing Authority (NPPA); non-scheduled drugs face a 10%/year price-increase cap",
+    "NLEM 2022 repricing delivered an average 17% price cut, saving ~₹3,788-3,802 crore annually for patients — a direct margin-pressure mechanism for manufacturers in this category",
+    "Government procurement for essential/life-saving medicines runs through state-level Medical Services Corporations (e.g. TNMSC, KMSCL) via tender, requiring valid drug licence, GMP/WHO-GMP certification and CDSCO registration",
+    "MSME pharma units receive EMD exemptions and a 25% procurement reservation under India's Public Procurement Policy — a structural advantage for smaller manufacturers in this exact category"
+  ],
+  "adoptionStructure": {
+    "note": "Institutional tender-cycle driven for the domestic/government channel; distributor-relationship driven for export markets — not a fixed repurchase rate"
+  },
+  "peers": [
+    { "name": "Albert David Ltd", "revenueCr": 334, "patCr": -1.49, "roePct3yrAvg": 8.07, "note": "manufactures formulations, infusion solutions, herbal dosage forms and bulk drugs — currently loss-making, a cautionary comparable", "source": "screener.in" },
+    { "name": "JB Chemicals & Pharmaceuticals Ltd", "revenueCr": 4148, "patCr": 709, "note": "much larger scale, acquired by Torrent Pharmaceuticals (2025-26) — included as industry-consolidation context, not a close-scale peer", "source": "screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["price-compliance under DPCO ceilings for institutional/government buyers", "tender-eligibility documentation (GMP/CDSCO) for government procurement", "supply reliability", "therapeutic breadth and WHO-GMP-certified sourcing for private/export buyers"],
+    "strongestPredictor": "tender-eligibility and price compliance for the domestic institutional channel",
+    "source": "tenderkosh.in; pib.gov.in"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer branded-generic and generic critical-care formulations (injectables, infusions, tablets)", "cover cardiovascular, anti-infective, antineoplastic, critical-care categories", "register trademarks/brands"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain WHO-GMP-compliant sterile/injectable manufacturing", "manage regulatory dossiers for CDSCO and international registrations", "develop cold-chain-capable formulations (lyophilization, pre-filled syringes)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate GMP-certified injectable/infusion manufacturing lines", "run ampoule/vial/pre-filled-syringe filling capacity", "source API in-house or externally"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["manage tender-bid submissions for government/institutional buyers", "support trademark/brand registration", "maintain distributor networks across export geographies"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win government/state medical-services-corporation tenders", "fulfil hospital/institutional procurement orders", "fulfil export orders via distributor/agent relationships", "reorder on tender renewal"] }
+  ],
+  "sources": [
+    "https://medicaldialogues.in/news/industry/pharma/no-life-saving-drug-category-in-india-govt-clarifies-as-930-medicines-remain-under-price-control-153185",
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2154217",
+    "https://blog.tenderkosh.in/pharmaceutical-tenders-india-2026/",
+    "https://www.screener.in/company/ALBERTDAVD/",
+    "https://www.screener.in/company/JBCHEPHARM/consolidated/"
+  ]
+}

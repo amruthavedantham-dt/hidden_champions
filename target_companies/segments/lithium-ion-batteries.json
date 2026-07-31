@@ -1,0 +1,44 @@
+{
+  "segmentName": "Lithium-ion Batteries (EV & telecom applications)",
+  "market": {
+    "worldSizeUSD_B_range": "World lithium-ion battery market: $68.7B-$194.66B (2025), wildly divergent by vendor scope. India lithium-ion battery market: $3.59B-$6.73B (2025-26), projected $9.79B-$15.92B by 2030-2034 (11.78%-17.65%/yr).",
+    "cagrPctRange": [11.78, 17.65],
+    "exportGeographies": ["not found — no export data located for Indian battery pack assemblers in this niche"],
+    "globalCompetitors": [],
+    "domesticSlice": "India's PLI/ACC scheme allocates ₹18,100 Cr for 50GWh of domestic advanced-chemistry-cell capacity by 2030. Named India peers: Exide Industries (ROE 7.05%), Amara Raja (ROE 14.0%), Log9 Materials (cautionary — entered NCLT insolvency by Nov 2025 despite $56.1M raised), Livguard ($65.1M raised, financials not found)."
+  },
+  "subSegments": ["EV two-wheeler battery packs", "telecom backup batteries", "graphene-based batteries"],
+  "adjacentMarkets": ["automotive-construction-equipment-components"],
+  "structureFacts": [
+    "India's ACC/PLI scheme is a real, funded government structural tailwind targeting 50GWh domestic capacity by 2030",
+    "Cell chemistry itself (cells) is still largely imported from Japan/Korea/China even by India-based pack assemblers with real domestic value-add (BMS, pack assembly, in-house components) — this is a structural industry pattern, not company-specific weakness",
+    "Log9 Materials' 2025 NCLT insolvency despite $56.1M raised is a cautionary data point on the segment's capital intensity and execution risk, even for well-funded entrants"
+  ],
+  "adoptionStructure": {
+    "note": "OEM battery qualification requires certification (AIS 156 Amendment III Phase 2, ICAT for NMC/LFP chemistries, TSEC approval for telecom) — these are must-have, not nice-to-have, gates for supplying two-wheeler EV OEMs and telecom infrastructure buyers."
+  },
+  "peers": [
+    { "name": "Exide Industries", "roePct": 7.05, "source": "aggregated financial data" },
+    { "name": "Amara Raja", "roePct": 14.0, "source": "aggregated financial data" },
+    { "name": "Log9 Materials", "note": "cautionary — entered NCLT insolvency by Nov 2025 despite $56.1M raised", "source": "aggregated search summary" },
+    { "name": "Livguard", "fundingUSD_M": 65.1, "note": "financials not found", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["certification/qualification (AIS 156, ICAT, TSEC) as a must-have gate", "IoT-enabled monitoring (BMS, CAN, GPS/GPRS) for fleet-operator visibility", "post-sale service network density for EV OEM/fleet trust"],
+    "strongestPredictor": "certification-gated qualification combined with service-network density",
+    "source": "evreporter.com; company positioning"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer IoT-enabled lithium-ion battery packs for EVs (NMC, LFP, LMFP chemistries)", "offer graphene-based batteries for electric two-wheelers", "offer telecom backup batteries"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["engineer proprietary BMS, CAN, IoT, GPS/GPRS and remote-monitoring systems", "run a DSIR-registered in-house R&D unit", "obtain AIS 156/ICAT/TSEC certification across chemistries"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a dedicated pack-assembly facility with defined daily output capacity", "import cells from Japan/Korea/China while manufacturing other components in-house"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["build and operate a battery service-center and training network for OEM/fleet partners", "supply ~100 OEMs including major two-wheeler EV makers"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win direct OEM supply contracts with EV two-wheeler makers", "win telecom-infrastructure battery orders via TSEC approval"] }
+  ],
+  "sources": [
+    "https://evreporter.com/ipower-clears-ais-156-amendment-3-phase-2-requirement/",
+    "https://www.indiascienceandtechnology.gov.in/",
+    "https://auto.economictimes.indiatimes.com/news/auto-components/e-rise-ev-collaborates-with-ipower-batteries-to-install-first-of-its-kind-battery-service-centre/97025309",
+    "aggregated market-size search across multiple vendor reports"
+  ]
+}

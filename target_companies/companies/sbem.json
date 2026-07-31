@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "sbem",
+    "series": "Hidden Champions of India",
+    "segmentRef": "level-flow-pressure-temperature-sensors",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U31200MH1991PTC063464, business founded 1974, incorporated as private limited 3 Oct 1991 (Khed, Pune, Maharashtra). sbeminstruments.com and sbem-india.com confirmed as the same entity's two domains."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "SBEM: a 52-year instrumentation pioneer with a genuinely exceptional certification stack and no financials to check it against.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "NABL-accredited calibration, ISO 3834-2, SIL-2, IRS marine certification, and 400,000+ instruments manufactured cumulatively — alongside a striking '24 worldwide patents' claim that no patent-office search could locate.", "tier": "company", "epistemic": "fact", "source": "sbeminstruments.com; independent patent-search verification", "fields": ["moat", "product_improvement"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1974 (business, per company); incorporated as Pvt Ltd 3 Oct 1991", "tier": "company", "source": "sbeminstruments.com; TheCompanyCheck", "fields": ["foundedYear"] },
+    { "label": "Founder / leadership", "value": "Founder Narayan Bedarkar (IIT Mumbai graduate); current CEO Mihir Bedarkar (since 2011)", "tier": "company", "source": "sbeminstruments.com/overview", "fields": ["differentiation"] },
+    { "label": "Employees", "value": "226 (Dec 2024, aggregator-sourced, not directly company-published)", "tier": "company", "source": "aggregated search estimate", "fields": ["employees"] },
+    { "label": "Certification stack (extensively confirmed)", "value": "ISO 9001:2008, ISO/IEC 17025:2017 NABL-accredited flow calibration lab, ISO 4064 (water meters), ISO 3834-2:2021 (fusion welding), CE, SIL-2, IRS (marine tank gauging), Legal Metrology/OIML-R49, ZED Silver, Flameproof, EMI/EMC", "tier": "company", "source": "sbeminstruments.com/overview (direct fetch)", "fields": ["moat"] },
+    { "label": "Patent claim (unverified)", "value": "Self-claims 24 worldwide + 3 Indian patents — not locatable via general web search or IP India's public portal", "tier": "company", "source": "independent verification attempt (inconclusive — portal requires interactive form, not fully searchable)", "fields": ["product_improvement"] },
+    { "label": "Manufacturing scale", "value": "3 units commissioned 2021 (32,000 sq ft), 2023 (23,000 sq ft), 2024 (25,000 sq ft); 400,000+ instruments manufactured cumulatively", "tier": "company", "source": "sbeminstruments.com/overview", "fields": ["financials.revenueCr"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "An exceptional certification and manufacturing footprint, no financial trail found",
+    "blocks": [
+      { "text": "No revenue, PAT, EBITDA, ROE, or ROCE figures were found from any source this session — a genuine information gap, not a debunked claim, for a company whose non-financial documentation is unusually thorough.", "tier": "company", "epistemic": "fact", "source": "N/A (not found)", "fields": ["financials.revenueCr"] },
+      { "text": "It is a pioneer in level instrumentation in India since 1974, offering level, flow, pressure, and temperature measuring instruments plus IoT solutions, founded by Narayan Bedarkar (IIT Mumbai graduate) and currently led by Mihir Bedarkar as Director & CEO since 2011. Its certification stack, independently confirmed via direct site fetch, is genuinely extensive: ISO 9001:2008, an ISO/IEC 17025:2017 NABL-accredited flow calibration lab, ISO 4064 for water meters, ISO 3834-2:2021 for fusion welding, CE marking, SIL-2 (139 M Servo gauge), IRS certification for marine tank gauging, Legal Metrology/OIML-R49 approval, ZED Silver certification, plus Flameproof and EMI/EMC certifications — this confirms and exceeds the HVT sheet's own cited moat claim.", "tier": "company", "epistemic": "fact", "source": "sbeminstruments.com/overview (direct fetch)", "fields": ["differentiation", "moat"] },
+      { "text": "Its manufacturing scale is real and specific: three units commissioned in 2021 (32,000 sq ft), 2023 (23,000 sq ft), and 2024 (25,000 sq ft), with over 400,000 level/flow/pressure instruments manufactured cumulatively. **The one specific claim that could not be verified**: the self-claimed 24 worldwide plus 3 Indian patents. A general web search and an attempted IP India public-search-portal check found no confirming record, though the IP India portal itself requires interactive form submission that couldn't be fully queried this session — this should be treated as unresolved rather than definitively debunked, unlike some other unverified claims in this batch.", "tier": "company", "epistemic": "fact", "source": "sbeminstruments.com/overview; IP India (inconclusive)", "fields": ["product_improvement"] },
+      { "text": "Its proprietary IoT platforms — SenSphere (web application) and SenSync (mobile app) — for remote monitoring, alerts, analytics, and cloud-based control are confirmed real, used across Water & Wastewater, Oil & Gas, Power, Cement, Defense, Chemical, Smart Cities, and Public Infrastructure customers. Note: a separate, unrelated company 'SenSync Instruments' (sensync.in, process & pollution monitoring) also exists — do not conflate it with SBEM's own 'SenSync Mobile App' product, which shares the name coincidentally.", "tier": "company", "epistemic": "fact", "source": "sbeminstruments.com/overview", "fields": ["gap_currently_monetized"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A real, government-policy-linked market with a **massive, named infrastructure demand driver**.", "evidence": "India Industrial Sensors & Transmitters Market: $1.37B (2025) to $2.14B by 2030 (9.37%/yr); India's Jal Jeevan Mission (rural piped-water program) is a major structural demand driver requiring level sensors, flow meters, pressure sensors, and pump controllers for a 'Digital Wall' monitoring system, with ~$49B cited for the full rollout.", "tier": "segment", "epistemic": "fact", "source": "GIIResearch; PIB", "fields": ["market.sizeRange"] },
+      { "point": "**Government import-substitution policy is a real, explicit tailwind** for a domestically-certified manufacturer like SBEM.", "evidence": "Explicit government concern about import-dependence (particularly China) for sensors in the Jal Jeevan Mission rollout is a documented policy tailwind for indigenous manufacturers — directly relevant given SBEM's NABL/Legal Metrology domestic certification stack.", "tier": "segment", "epistemic": "fact", "source": "thesecretariat.in", "fields": ["structureFacts"] },
+      { "point": "**KROHNE Marshall is the closer, financially-disclosed peer** among named India flow-meter makers.", "evidence": "KROHNE Marshall Pvt Ltd (Pune JV) posted ~₹203 Cr revenue for FY ending Mar 2022 (Tracxn ₹100-500 Cr band) — a real, if dated, scale reference point in a segment where most named peers (Endress+Hauser Flowtec India, Forbes Marshall, Adept Fluidyne) don't disclose financials.", "tier": "segment", "epistemic": "fact", "source": "Tracxn", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "One of the most thoroughly-documented non-financial profiles in this batch — a genuinely extensive, independently-confirmed certification and manufacturing footprint sitting directly in the path of a massive, government-funded infrastructure rollout (Jal Jeevan Mission). The absence of any financial trail is the clear gap; the patent claim, while unverified, is treated with more benefit of the doubt than similar claims elsewhere in this batch given the portal-access limitation rather than a clean negative result.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: GIIResearch, PIB (shared level-flow-pressure-temperature-sensors segment file, new this batch). Peer data: Endress+Hauser Flowtec India, KROHNE Marshall, ABB Measurement & Analytics, Forbes Marshall, Adept Fluidyne."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "product-expansion", "title": "Expanding SenSphere/SenSync IoT platforms as a standalone commercial offering", "body": "The HVT sheet's own gap research names this directly — currently these platforms support existing hardware products rather than being sold as a distinct, standalone service; a credible lever given the platforms are already built and deployed across multiple sectors, not aspirational.", "source": "HVT gap research (LinkedIn / SBEM Instruments).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is obtaining basic financial figures directly.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Obtain basic revenue/PAT figures directly, and confirm patent numbers", "body": "Given no financial figures were found from any public source, and the patent claim could not be conclusively verified through a limited IP India portal check, requesting both directly from the company would materially improve confidence in this otherwise well-documented profile.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a level/flow/pressure/temperature-sensor manufacturer in this segment — a directory-depth pass, not yet confirmed against SBEM's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer level, flow, pressure, and temperature measuring instruments", "offer IoT monitoring platforms for real-time remote monitoring, alerts, analytics, cloud-based control"], "stepsTier": "segment", "spottedAt": "offer IoT monitoring platforms for real-time remote monitoring, alerts, analytics, cloud-based control", "spotted": { "text": "Company facts (SenSphere web application, SenSync mobile app) confirm this step is real for SBEM — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run customization (e.g. marine tank gauging, defense-grade, PHED-specific applications)", "run manufacturing plus in-house NABL-accredited calibration lab operations"], "stepsTier": "segment", "spottedAt": "run manufacturing plus in-house NABL-accredited calibration lab operations", "spotted": { "text": "Company facts (ISO/IEC 17025:2017 NABL-accredited flow calibration lab, IRS marine certification) confirm this step is real for SBEM — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate manufacturing units sized in cumulative-instrument output", "maintain multiple facilities to scale production"], "stepsTier": "segment", "spottedAt": "maintain multiple facilities to scale production", "spotted": { "text": "Company facts (3 units commissioned 2021/2023/2024, 400,000+ instruments manufactured cumulatively) confirm this step is real for SBEM — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain government/PHED vendor-empanelment relationships", "provide IoT platform support (web/mobile apps for remote monitoring)"], "stepsTier": "segment", "spottedAt": "maintain government/PHED vendor-empanelment relationships", "spotted": { "text": "Company facts (approved vendor for Rajasthan PHED, self-claimed, HVT-flagged needs_verify) noted here — see p1_engine.", "tier": "company", "epistemic": "interpretation" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win RFQs/tenders from PHED, oil & gas, cement, power, water utilities", "fulfil orders tied to Jal Jeevan Mission and similar government infrastructure programs"], "stepsTier": "segment", "spottedAt": "fulfil orders tied to Jal Jeevan Mission and similar government infrastructure programs", "spotted": { "text": "Spotted at 'Jal Jeevan Mission': a real, massive, government-funded infrastructure program directly in SBEM's addressable market — see p2_market.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/level-flow-pressure-temperature-sensors.json) — no company-specific (A2/pursuit) operational intel was collected for SBEM this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuinely exceptional certification and manufacturing footprint for a 52-year instrumentation pioneer, sitting directly in the path of India's massive Jal Jeevan Mission infrastructure rollout. **Basic financial figures are the clearest gap in an otherwise unusually well-documented profile.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in SBEM or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No financial figures found from any source; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus sbeminstruments.com (direct fetch) and TheCompanyCheck; market data from GIIResearch and PIB. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["sbeminstruments.com", "TheCompanyCheck", "GIIResearch", "PIB", "thesecretariat.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — basic revenue/PAT figures, and conclusive confirmation of the patent claim — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

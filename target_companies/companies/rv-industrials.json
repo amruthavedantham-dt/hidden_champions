@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "rv-industrials",
+    "series": "Hidden Champions of India",
+    "segmentRef": "high-precision-pump-shafts-flanges",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Partnership firm (Coimbatore, GST registration confirmed), no CIN by design. Genuinely thin evidence — no financials of any kind were found."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "R.V. Industrials: a Coimbatore precision job-shop, entirely off the public financial record.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "An ISO 9001-certified precision-machining partnership serving pumps, valves and compressors across multiple industries, with no revenue figure found anywhere.", "tier": "company", "epistemic": "fact", "source": "HVT row; rvindustrials.com", "fields": ["differentiation", "ownershipType"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1979 (per one source) — inconsistent across own materials", "tier": "company", "source": "IndiaMART vs. rvindustrials.com", "fields": ["foundedYear"] },
+    { "label": "Revenue / PAT / ROE", "value": "Not found (partnership firm, no filings)", "tier": "company", "source": "n/a", "fields": ["financials.revenueCr"] },
+    { "label": "Ownership", "value": "Partnership firm — Mr. G. Venugopal", "tier": "company", "source": "GST registration (piceapp.com)", "fields": ["ownershipType"] },
+    { "label": "Certification", "value": "ISO 9001:2015 (self-claimed, needs_verify: yes per HVT)", "tier": "company", "source": "HVT row", "fields": ["moat"] },
+    { "label": "Capability", "value": "CNC rapid prototyping, high-precision flanges/shafts", "tier": "company", "source": "rvindustrials.com", "fields": ["product_improvement"] },
+    { "label": "Industries served", "value": "Agriculture, automotive, electronics, medical, energy, railways, shipping, textile, construction, valve manufacturing", "tier": "company", "source": "rvindustrials.com", "fields": ["differentiation"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability with almost no independent verification available",
+    "blocks": [
+      { "text": "No revenue, PAT, ROE or employee figure was found anywhere in the public record — expected for a small partnership firm with no MCA filing obligation, but a genuine limit on what this profile can independently confirm.", "tier": "company", "epistemic": "fact", "source": "no public filings located", "fields": ["financials.availability"] },
+      { "text": "It manufactures high-precision flanges, shafts, components and sub-assemblies, including industrial compressor spares and valves — third-party sourced to a general engineering-services directory, not just the company's own site, giving it slightly more credibility than a pure self-claim.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed but cross-listed); tamilcrew.com", "fields": ["differentiation"] },
+      { "text": "It claims ISO 9001:2015 certification for manufacturing and supply of high-precision machined components, and offers CNC machining services for rapid prototyping with tight tolerances and quick turnaround — both self-claimed, and the HVT sheet flags `moat` `needs_verify: yes` accordingly.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["moat", "product_improvement"] },
+      { "text": "Even its own founding narrative is inconsistent: one listing states 1979 and 'over 41 years' of operation, while the company's own website separately claims 'more than 3 decades' and 'over 25+ years' in different sections — small internal contradictions worth noting rather than resolving to one figure.", "tier": "company", "epistemic": "fact", "source": "indiamart.com vs. rvindustrials.com", "fields": ["foundedYear"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "No dedicated market sizing exists for this exact niche — **the broader industrial pump market is the closest usable proxy.**", "evidence": "Global industrial pumps: $48.2-75B (2025), 3-5.5%/yr depending on source. India industrial pump market: $2.33-2.90B (2024) to $3.55-4.14B by 2030-2033, 4.8-7%/yr.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group; GM Insights", "fields": ["market.sizeRange"] },
+      { "point": "Its **potential customers, not competitors, are the named companies in this space.**", "evidence": "Established pump OEMs like Kirloskar Brothers (est. 1888), WPIL Limited, Roto Pumps, KSB Limited and Shakti Pumps are all potential buyers of a precision-component job-shop like R.V. Industrials, not direct manufacturing peers.", "tier": "segment", "epistemic": "fact", "source": "arizton.com", "fields": ["peers"] },
+      { "point": "Structural demand drivers are **broad-based industrialization**, not any single narrow trend.", "evidence": "Water/wastewater treatment infrastructure expansion, oil & gas exploration, chemical/process-industry demand, power generation needs, and government manufacturing/infrastructure initiatives are all cited as demand drivers for the pump components this company machines.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A precision job-shop in a genuinely broad, growing customer base, with essentially nothing independently checkable about its own scale or performance. The certification claims and the market opportunity are both plausible — neither is confirmed.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group, GM Insights (shared high-precision-pump-shafts-flanges segment file). No direct manufacturing peers exist for this job-shop category — named companies are potential customers, not competitors."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place named in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Exporting precision machined parts internationally", "body": "The HVT sheet's own gap research names this directly: the company has manufacturing capability that could serve international buyers, but no confirmed export activity or specific target markets were found — a genuinely open, unquantified opportunity rather than a specific, trackable one.", "source": "HVT gap research (LinkedIn company page).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_latent"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is basic verification, not a market pilot.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Confirm ISO 9001 certification and current revenue scale directly", "body": "Before any export-market planning, get a direct, current confirmation of the ISO 9001 certificate and an actual revenue figure — this profile currently has neither independently verified, which limits how seriously any growth plan can be evaluated.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a precision pump-component manufacturer in this segment — a directory-depth pass, not yet confirmed against R.V. Industrials' own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["manufacture high-precision pump shafts, flanges, valve assemblies, hardened sleeves/pins, spacers", "manufacture to customer drawings for OEM pump/valve/compressor makers"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["CNC turning, VMC and 5-axis VMC machining across ferrous and non-ferrous metals", "CMM inspection"], "stepsTier": "segment", "spottedAt": "CNC turning, VMC and 5-axis VMC machining across ferrous and non-ferrous metals", "spotted": { "text": "Company facts (CNC rapid prototyping capability, tight tolerances) confirm this step is real for R.V. Industrials, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate multi-machine CNC/VMC shop floor", "handle low-to-mid-volume high-mix precision orders"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain ISO 9001 quality system", "provide dimensional/CMM inspection reports", "operate as a subcontract/outsourced-machining partner"], "stepsTier": "segment", "spottedAt": "maintain ISO 9001 quality system", "spotted": { "text": "Spotted at \"maintain ISO 9001\": this certification is self-claimed and flagged needs_verify by HVT → confirming ISO 9001 and revenue scale directly.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win contract-machining orders and long-term subcontract relationships with pump/valve/compressor OEMs", "fulfil across agriculture, energy, water infrastructure, and industrial end-markets", "reorder on repeat OEM production runs"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/high-precision-pump-shafts-flanges.json) — no company-specific (A2/pursuit) operational intel was collected for R.V. Industrials this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A precision job-shop serving a genuinely broad industrial customer base, with almost nothing about its own scale independently confirmed. **Verification comes before any growth conversation here.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in R.V. Industrials or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No public financials found (partnership firm). Company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus rvindustrials.com and tamilcrew.com; market data from IMARC Group and GM Insights. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["rvindustrials.com", "tamilcrew.com", "piceapp.com (GST registration)", "IMARC Group", "GM Insights", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — actual revenue, real certification status, and true customer relationships across its stated industries served — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

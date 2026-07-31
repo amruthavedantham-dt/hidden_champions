@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Devendra Autocom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Devendra Autocom: a 60-year export house that rebuilt itself around Indian Army tank engines.</h1>
+    <p class="subhead">A 1965 export-led fuel-injection parts maker that flipped from ~85% export to ~90% domestic, with defence now roughly half its revenue — while growing 43% YoY and improving margins.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">1965 (as Devendra Exports Pvt. Ltd.; rebranded 2017)</p></div><div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹100-101 Cr FY25 (Tofler + trade-press corroborated), 1-yr revenue CAGR +42.61-43%</p></div><div class="snap"><p class="snap-label">Margins &amp; growth</p><p class="snap-value">Net 1.72%, Operating 3.09% — thin but EBITDA +144.14% YoY, Net Profit +158.07% YoY</p></div><div class="snap"><p class="snap-label">ROE / ROCE</p><p class="snap-value">9.45% / 10.87%, Debt-to-Equity -0.11 (net cash)</p></div><div class="snap"><p class="snap-label">Employees</p><p class="snap-value">~120-175 (trade-press 120; Tofler-derived 175)</p></div><div class="snap"><p class="snap-label">Export/domestic mix shift</p><p class="snap-value">~85% export/15% domestic (1965-2010s) → ~90% domestic/~10% export (by 2023), driven by defence pivot</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">Strong growth, thin margins, a real structural pivot underway</h2>
+      <p class="prose">Revenue reached ₹100-101 Cr in FY25, up a striking ~43% YoY on a 1-year CAGR basis — corroborated independently by both Tofler and a trade-press interview citing the same ~₹100 Cr figure, with a company-stated target of ₹200 Cr by FY26/27 at 30%+ annual growth. EBITDA and net profit both grew even faster (+144.14% and +158.07% YoY respectively), though net margin remains thin at 1.72%. ROE (9.45%) and ROCE (10.87%) are genuinely healthy, and debt-to-equity is negative (net cash) — a real financial engine emerging.</p><p class="prose">It is a manufacturer, supplier, and exporter of automotive high-precision components, and the sole Indian distributor of Hartridge (UK) diesel test equipment and Turbo Technics (UK) turbocharger machinery — a real third-party validation-testing capability, not just manufacturing.</p><p class="prose">It holds IATF/TS 16949, ISO 9001/14001/45001, and VDA 6.3 certification, plus Lean Management, Industry 4.0, and SAP HANA systems — a genuinely modern operational stack for a 60-year-old manufacturer. It states in-house R&amp;D drives its Flexible Manufacturing System strategy and is planning a large-scale 3D printer to cut prototype lead time to 60 days.</p><p class="prose">The company&#x27;s own history shows a striking structural pivot: historically ~85% export/15% domestic through the 2010s, flipping to ~90% domestic/~10% export by 2023 as it moved toward Indian OEM and defence supply. Defence now accounts for roughly half of revenue, up from a low base — anchored by a 2018 contract to supply fuel pumps, injectors, and fuel lines to Engine Factory Avadi for Indian Army T-72/T-90 tank engines, displacing previously Russian-sourced parts and breaking into a category historically dominated by Bosch and Delphi. It won the SIDM Champion Award 2024 for Import Substitution.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">A <b>real, growing India fuel-injection market</b>, with a structural EV headwind offset by defence/commercial-vehicle demand.</p><p class="ev">India Fuel Injection Systems Market: $2.20B (2024) to $4.11B by 2033 (7.20%/yr); near-term demand persists and even grows from commercial vehicles, agricultural equipment, construction equipment, and defence applications even as EV transition pressures light-vehicle diesel demand.</p></li><li class="insight"><p class="point"><b>Bosch dominates globally, but Lucas-TVS is the closer, better-documented Indian peer</b> — still ~10x Devendra&#x27;s scale.</p><p class="ev">Bosch holds &gt;44% of the global diesel fuel injection market; Lucas-TVS (JV of Lucas Industries UK and TVS Group) posted &gt;₹1,000 Cr FY25 revenue with +11% revenue CAGR and +38% EBITDA CAGR, with &gt;75% of revenue from in-house-developed products.</p></li><li class="insight"><p class="point"><b>Defence import-substitution is a real, distinct structural theme</b> separate from the commercial-vehicle OEM cycle — and Devendra Autocom is directly inside it.</p><p class="ev">The Engine Factory Avadi relationship broke into a category previously dominated by Bosch/Delphi and displaced Russian-sourced parts under &#x27;Make in India&#x27; — a structural, policy-backed theme distinct from ordinary automotive-component demand.</p></li>
+      </ul>
+      <p class="reflect">A genuinely well-timed structural pivot — from a low-margin, purely export-led legacy business toward a higher-value, policy-backed defence import-substitution role — showing up cleanly in the numbers: strong revenue growth, improving returns, and a net-cash balance sheet. The 3D-printing prototyping investment and the ₹200 Cr FY26/27 target both suggest management is trying to compound this, not just ride a one-time contract win.</p>
+      <p class="src">Market data: IMARC Group (shared diesel-fuel-injection-parts segment file). Peer data: Bosch India, Lucas-TVS, Delphi-TVS.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">Real momentum already documented in the company&#x27;s own recent history — the question is whether it broadens beyond the initial defence win.</p>
+      <div class="opp"><p class="tag">Customer-Diversification</p><h4>Converting the Engine Factory Avadi defence relationship into a broader OEM/defence base</h4><p>The company is already expanding into northern India and exploring Navy/Air Force partnerships beyond its existing Army supply relationship, alongside targeting new commercial OEMs (Mahindra, Tata Motors, Kirloskar) beyond its anchor client Ashok Leyland — a credible next step given the demonstrated import-substitution win already achieved.</p><p class="oppsrc">motorindiaonline.in (six-decades company profile).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions — and the honest first step here is confirming margin improves as defence/OEM diversification scales.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Track whether net margin expands as the defence/domestic OEM mix grows further</h5><p>With net margin still thin (1.72%) despite the revenue and EBITDA surge, the clean test is whether further defence and multi-OEM diversification (beyond the initial Engine Factory Avadi win) pushes margin up toward what ROE/ROCE already suggest is achievable — confirming the pivot is a genuine margin story, not just a volume one.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for a diesel-fuel-injection-parts manufacturer in this segment — a directory-depth pass, not yet confirmed against Devendra Autocom&#x27;s own stated process beyond what the HVT row documents, so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">offer feed pumps, hand primers, high-pressure fuel injection pipes, injectors, nozzles, and nozzle holders → offer delivery/relief/pressure/overflow valves and governor diaphragms → offer water pumps and electrical/electromechanical fuel pump components<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;offer feed pumps, hand primers, high-pressure fuel injection pipes, injectors, nozzles, and nozzle holders&quot;</span> Company facts (60-year automotive high-precision component manufacturing) confirm this step is real for Devendra Autocom — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">run precision machining (turning, pressed components) and casting/sub-assembly → run in-house R&amp;D with a flexible manufacturing system strategy → validate via third-party testing partners under IATF/TS16949, VDA 6.3 certification<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;validate via third-party testing partners under IATF/TS16949, VDA 6.3 certification&quot;</span> Company facts (sole Indian distributor of Hartridge/UK diesel test equipment and Turbo Technics/UK turbocharger machinery, full certification stack) confirm this step is real for Devendra Autocom — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate a manufacturing base sized for both OEM and defence order flow → pursue additive-manufacturing/3D-printing capability to cut prototype lead time<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;pursue additive-manufacturing/3D-printing capability to cut prototype lead time&quot;</span> Company facts (planned large-scale 3D printer targeting 60-day prototype lead time) confirm this step is real and in progress for Devendra Autocom — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">run OEM co-development and qualification processes → navigate defence-sector security/localization vetting → use ERP systems for order/quality traceability<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;navigate defence-sector security/localization vetting&quot;</span> Company facts (Engine Factory Avadi supply relationship for Indian Army T-72/T-90/BMP tank engines, SAP HANA ERP) confirm this step is real for Devendra Autocom — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">win OEM supply contracts with commercial-vehicle manufacturers → win defence orders via import-substitution wins<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;win defence orders via import-substitution wins&quot;</span> Spotted at &#x27;win defence orders&#x27;: defence now ~50% of revenue, anchored by the Engine Factory Avadi contract — exactly this step, confirmed and already in motion.</p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/diesel-fuel-injection-parts.json) — no company-specific (A2/pursuit) operational intel was collected for Devendra Autocom this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>A 60-year export house that rebuilt itself around Indian defence import-substitution, and the numbers show it: 43% revenue growth, improving returns, net cash. <b>The next test is whether margin catches up to the volume story as the defence/OEM base broadens.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Devendra Autocom or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. Financials from Tofler and motorindiaonline.in; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus devendraautocom.com; market data from IMARC Group; peer figures from Tracxn (Lucas-TVS) and Statista/companiesmarketcap.com (Bosch India). Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

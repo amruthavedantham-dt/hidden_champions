@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "instaa-precision-tools",
+    "series": "Hidden Champions of India",
+    "segmentRef": "cnc-punch-press-brake-tooling",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Partnership (LLP), incorporated 31 May 2022 (New Delhi). IMPORTANT: the company's own website (instaatool.com) was unreachable this session due to an SSL certificate mismatch (certificate registered to a shared hosting provider, not the company's own domain) — most gap-fill items (AS9100 certification status, GCC/EU/USA dealer network) could not be independently resolved and remain as originally documented by the HVT row."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Instaa Precision Tools: a young CNC-tooling LLP whose own website couldn't be reached to verify anything.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 2022-founded tooling specialist with an AS9100 certification 'in progress' as of the HVT's research — this session's attempt to check current status was blocked by a broken company website, leaving the claim exactly where HVT left it.", "tier": "company", "epistemic": "fact", "source": "SSL verification attempt", "fields": ["moat", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "31 May 2022, as an LLP, New Delhi", "tier": "company", "source": "company registry data", "fields": ["foundedYear"] },
+    { "label": "Revenue (low confidence, conflicting)", "value": "$1M/year with 10 employees (one aggregator) vs. ₹10-50 Cr (a separate estimate) — wide, unreconciled spread", "tier": "company", "source": "RocketReach; search aggregator", "fields": ["financials.revenueCr"] },
+    { "label": "Employees", "value": "~10 (aggregator estimate); LinkedIn shows 472 followers, not an employee count", "tier": "company", "source": "ZoomInfo search summary", "fields": ["employees"] },
+    { "label": "AS9100 status", "value": "\"In progress\" per HVT sheet — could not be verified as completed or still pending this session due to website inaccessibility", "tier": "company", "source": "HVT row; unresolved this session", "fields": ["moat"] },
+    { "label": "Website issue", "value": "instaatool.com returns an SSL certificate mismatch, suggesting site misconfiguration or expired hosting", "tier": "company", "source": "direct verification attempt", "fields": ["website"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A young tooling specialist, largely unverifiable this pass",
+    "blocks": [
+      { "text": "Financial figures are low-confidence and conflicting: one aggregator source cites roughly $1 million annual revenue (2025) with 10 employees, while a separate estimate places revenue in the ₹10-50 Cr range — a wide, unreconciled spread from non-primary sources. No PAT, EBITDA, margins, ROE, or ROCE were found.", "tier": "company", "epistemic": "fact", "source": "RocketReach; search aggregator", "fields": ["financials.revenueCr"] },
+      { "text": "It makes tooling for CNC punch press and press brake machines — CNC punching, punch press, embossing, and die tooling — a real, specific manufacturing niche. Incorporated as an LLP in May 2022, making it one of the younger companies profiled in this project.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation", "foundedYear"] },
+      { "text": "**The central finding of this profile is a verification failure, not a debunked claim**: the company's own website (instaatool.com) returned an SSL certificate mismatch on direct access attempt — the certificate is registered to a shared hosting provider rather than the company's own domain, suggesting site misconfiguration, expired hosting, or an inactive/orphaned site. This blocked verification of the AS9100 certification status (self-claimed as 'in progress' per the HVT sheet) and the claimed GCC/EU/USA dealer-onboarding activity — neither could be confirmed or denied this session.", "tier": "company", "epistemic": "fact", "source": "direct SSL verification attempt", "fields": ["moat"] },
+      { "text": "One LinkedIn post referencing team recognition (circa 2024) was found, but its content could not be retrieved in detail — no other recent expansion, award, or contract-win news was located.", "tier": "company", "epistemic": "fact", "source": "LinkedIn (instaa-tool)", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market where **the true addressable segment (tooling) doesn't have a clean standalone size estimate**, only adjacent machine-market proxies.", "evidence": "Global press brake machine market: $800.2M (2026) to $1,211.2M by 2033 (6.1%/yr); global punch press market: $3.5B (2024) to $5.7B by 2033 (6.0%/yr) — both are for the machines themselves, not the tooling/dies/punches Instaa actually makes, so these should be read as directional proxies, not a direct TAM.", "tier": "segment", "epistemic": "fact", "source": "Persistence Market Research", "fields": ["market.sizeRange"] },
+      { "point": "**No India-specific tooling peer was identified** — suggesting either a genuinely uncrowded niche or simply too-small/private competitors to surface in search.", "evidence": "Global tooling/machine leaders (Trumpf, Amada, Prima Power) were named, but no comparable Indian tooling-specific peer to Instaa was found — meaning there's no clean competitive benchmark available for this small, young company.", "tier": "segment", "epistemic": "fact", "source": "aggregated search summary", "fields": ["peers"] },
+      { "point": "**India's machine-tool market growth (11.6%/yr) is a genuine structural tailwind** for a tooling supplier positioned to serve it.", "evidence": "India's broader machine tool market is forecast to grow by $3.08B from 2024-2029 at 11.6%/yr — a real demand driver for CNC press-brake/punch-press tooling suppliers, assuming Instaa can be positioned to capture it.", "tier": "segment", "epistemic": "fact", "source": "Technavio", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "The honest read here is that this profile is thinner on verified fact than almost any other company in this batch — not because the underlying business is implausible, but because the one primary source that would resolve most open questions (the company's own website) was unreachable this session. The recommendation is straightforward: retry verification via a different network path or direct outreach before treating any of the self-claimed figures as settled.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Persistence Market Research, Technavio (shared cnc-punch-press-brake-tooling segment file, new this batch). No India-specific peer identified."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "market-access", "title": "Expanding export market share across GCC, EU & USA", "body": "The HVT sheet's own gap research names active dealer onboarding across these regions as an untapped opportunity — but given the company's own website was unreachable this session, confirming this claim directly should come before treating it as an active growth lever.", "source": "HVT gap research (LinkedIn post).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is simply re-establishing contact with the company's actual website.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Re-verify the company's website and AS9100 certification status via an alternate access method", "body": "Since instaatool.com returned an SSL certificate error blocking verification this session, retrying via a different network path, a cached/archived version, or direct outreach to the company would resolve most of the open questions in this profile — this is the single highest-value next step.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a CNC punch-press/press-brake tooling manufacturer in this segment — a directory-depth pass, not yet confirmed against Instaa Precision Tools' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer custom CNC punch/press-brake tooling (punches, dies, embossing tools)", "sell to sheet-metal fabricators serving switchgear, elevator, and general metal-fabrication OEMs"], "stepsTier": "segment", "spottedAt": "offer custom CNC punch/press-brake tooling (punches, dies, embossing tools)", "spotted": { "text": "Company facts (makes tooling for CNC punch press and press brake machines, including punching, embossing, die tooling) confirm this step is real for Instaa Precision Tools — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["provide technical consultation on tool design against customer's punch-press/brake machine specs and part drawings", "run prototype/sample tooling validation and tool-life testing"], "stepsTier": "segment", "spottedAt": "provide technical consultation on tool design against customer's punch-press/brake machine specs and part drawings", "spotted": { "text": "Company facts (collaborates with R&D team during development, resolves manufacturing queries) confirm this step is real for Instaa Precision Tools — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["run batch manufacturing of tooling sets", "pursue AS9100 certification for aerospace-adjacent customer access"], "stepsTier": "segment", "spottedAt": "pursue AS9100 certification for aerospace-adjacent customer access", "spotted": { "text": "Company facts (AS9100 certification 'in progress' per HVT, status unverified this session) — see p1_engine.", "tier": "company", "epistemic": "interpretation" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["build a dealer network across export geographies (GCC/EU/USA)", "provide vendor trust/after-sales support"], "stepsTier": "segment", "spottedAt": "build a dealer network across export geographies (GCC/EU/USA)", "spotted": { "text": "Company facts (self-claimed dealer onboarding across GCC/EU/USA, unverified this session) — see p3_opportunities.", "tier": "company", "epistemic": "interpretation" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil repeat/replacement tooling orders as tools wear", "win new-tool orders tied to customer's new part programs"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/cnc-punch-press-brake-tooling.json) — no company-specific (A2/pursuit) operational intel was collected for Instaa Precision Tools this pass beyond what the HVT row documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A young, real tooling specialist whose own website was unreachable this session — leaving most of the HVT sheet's claims (AS9100 status, GCC/EU/USA dealer network) exactly where they started: plausible but unverified. **Re-establishing contact with the company directly is the clear next step.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Instaa Precision Tools or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No independently verified financials found; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) — the company's own website was unreachable this session (SSL certificate mismatch); market data from Persistence Market Research and Technavio. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["RocketReach", "ZoomInfo", "LinkedIn", "Persistence Market Research", "Technavio", "company-reported (unverified this session)"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — nearly everything, given the company's own website was unreachable this session: actual AS9100 status, real revenue/employee figures, and true dealer-network footprint — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

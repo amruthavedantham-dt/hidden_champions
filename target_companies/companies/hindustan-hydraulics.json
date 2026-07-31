@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "hindustan-hydraulics",
+    "series": "Hidden Champions of India",
+    "segmentRef": "press-brake-cnc-fiber-laser-machines",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U24111PB1970PTC002918, incorporated 28 Mar 1970 (company's own narrative traces the business to 1965)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Hindustan Hydraulics: a 1965-vintage press-brake maker deleveraging fast while margins are still catching up.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "DSIR-recognized in-house R&D and a 1989 Dutch technology tie-up sit behind 7,500+ domestic installations — while ROE remains thin even as growth accelerates.", "tier": "company", "epistemic": "fact", "source": "Tofler; company narrative", "fields": ["financials.roePct", "product_improvement"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1970 (incorporation); company's own narrative states 1965 as the founding year", "tier": "company", "source": "MCA/CIN data; hindustanhydraulics.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹143 Cr FY24 (₹100-500 Cr band), +11.9% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Growth", "value": "1-yr revenue CAGR +12%, EBITDA CAGR +23%; EBITDA +47.69% YoY, Net Profit +45.71% YoY (latest filing)", "tier": "company", "source": "Tofler", "fields": ["financials.ebitdaGrowthPct"] },
+    { "label": "Margins", "value": "Net 2.97%, Operating 4.13%, Gross 3.28% — thin but positive", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct"] },
+    { "label": "ROE / ROCE", "value": "2.67% / 6.65%", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Debt position", "value": "Debt-to-equity -0.04 (net cash); borrowings down 87.57% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.debtToEquity"] },
+    { "label": "Employees", "value": "224 (Aug 2025 filing)", "tier": "company", "source": "search-aggregated registry data", "fields": ["employees"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Fast deleveraging, margins still catching up",
+    "blocks": [
+      { "text": "Revenue reached ₹143 Cr in the FY24 filing (+11.9% YoY), with a 1-year revenue CAGR of 12% and EBITDA CAGR of 23%. Most striking is the balance-sheet move: borrowings fell 87.57% YoY, flipping debt-to-equity to -0.04 (a net cash position) — a genuinely notable deleveraging for a machinery manufacturer. Margins remain thin (net 2.97%, operating 4.13%) and ROE at 2.67% is modest, though ROCE at 6.65% and the sharp EBITDA/net-profit growth (+47.69%/+45.71% YoY) suggest an improving trajectory off a low base.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.roePct", "financials.debtToEquity"] },
+      { "text": "It manufactures hybrid press-brake machines and CNC fiber laser machines, with roots the company traces to 1965 — five years before the current CIN's 1970 incorporation date, a gap plausibly reflecting a later formalization of an older business rather than two separate stories.", "tier": "company", "epistemic": "fact", "source": "Tracxn; hindustanhydraulics.com", "fields": ["differentiation", "foundedYear"] },
+      { "text": "It is recognized by India's Department of Scientific and Industrial Research (DSIR) for in-house R&D — a registry-confirmed credential, not merely self-claimed — and holds ISO 9001:2000 certification for its quality management systems.", "tier": "company", "epistemic": "fact", "source": "DSIR registry (cdnbbsr.s3waas.gov.in)", "fields": ["product_improvement"] },
+      { "text": "A 1989 technology collaboration with Darley B.V. of the Netherlands for CNC hydraulic press brakes and NC shearing machines underpins its current product line; the company markets over 7,500 domestic installations and 500+ machines sold internationally across Europe, Africa, the Middle East, South East Asia, and Australia.", "tier": "company", "epistemic": "fact", "source": "company narrative (search-aggregated)", "fields": ["exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market with **real, if source-dependent, growth**, and a fast-growing India-specific fiber-laser niche.", "evidence": "Global press brake market: $667.5M-$1,055.89M by 2032 depending on source (5.9%/yr); India fiber laser cutting machine market: $53.94M (2024), 9.3%/yr, with India cited as likely to dominate Asia-Pacific laser-cutting-machine growth at ~9.2%/yr.", "tier": "segment", "epistemic": "fact", "source": "Credence Research; 360iResearch", "fields": ["market.sizeRange"] },
+      { "point": "**Global leaders operate at 10-20x the scale** — Hindustan Hydraulics competes as a domestic/regional player, not head-to-head.", "evidence": "Amada (Japan): $2.6-2.8B revenue; Trumpf (Germany): >$5B revenue, ~18,000 employees; Bystronic (Switzerland): $738M TTM revenue — all vastly larger than Hindustan Hydraulics' ₹143 Cr scale.", "tier": "segment", "epistemic": "fact", "source": "Macrotrends; aggregated search summary", "fields": ["peers"] },
+      { "point": "**'Make in India' and MSME modernization** are real, structural tailwinds for CNC press-brake adoption over conventional machines.", "evidence": "Government initiatives are cited as drivers of CNC press-brake adoption over conventional models in India, alongside broader Industry 4.0/automation adoption trends.", "tier": "segment", "epistemic": "fact", "source": "krrass.com; aggregated search summary", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A genuinely old, technically credentialed manufacturer (DSIR-recognized R&D, a real 1989 European tech tie-up) that has just executed a sharp balance-sheet cleanup — paying down debt by nearly 88% in a year. The next question is whether that discipline shows up in margin expansion, or whether returns stay thin even as the balance sheet gets healthier.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Credence Research, 360iResearch, IMARC Group (shared press-brake-cnc-fiber-laser-machines segment file). Peer data: Amada, Trumpf, Bystronic, Amada India."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "product-expansion", "title": "Capturing India's shift toward green/electric press-brake technology", "body": "The HVT sheet's own gap research names new electric press-brake and fiber-laser technology as the vehicle for capturing more of India's expanding, multi-fold-growth metal-forming market — a credible near-term lever given the company just freed up balance-sheet capacity by cutting borrowings nearly 88%.", "source": "HVT gap research (LinkedIn / Modern Manufacturing India, IMTEX Forming 2026).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is confirming margin expansion follows the balance-sheet cleanup.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Track whether the deleveraging shows up as margin expansion next filing cycle", "body": "With borrowings down 87.57% YoY and EBITDA already growing 47.69%, the clean test is whether next year's net margin moves meaningfully past the current 2.97% — confirming the balance-sheet discipline is translating into real profitability, not just a one-time debt paydown.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a press-brake/CNC-machine manufacturer in this segment — a directory-depth pass, not yet confirmed against Hindustan Hydraulics' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer hybrid/CNC hydraulic press brakes and tandem press brakes", "offer NC/CNC hydraulic shearing machines", "offer CNC fiber laser cutting machines"], "stepsTier": "segment", "spottedAt": "offer hybrid/CNC hydraulic press brakes and tandem press brakes", "spotted": { "text": "Company facts (hybrid press brake and CNC fiber laser machine manufacturing since 1965) confirm this step is real for Hindustan Hydraulics — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["build capability via international technology tie-ups", "run ISO-certified manufacturing", "engineer for precision/automation gains"], "stepsTier": "segment", "spottedAt": "build capability via international technology tie-ups", "spotted": { "text": "Company facts (1989 Darley B.V./Netherlands collaboration; DSIR-recognized in-house R&D) confirm this step is real for Hindustan Hydraulics — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a dedicated manufacturing facility staffed by graduate/diploma engineers", "scale production against domestic and export order flow"], "stepsTier": "segment", "spottedAt": "operate a dedicated manufacturing facility staffed by graduate/diploma engineers", "spotted": { "text": "Company facts (13,900 sq. m Jalandhar, Punjab facility) confirm this step is real for Hindustan Hydraulics — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["position as preferred vendor to top domestic engineering companies via a large installed base", "build export relationships across multiple regions"], "stepsTier": "segment", "spottedAt": "position as preferred vendor to top domestic engineering companies via a large installed base", "spotted": { "text": "Company facts (7,500+ domestic installations, 500+ machines exported) confirm this step is real for Hindustan Hydraulics — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["generate leads via international/domestic trade-show participation (e.g. IMTEX)", "fulfil export orders via distributor/direct international channels"], "stepsTier": "segment", "spottedAt": "generate leads via international/domestic trade-show participation (e.g. IMTEX)", "spotted": { "text": "Company facts (IMTEX 2024 participation, described by the company as one of its most successful shows) confirm this step is real for Hindustan Hydraulics — see gap research.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/press-brake-cnc-fiber-laser-machines.json) — no company-specific (A2/pursuit) operational intel was collected for Hindustan Hydraulics this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A 60-year-old machine builder that just cleaned up its balance sheet dramatically — debt down nearly 88% in a year. **Whether that discipline converts into real margin expansion, not just a healthier balance sheet, is the thing to watch next.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Hindustan Hydraulics or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus hindustanhydraulics.com and the DSIR registry; market data from Credence Research, 360iResearch and IMARC Group; peer figures from Macrotrends (Amada) and aggregated search data (Trumpf, Bystronic). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "hindustanhydraulics.com", "DSIR registry (cdnbbsr.s3waas.gov.in)", "Credence Research", "360iResearch", "IMARC Group", "Macrotrends", "Tracxn", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — whether next filing cycle's margins actually expand off the newly deleveraged balance sheet, and true export volume by region — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "segmentName": "Band Saw & Circular Sawing Machines",
+  "market": {
+    "worldSizeUSD_B_range": "Global bandsaw machine market: estimates vary meaningfully by vendor — $2.36B (2024) to $3.39B by 2034; or $3.4B by 2033 (4.3%/yr, 2024-2033); or as high as $4.96B by 2034 (3.6%/yr) per a separate estimate — vendor estimates disagree by roughly 50%. India-specific market size was not found; India is repeatedly cited as an Asia-Pacific growth contributor alongside China and Japan rather than sized separately.",
+    "cagrPctRange": [3.6, 4.3],
+    "exportGeographies": ["25 countries (per one independent source, contradicting the company's own much larger self-claimed installation count — see company profile)"],
+    "globalCompetitors": ["KASTO Maschinenbau GmbH & Co. KG (Germany)", "Behringer Saws, Inc. (US arm of Behringer GmbH, Germany)", "EVERISING Machine Co. (Taiwan)"],
+    "domesticSlice": "Asia-Pacific leads market growth due to rapid industrialization, manufacturing sector expansion, and automotive/construction investment across China, India, Japan."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's Make in India initiative and infrastructure development are cited as demand drivers for advanced metal-cutting solutions",
+    "Growth is increasingly driven by automation in manufacturing and precision-cutting advancements rather than pure mechanical throughput — competition increasingly revolves around product differentiation, after-sales service, and digital integration rather than pure mechanical performance"
+  ],
+  "adoptionStructure": {
+    "note": "Metalworking/engineering buyers prioritize cutting precision, throughput speed, capacity range flexibility (a single supplier covering a wide job-size range reduces vendor complexity), after-sales service/spares availability, and increasingly digital/IoT integration for predictive maintenance and uptime guarantees."
+  },
+  "peers": [
+    { "name": "KASTO Maschinenbau GmbH & Co. KG (Germany)", "revenueEUR_M_2013": 101.6, "employees": "~700", "note": "dated 2013 revenue figure", "source": "directindustry.com" },
+    { "name": "Behringer Saws, Inc. (US arm of Behringer GmbH)", "revenueUSD_M": 6.8, "employees": 33, "note": "US subsidiary only", "source": "growjo.com" },
+    { "name": "EVERISING Machine Co. (Taiwan)", "note": "revenue/employee count not found", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["cutting precision", "throughput speed", "capacity range flexibility (single supplier for wide job-size range)", "after-sales service/spares availability", "digital/IoT integration for predictive maintenance"],
+    "strongestPredictor": "product differentiation and digital integration combined with after-sales service quality",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer band saw machines (manual/semi-automatic/automatic/NC/CNC) and circular saw machines", "offer saw blades/consumables and after-sales service contracts"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run precision machine-tool manufacturing (frame, drive, blade-guide systems)", "run in-house R&D for indigenous designs"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["source components (motors, control systems, blades)", "operate a domestic manufacturing base serving both India and export markets"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["sell direct and via distributors to engineering/metalworking/fabrication industries", "maintain a service and spares network"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win capital-equipment purchase orders from steel fabricators, engineering workshops, automotive component makers", "win orders via technology partnerships for capability transfer"] }
+  ],
+  "sources": [
+    "https://www.globenewswire.com/news-release/2024/08/19/2931987/0/en/Bandsaw-Machine-Market-is-Expected-to-Grow-Steadily-at-a-CAGR-of-3-6-Reach-US-4-96-Billion-by-2034-Fact-MR-Report.html",
+    "https://www.zionmarketresearch.com/report/bandsaw-machine-market-size",
+    "https://www.alliedmarketresearch.com/bandsaw-machines-market-A10037",
+    "https://growjo.com/company/Behringer_Saws"
+  ]
+}

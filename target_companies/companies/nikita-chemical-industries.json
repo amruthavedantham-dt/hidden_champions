@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "nikita-chemical-industries",
+    "series": "Hidden Champions of India",
+    "segmentRef": "active-pharmaceutical-ingredients",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Partnership firm, no CIN by design. **Possible facility-attribution collision on the moat claim** — see p1_engine and sources.md."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Nikita Chemical Industries: a Boisar chemical intermediates maker whose ANVISA claim may describe a different facility.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 33-year-old Tarapur MIDC partnership firm, third-party confirmed as a chemical intermediates supplier, with export activity that trade data shows is genuinely thin.", "tier": "company", "epistemic": "fact", "source": "Justdial; trademo.com", "fields": ["differentiation", "gap_currently_monetized"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1992", "tier": "company", "source": "IndiaMART", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹10-100 Cr (conflicting directory ranges)", "tier": "company", "source": "directory aggregation", "fields": ["financials.revenueCr"] },
+    { "label": "Employees", "value": "26-50", "tier": "company", "source": "IndiaMART", "fields": ["employees"] },
+    { "label": "Facility", "value": "2,600 m², Tarapur MIDC, Boisar, Palghar", "tier": "company", "source": "IndiaMART", "fields": ["moat"] },
+    { "label": "Recorded exports", "value": "2 shipments, top market Pakistan", "tier": "company", "source": "HVT row (trademo.com)", "fields": ["gap_currently_monetized"] },
+    { "label": "Ownership", "value": "Partnership firm — no CIN", "tier": "company", "source": "GST registration", "fields": ["ownershipType"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A checkable location, an unchecked certification claim",
+    "blocks": [
+      { "text": "Financial estimates conflict across directory sources — one places turnover at ₹51-100 Cr, another at ₹10-25 Cr — and no PAT, EBITDA margin or ROE was found anywhere, expected for a partnership firm with no MCA filing obligation.", "tier": "company", "epistemic": "fact", "source": "directory aggregation (unreconciled)", "fields": ["financials.revenueCr"] },
+      { "text": "It's third-party confirmed (a Justdial listing, not the company's own site) as a manufacturer, supplier and exporter of chemical intermediates serving pharmaceutical drug manufacturers, operating from a 2,600 m² cGMP-designed facility at Tarapur MIDC, Boisar, since 1992.", "tier": "company", "epistemic": "fact", "source": "HVT row (third-party); IndiaMART", "fields": ["differentiation"] },
+      { "text": "**A real attribution concern**: the HVT sheet's moat claim — a Brazil-ANVISA certified facility — is sourced to chemdmart.com, a listing this session's research flagged as potentially describing a different, similarly-named Nagpur-based entity rather than the Boisar/Tarapur facility the differentiation claim describes. Not resolved either way; presented as an open question rather than a confirmed fact.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed, needs_verify: yes) — cross-checked against this session's research", "fields": ["moat"] },
+      { "text": "It runs an R&D and pilot-plant process before transferring products to full manufacturing, and self-describes customers including Sun Pharmaceuticals, Cipla and Merck — claims not independently verified in this pass.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); IndiaMART", "fields": ["product_improvement"] },
+      { "text": "The HVT sheet's own gap research shows real, checkable trade data: only 2 recorded export shipments, with Pakistan as the top export market — a specific, small figure that puts the company's own broader 'global distributor network' claim in useful context.", "tier": "company", "epistemic": "fact", "source": "HVT row (trademo.com trade data)", "fields": ["gap_currently_monetized"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing**, structurally favoring companies with China+1 sourcing appeal.", "evidence": "Global API market: ~$232-360B by 2030 depending on source, 5.85-6.6%/yr; India API market: $13.60B (2024) to $21.99B by 2030, 8.30%/yr, backed by a ₹6,940 Cr PLI scheme.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research; Vantage Market Research", "fields": ["market.sizeRange"] },
+      { "point": "**Buyer qualification depth is what actually gates entry** — and it's exactly where this company's evidence is thinnest.", "evidence": "A 12-24+ month buyer qualification cycle typically precedes a new API sourcing relationship, hinging on DMF/CEP filing depth and regulatory-facility confirmation — neither was independently verified for Nikita Chemical Industries in this pass.", "tier": "segment", "epistemic": "fact", "source": "industry structure", "fields": ["customerValue"] },
+      { "point": "Larger listed peers in this same segment (from an earlier batch of this project) show **what real regulatory depth looks like.**", "evidence": "Neuland Laboratories posts 22% EBITDA margin and ~20% ROE at ₹1,477 Cr revenue on a genuinely verified regulatory footprint — a useful contrast to Nikita Chemical Industries' unverified self-claims.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A real, decades-old chemical intermediates facility with a certification claim that may describe a different location entirely, and trade data showing a much smaller export footprint than its own marketing suggests. Verification, not growth strategy, is the actual next step.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, Vantage Market Research (shared active-pharmaceutical-ingredients segment file from an earlier batch). Peer data: screener.in (Neuland Laboratories)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place named in the company's own gap research — contingent on the certification question being resolved.",
+    "items": [
+      { "lever": "velocity", "title": "Diversifying export markets beyond Pakistan", "body": "The HVT sheet's own gap research names this directly: recorded exports are limited to 2 shipments with Pakistan as the top market, well below what the company's stated manufacturing and export capabilities would suggest — but expanding into regulated markets depends on first confirming which certifications the Boisar facility actually holds.", "source": "HVT gap research (trademo.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is verification, not a market-expansion pilot.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Confirm the ANVISA certification's facility attribution directly", "body": "Before pursuing new regulated export markets, get a direct confirmation of whether the Brazil-ANVISA certification the HVT sheet cites actually belongs to the Boisar/Tarapur facility or to a different, similarly-named entity — this determines what can honestly be marketed to new buyers.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an API manufacturer in this segment — a directory-depth pass, not yet confirmed against Nikita Chemical Industries' own stated process, so marked generic throughout (segment file reused from an earlier batch).", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["identify off-patent/generic API opportunity", "develop synthesis route", "file DMF/CEP with target-market regulator", "market via regulatory-filing-backed product catalog"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["cGMP process development", "validate against multiple regulators (USFDA/EDQM/WHO-GMP/etc.)", "scale synthesis route", "maintain regulatory filing currency"], "stepsTier": "segment", "spottedAt": "validate against multiple regulators (USFDA/EDQM/WHO-GMP/etc.)", "spotted": { "text": "Spotted at \"validate against multiple regulators\": the ANVISA certification claim sits exactly here, and its facility attribution is unconfirmed → resolving the certification's facility attribution.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["plan production against multi-year offtake", "phased capex/reactor capacity expansion", "manufacture at cGMP-validated sites", "batch-test & release"], "stepsTier": "segment", "spottedAt": "manufacture at cGMP-validated sites", "spotted": { "text": "Company facts (2,600 m² Tarapur MIDC facility, cGMP-designed) confirm this step is real for Nikita Chemical Industries, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["support buyer qualification/audit process (12-24+ months)", "maintain consistent quality/documentation", "respond to regulatory inspection findings", "technical support for formulator's own filings"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["formulator qualifies API source", "multi-year supply agreement negotiated", "recurring purchase orders against contract", "renew/expand on China+1 or capacity-driven diversification"], "stepsTier": "segment", "spottedAt": "renew/expand on China+1 or capacity-driven diversification", "spotted": { "text": "Spotted at \"renew/expand\": only 2 recorded export shipments exist despite claimed global distribution → diversifying export markets beyond Pakistan.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/active-pharmaceutical-ingredients.json, shared with Supriya Lifescience and Biophore India from earlier batches) — no company-specific (A2/pursuit) operational intel was collected for Nikita Chemical Industries this pass, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A real, decades-old facility with a certification claim that may not be its own, and export activity trade data shows is genuinely small. **Confirm the certification before treating the export gap as an opportunity.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Nikita Chemical Industries or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No audited financials found (partnership firm). Company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed — the moat claim's facility attribution is flagged as unresolved, not confirmed) plus IndiaMART and Justdial; market data from Grand View Research and Vantage Market Research; peer figures from screener.in (Neuland Laboratories). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["IndiaMART", "Justdial", "trademo.com", "chemdmart.com (attribution unconfirmed)", "Grand View Research", "Vantage Market Research", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true certification status of the Boisar facility, and actual customer relationships beyond the self-claimed Sun Pharma/Cipla/Merck list — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

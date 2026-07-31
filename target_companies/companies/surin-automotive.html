@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Surin Automotive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Surin Automotive: an ICRA-rated, blue-chip-customer component maker whose own data sources can&#x27;t agree if it&#x27;s growing or shrinking.</h1>
+    <p class="subhead">3,500+ employees, 10-12 plants, and named customers from Caterpillar to Tata — anchored by a real independent credit rating, sitting on top of a three-way revenue conflict.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">2006 (this entity); company markets itself as part of a &#x27;50-year-old Surin Group&#x27;</p></div><div class="snap"><p class="snap-label">Revenue (conflicting)</p><p class="snap-value">₹984.6 Cr FY2023 (ICRA, +30.4% YoY) vs. ₹899 Cr FY2025 (Tracxn, -5% 1-yr CAGR, -2% EBITDA CAGR) vs. &#x27;over ₹500 Cr&#x27; FY2024 (Tofler)</p></div><div class="snap"><p class="snap-label">Credit rating</p><p class="snap-value">ICRA Long-Term &#x27;A&#x27; (Stable), Short-Term &#x27;A1&#x27;</p></div><div class="snap"><p class="snap-label">Scale</p><p class="snap-value">3,500+ employees; 10-12 plants across 7-8 Indian cities; 5 business divisions</p></div><div class="snap"><p class="snap-label">Certifications</p><p class="snap-value">IATF 16949 (5 plants), ISO 9001/14001/45001, ISO 3834-2:2021 (welding quality, 6 plants)</p></div><div class="snap"><p class="snap-label">Named customers</p><p class="snap-value">Kobelco, Eicher, Ashok Leyland, Komatsu, Volvo, Hyundai, Tata, Caterpillar, JCB, Sany, TAFE, VECV</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A genuinely large, credentialed player — with its own numbers in dispute</h2>
+      <p class="prose">This is a real, material three-way revenue conflict: ICRA&#x27;s own rating rationale states ₹984.6 Cr for FY2023 (+30.4% YoY); Tracxn shows ₹899 Cr for FY2025 with a -5% 1-year revenue CAGR and -2% EBITDA CAGR (i.e., a recent decline); Tofler separately states &#x27;over ₹500 Cr&#x27; for FY2024, a materially lower and less precise figure. All three are reported here rather than resolved by choosing one — what&#x27;s notable is that even the lowest and highest figures both place Surin Automotive among the larger companies profiled in this batch.</p><p class="prose">It manufactures automotive parts and assemblies — fuel tanks, hydraulic tanks, booms, arms, frames, engine covers, truck cabins, cowls, FES, chassis components, truck decks, tippers, seating systems, and interiors — spanning earthmoving, construction, material handling, commercial vehicles, tractors/agri, concrete equipment, and mining industries, a genuinely wide diversification across end markets.</p><p class="prose">It holds a real, independent ICRA credit rating — Long-Term &#x27;A&#x27; (Stable), Short-Term &#x27;A1&#x27; — a meaningfully harder-to-fake signal of financial health than self-reported figures, especially given how much the revenue sources above disagree. It also holds ISO 9001:2015, IATF 16949:2016, ISO 14001:2015, ISO 45001:2018, and ISO 3834-2:2021 certifications, with 5 plants IATF-certified and 6 plants welding-quality certified — the HVT sheet itself flags this `moat` claim `needs_verify: yes` despite the certification pages being on the company&#x27;s own site.</p><p class="prose">It operates 3,500+ employees across 10-12 plants in 7-8 Indian cities, organized into 5 business divisions, and supplies a genuinely large named blue-chip customer base — Kobelco, Eicher, Ashok Leyland, Komatsu, Volvo, Hyundai, Tata, Caterpillar, JCB, Sany, TAFE, and VECV — predominantly in fuel and hydraulic tanks for construction equipment manufacturers, with exports to Europe and America (percentage not found).</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">A <b>large, infrastructure-linked India demand base</b>, with a wide, multi-division customer spread reducing single-cycle risk.</p><p class="ev">India auto components market: $58.21B (2025) to $82.67B by 2034; India&#x27;s ~$1.4T National Infrastructure Pipeline is the primary structural demand driver for construction-equipment-linked component demand.</p></li><li class="insight"><p class="point"><b>No true scale-comparable peer exists</b> — the closest large listed Indian peer operates at ~18x the scale.</p><p class="ev">Bharat Forge posts ₹16,500 Cr FY25 revenue — roughly 18x even the highest of Surin&#x27;s own conflicting revenue figures (₹984.6 Cr) — useful as a directional benchmark, not a direct comparable.</p></li><li class="insight"><p class="point"><b>Independent credit ratings matter more in this segment than in most others in this batch</b> — precisely because self-reported revenue is so inconsistent here.</p><p class="ev">The ICRA &#x27;A&#x27; (Stable) Long-Term rating is a real, third-party-validated financial-health signal in a segment where Surin&#x27;s own revenue figures diverge by nearly 2x across data aggregators.</p></li>
+      </ul>
+      <p class="reflect">The scale and blue-chip customer roster here are the most substantial of any company in this batch — and the ICRA rating gives real independent grounding to that scale story, even as the revenue figures themselves genuinely disagree across sources. The honest read: this is very likely a large, real, well-diversified supplier, but its precise current growth trajectory (Tracxn&#x27;s -5% CAGR vs. ICRA&#x27;s earlier +30.4% growth) is a live open question, not a settled fact.</p>
+      <p class="src">Market data: preqin.com, aggregated auto-components/construction-equipment research (shared automotive-construction-equipment-components segment file, new this batch). Peer data: Bharat Forge (directional only, not a close comparable).</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">One clear place worth watching, named directly in the company&#x27;s own gap research.</p>
+      <div class="opp"><p class="tag">Market-Access</p><h4>Expanding beyond construction-equipment-dominant exports into Southeast Asia and the Middle East</h4><p>The HVT sheet&#x27;s own gap research names international market expansion — particularly Southeast Asia and the Middle East — as untapped, given current export activity is predominantly fuel/hydraulic-tank supply to construction equipment manufacturers. This is a credible lever for a company with the plant footprint and certification stack to support new-geography qualification, though it should follow, not precede, resolving the current revenue-trajectory conflict.</p><p class="oppsrc">HVT gap research (preqin.com company profile).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions — and the honest first step here is resolving the three-way revenue conflict before anything else.</p>
+        <div class="hvt"><p class="tag">Trust</p><h5>Reconcile ICRA&#x27;s FY2023 growth figure against Tracxn&#x27;s FY2025 decline figure directly</h5><p>Since ICRA&#x27;s own rating rationale shows +30.4% growth (FY2023) while Tracxn shows a -5% revenue CAGR and -2% EBITDA CAGR into FY2025, confirming the actual current trajectory directly with the company (or via a more recent ICRA rating update, if one exists) should precede any expansion or partnership conversation.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for an automotive/construction-equipment component manufacturer in this segment — a directory-depth pass, not yet confirmed against Surin Automotive&#x27;s own stated process beyond what the HVT row documents, so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">offer fuel tanks, hydraulic tanks, booms, arms, frames, engine covers, and truck cabins/cowls → offer FES, chassis components, truck decks, tippers, seating systems, and interiors → serve earthmoving, construction, material handling, commercial vehicle, tractor/agri, concrete equipment, and mining industries<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;serve earthmoving, construction, material handling, commercial vehicle, tractor/agri, concrete equipment, and mining industries&quot;</span> Company facts (5 business divisions spanning these exact end markets) confirm this step is real for Surin Automotive — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">maintain IATF 16949 plus ISO 9001/14001/45001/3834-2 certification across multiple plants → run R&amp;D toward new component-line launches, supported by external funding → maintain an independent credit rating (ICRA) as a financial-health signal<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;maintain IATF 16949 plus ISO 9001/14001/45001/3834-2 certification across multiple plants&quot;</span> Company facts (5 plants IATF-16949 certified, 6 plants ISO 3834-2 certified, full ISO stack) confirm this step is real for Surin Automotive — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate 10-12 plants across 7-8 Indian cities → organize production across 5 business divisions by end-market<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;operate 10-12 plants across 7-8 Indian cities&quot;</span> Company facts (10-12 plants, 3,500+ employees) confirm this step is real for Surin Automotive — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">supply a large named blue-chip customer base spanning earthmoving, commercial-vehicle, and agri OEMs → maintain multi-decade group heritage predating the current legal entity<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;supply a large named blue-chip customer base spanning earthmoving, commercial-vehicle, and agri OEMs&quot;</span> Company facts (Kobelco, Eicher, Ashok Leyland, Komatsu, Volvo, Hyundai, Tata, Caterpillar, JCB, Sany, TAFE, VECV) confirm this step is real for Surin Automotive — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">fulfil OEM supply contracts predominantly in fuel/hydraulic tanks to construction equipment manufacturers → pursue international market expansion beyond current export base<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;pursue international market expansion beyond current export base&quot;</span> Spotted at &#x27;pursue international market expansion&#x27;: Southeast Asia and Middle East are named as untapped in HVT&#x27;s own gap research — see p3_opportunities.</p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/automotive-construction-equipment-components.json) — no company-specific (A2/pursuit) operational intel was collected for Surin Automotive this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>The largest, most diversified, and most independently-credentialed company in this batch by far — and one whose own revenue figures disagree by nearly 2x across sources. <b>Reconciling the ICRA growth story against Tracxn&#x27;s decline figure is the single most important open question.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Surin Automotive or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. Financials from ICRA rating rationale, Tracxn, and Tofler (materially conflicting, all reported); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus surinauto.com and preqin.com; market data from preqin.com and aggregated auto-components/construction-equipment research. Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

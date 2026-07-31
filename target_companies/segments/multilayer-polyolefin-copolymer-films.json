@@ -1,0 +1,42 @@
+{
+  "segmentName": "Multilayer Polyolefin/Co-Polymer Hygiene Packaging Films",
+  "market": {
+    "worldSizeUSD_B_range": "India multilayer flexible packaging market: 6.8%/yr CAGR; polyethylene-based films projected ~42% share of material type in 2026. India baby diaper market: $1.83B (2025) to $3.18B by 2034 (6.37%/yr, 2026-2034); baby diapers dominate at 88.09% share (2025). India overall plastic packaging market: $22.44B (2025) to $26.89B by 2031 (3.06%/yr) — much slower than the hygiene-films sub-segment, indicating hygiene packaging is an above-market-growth niche.",
+    "cagrPctRange": [3.06, 6.8],
+    "exportGeographies": ["UAE", "Oman (SPF exports, via sister entity Ecoplast)"],
+    "globalCompetitors": [],
+    "domesticSlice": "UFlex is India's largest multinational flexible packaging company, offering wicketed bags/handle films for baby and hygiene markets with strong export presence (North America, Europe, Africa, SE Asia, Middle East). Ecoplast Limited (listed, now merging with Kunal Plastics) posted FY26 revenue ₹221 Cr, PAT ₹12 Cr, ROE 11%, ROCE 14.4%."
+  },
+  "subSegments": ["baby diaper films", "adult incontinence product films", "sanitary napkin/bathroom tissue films", "surface protection films (SPF)"],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India mandated a minimum 30% recycled content in PET bottles from April 2025, with a 60% target by 2029 — a regulatory tailwind directly relevant to PIR/PCR (Post-Industrial/Post-Consumer Recycled) plastic incorporation",
+    "Hygiene packaging films are a distinct high-barrier, high-spec sub-category within flexible packaging, requiring multilayer co-extrusion for moisture/microbial barrier performance"
+  ],
+  "adoptionStructure": {
+    "note": "Hygiene/FMCG brand buyers prioritize barrier performance (moisture/microbial), softness/skin-safety compliance for baby/medical use, consistent multilayer coextrusion quality at high production speeds, and increasingly recycled-content credentials (PIR/PCR) to meet brand sustainability commitments and regulatory mandates."
+  },
+  "peers": [
+    { "name": "UFlex", "note": "India's largest multinational flexible packaging company; offers wicketed bags/handle films for baby and hygiene markets; strong export presence; revenue/margin not independently found this pass", "source": "aggregated search summary" },
+    { "name": "Ecoplast Limited (listed)", "revenueCr_FY26": 221, "patCr_FY26": 12, "roePct": 11, "rocePct": 14.4, "note": "almost debt-free; announced ₹12.75 Cr capacity expansion (1,800 MT extrusion + 1,680 MT coating plants)", "source": "Screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["moisture/microbial barrier performance", "softness/skin-safety compliance for baby/medical use", "consistent multilayer coextrusion quality at high speed", "recycled-content (PIR/PCR) credentials"],
+    "strongestPredictor": "barrier performance combined with recycled-content compliance credentials",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer multilayer polyolefin/co-polymer hygiene packaging films for baby diapers, sanitary products, food, medical supplies", "offer surface protection films (SPF) and lamination films"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run co-extrusion film manufacturing (multilayer polyethylene/co-polymer lines)", "incorporate PIR/PCR recycled content into film formulations"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["procure polyolefin resin feedstock (virgin + recycled)", "operate multi-plant capacity expanding with new extrusion/coating lines"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain direct supply relationships with FMCG/hygiene product manufacturers", "pursue export sales via AEO-certified export compliance"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil purchase orders from diaper/sanitary-product converters and brand owners under multi-year supply agreements", "fulfil export orders to Gulf/Middle East markets"] }
+  ],
+  "sources": [
+    "https://www.futuremarketinsights.com/reports/multilayer-flexible-packaging-market",
+    "https://www.expertmarketresearch.com/reports/india-diapers-market",
+    "https://www.mordorintelligence.com/industry-reports/india-plastic-packaging-market",
+    "https://www.screener.in/company/526703/consolidated/",
+    "https://www.ecoplastindia.com/pioneers-in-hygiene-packaging-a-spotlight-on-kunal-plastics/"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "kunal-plastics",
+    "series": "Hidden Champions of India",
+    "segmentRef": "multilayer-polyolefin-copolymer-films",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U25209GJ1983PTC156834, incorporated 26 Dec 1983. MAJOR STATUS UPDATE: Kunal Plastics is being absorbed into listed Ecoplast Limited (CIN L25200GJ1981PLC004375) via an NCLT-approved merger — joint scheme application filed July 2025, shareholder/creditor meetings held Nov 2025, swap ratio 52 Ecoplast shares (₹10 FV) per 1 Kunal Plastics share (₹100 FV), with Ecoplast allotting 13,00,000 shares 15 June 2026 to complete the amalgamation. This is the single most important recent development for this company and changes how it should be read going forward — as a division of a listed entity, not a standalone private company."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Kunal Plastics: a 42-year hygiene-packaging specialist, absorbed into a listed company mid-2026.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "An NCLT-approved merger into Ecoplast Limited converts this small, thin-margin private manufacturer into a division of a public company with capital-market access — completed just weeks before this profile.", "tier": "company", "epistemic": "fact", "source": "stockinsights.ai; MarketScreener India", "fields": ["ownershipType", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1983 (CIN incorporation, 42.6 years)", "tier": "company", "source": "Tofler", "fields": ["foundedYear"] },
+    { "label": "Merger status (major)", "value": "NCLT Ahmedabad-approved amalgamation into listed Ecoplast Limited; shares allotted 15 June 2026, swap ratio 52:1", "tier": "company", "source": "stockinsights.ai; NCLT filings", "fields": ["ownershipType"] },
+    { "label": "Standalone revenue (pre-merger)", "value": "₹75-100 Cr band FY25, +10.75% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Standalone returns (pre-merger)", "value": "Net profit +50.9% YoY, ROE 3.98%, Debt-to-Equity -0.12 (borrowings -100%, fully repaid)", "tier": "company", "source": "Tofler", "fields": ["financials.roePct"] },
+    { "label": "Combined entity financials (Ecoplast, FY26)", "value": "₹221 Cr revenue, ₹12 Cr PAT, 11% ROE, 14.4% ROCE, almost debt-free", "tier": "company", "source": "Screener.in", "fields": ["financials.revenueCr"] },
+    { "label": "Business-line note", "value": "Confirmed as hygiene packaging (baby care, sanitary, food, medical), not the 'plastic planters/pots' description on Tofler's auto-generated NIC classification — a mis-mapped industry code, not a real business-line discrepancy", "tier": "company", "source": "ecoplastindia.com", "fields": ["differentiation"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A real, if thin-margin, business — about to change corporate form entirely",
+    "blocks": [
+      { "text": "As a standalone entity, Kunal Plastics showed revenue in the ₹75-100 Cr band for FY25 (+10.75% YoY), with net profit growing sharply (+50.9% YoY) though ROE remained thin at 3.98%. It fully repaid its borrowings (-100% YoY), moving to a net-cash position — a real, if modest, financial improvement pre-merger. Note that Tofler's auto-generated business description for this CIN describes 'planters, square plastic pots, nursery planters, and hanging baskets' — this is almost certainly a mis-mapped generic NIC industry code, not a real reflection of the business, which the company's own site and this session's research confirm is hygiene packaging for baby care, sanitary, food, and medical supplies.", "tier": "company", "epistemic": "fact", "source": "Tofler; ecoplastindia.com", "fields": ["financials.revenueCr", "financials.roePct"] },
+      { "text": "It specializes in hygiene packaging solutions for baby care, sanitary, food, and medical supplies, and is actively exploring incorporation of Post-Industrial Recycled (PIR) and Post-Consumer Recycled (PCR) plastics into its hygiene packaging — a real, regulation-aligned direction given India's April 2025 mandate for minimum 30% recycled content in PET bottles (targeting 60% by 2029).", "tier": "company", "epistemic": "fact", "source": "ecoplastindia.com", "fields": ["differentiation", "product_improvement"] },
+      { "text": "**This is the central and most consequential finding of this profile**: Kunal Plastics is being formally amalgamated into listed Ecoplast Limited. NCLT Ahmedabad approved the merger following a joint scheme application filed by both companies in July 2025 and shareholder/creditor meetings in November 2025, at a swap ratio of 52 Ecoplast shares (₹10 face value) for every 1 Kunal Plastics share (₹100 face value). Ecoplast completed the allotment of 13,00,000 new shares on 15 June 2026, finalizing the amalgamation — meaning Kunal Plastics, as a standalone private company, effectively ceases to exist as a separate entity going forward. This explains why the company's content is hosted directly on Ecoplast's own website (ecoplastindia.com).", "tier": "company", "epistemic": "fact", "source": "stockinsights.ai; MarketScreener India; NCLT filings", "fields": ["ownershipType", "recentMoves"] },
+      { "text": "The combined/parent entity (Ecoplast Limited, listed) posted FY26 revenue of ₹221 Cr with PAT of ₹12 Cr, ROE 11%, and ROCE 14.4% — materially healthier returns than Kunal Plastics showed standalone, and the combined entity is now pursuing a ₹12.75 Cr capacity expansion (adding 1,800 MT extrusion and 1,680 MT coating capacity by end-2026), with current capacity already running at 100% utilization. Ecoplast is also India's first Surface Protection Film (SPF) manufacturer with AEO certification, though this certification's applicability to Kunal Plastics' own hygiene-packaging line specifically was not confirmed.", "tier": "company", "epistemic": "fact", "source": "Screener.in; scanx.trade; ecoplastindia.com AEO announcement", "fields": ["financials.revenueCr"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A **genuinely above-market-growth hygiene-packaging niche**, sitting inside a slower-growing broader plastic packaging market.", "evidence": "India's overall plastic packaging market grows at 3.06%/yr, while the India baby diaper market (a core hygiene-packaging end use) grows at 6.37%/yr (2026-2034) — hygiene packaging is a genuine above-market-growth sub-segment.", "tier": "segment", "epistemic": "fact", "source": "Mordor Intelligence; Expert Market Research", "fields": ["market.sizeRange"] },
+      { "point": "**UFlex is the dominant named India peer**, at a scale far beyond what Kunal Plastics/Ecoplast combined represent.", "evidence": "UFlex is described as India's largest multinational flexible packaging company, with strong export presence across North America, Europe, Africa, SE Asia, and the Middle East — no revenue figure was independently found this pass, but its scale is understood to be materially larger.", "tier": "segment", "epistemic": "fact", "source": "aggregated search summary", "fields": ["peers"] },
+      { "point": "**The merger itself is a real structural upgrade** — moving from a private, thin-ROE entity into a listed company with public capital-market access.", "evidence": "Ecoplast's post-merger ₹12.75 Cr capacity expansion plan, funded as a listed entity, represents a meaningfully different growth-funding capability than Kunal Plastics had as a standalone private company with only 3.98% ROE.", "tier": "segment", "epistemic": "fact", "source": "scanx.trade", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "The honest story here isn't really about Kunal Plastics as a standalone company anymore — it's about a 42-year hygiene-packaging specialist being absorbed into a listed entity right as this profile was researched, converting a thin-margin private business into a division with real public capital-market access. Whatever growth trajectory follows should now be tracked at the Ecoplast level, not as Kunal Plastics standalone.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Future Market Insights, Expert Market Research, Mordor Intelligence (shared multilayer-polyolefin-copolymer-films segment file, new this batch). Peer data: UFlex, Ecoplast Limited (now the parent)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "No gap research was captured in the HVT row for this company — the merger itself is the dominant recent development.",
+    "items": [
+      { "lever": "capability-build", "title": "Scaling PIR/PCR recycled-content incorporation with Ecoplast's post-merger capacity and capital access", "body": "The exploration of recycled-content packaging, combined with India's regulatory mandate trajectory (30% recycled PET content from April 2025, 60% by 2029) and Ecoplast's newly-funded capacity expansion, is a credible near-term lever now that the merger provides public capital-market access this standalone business didn't have.", "source": "Independent research this session (ecoplastindia.com; regulatory mandate context).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["product_improvement"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is re-profiling this business at the Ecoplast (post-merger) level going forward.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Track this business going forward as a division of Ecoplast Limited, not as standalone Kunal Plastics", "body": "Since the merger is now complete (shares allotted 15 June 2026), any future financial or strategic tracking of this hygiene-packaging business should reference Ecoplast Limited's consolidated results and disclosures, not Kunal Plastics' now-superseded standalone filings.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a multilayer hygiene-packaging film manufacturer in this segment — a directory-depth pass, not yet confirmed against Kunal Plastics' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer multilayer polyolefin/co-polymer hygiene packaging films for baby diapers, sanitary products, food, medical supplies", "offer surface protection films (SPF) and lamination films"], "stepsTier": "segment", "spottedAt": "offer multilayer polyolefin/co-polymer hygiene packaging films for baby diapers, sanitary products, food, medical supplies", "spotted": { "text": "Company facts (specialized in hygiene packaging for baby care, sanitary, food, medical supplies) confirm this step is real for Kunal Plastics — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run co-extrusion film manufacturing (multilayer polyethylene/co-polymer lines)", "incorporate PIR/PCR recycled content into film formulations"], "stepsTier": "segment", "spottedAt": "incorporate PIR/PCR recycled content into film formulations", "spotted": { "text": "Company facts (actively exploring PIR/PCR incorporation into hygiene packaging) confirm this step is real for Kunal Plastics — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["procure polyolefin resin feedstock (virgin + recycled)", "operate multi-plant capacity, now expanding with new Ecoplast extrusion/coating lines post-merger"], "stepsTier": "segment", "spottedAt": "operate multi-plant capacity, now expanding with new Ecoplast extrusion/coating lines post-merger", "spotted": { "text": "Company facts (Ecoplast's ₹12.75 Cr capacity expansion, 1,800 MT extrusion + 1,680 MT coating) confirm this step is real for the merged entity — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain direct supply relationships with FMCG/hygiene product manufacturers", "pursue export sales via AEO-certified export compliance"], "stepsTier": "segment", "spottedAt": "pursue export sales via AEO-certified export compliance", "spotted": { "text": "Company facts (Ecoplast is India's first AEO-certified SPF manufacturer, applicability to Kunal's own line unconfirmed) noted here — see p1_engine.", "tier": "company", "epistemic": "interpretation" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil purchase orders from diaper/sanitary-product converters and brand owners under multi-year supply agreements", "fulfil export orders to Gulf/Middle East markets"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/multilayer-polyolefin-copolymer-films.json) — no company-specific (A2/pursuit) operational intel was collected for Kunal Plastics this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A 42-year hygiene-packaging specialist that, as this profile was being researched, completed its absorption into listed Ecoplast Limited. **Going forward, this business should be tracked as an Ecoplast division, not as a standalone company — the merger itself is the single most important fact here.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Kunal Plastics or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler (Kunal Plastics standalone, pre-merger) and Screener.in (Ecoplast Limited, the post-merger listed parent); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus ecoplastindia.com, stockinsights.ai, and MarketScreener India NCLT/merger documentation; market data from Future Market Insights, Expert Market Research, Mordor Intelligence. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Screener.in", "ecoplastindia.com", "stockinsights.ai", "MarketScreener India", "scanx.trade", "Future Market Insights", "Expert Market Research", "Mordor Intelligence", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — post-merger integration plans for the Kunal Plastics hygiene-packaging line within Ecoplast's broader portfolio — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "segmentName": "Copper Winding Wires (Submersible & Enamelled)",
+  "market": {
+    "worldSizeUSD_B_range": "India winding wire market: ~9%/yr CAGR (2026-2032) per 6Wresearch; no corroborated absolute USD/₹ market-size figure was found across vendors.",
+    "cagrPctRange": [9, 9],
+    "exportGeographies": [],
+    "globalCompetitors": [],
+    "domesticSlice": "Salzer Electronics Ltd (listed): Wires & Cables is its 2nd-largest segment at ~39.5% of FY24 revenue mix (enamelled wires, tinned copper wire, flexible bus bars), with Q3 FY26 total revenue ₹424 Cr (+24% YoY). Copper/silver input cost inflation is a recurring structural margin pressure across the segment."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["control-instrument-distribution-transformers"],
+  "structureFacts": [
+    "Demand drivers: power transmission, consumer electronics, EV/automotive electrification, renewable energy, rural electrification (motor/transformer coil demand)",
+    "Copper price volatility (LME-linked) is a structural margin risk across the segment",
+    "Test standard IS 8783:1995 applies to submersible winding wire"
+  ],
+  "adoptionStructure": {
+    "note": "Motor/pump OEM approval processes, insulation-grade compliance (IS/IEC/NEMA standards), price tightly linked to LME copper pass-through, quality consistency (avoiding winding failures in submersible motors), and increasingly performance differentiation (motor efficiency gains) drive purchasing."
+  },
+  "peers": [
+    { "name": "Salzer Electronics Ltd (listed)", "revenueCr_Q3FY26": 424, "revenueGrowthPct": 24, "revenueCr_9MFY26": 1284, "note": "Wires & Cables segment ~39.5% of FY24 revenue mix; margin pressure from copper/silver input cost inflation (~200bps impact)", "source": "HDFC Securities note" },
+    { "name": "Bee Kay Wires Pvt Ltd, Metalx Winding Wire, Vidya Wires", "note": "named competitors; no revenue/margin data found", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["motor/pump OEM approval processes", "insulation-grade compliance", "LME copper price pass-through competitiveness", "winding-failure-avoidance quality consistency", "motor-efficiency performance differentiation"],
+    "strongestPredictor": "quality consistency (avoiding winding failures) combined with LME-linked price competitiveness",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer enamelled/submersible copper winding wire in various gauges", "offer performance-differentiated variants (e.g. motor-efficiency-improving insulation formulations)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run product engineering (insulation formulation, gauge/spec customization)", "run manufacturing (wire drawing, annealing, enamelling/insulation coating)", "run in-line QC testing"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate manufacturing units sized in MT/year capacity", "expand capacity incrementally tied to demand growth"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-standing B2B industrial supply relationships with motor/pump/transformer OEMs", "pursue trade-show-driven international market outreach"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil repeat orders from motor manufacturers, pump OEMs, transformer makers", "procure copper cathode/rod as the dominant cost driver, exposed to LME pricing"] }
+  ],
+  "sources": [
+    "https://www.6wresearch.com/market-takeaways-view/winding-wire-manufacturers-in-india",
+    "https://www.hdfcsec.com/hsl.research.pdf/Salzer%20Electronics%20Ltd%20-%20Stock%20Note.pdf",
+    "https://www.triveniconductors.com/manufacture-wire/"
+  ]
+}

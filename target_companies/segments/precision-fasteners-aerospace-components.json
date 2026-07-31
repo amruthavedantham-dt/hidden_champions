@@ -1,0 +1,42 @@
+{
+  "segmentName": "High-Tensile Fasteners & Precision Machined Components (Automotive + Emerging Aerospace/Defence)",
+  "market": {
+    "worldSizeUSD_B_range": "India aerospace parts manufacturing market: $21.48B by 2030 (6.8%/yr, 2024-2030). Global aerospace fasteners market: 7.30%/yr (2026-2035). Aerospace & Defense C-Class Parts market (fasteners hold largest share): $6.7B (2023), 4.9%/yr forecast. India Aerospace & Defence market overall: $27.1B (2024) to $54.4B by 2033 (6.99%/yr). India's defense production reached a record ₹1.27 lakh crore in FY2023-24 under the 'Make in India' push.",
+    "cagrPctRange": [4.9, 7.3],
+    "exportGeographies": ["Spain", "Sweden", "Nigeria (top export markets per trade-data aggregators, cumulative not annualized)"],
+    "globalCompetitors": [],
+    "domesticSlice": "MTAR Technologies (listed) and Azad Engineering (listed) are the closer, more established Indian aerospace/defence-precision peers — both considerably larger and more capital-intensive than a fastener-focused entrant pursuing this space. India aerospace titanium machining sub-niche: $104.59M (2025) to $324.42M by 2033 (15.2%/yr)."
+  },
+  "subSegments": ["automotive high-tensile fasteners (established revenue line)", "aerospace/defence precision components (emerging, certification-dependent)"],
+  "adjacentMarkets": ["precision-machined-components-assemblies", "precision-sheet-metal-components"],
+  "structureFacts": [
+    "India's defense self-reliance push ('Atmanirbhar Bharat' in defence) is the dominant structural/regulatory driver, reducing reliance on foreign suppliers for critical components",
+    "AS9100D (aerospace-specific ISO 9001 derivative) and NADCAP are the key qualifying certifications for entering global aerospace/defence supply chains — high capital intensity and long OEM qualification cycles are structural barriers to entry favoring incumbents",
+    "A company currently earning most revenue from automotive fasteners entering aerospace/defence via a strategic partnership (rather than in-house certification alone) is a real, observed entry pattern in this segment"
+  ],
+  "adoptionStructure": {
+    "note": "Certification (AS9100D/NADCAP as table-stakes), metallurgical capability for exotic alloys (titanium, Inconel) in high-stress/high-temperature applications, tight tolerance/precision machining capability, traceability/quality documentation, and offset/localization requirements tied to India's defence procurement policy drive vendor qualification."
+  },
+  "peers": [
+    { "name": "MTAR Technologies Ltd (listed)", "revenueCr_FY26": 876.2, "revenueGrowthPct": 29.6, "patCr_FY26": 94.0, "patGrowthPct": 76.2, "rocePct": 17.2, "roePct": 12.1, "note": "builds sub-assemblies using exotic metallurgy (Inconel, Titanium, Hastelloy) for nuclear, cryogenic/space, defence", "source": "MarketsMojo; InvestyWise" },
+    { "name": "Azad Engineering Ltd (listed)", "revenueCr_FY26": 603, "revenueGrowthPct": 32, "patCr_FY26": 134, "patGrowthPct": 54.4, "ebitdaMarginPct": 36.9, "roePct": 8.89, "note": "manufactures precision-forged/machined airfoils, blades, vanes, blisks, impellers for jet engines and gas turbines", "source": "MarketsMojo; Tradebrains" }
+  ],
+  "customerValue": {
+    "drivers": ["certification (AS9100D/NADCAP)", "exotic-alloy metallurgical capability", "tight tolerance/precision machining", "traceability/quality documentation", "offset/localization requirements for defence procurement"],
+    "strongestPredictor": "certification combined with exotic-alloy metallurgical capability",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer high-tensile fasteners at scale (established automotive revenue line)", "offer precision machined components/assemblies, aspirationally extending to aerospace & defence"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run precision tooling design and metallurgical process engineering", "pursue AS9100D/NADCAP certification and strategic partnerships to enter aerospace/defence"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate large-scale fastener manufacturing capacity (MTPA-rated)", "operate a development centre for engineering/design support"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain established automotive/industrial OEM relationships (2W/CV/farm-equipment)", "build aerospace/defence relationships via strategic technology/engineering partnerships"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil established automotive/industrial supply contracts", "pursue emerging aerospace/defence order flow via certification and partnership-driven market entry"] }
+  ],
+  "sources": [
+    "https://www.amararaja.com/mangal-industries/",
+    "https://www.marketsmojo.com/news/result-analysis/mtar-technologies-q4-fy26-triple-digit-profit-growth-masks-valuation-concerns-3988278",
+    "https://www.marketsmojo.com/news/result-analysis/azad-engineering-q4-fy26-strong-growth-momentum-continues-despite-premium-valuation-concerns-3994273",
+    "https://www.aviation-defence-universe.com/amara-raja-group-company-mangal-industries-and-axiscades-a-technology-solutions-company-sign-mou-for-strategic-partnership/"
+  ]
+}

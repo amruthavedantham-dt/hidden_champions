@@ -31,60 +31,60 @@ row,company_name,segment_ref,status,slug,note
 30,PTC Industries Limited,aerospace-industrial-titanium-castings,done,ptc-industries,batch 2
 31,GLINT COSMETICS PVT. LTD.,private-label-cosmetics-manufacturing,done,glint-cosmetics,batch 2
 32,SHR Lifestyles Pvt Ltd,women-ethnic-wear,done,shr-lifestyles,batch 2
-33,Goodwear Fashions Pvt. Ltd.,woven-knitted-non-woven-interlinings,pending,,
-34,Nexco Pharma,porcine-liver-extract-formulations,pending,,
-35,CHANDRA BHAGAT PHARMA PVT LTD,life-saving-pharmaceutical-formulations,pending,,
-36,HINDUSTAN PHARMACEUTICALS,herbal-extracts-medicines,pending,,
-37,LYKA BDR INTERNATIONAL LTD,life-saving-pharmaceutical-formulations,pending,,
-38,NGL FINE CHEM LTD,animal-human-apis-specialty-chemicals,pending,,
-39,OM BIOTEC,generic-pharmaceutical-formulations,pending,,
+33,Goodwear Fashions Pvt. Ltd.,woven-knitted-non-woven-interlinings,done,goodwear-fashions,batch 3
+34,Nexco Pharma,porcine-liver-extract-formulations,deferred,,"identity issue — research indicates this is a US-registered (Florida) company with an India office, not an Indian manufacturer; Indian CIN/MCA registration not found"
+35,CHANDRA BHAGAT PHARMA PVT LTD,life-saving-pharmaceutical-formulations,done,chandra-bhagat-pharma,batch 3
+36,HINDUSTAN PHARMACEUTICALS,herbal-extracts-medicines,done,hindustan-pharmaceuticals,batch 3
+37,LYKA BDR INTERNATIONAL LTD,life-saving-pharmaceutical-formulations,done,lyka-bdr-international,batch 3
+38,NGL FINE CHEM LTD,animal-human-apis-specialty-chemicals,done,ngl-fine-chem,batch 3
+39,OM BIOTEC,generic-pharmaceutical-formulations,done,om-biotec,batch 3
 40,THEMIS MEDICARE LTD,injectable-formulations-apis,duplicate,themis-medicare,"exact duplicate of row 25 (same CIN L24110GJ1969PLC001590), already profiled in batch 2"
-41,SANJAY TECHNO PRODUCTS PRIVATE LIMITED,automotive-injection-molded-plastic-components,pending,,
-42,DANISH POWER LIMITED,power-distribution-transformers-substations,pending,,
-43,TARANG ENGINEERING PVT LTD,transformer-radiators,pending,,
-44,R.V. INDUSTRIALS,high-precision-pump-shafts-flanges,pending,,
-45,MAGADH PRECISION EQUIPMENT LIMITED,cold-rolling-mill-equipment,pending,,
-46,MENON BEARINGS LTD,engine-bearings-bushes-thrust-washers,pending,,
-47,UNITED OVERSEAS BOLTS AND NUTS PRIVATE LIMITED,high-tensile-industrial-fasteners,pending,,
-48,RECAERO INDIA PVT. LTD.,aerospace-precision-machined-components,pending,,
-49,Vinod Medical Systems Pvt Ltd,hospital-furniture-xray-films,pending,,
-50,Welspun Living Limited,towels-bedding-rugs,pending,,
-51,GRACE BIO CARE PRIVATE LIMITED,bio-pesticides-plant-growth-regulators,pending,,
-52,NIKITA CHEMICAL INDUSTRIES,active-pharmaceutical-ingredients,pending,,
-53,RATNAKAR INDIA LTD,crop-protection-agrochemicals,pending,,
-54,CHENNAI METCO,metallography-petrography-equipment-consumables,pending,,
-55,HINDUSTAN HYDRAULICS PVT. LTD,press-brake-cnc-fiber-laser-machines,pending,,
-56,IMPERIAL PRODUCTS OF INDIA,coil-processing-forming-lines,pending,,
-57,INDOTECH INDUSTRIES (I) PVT. LTD,band-saw-machines,pending,,
-58,KAUSHICO MACHINE TOOLS PVT. LTD,mechanical-power-presses,pending,,
-59,MIVEN MAYFRAN CONVEYORS PVT. LTD,chip-coolant-scrap-conveyors,pending,,
-60,Devendra Autocom Private Limited,diesel-fuel-injection-parts,pending,,
-61,Magal Engineering Co. India Pvt. Ltd.,sheet-metal-forming-machines,pending,,
-62,Tripura Bio-Tech Ltd.,bio-pesticides-plant-growth-regulators,pending,,
-63,Ipower Batteries Pvt. Ltd.,lithium-ion-batteries,pending,,
-64,SURIN AUTOMOTIVE PRIVATE LIMITED,automotive-construction-equipment-components,pending,,
-65,Siddharth Foundry Pvt Ltd,pump-cast-components,pending,,
-66,ARMSTRONG INTERNATIONAL PVT. LTD.,steam-air-hot-water-solutions,pending,,
-67,ROYAL ENGITECH PVT. LTD.,precision-machined-components-assemblies,pending,,
-68,SAMARTH AIRCON PVT. LTD.,enclosures-cabinets-racks,pending,,
-69,SNL BEARINGS LIMITED,needle-roller-bearings,pending,,
-70,KALPA ELECTRIKAL PVT LTD,control-instrument-distribution-transformers,pending,,
-71,TRIVENI CONDUCTORS LTD,copper-winding-wires,pending,,
-72,UNIQUE PUNCH SYSTEMS PVT.LTD,precision-sheet-metal-components,pending,,
-73,MANGAL INDUSTRIES LIMITED,emerging-market-business-intelligence,pending,,
-74,LNM AUTO INDUSTRIES PVT. LTD.,precision-forged-machined-components,pending,,
-75,INSTAA PRECISION TOOLS LLP,cnc-punch-press-brake-tooling,pending,,
-76,MECH CHOICE TOOLS,hand-tools-oem-private-label,pending,,
-77,VISHAL TOOLS & FORGINGS PVT. LTD.,hand-tools-oem-private-label,pending,,
-78,SHANTHALA SPHEROCAST PRIVATE LIMITED,ductile-grey-iron-castings,pending,,
-79,CMR GREEN TECHNOLOGIES LIMITED,aluminium-zinc-alloy-recycling,pending,,
-80,Indo Smc Limited,frp-smc-products-junction-boxes,pending,,
-81,Kunal Plastics Pvt Ltd,multilayer-polyolefin-copolymer-films,pending,,
-82,ITL INDUSTRIES LTD,band-circular-sawing-machines,pending,,
-83,Armatech Associates,magnetic-non-magnetic-workholding-tools,pending,,
-84,Lathia Rubber Manufacturing Co. Pvt. Ltd.,industrial-rubber-rollers,pending,,
-85,SBEM Pvt. Ltd,level-flow-pressure-temperature-sensors,pending,,
-86,Mali Agri Tech Pvt. Ltd.,hybrid-crop-seeds,pending,,
+41,SANJAY TECHNO PRODUCTS PRIVATE LIMITED,automotive-injection-molded-plastic-components,done,sanjay-techno-products,batch 3
+42,DANISH POWER LIMITED,power-distribution-transformers-substations,done,danish-power,batch 3
+43,TARANG ENGINEERING PVT LTD,transformer-radiators,done,tarang-engineering,batch 3
+44,R.V. INDUSTRIALS,high-precision-pump-shafts-flanges,done,rv-industrials,batch 3
+45,MAGADH PRECISION EQUIPMENT LIMITED,cold-rolling-mill-equipment,done,magadh-precision-equipment,batch 3
+46,MENON BEARINGS LTD,engine-bearings-bushes-thrust-washers,done,menon-bearings,batch 3
+47,UNITED OVERSEAS BOLTS AND NUTS PRIVATE LIMITED,high-tensile-industrial-fasteners,done,united-overseas-bolts,batch 3
+48,RECAERO INDIA PVT. LTD.,aerospace-precision-machined-components,done,recaero-india,batch 3
+49,Vinod Medical Systems Pvt Ltd,hospital-furniture-xray-films,done,vinod-medical-systems,batch 3
+50,Welspun Living Limited,towels-bedding-rugs,done,welspun-living,batch 3
+51,GRACE BIO CARE PRIVATE LIMITED,bio-pesticides-plant-growth-regulators,done,grace-bio-care,batch 3
+52,NIKITA CHEMICAL INDUSTRIES,active-pharmaceutical-ingredients,done,nikita-chemical-industries,batch 3
+53,RATNAKAR INDIA LTD,crop-protection-agrochemicals,done,ratnakar-india,batch 3
+54,CHENNAI METCO,metallography-petrography-equipment-consumables,done,chennai-metco,batch 4
+55,HINDUSTAN HYDRAULICS PVT. LTD,press-brake-cnc-fiber-laser-machines,done,hindustan-hydraulics,batch 4
+56,IMPERIAL PRODUCTS OF INDIA,coil-processing-forming-lines,done,imperial-products-of-india,"batch 4 — website in HVT sheet does not resolve, flagged"
+57,INDOTECH INDUSTRIES (I) PVT. LTD,band-saw-machines,deferred,,"zero pillar data (differentiation/moat/product_improvement/alignment/gap all blank), same pattern as Mitra Industries"
+58,KAUSHICO MACHINE TOOLS PVT. LTD,mechanical-power-presses,done,kaushico-machine-tools,batch 4
+59,MIVEN MAYFRAN CONVEYORS PVT. LTD,chip-coolant-scrap-conveyors,done,miven-mayfran-conveyors,batch 4
+60,Devendra Autocom Private Limited,diesel-fuel-injection-parts,done,devendra-autocom,batch 4
+61,Magal Engineering Co. India Pvt. Ltd.,sheet-metal-forming-machines,done,magal-engineering,"batch 4 — likely agency/integration model, not OEM manufacturer, flagged"
+62,Tripura Bio-Tech Ltd.,bio-pesticides-plant-growth-regulators,done,tripura-bio-tech,batch 4
+63,Ipower Batteries Pvt. Ltd.,lithium-ion-batteries,done,ipower-batteries,"batch 4 — 3-way revenue conflict flagged"
+64,SURIN AUTOMOTIVE PRIVATE LIMITED,automotive-construction-equipment-components,done,surin-automotive,"batch 4 — 3-way revenue conflict flagged"
+65,Siddharth Foundry Pvt Ltd,pump-cast-components,done,siddharth-foundry,"batch 4 — CIN discrepancy vs. own website flagged"
+66,ARMSTRONG INTERNATIONAL PVT. LTD.,steam-air-hot-water-solutions,done,armstrong-international,batch 5
+67,ROYAL ENGITECH PVT. LTD.,precision-machined-components-assemblies,done,royal-engitech,batch 5
+68,SAMARTH AIRCON PVT. LTD.,enclosures-cabinets-racks,done,samarth-aircon,"batch 5 — ISO cert year contradicted by independent sources, flagged"
+69,SNL BEARINGS LIMITED,needle-roller-bearings,done,snl-bearings,"batch 5 — HVT website field corrected (real site snlbearings.in, not nrbbearings.co.in)"
+70,KALPA ELECTRIKAL PVT LTD,control-instrument-distribution-transformers,done,kalpa-electrikal,"batch 5 — 200+ patents/DSIR claim investigated, not corroborated"
+71,TRIVENI CONDUCTORS LTD,copper-winding-wires,done,triveni-conductors,batch 5
+72,UNIQUE PUNCH SYSTEMS PVT.LTD,precision-sheet-metal-components,done,unique-punch-systems,"batch 5 — FY2024 revenue/profit decline flagged"
+73,MANGAL INDUSTRIES LIMITED,precision-fasteners-aerospace-components,done,mangal-industries,"batch 5 — HVT website/sector/segment_ref were data contamination from unrelated EMIS vendor, corrected; real co. is Amara Raja Group member"
+74,LNM AUTO INDUSTRIES PVT. LTD.,precision-forged-machined-components,done,lnm-auto-industries,"batch 5 — FY25 swing to negative returns; HAL vendor/Comer Industries claims unverified"
+75,INSTAA PRECISION TOOLS LLP,cnc-punch-press-brake-tooling,done,instaa-precision-tools,"batch 5 — company website unreachable (SSL error), most claims unverifiable this pass"
+76,MECH CHOICE TOOLS,hand-tools-oem-private-label,deferred,,"zero pillar data (differentiation/moat/product_improvement/alignment/gap all blank); confirmed as a separate but affiliated partnership co-promoted by Vishal Tools & Forgings (2017), not a duplicate identity — see vishal-tools-forgings sources.md"
+77,VISHAL TOOLS & FORGINGS PVT. LTD.,hand-tools-oem-private-label,done,vishal-tools-forgings,batch 5
+78,SHANTHALA SPHEROCAST PRIVATE LIMITED,ductile-grey-iron-castings,done,shanthala-spherocast,"batch 5 — West Asia conflict raw-material headwind corroborated at macro level"
+79,CMR GREEN TECHNOLOGIES LIMITED,aluminium-zinc-alloy-recycling,done,cmr-green-technologies,batch 5
+80,Indo Smc Limited,frp-smc-products-junction-boxes,done,indo-smc,"batch 5 — ownership tag updated unlisted-public to listed"
+81,Kunal Plastics Pvt Ltd,multilayer-polyolefin-copolymer-films,done,kunal-plastics,"batch 5 — NCLT-approved merger into listed Ecoplast Limited, completed June 2026"
+82,ITL INDUSTRIES LTD,band-circular-sawing-machines,done,itl-industries,"batch 5 — installation-count self-claim (15,000+) contradicted ~10x by independent source"
+83,Armatech Associates,magnetic-non-magnetic-workholding-tools,done,armatech-associates,"batch 5 — 'Jhalawad Group' affiliation debunked via direct verification"
+84,Lathia Rubber Manufacturing Co. Pvt. Ltd.,industrial-rubber-rollers,done,lathia-rubber-manufacturing,batch 5
+85,SBEM Pvt. Ltd,level-flow-pressure-temperature-sensors,done,sbem,batch 5
+86,Mali Agri Tech Pvt. Ltd.,hybrid-crop-seeds,done,mali-agri-tech,"batch 5 — substitute for Mech Choice Tools; DSIR registration resolved (HVT's own proof_status was not-found)"
 87,Vanaz Engineers Ltd.,gas-cylinder-valves-regulators,pending,,
 88,Pluss Advanced Technologies Pvt. Ltd.,phase-change-materials-specialty-polymers,pending,,
 89,Chem Process Systems Pvt. Ltd.,vacuum-ejectors-systems,pending,,

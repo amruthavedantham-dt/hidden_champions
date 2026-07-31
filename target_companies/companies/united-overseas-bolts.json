@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "united-overseas-bolts",
+    "series": "Hidden Champions of India",
+    "segmentRef": "high-tensile-industrial-fasteners",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment, reviewed) + fresh financial research this session. Private, CIN U27310PB2021PTC054667. This legal entity was incorporated 2021, but two independent sources corroborate the operating business dates to 2003 — a corporate-form restructuring, not a genuinely new company."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "United Overseas Bolts and Nuts: a two-decade Ludhiana fastener maker, freshly incorporated into a new legal shell.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A high-tensile bolt and nut manufacturer supplying Indian Railways, IOC, L&T and BHEL, with a real if modest export footprint across Italy, the US and Spain.", "tier": "company", "epistemic": "fact", "source": "zoominfo.com; volza.com", "fields": ["differentiation", "exportFootprint"] }
+  },
+  "snapshot": [
+    { "label": "Operating business since", "value": "2003 (this legal entity incorporated 2021)", "tier": "company", "source": "thecompanycheck.com; zaubacorp.com", "fields": ["foundedYear"] },
+    { "label": "Revenue / PAT / ROE", "value": "Not found", "tier": "company", "source": "n/a", "fields": ["financials.revenueCr"] },
+    { "label": "Certifications", "value": "ISO 9001:2015, CE 89/106/EEC, API 20E BSL1/2/3, ZED GOLD", "tier": "company", "source": "HVT row (self-claimed)", "fields": ["moat"] },
+    { "label": "Monthly output", "value": ">500 metric tonnes (self-claimed)", "tier": "company", "source": "HVT row", "fields": ["product_improvement"] },
+    { "label": "Recorded exports", "value": "842 shipments to 29 buyers; top markets Italy, US, Spain", "tier": "company", "source": "volza.com", "fields": ["exportFootprint"] },
+    { "label": "Domestic clients", "value": "Indian Railways, IOC, L&T, HPCL, BPCL, BHEL", "tier": "company", "source": "zoominfo.com", "fields": ["differentiation"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A real client roster, a genuinely new corporate shell",
+    "blocks": [
+      { "text": "No revenue, PAT or ROE figure was found anywhere — the current legal entity is young (incorporated December 2021) and the underlying business, while older, is private and small enough to carry no public financial disclosure obligation.", "tier": "company", "epistemic": "fact", "source": "no public filings located", "fields": ["financials.availability"] },
+      { "text": "Two independent sources corroborate that the actual operating business, 'United Overseas (Bolts),' dates to 2003 (founded by Rajesh Nagpal, with Sunil Bajaj cited by one source) — the 2021-incorporated private limited entity behind this HVT row's CIN is a corporate-form restructuring of that older business, not a genuinely new company. The small authorized capital (₹15 lakh) is consistent with a formalization step rather than a fresh startup.", "tier": "company", "epistemic": "fact", "source": "thecompanycheck.com; zaubacorp.com", "fields": ["foundedYear"] },
+      { "text": "It claims ISO 9001:2015, CE 89/106/EEC, API 20E BSL1/2/3 and ZED GOLD certification, and a monthly output over 500 metric tonnes across one large manufacturing facility plus semi-finishing facilities at five other locations around Ludhiana — all self-claimed, and the HVT sheet did not flag `moat` for verification despite the multi-certification claim resting entirely on the company's own site.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["moat", "product_improvement"] },
+      { "text": "Independently-checkable trade data shows real export activity: 842 recorded shipments to 29 buyers, with Italy, the United States and Spain as primary markets — a genuine, if modest, international footprint alongside blue-chip domestic clients including Indian Railways, Indian Oil, L&T, Hindustan Petroleum, Bharat Petroleum and BHEL.", "tier": "company", "epistemic": "fact", "source": "volza.com; zoominfo.com", "fields": ["exportFootprint", "differentiation"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing, with India's own segment outpacing the global rate across every source checked.**", "evidence": "Global industrial fasteners: $103.92-124.2B (2025), 3.4-5.1%/yr. India industrial fasteners market: growing 6.31-8.7%/yr depending on source, consistently faster than the global average.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research; IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "**Its existing domestic client base sits in exactly the sectors driving the segment's growth.**", "evidence": "Infrastructure/construction growth ('Make in India,' the Smart Towns Mission) and automotive demand are the segment's cited growth drivers — United Overseas Bolts' own clients (Indian Railways, IOC, L&T, HPCL, BPCL, BHEL) span rail, energy and infrastructure directly.", "tier": "segment", "epistemic": "fact", "source": "openpr.com aggregation", "fields": ["structureFacts"] },
+      { "point": "The one named listed peer operates at a **completely different order of magnitude.**", "evidence": "Sundram Fasteners posted ₹5,209.74 Cr FY25 revenue with ~₹540-547 Cr PAT — useful as an industry benchmark for what a mature, diversified fastener maker looks like at scale, not a size-comparable peer.", "tier": "segment", "epistemic": "fact", "source": "motoring-trends.com", "fields": ["peers[0]"] }
+    ],
+    "reflect": { "text": "A genuinely blue-chip domestic client list and a real, checkable export footprint, sitting inside a corporate shell too new to have built its own financial track record yet. The business itself looks older and more established than its own paperwork suggests.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, IMARC Group (shared high-tensile-industrial-fasteners segment file). Peer data: Sundram Fasteners (industry benchmark, not scale-comparable)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "No opportunity was named in the HVT sheet's own gap research for this company — the gap fields were left empty, so no opportunity item is generated here rather than inventing one.",
+    "items": []
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only United Overseas Bolts and Nuts' own data and people can tell.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Deepen one of the three named export markets", "body": "With 842 shipments already spread across 29 buyers in Italy, the US and Spain, identify the single highest-volume relationship and test whether it can be grown into a larger, more formal supply agreement before pursuing new export geographies.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": null, "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a high-tensile industrial fastener manufacturer in this segment — a directory-depth pass, not yet confirmed against United Overseas Bolts and Nuts' own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer fastener types/grades (hex bolts, nuts, stud bolts, HSFG bolts, washers, threaded bars) across material grades", "serve multiple end-industries (oil/petrochemical, power, railway, chemical, automotive, infrastructure)"], "stepsTier": "segment", "spottedAt": "serve multiple end-industries (oil/petrochemical, power, railway, chemical, automotive, infrastructure)", "spotted": { "text": "Company facts (clients across Railways, IOC, L&T, HPCL, BPCL, BHEL) confirm this step is real and broad for United Overseas Bolts, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["achieve high-tensile grades via metallurgical/heat-treatment capability", "provide in-house application/design engineering support", "maintain quality systems (ISO 9001, IATF-equivalent) and PPAP process"], "stepsTier": "segment", "spottedAt": "maintain quality systems (ISO 9001, IATF-equivalent) and PPAP process", "spotted": { "text": "Company facts (ISO 9001:2015, CE, API 20E BSL1/2/3, ZED GOLD certifications) confirm this step is real for United Overseas Bolts, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate multi-site manufacturing/semi-finishing footprint", "flex volume between high-volume commodity and lower-volume specialized/high-tensile orders", "manage export logistics"], "stepsTier": "segment", "spottedAt": "operate multi-site manufacturing/semi-finishing footprint", "spotted": { "text": "Company facts (one main facility plus five semi-finishing locations around Ludhiana, 500+ MT/month output) confirm this step is real for United Overseas Bolts, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain reliability/consistency of supply to blue-chip industrial clients", "respond to customized/non-standard fastener specs", "provide traceability and documentation for regulated end-uses"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win large industrial/infrastructure project orders (power, rail, oil & gas)", "fulfil recurring OEM/export orders", "reorder tied to project cycles or OEM production schedules"], "stepsTier": "segment", "spottedAt": "fulfil recurring OEM/export orders", "spotted": { "text": "Company facts (842 shipments, Italy/US/Spain top markets) confirm this step is real for United Overseas Bolts, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/high-tensile-industrial-fasteners.json) — no company-specific (A2/pursuit) operational intel was collected for United Overseas Bolts this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Blue-chip domestic clients and a real export footprint, sitting inside a legal shell too new to have its own numbers yet. **The business is older and more proven than the paperwork alone would suggest.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in United Overseas Bolts and Nuts or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No public financials found (young private entity, no disclosure obligation). Company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment, reviewed) plus thecompanycheck.com, zaubacorp.com, zoominfo.com and volza.com; market data from Grand View Research and IMARC Group; peer figures from motoring-trends.com (Sundram Fasteners). No opportunities were named in the HVT sheet's own gap research for this company — none invented here.",
+    "tier": "universal",
+    "sources": ["thecompanycheck.com", "zaubacorp.com", "zoominfo.com", "volza.com", "Grand View Research", "IMARC Group", "motoring-trends.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — actual revenue, and true customer retention across both its blue-chip domestic and export relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

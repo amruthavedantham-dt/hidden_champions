@@ -1,0 +1,45 @@
+{
+  "segmentName": "Metallography & Petrography Equipment and Consumables",
+  "market": {
+    "worldSizeUSD_B_range": "Global metallography sample-preparation equipment: $1.2B (2024) to $2.0B by 2033 (7.2%/yr). Broader global metallography equipment market: $650.75M (2025) to $1,120.30M by 2033 (7.03%/yr). Sample-preparation equipment holds ~42.7% share of the overall metallography equipment market. India material testing equipment market (broader, adjacent category): $278.80M (2024) to $415.35M by 2033 (4.18%/yr) per IMARC; a related IMARC estimate cites $290.2M (2025) to $419.6M by 2034 (3.97%/yr); TechSci separately estimates $200.77M (2025) to $271.78M by 2031 (5.02%/yr) — figures vary meaningfully by vendor scope/methodology.",
+    "cagrPctRange": [3.97, 7.2],
+    "exportGeographies": ["USA", "Europe (Germany, Italy, Spain)", "Russia", "Turkey", "Argentina", "Mexico", "UAE", "Japan", "Thailand", "Malaysia", "UK", "Bangladesh"],
+    "globalCompetitors": ["Struers (part of Roper Technologies)", "Buehler (an ITW company)", "LECO Corporation"],
+    "domesticSlice": "Struers, Buehler, and LECO collectively account for ~40% of the global metallographic sample-cutting-machine market; Indian peer Metkorp offers a full range of metallography equipment domestically but has no disclosed financials."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["non-destructive testing (fast-growing across aerospace/automotive/construction)"],
+  "structureFacts": [
+    "Rising QC/R&D lab investment in metals, automotive, and aerospace sectors is a cited growth driver for material testing markets",
+    "Increasing adoption of automated/digital testing solutions is a stated market trend",
+    "Struers, Buehler, and LECO are large multinational players (LECO alone reports ~$310.8M revenue) — far larger in scale than Indian manufacturers, representing an aspirational competitive tier rather than direct scale peers"
+  ],
+  "adoptionStructure": {
+    "note": "Reliability and cost-effectiveness drive sample-preparation equipment's dominant equipment-market share; quality-assurance and regulatory-compliance requirements in metals/materials industries drive purchasing. International trade-show presence (IMTEX, EMO Hannover) is a recurring export-lead-generation channel for Indian manufacturers in this space."
+  },
+  "peers": [
+    { "name": "Struers", "revenueUSD_M": 750, "asOf": "June 2025", "parent": "Roper Technologies (current; some older sources cite Atlas Copco — flagged as needing independent verification)", "source": "pitchbook.com; incfact.com" },
+    { "name": "Buehler", "parent": "Illinois Tool Works (ITW)", "revenueDisclosure": "not separately disclosed by ITW", "source": "zoominfo.com" },
+    { "name": "LECO Corporation", "revenueUSD_M": 310.8, "ownership": "privately held, family-owned, third generation", "locations": 35, "employees": "1,000-5,000", "source": "aggregated ZoomInfo/RocketReach data" },
+    { "name": "Metkorp (India)", "note": "offers full range of metallography equipment in India; no revenue/margin/ROE data found", "source": "metkorp.com" }
+  ],
+  "customerValue": {
+    "drivers": ["reliability and cost-effectiveness of sample-preparation equipment", "quality-assurance/regulatory-compliance requirements in metals/materials industries", "calibration/installation/training support"],
+    "strongestPredictor": "reliability and cost-effectiveness combined with responsive technical/applications support",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer metallography/petrography sample-preparation equipment (cutters, mounting presses, grinders/polishers)", "offer hardness testers and metallurgical microscopes/image analysis systems", "offer related consumables (abrasives, mounting compounds)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run in-house manufacturing and technical/applications expertise", "offer calibration, installation, and training services", "customize machines and develop new products (e.g. carbide rod cutting)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a modest, single-cluster manufacturing footprint typical of Indian metallography-equipment makers", "maintain separate office/tech-center and factory facilities"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["provide customer support, product guidance, calibration and installation support to metallurgical/materials-testing labs", "build dealer networks in export markets"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["source export orders through international trade-show presence (IMTEX, EMO Hannover)", "source domestic orders via metallurgical/QC labs in metals, automotive, and aerospace industries"] }
+  ],
+  "sources": [
+    "https://www.verifiedmarketreports.com/product/metallography-sample-preparation-equipment-market/",
+    "https://www.futuremarketreport.com/industry-report/metallography-equipment-market",
+    "https://www.imarcgroup.com/india-material-testing-equipment-market",
+    "https://www.techsciresearch.com/news/9612-india-material-testing-market.html",
+    "https://www.archivemarketresearch.com/reports/metallographic-specimen-cutting-machine-222010"
+  ]
+}

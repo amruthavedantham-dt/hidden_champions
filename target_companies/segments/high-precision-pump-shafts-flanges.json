@@ -1,0 +1,37 @@
+{
+  "segmentName": "High-Precision Pump Shafts & Flanges (precision job-shop machining)",
+  "market": {
+    "worldSizeUSD_B_range": "No dedicated market-sizing exists specifically for precision pump shafts/flanges as a distinct category — the broader industrial pumps market is used as context: global $48.2-75B (2025), 3-5.5%/yr depending on source. India industrial pump market: $2.33-2.90B (2024) to $3.55-4.14B by 2030-2033, 4.8-7%/yr.",
+    "cagrPctRange": [4.8, 7.0],
+    "exportGeographies": ["not found specific to this segment or to R.V. Industrials"],
+    "globalCompetitors": ["not applicable — this is a precision job-shop/contract-machining category serving pump/valve/compressor OEMs, not a branded-product market"],
+    "domesticSlice": "not separately sized"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Demand drivers cited across pump-market reports: rapid industrialization, expanding water/wastewater treatment infrastructure, oil & gas exploration growth, chemical/process-industry demand, power generation needs, smart-pump technology adoption, and government manufacturing/infrastructure initiatives"
+  ],
+  "adoptionStructure": {
+    "note": "Contract-machining and long-term subcontract relationships with pump/valve/compressor OEMs — not a repurchase-rate category"
+  },
+  "peers": [],
+  "customerValue": {
+    "drivers": ["ISO 9001 quality system", "dimensional/CMM inspection reports and tight-tolerance conformance", "subcontract/outsourced-machining partnership reliability"],
+    "strongestPredictor": "not established from available research",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["manufacture high-precision pump shafts, flanges, valve assemblies, hardened sleeves/pins, spacers", "manufacture to customer drawings for OEM pump/valve/compressor makers"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["CNC turning, VMC and 5-axis VMC machining across ferrous and non-ferrous metals", "CMM inspection"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate multi-machine CNC/VMC shop floor", "handle low-to-mid-volume high-mix precision orders"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain ISO 9001 quality system", "provide dimensional/CMM inspection reports", "operate as a subcontract/outsourced-machining partner"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win contract-machining orders and long-term subcontract relationships with pump/valve/compressor OEMs", "fulfil across agriculture, energy, water infrastructure, and industrial end-markets", "reorder on repeat OEM production runs"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/industrial-pumps-market",
+    "https://www.gminsights.com/industry-analysis/industrial-pumps-market",
+    "https://www.imarcgroup.com/india-industrial-pumps-market",
+    "https://www.verifiedmarketresearch.com/product/india-industrial-pump-market/"
+  ]
+}

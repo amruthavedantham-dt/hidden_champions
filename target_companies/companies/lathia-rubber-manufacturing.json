@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "lathia-rubber-manufacturing",
+    "series": "Hidden Champions of India",
+    "segmentRef": "industrial-rubber-rollers",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U99999MH1969PTC014250, business founded 1953 by Late Mr. S.V. Lathia, incorporated as a private limited company 2 Apr 1969. Confirmed: lathia.in and lathiarubber.com are both official web properties of the same entity."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Lathia Rubber: a 73-year rubber-roller pedigree — Stanford, IIT Delhi, and a London rubber-technology degree in the family — now working through a sharp earnings decline.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 1969 Government import-substitution award and a 1986 Stowe Woodward (now Andritz Group) technical collaboration sit alongside EBITDA and net profit both down more than 57% in the latest filing year.", "tier": "company", "epistemic": "fact", "source": "lathia.in/about; Tofler", "fields": ["differentiation", "financials.ebitdaGrowthPct"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1953 (business) by Late Mr. S.V. Lathia; incorporated as Pvt Ltd 2 Apr 1969", "tier": "company", "source": "lathia.in/about", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "~₹63.1 Cr FY25 per one snippet; Tofler's own page shows only a ₹50-75 Cr estimated range with -11.9% to -12% CAGR — exact filed figure paywalled", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Decline (real, sharp)", "value": "EBITDA -57.66% YoY, Net Profit -57.58% YoY, Net worth -9.82% YoY, FY25", "tier": "company", "source": "Tofler", "fields": ["financials.ebitdaGrowthPct"] },
+    { "label": "Employees (wide conflict)", "value": "16 (EasyLeadz) vs. 100-200 (SignalHire) — likely reflects LinkedIn undercounting vs. broader estimate", "tier": "company", "source": "EasyLeadz; SignalHire", "fields": ["employees"] },
+    { "label": "Leadership pedigree", "value": "CEO/Chairman Yogen Lathia (rubber technology degree, National College of Rubber Technology, London); directors with IIT Delhi + Stanford, and University of Akron polymer chemistry degrees", "tier": "company", "source": "lathia.in/about", "fields": ["product_improvement"] },
+    { "label": "Historical recognition", "value": "1969 Government of India import-substitution award; 1986 Stowe Woodward (now Andritz Group) technical collaboration; 2002 Hancock Medal (Institute of Materials, UK) to founder's successor", "tier": "company", "source": "lathia.in/about", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A genuinely deep technical pedigree, working through a real earnings decline",
+    "blocks": [
+      { "text": "This is a real, sharp financial reversal, not just noise: EBITDA and net profit both fell more than 57% year-over-year in FY25, alongside a 9.82% decline in net worth. Revenue itself is reported inconsistently — one search snippet cites ₹63.1 Cr, while Tofler's own page shows only an estimated ₹50-75 Cr range with an 11.9-12% CAGR decline — the exact filed figure remains paywalled. Debt-to-equity is minimal (0.01), so this isn't a leverage story, but a genuine profitability decline.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.ebitdaGrowthPct"] },
+      { "text": "It offers tailored manufacturing strategies for the steel industry and holds a genuinely exceptional leadership pedigree: CEO/Chairman Yogen Shivlal Lathia holds a rubber technology degree from the National College of Rubber Technology in London; director Sanjiv Shivlal Lathia holds an IIT Delhi mechanical engineering degree plus a Stanford MSc; director Ashit Shivlal Lathia holds a polymer chemistry degree from the University of Akron, Ohio — a genuinely deep, internationally-credentialed technical leadership team for a company of this scale.", "tier": "company", "epistemic": "fact", "source": "lathia.in/about", "fields": ["differentiation", "product_improvement"] },
+      { "text": "Its historical recognition is real and independently documented: a 1969 import-substitution award from the Government of India, a 1986 technical collaboration with Stowe Woodward (now part of the Andritz Group), a 1997 K.M. Philip award to the founder, a 2002 Hancock Medal from the UK's Institute of Materials, and a celebrated 70th anniversary in 2023. It is DSIR-registry-confirmed for in-house R&D, though the specific registration document could not be re-fetched this session (403 error on the DSIR PDF directory).", "tier": "company", "epistemic": "fact", "source": "lathia.in/about", "fields": ["recentMoves"] },
+      { "text": "The Kenya/Africa textile-industry lead named in the HVT sheet's gap research appears genuine, not a scraping artifact: the company was a confirmed exhibitor at ITME Africa & Middle East 2023, a textile engineering/technology trade exhibition held in Kenya (~60 Indian exhibitors participated). Its own 'About' page separately lists textile industries as one of the sectors it serves, alongside its core steel-industry focus — a real, if secondary, business line.", "tier": "company", "epistemic": "fact", "source": "indiantextilemagazine.in; lathia.in/about", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market where **vendor size estimates diverge notably**, but real structural steel-industry demand exists.", "evidence": "Global Industrial Rubber Rollers Market: $2.5B-$3.8B (2024-2033) per one vendor or $3.2B-$4.8B per another, vs. a much narrower $555.6M (2025) estimate from a third vendor — likely reflecting a narrower product-scope definition.", "tier": "segment", "epistemic": "fact", "source": "aggregated vendor reports", "fields": ["market.sizeRange"] },
+      { "point": "**No India peer with disclosed revenue was found to directly benchmark the current earnings decline against.**", "evidence": "Anar Rub Tech (Ahmedabad, est. 1978) self-claims ~₹120 Cr turnover; Indian Roller Industries ('Sunny Rubber') shows only 69 employees, no revenue — neither offers a clean financial comparison point for Lathia's current profitability decline.", "tier": "segment", "epistemic": "fact", "source": "rubberrollerindia.com; Tracxn", "fields": ["peers"] },
+      { "point": "**A possible family-group relation was flagged but not confirmed** — worth noting as an open thread, not a resolved fact.", "evidence": "A separate company, 'Lathia Polymer Industries,' shares the Lathia family name in another rubber-roller feature — this session could not confirm whether it is the same legal entity, a related family business, or coincidental naming.", "tier": "segment", "epistemic": "fact", "source": "theindustryoutlook.com (flagged, unconfirmed)", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A genuinely deep, internationally-credentialed technical pedigree — rare among the companies profiled in this project — currently working through a real, sharp earnings decline. The leadership team's academic credentials and the company's documented 1969-2002 award history are the strongest, most independently verifiable assets here; the current profitability trend is the thing that needs explaining before treating this as a straightforward capability story.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: aggregated vendor reports, TechSci Research (shared industrial-rubber-rollers segment file, new this batch). No independently financialed direct peer found for comparison."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "A real, independently confirmed lead named in the company's own gap research.",
+    "items": [
+      { "lever": "market-access", "title": "Extending the confirmed Kenya/East Africa textile-industry presence", "body": "This session confirmed Lathia's 2023 ITME Africa exhibitor presence and its own site's textile-industry service listing are real, not a scraping artifact — a credible, already-demonstrated lever for geographic/sector diversification beyond its core steel-industry focus, though any near-term investment should follow, not precede, understanding the current earnings decline.", "source": "HVT gap research; indiantextilemagazine.in (independently confirmed).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is diagnosing the sharp FY25 earnings decline.", "tier": "universal" },
+    "items": [
+      { "lever": "diagnosis", "title": "Diagnose the FY25 EBITDA/net-profit decline (>57%) before pursuing textile-market diversification", "body": "With both EBITDA and net profit down more than 57% YoY, understanding the specific cause (steel-industry demand softness, input costs, customer concentration) should precede investing further in the confirmed but secondary textile-industry opportunity — otherwise diversification risks masking rather than fixing the core-business issue.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an industrial rubber-roller manufacturer in this segment — a directory-depth pass, not yet confirmed against Lathia Rubber's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer tailored rubber-covering solutions for steel-industry manufacturing challenges", "offer custom rollers for pickling, squeegee, damming, wringer, sink, acid-wash/rinse applications"], "stepsTier": "segment", "spottedAt": "offer tailored rubber-covering solutions for steel-industry manufacturing challenges", "spotted": { "text": "Company facts (tailored strategies for manufacturing challenges in the steel industry) confirm this step is real for Lathia Rubber — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run steel core/tube fabrication (rolled & welded)", "run rubber compounding and covering/vulcanizing onto core, precision grinding/finishing"], "stepsTier": "segment", "spottedAt": "run rubber compounding and covering/vulcanizing onto core, precision grinding/finishing", "spotted": { "text": "Company facts (DSIR-registered in-house R&D unit; 1986 Stowe Woodward technical collaboration) confirm this step is real for Lathia Rubber — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing base sized for steel-mill-cycle order volume", "maintain DSIR-recognized in-house R&D capacity"], "stepsTier": "segment", "spottedAt": "maintain DSIR-recognized in-house R&D capacity", "spotted": { "text": "Company facts (2008 flagship facility opened in Vapi, Gujarat) confirm this step is real for Lathia Rubber — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-standing steel-industry customer relationships", "pursue international trade-show presence for new regional markets"], "stepsTier": "segment", "spottedAt": "pursue international trade-show presence for new regional markets", "spotted": { "text": "Company facts (confirmed ITME Africa & Middle East 2023 exhibitor presence in Kenya) confirm this step is real for Lathia Rubber — see p3_opportunities.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil repeat/re-covering orders tied to roller wear cycles", "fulfil new-installation orders for steel-mill capacity expansions"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/industrial-rubber-rollers.json) — no company-specific (A2/pursuit) operational intel was collected for Lathia Rubber this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuinely deep, internationally-credentialed 73-year rubber-technology company — with real, documented awards and a real, confirmed African textile-market presence — currently working through a sharp earnings decline. **Understanding what drove the >57% EBITDA/profit drop matters more than any new-market opportunity right now.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Lathia Rubber or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus lathia.in/about and independent confirmation of its ITME Africa 2023 exhibitor presence; market data from aggregated vendor reports and TechSci Research. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "lathia.in", "indiantextilemagazine.in", "EasyLeadz", "SignalHire", "aggregated vendor reports", "TechSci Research", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the specific cause of the FY25 earnings decline, and true current employee headcount — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

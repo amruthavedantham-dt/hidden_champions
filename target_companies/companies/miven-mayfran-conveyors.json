@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "miven-mayfran-conveyors",
+    "series": "Hidden Champions of India",
+    "segmentRef": "chip-coolant-scrap-conveyors",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U29150KA1986PTC007869, incorporated 21 Oct 1986. Genuine equity + technology JV with Mayfran International (part of Tsubakimoto Chain Group, Japan, since 2012), confirmed via nominee-director corporate records."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Miven Mayfran Conveyors: a real Tsubakimoto-backed JV, currently shrinking.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 1986 Hubli joint venture with a genuine global chip-conveyor leader — Mayfran International, owned by Japan's Tsubakimoto Chain since 2012 — whose India revenue and returns are both currently declining.", "tier": "company", "epistemic": "fact", "source": "mivenmayfran.com; Tofler", "fields": ["product_improvement", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1986 (incorporation)", "tier": "company", "source": "Tofler", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹61.57 Cr FY25 (₹50-100 Cr band), down ~8% YoY", "tier": "company", "source": "thecompanycheck.com; Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Margins", "value": "Net 0.56%, Operating 0.48%, Gross 6.54% — thin", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct"] },
+    { "label": "ROE / ROCE", "value": "-1.08% / -6.46% — negative", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Employees", "value": "~180-200 (Tofler 183; LinkedIn ~198)", "tier": "company", "source": "thecompanycheck.com; LinkedIn", "fields": ["employees"] },
+    { "label": "JV structure", "value": "JV with Mayfran International (USA) via Mayfran International B.V. (Netherlands) and the Sirur family (Hubli); Mayfran itself part of Tsubakimoto Chain Group (Japan) since 2012", "tier": "company", "source": "mivenmayfran.com; Tofler director records", "fields": ["product_improvement"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A real global JV, currently on a down cycle",
+    "blocks": [
+      { "text": "Revenue was ₹61.57 Cr in FY25, down roughly 8% YoY, with both ROE (-1.08%) and ROCE (-6.46%) negative — a genuinely soft year across the board. Net margin is barely positive at 0.56%. EBITDA growth had been strongly positive in an earlier filing year (+74.57% YoY, FY23), so the current decline reads as a recent reversal rather than a chronic pattern, though the most recent data point is the negative one.", "tier": "company", "epistemic": "fact", "source": "Tofler; thecompanycheck.com", "fields": ["financials.revenueCr", "financials.roePct", "financials.rocePct"] },
+      { "text": "It describes itself as a pioneer in India for chip, scrap, and coolant management systems, offering a comprehensive portfolio of solutions — a self-claimed positioning the HVT sheet itself flags `needs_verify: yes`.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed, needs_verify: yes)", "fields": ["differentiation"] },
+      { "text": "What is independently confirmed, not just self-claimed: this is a genuine, structural joint venture with Mayfran International (through its subsidiary Mayfran International B.V. of the Netherlands) and the Sirur family of Hubli — and since 2012, Mayfran International itself has been part of Japan's Tsubakimoto Chain Group. Corporate records show nominee directors tied to both JV partners, confirming a real equity-and-technology relationship, not just co-branding.", "tier": "company", "epistemic": "fact", "source": "mivenmayfran.com; Tofler director records", "fields": ["product_improvement"] },
+      { "text": "It holds ISO 9001:2008 certification and lists Toyota, Bosch, Mahindra, and Maruti Suzuki as customers (undated, company-claimed). It markets itself as globally networked via Mayfran International (USA) and Mayfran International B.V. (Netherlands), though specific export countries or export-revenue percentage were not found.", "tier": "company", "epistemic": "fact", "source": "indiamart.com; company narrative", "fields": ["exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market with **real structural tailwinds from manufacturing automation**, though India-specific sizing wasn't found.", "evidence": "Global chip conveyor market: $1,322M (2024) to $1,818M by 2031 (~4.6%/yr); global coolant filtration systems market: $2.9B (2025) to $7.3B by 2036 (8.7%/yr), with semiconductor fab expansion cited as a specific driver.", "tier": "segment", "epistemic": "fact", "source": "Valuates Reports; OpenPR", "fields": ["market.sizeRange"] },
+      { "point": "**Mayfran International is a genuine top-5 global player**, not a marginal brand — this is a real credibility anchor for the India JV.", "evidence": "Hennig, Mayfran International, Jorgensen Conveyors (LNS Group), KNOLL Maschinenbau, and PRAB together hold ~38.5% of global chip conveyor market revenue; Mayfran's parent Tsubakimoto Chain posted ¥279.19B group revenue in FY2024, +4.64% YoY.", "tier": "segment", "epistemic": "fact", "source": "aggregated market report data; tipranks.com", "fields": ["peers"] },
+      { "point": "**OEM design-stage bundling** is the segment's structural pattern — chip/coolant vendors increasingly integrate with machine-tool builders at the design stage.", "evidence": "KNOLL Maschinenbau's integration with major German machine-tool OEMs (DMG Mori, Trumpf, Gildemeister) illustrates the pattern; Miven Mayfran's own customer list (Toyota, Bosch, Mahindra, Maruti Suzuki) suggests similar OEM-embedded relationships domestically.", "tier": "segment", "epistemic": "fact", "source": "prab.com", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "The JV backing here is real and independently confirmed — a genuine top-5 global player's India arm, not a paper partnership. That makes the current revenue decline and negative returns more of a cyclical question than an identity one: does this reflect a broader India machine-tool capex slowdown, or something specific to Miven Mayfran's own execution?", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Valuates Reports, OpenPR, Fact.MR (shared chip-coolant-scrap-conveyors segment file). Peer data: Hennig, Mayfran International/Tsubakimoto, Jorgensen/LNS, KNOLL, PRAB."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research — with a real financial caveat attached.",
+    "items": [
+      { "lever": "revenue-diversification", "title": "Extending beyond core waste-to-value transformation into new revenue streams", "body": "The HVT sheet's own gap research names untapped potential to create new revenue streams beyond current chip/coolant waste transformation — but given the current -8% revenue decline and negative returns, this reads as a longer-horizon opportunity contingent on first understanding why the core business softened this year.", "source": "HVT gap research (marketintelo.com chip conveyor market report).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is diagnosing this year's revenue decline before pursuing new revenue streams.", "tier": "universal" },
+    "items": [
+      { "lever": "diagnosis", "title": "Separate cyclical (machine-tool capex) softness from company-specific execution", "body": "Check whether India's broader machine-tool industry capex softened in the same period (a sector-wide check, per established methodology) before treating the -8% revenue and negative ROE/ROCE as company-specific weakness — the strong Mayfran/Tsubakimoto backing suggests this is worth diagnosing rather than assuming.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a chip/scrap/coolant conveyor manufacturer in this segment — a directory-depth pass, not yet confirmed against Miven Mayfran's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer chip/scrap/coolant conveyors (magnetic and screw types)", "offer chip crushers/shredders/wringers and centrifuges", "offer standalone and centralized coolant filtration systems"], "stepsTier": "segment", "spottedAt": "offer chip/scrap/coolant conveyors (magnetic and screw types)", "spotted": { "text": "Company facts (self-positioned as India pioneer in chip/scrap/coolant management, HVT-flagged needs_verify) confirm this step area — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run sheet-metal fabrication and precision welding capability", "run mechanical/electrical assembly and filtration-media engineering", "apply engineering to match machine-tool OEM chip/coolant specs"], "stepsTier": "segment", "spottedAt": "apply engineering to match machine-tool OEM chip/coolant specs", "spotted": { "text": "Company facts (JV access to Mayfran International's global engineering designs) confirm this step is real for Miven Mayfran — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["size manufacturing plant to machine-tool-industry order cadence", "access global engineering designs via JV/licensing structure with a multinational partner"], "stepsTier": "segment", "spottedAt": "access global engineering designs via JV/licensing structure with a multinational partner", "spotted": { "text": "Company facts (confirmed equity+technology JV with Mayfran International/Tsubakimoto Chain) confirm this step is real for Miven Mayfran — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["co-design with machine-tool builders (OEM-integrated project engineering)", "provide installation/commissioning and after-sales service/spares support"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win direct OEM contracts with machine-tool builders", "win orders from end-user metalworking/automotive plants"], "stepsTier": "segment", "spottedAt": "win orders from end-user metalworking/automotive plants", "spotted": { "text": "Company facts (Toyota, Bosch, Mahindra, Maruti Suzuki named as customers) confirm this step is real for Miven Mayfran — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/chip-coolant-scrap-conveyors.json) — no company-specific (A2/pursuit) operational intel was collected for Miven Mayfran this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuine, confirmed JV with a top-5 global player — currently working through a soft year on both revenue and returns. **Whether this is a sector-wide capex dip or company-specific softness is the open question.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Miven Mayfran Conveyors or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler and thecompanycheck.com; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus mivenmayfran.com and JV director records; market data from Valuates Reports, OpenPR and Fact.MR; peer figures from tipranks.com (Tsubakimoto Chain) and aggregated market reports. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "thecompanycheck.com", "mivenmayfran.com", "Valuates Reports", "OpenPR", "Fact.MR", "tipranks.com", "indiamart.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the specific cause of this year's revenue and margin decline, and true export volume by region — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

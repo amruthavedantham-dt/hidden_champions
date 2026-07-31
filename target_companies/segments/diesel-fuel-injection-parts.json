@@ -1,0 +1,43 @@
+{
+  "segmentName": "Diesel Fuel Injection & Precision Automotive Components",
+  "market": {
+    "worldSizeUSD_B_range": "India Fuel Injection Systems Market: $2.20B (2024) to $4.11B by 2033 (7.20%/yr, 2025-2033) per IMARC; alternative estimate 6.6%/yr, driven by expanding vehicle fleets and an 'all-of-the-above' powertrain strategy (IC engines persisting alongside EVs).",
+    "cagrPctRange": [6.6, 7.2],
+    "exportGeographies": ["US", "UK", "Germany", "France", "Belgium", "Switzerland", "Middle East", "Australia", "Africa", "South America"],
+    "globalCompetitors": ["Bosch (>44% of global diesel fuel injection market, 2019)"],
+    "domesticSlice": "Bosch India's automotive-products segment (incl. diesel and gasoline systems) generated ~₹143.6B in FY2024, growing to ₹170.62B (2024), TTM ₹205.75B — segment-level margin/ROE specific to diesel fuel injection not disclosed separately. Lucas-TVS Limited (JV of Lucas Industries UK and TVS Group since 1961) is the most directly comparable, better-documented Indian peer at ~10x a typical mid-tier specialist's scale."
+  },
+  "subSegments": ["turbocharger testing/machinery", "defence-sector tank-engine fuel systems"],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "EV transition is a structural headwind specifically for diesel/IC-engine fuel injection long-term, but near-term demand persists and is even growing from commercial vehicles, agricultural equipment, construction equipment, and defence/tank-engine applications",
+    "Emission-norm tightening (BS-VI in India) is cited generically as a driver of higher precision/technology requirements in fuel injection components, favoring suppliers with strong quality/testing capability",
+    "Defence/import-substitution supply (e.g. tank-engine fuel systems previously sourced from Russia) is a real, growing structural theme distinct from the commercial-vehicle OEM cycle"
+  ],
+  "adoptionStructure": {
+    "note": "Precision/tolerance conformance (fuel injection is a high-precision mechanical category), OEM qualification and testing rigor, import-substitution/localization credentials (particularly valuable for defence buyers), and certifications (IATF/TS16949, VDA 6.3) act as gates to OEM approval."
+  },
+  "peers": [
+    { "name": "Bosch (global/India)", "note": "largest global diesel fuel injection manufacturer; India automotive-products segment revenue ₹143.6B-205.75B range (FY2024-TTM); of limited direct comparability given vastly larger, diversified multinational scale", "source": "statista.com; companiesmarketcap.com" },
+    { "name": "Lucas-TVS Limited", "revenueCr_FY2025": ">1000", "revenueCAGRPct_1yr": 11, "ebitdaCAGRPct_1yr": 38, "note": ">75% of revenue from in-house-developed products; JV of Lucas Industries UK and TVS Group since 1961", "source": "tracxn.com; motorindiaonline.in" },
+    { "name": "Delphi-TVS", "note": "JV operating India's diesel-fuel-injection business under the 'Delphi-TVS' brand", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["precision/tolerance conformance in fuel injection components", "OEM qualification and third-party testing validation", "import-substitution/localization credentials for defence buyers", "IATF/TS16949, VDA 6.3 certification as OEM-approval gate"],
+    "strongestPredictor": "third-party testing validation combined with certification-gated OEM qualification",
+    "source": "devendraautocom.com; motorindiaonline.in"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer feed pumps, hand primers, high-pressure fuel injection pipes, injectors, nozzles, and nozzle holders", "offer delivery/relief/pressure/overflow valves and governor diaphragms", "offer water pumps and electrical/electromechanical fuel pump components"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run precision machining (turning, pressed components) and casting/sub-assembly", "run in-house R&D with a flexible manufacturing system strategy", "validate via third-party testing partners (e.g. UK test-equipment distributorships) under IATF/TS16949, VDA 6.3 certification"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing base sized for both OEM and defence order flow", "pursue additive-manufacturing/3D-printing capability to cut prototype lead time"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["run OEM co-development and qualification processes", "navigate defence-sector security/localization vetting", "use ERP systems for order/quality traceability"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win OEM supply contracts with commercial-vehicle manufacturers", "win defence orders via import-substitution wins (e.g. tank-engine fuel systems)"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/india-fuel-injection-systems-market",
+    "https://www.statista.com/statistics/1495771/bosch-india-revenue-by-segment/",
+    "https://tracxn.com/d/legal-entities/india/lucas-tvs-limited/",
+    "https://www.motorindiaonline.in/six-decades-of-excellence-devendra-autocoms-journey-from-exports-to-oem-and-defence/"
+  ]
+}

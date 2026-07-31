@@ -1,0 +1,47 @@
+{
+  "segmentName": "Press Brake, CNC & Fiber Laser Machines",
+  "market": {
+    "worldSizeUSD_B_range": "Global press brake machine market: $667.5M (2024) to $1,055.89M by 2032 (5.9%/yr) per one source; $668.54M (2024) to $936.16M by 2030 (5.77%/yr) per another; a third source cites $5.22B (2023) growing at 4.8%/yr through 2030 — wide variance across vendors. Global press brakes (2025-2035 outlook): $0.79B (2025) to $1.40B by 2035 (5.9%/yr). Global fiber laser cutting machine market: $1,954.2M (2024) per one source, or $2,594.57M (2024) to $3,875.58M by 2031 (5.90%/yr) per another. India fiber laser cutting machine market: $53.94M (2024), 9.3%/yr — India cited as likely to dominate Asia-Pacific laser-cutting-machine growth at ~9.2%/yr through 2032. India hydraulic press market (adjacent category): $546.04M (2024) to $846.51M by 2033.",
+    "cagrPctRange": [4.8, 9.3],
+    "exportGeographies": ["Europe", "Africa", "Middle East", "South East Asia", "Australia"],
+    "globalCompetitors": ["Amada (Japan)", "Trumpf (Germany)", "Bystronic (Switzerland)"],
+    "domesticSlice": "Asia-Pacific holds ~45% of the global press-brake market share (large manufacturing base, rapid CNC integration); Europe ~30%. Amada India and BendTech Engineers are named in-market competitors; a specific India-only press-brake market-size figure in ₹ crore was not found."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["sheet-metal-forming-machines", "coil-processing-forming-lines"],
+  "structureFacts": [
+    "Government 'Make in India' initiatives and MSME modernization are cited as drivers of CNC press-brake adoption over conventional models in India",
+    "Industry 4.0/automation adoption is a generically cited driver across multiple reports, without India-specific adoption-rate statistics found",
+    "Amada/Trumpf/Bystronic operate at a vastly larger global scale than typical Indian manufacturers in this space — useful as technology/competitive benchmarks, not scale peers"
+  ],
+  "adoptionStructure": {
+    "note": "Precision, faster output, and automation-driven reduction in operator error in high-volume metalworking cycles drive adoption; shift toward CNC/hybrid machines for greater precision and automation versus manual/conventional press brakes."
+  },
+  "peers": [
+    { "name": "Amada (Japan)", "revenueUSD_M_FY2024": 2784, "revenueUSD_M_TTM_Mar2025": 2618, "growthPct_2024": 7.8, "source": "macrotrends.net" },
+    { "name": "Trumpf (Germany)", "revenueUSD_B": ">5", "employees": "~18,000", "note": "world's largest industrial laser systems maker", "source": "aggregated search summary" },
+    { "name": "Bystronic (Switzerland)", "revenueUSD_M_TTM_Dec2025": 738, "source": "aggregated PitchBook-sourced search summary" },
+    { "name": "Amada India", "note": "subsidiary of Amada Group, active in India since 2000; direct in-market competitor", "source": "amadaindia.co.in" },
+    { "name": "BendTech Engineers (India)", "note": "leading bending-machine manufacturer in India; no revenue/margin/ROE data found", "source": "bendingmachine.co.in" }
+  ],
+  "customerValue": {
+    "drivers": ["precision and automation-driven reduction in operator error", "shift to CNC/hybrid machines for greater precision", "technology-collaboration credibility (international tie-ups)"],
+    "strongestPredictor": "precision/automation combined with proven technology partnerships",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer hybrid/CNC hydraulic press brakes and tandem press brakes", "offer NC/CNC hydraulic shearing machines", "offer CNC fiber laser cutting machines"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["build capability via international technology tie-ups", "run ISO-certified manufacturing", "engineer for precision/automation gains"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a dedicated manufacturing facility staffed by graduate/diploma engineers", "scale production against domestic and export order flow"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["position as preferred vendor to top domestic engineering companies via a large installed base", "build export relationships across multiple regions"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["generate leads via international/domestic trade-show participation (e.g. IMTEX)", "fulfil export orders via distributor/direct international channels"] }
+  ],
+  "sources": [
+    "https://www.credenceresearch.com/report/press-brake-machine-market",
+    "https://www.360iresearch.com/library/intelligence/press-brakes",
+    "https://www.cognitivemarketresearch.com/fiber-laser-cutting-machine-market-report",
+    "https://www.openpr.com/news/4023596/at-a-cagr-of-5-90-fiber-laser-cutting-machines-market-size",
+    "https://www.imarcgroup.com/India-Hydraulic-Press-Market",
+    "https://www.macrotrends.net/stocks/charts/AMDLY/amada/revenue"
+  ]
+}

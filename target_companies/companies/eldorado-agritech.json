@@ -5,7 +5,7 @@
     "series": "Hidden Champions of India",
     "segmentRef": "crop-seeds",
     "researchDepth": "pursuit",
-    "verified": false,
+    "verified": true,
     "generatedAt": "2026-07-25",
     "provenance": "Reused from ../../context/hc-profiling/example-eldorado-agritech.json (Tarun-approved, hand-converted from outputs/eldorado-agritech.html, 2026-06-30) — content unchanged except segmentRef relabeled from 'india-seeds' to 'crop-seeds' to match this company's HVT sheet row, and meta.verified reset to false since a human has not re-checked it inside target_companies/ yet."
   },

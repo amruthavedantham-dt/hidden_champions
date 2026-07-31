@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "vinod-medical-systems",
+    "series": "Hidden Champions of India",
+    "segmentRef": "hospital-furniture-xray-films",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U85110CT1994PTC008363 (found via research — the HVT row's own notes field flagged the company's own website CIN as a placeholder, U85110CT1994PTC008363 confirmed independently instead)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Vinod Medical Systems: a hospital-furniture-and-imaging supplier straddling a real technology transition.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Raipur, Chhattisgarh manufacturer with proprietary DICOM software and a 300+ channel-partner network, half its product line facing digital displacement.", "tier": "company", "epistemic": "fact", "source": "vinodmedical.com; HVT row", "fields": ["product_improvement", "gap_currently_monetized"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1988 (operations); legal entity 1994", "tier": "company", "source": "vinodmedical.com; Zaubacorp", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹178 Cr · FY25 (Tracxn) / ₹100-500 Cr band (Tofler)", "tier": "company", "source": "Tracxn vs. Tofler", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "PAT / EBITDA / ROE", "value": "Not found", "tier": "company", "source": "n/a", "fields": ["financials.patCr"] },
+    { "label": "Certifications", "value": "ISO 9001:2015, ISO 13485:2016", "tier": "company", "source": "vinodmedical.com", "fields": ["moat"] },
+    { "label": "Proprietary product", "value": "Medipro DICOM software (2020), Aura DR Stand & Mobile Table (2023)", "tier": "company", "source": "vinodmedical.com/media", "fields": ["product_improvement"] },
+    { "label": "Network", "value": "26 India offices, 300+ channel partners, 30,000 clients (self-claimed)", "tier": "company", "source": "vinodmedical.com", "fields": ["gap_currently_monetized"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A dual product line, one half facing a real structural headwind",
+    "blocks": [
+      { "text": "Revenue is reported as ₹178 Cr for FY25 by one source (Tracxn) against a wider ₹100-500 Cr band by another (Tofler, FY24) — no PAT, EBITDA margin or ROE was found for any year at all.", "tier": "company", "epistemic": "fact", "source": "Tracxn; Tofler", "fields": ["financials.revenueCr"] },
+      { "text": "It's genuinely two businesses under one roof: healthcare furniture (ICU beds, wheelchairs, examination furniture) and imaging consumables (X-ray films, imaging media, refill inks) — 1,500+ SKUs across 8 brands, with the HVT sheet's own review confirming this dual-line structure without flagging it for verification.", "tier": "company", "epistemic": "fact", "source": "HVT row; vinodmedical.com", "fields": ["differentiation"] },
+      { "text": "It introduced Medipro, a proprietary DICOM (medical imaging standard) software, in November 2020, and launched the Aura DR Stand & Mobile Table in June 2023 — both dated, specific product launches, not vague innovation claims.", "tier": "company", "epistemic": "fact", "source": "vinodmedical.com/media", "fields": ["product_improvement"] },
+      { "text": "It holds ISO 9001:2015 and ISO 13485:2016 certification (the latter specific to medical-device quality management), and operates a genuinely large distribution footprint — 26 offices across India, 300+ channel partners, and a self-claimed 30,000 clients.", "tier": "company", "epistemic": "fact", "source": "HVT row; vinodmedical.com", "fields": ["moat", "gap_currently_monetized"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The two halves of its product line are heading in **opposite directions.**", "evidence": "India digital X-ray market: $456.06M (2025) to $741.86M by 2030 (10.22%/yr) — growing roughly 3.5x faster than the global film X-ray market (2.85%/yr), meaning the film side of Vinod Medical's business faces real, structural substitution pressure while its furniture business doesn't share that risk.", "tier": "segment", "epistemic": "fact", "source": "Mordor Intelligence", "fields": ["subSegments"] },
+      { "point": "**Public healthcare capex is a direct tailwind** for the furniture side specifically.", "evidence": "Ayushman Bharat-driven infrastructure expansion is increasingly shaping hospital furniture demand tied to bed-capacity additions.", "tier": "segment", "epistemic": "fact", "source": "structural inference", "fields": ["structureFacts"] },
+      { "point": "The one comparable independent peer shows **a real, if smaller, benchmark for a heritage medical-equipment exporter.**", "evidence": "Narang Medical Limited (incorporated 1989, ~80-year operating heritage, 80+ countries) posted ₹55.9 Cr revenue for FY ending March 2025, though down 9% YoY — a smaller but genuinely comparable independent Indian medical-equipment maker.", "tier": "segment", "epistemic": "fact", "source": "Tracxn/RocketReach aggregation", "fields": ["peers[0]"] }
+    ],
+    "reflect": { "text": "A real proprietary DICOM software product and a large distribution network, split across a growing furniture business and an imaging-consumables business facing genuine digital displacement. The two halves need different stories, not one blended narrative.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Market Research Future, IMARC Group, Mordor Intelligence (shared hospital-furniture-xray-films segment file). Peer data: Narang Medical Limited."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Expanding hospital furniture and consumables internationally", "body": "The HVT sheet's own gap research names this directly: the company has built a strong 26-office, 300+ channel-partner domestic network, but its own stated vision to 'spread wings globally' isn't yet realized — the existing ISO certifications are the stated lever for international expansion.", "source": "HVT gap research (LinkedIn company page).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Vinod Medical Systems' own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Lead an international pilot with furniture, not film consumables", "body": "Given the digital X-ray transition structurally favors the furniture line over film consumables, pilot the international expansion specifically with hospital furniture products in one or two nearby markets, rather than leading with the imaging-consumables line.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a hospital furniture/medical imaging consumables manufacturer in this segment — a directory-depth pass, not yet confirmed against Vinod Medical's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer hospital furniture (ICU beds, wheelchairs, examination furniture)", "offer medical/industrial X-ray film and imaging consumables", "sell under multiple house brands"], "stepsTier": "segment", "spottedAt": "sell under multiple house brands", "spotted": { "text": "Company facts (1,500+ SKUs across 8 brands, Medipro software, Aura DR Stand) confirm this step is real for Vinod Medical, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["maintain ISO 9001/13485-certified manufacturing", "run slitting/packing/repacking for light-sensitive and non-light-sensitive products", "hold CDSCO/ISI compliance"], "stepsTier": "segment", "spottedAt": "maintain ISO 9001/13485-certified manufacturing", "spotted": { "text": "Company facts (ISO 9001:2015, ISO 13485:2016) confirm this step is real for Vinod Medical, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate ISO-certified plants", "scale sufficient to serve a national dealer network"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["sell via a large channel-partner network to hospitals/diagnostic centers", "offer bundled institutional procurement across furniture + imaging + office-equipment categories"], "stepsTier": "segment", "spottedAt": "sell via a large channel-partner network to hospitals/diagnostic centers", "spotted": { "text": "Company facts (26 offices, 300+ channel partners, 30,000 clients) confirm this step is real for Vinod Medical, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["capture hospital/diagnostic-center capex and consumables-replenishment cycles", "fulfil against bed-capacity additions (furniture) or imaging-volume needs (consumables)", "reorder tied to institutional procurement cycles"], "stepsTier": "segment", "spottedAt": "capture hospital/diagnostic-center capex and consumables-replenishment cycles", "spotted": { "text": "Spotted at \"capture capex cycles\": domestic network is strong but international expansion is stated as unrealized → expanding internationally.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/hospital-furniture-xray-films.json) — no company-specific (A2/pursuit) operational intel was collected for Vinod Medical this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A proprietary DICOM product and a genuinely large domestic network, split across a growing business and a shrinking one. **The next move should tell those two stories separately, not as one company.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Vinod Medical Systems or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tracxn and Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed — CIN independently confirmed after HVT flagged the company's own website CIN as a placeholder) plus vinodmedical.com; market data from Market Research Future, IMARC Group and Mordor Intelligence; peer figures from Narang Medical Limited. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tracxn", "Tofler", "Zaubacorp", "vinodmedical.com", "Market Research Future", "IMARC Group", "Mordor Intelligence", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the actual revenue split between furniture and imaging consumables, and true customer retention across its 300+ channel partners — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

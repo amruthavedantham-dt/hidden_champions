@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "sanjay-techno-products",
+    "series": "Hidden Champions of India",
+    "segmentRef": "automotive-injection-molded-plastic-components",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U25200MH1996PTC102507. **Website mismatch flagged**: the HVT row's website (sanjaygroup.in) actually serves content for a different, separately-incorporated group company, Sanjay Techno Plast Pvt Ltd (CIN U74999MH2004PTC145667, founded 2004) — its TS16949 certification and 500+ employee claims must NOT be attributed to this company, Sanjay Techno Products Pvt Ltd (CIN U25200MH1996PTC102507)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Sanjay Techno Products: a proprietary IoT system the market hasn't paid for yet.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Mumbai automotive-plastics molder whose profit grew 154% in a year, running its own factory on a self-built production-tracking system.", "tier": "company", "epistemic": "fact", "source": "HVT row; Tofler", "fields": ["financials.patGrowthPct", "product_improvement"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1996 (first molding machine installed 1997)", "tier": "company", "source": "Zaubacorp; sanjaytechnoproducts.in", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "~₹79.1 Cr · FY24 (+32.65% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY24"] },
+    { "label": "PAT growth", "value": "+153.73% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.patGrowthPct.FY24"] },
+    { "label": "Net margin / ROE", "value": "0.52% / 5.96%", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct", "financials.roePct"] },
+    { "label": "Proprietary tech", "value": "IoT-based real-time production tracking system", "tier": "company", "source": "HVT row (self-claimed)", "fields": ["product_improvement"] },
+    { "label": "Recent moves", "value": "Brake-shoe plant (2020), 'Ecosense' plant (2023), Goa design office (2023)", "tier": "company", "source": "sanjaytechnoproducts.in", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Profit compounding fast, on a still-thin margin",
+    "blocks": [
+      { "text": "Revenue grew 32.65% to ~₹79.1 Cr and PAT grew 153.73% year-on-year — profit compounding far faster than revenue — but net margin remains razor-thin at 0.52% and ROE modest at 5.96% (ROCE just 3.13%), a company still converting scale into thin, if fast-improving, returns.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.patGrowthPct", "financials.netMarginPct", "financials.roePct"] },
+      { "text": "It manufactures plastic automotive parts for two-, three- and four-wheelers, processing 20 engineering plastic materials with an in-house paint shop — and, per its own account, launched an IoT-based real-time production tracking system with proprietary software, currently used internally for predictive maintenance and paperless factory operations.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation", "product_improvement"] },
+      { "text": "**A genuine identity caveat**: the website the HVT sheet points to (sanjaygroup.in) actually describes a different, separately-incorporated group company — Sanjay Techno Plast Pvt Ltd (2004, TS16949-certified, 500+ employees across four plants). Those specific facts belong to that sister company, not to Sanjay Techno Products Pvt Ltd (this profile's subject, incorporated 1996).", "tier": "company", "epistemic": "fact", "source": "this session's research — sanjaygroup.in vs. sanjaytechnoproducts.in", "fields": ["ownershipType"] },
+      { "text": "It self-claims recent expansion into a brake-shoe assembly plant (2020) and an 'Ecosense' production plant (2023), plus a design/marketing office in Goa (2023), with two named subsidiaries (Ecosense Appliances Pvt Ltd, RytNow Systems Pvt Ltd) — none independently corroborated in this pass.", "tier": "company", "epistemic": "fact", "source": "sanjaytechnoproducts.in (self-claimed)", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **growing steadily**, though the HVT row's own cited market-size figure appears to contain a scale error.", "evidence": "India automotive plastics: $1.51B (2025) to $2.22B by 2034 (4.25%/yr) per independent research — the HVT sheet's own alignment research cites a figure roughly 1,000x larger, almost certainly a units error in that source, not used here.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "**Lightweighting is a genuine structural tailwind**, not just a talking point.", "evidence": "Vehicle lightweighting trends are structurally increasing plastic content per vehicle across both ICE and EV platforms, and EV-driven component changes (battery enclosures, charging infrastructure) are creating entirely new plastic-part categories.", "tier": "segment", "epistemic": "fact", "source": "market structure aggregation", "fields": ["structureFacts"] },
+      { "point": "Listed peers in the broader auto-components space show **the range of outcomes at scale.**", "evidence": "Craftsman Automation posts 21% revenue CAGR against an industry median of 11.89%, though its own ROE (8.65%, 3-yr avg 13.1%) shows even larger players don't automatically convert growth into high returns.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A fast-growing molder with a genuine internal tech asset (the IoT tracking system) sitting on margins that haven't yet caught up to the growth rate — and a website mix-up that makes its real scale harder to pin down than it should be.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group, Grand View Research (shared automotive-injection-molded-plastic-components segment file). Peer data: screener.in (Craftsman Automation, Sundram Fasteners, Motherson)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "margin", "title": "Commercializing the IoT production-tracking system as a service", "body": "The HVT sheet's own gap research names this directly: the proprietary IoT-based real-time production tracking system, currently used only internally for predictive maintenance and paperless operations, has explicit potential to be offered as a service to other manufacturers — a software-margin opportunity distinct from the company's thin-margin core molding business.", "source": "HVT gap research (LinkedIn/TheMachineMaker coverage).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Sanjay Techno Products' own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Pilot the IoT system with one external manufacturer", "body": "Before building a full commercial product, offer the existing IoT production-tracking system to one other small manufacturer (even a non-competing one) as a paid pilot, to test real-world demand and pricing before investing in productizing it further.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an automotive injection-molded plastics manufacturer in this segment — a directory-depth pass, not yet confirmed against Sanjay Techno Products' own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer injection-molded plastic components (interior trim, under-bonnet, structural/semi-structural parts)", "engineer to OEM/Tier-1 specs (TS16949/IATF-certified)", "bundle with in-house paint/surface finishing where offered"], "stepsTier": "segment", "spottedAt": "bundle with in-house paint/surface finishing where offered", "spotted": { "text": "Company facts (in-house paint shop, 20 engineering plastic materials processed) confirm this step is real for Sanjay Techno Products, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["tool design and mold-making", "multi-tonnage injection molding (small to large-tonnage presses)", "paint/surface-coating lines, plastic welding, assembly"], "stepsTier": "segment", "spottedAt": "tool design and mold-making", "spotted": { "text": "Spotted at \"tool design\": the IoT production-tracking system sits right at this operational layer, with unrealized external commercial value → commercializing the IoT system.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate multiple press-tonnage bands (typically 50T-1500T)", "run multi-shift high-volume production", "maintain multi-plant footprint near OEM clusters"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["deliver JIT to OEM assembly lines", "maintain PPAP/APQP quality documentation", "manage engineering change requests"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win nomination-based supply contracts via RFQ/vendor-approval processes", "fulfil against vehicle model production schedules", "reorder tied to model life cycle", "requalify for next-generation platforms"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/automotive-injection-molded-plastic-components.json) — no company-specific (A2/pursuit) operational intel was collected for Sanjay Techno Products this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Profit tripling on a razor-thin margin, with a genuinely novel piece of internal software sitting unmonetized. **The plastics business funds the company; the IoT system might be the actual product.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Sanjay Techno Products or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus sanjaytechnoproducts.in — with a website-mismatch caveat flagged for the sanjaygroup.in domain (see meta.provenance); market data from IMARC Group and Grand View Research; peer figures from screener.in. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Zaubacorp", "sanjaytechnoproducts.in", "IMARC Group", "Grand View Research", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — real demand for the IoT system as an external product, and true customer retention among its named OEM/Tier-1 customers — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

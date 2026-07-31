@@ -1,0 +1,40 @@
+{
+  "segmentName": "Magnetic & Non-Magnetic Workholding Tools",
+  "market": {
+    "worldSizeUSD_B_range": "Global Magnetic Chucks Market: $0.9B (2023) to $1.17B by 2030 (5.6%/yr). Global Electro Magnetic Chucks Market: 12.1%/yr per a separate, lower-confidence secondary aggregator source (faster growth for the electromagnetic variant specifically). India-specific market size/CAGR was not found.",
+    "cagrPctRange": [5.6, 12.1],
+    "exportGeographies": ["New Zealand", "China", "Europe", "Singapore", "Dubai", "Malaysia"],
+    "globalCompetitors": ["Tecnomagnete (Italy)", "Walker Magnetics", "Industrial Magnetics Inc (IMI)", "SCHUNK", "HOMGE"],
+    "domesticSlice": "Electro Magnetic Industries (Vadodara, Gujarat, est. 1978, ISO 9001:2000 certified) is a named Indian peer with a broad ₹11-100 Cr IndiaMART revenue-band estimate — no precise figure found."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Part of the broader 'machine tool accessories' bracket (toolholders, workholding, measuring/inspection) that benefits indirectly from India's PLI schemes (₹1.97 lakh crore outlay, 14 sectors) and Make in India/Aatmanirbhar Bharat push, though no dedicated scheme specific to magnetic workholding was found",
+    "Electropermanent technology (brief-pulse activation vs. continuous-power electromagnetic) is the key technology differentiator across manufacturer literature"
+  ],
+  "adoptionStructure": {
+    "note": "Precision/repeatability for grinding & machining operations, energy efficiency (electropermanent vs. continuous-power electromagnetic), and fail-safe holding during power loss for lifters/cranes drive purchasing (inferred from product literature, not a single cited market report)."
+  },
+  "peers": [
+    { "name": "Tecnomagnete (Italy)", "note": "described as global market leader in magnetic clamping/lifting systems for machine tools; India-specific revenue not found", "source": "aggregated search summary" },
+    { "name": "Electro Magnetic Industries (Vadodara, India, est. 1978)", "note": "ISO 9001:2000 certified; broad ₹11-100 Cr revenue-band estimate", "source": "electromagneticindia.com" }
+  ],
+  "customerValue": {
+    "drivers": ["precision/repeatability for grinding & machining operations", "energy efficiency (electropermanent technology)", "fail-safe holding during power loss for lifters/cranes"],
+    "strongestPredictor": "precision/repeatability combined with fail-safe reliability",
+    "source": "aggregated product-literature inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer magnetic lifters, chucks, V-blocks", "offer non-magnetic precision workholding products"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["customize products for OEM machine-tool builders", "run in-house manufacturing/machining/assembly"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["source raw materials (steel, magnet alloys, coils)", "operate a manufacturing base sized for decades of accumulated product development"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["sell via distributors and direct export channels", "provide certification-backed product reliability assurance"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil inbound RFQs from machine shops, bearing/steel/automotive manufacturers", "fulfil export orders across multiple countries"] }
+  ],
+  "sources": [
+    "https://www.verifiedmarketreports.com/product/magnetic-chucks-market-size-and-forecast/",
+    "https://electromagneticindia.com/about-us/",
+    "https://armatechassociates.com/electroperm-magnetic-lifter/"
+  ]
+}

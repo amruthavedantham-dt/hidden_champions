@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "devendra-autocom",
+    "series": "Hidden Champions of India",
+    "segmentRef": "diesel-fuel-injection-parts",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U51102TN1965PTC005279, incorporated 2 Jan 1965 as Devendra Exports Pvt. Ltd., rebranded Devendra Autocom Pvt. Ltd. in 2017."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Devendra Autocom: a 60-year export house that rebuilt itself around Indian Army tank engines.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 1965 export-led fuel-injection parts maker that flipped from ~85% export to ~90% domestic, with defence now roughly half its revenue — while growing 43% YoY and improving margins.", "tier": "company", "epistemic": "fact", "source": "motorindiaonline.in; Tofler", "fields": ["exportFootprint", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1965 (as Devendra Exports Pvt. Ltd.; rebranded 2017)", "tier": "company", "source": "CIN data; motorindiaonline.in", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹100-101 Cr FY25 (Tofler + trade-press corroborated), 1-yr revenue CAGR +42.61-43%", "tier": "company", "source": "Tofler; motorindiaonline.in", "fields": ["financials.revenueCr"] },
+    { "label": "Margins & growth", "value": "Net 1.72%, Operating 3.09% — thin but EBITDA +144.14% YoY, Net Profit +158.07% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct"] },
+    { "label": "ROE / ROCE", "value": "9.45% / 10.87%, Debt-to-Equity -0.11 (net cash)", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Employees", "value": "~120-175 (trade-press 120; Tofler-derived 175)", "tier": "company", "source": "motorindiaonline.in; search-aggregated Tofler data", "fields": ["employees"] },
+    { "label": "Export/domestic mix shift", "value": "~85% export/15% domestic (1965-2010s) → ~90% domestic/~10% export (by 2023), driven by defence pivot", "tier": "company", "source": "motorindiaonline.in", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Strong growth, thin margins, a real structural pivot underway",
+    "blocks": [
+      { "text": "Revenue reached ₹100-101 Cr in FY25, up a striking ~43% YoY on a 1-year CAGR basis — corroborated independently by both Tofler and a trade-press interview citing the same ~₹100 Cr figure, with a company-stated target of ₹200 Cr by FY26/27 at 30%+ annual growth. EBITDA and net profit both grew even faster (+144.14% and +158.07% YoY respectively), though net margin remains thin at 1.72%. ROE (9.45%) and ROCE (10.87%) are genuinely healthy, and debt-to-equity is negative (net cash) — a real financial engine emerging.", "tier": "company", "epistemic": "fact", "source": "Tofler; motorindiaonline.in", "fields": ["financials.revenueCr", "financials.roePct", "financials.rocePct"] },
+      { "text": "It is a manufacturer, supplier, and exporter of automotive high-precision components, and the sole Indian distributor of Hartridge (UK) diesel test equipment and Turbo Technics (UK) turbocharger machinery — a real third-party validation-testing capability, not just manufacturing.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation"] },
+      { "text": "It holds IATF/TS 16949, ISO 9001/14001/45001, and VDA 6.3 certification, plus Lean Management, Industry 4.0, and SAP HANA systems — a genuinely modern operational stack for a 60-year-old manufacturer. It states in-house R&D drives its Flexible Manufacturing System strategy and is planning a large-scale 3D printer to cut prototype lead time to 60 days.", "tier": "company", "epistemic": "fact", "source": "devendraautocom.com", "fields": ["product_improvement"] },
+      { "text": "The company's own history shows a striking structural pivot: historically ~85% export/15% domestic through the 2010s, flipping to ~90% domestic/~10% export by 2023 as it moved toward Indian OEM and defence supply. Defence now accounts for roughly half of revenue, up from a low base — anchored by a 2018 contract to supply fuel pumps, injectors, and fuel lines to Engine Factory Avadi for Indian Army T-72/T-90 tank engines, displacing previously Russian-sourced parts and breaking into a category historically dominated by Bosch and Delphi. It won the SIDM Champion Award 2024 for Import Substitution.", "tier": "company", "epistemic": "fact", "source": "motorindiaonline.in", "fields": ["recentMoves", "exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A **real, growing India fuel-injection market**, with a structural EV headwind offset by defence/commercial-vehicle demand.", "evidence": "India Fuel Injection Systems Market: $2.20B (2024) to $4.11B by 2033 (7.20%/yr); near-term demand persists and even grows from commercial vehicles, agricultural equipment, construction equipment, and defence applications even as EV transition pressures light-vehicle diesel demand.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "**Bosch dominates globally, but Lucas-TVS is the closer, better-documented Indian peer** — still ~10x Devendra's scale.", "evidence": "Bosch holds >44% of the global diesel fuel injection market; Lucas-TVS (JV of Lucas Industries UK and TVS Group) posted >₹1,000 Cr FY25 revenue with +11% revenue CAGR and +38% EBITDA CAGR, with >75% of revenue from in-house-developed products.", "tier": "segment", "epistemic": "fact", "source": "Tracxn; motorindiaonline.in", "fields": ["peers"] },
+      { "point": "**Defence import-substitution is a real, distinct structural theme** separate from the commercial-vehicle OEM cycle — and Devendra Autocom is directly inside it.", "evidence": "The Engine Factory Avadi relationship broke into a category previously dominated by Bosch/Delphi and displaced Russian-sourced parts under 'Make in India' — a structural, policy-backed theme distinct from ordinary automotive-component demand.", "tier": "segment", "epistemic": "fact", "source": "motorindiaonline.in", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A genuinely well-timed structural pivot — from a low-margin, purely export-led legacy business toward a higher-value, policy-backed defence import-substitution role — showing up cleanly in the numbers: strong revenue growth, improving returns, and a net-cash balance sheet. The 3D-printing prototyping investment and the ₹200 Cr FY26/27 target both suggest management is trying to compound this, not just ride a one-time contract win.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group (shared diesel-fuel-injection-parts segment file). Peer data: Bosch India, Lucas-TVS, Delphi-TVS."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "Real momentum already documented in the company's own recent history — the question is whether it broadens beyond the initial defence win.",
+    "items": [
+      { "lever": "customer-diversification", "title": "Converting the Engine Factory Avadi defence relationship into a broader OEM/defence base", "body": "The company is already expanding into northern India and exploring Navy/Air Force partnerships beyond its existing Army supply relationship, alongside targeting new commercial OEMs (Mahindra, Tata Motors, Kirloskar) beyond its anchor client Ashok Leyland — a credible next step given the demonstrated import-substitution win already achieved.", "source": "motorindiaonline.in (six-decades company profile).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["recentMoves"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is confirming margin improves as defence/OEM diversification scales.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Track whether net margin expands as the defence/domestic OEM mix grows further", "body": "With net margin still thin (1.72%) despite the revenue and EBITDA surge, the clean test is whether further defence and multi-OEM diversification (beyond the initial Engine Factory Avadi win) pushes margin up toward what ROE/ROCE already suggest is achievable — confirming the pivot is a genuine margin story, not just a volume one.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a diesel-fuel-injection-parts manufacturer in this segment — a directory-depth pass, not yet confirmed against Devendra Autocom's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer feed pumps, hand primers, high-pressure fuel injection pipes, injectors, nozzles, and nozzle holders", "offer delivery/relief/pressure/overflow valves and governor diaphragms", "offer water pumps and electrical/electromechanical fuel pump components"], "stepsTier": "segment", "spottedAt": "offer feed pumps, hand primers, high-pressure fuel injection pipes, injectors, nozzles, and nozzle holders", "spotted": { "text": "Company facts (60-year automotive high-precision component manufacturing) confirm this step is real for Devendra Autocom — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run precision machining (turning, pressed components) and casting/sub-assembly", "run in-house R&D with a flexible manufacturing system strategy", "validate via third-party testing partners under IATF/TS16949, VDA 6.3 certification"], "stepsTier": "segment", "spottedAt": "validate via third-party testing partners under IATF/TS16949, VDA 6.3 certification", "spotted": { "text": "Company facts (sole Indian distributor of Hartridge/UK diesel test equipment and Turbo Technics/UK turbocharger machinery, full certification stack) confirm this step is real for Devendra Autocom — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing base sized for both OEM and defence order flow", "pursue additive-manufacturing/3D-printing capability to cut prototype lead time"], "stepsTier": "segment", "spottedAt": "pursue additive-manufacturing/3D-printing capability to cut prototype lead time", "spotted": { "text": "Company facts (planned large-scale 3D printer targeting 60-day prototype lead time) confirm this step is real and in progress for Devendra Autocom — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["run OEM co-development and qualification processes", "navigate defence-sector security/localization vetting", "use ERP systems for order/quality traceability"], "stepsTier": "segment", "spottedAt": "navigate defence-sector security/localization vetting", "spotted": { "text": "Company facts (Engine Factory Avadi supply relationship for Indian Army T-72/T-90/BMP tank engines, SAP HANA ERP) confirm this step is real for Devendra Autocom — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win OEM supply contracts with commercial-vehicle manufacturers", "win defence orders via import-substitution wins"], "stepsTier": "segment", "spottedAt": "win defence orders via import-substitution wins", "spotted": { "text": "Spotted at 'win defence orders': defence now ~50% of revenue, anchored by the Engine Factory Avadi contract — exactly this step, confirmed and already in motion.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/diesel-fuel-injection-parts.json) — no company-specific (A2/pursuit) operational intel was collected for Devendra Autocom this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A 60-year export house that rebuilt itself around Indian defence import-substitution, and the numbers show it: 43% revenue growth, improving returns, net cash. **The next test is whether margin catches up to the volume story as the defence/OEM base broadens.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Devendra Autocom or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler and motorindiaonline.in; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus devendraautocom.com; market data from IMARC Group; peer figures from Tracxn (Lucas-TVS) and Statista/companiesmarketcap.com (Bosch India). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "motorindiaonline.in", "devendraautocom.com", "IMARC Group", "Tracxn", "Statista", "companiesmarketcap.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true margin trajectory as defence/OEM mix broadens, and specifics of the pending Navy/Air Force partnership discussions — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

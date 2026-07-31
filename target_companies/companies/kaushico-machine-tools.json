@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "kaushico-machine-tools",
+    "series": "Hidden Champions of India",
+    "segmentRef": "mechanical-power-presses",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U29299HR1983PTC014934, incorporated 1983; company's own narrative traces founding to 1971 under R.S. Sharma."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Kaushico Machine Tools: 50+ years building power presses for Yamaha and Havells, on margins thin enough to worry about.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "Named OEM customers and a founder-family succession give real staying power — but a 0.08% net margin and an 18-person MCA headcount for a decades-old manufacturer both need explaining.", "tier": "company", "epistemic": "fact", "source": "Tofler; MCA filing data", "fields": ["financials.netMarginPct", "employees"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1983 (incorporation); company narrative states 1971 founding by R.S. Sharma", "tier": "company", "source": "CIN data; kaushico.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹75-100 Cr band FY24, +7.41% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Margins", "value": "Net Profit Margin 0.08% — very thin; EBITDA +23.25% YoY, Net Profit +82.01% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct"] },
+    { "label": "ROE / ROCE", "value": "0.62% / 1.75%", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Employees (MCA filing)", "value": "18 (Nov 2024) — notably small for a 50+ year, ₹75-100 Cr manufacturer; likely statutory/office headcount only", "tier": "company", "source": "thecompanycheck.com", "fields": ["employees"] },
+    { "label": "Named customers", "value": "Yamaha, TTK, Havells, Hawkins, JBM Group (self-claimed, needs_verify: yes)", "tier": "company", "source": "kaushico.com", "fields": ["moat"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Real decades, real customers, thin margins",
+    "blocks": [
+      { "text": "Revenue sits in the ₹75-100 Cr band (FY24, +7.41% YoY), but profitability is razor-thin: net profit margin of just 0.08%, ROE 0.62%, ROCE 1.75%. What stands out is the growth trajectory rather than the absolute level — EBITDA grew 23.25% YoY and net profit surged 82.01% YoY, both off a small base, with debt-to-equity at -0.08 (net cash).", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.netMarginPct", "financials.roePct"] },
+      { "text": "It manufactures mechanical power presses (C Frame, H Frame, High-Speed, Permanent Inclined) and shearing machines, describing itself as having '50+ years of engineering excellence' — a claim consistent with the company's own founding narrative (1971) even though the legal entity's CIN dates to 1983.", "tier": "company", "epistemic": "fact", "source": "kaushico.com", "fields": ["differentiation"] },
+      { "text": "It holds ISO 9001:2015 certification and names Yamaha, TTK, Havells, Hawkins, and JBM Group as customers — a genuinely impressive roster if accurate, though the HVT sheet itself flags this `moat` claim `needs_verify: yes` since it rests entirely on the company's own website with no independent confirmation.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed, needs_verify: yes)", "fields": ["moat"] },
+      { "text": "It operates a joint venture, VeeGee Kaushico Engineering Pvt. Ltd., for sheet-metal component manufacturing, with current leadership under Managing Director Mridul Sharma (son of founder R.S. Sharma) — a real multi-generational family succession. Its MCA-filed employee count of 18 is strikingly small for a company of this age and revenue scale, most plausibly reflecting only statutory/office headcount rather than the full shop-floor workforce.", "tier": "company", "epistemic": "fact", "source": "kaushico.com; MCA/company-check data", "fields": ["employees"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A large, **growing metal-stamping demand base** in India, with mechanical presses still the dominant press type.", "evidence": "India metal stamping market: $4.65B (2023), 5.7-6.3%/yr depending on report vintage; mechanical presses held the largest revenue share within the press-machine market at 52.3% in 2023, favored for cost-effectiveness in uniform, straightforward-shape parts.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research", "fields": ["market.sizeRange"] },
+      { "point": "**A real structural shift toward servo-electric presses** is underway — a genuine long-term threat to the mechanical-press category Kaushico specializes in.", "evidence": "Servo press segment is cited as the fastest-growing press-type segment going forward (India-specific servo-press growth cited at 6.1%/yr), driven by energy efficiency, programmable stroke profiles, and higher repeatability.", "tier": "segment", "epistemic": "fact", "source": "aggregated factmr.com/persistencemarketresearch.com/indexbox.io reports", "fields": ["structureFacts"] },
+      { "point": "**No named Indian mechanical-power-press peer with disclosed financials** exists to benchmark Kaushico's thin margins against.", "evidence": "General directories list numerous Indian power-press manufacturers, but none with disclosed revenue/margin/ROE — Kaushico's own 50-year leadership claim is self-positioned, not independently verified against named competitors.", "tier": "segment", "epistemic": "fact", "source": "shribalajipresses.com; nkhhammers.com", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A genuinely old, customer-credentialed manufacturer whose margins simply haven't kept pace with its longevity or its claimed customer roster. The servo-electric shift is a real structural risk to watch — Kaushico's own gap research already names smart/connected-machine features as the response, but hasn't yet shown up in the numbers.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research (shared mechanical-power-presses segment file). No independently financialed Indian peer was found for direct comparison."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "product-expansion", "title": "Adding Industry 4.0 features to an aging mechanical-press line", "body": "The HVT sheet's own gap research names smart, connected machines with real-time production data, predictive maintenance, remote monitoring, and energy optimization as the credible response to the segment's servo-electric shift — a real lever given Kaushico's existing R&D investment, though one that needs to move the needle on the current 0.08% net margin to matter.", "source": "HVT gap research (IndiaMART profile).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is verifying the named-customer roster before treating it as a moat.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Independently confirm the Yamaha/TTK/Havells/Hawkins/JBM customer roster", "body": "Since the HVT sheet itself flags this claim `needs_verify: yes`, confirming even one or two of these named OEM relationships directly (procurement filings, press releases, or direct contact) would materially strengthen or correct the moat claim before it's used in any outward-facing material.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a mechanical-power-press manufacturer in this segment — a directory-depth pass, not yet confirmed against Kaushico's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer mechanical power presses (C Frame, H Frame, High-Speed, Permanent Inclined)", "offer shearing machines", "supply sheet-metal components via joint-venture manufacturing"], "stepsTier": "segment", "spottedAt": "supply sheet-metal components via joint-venture manufacturing", "spotted": { "text": "Company facts (VeeGee Kaushico Engineering JV for sheet-metal components) confirm this step is real for Kaushico — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run in-house R&D to improve machine design and manufacturing processes", "run CNC-equipped production facilities", "maintain ISO-certified manufacturing"], "stepsTier": "segment", "spottedAt": "maintain ISO-certified manufacturing", "spotted": { "text": "Company facts (ISO 9001:2015 certification) confirm this step is real for Kaushico — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing base sized to decades of accumulated order volume", "run a joint-venture sheet-metal component line alongside core press manufacturing"], "stepsTier": "segment", "spottedAt": "operate a manufacturing base sized to decades of accumulated order volume", "spotted": { "text": "Company facts (Faridabad, Haryana manufacturing base since 1971/1983) confirm this step is real for Kaushico — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["serve automotive, defense, domestic appliance, and electrical equipment manufacturers", "build multi-decade named-OEM supply relationships"], "stepsTier": "segment", "spottedAt": "build multi-decade named-OEM supply relationships", "spotted": { "text": "Company facts (self-claimed Yamaha/TTK/Havells/Hawkins/JBM customer roster, flagged needs_verify) noted here — see p1_engine and p4_experiments.", "tier": "company", "epistemic": "interpretation" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil orders from long-standing domestic industrial relationships", "pursue smart/connected-machine features to capture Industry 4.0 upgrade demand"], "stepsTier": "segment", "spottedAt": "pursue smart/connected-machine features to capture Industry 4.0 upgrade demand", "spotted": { "text": "Spotted at 'pursue smart/connected-machine features': this is exactly the HVT gap research's named opportunity — see p3_opportunities.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/mechanical-power-presses.json) — no company-specific (A2/pursuit) operational intel was collected for Kaushico this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuinely old, family-run press manufacturer with an impressive customer roster on paper and margins thin enough to question the story. **The named-OEM claims deserve direct verification before they're treated as a real moat.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Kaushico Machine Tools or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus kaushico.com; market data from Grand View Research. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "kaushico.com", "thecompanycheck.com", "Grand View Research", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — direct confirmation of the named-OEM customer relationships, and true shop-floor headcount beyond the MCA-filed statutory figure — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

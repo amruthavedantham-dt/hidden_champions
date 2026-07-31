@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "surin-automotive",
+    "series": "Hidden Champions of India",
+    "segmentRef": "automotive-construction-equipment-components",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U34300KA2006PTC038845, incorporated 2006; company markets itself as part of a '50-year-old Surin Group,' i.e. group heritage predating this legal entity."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Surin Automotive: an ICRA-rated, blue-chip-customer component maker whose own data sources can't agree if it's growing or shrinking.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "3,500+ employees, 10-12 plants, and named customers from Caterpillar to Tata — anchored by a real independent credit rating, sitting on top of a three-way revenue conflict.", "tier": "company", "epistemic": "fact", "source": "ICRA rating rationale; conflicting revenue sources", "fields": ["moat", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2006 (this entity); company markets itself as part of a '50-year-old Surin Group'", "tier": "company", "source": "CIN data; company positioning", "fields": ["foundedYear"] },
+    { "label": "Revenue (conflicting)", "value": "₹984.6 Cr FY2023 (ICRA, +30.4% YoY) vs. ₹899 Cr FY2025 (Tracxn, -5% 1-yr CAGR, -2% EBITDA CAGR) vs. 'over ₹500 Cr' FY2024 (Tofler)", "tier": "company", "source": "ICRA rating rationale; Tracxn; Tofler — three-way conflict, flagged", "fields": ["financials.revenueCr"] },
+    { "label": "Credit rating", "value": "ICRA Long-Term 'A' (Stable), Short-Term 'A1'", "tier": "company", "source": "ICRA rating rationale", "fields": ["moat"] },
+    { "label": "Scale", "value": "3,500+ employees; 10-12 plants across 7-8 Indian cities; 5 business divisions", "tier": "company", "source": "company positioning (search-aggregated)", "fields": ["employees"] },
+    { "label": "Certifications", "value": "IATF 16949 (5 plants), ISO 9001/14001/45001, ISO 3834-2:2021 (welding quality, 6 plants)", "tier": "company", "source": "surinauto.com/quality", "fields": ["moat"] },
+    { "label": "Named customers", "value": "Kobelco, Eicher, Ashok Leyland, Komatsu, Volvo, Hyundai, Tata, Caterpillar, JCB, Sany, TAFE, VECV", "tier": "company", "source": "preqin.com company profile", "fields": ["align1_capability"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A genuinely large, credentialed player — with its own numbers in dispute",
+    "blocks": [
+      { "text": "This is a real, material three-way revenue conflict: ICRA's own rating rationale states ₹984.6 Cr for FY2023 (+30.4% YoY); Tracxn shows ₹899 Cr for FY2025 with a -5% 1-year revenue CAGR and -2% EBITDA CAGR (i.e., a recent decline); Tofler separately states 'over ₹500 Cr' for FY2024, a materially lower and less precise figure. All three are reported here rather than resolved by choosing one — what's notable is that even the lowest and highest figures both place Surin Automotive among the larger companies profiled in this batch.", "tier": "company", "epistemic": "fact", "source": "ICRA rating rationale; Tracxn; Tofler", "fields": ["financials.revenueCr"] },
+      { "text": "It manufactures automotive parts and assemblies — fuel tanks, hydraulic tanks, booms, arms, frames, engine covers, truck cabins, cowls, FES, chassis components, truck decks, tippers, seating systems, and interiors — spanning earthmoving, construction, material handling, commercial vehicles, tractors/agri, concrete equipment, and mining industries, a genuinely wide diversification across end markets.", "tier": "company", "epistemic": "fact", "source": "preqin.com company profile", "fields": ["differentiation"] },
+      { "text": "It holds a real, independent ICRA credit rating — Long-Term 'A' (Stable), Short-Term 'A1' — a meaningfully harder-to-fake signal of financial health than self-reported figures, especially given how much the revenue sources above disagree. It also holds ISO 9001:2015, IATF 16949:2016, ISO 14001:2015, ISO 45001:2018, and ISO 3834-2:2021 certifications, with 5 plants IATF-certified and 6 plants welding-quality certified — the HVT sheet itself flags this `moat` claim `needs_verify: yes` despite the certification pages being on the company's own site.", "tier": "company", "epistemic": "fact", "source": "surinauto.com/quality; ICRA", "fields": ["moat"] },
+      { "text": "It operates 3,500+ employees across 10-12 plants in 7-8 Indian cities, organized into 5 business divisions, and supplies a genuinely large named blue-chip customer base — Kobelco, Eicher, Ashok Leyland, Komatsu, Volvo, Hyundai, Tata, Caterpillar, JCB, Sany, TAFE, and VECV — predominantly in fuel and hydraulic tanks for construction equipment manufacturers, with exports to Europe and America (percentage not found).", "tier": "company", "epistemic": "fact", "source": "preqin.com company profile", "fields": ["exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A **large, infrastructure-linked India demand base**, with a wide, multi-division customer spread reducing single-cycle risk.", "evidence": "India auto components market: $58.21B (2025) to $82.67B by 2034; India's ~$1.4T National Infrastructure Pipeline is the primary structural demand driver for construction-equipment-linked component demand.", "tier": "segment", "epistemic": "fact", "source": "preqin.com; aggregated market research", "fields": ["market.sizeRange"] },
+      { "point": "**No true scale-comparable peer exists** — the closest large listed Indian peer operates at ~18x the scale.", "evidence": "Bharat Forge posts ₹16,500 Cr FY25 revenue — roughly 18x even the highest of Surin's own conflicting revenue figures (₹984.6 Cr) — useful as a directional benchmark, not a direct comparable.", "tier": "segment", "epistemic": "fact", "source": "aggregated financial data", "fields": ["peers"] },
+      { "point": "**Independent credit ratings matter more in this segment than in most others in this batch** — precisely because self-reported revenue is so inconsistent here.", "evidence": "The ICRA 'A' (Stable) Long-Term rating is a real, third-party-validated financial-health signal in a segment where Surin's own revenue figures diverge by nearly 2x across data aggregators.", "tier": "segment", "epistemic": "interpretation", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "The scale and blue-chip customer roster here are the most substantial of any company in this batch — and the ICRA rating gives real independent grounding to that scale story, even as the revenue figures themselves genuinely disagree across sources. The honest read: this is very likely a large, real, well-diversified supplier, but its precise current growth trajectory (Tracxn's -5% CAGR vs. ICRA's earlier +30.4% growth) is a live open question, not a settled fact.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: preqin.com, aggregated auto-components/construction-equipment research (shared automotive-construction-equipment-components segment file, new this batch). Peer data: Bharat Forge (directional only, not a close comparable)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "market-access", "title": "Expanding beyond construction-equipment-dominant exports into Southeast Asia and the Middle East", "body": "The HVT sheet's own gap research names international market expansion — particularly Southeast Asia and the Middle East — as untapped, given current export activity is predominantly fuel/hydraulic-tank supply to construction equipment manufacturers. This is a credible lever for a company with the plant footprint and certification stack to support new-geography qualification, though it should follow, not precede, resolving the current revenue-trajectory conflict.", "source": "HVT gap research (preqin.com company profile).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is resolving the three-way revenue conflict before anything else.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Reconcile ICRA's FY2023 growth figure against Tracxn's FY2025 decline figure directly", "body": "Since ICRA's own rating rationale shows +30.4% growth (FY2023) while Tracxn shows a -5% revenue CAGR and -2% EBITDA CAGR into FY2025, confirming the actual current trajectory directly with the company (or via a more recent ICRA rating update, if one exists) should precede any expansion or partnership conversation.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an automotive/construction-equipment component manufacturer in this segment — a directory-depth pass, not yet confirmed against Surin Automotive's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer fuel tanks, hydraulic tanks, booms, arms, frames, engine covers, and truck cabins/cowls", "offer FES, chassis components, truck decks, tippers, seating systems, and interiors", "serve earthmoving, construction, material handling, commercial vehicle, tractor/agri, concrete equipment, and mining industries"], "stepsTier": "segment", "spottedAt": "serve earthmoving, construction, material handling, commercial vehicle, tractor/agri, concrete equipment, and mining industries", "spotted": { "text": "Company facts (5 business divisions spanning these exact end markets) confirm this step is real for Surin Automotive — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["maintain IATF 16949 plus ISO 9001/14001/45001/3834-2 certification across multiple plants", "run R&D toward new component-line launches, supported by external funding", "maintain an independent credit rating (ICRA) as a financial-health signal"], "stepsTier": "segment", "spottedAt": "maintain IATF 16949 plus ISO 9001/14001/45001/3834-2 certification across multiple plants", "spotted": { "text": "Company facts (5 plants IATF-16949 certified, 6 plants ISO 3834-2 certified, full ISO stack) confirm this step is real for Surin Automotive — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate 10-12 plants across 7-8 Indian cities", "organize production across 5 business divisions by end-market"], "stepsTier": "segment", "spottedAt": "operate 10-12 plants across 7-8 Indian cities", "spotted": { "text": "Company facts (10-12 plants, 3,500+ employees) confirm this step is real for Surin Automotive — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["supply a large named blue-chip customer base spanning earthmoving, commercial-vehicle, and agri OEMs", "maintain multi-decade group heritage predating the current legal entity"], "stepsTier": "segment", "spottedAt": "supply a large named blue-chip customer base spanning earthmoving, commercial-vehicle, and agri OEMs", "spotted": { "text": "Company facts (Kobelco, Eicher, Ashok Leyland, Komatsu, Volvo, Hyundai, Tata, Caterpillar, JCB, Sany, TAFE, VECV) confirm this step is real for Surin Automotive — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil OEM supply contracts predominantly in fuel/hydraulic tanks to construction equipment manufacturers", "pursue international market expansion beyond current export base"], "stepsTier": "segment", "spottedAt": "pursue international market expansion beyond current export base", "spotted": { "text": "Spotted at 'pursue international market expansion': Southeast Asia and Middle East are named as untapped in HVT's own gap research — see p3_opportunities.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/automotive-construction-equipment-components.json) — no company-specific (A2/pursuit) operational intel was collected for Surin Automotive this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "The largest, most diversified, and most independently-credentialed company in this batch by far — and one whose own revenue figures disagree by nearly 2x across sources. **Reconciling the ICRA growth story against Tracxn's decline figure is the single most important open question.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Surin Automotive or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from ICRA rating rationale, Tracxn, and Tofler (materially conflicting, all reported); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus surinauto.com and preqin.com; market data from preqin.com and aggregated auto-components/construction-equipment research. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["ICRA", "Tracxn", "Tofler", "surinauto.com", "preqin.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true current revenue trajectory reconciling ICRA's growth figure against Tracxn's decline figure, and actual export percentage by region — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

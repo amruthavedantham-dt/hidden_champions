@@ -1,0 +1,43 @@
+{
+  "segmentName": "Home Textiles — Towels, Bedding & Rugs",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary: global home textiles $230.99B (2025) to $338.37B by 2032 (5.60%/yr) per one source, or $137.81B (2025) to $231.40B by 2033 (6.9%/yr) per another with a materially different base.",
+    "cagrPctRange": [5.60, 8.4],
+    "exportGeographies": ["USA (~67% of Welspun Living's sales)", "EU (~17%)", "RoW (~9%)"],
+    "globalCompetitors": ["not applicable globally in a branded sense — see peers[] for listed Indian comparables that compete for the same US/EU private-label supply relationships"],
+    "domesticSlice": "India home textile market: $4.51B (2025) to $6.78B by 2034 (4.65%/yr) per one estimate, or 8.4%/yr (2024-2033) reaching $24,228.3M by 2033 per another — wide dispersion across research houses. Bed linen is the largest product segment (~41.05% share, 2025); towels are the fastest-growing application segment."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Asia-Pacific held 43.74% global home-textiles share (2024); India is APAC's fastest-growing home-textiles market",
+    "US tariff timing and trade-policy shifts have directly affected shipment scheduling and margins for India's largest home-textile exporters in FY26"
+  ],
+  "adoptionStructure": {
+    "note": "Retail seasonal buying cycles (back-to-school, holiday) and multi-year private-label supply contracts with major US/EU home-goods retailers — not a fixed repurchase rate"
+  },
+  "peers": [
+    { "name": "Trident Ltd", "revenueCr_TTM": 6933, "patCr_TTM": 409, "roePct": 11.34, "note": "'Vision 2025' targets ₹25,000 Cr revenue at 12% margin", "source": "marketfeed.com; marketsmojo.com" },
+    { "name": "Indo Count Industries", "revenueCr_FY25": 4151.39, "revenueCr_FY26": 4141.34, "patCr_FY25": 249.99, "patCr_FY26": 126.67, "patGrowthPct": -49.33, "roePct5yrAvg": 16.93, "roePctLatestHalf": 9.92, "note": "shows a similar recent margin/PAT deterioration pattern to the tariff-driven sector-wide headwind", "source": "business-standard.com; marketsmojo.com" }
+  ],
+  "customerValue": {
+    "drivers": ["long-standing private-label/vendor relationships with major US/EU retailers", "traceability and sustainability credentials increasingly required in retailer vendor scorecards", "PLI-scheme-supported cost competitiveness domestically"],
+    "strongestPredictor": "private-label vendor relationship depth and sustainability-credential compliance",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer branded and private-label towels, bed linen, and rugs/flooring products", "sell to big-box retail, hospitality, and direct-to-consumer channels"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run vertically integrated cotton yarn-to-finished-product manufacturing", "develop proprietary process/tech (traceability, absorbency/softness processes)", "hold OEKO-TEX/GOTS/GRS-certified sustainable production"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate large-scale India manufacturing", "build emerging manufacturing footprint in export destination countries (e.g. US) to shorten lead times and hedge tariff exposure"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-standing private-label/vendor relationships with major US/EU retailers", "provide full-chain traceability and sustainability credentials for retailer vendor scorecards", "support PLI-scheme-backed cost competitiveness"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil retail seasonal buying cycles (back-to-school, holiday)", "execute multi-year private-label supply contracts", "manage exposure to cotton price cycles and tariff-timing effects on shipment scheduling"] }
+  ],
+  "sources": [
+    "https://www.fortunebusinessinsights.com/home-textiles-market-114587",
+    "https://www.imarcgroup.com/india-home-textile-market",
+    "https://www.mordorintelligence.com/industry-reports/india-home-textile-market",
+    "https://hometextileviews.com/indias-textile-export-opportunity-creates-strong-growth-runway-for-welspun-living/",
+    "https://www.marketfeed.com/read/en/trident-to-the-moon",
+    "https://www.marketsmojo.com/news/result-analysis/indo-count-industries-q2-fy26-margin-pressures-overshadow-revenue-growth-3691909"
+  ]
+}

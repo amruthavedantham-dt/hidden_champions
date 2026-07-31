@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Snl Bearings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">SNL Bearings: a debt-free, 14.8%-ROE needle-bearing maker, and NRB Bearings&#x27; quiet Eastern India outpost.</h1>
+    <p class="subhead">The only needle roller bearing manufacturer in Eastern India, majority-owned by India&#x27;s #1 needle-bearing maker since 2000 — with genuinely healthy, independently-verified listed-company financials.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">1979 (as Shriram Needle Bearing Industries, DCM Shriram/INA Germany JV); Ranchi plant 1983, production began 1984</p></div><div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹56.62 Cr FY26 (+10.61% YoY); FY24 ≈₹47.45 Cr</p></div><div class="snap"><p class="snap-label">Net profit</p><p class="snap-value">≈₹10.85-11 Cr FY26 (roughly flat YoY), EPS ₹30.04, operating margin ~25%</p></div><div class="snap"><p class="snap-label">ROE / ROCE</p><p class="snap-value">14.8% / 20.1% — genuinely healthy</p></div><div class="snap"><p class="snap-label">Debt position</p><p class="snap-value">Near-zero borrowings as of Mar 2026 — almost debt-free</p></div><div class="snap"><p class="snap-label">Ownership</p><p class="snap-value">NRB Bearings Ltd holds 73.45-74.39%; 5,308 public shareholders</p></div><div class="snap"><p class="snap-label">Employees</p><p class="snap-value">140, average age 40</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A real NRB Bearings subsidiary with genuinely healthy, verified financials</h2>
+      <p class="prose">As a listed company (BSE: 505827), SNL Bearings has real, independently-audited financials rather than aggregator estimates: FY26 revenue ₹56.62 Cr (+10.61% YoY), net profit ~₹10.85-11 Cr, operating margin ~25%, ROE 14.8%, and ROCE 20.1% — genuinely healthy returns, not thin or negative like several other companies profiled this batch. The company carries near-zero debt as of March 2026, and shows a 5-year sales CAGR of 9% and 5-year profit CAGR of 12%.</p><p class="prose"><b>The website field discrepancy flagged before dispatch is resolved</b>: SNL&#x27;s real corporate site is snlbearings.in, not nrbbearings.co.in (which does not appear to be an official NRB Bearings domain at all — NRB&#x27;s actual site is nrbbearings.com). The underlying reason for the confusion is genuine, though: SNL Bearings is a 73.45%-owned subsidiary of NRB Bearings Limited, acquired in June 2000 when DCM Shriram Group and associates sold their 45.78% stake, and the company was renamed from Shriram Needle Bearing Industries to SNL Bearings at that point.</p><p class="prose">It is described as the only needle roller bearing manufacturer in Eastern India, operating from a 3.5-acre Ranchi, Jharkhand plant built on technology originally acquired via the 1979 INA Germany technical collaboration. It holds IATF 16949:2016, ISO 14001:2015, and ISO 45001:2018 certification — all confirmed directly on the company&#x27;s own site, exceeding what the HVT sheet itself flagged as `needs_verify`.</p><p class="prose">It designs and builds its own special-purpose machines for bearing manufacturing and low-cost automation — a real, independently-corroborated capability tracing to the original German technology transfer, not just a self-claim. Market commentary (not a primary company announcement) suggests a strategic pivot toward EV transmission/chassis applications and investment in automated inspection systems, though this should be treated as directionally indicative rather than confirmed company roadmap.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">A market where <b>vendor size estimates disagree by ~60%</b>, but real, scaled Indian peers exist for comparison.</p><p class="ev">Global needle roller bearings market: $5.27B (2025) to $6.81B by 2029 (6.6%/yr) per one estimate, vs. $8.636B (2025) at 4.84%/yr per another. India needle roller bearing market: $428M (2024), roughly flat.</p></li><li class="insight"><p class="point"><b>Parent NRB Bearings is a genuine market leader</b>, holding ~70% of India&#x27;s organized needle roller bearing market — a real structural advantage for SNL as its subsidiary.</p><p class="ev">NRB Bearings Ltd, founded 1965, is described as India&#x27;s first mover and dominant player in needle roller bearings; recent commentary cites an 18% revenue jump alongside an aerospace pivot.</p></li><li class="insight"><p class="point"><b>MNC-backed competitors (Schaeffler, Timken, SKF) trade at much higher valuation multiples than NRB/SNL</b>, implying the market views them as lower-cyclicality, higher-growth businesses.</p><p class="ev">Schaeffler India trades at ~61x PE and Timken India ~50.8x PE, compared to NRB Bearings at a lower multiple — a real valuation signal that the market currently prices auto-component-linked bearing makers like NRB/SNL as more cyclical.</p></li>
+      </ul>
+      <p class="reflect">This is one of the strongest financial profiles in the batch by conventional measures: real, audited ROE and ROCE, a debt-free balance sheet, and a genuine structural backstop from a dominant parent company. The website-field error at the source was worth flagging, but the underlying corporate story it accidentally pointed to — a real NRB Bearings subsidiary relationship — turned out to be a substantive, useful fact rather than noise.</p>
+      <p class="src">Market data: aggregated vendor reports (shared needle-roller-bearings segment file, new this batch). Peer data: NRB Bearings (parent), Schaeffler India, Timken India, SKF India, NBC Bearings.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">One clear place worth watching, named directly in the company&#x27;s own gap research.</p>
+      <div class="opp"><p class="tag">Product-Expansion</p><h4>Scaling low-cost automation and special-purpose-machine manufacturing as a distinct capability</h4><p>The HVT sheet&#x27;s own gap research names SNL&#x27;s ability to design and develop low-cost automation and special-purpose machines as a capability that could be leveraged further for market leadership — a credible lever given the underlying capability is real and technology-rooted, not aspirational.</p><p class="oppsrc">HVT gap research (snlbearings.in).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions — and the honest first step here is confirming the EV-pivot commentary directly rather than treating it as settled.</p>
+        <div class="hvt"><p class="tag">Trust</p><h5>Confirm the EV transmission/chassis pivot directly with the company</h5><p>Secondary market commentary suggests a strategic shift toward EV-related applications and automated inspection systems, but no primary company announcement was found to substantiate this — worth confirming directly given how central EV-transition exposure is to a needle-roller-bearing maker&#x27;s long-term relevance.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for a needle-roller-bearing manufacturer in this segment — a directory-depth pass, not yet confirmed against SNL Bearings&#x27; own stated process beyond what the HVT row documents, so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">offer needle roller bearings (NRA/NRB/NRR variants) → offer cages (small-end/big-end, KBK/KZK) and full-complement/cage-guided shells<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;offer needle roller bearings (NRA/NRB/NRR variants)&quot;</span> Company facts (one of India&#x27;s leading needle roller bearings manufacturers for automotive OEMs and aftermarket) confirm this step is real for SNL Bearings — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">run precision grinding/heat treatment of rollers and races → run cage stamping/forming → design in-house special-purpose machines for low-cost automation<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;design in-house special-purpose machines for low-cost automation&quot;</span> Company facts (capability to manufacture special purpose machines and design low-cost automation, rooted in the original INA Germany tech transfer) confirm this step is real for SNL Bearings — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate a manufacturing plant with automotive-grade 100% inspection capability → leverage scale/backing support from a larger parent company where applicable<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;leverage scale/backing support from a larger parent company where applicable&quot;</span> Company facts (73.45%-owned subsidiary of NRB Bearings, India&#x27;s #1 needle roller bearing maker) confirm this step is real for SNL Bearings — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">run OEM account management/quality engineering (APQP/PPAP processes) → maintain aftermarket/distribution sales relationships<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;run OEM account management/quality engineering (APQP/PPAP processes)&quot;</span> Company facts (IATF 16949:2016 certified, leading supplier to major automobile manufacturers for 20+ years) confirm this step is real for SNL Bearings — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">win orders via automotive OEM production schedules (JIT/long-term supply agreements) → win orders via new vehicle-platform sourcing decisions shaped by EV transition<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;win orders via new vehicle-platform sourcing decisions shaped by EV transition&quot;</span> Spotted at &#x27;EV transition&#x27;: secondary market commentary suggests a pivot toward EV transmission/chassis applications, unconfirmed by a primary source — see p4_experiments.</p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/needle-roller-bearings.json) — no company-specific (A2/pursuit) operational intel was collected for SNL Bearings this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>One of the strongest financial profiles in this batch — debt-free, 14.8% ROE, and a real structural backstop as NRB Bearings&#x27; Eastern India subsidiary. <b>The EV-transition pivot mentioned in market commentary is worth confirming directly, as it&#x27;s the one unverified claim in an otherwise well-documented profile.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in SNL Bearings or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. Financials from Screener.in (audited, listed-company data); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus snlbearings.in and corporate-history research resolving the NRB Bearings subsidiary relationship; market data from aggregated vendor reports. Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

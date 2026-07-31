@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "chandra-bhagat-pharma",
+    "series": "Hidden Champions of India",
+    "segmentRef": "life-saving-pharmaceutical-formulations",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. CIN L24230MH2003PLC139534 (found via research, not in HVT row). **Ownership-type discrepancy**: the HVT sheet's own notes field already investigated a LinkedIn 'Public Company' claim vs. director-title evidence and concluded 'private' — but this session's research found the CIN carries an 'L' prefix and the company is actively listed on BSE SME (code 542934, IPO Feb 2020). Both the HVT tool's own reasoning and this session's finding are presented; not resolved to one conclusion."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Chandra Bhagat Pharma: a wealth-creation engine finding its footing, one BSE SME quarter at a time.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Navsari, Gujarat life-saving-drugs maker that tripled its profit in a year and just opened a Dubai office.", "tier": "company", "epistemic": "fact", "source": "screener.in; scanx.trade", "fields": ["financials.patCr", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2003 (legal entity); trading history since 1944 per company", "tier": "company", "source": "Tracxn vs. IndiaMART", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹116 Cr · FY26 (from ₹87 Cr FY25)", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "₹3 Cr · FY26 (from ₹1 Cr FY25, ~3x)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "EBITDA margin / ROE", "value": "3.3% (from -1.6%) / 10% (from 5%)", "tier": "company", "source": "screener.in", "fields": ["financials.ebitdaMarginPct", "financials.roePct"] },
+    { "label": "Listing status", "value": "BSE SME-listed since Feb 2020 (₹9.69-10.2 Cr IPO)", "tier": "company", "source": "chittorgarh.com", "fields": ["ownershipType"] },
+    { "label": "Recent move", "value": "New Dubai, UAE international office (2026)", "tier": "company", "source": "scanx.trade", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine, turning the corner",
+    "blocks": [
+      { "text": "Revenue grew ~33% to ₹116 Cr, PAT roughly tripled to ₹3 Cr, EBITDA margin flipped from -1.6% to a positive 3.3%, and ROE doubled from 5% to 10% — a genuine, broad-based improvement across every metric in one year, not just top-line growth.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.revenueCr", "financials.patCr", "financials.ebitdaMarginPct", "financials.roePct"] },
+      { "text": "It positions on a specialty range of life-saving medicines — antibiotics, anti-neoplastic and cardiovascular drugs — from a WHO-GMP-listed facility in Navsari, backed by over 500 registered trademarks and a DSIR-recognized R&D unit; the HVT sheet flags both `moat` and `product_improvement` as unresolved despite `Verified` review status.", "tier": "company", "epistemic": "fact", "source": "HVT row; cdsco.gov.in WHO-GMP registry", "fields": ["moat", "product_improvement"] },
+      { "text": "It's a genuinely independent, checkable trade data point: the HVT sheet's own gap research places it as India's #15 exporter of Amikacin (an antibiotic) by value, with a 0.9% share of that specific export category — small, but real and rank-ordered, not just a self-description.", "tier": "company", "epistemic": "fact", "source": "HVT row (transdatanexus.com trade data)", "fields": ["gap_currently_monetized"] },
+      { "text": "It opened a new international office in Dubai, UAE in 2026, explicitly framed as a hub for Middle East and global expansion — alongside existing export relationships in Myanmar, Kenya, Ethiopia, Nepal and Egypt.", "tier": "company", "epistemic": "fact", "source": "scanx.trade", "fields": ["recentMoves", "exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large, and India's specific pricing structure shapes it.**", "evidence": "There is no formal 'life-saving drugs' legal category in India — the operative mechanism is the National List of Essential Medicines (NLEM) combined with DPCO price ceilings, covering ~15% of the pharma market by value; India's overall pharma market is ~$55B (2025), heading to $120-130B by 2030.", "tier": "segment", "epistemic": "fact", "source": "medicaldialogues.in (government clarification); Bain & Co estimate", "fields": ["market.sizeRange", "structureFacts"] },
+      { "point": "**MSME status is a structural advantage in exactly this category.**", "evidence": "MSME pharma units receive EMD exemptions and a 25% procurement reservation under India's Public Procurement Policy for government/institutional tenders — a real, policy-level edge for a company Chandra Bhagat Pharma's size.", "tier": "segment", "epistemic": "fact", "source": "tenderkosh.in", "fields": ["structureFacts"] },
+      { "point": "Listed peers in the same category show **a wide range of outcomes**, from distress to strength.", "evidence": "Albert David Ltd is currently loss-making (₹334 Cr revenue, -₹1.49 Cr PAT); JB Chemicals & Pharmaceuticals, much larger, was acquired by Torrent Pharmaceuticals in 2025-26 — Chandra Bhagat Pharma's own improving trajectory sits between these two poles.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A small BSE SME-listed life-saving-drugs maker that just turned every financial metric positive in the same year, with one specific, independently-tracked export ranking to point to. The Dubai office is a real bet that this improvement continues outward, not just domestically.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: government NLEM/DPCO clarification, tenderkosh.in (shared life-saving-pharmaceutical-formulations segment file). Peer data: screener.in (Albert David, JB Chemicals)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, quantified directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Growing Amikacin export share beyond 0.9%", "body": "The HVT sheet's own gap research is unusually precise here: Chandra Bhagat Pharma is India's #15 Amikacin exporter by value with a 0.9% market share — an already-verified export presence with clear, trackable room to grow, not a speculative new-market entry.", "source": "HVT gap research (transdatanexus.com trade data).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Chandra Bhagat Pharma's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Use the Dubai office to target 2-3 named Amikacin buyers first", "body": "Rather than a broad Middle East push, use the new Dubai office to pursue 2-3 specific Amikacin buyers in markets adjacent to its existing Kenya/Ethiopia/Egypt relationships, tracking against the trade-data ranking already established.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a life-saving pharmaceutical formulations manufacturer in this segment — a directory-depth pass, not yet confirmed against Chandra Bhagat Pharma's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer branded-generic and generic critical-care formulations (injectables, infusions, tablets)", "cover cardiovascular, anti-infective, antineoplastic, critical-care categories", "register trademarks/brands"], "stepsTier": "segment", "spottedAt": "register trademarks/brands", "spotted": { "text": "Company facts (500+ registered trademarks) confirm this step is real for Chandra Bhagat Pharma, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["maintain WHO-GMP-compliant sterile/injectable manufacturing", "manage regulatory dossiers for CDSCO and international registrations", "develop cold-chain-capable formulations"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate GMP-certified injectable/infusion manufacturing lines", "run ampoule/vial/pre-filled-syringe filling capacity", "source API in-house or externally"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["manage tender-bid submissions for government/institutional buyers", "support trademark/brand registration", "maintain distributor networks across export geographies"], "stepsTier": "segment", "spottedAt": "maintain distributor networks across export geographies", "spotted": { "text": "Company facts (new Dubai office) confirm this step is actively expanding for Chandra Bhagat Pharma, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win government/state medical-services-corporation tenders", "fulfil hospital/institutional procurement orders", "fulfil export orders via distributor/agent relationships", "reorder on tender renewal"], "stepsTier": "segment", "spottedAt": "fulfil export orders via distributor/agent relationships", "spotted": { "text": "Spotted at \"export orders\": the Amikacin export ranking shows real but small share → growing Amikacin export share beyond 0.9%.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/life-saving-pharmaceutical-formulations.json) — no company-specific (A2/pursuit) operational intel was collected for Chandra Bhagat Pharma this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Every financial metric flipped positive in the same year, and a specific, trade-data-verified export ranking already exists to build on. **The Dubai office is the first real test of whether this trajectory travels.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Chandra Bhagat Pharma or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus cdsco.gov.in and scanx.trade; market data from government NLEM/DPCO sources and tenderkosh.in; peer figures from screener.in. A CIN-prefix/BSE-listing discrepancy against the HVT sheet's own 'private' ownership determination is noted, not resolved. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "scanx.trade", "cdsco.gov.in", "chittorgarh.com", "tenderkosh.in", "transdatanexus.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics on export vs. domestic tender business, and real customer retention across its Amikacin buyer base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

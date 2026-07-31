@@ -1,0 +1,41 @@
+{
+  "segmentName": "FRP/SMC Products & Electrical Junction Boxes",
+  "market": {
+    "worldSizeUSD_B_range": "Global SMC (Sheet Moulding Compound) market: $1.1B (2024) to $1.8B by 2033 (6.2%/yr, 2026-2033). Global FRP Grating market: $625.4M (2024) to $956.7M by 2033 (4.8%/yr, 2025-2033) per one estimate, or $691.3M by 2025 (5.1%/yr, 2020-2025) per another. India's growing EV and renewable-energy sectors reportedly boosted SMC usage by 24%. No India-specific standalone $ market size was found.",
+    "cagrPctRange": [4.8, 6.2],
+    "exportGeographies": ["Oman/Gulf (first FRP export shipment confirmed Q1 FY27)", "US, Germany (samples sent, ASTM certification pursuit for full market entry)"],
+    "globalCompetitors": [],
+    "domesticSlice": "Sintex is a major established India brand in SMC junction boxes/electrical enclosures. FRP grating manufacturers Fibrograts, FRP Products India, Darshit Trading Company are named but appear small/private with no disclosed financials."
+  },
+  "subSegments": ["SMC energy-meter enclosure boxes", "FRP gratings", "pultruded structural profiles"],
+  "adjacentMarkets": ["enclosures-cabinets-racks"],
+  "structureFacts": [
+    "SMC's insulating, flame-retardant, mechanically robust properties are driving adoption in electrical enclosures, switchgear, and circuit breakers as utilities/industry modernize grid infrastructure",
+    "Growth drivers: renewable energy installation growth, smart grid infrastructure expansion, EV market growth, continued infrastructure/construction investment",
+    "BIS standards IS:13410 and IS:14772 govern SMC junction box specifications in India — a real domestic compliance bar"
+  ],
+  "adoptionStructure": {
+    "note": "Utilities and industrial buyers value corrosion/weather resistance (vs. metal enclosures), fire-retardant/insulating properties for safety compliance, durability in harsh/offshore/corrosive environments, and increasingly BIS/export-standard (ASTM) certification for government tenders and export contracts."
+  },
+  "peers": [
+    { "name": "Sintex", "note": "major established brand in SMC junction boxes/electrical enclosures (shockproof/rustproof/weatherproof/fire-retardant); revenue/margin not independently found", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["corrosion/weather resistance vs. metal enclosures", "fire-retardant/insulating safety compliance", "durability in harsh/corrosive environments", "BIS/ASTM certification for government tenders and exports"],
+    "strongestPredictor": "BIS/export-standard certification combined with durability in harsh environments",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer SMC energy-meter enclosure boxes, FRP gratings, junction boxes, feeder pillars, HT/LT current & potential transformers", "offer pultruded structural profiles (spar caps, handrails)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run SMC compounding and moulding, FRP grating fabrication", "run pultrusion (continuous profile forming)", "run assembly/finishing of enclosures and switchgear components"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate multi-site manufacturing to serve regional infrastructure and utility customers", "source resin/fiberglass raw materials"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["respond to government/utility tenders and infrastructure EPC contractors", "pursue export sales development (Gulf entry, ASTM certification for US/Germany)"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil purchase orders/tenders from state electricity boards, railways, industrial/infrastructure contractors", "fulfil orders from international distributors in new export markets"] }
+  ],
+  "sources": [
+    "https://www.verifiedmarketreports.com/product/sheet-moulding-compound-smc-market-size-and-forecast/",
+    "https://growthmarketreports.com/report/fiberglass-reinforced-plastic-frp-grating-market-global-industry-analysis",
+    "https://www.industryarc.com/Research/Frp-Grating-Market-Research-500218",
+    "https://www.whalesbook.com/corporate-news/English/industrial-goodsservices/INDO-SMC-Q1-FY27-Revenue-Surges-136percent-to-indian-rupee8812-Cr-Exports-to-Oman/6a61a1b20037f071726b4fb7"
+  ]
+}

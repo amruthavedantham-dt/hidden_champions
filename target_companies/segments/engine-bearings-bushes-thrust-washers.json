@@ -1,0 +1,42 @@
+{
+  "segmentName": "Engine Bearings, Bushes & Thrust Washers",
+  "market": {
+    "worldSizeUSD_B_range": "Global bearings market (broader than engine bearings specifically): $58.6B (2024) to $143.6B by 2034 (9%/yr). India bearings market: estimates $6.71-9.18B by 2030-2032, CAGR 10.2-13.5% depending on source. India automotive bearing market specifically (narrower, more mature): $503.3M (2024) to $725.5M by 2033 (4.15%/yr).",
+    "cagrPctRange": [4.15, 13.5],
+    "exportGeographies": ["USA", "Japan", "UK", "Italy", "France", "China", "Mexico", "Brazil", "Netherlands", "UAE", "Belgium (per Menon Bearings' own footprint, 24 countries)"],
+    "globalCompetitors": ["not individually named at global scale — see peers[] for listed Indian comparables"],
+    "domesticSlice": "Asia-Pacific leads with ~45% global engine-bearings share, driven by vehicle production in China, India, Japan, South Korea"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "EV adoption is a long-term headwind for pure engine bearings (no combustion engine = no engine bearing demand), but final ICE-platform production waves plus a large in-operation ICE parc sustain near-term demand",
+    "Emissions-compliance-driven engine platform updates continue to create bearing redesign/requalification demand even on ICE platforms"
+  ],
+  "adoptionStructure": {
+    "note": "Dual demand track — OEM design-in (new vehicle production, multi-year platform-life supply contracts) and aftermarket (existing ICE vehicle parc, cycle-independent) — not a fixed repurchase rate"
+  },
+  "peers": [
+    { "name": "NRB Bearings", "revenueCr": 1335.15, "fy": "FY2025-26", "revenueGrowthPct": 11, "patCr": 145.63, "patGrowthPct": 77, "note": "~4.5x Menon Bearings' revenue scale; approved ₹270 Cr combined capex (Apr 2025 + Feb 2026) to expand capacity 15-25%", "source": "whalesbook.com" },
+    { "name": "Precision Camshafts", "revenueCr": 577.5, "revenueGrowthPct": -5.63, "patCr": 5.78, "patGrowthPct": -21.38, "roePct3yrAvg": 2.64, "note": "different product category (camshafts, not bearings/bushes) — a weak-performance comparable, not a strong benchmark", "source": "groww.in" }
+  ],
+  "customerValue": {
+    "drivers": ["on-time delivery track record to OEMs", "PPAP-driven new-part validation", "direct OEM relationships and long-standing global distributor network"],
+    "strongestPredictor": "on-time delivery / qualification track record",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer bi-metal bearings, bushes, thrust washers, flange bearings", "cover engine displacement classes and adjacent segments (compressors, generators, marine, earthmovers, agriculture)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house alloy/bimetal strip development", "precision machining, metallurgical R&D", "IATF 16949-governed process control", "tooling/die design for new-part validation"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate integrated manufacturing (bimetal, aluminum die-casting, braking systems units)", "add capacity via new dedicated production units", "maintain export-financing capacity to support scaling"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain on-time delivery track record to OEMs", "run PPAP-driven new-part validation", "manage direct OEM relationships and global distributor network"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win OEM design-in contracts (multi-year platform-life supply)", "fulfil growing aftermarket/export order stream", "reorder as ICE parc ages or new platforms launch"] }
+  ],
+  "sources": [
+    "https://www.precedenceresearch.com/bearing-market",
+    "https://www.grandviewresearch.com/horizon/outlook/bearing-market/india",
+    "https://www.indexbox.io/blog/automotive-engine-bearings-market-forecast-points-higher-toward-2035-driven-by-final-ice-platform-waves-and-aftermarket-demand/",
+    "https://www.whalesbook.com/corporate-news/English/industrial-goodsservices/NRB-Bearings-Reports-Strong-FY26-Consolidated-PAT-of-indian-rupee14563-Crore-Eyes-Growth/6a4bdd48adc106bd16f564b0",
+    "https://groww.in/stocks/precision-camshafts-ltd"
+  ]
+}

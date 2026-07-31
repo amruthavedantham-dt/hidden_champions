@@ -1,0 +1,42 @@
+{
+  "segmentName": "Hospital Furniture & X-Ray Films/Imaging Consumables",
+  "market": {
+    "worldSizeUSD_B_range": "India hospital furniture market: estimates vary widely by research house — $0.41-0.62B (2025) to $0.68-1.25B by 2031-2035, CAGR 7.2-10.3% depending on source. Global X-ray film market: $4.26B to $5.8B (2025-2035, 2.85%/yr) — a slow-growing, maturing category.",
+    "cagrPctRange": [2.85, 10.3],
+    "exportGeographies": ["not found specific to companies in this segment"],
+    "globalCompetitors": ["not applicable at global scale for hospital furniture specifically — see peers[] for Indian comparables"],
+    "domesticSlice": "India X-ray imaging system market: $362.39M (2025) to $525.24M by 2030 (6.3%/yr); India digital X-ray market specifically: $456.06M (2025) to $741.86M by 2030 (10.22%/yr) — digital growing ~3.5x faster than film-based imaging, i.e. digital is clearly displacing film"
+  },
+  "subSegments": [
+    { "name": "Digital X-ray imaging", "note": "growing far faster than traditional film — a structural substitution risk for the film side of this company's product mix" }
+  ],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Public capex (Ayushman Bharat-driven infrastructure expansion) is increasingly shaping hospital furniture and imaging-consumables demand",
+    "The film-to-digital X-ray transition is compressing film-consumable demand while furniture demand keeps pace with bed-capacity additions — two different demand trajectories within the same company's product mix"
+  ],
+  "adoptionStructure": {
+    "note": "Hospital/diagnostic-center capex and consumables-replenishment cycles — not a fixed repurchase rate"
+  },
+  "peers": [
+    { "name": "Narang Medical Limited", "revenueCr": 55.9, "fy": "FY ending Mar 2025", "revenueCAGR1yrPct": -9, "note": "incorporated 1989, ~80-year operating heritage, presence in 80+ countries; ISO 9001 and CE certified; Government of India-recognized Star Export House — a comparable independent Indian peer", "source": "Tracxn/RocketReach aggregation" }
+  ],
+  "customerValue": {
+    "drivers": ["ISO 9001/13485 certification and CDSCO/ISI compliance", "breadth across furniture + imaging + office-equipment categories enabling bundled institutional procurement", "channel-partner network reach"],
+    "strongestPredictor": "not established from available research",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer hospital furniture (ICU beds, wheelchairs, examination furniture)", "offer medical/industrial X-ray film and imaging consumables (plus adjacent inkjet/coated paper products)", "sell under multiple house brands"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain ISO 9001/13485-certified manufacturing", "run slitting/packing/repacking for light-sensitive (X-ray film) and non-light-sensitive (coated paper) products", "hold CDSCO/ISI compliance for medical-device-classified furniture and consumables"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate ISO-certified plants", "scale sufficient to serve a national dealer network"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["sell via a large channel-partner network to hospitals/diagnostic centers", "offer bundled institutional procurement across furniture + imaging + office-equipment categories"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["capture hospital/diagnostic-center capex and consumables-replenishment cycles", "fulfil against bed-capacity additions (furniture) or imaging-volume needs (consumables)", "reorder tied to institutional procurement cycles"] }
+  ],
+  "sources": [
+    "https://www.marketresearchfuture.com/reports/india-hospital-furniture-market-45233",
+    "https://www.imarcgroup.com/india-hospital-furniture-market",
+    "https://www.mordorintelligence.com/industry-reports/india-digital-x-ray-market/market-size",
+    "https://www.marketresearchfuture.com/reports/x-ray-film-market-43010"
+  ]
+}

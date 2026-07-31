@@ -1,0 +1,43 @@
+{
+  "segmentName": "Biopesticides & Plant Growth Regulators (PGR)",
+  "market": {
+    "worldSizeUSD_B_range": "India biopesticides: estimates vary widely — $242.16M (2025) to $381.23M by 2030 (9.5%/yr); or $82.2M (2024) to $204.1M by 2033 (9.23%/yr); or a narrower $32.7M (2022) to $68.6M by 2030 (9.7%/yr). Global PGR market: $5.75B (2024) to $14.24B by 2033 (10.6%/yr) on one estimate, though a lower estimate shows just 0.8-1.7%/yr to $39.5B by 2035 — highly methodology-dependent.",
+    "cagrPctRange": [9.5, 10.6],
+    "exportGeographies": ["not itemized specifically — Grace Bio Care claims export beyond the Indian Subcontinent but specific countries not found"],
+    "globalCompetitors": ["not individually named at global scale — see peers[] for Indian comparables"],
+    "domesticSlice": "India = 2.2% of global biopesticides market (2022). India PGR market: $115.3M (2025) to $204.8M by 2034 (6.58%/yr); India PGR CAGR was +21.9%/yr 2013-2024, the highest globally, forecast to moderate to 12.70%/yr going forward."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's National Project on Organic Farming (NPOF, since 2004) provides back-ended NABARD subsidies (up to 25-33% of outlay) for biopesticide/biofertilizer production units — 56 biofertilizer units and 17 compost units established under the scheme to date",
+    "Growth drivers: regulatory support, export-driven pesticide-residue compliance requirements, scaling public-sector biocontrol capacity, rising organic acreage (notably Punjab, Haryana, Maharashtra)"
+  ],
+  "adoptionStructure": {
+    "note": "Not a fixed repurchase-rate category; subsidy-linked institutional buyers (NABARD-backed units) are a structural demand channel alongside direct farmer/distributor sales"
+  },
+  "peers": [
+    { "name": "BioPrime AgriSolutions", "revenueCr": "10-50 Cr band", "fy": "FY2025", "revenueCAGR1yrPct": 153, "note": "raised $8.07M across 7 rounds (Series A $6M Oct 2024, led by Edaphon); backed by BIRAC, DBT, Venture Center — a well-funded, fast-growing comparable", "source": "Tracxn; entrackr.com" },
+    { "name": "Multiplex Group", "revenueUSD_M": 27.9, "note": "group-level revenue (~₹230 Cr); the specific legal entity Multiplex Fertilizers Pvt Ltd generated <₹10 Cr — group vs. single-entity reporting differs materially; 11 ISO-certified group companies", "source": "growjo.com; Tracxn" },
+    { "name": "Camson Bio Technologies Ltd", "note": "once India's first integrated agri-biotech company, now defunct/insolvent (NCLT CIRP commenced Feb 2020) — a cautionary comparable, not an active peer", "source": "screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["not well documented in available research beyond general organic-farming/residue-compliance demand drivers"],
+    "strongestPredictor": "not established from available research",
+    "source": "mordorintelligence.com (general segment context only)"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer bio-fertilizers, plant nutrients, wetting agents, biopesticides/bio-insecticides, plant growth regulators", "position on biodegradability/organic certification"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["manufacture biodegradable/organic-input formulations", "run in-house R&D for crop-protection innovation", "pursue organic/quality certification"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate manufacturing facility (liquid and powder forms)", "scale production against domestic and export demand"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["serve manufacturer-cum-exporter relationships across Indian Subcontinent and export markets", "engage subsidy-linked institutional buyers (NABARD-backed units) where applicable"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["distributor/direct farmer orders domestically", "export orders", "reorder tied to crop cycle and farming season"] }
+  ],
+  "sources": [
+    "https://www.mordorintelligence.com/industry-reports/india-biopesticides-market",
+    "https://www.imarcgroup.com/india-plant-growth-regulators-market",
+    "https://www.nabard.org/content1.aspx?id=2791&catid=23&mid=23",
+    "https://tracxn.com/d/companies/bioprime-agrisolutions/__eXGBDvf6pGzGjKP0iOP0wwtbAQqzs0LL1FX4v2ghW6k",
+    "https://www.screener.in/company/538858/"
+  ]
+}

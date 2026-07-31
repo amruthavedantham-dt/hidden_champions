@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "tarang-engineering",
+    "series": "Hidden Champions of India",
+    "segmentRef": "transformer-radiators",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U52520TG1995PTC021071. Predecessor business dates to 1973/1981; this legal entity incorporated 1995."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Tarang Engineering: a 765kV-qualified radiator maker, in a capability the market is finally moving toward.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Hyderabad transformer-radiator maker approved by NTPC, PGCIL and RDSO for India's highest voltage class, growing profit faster than revenue.", "tier": "company", "epistemic": "fact", "source": "petarang.com; Tofler", "fields": ["moat", "financials.patGrowthPct"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1995 (predecessor business since 1973/1981)", "tier": "company", "source": "Zaubacorp; petarang.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹75-100 Cr band · FY24 (+53.56% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY24"] },
+    { "label": "EBITDA / PAT growth", "value": "+81.08% / +111.02% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.ebitdaGrowthPct", "financials.patGrowthPct"] },
+    { "label": "ROE", "value": "8.67%", "tier": "company", "source": "Tofler", "fields": ["financials.roePct"] },
+    { "label": "Qualification", "value": "Approved vendor: NTPC, PGCIL, RDSO — incl. 765kV class", "tier": "company", "source": "petarang.com", "fields": ["moat"] },
+    { "label": "Recent move", "value": "PGCIL approval (2024) for 765kV-class transformer radiators", "tier": "company", "source": "petarang.com", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability the grid-expansion market is finally moving toward",
+    "blocks": [
+      { "text": "Revenue grew 53.56% to a ₹75-100 Cr band, with EBITDA up 81.08% and PAT up 111.02% year-on-year — profit compounding faster than either metric — while ROE (8.67%) stayed positive but still modest, on a low debt-to-equity of 0.08.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.ebitdaGrowthPct", "financials.patGrowthPct", "financials.roePct"] },
+      { "text": "It's an approved vendor for NTPC, Indian Railways/RDSO and PGCIL up to 765kV-class transformers — India's highest transmission voltage class — plus PSEB, GETCO, OPTCL and other state electricity boards, with Alstom and CGL performance certificates. This is a genuinely hard qualification bar, not a self-description.", "tier": "company", "epistemic": "fact", "source": "HVT row; petarang.com", "fields": ["moat"] },
+      { "text": "In 2024 it received formal approval for supplying radiators for 765kV-class transformers by PGCIL specifically — a dated, checkable regulatory milestone, alongside conformance to IEEMA 9:1990, DIN 42559 and EN 50216 standards.", "tier": "company", "epistemic": "fact", "source": "petarang.com", "fields": ["recentMoves"] },
+      { "text": "It manufactures pressed-steel, hot-dip galvanized and stainless-steel radiators for power and distribution transformers, processing roughly 600 tonnes of steel monthly across three facilities (two in Hyderabad, one in Nagpur/Butibori), and exports to Dubai, Indonesia, Malaysia, Oman, Japan, Australia and Saudi Arabia — including a historic 3,600-radiator bulk order to Algeria (2016).", "tier": "company", "epistemic": "fact", "source": "petarang.com", "fields": ["exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The core field is **genuinely niche, with data that varies a lot by source.**", "evidence": "Transformer radiator market: $1.85B (2024) to $3.65B by 2033 (8.9%/yr) per one estimate, $2.8B (2025) to $4.7B by 2034 (5.9%/yr) per another — this session's research flags it as one of the least data-consistent niches profiled in this project.", "tier": "segment", "epistemic": "fact", "source": "OpenPR aggregation", "fields": ["market.sizeRange"] },
+      { "point": "The demand it actually rides is **the much larger, better-documented transformer/grid-expansion market.**", "evidence": "India power & distribution transformer market: $4.50B (2025) to $6.37B by 2031 (5.81%/yr), directly driven by India's substation capacity build-out (113,013 MVA added in 2025-26 alone at 220kV+).", "tier": "segment", "epistemic": "fact", "source": "transformers-magazine.com; powerline.net.in", "fields": ["structureFacts"] },
+      { "point": "No named radiator-specific peer with public financials exists — **this is a genuinely fragmented, private-market niche.**", "evidence": "Named India competitors (Bharath Radiators, STC Radiators, Electronet Energy Radiators, Thermocool Engineering) have no disclosed revenue or margin figures; global 'key players' named in market reports (ABB, Siemens Energy, CG Power) are transformer OEMs, not radiator specialists.", "tier": "segment", "epistemic": "fact", "source": "industry aggregation", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A 765kV-qualified radiator maker in a niche too fragmented to benchmark against named peers, riding demand from a much larger and better-documented grid-expansion market. The qualification itself — not scale — is the real moat here.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: OpenPR aggregation, transformers-magazine.com, powerline.net.in (shared transformer-radiators segment file). No clean peer set exists for this specific niche."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place named in the company's own gap research.",
+    "items": [
+      { "lever": "margin", "title": "Bringing automotive-sector automation to electrical component manufacturing", "body": "The HVT sheet's own gap research names this directly: the company's director brings automotive-sector expertise (safety/testing/homologation/NPD) into an electrical-components manufacturing business that hasn't yet widely adopted automotive-grade automation — an unusual cross-industry technology-transfer opportunity.", "source": "HVT gap research (indiamart.com, citing an unrelated third-party's CEO profile).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Tarang Engineering's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Pilot one automotive-grade automation technique on a single production line", "body": "Take one specific automotive-sector automation or quality-testing technique the director already knows from that background, and pilot it on a single radiator production line before a broader factory-wide rollout.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a transformer-radiator manufacturer in this segment — a directory-depth pass, not yet confirmed against Tarang Engineering's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer pressed-steel, hot-dip galvanized, stainless-steel, gooseneck/flanged/offset radiators", "size to voltage class (up to 765kV)"], "stepsTier": "segment", "spottedAt": "size to voltage class (up to 765kV)", "spotted": { "text": "Company facts (765kV-class PGCIL approval, 2024) confirm this step is real and market-leading for Tarang, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["sheet-metal pressing, welding/fabrication", "hot-dip galvanizing", "design conforming to IEEMA/DIN/EN standards"], "stepsTier": "segment", "spottedAt": "design conforming to IEEMA/DIN/EN standards", "spotted": { "text": "Spotted at \"design conforming to standards\": director's automotive-sector NPD/testing expertise is an underused cross-industry capability → bringing automotive automation to electrical manufacturing.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate steel-tonnage throughput per month", "maintain multi-plant footprint near transformer-manufacturing clusters"], "stepsTier": "segment", "spottedAt": "operate steel-tonnage throughput per month", "spotted": { "text": "Company facts (~600 tonnes steel/month, 3 facilities across Hyderabad/Nagpur) confirm this step is real for Tarang, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["hold utility/PSU vendor approvals (PGCIL, RDSO, state electricity boards)", "provide OEM performance certificates", "deliver on-time tied to transformer production schedules"], "stepsTier": "segment", "spottedAt": "hold utility/PSU vendor approvals (PGCIL, RDSO, state electricity boards)", "spotted": { "text": "Company facts (NTPC, PGCIL, RDSO, PSEB, GETCO, OPTCL approvals; Alstom/CGL certificates) confirm this step is real and broad for Tarang, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["receive back-to-back/ancillary supply contracts driven by transformer OEMs' own order books", "fulfil against utility tenders/EPC project schedules", "fulfil export bulk orders"], "stepsTier": "segment", "spottedAt": "fulfil export bulk orders", "spotted": { "text": "Company facts (Dubai/Indonesia/Malaysia/Oman/Japan/Australia/Saudi exports, 3,600-unit Algeria order) confirm this step is real for Tarang, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/transformer-radiators.json) — no company-specific (A2/pursuit) operational intel was collected for Tarang Engineering this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A 765kV-qualified radiator maker, growing profit twice as fast as revenue, in a niche too fragmented to have a real competitor set. **The qualification is the moat; the automation idea is the next lever.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Tarang Engineering or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus petarang.com; market data from OpenPR aggregation, transformers-magazine.com and powerline.net.in. No clean named peer set exists for this niche. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Zaubacorp", "petarang.com", "OpenPR", "transformers-magazine.com", "powerline.net.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics by voltage class, and real customer retention across its utility/PSU/export relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

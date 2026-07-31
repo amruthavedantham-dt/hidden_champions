@@ -1,0 +1,39 @@
+{
+  "segmentName": "Generic Pharmaceutical Formulations (small-scale / PCD franchise model)",
+  "market": {
+    "worldSizeUSD_B_range": "India generic pharmaceuticals: $27.37B (2024) to $77.94B by 2035 (9.98%/yr) per one source; $30.0B (2025) to $53.5B by 2034 (6.42%/yr) or $35.62B by 2030 (6.02%/yr) per others — a wide spread depending on methodology.",
+    "cagrPctRange": [6.02, 9.98],
+    "exportGeographies": ["not itemized for small-scale PCD-model players specifically"],
+    "globalCompetitors": ["not applicable — this sub-segment is India-domestic-distribution-model-driven; larger generics majors (Aurobindo, Sun Pharma, Zydus Cadila, Dr. Reddy's, Natco) are ecosystem context, not direct peers to small PCD players"],
+    "domesticSlice": "Largest formulation category by value: cardiovascular drugs. Fastest-growing: oncology generics."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's PLI (Production Linked Incentive) scheme boosts domestic API/formulation manufacturing, reducing import dependency",
+    "API cost is the single largest, most volatile component of generic formulation manufacturing (typically 50-52% of COGS)",
+    "Small-scale generic/PCD (Propaganda Cum Distribution) players commonly rely on third-party contract manufacturing rather than owning GMP plants — a structural feature of this specific sub-segment, not a company-specific weakness"
+  ],
+  "adoptionStructure": {
+    "note": "PCD franchise model: monopoly distribution rights granted to franchisees/distributors per territory — demand is distributor-network-expansion driven, not a fixed repurchase rate"
+  },
+  "peers": [],
+  "customerValue": {
+    "drivers": ["established supplier relationships and reputable API sourcing networks", "CDMO/contract partnerships that streamline the API-to-formulation path for smaller brands lacking in-house capability"],
+    "strongestPredictor": "not established from available research — small-scale PCD players' buying drivers are not well documented in public sources",
+    "source": "pharmasource.global; patheon.com"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer finished-dose generic formulations (tablets, capsules, syrups, injections, ointments) across therapeutic categories", "market via PCD franchise distribution model"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["rely on third-party/contract GMP manufacturing partnerships", "claim ISO-level quality standards", "develop new formulations to customer requirement across dosage forms"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["small-scale operation, franchise/distribution-network driven rather than owned-plant-volume driven", "coordinate with contract manufacturing partners for production runs"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["offer monopoly distribution rights to franchisees/distributors per territory", "provide export documentation for overseas buyers", "support distributor career development"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["distributor/franchisee network orders domestically", "export orders via wholesale/trading relationships", "expand via new franchise territory grants"] }
+  ],
+  "sources": [
+    "https://www.marketresearchfuture.com/reports/india-generic-pharmaceuticals-market-45476",
+    "https://www.imarcgroup.com/india-generic-drugs-market",
+    "https://www.drugpatentwatch.com/blog/how-to-optimize-generic-drug-production-costs-a-guide-to-market-domination/",
+    "https://windlas.com/pharma-contract-manufacturing-in-india-complete-guide-2025/"
+  ]
+}

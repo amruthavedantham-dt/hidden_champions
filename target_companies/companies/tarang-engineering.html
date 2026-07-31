@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Tarang Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Tarang Engineering: a 765kV-qualified radiator maker, in a capability the market is finally moving toward.</h1>
+    <p class="subhead">A Hyderabad transformer-radiator maker approved by NTPC, PGCIL and RDSO for India&#x27;s highest voltage class, growing profit faster than revenue.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">1995 (predecessor business since 1973/1981)</p></div><div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹75-100 Cr band · FY24 (+53.56% YoY)</p></div><div class="snap"><p class="snap-label">EBITDA / PAT growth</p><p class="snap-value">+81.08% / +111.02% YoY</p></div><div class="snap"><p class="snap-label">ROE</p><p class="snap-value">8.67%</p></div><div class="snap"><p class="snap-label">Qualification</p><p class="snap-value">Approved vendor: NTPC, PGCIL, RDSO — incl. 765kV class</p></div><div class="snap"><p class="snap-label">Recent move</p><p class="snap-value">PGCIL approval (2024) for 765kV-class transformer radiators</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A capability the grid-expansion market is finally moving toward</h2>
+      <p class="prose">Revenue grew 53.56% to a ₹75-100 Cr band, with EBITDA up 81.08% and PAT up 111.02% year-on-year — profit compounding faster than either metric — while ROE (8.67%) stayed positive but still modest, on a low debt-to-equity of 0.08.</p><p class="prose">It&#x27;s an approved vendor for NTPC, Indian Railways/RDSO and PGCIL up to 765kV-class transformers — India&#x27;s highest transmission voltage class — plus PSEB, GETCO, OPTCL and other state electricity boards, with Alstom and CGL performance certificates. This is a genuinely hard qualification bar, not a self-description.</p><p class="prose">In 2024 it received formal approval for supplying radiators for 765kV-class transformers by PGCIL specifically — a dated, checkable regulatory milestone, alongside conformance to IEEMA 9:1990, DIN 42559 and EN 50216 standards.</p><p class="prose">It manufactures pressed-steel, hot-dip galvanized and stainless-steel radiators for power and distribution transformers, processing roughly 600 tonnes of steel monthly across three facilities (two in Hyderabad, one in Nagpur/Butibori), and exports to Dubai, Indonesia, Malaysia, Oman, Japan, Australia and Saudi Arabia — including a historic 3,600-radiator bulk order to Algeria (2016).</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">The core field is <b>genuinely niche, with data that varies a lot by source.</b></p><p class="ev">Transformer radiator market: $1.85B (2024) to $3.65B by 2033 (8.9%/yr) per one estimate, $2.8B (2025) to $4.7B by 2034 (5.9%/yr) per another — this session&#x27;s research flags it as one of the least data-consistent niches profiled in this project.</p></li><li class="insight"><p class="point">The demand it actually rides is <b>the much larger, better-documented transformer/grid-expansion market.</b></p><p class="ev">India power &amp; distribution transformer market: $4.50B (2025) to $6.37B by 2031 (5.81%/yr), directly driven by India&#x27;s substation capacity build-out (113,013 MVA added in 2025-26 alone at 220kV+).</p></li><li class="insight"><p class="point">No named radiator-specific peer with public financials exists — <b>this is a genuinely fragmented, private-market niche.</b></p><p class="ev">Named India competitors (Bharath Radiators, STC Radiators, Electronet Energy Radiators, Thermocool Engineering) have no disclosed revenue or margin figures; global &#x27;key players&#x27; named in market reports (ABB, Siemens Energy, CG Power) are transformer OEMs, not radiator specialists.</p></li>
+      </ul>
+      <p class="reflect">A 765kV-qualified radiator maker in a niche too fragmented to benchmark against named peers, riding demand from a much larger and better-documented grid-expansion market. The qualification itself — not scale — is the real moat here.</p>
+      <p class="src">Market data: OpenPR aggregation, transformers-magazine.com, powerline.net.in (shared transformer-radiators segment file). No clean peer set exists for this specific niche.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">One place named in the company&#x27;s own gap research.</p>
+      <div class="opp"><p class="tag">Margin</p><h4>Bringing automotive-sector automation to electrical component manufacturing</h4><p>The HVT sheet&#x27;s own gap research names this directly: the company&#x27;s director brings automotive-sector expertise (safety/testing/homologation/NPD) into an electrical-components manufacturing business that hasn&#x27;t yet widely adopted automotive-grade automation — an unusual cross-industry technology-transfer opportunity.</p><p class="oppsrc">HVT gap research (indiamart.com, citing an unrelated third-party&#x27;s CEO profile).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only Tarang Engineering&#x27;s own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Pilot one automotive-grade automation technique on a single production line</h5><p>Take one specific automotive-sector automation or quality-testing technique the director already knows from that background, and pilot it on a single radiator production line before a broader factory-wide rollout.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for a transformer-radiator manufacturer in this segment — a directory-depth pass, not yet confirmed against Tarang Engineering&#x27;s own stated process, so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">offer pressed-steel, hot-dip galvanized, stainless-steel, gooseneck/flanged/offset radiators → size to voltage class (up to 765kV)<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;size to voltage class (up to 765kV)&quot;</span> Company facts (765kV-class PGCIL approval, 2024) confirm this step is real and market-leading for Tarang, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">sheet-metal pressing, welding/fabrication → hot-dip galvanizing → design conforming to IEEMA/DIN/EN standards<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;design conforming to IEEMA/DIN/EN standards&quot;</span> bringing automotive automation to electrical manufacturing.</p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate steel-tonnage throughput per month → maintain multi-plant footprint near transformer-manufacturing clusters<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;operate steel-tonnage throughput per month&quot;</span> Company facts (~600 tonnes steel/month, 3 facilities across Hyderabad/Nagpur) confirm this step is real for Tarang, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">hold utility/PSU vendor approvals (PGCIL, RDSO, state electricity boards) → provide OEM performance certificates → deliver on-time tied to transformer production schedules<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;hold utility/PSU vendor approvals (PGCIL, RDSO, state electricity boards)&quot;</span> Company facts (NTPC, PGCIL, RDSO, PSEB, GETCO, OPTCL approvals; Alstom/CGL certificates) confirm this step is real and broad for Tarang, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">receive back-to-back/ancillary supply contracts driven by transformer OEMs&#x27; own order books → fulfil against utility tenders/EPC project schedules → fulfil export bulk orders<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;fulfil export bulk orders&quot;</span> Company facts (Dubai/Indonesia/Malaysia/Oman/Japan/Australia/Saudi exports, 3,600-unit Algeria order) confirm this step is real for Tarang, not just generic — see p1_engine.</p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/transformer-radiators.json) — no company-specific (A2/pursuit) operational intel was collected for Tarang Engineering this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>A 765kV-qualified radiator maker, growing profit twice as fast as revenue, in a niche too fragmented to have a real competitor set. <b>The qualification is the moat; the automation idea is the next lever.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Tarang Engineering or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus petarang.com; market data from OpenPR aggregation, transformers-magazine.com and powerline.net.in. No clean named peer set exists for this niche. Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

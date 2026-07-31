@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "lyka-bdr-international",
+    "series": "Hidden Champions of India",
+    "segmentRef": "life-saving-pharmaceutical-formulations",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment, reviewed) + fresh financial research this session. Unlisted public, CIN U24234MH1993PLC072947, a subsidiary of listed Lyka Labs Limited (NSE/BSE: LYKALABS). **This is the most financially distressed company profiled in this project to date — read p1_engine before anything else.**"
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Lyka BDR International: real WHO-GMP assets, written down to nil by its own parent.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Thane pharmaceutical formulations subsidiary of listed Lyka Labs, whose parent has now impaired its entire investment to zero.", "tier": "company", "epistemic": "fact", "source": "HVT row (scanx.trade); Tofler", "fields": ["gap_currently_monetized"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1993 (legal entity)", "tier": "company", "source": "MCA/Zaubacorp", "fields": ["foundedYear"] },
+    { "label": "Parent write-down", "value": "Investment impaired to ₹Nil (FY26)", "tier": "company", "source": "HVT row (scanx.trade, Lyka Labs FY26 results)", "fields": ["gap_currently_monetized"] },
+    { "label": "Revenue (dated)", "value": "~₹19.48 Cr · FY2023-24 (unverified secondary source)", "tier": "company", "source": "chemdmart.com", "fields": ["financials.revenueCr"] },
+    { "label": "ROE (dated, FY2017)", "value": "-26.51%", "tier": "company", "source": "Tofler (stale snapshot)", "fields": ["financials.roePct"] },
+    { "label": "Certifications", "value": "WHO-GMP, ISO 9001 (third-party sourced)", "tier": "company", "source": "chemdmart.com", "fields": ["moat"] },
+    { "label": "Parent", "value": "Lyka Labs Limited (NSE/BSE: LYKALABS)", "tier": "company", "source": "Tofler", "fields": ["ownershipType"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "An asset base its own owner no longer values",
+    "blocks": [
+      { "text": "This is not a soft-financials narrative — it's a hard one. The HVT sheet's own gap research, sourced to Lyka Labs' FY26 results coverage, states plainly: 'Investments and loans in Lyka BDR International Limited have been impaired to Nil due to continuous operational losses and severe erosion of net worth.' The parent company itself, in its own audited accounts, now carries this subsidiary at zero value.", "tier": "company", "epistemic": "fact", "source": "HVT row; scanx.trade (Lyka Labs FY26 annual results coverage)", "fields": ["gap_currently_monetized"] },
+      { "text": "The only revenue/profitability figures found are old and unverified against a primary source: ~₹19.48 Cr revenue for FY2023-24 (a secondary directory, chemdmart.com, not independently confirmed), and a 2017-dated Tofler snapshot showing EBITDA down 81.1% and PAT down 713.84% year-on-year that year, with ROE at -26.51% — both figures should be read as historical context for a long decline, not current fact.", "tier": "company", "epistemic": "fact", "source": "chemdmart.com; Tofler (both dated/unverified)", "fields": ["financials.revenueCr", "financials.roePct"] },
+      { "text": "What still exists on paper: WHO-GMP and ISO 9001 certification (third-party sourced, not just self-claimed), and manufacturing across lyophilized injections, topical creams, ointments and gels — real pharmaceutical-manufacturing infrastructure, whatever its current economic value to the parent.", "tier": "company", "epistemic": "fact", "source": "HVT row (third-party, chemdmart.com)", "fields": ["moat", "differentiation"] },
+      { "text": "It sits inside the broader Lyka Group, whose listed parent (Lyka Labs) has been undertaking its own separate corporate restructuring — an NCLT-approved amalgamation with a different group entity, Lyka Exports Limited, sanctioned March 2026 — a related-party action that doesn't directly involve Lyka BDR International but signals the parent group is actively reorganizing around it.", "tier": "company", "epistemic": "fact", "source": "tipranks.com; whalesbook.com", "fields": ["ownershipType"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field itself is **large and structurally stable**, even though this specific company is not.", "evidence": "India's pharmaceutical market is ~$55B (2025), heading to $120-130B by 2030; the life-saving/essential-medicines category this company nominally competes in benefits from MSME procurement reservations under India's Public Procurement Policy.", "tier": "segment", "epistemic": "fact", "source": "Bain & Co estimate; tenderkosh.in", "fields": ["market.sizeRange"] },
+      { "point": "Listed peers in the **same segment show recovery is possible from real distress** — this project has already documented it happening.", "evidence": "Themis Medicare (profiled in an earlier batch of this project) showed ROCE collapse from 30% to 2.74% over four years before a Q4 rebound; Stanford Laboratories showed a similar pattern — both real precedents for distress-to-recovery in this exact category, though neither had a parent write the investment down to zero the way Lyka Labs has here.", "tier": "segment", "epistemic": "fact", "source": "this project's own prior batch research", "fields": ["structureFacts"] },
+      { "point": "**A parent-level zero-valuation is a materially different signal than a struggling standalone company.**", "evidence": "When a listed parent's own auditors carry a subsidiary at nil value, that reflects the parent's assessment of realistic recoverable value — a stronger, more official signal of distress than press coverage or a rough aggregator ratio would be.", "tier": "derived", "epistemic": "interpretation", "source": "accounting-standard inference", "fields": ["gap_currently_monetized"] }
+    ],
+    "reflect": { "text": "Real manufacturing certifications sitting inside a subsidiary its own listed parent has already written down to zero. This is not a 'the margin hasn't caught up yet' story — it's a genuine question of whether there's a viable business here at all, one only the parent group itself can answer.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Bain & Co, tenderkosh.in (shared life-saving-pharmaceutical-formulations segment file). No company-specific peer benchmarking is meaningful here given the parent's own zero-valuation."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "The HVT sheet's own gap research frames this as an opportunity — this profile treats it as a question mark instead, given the severity of what the parent's own accounts show.",
+    "items": [
+      { "lever": "velocity", "title": "Whether the WHO-GMP facility has any realizable value left", "body": "The HVT sheet's own gap research names 'leveraging existing investments and loans' as a latent opportunity — but with the parent having already written the investment to nil, the real first question is whether the underlying WHO-GMP manufacturing asset itself has value that could be realized (sale, restructuring, revival) independent of the entity's own financial history.", "source": "HVT gap research (scanx.trade, Lyka Labs FY26 results).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_latent"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and given the severity here, the honest first step is diagnostic, not a growth experiment.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Get a direct read from Lyka Labs on the subsidiary's status and plans", "body": "Before treating anything here as an opportunity, the most useful next step is simply finding out from the parent group what its actual plans for this subsidiary are — wind-down, sale, restructuring, or a real revival attempt — since public filings only show the accounting outcome, not the intent behind it.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a life-saving pharmaceutical formulations manufacturer in this segment — a directory-depth pass, not yet confirmed against Lyka BDR's own current operating status (which may be minimal or dormant given the financial picture above), so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer branded-generic and generic critical-care formulations (injectables, infusions, tablets)", "cover cardiovascular, anti-infective, antineoplastic, critical-care categories", "register trademarks/brands"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["maintain WHO-GMP-compliant sterile/injectable manufacturing", "manage regulatory dossiers for CDSCO and international registrations", "develop cold-chain-capable formulations (lyophilization, pre-filled syringes)"], "stepsTier": "segment", "spottedAt": "maintain WHO-GMP-compliant sterile/injectable manufacturing", "spotted": { "text": "Company facts (WHO-GMP/ISO 9001 certification, lyophilized injections capability) confirm this step is real for Lyka BDR — whether it's still active operationally is the open question, not whether the underlying capability once existed. See p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate GMP-certified injectable/infusion manufacturing lines", "run ampoule/vial/pre-filled-syringe filling capacity", "source API in-house or externally"], "stepsTier": "segment", "spottedAt": "operate GMP-certified injectable/infusion manufacturing lines", "spotted": { "text": "Spotted at \"operate manufacturing lines\": whether these lines are still running at any real volume is unconfirmed given the parent's zero-valuation → whether the facility has realizable value left.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["manage tender-bid submissions for government/institutional buyers", "support trademark/brand registration", "maintain distributor networks across export geographies"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win government/state medical-services-corporation tenders", "fulfil hospital/institutional procurement orders", "fulfil export orders via distributor/agent relationships", "reorder on tender renewal"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/life-saving-pharmaceutical-formulations.json) — no company-specific (A2/pursuit) operational intel was collected for Lyka BDR this pass; given the financial picture, treat every generic step as unconfirmed for current operating reality, not just unconfirmed as company-specific detail."
+  },
+  "takeaway": { "text": "Real certifications, real manufacturing capability, and a parent that has already valued the whole thing at zero. **The question here isn't opportunity — it's whether anyone still intends to run this business.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Lyka BDR or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from chemdmart.com and Tofler, both dated/unverified against a primary source; the impairment fact is independently sourced via the HVT sheet's own gap research to Lyka Labs' FY26 results coverage (scanx.trade); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment, reviewed); market data from Bain & Co and tenderkosh.in. Opportunities are DeepThought's reading, though this profile treats the situation as needing diagnosis before opportunity-framing.",
+    "tier": "universal",
+    "sources": ["scanx.trade", "chemdmart.com", "Tofler", "tipranks.com", "whalesbook.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the parent group's actual intent for this subsidiary, and whether any operational activity continues at all — is what a closer engagement establishes, and is more urgent here than in any other profile in this project.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

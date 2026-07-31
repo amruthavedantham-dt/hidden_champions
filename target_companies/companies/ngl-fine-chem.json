@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "ngl-fine-chem",
+    "series": "Hidden Champions of India",
+    "segmentRef": "animal-human-apis-specialty-chemicals",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Listed, CIN L24110MH1981PLC025884."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "NGL Fine Chem: a wealth-creation engine, back on track after a margin scare.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 44-year-old veterinary API specialist, three times on Forbes Asia's 'Best Under a Billion' list, recovering from a profit dip with a ₹160 Cr greenfield expansion.", "tier": "company", "epistemic": "fact", "source": "nglfinechem.com; screener.in", "fields": ["recentMoves", "financials.patCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1981 (API manufacturing since 1984)", "tier": "company", "source": "nglfinechem.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹490-500 Cr · FY26 (from ₹339 Cr FY24)", "tier": "company", "source": "screener.in; business-standard.com", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "₹42-48 Cr · FY26 (recovering from ₹21 Cr FY25 dip)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "OPM / ROE", "value": "12% (from 7%) / 14%", "tier": "company", "source": "screener.in", "fields": ["financials.opmPct", "financials.roePct"] },
+    { "label": "Recognition", "value": "Forbes Asia 'Best Under a Billion' — 2015, 2016, 2021", "tier": "company", "source": "nglfinechem.com", "fields": ["differentiation"] },
+    { "label": "Export reach", "value": "60+ countries, 3-Star Export House", "tier": "company", "source": "nglfinechem.com", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine, recovering from a real dip",
+    "blocks": [
+      { "text": "The recent trend is a genuine recovery story: PAT fell sharply from ₹41 Cr (FY24) to ₹21 Cr (FY25, down ~49% on margin compression from higher expenses), before rebounding to ₹42-48 Cr in FY26 as revenue grew to ₹490-500 Cr and OPM recovered from 7% to 12%. ROE held up through the dip at a healthy 12-14% range across the period.", "tier": "company", "epistemic": "fact", "source": "screener.in; business-standard.com", "fields": ["financials.revenueCr", "financials.patCr", "financials.opmPct", "financials.roePct"] },
+      { "text": "It pivoted to an almost entirely veterinary-API focus in 1996 and has since built a genuinely independent reputation: Forbes Asia named it to its 'Best Under a Billion' list three separate times (2015, 2016, 2021) — external recognition, not a self-description.", "tier": "company", "epistemic": "fact", "source": "nglfinechem.com", "fields": ["differentiation"] },
+      { "text": "It runs five manufacturing facilities in Maharashtra (~25,000 m² total) with 70+ dedicated R&D professionals among 700+ employees, and holds 3-Star Export House status from India's Ministry of Commerce; its S-18 site became US FDA-compliant in 2025.", "tier": "company", "epistemic": "fact", "source": "nglfinechem.com", "fields": ["product_improvement", "moat"] },
+      { "text": "It's funding a ₹160 Cr greenfield expansion at Tarapur via debt plus internal accruals, aimed at a 50% capacity increase for new pipeline products — pilot batch production began March 2025 after regulatory approval, and CRISIL upgraded its outlook to Stable in 2025, reaffirming ratings.", "tier": "company", "epistemic": "fact", "source": "indianchemicalnews.com; whalesbook.com (CRISIL)", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **growing steadily**, with India's own slice outpacing the global rate.", "evidence": "Global veterinary API market: $7.93B (2024) to $11.79B by 2029 (8.2%/yr). India veterinary API manufacturing: $547.7M (2024) to $1,133.3M by 2033 (8.4%/yr), ~5.9% of the global market.", "tier": "segment", "epistemic": "fact", "source": "Knowledge Sourcing; Grand View Research", "fields": ["market.sizeRange"] },
+      { "point": "**Government animal-health programs are a direct structural tailwind.**", "evidence": "India's National Animal Disease Control Programme targets vaccinating 530M cattle against FMD (200M+ already done); ~80% of veterinary drugs sold in India must now meet updated GMP standards, tightening the field toward compliant manufacturers like NGL.", "tier": "segment", "epistemic": "fact", "source": "pecushealthcare.com", "fields": ["structureFacts"] },
+      { "point": "The one clean listed peer shows **how volatile this exact segment can be** — reinforcing that NGL's own FY25 dip wasn't unique.", "evidence": "Sequent Scientific (now Viyash Scientific post-merger) saw net margin fall from 8.6% to 2.2% and ROE turn deeply negative (-19% to -5%) before its 2024 merger into a larger integrated animal-health player.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers[0]"] }
+    ],
+    "reflect": { "text": "A three-time Forbes-recognized veterinary API specialist that had one rough year and is already recovering, backing that recovery with a real, funded capacity expansion. The segment itself is genuinely volatile — NGL's own peer shows how much worse a bad year can get.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Knowledge Sourcing, Grand View Research, pecushealthcare.com (shared animal-human-apis-specialty-chemicals segment file). Peer data: screener.in (Sequent Scientific/Viyash, Excel Industries)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, already funded and named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Completing the Tarapur greenfield expansion for new pipeline products", "body": "The HVT sheet's own gap research names this directly: the 50% capacity expansion at Tarapur was delayed by high commodity prices but is now in pilot production, with the pipeline of new products depending on its full commercialization.", "source": "HVT gap research (indianchemicalnews.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only NGL Fine Chem's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Track new-product revenue from Tarapur as its own line", "body": "As the Tarapur expansion moves from pilot to full commercialization, report the new pipeline products' revenue separately for a few quarters to confirm the capacity expansion is converting into real new-product sales, not just replacing existing capacity.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a combined animal/human API and specialty chemicals manufacturer in this segment — a directory-depth pass, not yet confirmed against NGL's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer a broad multi-category API portfolio (veterinary + human + specialty chemicals)", "position as a single-source supplier across categories", "market via regulatory-filing-backed product catalog"], "stepsTier": "segment", "spottedAt": "offer a broad multi-category API portfolio (veterinary + human + specialty chemicals)", "spotted": { "text": "Company facts (45+ APIs, 3-Star Export House, Forbes recognition) confirm this step is real and validated for NGL, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["maintain cGMP/US FDA-compliant manufacturing", "run dedicated R&D team", "file DMF/CEP for regulated-market entry"], "stepsTier": "segment", "spottedAt": "maintain cGMP/US FDA-compliant manufacturing", "spotted": { "text": "Company facts (70+ R&D professionals, S-18 site US FDA-compliant since 2025) confirm this step is real for NGL, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate multiple manufacturing facilities", "run greenfield/brownfield capacity expansions for new pipeline products", "batch-test & release"], "stepsTier": "segment", "spottedAt": "run greenfield/brownfield capacity expansions for new pipeline products", "spotted": { "text": "Spotted at \"capacity expansion\": the ₹160 Cr Tarapur greenfield project is exactly this step, in pilot production now → completing the Tarapur expansion.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["support buyer qualification/audit process", "maintain consistent quality/documentation across dual (animal+human) regulatory regimes", "respond to inspection findings"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["formulator qualifies API source", "multi-year supply agreement negotiated", "recurring purchase orders across both animal-health and human-pharma customer bases", "renew/expand as regulated-market presence grows"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/animal-human-apis-specialty-chemicals.json) — no company-specific (A2/pursuit) operational intel was collected for NGL this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A three-time Forbes-recognized specialist that took a real margin hit and is already climbing back, with fresh capacity coming online right on schedule. **The recovery looks real; the new capacity is what turns it into growth.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in NGL Fine Chem or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in and business-standard.com; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus nglfinechem.com and indianchemicalnews.com; market data from Knowledge Sourcing and Grand View Research; peer figures from screener.in (Sequent Scientific/Viyash, Excel Industries). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "business-standard.com", "nglfinechem.com", "indianchemicalnews.com", "whalesbook.com", "Knowledge Sourcing", "Grand View Research", "pecushealthcare.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics on the new Tarapur pipeline products, and real customer retention across its 60+ export countries — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "segmentName": "Herbal Extracts & Ayurvedic Medicines",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary sharply by methodology: $100.12B (2024) to $396.18B by 2035 (13.32%/yr) per one source; $251.24B (2025) to $515.92B by 2034 (8.37%/yr) per another.",
+    "cagrPctRange": [8.37, 13.32],
+    "exportGeographies": ["USA (34.95% of India's Ayush exports)", "EU (18.66%)", "UAE (5.52%)", "150 countries total"],
+    "globalCompetitors": ["not applicable at global scale for a small exporter — see peers[] for Indian comparables"],
+    "domesticSlice": "India herbal medicine market: $7.26B (2025) to $30.0B by 2035 (15.2%/yr); India medicinal plant-extracts market specifically: $955.39M (2025) to $2,068.0M by 2035 (8.0%/yr). India's Ayush exports doubled over the past decade to $2.16B, reaching 150 countries; raw herbs and extracts account for 60-70% of current export volume."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [
+    { "name": "AYUSH / alternative medicine (broader category)", "sizeUSD_B_range": "$26.53B (2026) to $36.62B by 2031, 6.66%/yr" }
+  ],
+  "structureFacts": [
+    "AYUSH Ministry's International Cooperation Scheme and Voluntary Certification Scheme for Medicinal Plants Produce (VCSMPP) support exporter credibility/certification",
+    "In FY2023-24, US imports of Ayush/herbal products reached $183.31M, Germany $62.64M, Italy $36.20M — the demand concentration is real and specific, not evenly distributed"
+  ],
+  "adoptionStructure": {
+    "note": "B2B ingredient-supply relationship driven (raw herbs/extracts feeding pharmaceutical/nutraceutical/supplement manufacturers) rather than a fixed consumer repurchase rate"
+  },
+  "peers": [
+    { "name": "Dabur India", "revenueCr": 12404, "patCr": 1811, "fy": "FY2024", "note": "diversified FMCG major with ~18% share of India's AYUSH market — not a close-scale peer to a small exporter, included as market-leader context", "source": "aggregated industry reporting" },
+    { "name": "Himalaya Wellness Company", "revenueUSD_M": 440, "fy": "FY2022", "note": "dominant in premium/export categories; Himalaya + Patanjali together ~25% of the AYUSH market", "source": "aggregated industry reporting" },
+    { "name": "Shree Baidyanath Ayurved Bhawan Pvt Ltd", "revenueCr": 761, "fy": "FY2025", "note": "founded 1917, a genuine heritage comparable at much larger scale", "source": "Tracxn" }
+  ],
+  "customerValue": {
+    "drivers": ["phytochemical standardization and quality-control consistency", "raw-material sourcing traceability", "in-house extraction/isolation capability spanning raw material to finished product"],
+    "strongestPredictor": "not established from available research",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer standardized herbal extracts, plant-derived alkaloid salts/isolates, and finished herbal/Ayurvedic products", "serve pharmaceutical and nutraceutical customers as a B2B ingredient supplier"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run in-house extraction/isolation know-how for plant-derived actives", "standardize phytochemical content", "maintain quality-control from raw material through finished product"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate extraction/processing facility with dedicated machinery", "scale relative to raw-material sourcing volume"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["build direct export relationships with pharmaceutical/nutraceutical formulators", "support VCSMPP/AYUSH Ministry certification requirements"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["export orders to international herbal-ingredient buyers", "feed into pharmaceutical/nutraceutical/supplement manufacturers in US/EU/UAE demand centers", "reorder tied to buyer's own production cadence"] }
+  ],
+  "sources": [
+    "https://www.marketresearchfuture.com/reports/india-herbal-medicine-market-44000",
+    "https://www.marketresearchfuture.com/reports/india-medicinal-plant-extracts-market-50396",
+    "https://www.mordorintelligence.com/industry-reports/ayush-and-alternative-medicine-industry-in-india",
+    "https://organiser.org/2026/07/16/370113/bharat/ayurveda-export-decade-how-india-doubled-ayush-exports-to-usd-2-16-billion-and-reached-150-countries/",
+    "https://tracxn.com/d/legal-entities/india/shree-baidyanath-ayurved-bhawan-pvt-ltd"
+  ]
+}

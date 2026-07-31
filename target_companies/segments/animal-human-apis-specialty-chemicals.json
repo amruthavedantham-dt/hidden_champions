@@ -1,0 +1,45 @@
+{
+  "segmentName": "Animal & Human APIs and Specialty Chemicals (dual-market)",
+  "market": {
+    "worldSizeUSD_B_range": "Global veterinary API market: $7.93B (2024) to $11.79B by 2029 (8.2%/yr), or $9.8B (2025) to $19.6B by 2035 (7.2%/yr). Global specialty chemicals: ~$979B (2024) to $1,313B by 2030 (~5-6.3%/yr); pharmaceutical chemicals sub-segment specifically: $159.22B (2026) to $265.87B by 2033 (7.6%/yr).",
+    "cagrPctRange": [5.0, 8.2],
+    "exportGeographies": ["North America (US, Canada)", "EU", "Latin America (Brazil, Colombia, Mexico)", "East Asia (China, Japan, Korea)", "Middle East", "Asia Pacific"],
+    "globalCompetitors": ["Zoetis", "Huvepharma", "Ourofino", "Virbac India", "Intas Animal Health"],
+    "domesticSlice": "India veterinary API manufacturing: $547.7M (2024) to $1,133.3M by 2033 (8.4%/yr), ~5.9% of global market (2024). India veterinary pharmaceuticals (broader, incl. formulations): $1.16-1.73B (2024) to $2.22-4.17B by 2033, 7.5-10.23%/yr depending on source."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's National Animal Disease Control Programme (NADCP) targets vaccinating 530M cattle against FMD; 200M+ vaccinated as of 2024 — a structural driver of veterinary pharma demand",
+    "CDSCO mandated (Sept 2024) all new veterinary drug approvals go via the SUGAM Portal — expected to speed approvals and increase transparency",
+    "~80% of veterinary drugs sold in India must meet updated GMP standards",
+    "Rashtriya Gokul Mission and National Livestock Mission are improving breed quality/productivity and expanding rural veterinary access"
+  ],
+  "adoptionStructure": {
+    "note": "Not a repurchase-rate category; demand is regulated-market qualification and institutional-buyer relationship driven, similar to human API supply"
+  },
+  "peers": [
+    { "name": "Sequent Scientific Ltd (now Viyash Scientific, post-2024 merger)", "revenueCr_TTM": 1551, "note": "ROE deeply negative (-19.0% FY23 to -5.1% FY24), net margin fell from 8.6% to 2.2% — a cautionary comparable showing this segment's margin can be volatile even at scale; merged Nov 2024 into an integrated global animal-health player with 16 facilities, 150+ market access", "source": "screener.in" },
+    { "name": "Excel Industries Ltd", "revenueCr_9M": 813, "fy": "9M FY26", "revenueGrowthPct": 11, "roePctRange": "3.73-6.82% (3-yr avg, low)", "source": "screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["established supplier relationships and quality/compliance track record (GMP, US FDA site compliance)", "negotiated long-term pricing for regulated-market customers", "reliable, compliant, diversified supply reduces single-source risk for global animal-health and pharma formulators"],
+    "strongestPredictor": "quality/compliance track record",
+    "source": "pharmaoffer.com"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer a broad multi-category API portfolio (veterinary + human + specialty chemicals)", "position as a single-source supplier across categories", "market via regulatory-filing-backed product catalog"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain cGMP/US FDA-compliant manufacturing", "run dedicated R&D team", "file DMF/CEP for regulated-market entry"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate multiple manufacturing facilities", "run greenfield/brownfield capacity expansions for new pipeline products", "batch-test & release"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["support buyer qualification/audit process", "maintain consistent quality/documentation across dual (animal+human) regulatory regimes", "respond to inspection findings"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["formulator qualifies API source", "multi-year supply agreement negotiated", "recurring purchase orders across both animal-health and human-pharma customer bases", "renew/expand as regulated-market presence grows"] }
+  ],
+  "sources": [
+    "https://www.knowledge-sourcing.com/report/veterinary-api-market",
+    "https://www.grandviewresearch.com/horizon/outlook/veterinary-active-pharmaceutical-ingredients-manufacturing-market/india",
+    "https://www.imarcgroup.com/india-veterinary-pharmaceuticals-market",
+    "https://www.pecushealthcare.com/growth-of-the-indian-veterinary-pharmaceutical-industry",
+    "https://www.screener.in/company/SEQUENT/",
+    "https://www.screener.in/company/EXCELINDUS/consolidated/"
+  ]
+}

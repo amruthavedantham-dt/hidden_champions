@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Armstrong International</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Armstrong International India: a US thermal-technology parent&#x27;s Indian arm, currently running at a loss.</h1>
+    <p class="subhead">Real proprietary steam-monitoring technology and a 2024 director appointment tying it formally to its US parent — sitting alongside a swing to negative ROE and ROCE in the latest filing year.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Entity</p><p class="snap-value">Armstrong International Private Limited (India), CIN U31200TN2007PTC065429, incorporated 2007 — distinct from but linked to the US parent (founded 1900)</p></div><div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹100-200 Cr band (conflicting Tofler figures across FY24/FY25 snapshots)</p></div><div class="snap"><p class="snap-label">Margins (FY25 snapshot)</p><p class="snap-value">Operating -5.0%, Net -4.1% — swung to a loss</p></div><div class="snap"><p class="snap-label">ROE / ROCE (FY25 snapshot)</p><p class="snap-value">-10.57% / -12.64%, Debt-to-Equity 0.24</p></div><div class="snap"><p class="snap-label">Employees</p><p class="snap-value">803-863 (conflicting sources)</p></div><div class="snap"><p class="snap-label">US parent tie</p><p class="snap-value">Ryan Douglas Bloss (Global Director of Sales, US parent) appointed Director of the Indian entity, 07 Jun 2024</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A real global-parent tie, currently running at a loss</h2>
+      <p class="prose">This is a genuine financial-data conflict, not just imprecision: one Tofler snapshot (FY2024) shows EBITDA up 10.3% YoY on a ₹100-500 Cr revenue band, while a separate Tofler financials-page fetch for a more recent period shows total revenue down 6.62%, EBITDA down 64.7%, and net profit swinging to a loss (down 132.13%), with negative net margin (-4.1%), negative ROE (-10.57%), and negative ROCE (-12.64%). Both are reported here since they conflict on the direction of the trend, not just its magnitude.</p><p class="prose">It holds proprietary steam/energy-monitoring technology — the VERIS Accelabar meter and SAGE UMT automatic steam trap testing device — and manufactures steam condensate, heat transfer, humidification, and flow measurement systems aimed at reducing industrial energy waste. It is positioned as an official channel partner for hot water, condensate recovery, and pressure/temperature regulation systems.</p><p class="prose">The Indian entity&#x27;s relationship to the global Armstrong International (a 5th-generation, US family-owned company founded in 1900) is real, not just a shared brand name — a June 2024 director appointment placed the US parent&#x27;s own Global Director of Sales onto the Indian entity&#x27;s board, a concrete governance link beyond marketing affiliation.</p><p class="prose">Employee counts conflict between two directory sources (803 vs. 863, both circa late 2024), and ISO 9001 certification is confirmed only at the 2008 standard level with no evidence found of a 2015 upgrade — export footprint and export percentage of revenue were not found for the Indian entity specifically.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">A market with <b>real energy-efficiency/decarbonization tailwinds</b>, though vendor size estimates vary widely.</p><p class="ev">India steam trap market: $178.8M (2025) to $280.7M by 2034 (~5-7.2%/yr depending on source); global steam trap estimates range from $971M to $9.27B by scope, and a related condensate-recovery-device market is cited even larger at $102.4B-$126.9B — vendor market-boundary definitions differ substantially.</p></li><li class="insight"><p class="point"><b>Spirax Sarco dominates globally (~30% share)</b>, with Thermax as the closer, real India-listed comparable.</p><p class="ev">Thermax Limited (India, listed) posted ₹10,640 Cr FY25 revenue (+14% YoY) with an 11.5% 3-year average ROE — a genuinely profitable India-based peer in the same broad thermal-utility space, a useful contrast to Armstrong India&#x27;s current negative returns.</p></li><li class="insight"><p class="point"><b>Technology shift toward IoT/automated monitoring</b> plays directly to Armstrong&#x27;s own VERIS/SAGE UMT product line.</p><p class="ev">The segment&#x27;s structural shift from manual steam-trap inspection to automated monitoring is exactly the capability Armstrong&#x27;s proprietary technology targets — a real alignment between company capability and segment direction, independent of the current financial softness.</p></li>
+      </ul>
+      <p class="reflect">A real, technically-differentiated thermal-utility specialist with a governance-confirmed tie to a century-old US parent — currently working through a loss-making stretch that conflicting data sources make hard to characterize precisely. The underlying product/technology positioning looks sound; the open question is whether the FY25 loss is a one-off or the start of a trend.</p>
+      <p class="src">Market data: IMARC Group, aggregated vendor reports (shared steam-air-hot-water-solutions segment file, new this batch). Peer data: Spirax Sarco, Thermax Limited, Forbes Marshall.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">One clear place worth watching, named directly in the company&#x27;s own gap research — with a real financial caveat attached.</p>
+      <div class="opp"><p class="tag">Market-Access</p><h4>Expanding the &#x27;Circular Thermal&#x27; decarbonization approach beyond current energy-conservation offerings</h4><p>The HVT sheet&#x27;s own gap research names this directly — extending toward up to 80% total carbon reduction capability from waste-heat recovery — but given the current loss-making financial snapshot, this reads as an opportunity that needs the core business stabilized first, not a standalone growth lever.</p><p class="oppsrc">HVT gap research (LinkedIn / Paul Ashley).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions — and the honest first step here is reconciling the conflicting Tofler financial snapshots.</p>
+        <div class="hvt"><p class="tag">Trust</p><h5>Reconcile the two conflicting Tofler revenue/EBITDA trend snapshots directly</h5><p>Since one Tofler-derived snapshot shows EBITDA growth and another shows a swing to loss for what should be adjacent or overlapping periods, confirming the actual current financial trajectory directly with the company should precede any capability or opportunity conversation.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for a steam/air/hot-water thermal-utility manufacturer in this segment — a directory-depth pass, not yet confirmed against Armstrong International&#x27;s own stated process beyond what the HVT row documents, so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">offer steam traps, condensate recovery units, humidification systems → offer flow meters and automated trap-testing devices → offer heat exchangers and water heaters/heat pumps<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;offer flow meters and automated trap-testing devices&quot;</span> Company facts (proprietary VERIS Accelabar meter and SAGE UMT automatic steam trap testing device) confirm this step is real for Armstrong International — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">run manufacturing (metal fabrication/precision casting of trap bodies and valves) → run calibration/testing labs → provide field service, installation, and channel-partner coverage<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;provide field service, installation, and channel-partner coverage&quot;</span> Company facts (official channel partner for hot water, condensate recovery, pressure/temperature regulation) confirm this step is real for Armstrong International — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate a manufacturing plant sized for regional/global distribution → maintain a distributor/channel-partner network<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;operate a manufacturing plant sized for regional/global distribution&quot;</span> Company facts (Chengalpattu, Tamil Nadu manufacturing facility) confirm this step is real for Armstrong International — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">provide applications engineering by industry segment (pharma, textile, food, power) → provide energy-audit and predictive-maintenance services<span class="genericflag">generic scaffold</span></p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">win orders via plant energy audits and capex cycles for new industrial facilities → win orders via statutory/ESG compliance deadlines and trap replacement cycles<span class="genericflag">generic scaffold</span></p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/steam-air-hot-water-solutions.json) — no company-specific (A2/pursuit) operational intel was collected for Armstrong International this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>A real, technically-differentiated Indian arm of a century-old US thermal-technology company, confirmed by a 2024 board appointment — currently working through a financially unclear stretch where two data sources disagree on direction. <b>Reconciling the actual current financial trajectory is the necessary first step.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Armstrong International or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. Financials from Tofler (conflicting snapshots, both reported); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus IndiaMART, Tracxn director records, and armstroninternational.com press material; market data from IMARC Group. Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

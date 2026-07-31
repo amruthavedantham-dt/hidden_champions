@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Welspun Living</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Welspun Living: a deep-tech bet on manufacturing inside the tariff wall it&#x27;s currently getting hurt by.</h1>
+    <p class="subhead">India&#x27;s #1 US home-textiles supplier, whose FY26 profit fell 67% on tariff-related shipment deferrals — now building pillow plants in Ohio and Nevada.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">1985, as Welspun Winilon Silk Mills</p></div><div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹9,399 Cr · FY26 (from ₹10,545 Cr FY25, -11%)</p></div><div class="snap"><p class="snap-label">PAT</p><p class="snap-value">₹213 Cr · FY26 (from ₹644 Cr FY25, -67%)</p></div><div class="snap"><p class="snap-label">OPM / ROE</p><p class="snap-value">8% (from 12%) / 11%</p></div><div class="snap"><p class="snap-label">Patents</p><p class="snap-value">47+ patented technologies</p></div><div class="snap"><p class="snap-label">US manufacturing bet</p><p class="snap-value">$50M Ohio pillow plant (2024) + $13M Nevada plant (2026)</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A deep-tech bet on manufacturing its way around the tariff that just hurt it</h2>
+      <p class="prose">FY26 was a genuinely difficult year: revenue fell 11% to ₹9,399 Cr, PAT fell 67% to ₹213 Cr, and OPM compressed from 12% to 8% — the company itself attributes this to tariff-related shipment deferrals and unfavorable product mix, not a demand collapse. ROE held at 11%.</p><p class="prose">It holds 47+ patented technologies including Nanocore® (allergen barrier), Wel-Trak® (supply-chain traceability) and HYGROCOTTON® (absorbency/softness process), plus OEKO-TEX Standard 100, GOTS, GRS certification and &#x27;Made in Green by OEKO-TEX&#x27; status — the first Indian bed/bath manufacturer to receive it. It also ranks in DJSI&#x27;s top 3 percentile globally on ESG.</p><p class="prose">It&#x27;s the #1 home-textiles supplier to the US market, with exports at ~67% US, ~17% EU and distribution in 50+ countries — genuinely concentrated exposure to exactly the market where the tariff pressure originates.</p><p class="prose">It responded with real capital, not just commentary: a $50M Ohio pillow plant (6.7M-pillow initial capacity, operational since ~September 2024) and a $13M Nevada pillow plant (commercial production began March 2026) — US-based manufacturing that sidesteps the tariff exposure directly. FY25 capex was ₹860 Cr, with ₹577 Cr planned for FY26, plus a ₹304 Cr terry-towel facility expansion and a ₹121 Cr Anjar modernization approved mid-2026.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">The field is <b>large, with India&#x27;s own segment growing at a comparable or faster clip</b>, depending on methodology.</p><p class="ev">Global home textiles: $230.99B (2025) to $338.37B by 2032 (5.60%/yr). India home textile market: $4.51B (2025) to $6.78B by 2034 (4.65%/yr) per one source, or as fast as 8.4%/yr per another.</p></li><li class="insight"><p class="point"><b>Every major listed peer shows the same recent pain</b> — this is a sector-wide tariff shock, not a Welspun-specific stumble.</p><p class="ev">Indo Count Industries&#x27; FY26 PAT fell 49.33% YoY on nearly flat revenue, with ROE dropping from a 16.93% 5-year average to 9.92% in the latest half-year — the same margin-compression pattern visible at Welspun.</p></li><li class="insight"><p class="point"><b>Trident Ltd shows the segment can still deliver strong results</b>, a useful counterpoint.</p><p class="ev">Trident posted ₹6,933 Cr TTM revenue with ₹409 Cr TTM profit and 11.34% ROE, with Q1 FY27 profit up 55% QoQ — proof the tariff shock hasn&#x27;t uniformly depressed every player equally.</p></li>
+      </ul>
+      <p class="reflect">The largest, most patent-rich player in Indian home textiles just had its worst profit year in the recent record, for a reason (US tariffs) that&#x27;s hitting the whole sector — and it&#x27;s the one responding with real US-based manufacturing capacity, not just cost-cutting.</p>
+      <p class="src">Market data: Fortune Business Insights, IMARC Group, Mordor Intelligence (shared towels-bedding-rugs segment file). Peer data: Trident Ltd, Indo Count Industries.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">One clear place worth watching, named directly in the company&#x27;s own gap research.</p>
+      <div class="opp"><p class="tag">Velocity</p><h4>Building domestic B2C presence toward 50,000 stores by FY27</h4><p>The HVT sheet&#x27;s own gap research names this directly: Welspun dominates as India&#x27;s largest home-textile exporter and #1 US supplier, but its domestic Indian market share remains a comparatively untapped opportunity — the company has stated a specific target of strengthening B2C presence to reach 50,000 stores by FY27.</p><p class="oppsrc">HVT gap research (welspunliving.com).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only Welspun Living&#x27;s own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Track the Ohio and Nevada plants&#x27; margin against tariff-affected exports</h5><p>As the Nevada plant ramps up commercial production, compare its landed cost and margin directly against tariff-affected India-to-US exports for the same product category, to quantify exactly how much the US manufacturing bet actually offsets the tariff pain seen in FY26.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for a home textiles (towels/bedding/rugs) manufacturer in this segment — a directory-depth pass, not yet confirmed against Welspun&#x27;s own stated process, so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">offer branded and private-label towels, bed linen, and rugs/flooring products → sell to big-box retail, hospitality, and direct-to-consumer channels<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;sell to big-box retail, hospitality, and direct-to-consumer channels&quot;</span> Company facts (Christy, Spaces, Disney Home brands; private label for major US retailers) confirm this step is real and central for Welspun, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">run vertically integrated cotton yarn-to-finished-product manufacturing → develop proprietary process/tech (traceability, absorbency/softness processes) → hold OEKO-TEX/GOTS/GRS-certified sustainable production<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;develop proprietary process/tech (traceability, absorbency/softness processes)&quot;</span> Company facts (47+ patents, Nanocore®, Wel-Trak®, HYGROCOTTON®) confirm this step is real and unusually deep for Welspun, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate large-scale India manufacturing → build emerging manufacturing footprint in export destination countries to shorten lead times and hedge tariff exposure<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;build emerging manufacturing footprint in export destination countries to shorten lead times and hedge tariff exposure&quot;</span> Company facts (Ohio and Nevada pillow plants, $63M combined US investment) confirm this step is real and actively expanding for Welspun, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">maintain long-standing private-label/vendor relationships with major US/EU retailers → provide full-chain traceability and sustainability credentials for retailer vendor scorecards → support PLI-scheme-backed cost competitiveness<span class="genericflag">generic scaffold</span></p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">fulfil retail seasonal buying cycles (back-to-school, holiday) → execute multi-year private-label supply contracts → manage exposure to cotton price cycles and tariff-timing effects on shipment scheduling<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;manage exposure to cotton price cycles and tariff-timing effects on shipment scheduling&quot;</span> building domestic B2C presence.</p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/towels-bedding-rugs.json) — no company-specific (A2/pursuit) operational intel was collected for Welspun this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>The worst profit year in recent memory, caused by exactly the tariff exposure the company is now spending real capital to escape. <b>The Ohio and Nevada plants are the honest answer to the FY26 numbers, not a separate story.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Welspun Living or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. Financials from screener.in and business-standard.com; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus welspunliving.com, matrixbcg.com and careratings.com; market data from Fortune Business Insights, IMARC Group and Mordor Intelligence; peer figures from marketfeed.com (Trident) and marketsmojo.com (Indo Count). Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

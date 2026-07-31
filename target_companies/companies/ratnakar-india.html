@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Ratnakar India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Ratnakar India: a deep-tech bet on cutting China out of its own supply chain, funded by debt it hasn&#x27;t yet earned back.</h1>
+    <p class="subhead">A 400-product agrochemical formulator whose new Dahej technical-manufacturing plant is explicitly aimed at import substitution — while current returns run negative.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded (company-stated)</p><p class="snap-value">2011 (this CIN incorporated 2018)</p></div><div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹241 Cr · FY24 (+32% 1-yr CAGR)</p></div><div class="snap"><p class="snap-label">OPM / Net margin</p><p class="snap-value">2.17% / 0.81% (thin)</p></div><div class="snap"><p class="snap-label">ROE / ROCE</p><p class="snap-value">1.89% / -21.02% (negative)</p></div><div class="snap"><p class="snap-label">Debt-to-equity</p><p class="snap-value">2.45 (high leverage)</p></div><div class="snap"><p class="snap-label">New plant</p><p class="snap-value">Dahej technical-manufacturing unit, ₹60 Cr Phase 1 (Sept 2024), ₹150 Cr total planned</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A deep-tech bet, currently running at a loss on returns</h2>
+      <p class="prose">Revenue grew a strong 32% (1-year CAGR) to ₹241 Cr, with EBITDA growth reported at 134-157% — but margins are thin (2.17% operating, 0.81% net) and returns are genuinely negative: ROE just 1.89%, and ROCE at -21.02%. Debt-to-equity of 2.45 signals a heavily leveraged balance sheet, consistent with a company mid-way through a large debt-funded capex program.</p><p class="prose">It holds ISO 14001:2015 certification, a Good Manufacturing Practice system, over 100 BIS certifications, and has registered more than 400 agrochemical products in India — a genuinely broad registered-product portfolio, though the HVT sheet marks `moat` `needs_verify: yes` since it&#x27;s entirely self-sourced.</p><p class="prose">In September 2024 it launched a new technical-manufacturing plant at Dahej — Phase 1 investment ₹60 Cr, with the total project (including Phase 2) targeted at ₹150 Cr by 2025 — explicitly framed as reducing import dependence on China for agrochemical technicals. Capacity figures for this plant conflict across sources (1,000 MT/month per the company&#x27;s own site vs. 12,000 MT/month per a press release) and were not reconciled.</p><p class="prose">It operates two formulation plants, one technical manufacturing plant, one packaging unit and an Ahmedabad corporate office, plus one overseas branch office in Hong Kong, and describes itself as &#x27;export-ready&#x27; on 200+ products — though the HVT sheet&#x27;s own gap research doesn&#x27;t specify an actual export percentage.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">The field is <b>large and India holds a meaningful, growing global share.</b></p><p class="ev">India crop protection chemicals: $2.59B (2025) to $3.21B by 2030 (4.35%/yr); the broader India agrochemicals market including fertilizers: $33.17B (2023) to $51.29B by 2030 (6.4%/yr); India accounted for ~12.2% of the global agrochemicals market in 2023.</p></li><li class="insight"><p class="point"><b>China-import-substitution is a real, well-timed structural theme</b>, and it&#x27;s exactly what the Dahej plant targets.</p><p class="ev">Backward integration into technical (active-ingredient) manufacturing to reduce China import dependence is a structural theme across the segment right now — Ratnakar&#x27;s own stated Dahej rationale sits squarely inside this trend, not ahead of or behind it.</p></li><li class="insight"><p class="point">Listed peers show <b>what healthy returns look like in this same segment</b> — a real contrast to Ratnakar&#x27;s own negative ROCE.</p><p class="ev">PI Industries posts 19.09% ROE with ~27% EBITDA margin; Rallis India (Tata Group) grew PAT 47% YoY to ₹184 Cr in FY26 on a 3-year average ROE of 8.41% — both solidly positive, unlike Ratnakar&#x27;s current -21.02% ROCE.</p></li>
+      </ul>
+      <p class="reflect">A genuinely well-timed capacity bet — cutting China out of the technical-manufacturing supply chain — funded with debt heavy enough that current returns are negative. The Dahej plant is exactly the kind of move the segment&#x27;s own structural trend rewards; whether the balance sheet survives long enough to collect on it is the real question.</p>
+      <p class="src">Market data: Mordor Intelligence, Grand View Research (shared crop-protection-agrochemicals segment file). Peer data: UPL, PI Industries, Rallis India — all showing healthier returns than Ratnakar&#x27;s own current figures.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">One clear place worth watching, named directly in the company&#x27;s own gap research — with a real financial caveat attached.</p>
+      <div class="opp"><p class="tag">Margin</p><h4>Capturing more of the growing global agrochemicals market</h4><p>The HVT sheet&#x27;s own gap research names this directly, citing the global agrochemicals market&#x27;s growth toward $328B+ by 2033 as headroom beyond Ratnakar&#x27;s current 400+ registered products and 200+ export-ready SKUs — but given the company&#x27;s own negative ROCE, this reads as an opportunity contingent on the Dahej plant reaching profitable utilization first, not a standalone growth lever.</p><p class="oppsrc">HVT gap research (sphericalinsights.com agrochemicals market report).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions — and the honest first step here is confirming the Dahej plant&#x27;s own unit economics before broader market-capture plans.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Track Dahej&#x27;s technical-manufacturing margin as its own line</h5><p>Report the Dahej plant&#x27;s output and margin separately from the rest of the business as it ramps, to confirm the import-substitution bet is actually improving returns before committing further capex or pursuing broader market-share opportunities.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for a crop-protection agrochemical manufacturer in this segment — a directory-depth pass, not yet confirmed against Ratnakar&#x27;s own stated process, so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">offer formulated crop-protection products (insecticides, fungicides, herbicides, plant growth regulators) → offer technical-grade active ingredients → maintain a broad registered-product portfolio<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;maintain a broad registered-product portfolio&quot;</span> Company facts (400+ registered agrochemical products) confirm this step is real for Ratnakar, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">backward-integrate into technical (active-ingredient) manufacturing → run formulation R&amp;D → maintain regulatory registration capability (CIB&amp;RC, FAO specification compliance)<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;backward-integrate into technical (active-ingredient) manufacturing&quot;</span> Company facts (Dahej technical-manufacturing plant, explicitly China-import-substitution framed) confirm this step is real and in progress for Ratnakar, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate multiple formulation plants plus a technical-manufacturing plant and packaging unit → expand capacity to reduce import dependence and capture higher-margin technical-grade production<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;expand capacity to reduce import dependence and capture higher-margin technical-grade production&quot;</span> confirming Dahej&#x27;s own unit economics.</p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">distribute through dealer/distributor networks reaching farmers → serve institutional/international buyers via overseas offices → differentiate on price competitiveness and breadth of registered molecules<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;serve institutional/international buyers via overseas offices&quot;</span> Company facts (Hong Kong overseas branch office) confirm this step is real for Ratnakar, not just generic — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">fulfil seasonal agricultural buying cycles (kharif/rabi) → fulfil export orders to Latin America/Africa/Asia driven by generic off-patent molecule demand → navigate regulatory-registration-gated market access in each destination country<span class="genericflag">generic scaffold</span></p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/crop-protection-agrochemicals.json) — no company-specific (A2/pursuit) operational intel was collected for Ratnakar this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>A well-timed bet on cutting China out of its own supply chain, made with debt heavy enough to push current returns negative. <b>Whether Dahej pays back before the balance sheet strains further is the whole story here.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Ratnakar India or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus aninews.in and ratnakarindia.com; market data from Mordor Intelligence and Grand View Research; peer figures from business-standard.com (PI Industries), tatachemicals.com (Rallis India) and upl-ltd.com. Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

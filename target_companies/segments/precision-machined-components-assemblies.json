@@ -1,0 +1,43 @@
+{
+  "segmentName": "Precision Machined Components & Assemblies",
+  "market": {
+    "worldSizeUSD_B_range": "India 'machine components' market: $228.80M (2024) to $334.50M by 2033 (3.90%/yr). India precision gears sub-segment: $20.92M (2024) to $36.07M by 2033 (6.24%/yr). India precision machining (broader definition): 8.1%/yr through 2034 per one estimate, or a ~$8B market at 7.0%/yr per another — figures vary substantially by scope, not directly reconcilable. Global precision machining market: $123.54B (2025) to $228.75B by 2033 (8.1%/yr) or a narrower 'Precision Machined Components' definition at $163.2B (2023) to $264.5B by 2032 (5.6%/yr).",
+    "cagrPctRange": [3.9, 8.1],
+    "exportGeographies": [],
+    "globalCompetitors": [],
+    "domesticSlice": "Asia-Pacific holds ~40.7% global share, fastest growth driven by automotive/electronics expansion in China, Japan, India. India's auto-component makers are increasingly diversifying into aerospace/defence to escape automotive cyclicality."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["needle-roller-bearings"],
+  "structureFacts": [
+    "Auto-component makers (NRB Bearings, Sansera Engineering, Craftsman Automation) are pivoting into aerospace & defence and EV-related precision parts to diversify away from ICE-vehicle cyclicality and boost margins",
+    "India's 'China+1'/import-substitution push favors domestic precision manufacturing, though a specific applicable scheme was not confirmed this pass",
+    "Technology shift toward multi-axis CNC and in-house tooling/die-casting capability — a real capability gap-to-monetization pattern seen across smaller players in this segment"
+  ],
+  "adoptionStructure": {
+    "note": "Precision/tolerance consistency, on-time delivery for OEM production lines, cost competitiveness vs. Chinese suppliers, quality certifications (ISO/IATF), and willingness to co-develop tooling/fixtures for new part programs drive vendor selection."
+  },
+  "peers": [
+    { "name": "Craftsman Automation (listed)", "revenueCr_FY26Q2": 2001.59, "growthPct": 64.88, "revenueCr_FY_fullyear": 5046.57, "revenueGrowthPct_fullyear": 39.88, "source": "MarketsMojo" },
+    { "name": "Sansera Engineering (listed)", "note": "Aerospace/Defence/Semiconductor segment grew 155% YoY to ₹315 Cr in FY26, targeted at ₹550-600 Cr by FY27; total company revenue not retrieved this pass", "source": "aggregated search summary" },
+    { "name": "Precision Camshafts (listed)", "totalIncomeCr_Q4FY26_standalone": 162.53, "totalIncomeCr_Q4FY26_consolidated": 205.86, "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["precision/tolerance consistency", "on-time delivery for OEM production lines", "cost competitiveness vs. Chinese suppliers", "ISO/IATF certification", "willingness to co-develop tooling/fixtures"],
+    "strongestPredictor": "precision/tolerance consistency combined with certified OEM-approved-vendor status",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer CNC-turned parts, cast/forged components, gears, pulleys, shafts, sub-assemblies", "sell to OEMs across textile machinery, power transmission, pumps, valves, automotive, pharma equipment"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run CNC machining, casting (gravity/pressure die-casting), heat treatment", "run in-house tool & die making, assembly and QC/metrology"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a machine-tool fleet (CNC lathes, die-casting presses) sized to OEM order volume", "maintain applications/program engineering per OEM customer"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-term customer contracts/approved-vendor status with OEMs", "handle export documentation/logistics for international customers"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win orders via OEM production ramp-ups and new-model tooling programs", "win orders via vendor-approval/RFQ cycles"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/india-machine-components-market",
+    "https://www.imarcgroup.com/india-precision-gear-manufacturing-market",
+    "https://www.marketsmojo.com/news/result-analysis/craftsman-automation-q2-fy26-strong-revenue-surge-masks-margin-compression-concerns-3682369",
+    "https://www.whalesbook.com/news/English/auto/NRB-Bearings-Sansera-Craftsman-Pivot-to-Aerospace-and-Defence/6a485746a571fa4b5b96ba67"
+  ]
+}

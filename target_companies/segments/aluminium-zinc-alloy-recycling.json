@@ -1,0 +1,44 @@
+{
+  "segmentName": "Aluminium & Zinc Alloy Recycling",
+  "market": {
+    "worldSizeUSD_B_range": "India aluminium scrap market: $3.8B (2024) to $11.2B by 2034 (10.8%/yr). India secondary aluminium segment (broader framing): $7.0B (2024) to $14.0B by 2035; overall India Aluminium Market CAGR 6.504%/yr (2025-2035) — vendor estimates vary by scope (scrap-only vs. secondary-metal-market framing). No consistent global aluminium recycling market-size figure was found across vendors.",
+    "cagrPctRange": [6.504, 10.8],
+    "exportGeographies": [],
+    "globalCompetitors": [],
+    "domesticSlice": "Gravita India (listed): 9M FY26 revenue ₹3,093 Cr (+9%), PAT ₹286 Cr (+31%), 13 global facilities, ₹1,500 Cr capex plan through FY28 targeting 700,000+ MTPA capacity. Pondy Oxides & Chemicals (listed): Q1 FY26 revenue ₹604.22 Cr (+35.56% YoY), PAT +94.21% to ₹25.17 Cr."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Steel Scrap Recycling Policy 2019 (Ministry of Steel) promotes Metal Scrapping Centers facilitating both ferrous and non-ferrous scrap recycling",
+    "Vehicle Scrappage Policy (MoRTH) allows scrapping of vehicles >15 years old, directly increasing supply of aluminium/copper/steel scrap from end-of-life vehicles, tied into Extended Producer Responsibility push for OEMs",
+    "Secondary aluminium production uses up to 95% less energy than primary production — a structural ESG/cost tailwind driving sector investment",
+    "Automotive lightweighting and EV adoption structurally increase demand for secondary aluminium alloys (die-cast components)"
+  ],
+  "adoptionStructure": {
+    "note": "Automotive OEMs and die-casters need just-in-time liquid metal supply to eliminate their own ingot-remelting step and reduce melt loss, consistent alloy chemistry/purity for safety-critical components, documented recycled-content/environmental compliance, and cost savings vs. primary aluminium (LME-linked pricing)."
+  },
+  "peers": [
+    { "name": "Gravita India (listed)", "revenueCr_9MFY26": 3093, "revenueGrowthPct": 9, "patCr_9MFY26": 286, "patGrowthPct": 31, "note": "13 global facilities; ₹1,500 Cr capex plan through FY28 targeting 700,000+ MTPA capacity", "source": "aggregated Q1 results via quartr.com/indmoney.com" },
+    { "name": "Pondy Oxides & Chemicals (listed)", "revenueCr_Q1FY26": 604.22, "revenueGrowthPct": 35.56, "patCr_Q1FY26": 25.17, "patGrowthPct": 94.21, "note": "diversifying from lead into higher-margin products", "source": "business-standard.com" },
+    { "name": "Baheti Recycling Industries, Jain Resource Recycling", "note": "named as competitors by market screeners; no financials found", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["JIT liquid metal supply eliminating ingot-remelting step", "consistent alloy chemistry/purity for safety-critical components", "documented recycled-content/environmental compliance", "cost savings vs. primary aluminium (LME-linked)"],
+    "strongestPredictor": "JIT liquid metal supply combined with consistent alloy purity",
+    "source": "cmr.co.in/equipment-and-technology"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer recycled aluminium/zinc alloy ingots and liquid metal supply", "offer aluminium billets, dross, and segregated furnace-ready scrap fractions (steel, copper, brass, zinc, lead, magnesium)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run scrap sorting (XRT, LIBS, induction-based, colour sorters, heavy media flotation)", "run melting/alloying via regenerative-burner furnaces and metal circulation furnaces to precise alloy spec"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["run global scrap sourcing networks across many countries", "operate multiple recycling facilities sized in MTPA"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain framework/annual supply agreements with automotive die-casters and foundries", "manage JIT liquid-metal delivery logistics"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil purchase orders from auto-component makers, foundries, die-casters, and industrial OEMs under long-term supply contracts", "price benchmarked to LME aluminium/zinc"] }
+  ],
+  "sources": [
+    "https://www.alliedmarketresearch.com/press-release/india-aluminum-scrap-market.html",
+    "https://www.marketresearchfuture.com/reports/india-aluminum-market-45705",
+    "https://cmr.co.in/equipment-and-technology/",
+    "https://cmr.co.in/joint-ventures/"
+  ]
+}

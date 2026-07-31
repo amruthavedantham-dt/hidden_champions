@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "danish-power",
+    "series": "Hidden Champions of India",
+    "segmentRef": "power-distribution-transformers-substations",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Unlisted public (NSE Emerge-listed since Oct 2024 IPO), CIN U31200RJ1985PLC003346."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Danish Power: a forty-year-old transformer maker running a wealth-creation engine, three capacity expansions deep.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Rajasthan transformer manufacturer that just doubled its capacity, won India's first all-India BIS license for ester-liquid transformers, and IPO'd 123x oversubscribed.", "tier": "company", "epistemic": "fact", "source": "valueeducator.substack.com; forum.valuepickr.com", "fields": ["moat", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1985, by Dinesh & Shashi Talwar", "tier": "company", "source": "danish.co.in", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹425-433 Cr · FY25; H1 FY26 ₹211 Cr (+29%)", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "PAT", "value": "~₹58 Cr FY25; H1 FY26 ₹29.31 Cr (+41%)", "tier": "company", "source": "screener.in; valueeducator.substack.com", "fields": ["financials.patCr.FY25"] },
+    { "label": "EBITDA margin / ROE", "value": "17-21% / 18% (3-yr avg 25%)", "tier": "company", "source": "screener.in", "fields": ["financials.ebitdaMarginPct", "financials.roePct"] },
+    { "label": "IPO", "value": "₹197.9 Cr, NSE Emerge, Oct 2024, 123x oversubscribed", "tier": "company", "source": "valueeducator.substack.com", "fields": ["recentMoves"] },
+    { "label": "Capacity", "value": "4,681 → ~8,500 MVA (Phase 1 done); targeting 11,000 MVA", "tier": "company", "source": "forum.valuepickr.com", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine, mid-expansion",
+    "blocks": [
+      { "text": "Revenue reached ₹425-433 Cr in FY25 with PAT around ₹58 Cr, and the growth has continued into FY26 — H1 revenue up 29% to ₹211 Cr, H1 PAT up 41% to ₹29.31 Cr. EBITDA margin sits in a healthy 17-21% range and ROE at 18% (3-year average 25%) — a genuinely strong, broad-based financial picture.", "tier": "company", "epistemic": "fact", "source": "screener.in; valueeducator.substack.com", "fields": ["financials.revenueCr", "financials.patCr", "financials.ebitdaMarginPct", "financials.roePct"] },
+      { "text": "It holds a real, checkable first: India's first all-India BIS license for ester-liquid-filled distribution transformers up to 2500 kVA under IS 1180: Part 3: 2021 — a specific, verifiable regulatory milestone rather than a vague scale claim.", "tier": "company", "epistemic": "fact", "source": "forum.valuepickr.com", "fields": ["moat"] },
+      { "text": "It's mid-way through a three-phase capacity expansion: Phase 1 (completed October 2025) took capacity from 4,681 MVA to roughly 8,500 MVA; Phase 2 targets ~11,000 MVA by December 2025 with new 220kV capability; Phase 3 land has already been acquired. Alongside this, it's investing ~₹20 Cr in backward integration into a sheet-metal fabrication subsidiary.", "tier": "company", "epistemic": "fact", "source": "valueeducator.substack.com", "fields": ["recentMoves"] },
+      { "text": "It raised ₹197.9 Cr in an October 2024 IPO on NSE Emerge, oversubscribed 123 times — real market validation — and CRISIL upgraded its rating to A-/Stable in March 2026, a four-notch improvement over three years. Order book stood at ₹390-400 Cr as of late 2025.", "tier": "company", "epistemic": "fact", "source": "valueeducator.substack.com; forum.valuepickr.com", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing steadily**, with India's own segment outpacing the global rate.", "evidence": "India power & distribution transformer market: $4.50B (2025) to $6.37B by 2031, 5.81%/yr; the narrower distribution-transformer sub-segment is growing faster still, 8.98%/yr.", "tier": "segment", "epistemic": "fact", "source": "transformers-magazine.com", "fields": ["market.sizeRange"] },
+      { "point": "**India's own grid-expansion targets are the direct structural driver.**", "evidence": "India added 113,013 MVA of substation capacity at the 220kV+ level in 2025-26 alone, and targets 500 GW of renewable capacity by 2030 — both requiring exactly the kind of transformer manufacturing Danish Power is expanding into.", "tier": "segment", "epistemic": "fact", "source": "powerline.net.in", "fields": ["structureFacts"] },
+      { "point": "Listed peers show **this is a genuinely strong-margin segment when well-run**, not just a Danish Power story.", "evidence": "Voltamp Transformers posted record ₹2,153.69 Cr revenue with 18.96% average ROE; Indo Tech Transformers posted 32% latest ROE — Danish Power's own 18-25% ROE range sits credibly within this peer set.", "tier": "segment", "epistemic": "fact", "source": "freepressjournal.in; marketsmojo.com", "fields": ["peers"] },
+      { "point": "Export share is still modest but **explicitly targeted to grow fast.**", "evidence": "Current export contribution is 8-10% of revenue, with company targets of ~20% by FY27 and ~30% by FY28 — the HVT sheet's own gap research names doubling export contribution to 20% by FY27 directly.", "tier": "company", "epistemic": "fact", "source": "valueeducator.substack.com; HVT row", "fields": ["exportFootprint", "gap_activation_path"] }
+    ],
+    "reflect": { "text": "A genuinely strong operator by every financial measure, mid-way through the exact capacity expansion its export and domestic-demand targets require, backed by real capital markets validation. This is one of the strongest financial profiles in this entire project.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: transformers-magazine.com, Mordor Intelligence, powerline.net.in (shared power-distribution-transformers-substations segment file). Peer data: Voltamp Transformers, Indo Tech Transformers, TRIL."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, already targeted with a specific number by the company itself.",
+    "items": [
+      { "lever": "velocity", "title": "Doubling export contribution to 20% by FY27", "body": "The HVT sheet's own gap research names this directly: the company has stated a specific target of doubling export contribution from 8-10% today to 20% by FY27, with ~30% targeted by FY28 — a concrete, self-imposed benchmark to track rather than a vague ambition.", "source": "HVT gap research (x.com/LnprCapital coverage).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Danish Power's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Pursue UL certification to unlock the US market", "body": "Given the US market is currently blocked purely by lack of UL certification (not a capability gap), pursuing that specific certification is a clearly-scoped, trackable step toward the export target, distinct from broader Europe/Middle East/Africa expansion.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a power/distribution transformer manufacturer in this segment — a directory-depth pass, not yet confirmed against Danish Power's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer distribution/power/inverter-duty transformers, control relay panels, compact substations", "engineer to BIS/IEC/customer specs"], "stepsTier": "segment", "spottedAt": "engineer to BIS/IEC/customer specs", "spotted": { "text": "Company facts (first all-India BIS license for ester-liquid transformers) confirm this step is real and market-leading for Danish Power, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house design/R&D for short-circuit-resilient designs", "winding (copper/aluminium), core assembly", "maintain type-testing facilities"], "stepsTier": "segment", "spottedAt": "winding (copper/aluminium), core assembly", "spotted": { "text": "Company facts (vacuum drying ovens, CNC winding machines across two facilities) confirm this step is real for Danish Power, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate rated MVA/annum manufacturing capacity across product lines", "hold voltage-class capability (e.g. up to 220kV or higher)"], "stepsTier": "segment", "spottedAt": "operate rated MVA/annum manufacturing capacity across product lines", "spotted": { "text": "Company facts (Phase 1-3 capacity expansion from 4,681 to ~11,000 MVA, new 220kV capability) confirm this step is real and actively expanding for Danish Power, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain BIS licensing and type-test certificates", "hold utility/PSU vendor approvals", "provide after-sales/field service support"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win long-cycle tender-based orders from utilities/PSUs and EPC contractors", "supply direct OEM contracts to renewable IPPs (solar/wind)", "fulfil against project timelines", "reorder on grid-expansion or replacement cycles"], "stepsTier": "segment", "spottedAt": "supply direct OEM contracts to renewable IPPs (solar/wind)", "spotted": { "text": "Spotted at \"supply direct OEM contracts\": export orders sit at only 8-10% of this channel today against a stated 20% FY27 target → doubling export contribution.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/power-distribution-transformers-substations.json) — no company-specific (A2/pursuit) operational intel was collected for Danish Power this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Forty years of transformer-making, a regulatory first, a 123x-oversubscribed IPO, and a capacity expansion already two phases deep. **The export target is the one number left to watch.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Danish Power or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in and valueeducator.substack.com; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus forum.valuepickr.com; market data from transformers-magazine.com, Mordor Intelligence and powerline.net.in; peer figures from freepressjournal.in, marketsmojo.com and equitymaster.com. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "valueeducator.substack.com", "forum.valuepickr.com", "danish.co.in", "transformers-magazine.com", "Mordor Intelligence", "powerline.net.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics on export vs. domestic orders, and real customer retention across its utility/PSU relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

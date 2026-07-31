@@ -1,0 +1,43 @@
+{
+  "segmentName": "Level, Flow, Pressure & Temperature Sensors/Instrumentation",
+  "market": {
+    "worldSizeUSD_B_range": "India Industrial Sensors & Transmitters Market: $1.37B (2025) to $2.14B by 2030 (9.37%/yr). India Temperature Sensors Market: $8.3B (2025) to $14.5B by 2032 (7.9%/yr) — this figure is disproportionately larger than the broader industrial sensors/transmitters figure, likely because it includes consumer/automotive temperature sensors well beyond industrial process instrumentation; use cautiously. Global Level and Flow Sensor Market: $27.07B by 2032 (8.73%/yr), North America 34% share (lower-confidence press-release-aggregator source). India Air Pressure Sensor Market: $180-220M (2026), 9-11%/yr through 2035.",
+    "cagrPctRange": [7.9, 9.37],
+    "exportGeographies": [],
+    "globalCompetitors": ["Siemens", "Emerson", "Yokogawa", "ABB Measurement & Analytics"],
+    "domesticSlice": "Endress+Hauser Flowtec India is ranked #1 flow-meter maker in India per Kompass. KROHNE Marshall Pvt Ltd (Pune JV) posted ~₹203 Cr FY2022 revenue (₹100-500 Cr Tracxn band). Forbes Marshall and Adept Fluidyne are also named as top-5 Indian flow-meter makers."
+  },
+  "subSegments": ["marine tank gauging", "government/PHED water-infrastructure instrumentation"],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Jal Jeevan Mission (India's rural piped-water program) is a major structural demand driver — requires level sensors, flow meters, pressure sensors, chlorine analyzers, pump controllers for a 'Digital Wall'/remote command-control monitoring system, with ~$49B cited for the full measurement/monitoring rollout",
+    "Government concern about import-dependence (particularly on China) for sensors in this rollout is a real policy tailwind for indigenous manufacturers",
+    "NABL/ISO 17025 accreditation and Legal Metrology (OIML-R49) approval act as procurement gatekeepers for government/PHED-type buyers"
+  ],
+  "adoptionStructure": {
+    "note": "Reliability in harsh/hazardous environments (flameproof/explosion-proof ratings), calibration traceability (NABL accreditation), government vendor empanelment (PHED-type approvals), and growing demand for IoT/remote-monitoring capability drive purchasing."
+  },
+  "peers": [
+    { "name": "Endress+Hauser Flowtec India", "note": "ranked #1 flow-meter maker in India per Kompass; India revenue not found", "source": "Kompass" },
+    { "name": "KROHNE Marshall Pvt Ltd (Pune JV)", "revenueCr_FY2022": 203, "note": "₹100-500 Cr Tracxn band", "source": "Tracxn" },
+    { "name": "ABB Measurement & Analytics, Forbes Marshall, Adept Fluidyne", "note": "named as top-5 Indian flow-meter makers; revenue not found", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["reliability in harsh/hazardous environments (flameproof/explosion-proof ratings)", "calibration traceability (NABL accreditation)", "government vendor empanelment (PHED-type approvals)", "IoT/remote-monitoring capability"],
+    "strongestPredictor": "calibration traceability combined with government vendor empanelment",
+    "source": "PIB; aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer level, flow, pressure, and temperature measuring instruments", "offer IoT monitoring platforms for real-time remote monitoring, alerts, analytics, cloud-based control"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run customization (e.g. marine tank gauging, defense-grade, PHED-specific applications)", "run manufacturing plus in-house NABL-accredited calibration lab operations"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate manufacturing units sized in cumulative-instrument output", "maintain multiple facilities to scale production"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain government/PHED vendor-empanelment relationships", "provide IoT platform support (web/mobile apps for remote monitoring)"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win RFQs/tenders from PHED, oil & gas, cement, power, water utilities", "fulfil orders tied to Jal Jeevan Mission and similar government infrastructure programs"] }
+  ],
+  "sources": [
+    "https://www.giiresearch.com/report/moi1644477-india-industrial-sensors-transmitters-market-share.html",
+    "https://mobilityforesights.com/product/india-temperature-sensors-market-1",
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1708701",
+    "https://thesecretariat.in/article/after-the-pipes-the-proof-inside-jal-jeevan-mission-s-push-to-track-every-drop"
+  ]
+}

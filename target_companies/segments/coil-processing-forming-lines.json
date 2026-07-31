@@ -1,0 +1,42 @@
+{
+  "segmentName": "Coil Processing & Forming Lines",
+  "market": {
+    "worldSizeUSD_B_range": "Global coil processing line market: ~$5.8B (2023) to $8.9B by 2032 (5.0%/yr). Global cut-to-length line systems market: $3.58B (2025) to $5.32B by 2035 (4.04%/yr) per one source; $4.1B (2024) to $6.7B by 2033 (5.6%/yr) per another. Global slitting line market: $1.79B (2024) to $2.85B by 2033 (5.4%/yr). India-specific market size for coil processing/forming lines was not found.",
+    "cagrPctRange": [4.04, 5.6],
+    "exportGeographies": ["global — 'clients all over the globe' (self-described, no country breakdown found)"],
+    "globalCompetitors": ["The Bronx Group (UK/global, since 1940)"],
+    "domesticSlice": "MMC Technologies (part of MMC group, India) manufactures coil processing lines, color coating lines and galvanizing lines domestically; no revenue figure found for the coil-processing-specific business unit."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["press-brake-cnc-fiber-laser-machines", "mechanical-power-presses"],
+  "structureFacts": [
+    "Growth drivers cited across multiple reports: increasing demand for precision metal processing, expanding automotive and construction industries, rising investment in steel processing facilities, growing automation adoption, and demand for higher-quality sheet-metal products",
+    "India-specific structural demand data (e.g. automotive/appliance/construction coil-processing consumption growth rates) was not found"
+  ],
+  "adoptionStructure": {
+    "note": "Precision and quality-consistency requirements from downstream automotive/appliance/construction manufacturers drive purchasing; specific named buying criteria (cost, lead time, after-sales service) for coil-processing-line buyers were not found."
+  },
+  "peers": [
+    { "name": "The Bronx Group (UK/global)", "note": "leading global supplier of coil processing line solutions to steel and aluminum markets since 1940; no revenue figure found", "source": "thebronxgroup.com" },
+    { "name": "MMC Technologies (India)", "note": "manufactures coil processing lines, color coating lines, galvanizing lines in India; no revenue figure found for this business unit", "source": "mpmac.in" }
+  ],
+  "customerValue": {
+    "drivers": ["precision metal processing capability", "quality consistency for downstream automotive/appliance/construction manufacturers", "sophisticated design/machining technology (CAD/CAM-driven engineering)"],
+    "strongestPredictor": "precision and quality consistency for downstream manufacturers",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer coil slitting lines and cut-to-length lines", "offer cold rolling mills, tension leveling lines, and strip straighteners", "offer decoilers/uncoilers, recoilers/coilers, and roll-forming/bending lines"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["design custom-built machines using CAD/CAM software (e.g. SolidWorks, SolidCAM)", "manufacture in-house on Vertical Machining Centers and Turning Centers", "run ISO-certified manufacturing"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a permanent urban manufacturing premises sized for custom/small-batch orders", "scale a small technical/engineering team for design and build"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["market quality assurance and prompt after-sales service", "serve clients directly for custom-built, client-specified machines"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil GST/IEC-registered export orders", "manufacture custom-built machines per specific client requirements"] }
+  ],
+  "sources": [
+    "https://dataintelo.com/report/coil-processing-line-market",
+    "https://www.emergenresearch.com/industry-report/cut-to-length-line-system-market",
+    "https://www.verifiedmarketreports.com/product/slitting-line-market/",
+    "https://thebronxgroup.com/",
+    "https://www.mpmac.in/products/coil-processing-lines/"
+  ]
+}

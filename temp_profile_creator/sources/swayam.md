@@ -65,6 +65,19 @@ of these** — resolved via CIN and cross-confirmed by Tracxn directly:
   the bare "400+ counters" figure alone. needs_verify: yes for the exact
   counter/city counts, though the named-retailer detail is a real step up
   in specificity.
+  **Third figure now on record (2026-07-30)**: the company's own profile
+  PDF states "200+ counters · 40+ cities" — the city count (40+) matches
+  the franchise-page figure already on file, but the counter count (200+)
+  is roughly half the 400+ figure used elsewhere, including on the
+  company's own About Us page. Three different counter/city combinations
+  now exist across company-controlled sources alone (400+/70+, 400+/40+,
+  200+/40+) — not reconciled here; reported as-is rather than picking one.
+  The PDF's offline-stockist list also differs slightly from the prior one:
+  it names Shoppers Stop, @Home, Lulu, and Pai International, omitting
+  Pantaloons/Hometown/EVOK/Spencer's/Hypercity (previously found via
+  press/directory search) and adding Lulu and Pai International, which are
+  new. Read as a partial, not full, restatement of the same footprint
+  rather than a correction.
 - **No patents, DSIR recognition, or specific proprietary-technology claims
   found** — expected for a textile/home-furnishings manufacturer; this is
   `unresolved`, not `commodity` (no positive finding either way).
@@ -91,9 +104,52 @@ of these** — resolved via CIN and cross-confirmed by Tracxn directly:
   reflecting either a different (possibly group-wide or COVID-boosted)
   period, imprecise press reporting, or both; not reconciled here.
   Source: [Business Standard](https://www.business-standard.com/article/economy-policy/textile-firms-condom-makers-join-covid-19-fight-become-ppe-suppliers-120052500504_1.html), [Swayam's own blog](https://www.swayamindia.com/blog/index.php/2020/04/30/life-saving-ppe-kit-for-frontline-healthcare-workers/).
+- **Framing tension, not yet resolved (2026-07-30)**: the company's own
+  current profile PDF describes "Medical & Technical Textiles" in the
+  present tense as a live product category — including *reusable and
+  disposable* in-clinic bedsheets, head caps, shoe covers, PPE kits,
+  surgical gowns, masks, scrub suits, lab coats, anti-microbial hospital
+  aprons, and coveralls — and states explicitly that the company "describes
+  this as a natural extension of its fabric and manufacturing capability
+  rather than a separate business." That directly conflicts with this
+  profile's prior framing of the category as a 2020-only, now-dormant
+  pivot. The certification and volume-manufacturing history remains
+  independently verified and specific to the 2020 government PPE program
+  (see above); whether the product line has continued operating
+  commercially since is asserted only by the company — no post-2020 sale,
+  retail listing, or press mention was found in this pass to independently
+  confirm ongoing activity. needs_verify: yes, and worth asking directly.
 - Export claims: described in some press/directory listings as a
   "Manufacturer, Supplier, and Exporter" — self-claimed, no specific export
   markets, volumes, or Export House status independently confirmed.
+  **Update (2026-07-30)**: a company-produced profile PDF names specific
+  export markets — UAE, UK, USA, Canada, Australia, Germany — and states
+  Swayam "produces private-label goods for select international clients."
+  A real step up in specificity over the prior bare "exporter" claim, but
+  still self-claimed/company-sourced, not independently corroborated by a
+  customs/trade-data source. The same PDF separately states the company
+  wants to "grow exports beyond their current minor share of turnover" —
+  which itself confirms exports are a small fraction of revenue today.
+- **New from company PDF: SKU count and price range.** 5,000+ products,
+  retail price range ₹599–₹12,999. Self-claimed, no independent catalogue
+  audit performed.
+- **New from company PDF: a fashion-accessories line** — backpacks, tiffin
+  bags, cosmetic pouches/organisers, sling and tablet bags, beach bags
+  paired with sarong scarves, fashion totes with neck-roll scarves — using
+  the same hand-illustrated print language as the bedding range. Not
+  previously captured in this profile at all. Self-claimed.
+- **New from company PDF: an institutional/corporate-gifting channel** —
+  supplies hospitals, pharma companies, schools/colleges, restaurants,
+  hotels/resorts, and state departments (including police and railways).
+  A gifting line branded "Treasure Trove" in one recent collection is
+  called out by the company as one of its fastest-growing categories.
+  Self-claimed, not independently sized or corroborated.
+- **New from company PDF: a stated sustainability initiative.** Fabric
+  offcuts are recut and restitched into bags for charitable donation, made
+  by women working from home — described as also providing them an income
+  source. Paired with a stated design philosophy quote: "if you can think
+  it, we can make it." Both self-claimed, no independent verification of
+  the program's scale or existence beyond the company's own description.
 
 ## Moat
 - No registry-confirmed qualification (patent, DSIR, sector certification)
@@ -155,6 +211,12 @@ of these** — resolved via CIN and cross-confirmed by Tracxn directly:
   the main operating business.
 - Employees: 501-1,000 (Tracxn) — attributed to the Swayam India brand
   overall; not clear which entity specifically employs them.
+  **Conflicting self-reported figure (2026-07-30)**: the company's own
+  profile PDF states "300+ across 2 factories" — roughly a third of
+  Tracxn's estimate. Not reconciled; both figures reported rather than one
+  discarded. The PDF's factory count is itself internally inconsistent —
+  its stat box says "2 factories" while its own body-copy overview text
+  says "five production units" in the same document.
 - Funding: none — classified "unfunded" by Tracxn.
 - Founded: 2001 (brand/business) — Linen Design Company Pvt Ltd (the legal
   entity) incorporated 2008; Swayam India Pvt Ltd (the second, "Business
@@ -185,6 +247,34 @@ Industries, Trident, Bombay Dyeing & Manufacturing, Himatsingka Seide,
 GHCL, Raymond Home, Arvind (Home Textiles Division), Portico New York,
 Spaces, Sarita Handa, Fabindia, Maspar — a mix of large listed
 manufacturers and branded retail peers.
+
+## Recognition (new from company PDF, 2026-07-30)
+Self-reported list, not independently re-verified in this pass: Brand of
+the Year 2021, Home Furnishing category (The Global Hues); Best Innovation
+in Design 2020 (Somany Home Innovation Ltd.); Certificate of Excellence
+from Flipkart; recognition from Pepperfry for crossing 2 million
+customers; Top 10 Technical Textile Manufacturers, 2022 (Industry
+Outlook). Mixed tier: the Flipkart/Pepperfry items are partner-issued
+recognitions rather than independent-press awards; The Global Hues and
+Industry Outlook listings weren't cross-checked against the publications'
+own archives.
+
+## Growth trajectory (new from company PDF, 2026-07-30)
+Company has publicly stated an ambition to reach **₹200 crore turnover**
+with flagship stores in every Indian metro **by 2025**, plus a plan to
+double retail outlets (multi-brand outlets and company showrooms). Three
+named growth levers, per the company's own account (Industry Outlook,
+2022): (1) opening owned PAN-India stores rather than relying mainly on
+shop-in-shop shelf space; (2) deepening e-commerce listing quality across
+the existing 5,000+ SKUs rather than adding more; (3) expanding
+institutional/corporate-gift selling — a channel said to have already
+built trust with 100+ corporate clients and cushioned pandemic-era impact.
+Separately (The Franchising World, 2023), the company points to Tier 2/3
+cities as the biggest under-penetrated opportunity for furnishing brands
+generally, citing a 12–15 month ROI for franchise partners, and notes
+e-commerce already reaches Tier 3 markets on its own. All self-claimed;
+none of the targets, dates, or franchise-partner economics were
+independently verified.
 
 ## Unresolved
 - **Resolved: brand/entity relationship confirmed.** Swayam is a brand
@@ -218,3 +308,13 @@ manufacturers and branded retail peers.
   independently confirmed.
 - Swayam India Pvt Ltd's FY2021-2025 revenue brackets remain genuinely
   unknown (paywalled) — only the FY2020 <₹1cr figure is confirmed.
+- **New, unresolved (2026-07-30)**: whether the medical/technical-textiles
+  line is still commercially active (per the company's own current PDF) or
+  was a 2020-only pivot that's since gone dormant (per this profile's prior
+  framing) — the single biggest open framing question added this pass.
+- **New, unresolved**: a third retail-footprint figure (200+ counters/40+
+  cities, company PDF) alongside the two already on file (400+/70+ from
+  the company site; 400+/40+ from a franchise page) — not reconciled.
+- **New, unresolved**: employee count conflict — 300+ across 2 (or 5,
+  per the same PDF's own body text) factories, self-reported, versus
+  Tracxn's 501-1,000.

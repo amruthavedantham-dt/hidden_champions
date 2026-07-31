@@ -1,0 +1,45 @@
+{
+  "segmentName": "Pump & Municipal Cast Iron/Ductile Iron Components",
+  "market": {
+    "worldSizeUSD_B_range": "India Foundry and Casting Market: $22.0B (2025) to $57.9B by 2034 (10.78%/yr) per IMARC; alternative estimate: India Foundry Market $28.72B (2026) to $46.72B by 2031 (10.22%/yr) per Market.us. Pump-and-valve castings are a specialized sub-segment demanding corrosion-resistant alloys and pressure-rated designs, with water infrastructure, oil & gas, and chemical-processing industries driving volumes.",
+    "cagrPctRange": [10.22, 10.78],
+    "exportGeographies": ["12+ countries (named example: Siddharth Foundry exports to USA, Germany, Sweden, Italy, Netherlands, Poland, Mexico, Argentina, Korea, South Africa, Saudi Arabia)"],
+    "globalCompetitors": [],
+    "domesticSlice": "India's global casting export share is historically ~2-3%; the Ministry of Heavy Industries is targeting a doubling to 6-7%."
+  },
+  "subSegments": ["lost-foam casting for complex geometries"],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Downstream demand driver: industrial pump demand from water infrastructure, oil & gas, and process/chemical industries",
+    "Government 'Make in India' and infrastructure push are cited as tailwinds for the broader foundry sector",
+    "Reported (unverified, single-source) supply-chain shift: OEMs reportedly moved tonnage of housing-casting business from China to Indian foundries — treat with caution, no independently corroborating source found"
+  ],
+  "adoptionStructure": {
+    "note": "Metallurgical/quality consistency (corrosion resistance, pressure rating), on-time delivery to pump-OEM production lines, in-house machining/sub-assembly capability (finished components vs. raw castings), and export-compliance certification (ISO 9001, third-party works audits) drive vendor qualification with pump OEMs."
+  },
+  "peers": [
+    { "name": "Kirloskar Ferrous Industries Ltd", "note": "explicitly manufactures pump castings and cylinder-block castings; major integrated peer; revenue/margin/ROE not retrieved this pass", "source": "kirloskarferrous.com" },
+    { "name": "Nelcast Ltd", "note": "cited alongside Kirloskar Ferrous for heavy engineering/infrastructure-linked casting supply with strong metallurgical quality standards", "source": "aggregated search summary" },
+    { "name": "Electrosteel Castings", "note": "major foundry competitor", "source": "aggregated search summary" },
+    { "name": "Bharat Foundry (Ahmedabad, est. 1991)", "note": "manufactures pump castings, casting spares, pulleys", "source": "indiamart.com" }
+  ],
+  "customerValue": {
+    "drivers": ["metallurgical/quality consistency (corrosion resistance, pressure rating)", "on-time delivery to pump-OEM production lines", "in-house machining capability beyond raw castings", "third-party works certification (e.g. TÜV audit)"],
+    "strongestPredictor": "metallurgical quality consistency combined with machined-finished-component capability",
+    "source": "siddharthfoundry.com; industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer cast iron and ductile (SG) iron pump castings", "offer machined sub-assemblies for submersible, centrifugal, and vertical turbine pumps and pump motors", "offer lost-foam castings for complex geometries"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run green sand casting process with metallurgical/melting control", "run CNC/VMC machining", "maintain in-house quality lab (ISO-certified / TÜV-audited)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a plant sized in MT/year with a defined component weight range", "operate combined group capacity across sister foundries"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain vendor-qualification and quality-audit relationships with major pump OEMs", "win quality awards from OEM customers at vendor meets"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil direct supply contracts with pump OEMs domestically and internationally", "manage export logistics to multiple countries"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/india-foundry-casting-market",
+    "https://market.us/report/india-foundry-market/",
+    "https://www.indiamart.com/kirloskar-ferrous-industries-ltd/",
+    "https://www.siddharthfoundry.com/aboutus.php",
+    "https://www.siddharthfoundry.com/lost-foam-foundry-india-lost-foam-casting.php"
+  ]
+}

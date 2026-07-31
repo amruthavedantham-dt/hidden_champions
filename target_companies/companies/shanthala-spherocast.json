@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "shanthala-spherocast",
+    "series": "Hidden Champions of India",
+    "segmentRef": "ductile-grey-iron-castings",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U35105KA1984PTC006054, incorporated 27 Apr 1984 (Shivamogga, Karnataka foundry cluster)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Shanthala Spherocast: a real capacity bet, funded mid-way through a real, dated regional raw-material shock.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A ₹50 Cr expansion from 10,000 to 24,000 TPA, running into a well-corroborated West Asia-conflict raw-material and logistics disruption hitting Indian foundries broadly in this window.", "tier": "company", "epistemic": "fact", "source": "IndiaMART; multiple trade-press sources", "fields": ["recentMoves", "gap_summary"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1984 (CIN incorporation); company markets \"35+ years of experience\", consistent with mid-1980s founding", "tier": "company", "source": "ZaubaCorp; Tofler", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹148 Cr FY25 (+9% 1-yr CAGR), +16% EBITDA CAGR", "tier": "company", "source": "Tracxn; thecompanycheck.com", "fields": ["financials.revenueCr"] },
+    { "label": "PAT/EBITDA (low confidence)", "value": "₹10 Cr EBITDA (~6.8% margin) / ₹2.68 Cr PAT (~1.8% margin) FY25 — sourced from a search-engine summary of an Infomerics rating PDF that could not be independently re-verified (image-based, non-extractable text)", "tier": "company", "source": "Infomerics rating PDF (low confidence, un-reverified)", "fields": ["financials.netMarginPct"] },
+    { "label": "Employees", "value": "341 (Sep 2024, +1% YoY)", "tier": "company", "source": "Tracxn", "fields": ["employees"] },
+    { "label": "Capacity expansion", "value": "New Unit-2 with high-pressure moulding line to reach 24,000 TPA (up from 10,000 TPA), ₹50 Cr investment", "tier": "company", "source": "IndiaMART (direct confirmation)", "fields": ["recentMoves"] },
+    { "label": "Raw-material headwind", "value": "West Asia conflict-driven raw material/logistics disruption, well-corroborated at the sector level (specific ~20% production-hit figure and exact article not independently located)", "tier": "company", "source": "HVT gap research; multiple independent 2026 trade-press sources", "fields": ["gap_summary"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A real capacity bet, running into a real, dated sector shock",
+    "blocks": [
+      { "text": "Revenue reached ₹148 Cr in FY25 (+9% 1-year CAGR, +16% EBITDA CAGR per Tracxn) — a genuinely growing foundry, though the specific PAT/EBITDA absolute figures found (₹10 Cr EBITDA, ~6.8% margin; ₹2.68 Cr PAT, ~1.8% margin) come from a search-engine summary of an Infomerics rating PDF that could not be independently re-verified this session (the document returned as image-based/non-extractable text) — treated as lower-confidence and flagged accordingly.", "tier": "company", "epistemic": "fact", "source": "Tracxn; thecompanycheck.com; Infomerics (low confidence)", "fields": ["financials.revenueCr"] },
+      { "text": "It manufactures grey iron, ductile iron, and alloy cast iron castings for automotive, industrial, energy, oil & gas, mining, hydraulics, construction, and pumps & valves sectors, holding ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, and PED Certificate 2014/68/EU (pressure equipment) certification — a real, EU-regulatory-gated credential set that differentiates it from foundries unable to serve EU industrial-equipment OEMs.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed); shanthalaspherocast.com", "fields": ["differentiation", "moat"] },
+      { "text": "**A real, independently-confirmed capacity expansion is underway**: a new Unit-2 with a high-pressure moulding line and continuous mixer, targeting 24,000 TPA (up from a current 10,000 TPA), backed by an envisaged ₹50 Cr investment — corroborated directly on the company's own IndiaMART listing, not just a self-claim from the HVT sheet.", "tier": "company", "epistemic": "fact", "source": "IndiaMART (direct confirmation)", "fields": ["recentMoves"] },
+      { "text": "**The HVT sheet's own gap research names a real, currently-active headwind**: production impact from West Asia conflict-driven raw material shortages and rising logistics costs. The exact 'Hindu/Shivamogga foundries' article and its specific '~20% production hit' figure could not be independently located this session, but the underlying macro claim is well corroborated by multiple, independently-dated 2026 trade-press sources — raw material costs surging up to 40% amid feared shortages, Strait of Hormuz disruption tightening industrial fuel and steelmaking input supplies, logistics cost escalation flagged by Indian exporters, and SMEs specifically named as most vulnerable given limited inventory-buffer capacity. Shivamogga's own foundry cluster (~45 foundries, ~5,500 employees, exports to 26 countries) sits squarely in this exposure zone.", "tier": "company", "epistemic": "fact", "source": "The Federal; ISM/Inside Supply Management; IEEFA; Tribune India; Business Standard", "fields": ["gap_summary"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A large, genuinely fast-growing India casting market, with **listed peers showing what a healthier margin profile looks like at scale**.", "evidence": "India Foundry and Casting Market: $22.0B (2025) to $57.9B by 2034 (10.78%/yr), India's fastest-growing APAC iron-casting sub-market; Kirloskar Ferrous (listed) posts ~11.7% 3-yr average ROE, and Nelcast (listed) posts an improving 9.3% PAT margin — both meaningfully stronger than Shanthala's low-confidence ~1.8% PAT margin estimate.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group; aggregated Screener-sourced summaries", "fields": ["market.sizeRange"] },
+      { "point": "**Larger listed peers increasingly integrate iron-making with casting** to buffer exactly the kind of input-cost shock currently hitting the sector.", "evidence": "Kirloskar Ferrous and Nelcast's forward integration reduces their exposure to the raw-material volatility that smaller, regional foundries like Shanthala are more exposed to — directly relevant given the current West Asia-conflict-driven shock.", "tier": "segment", "epistemic": "fact", "source": "aggregated industry summary", "fields": ["structureFacts"] },
+      { "point": "**PED 2014/68/EU certification is a real, specific EU market-access gate** that Shanthala already holds — a genuine differentiator for pressure-equipment-linked customers.", "evidence": "This certification specifically enables serving pumps/valves/oil&gas EU customers requiring pressure-equipment-rated castings, distinguishing certified suppliers from those who cannot access this regulatory-gated demand.", "tier": "segment", "epistemic": "fact", "source": "shanthalaspherocast.com", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A real, mid-sized regional foundry making a genuine, capital-committed capacity bet (₹50 Cr for a 2.4x capacity expansion) at exactly the moment a real, dated, sector-wide raw-material shock is hitting Indian foundries. The timing tension is the honest story here: growth investment landing in the middle of a documented input-cost headwind, with thinner margins than the larger listed peers who've integrated further upstream.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group (shared ductile-grey-iron-castings segment file, new this batch). Peer data: Kirloskar Ferrous Industries, Nelcast Ltd, Electrosteel Castings."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "The company's own gap research names a real headwind rather than an opportunity — read directly, not softened.",
+    "items": [
+      { "lever": "risk-mitigation", "title": "Diversifying raw material sourcing and logistics channels ahead of the Unit-2 ramp-up", "body": "Given the well-corroborated West Asia-conflict raw-material/logistics disruption is landing during the exact window the company is committing ₹50 Cr to a 2.4x capacity expansion, diversifying sourcing before the new capacity comes fully online is a genuine risk-mitigation priority, not a growth opportunity in the conventional sense.", "source": "HVT gap research; multiple corroborating trade-press sources.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is confirming the PAT/EBITDA figures against a readable primary source.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Obtain a directly readable copy of the Infomerics rating rationale for confirmed PAT/EBITDA figures", "body": "Since the ₹10 Cr EBITDA / ₹2.68 Cr PAT figures came only from a search-engine summary of an image-based PDF that couldn't be machine-verified, a manual or OCR read of that document (or a direct company confirmation) would materially strengthen confidence in the current margin picture before it's used in any financial analysis.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a ductile/grey-iron casting manufacturer in this segment — a directory-depth pass, not yet confirmed against Shanthala Spherocast's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer finished/machined grey iron, ductile iron, and alloy cast-iron castings", "serve automotive, industrial, energy, oil&gas, mining, hydraulics, construction, pumps&valves end markets"], "stepsTier": "segment", "spottedAt": "offer finished/machined grey iron, ductile iron, and alloy cast-iron castings", "spotted": { "text": "Company facts (grey iron, ductile iron, alloy cast iron castings across the full listed end-market range) confirm this step is real for Shanthala Spherocast — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run customer engineering collaboration (3D modeling → 2D drawing → tooling/manufacturing design)", "pass PED/ISO audit and certification checkpoints for regulated end-uses"], "stepsTier": "segment", "spottedAt": "pass PED/ISO audit and certification checkpoints for regulated end-uses", "spotted": { "text": "Company facts (ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, PED 2014/68/EU) confirm this step is real for Shanthala Spherocast — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["run melting/moulding production (green sand, high-pressure moulding lines) sized in TPA", "manage raw-material (pig iron, scrap, alloying elements) availability, especially under supply shocks"], "stepsTier": "segment", "spottedAt": "manage raw-material (pig iron, scrap, alloying elements) availability, especially under supply shocks", "spotted": { "text": "Spotted at 'manage raw-material availability under supply shocks': the West Asia-conflict headwind is exactly this step, currently active — see p3_opportunities.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-term supply agreements with automotive/industrial OEMs", "handle export logistics to multiple countries"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil OEM supply volumes tied to underlying vehicle/equipment production schedules", "expand capacity as a forward bet on order-book growth"], "stepsTier": "segment", "spottedAt": "expand capacity as a forward bet on order-book growth", "spotted": { "text": "Company facts (₹50 Cr Unit-2 expansion to 24,000 TPA) confirm this step is real for Shanthala Spherocast — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/ductile-grey-iron-castings.json) — no company-specific (A2/pursuit) operational intel was collected for Shanthala Spherocast this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A real, EU-certified regional foundry committing ₹50 Cr to a 2.4x capacity expansion at exactly the moment a well-corroborated regional raw-material shock is hitting the sector. **The timing tension between the growth bet and the input-cost headwind is the story worth watching here.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Shanthala Spherocast or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tracxn, thecompanycheck.com, and a low-confidence Infomerics rating summary; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus shanthalaspherocast.com, IndiaMART, and multiple 2026 trade-press sources corroborating the West Asia-conflict sector headwind; market data from IMARC Group. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tracxn", "thecompanycheck.com", "shanthalaspherocast.com", "IndiaMART", "Infomerics", "The Federal", "ISM/Inside Supply Management", "IEEFA", "Tribune India", "Business Standard", "IMARC Group", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — a verified, readable copy of the current PAT/EBITDA figures, and the actual quantified production impact from the raw-material shock — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

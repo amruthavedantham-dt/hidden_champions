@@ -1,0 +1,41 @@
+{
+  "segmentName": "Mechanical Power Presses & Shearing Machines",
+  "market": {
+    "worldSizeUSD_B_range": "India metal stamping market (closest available proxy — mechanical power presses are a stamping input): $4.65B (2023), 5.7%/yr (2024-2030) per Grand View Research; a more recent Grand View Research horizon estimate cites 6.3%/yr (2026-2033). Mechanical presses held the largest revenue share within the press-machine market at 52.3% in 2023. A specific standalone 'mechanical power press' market-size figure (as distinct from the broader metal-stamping market) for India was not found.",
+    "cagrPctRange": [5.7, 6.3],
+    "exportGeographies": ["not found — no specific export countries or % located for this segment"],
+    "globalCompetitors": [],
+    "domesticSlice": "Servo press segment is the fastest-growing press-type segment going forward (India-specific servo-press growth cited at 6.1%/yr), driven by energy efficiency, programmable stroke profiles and higher repeatability, gradually challenging mechanical/hydraulic press dominance."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["press-brake-cnc-fiber-laser-machines", "coil-processing-forming-lines"],
+  "structureFacts": [
+    "Automotive and appliance stamping demand is the primary structural driver cited for the metal-stamping/mechanical-press market in India",
+    "Transition toward servo-electric press technology is a well-documented industry-wide structural shift, though mechanical presses remain dominant for high-volume, simple-shape stamping due to lower cost"
+  ],
+  "adoptionStructure": {
+    "note": "Cost-effectiveness for straightforward, uniform-shape components is why buyers choose mechanical presses over servo/hydraulic alternatives, especially for lean, high-volume manufacturing. Buyers evaluating servo presses prioritize energy efficiency, programmable stroke control, and repeatability, particularly in automotive/EV component demand contexts."
+  },
+  "peers": [
+    { "name": "generic Indian directory listings (Shri Balaji Presses, NKH Hammers, Rajesh Power Press India, etc.)", "note": "numerous Indian power-press manufacturers listed in directories, none with disclosed revenue/margin/ROE", "source": "shribalajipresses.com; nkhhammers.com; rajeshpowerpressindia.com" }
+  ],
+  "customerValue": {
+    "drivers": ["cost-effectiveness for uniform, straightforward-shape parts", "reliability/high performance for high-volume stamping", "decades-long OEM relationships and named-customer trust"],
+    "strongestPredictor": "cost-effectiveness combined with proven OEM supply relationships",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer mechanical power presses (C Frame, H Frame, High-Speed, Permanent Inclined)", "offer shearing machines", "supply sheet-metal components via joint-venture manufacturing"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run in-house R&D to improve machine design and manufacturing processes", "run CNC-equipped production facilities", "maintain ISO-certified manufacturing"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing base sized to decades of accumulated order volume", "run a joint-venture sheet-metal component line alongside core press manufacturing"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["serve automotive, defense, domestic appliance, and electrical equipment manufacturers", "build multi-decade named-OEM supply relationships"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil orders from long-standing domestic industrial relationships", "pursue smart/connected-machine features (real-time production data, predictive maintenance) to capture Industry 4.0 upgrade demand"] }
+  ],
+  "sources": [
+    "https://www.grandviewresearch.com/industry-analysis/india-metal-stamping-market-report",
+    "https://www.grandviewresearch.com/horizon/outlook/metal-stamping-market/india",
+    "https://www.factmr.com",
+    "https://www.persistencemarketresearch.com",
+    "https://www.indexbox.io"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "snl-bearings",
+    "series": "Hidden Champions of India",
+    "segmentRef": "needle-roller-bearings",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Listed company (BSE: 505827), CIN L99999MH1979PLC134191, incorporated 05 Mar 1979 as Shriram Needle Bearing Industries Limited (DCM Shriram/INA Germany JV; Ranchi plant 1983, production 1984). WEBSITE FIELD CORRECTED: the HVT sheet's top-level website field (nrbbearings.co.in) is a data-entry error — the real corporate site is snlbearings.in. The underlying reason for the mix-up is real: SNL is a 73.45%-owned subsidiary of NRB Bearings Limited (stake acquired June 2000, when the company was renamed from Shriram Needle Bearing to SNL Bearings)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "SNL Bearings: a debt-free, 14.8%-ROE needle-bearing maker, and NRB Bearings' quiet Eastern India outpost.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "The only needle roller bearing manufacturer in Eastern India, majority-owned by India's #1 needle-bearing maker since 2000 — with genuinely healthy, independently-verified listed-company financials.", "tier": "company", "epistemic": "fact", "source": "screener.in; snlbearings.in", "fields": ["financials.roePct", "differentiation"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1979 (as Shriram Needle Bearing Industries, DCM Shriram/INA Germany JV); Ranchi plant 1983, production began 1984", "tier": "company", "source": "ZaubaCorp; snlbearings.in", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹56.62 Cr FY26 (+10.61% YoY); FY24 ≈₹47.45 Cr", "tier": "company", "source": "Screener.in", "fields": ["financials.revenueCr"] },
+    { "label": "Net profit", "value": "≈₹10.85-11 Cr FY26 (roughly flat YoY), EPS ₹30.04, operating margin ~25%", "tier": "company", "source": "Screener.in", "fields": ["financials.netMarginPct"] },
+    { "label": "ROE / ROCE", "value": "14.8% / 20.1% — genuinely healthy", "tier": "company", "source": "Screener.in", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Debt position", "value": "Near-zero borrowings as of Mar 2026 — almost debt-free", "tier": "company", "source": "Screener.in", "fields": ["financials.debtToEquity"] },
+    { "label": "Ownership", "value": "NRB Bearings Ltd holds 73.45-74.39%; 5,308 public shareholders", "tier": "company", "source": "Screener.in", "fields": ["ownershipType"] },
+    { "label": "Employees", "value": "140, average age 40", "tier": "company", "source": "snlbearings.in", "fields": ["employees"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A real NRB Bearings subsidiary with genuinely healthy, verified financials",
+    "blocks": [
+      { "text": "As a listed company (BSE: 505827), SNL Bearings has real, independently-audited financials rather than aggregator estimates: FY26 revenue ₹56.62 Cr (+10.61% YoY), net profit ~₹10.85-11 Cr, operating margin ~25%, ROE 14.8%, and ROCE 20.1% — genuinely healthy returns, not thin or negative like several other companies profiled this batch. The company carries near-zero debt as of March 2026, and shows a 5-year sales CAGR of 9% and 5-year profit CAGR of 12%.", "tier": "company", "epistemic": "fact", "source": "Screener.in", "fields": ["financials.revenueCr", "financials.roePct", "financials.rocePct"] },
+      { "text": "**The website field discrepancy flagged before dispatch is resolved**: SNL's real corporate site is snlbearings.in, not nrbbearings.co.in (which does not appear to be an official NRB Bearings domain at all — NRB's actual site is nrbbearings.com). The underlying reason for the confusion is genuine, though: SNL Bearings is a 73.45%-owned subsidiary of NRB Bearings Limited, acquired in June 2000 when DCM Shriram Group and associates sold their 45.78% stake, and the company was renamed from Shriram Needle Bearing Industries to SNL Bearings at that point.", "tier": "company", "epistemic": "fact", "source": "snlbearings.in; corporate history research", "fields": ["differentiation"] },
+      { "text": "It is described as the only needle roller bearing manufacturer in Eastern India, operating from a 3.5-acre Ranchi, Jharkhand plant built on technology originally acquired via the 1979 INA Germany technical collaboration. It holds IATF 16949:2016, ISO 14001:2015, and ISO 45001:2018 certification — all confirmed directly on the company's own site, exceeding what the HVT sheet itself flagged as `needs_verify`.", "tier": "company", "epistemic": "fact", "source": "snlbearings.in", "fields": ["moat"] },
+      { "text": "It designs and builds its own special-purpose machines for bearing manufacturing and low-cost automation — a real, independently-corroborated capability tracing to the original German technology transfer, not just a self-claim. Market commentary (not a primary company announcement) suggests a strategic pivot toward EV transmission/chassis applications and investment in automated inspection systems, though this should be treated as directionally indicative rather than confirmed company roadmap.", "tier": "company", "epistemic": "fact", "source": "snlbearings.in; secondary market commentary", "fields": ["product_improvement"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market where **vendor size estimates disagree by ~60%**, but real, scaled Indian peers exist for comparison.", "evidence": "Global needle roller bearings market: $5.27B (2025) to $6.81B by 2029 (6.6%/yr) per one estimate, vs. $8.636B (2025) at 4.84%/yr per another. India needle roller bearing market: $428M (2024), roughly flat.", "tier": "segment", "epistemic": "fact", "source": "aggregated vendor reports", "fields": ["market.sizeRange"] },
+      { "point": "**Parent NRB Bearings is a genuine market leader**, holding ~70% of India's organized needle roller bearing market — a real structural advantage for SNL as its subsidiary.", "evidence": "NRB Bearings Ltd, founded 1965, is described as India's first mover and dominant player in needle roller bearings; recent commentary cites an 18% revenue jump alongside an aerospace pivot.", "tier": "segment", "epistemic": "fact", "source": "Screener.in; Whalesbook", "fields": ["peers"] },
+      { "point": "**MNC-backed competitors (Schaeffler, Timken, SKF) trade at much higher valuation multiples than NRB/SNL**, implying the market views them as lower-cyclicality, higher-growth businesses.", "evidence": "Schaeffler India trades at ~61x PE and Timken India ~50.8x PE, compared to NRB Bearings at a lower multiple — a real valuation signal that the market currently prices auto-component-linked bearing makers like NRB/SNL as more cyclical.", "tier": "segment", "epistemic": "fact", "source": "aggregated search summary", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "This is one of the strongest financial profiles in the batch by conventional measures: real, audited ROE and ROCE, a debt-free balance sheet, and a genuine structural backstop from a dominant parent company. The website-field error at the source was worth flagging, but the underlying corporate story it accidentally pointed to — a real NRB Bearings subsidiary relationship — turned out to be a substantive, useful fact rather than noise.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: aggregated vendor reports (shared needle-roller-bearings segment file, new this batch). Peer data: NRB Bearings (parent), Schaeffler India, Timken India, SKF India, NBC Bearings."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "product-expansion", "title": "Scaling low-cost automation and special-purpose-machine manufacturing as a distinct capability", "body": "The HVT sheet's own gap research names SNL's ability to design and develop low-cost automation and special-purpose machines as a capability that could be leveraged further for market leadership — a credible lever given the underlying capability is real and technology-rooted, not aspirational.", "source": "HVT gap research (snlbearings.in).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is confirming the EV-pivot commentary directly rather than treating it as settled.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Confirm the EV transmission/chassis pivot directly with the company", "body": "Secondary market commentary suggests a strategic shift toward EV-related applications and automated inspection systems, but no primary company announcement was found to substantiate this — worth confirming directly given how central EV-transition exposure is to a needle-roller-bearing maker's long-term relevance.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a needle-roller-bearing manufacturer in this segment — a directory-depth pass, not yet confirmed against SNL Bearings' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer needle roller bearings (NRA/NRB/NRR variants)", "offer cages (small-end/big-end, KBK/KZK) and full-complement/cage-guided shells"], "stepsTier": "segment", "spottedAt": "offer needle roller bearings (NRA/NRB/NRR variants)", "spotted": { "text": "Company facts (one of India's leading needle roller bearings manufacturers for automotive OEMs and aftermarket) confirm this step is real for SNL Bearings — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run precision grinding/heat treatment of rollers and races", "run cage stamping/forming", "design in-house special-purpose machines for low-cost automation"], "stepsTier": "segment", "spottedAt": "design in-house special-purpose machines for low-cost automation", "spotted": { "text": "Company facts (capability to manufacture special purpose machines and design low-cost automation, rooted in the original INA Germany tech transfer) confirm this step is real for SNL Bearings — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing plant with automotive-grade 100% inspection capability", "leverage scale/backing support from a larger parent company where applicable"], "stepsTier": "segment", "spottedAt": "leverage scale/backing support from a larger parent company where applicable", "spotted": { "text": "Company facts (73.45%-owned subsidiary of NRB Bearings, India's #1 needle roller bearing maker) confirm this step is real for SNL Bearings — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["run OEM account management/quality engineering (APQP/PPAP processes)", "maintain aftermarket/distribution sales relationships"], "stepsTier": "segment", "spottedAt": "run OEM account management/quality engineering (APQP/PPAP processes)", "spotted": { "text": "Company facts (IATF 16949:2016 certified, leading supplier to major automobile manufacturers for 20+ years) confirm this step is real for SNL Bearings — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win orders via automotive OEM production schedules (JIT/long-term supply agreements)", "win orders via new vehicle-platform sourcing decisions shaped by EV transition"], "stepsTier": "segment", "spottedAt": "win orders via new vehicle-platform sourcing decisions shaped by EV transition", "spotted": { "text": "Spotted at 'EV transition': secondary market commentary suggests a pivot toward EV transmission/chassis applications, unconfirmed by a primary source — see p4_experiments.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/needle-roller-bearings.json) — no company-specific (A2/pursuit) operational intel was collected for SNL Bearings this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "One of the strongest financial profiles in this batch — debt-free, 14.8% ROE, and a real structural backstop as NRB Bearings' Eastern India subsidiary. **The EV-transition pivot mentioned in market commentary is worth confirming directly, as it's the one unverified claim in an otherwise well-documented profile.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in SNL Bearings or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Screener.in (audited, listed-company data); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus snlbearings.in and corporate-history research resolving the NRB Bearings subsidiary relationship; market data from aggregated vendor reports. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Screener.in", "snlbearings.in", "ZaubaCorp", "Whalesbook", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — direct confirmation of the EV transmission/chassis pivot, and true export destination/percentage detail — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "samarth-aircon",
+    "series": "Hidden Champions of India",
+    "segmentRef": "enclosures-cabinets-racks",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U29219MH2010PTC202728, incorporated 04 May 2010 (Mumbai). Confirmed a single legal entity — 'Samarth Aircon Limited' on some IndiaMART listings is informal usage of the same private company, not a separate listed entity. Company's own IndiaMART copy claims 1992 founding, an 18-year gap vs. the 2010 CIN, unresolved."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Samarth Aircon: real blue-chip customers (Emerson, Siemens, Blue Star), a certification claim that doesn't hold up.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "Named export customers in Bahrain and Australia, plus a strong domestic client roster — but every independent source found contradicts the company's self-claimed ISO 9001:2015 certification, showing 2008 instead.", "tier": "company", "epistemic": "fact", "source": "IndiaMART; independent verification", "fields": ["moat", "exportFootprint"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2010 (CIN incorporation); company's own IndiaMART copy claims 1992 — an 18-year gap, unresolved", "tier": "company", "source": "ZaubaCorp vs. IndiaMART", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "~$2.5M/year (~₹20 Cr) — self-reported, not from audited filings", "tier": "company", "source": "ExportersIndia; IndiaMART", "fields": ["financials.revenueCr"] },
+    { "label": "Employees", "value": "48 (Oct 2024, registry-linked) vs. '51-100' (IndiaMART band) — both reported", "tier": "company", "source": "company registry summary; IndiaMART", "fields": ["employees"] },
+    { "label": "Certification (contradicted)", "value": "Self-claims ISO 9001:2015; every independent source found says ISO 9001:2008 — no evidence of a 2015 upgrade found", "tier": "company", "source": "IndiaMART (direct listing text)", "fields": ["moat"] },
+    { "label": "Named export customers", "value": "Awal Gulf (Manama, Bahrain); ActronAir (Sydney, Australia) — confirmed by name", "tier": "company", "source": "IndiaMART", "fields": ["exportFootprint"] },
+    { "label": "Named domestic customers", "value": "Emerson, Vertiv, Reliance, Siemens, Tokheim, Blue Star, Stelmec, Niteo, Godrej, Crompton Greaves, Western Refrigeration", "tier": "company", "source": "IndiaMART", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Strong customer roster, a certification claim that doesn't check out",
+    "blocks": [
+      { "text": "Financial data is thin and largely self-reported: an ExportersIndia listing cites average turnover of 'over $2.5 million per annum' (~₹20 Cr), classified as a 'Small enterprise' for FY2024-25 — no PAT, EBITDA, ROE, or ROCE figures were found from any independent source.", "tier": "company", "epistemic": "fact", "source": "ExportersIndia; IndiaMART", "fields": ["financials.revenueCr"] },
+      { "text": "It manufactures sheet metal and fabricated components — server racks, data center enclosures, HVAC panels, outdoor cabinets — plus full contract manufacturing (design through dispatch). Its named customer roster is genuinely strong and specific: export customers Awal Gulf (Bahrain) and ActronAir (Australia), plus domestic blue-chip names including Emerson, Vertiv, Siemens, Blue Star, Reliance, and Godrej — a real, independently-listed roster, not a vague self-claim.", "tier": "company", "epistemic": "fact", "source": "IndiaMART", "fields": ["differentiation", "exportFootprint"] },
+      { "text": "**This is the clearest certification-verification finding in this batch**: the HVT sheet's self-claimed ISO 9001:2015 certification (flagged `needs_verify: yes`) is directly contradicted by every independent source found this session, which consistently describe the certification as ISO 9001:2008 — a standard version superseded globally by September 2018. No source confirms a 2015 upgrade occurred. This should be treated as likely outdated/unverified rather than accepted at face value.", "tier": "company", "epistemic": "fact", "source": "IndiaMART (direct listing text)", "fields": ["moat"] },
+      { "text": "The company's own IndiaMART copy claims a 1992 founding in Saki Naka, Mumbai, but the registered CIN shows incorporation on 04 May 2010 — an 18-year gap. This mirrors a pattern seen elsewhere in this batch (an earlier unincorporated operation later formally converted to a Pvt Ltd company), but no document was found bridging the two dates, so it remains unresolved.", "tier": "company", "epistemic": "fact", "source": "IndiaMART vs. ZaubaCorp", "fields": ["foundedYear"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market with **real data-center/telecom growth tailwinds**, though vendor size estimates disagree substantially.", "evidence": "Global server rack cabinet enclosures market: $3.4B (2025) to $5.0B by 2035 (3.9%/yr) per one estimate, vs. a broader-scope global data-center rack & enclosure market cited at $4.25B to $9.01B by 2034 (~8.71%/yr) per another — the two don't reconcile, likely differing scope definitions.", "tier": "segment", "epistemic": "fact", "source": "aggregated vendor reports", "fields": ["market.sizeRange"] },
+      { "point": "**No India-focused peer with disclosed financials exists** to benchmark Samarth Aircon against — a common pattern in this niche.", "evidence": "Named India-focused enclosure/rack manufacturers (NetRack Enclosures, Valrack Modular Systems, Eabel, BCH India) all appear to be private companies without disclosed financials, similar to Samarth Aircon's own situation.", "tier": "segment", "epistemic": "fact", "source": "aggregated search summary", "fields": ["peers"] },
+      { "point": "**Full box-build contract manufacturing capability is a real differentiator** in a market where large global OEMs (Rittal, Legrand, nVent, Schneider) dominate branded product.", "evidence": "Samarth Aircon's design-through-dispatch contract manufacturing model, combined with its named blue-chip customer roster, positions it as a capable outsourced manufacturing partner rather than a competing branded-product player — a distinct and viable market position.", "tier": "segment", "epistemic": "fact", "source": "IndiaMART", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A real contract manufacturer with a genuinely credible customer list — the kind of specific, named-brand roster that's hard to fabricate. The certification-year discrepancy is the one concrete thing to correct here: not a fatal flaw, but a claim that shouldn't be repeated as-is without the company either producing a current certificate or being asked to explain the gap.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: aggregated vendor reports (shared enclosures-cabinets-racks segment file, new this batch). No independently financialed India peer found for direct comparison."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "market-access", "title": "Leveraging existing ISO certification and export capability to target APAC more aggressively", "body": "The HVT sheet's own gap research names APAC as the dominant, high-growth region for sheet metal fabrication that Samarth Aircon hasn't yet penetrated beyond its current Bahrain/Australia export base — a credible lever given the company's confirmed export track record, though it should follow, not precede, resolving the certification-year question.", "source": "HVT gap research (trademo.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is getting the certification claim right before any outward-facing use of it.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Confirm current ISO certification status directly with the company", "body": "Since every independent source found this session shows ISO 9001:2008 rather than the self-claimed 2015 version, requesting a current certificate directly from the company should happen before this claim is repeated in any outward-facing material — a straightforward, low-cost verification step.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an enclosures/cabinets/racks manufacturer in this segment — a directory-depth pass, not yet confirmed against Samarth Aircon's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer server racks, data-center enclosures, HVAC panels, outdoor telecom cabinets, electrical control panels, kiosks", "offer contract manufacturing/box-build services"], "stepsTier": "segment", "spottedAt": "offer contract manufacturing/box-build services", "spotted": { "text": "Company facts (design/manufacture/assemble/test/pack/dispatch contract manufacturing) confirm this step is real for Samarth Aircon — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run CNC punching, laser cutting, CNC bending, power press, fabrication/welding", "run powder coating, assembly and testing"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a factory/plant sized for design-through-dispatch contract manufacturing", "maintain sheet-metal machinery (laser cutters, CNC brakes, powder-coat line)"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["provide custom enclosure design per customer spec", "handle export logistics for overseas customers"], "stepsTier": "segment", "spottedAt": "handle export logistics for overseas customers", "spotted": { "text": "Company facts (named export customers Awal Gulf/Bahrain and ActronAir/Australia) confirm this step is real for Samarth Aircon — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win orders via data-center/telecom capex cycles", "win orders via OEM outsourcing decisions as an approved contract manufacturer"], "stepsTier": "segment", "spottedAt": "win orders via OEM outsourcing decisions as an approved contract manufacturer", "spotted": { "text": "Company facts (named domestic blue-chip customers Emerson, Vertiv, Siemens, Blue Star) confirm this step is real for Samarth Aircon — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/enclosures-cabinets-racks.json) — no company-specific (A2/pursuit) operational intel was collected for Samarth Aircon this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A real contract manufacturer with a genuinely credible, named blue-chip customer roster — undercut by a certification claim that every independent source contradicts. **Getting the ISO certification detail right is the clearest, lowest-cost fix here.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Samarth Aircon or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No audited financials found; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus IndiaMART and ExportersIndia listings; market data from aggregated vendor reports. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["IndiaMART", "ExportersIndia", "ZaubaCorp", "Konkan Industrial Publications", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — actual current ISO certification status, and true revenue/margin figures beyond the self-reported turnover estimate — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Hindustan Pharmaceuticals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#163a2b; --field-deep:#0f2c20; --leaf:#2f6b41; --sprout:#7fae6a;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(15,44,32,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .fig{font-family:"Spline Sans Mono",monospace; font-size:12px; color:var(--soil); font-weight:600;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .glaser{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:15.5px; line-height:1.4; color:var(--leaf); margin:8px 0 0;}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(47,107,65,.07);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt,.wf{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5,.wf h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .genericflag{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.2); border-radius:2px; padding:2px 6px; margin-left:6px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Hindustan Pharmaceuticals: a patent-office-confirmed alkaloid pioneer, behind an unresolved identity question.</h1>
+    <p class="subhead">A company the Indian Patent Office itself cites as a pioneer in Indian alkaloid production — sole proprietorship, no financials found, name shared with at least one other registered entity.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Candidate identity</p><p class="snap-value">Amritsar herbal exporter, founded 1971 (Raman Gupta) — unconfirmed match</p></div><div class="snap"><p class="snap-label">Differentiation source</p><p class="snap-value">Indian Patent Office exam paper (registry-confirmed)</p></div><div class="snap"><p class="snap-label">Revenue / PAT / ROE</p><p class="snap-value">Not found (no public filings for a sole proprietorship)</p></div><div class="snap"><p class="snap-label">Website</p><p class="snap-value">Domain expired — hindustanpharmaceuticals.com is parked for sale</p></div><div class="snap"><p class="snap-label">Certifications claimed</p><p class="snap-value">WHO-GMP/WHO-CGMP, TUV Nord ISO 9001, USFDA site registration</p></div><div class="snap"><p class="snap-label">Export activity</p><p class="snap-value">Herbal extracts since 1995 (candidate entity)</p></div>
+  </section>
+
+  <div class="body">
+
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A registry-confirmed claim, behind a genuinely uncertain identity</h2>
+      <p class="prose">The single strongest fact in this entire profile is also the one most worth double-checking against the identity ambiguity: an Indian Patent Office patent-agent examination paper names &#x27;Hindustan Pharmaceuticals&#x27; as a pioneer in alkaloid production in India — a registry-confirmed source, the strongest credibility tier this project uses, not a self-claim. But which &#x27;Hindustan Pharmaceuticals&#x27; the exam paper refers to was not independently re-confirmed this session.</p><p class="prose">The company&#x27;s own listed website (hindustanpharmaceuticals.com) is an expired, parked domain now for sale — meaning even a direct check of &#x27;the company&#x27;s own claims&#x27; isn&#x27;t currently possible through the channel the HVT sheet points to.</p><p class="prose">This session&#x27;s research instead found a plausible candidate: a herbal-extract exporter based in Amritsar, Punjab (hindphrm.com), founded in 1971 by Raman Gupta, exporting medicinal herbs and herbal extracts since 1995 — consistent with the HVT sheet&#x27;s &#x27;herbal-extracts-medicines&#x27; sector and segment classification, but not confirmed as the same legal entity the patent-office source or the HVT sheet&#x27;s own notes field describes.</p><p class="prose">The HVT sheet&#x27;s own notes field independently documents the identity problem: GST registrations exist for a proprietorship (named owner: Sanjeev Kumar) and, separately, a partnership entity under a similar name — the HVT tool itself could not cleanly resolve which entity its own pillar research describes.</p><p class="prose">It claims to hold WHO-GMP/WHO-CGMP, TUV Nord ISO 9001 and USFDA site registration, and to have patented a drug &#x27;important for public health in India&#x27; — both self-claimed via a third-party directory (chemdmart.com), and the HVT sheet flags both `moat` and `product_improvement` `needs_verify: yes`.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">The market it sells into</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">The field is <b>large and growing very fast</b>, with India specifically outpacing the global rate.</p><p class="ev">Global herbal medicine market: $100-251B (2024-25) to $396-516B by 2034-35 depending on methodology; India&#x27;s own herbal medicine market is growing faster still, $7.26B (2025) to $30.0B by 2035, ~15.2%/yr.</p></li><li class="insight"><p class="point"><b>Export demand is real and geographically concentrated</b>, matching where a genuine herbal exporter would want to be.</p><p class="ev">India&#x27;s Ayush exports doubled over the past decade to $2.16B across 150 countries; the US alone absorbed 34.95% of Ayush exports, with raw herbs and extracts making up 60-70% of export volume — a category the candidate Amritsar entity&#x27;s own 1995-onward export history fits.</p></li><li class="insight"><p class="point">Named peers in this category are <b>all substantially larger</b> — no scale-comparable peer was found.</p><p class="ev">Dabur India (₹12,404 Cr revenue), Himalaya Wellness (~$440M), Shree Baidyanath (₹761 Cr) all operate at a scale many multiples above what a small sole-proprietorship exporter would show — useful as market-structure context, not a benchmark.</p></li>
+      </ul>
+      <p class="reflect">A registry-confirmed pioneer claim sitting inside a name and legal-entity picture this research genuinely could not pin down. The market opportunity is real regardless; which specific company gets credit for the patent-office claim is the thing to resolve first.</p>
+      <p class="src">Market data: Market Research Future, Mordor Intelligence, organiser.org (shared herbal-extracts-medicines segment file). No peer financials are meaningful here given the unresolved identity.</p>
+    </section>
+
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">One place named in the company&#x27;s own gap research — contingent on the identity question being resolved first.</p>
+      <div class="opp"><p class="tag">Velocity</p><h4>Scaling herbal essentials for export markets</h4><p>The HVT sheet&#x27;s own gap research names this directly: the company has stated intent and existing certifications to scale herbal-essential exports internationally, but the untapped potential can&#x27;t be sized or acted on until it&#x27;s clear which legal entity actually holds those certifications and that export history.</p><p class="oppsrc">HVT gap research (business-standard.com).</p></div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions — and the honest first step here is resolving identity, not testing a growth lever.</p>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Confirm which entity the patent-office citation and the HVT sheet&#x27;s pillar claims actually describe</h5><p>Before any export-scaling discussion, get a direct confirmation (company registration documents, GST certificate, or a direct conversation) of which &#x27;Hindustan Pharmaceuticals&#x27; — the Amritsar herbal exporter this research found, the Sanjeev-Kumar proprietorship the HVT sheet&#x27;s own notes found, or a third, different entity — is the actual subject of this profile.</p></div>
+      </div>
+    </section>
+
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below are the generic steps for an herbal extract/medicine manufacturer in this segment — a directory-depth pass, not yet confirmed against this company&#x27;s own stated process (and complicated by the identity ambiguity above), so marked generic throughout.</p>
+        <div class="hrow"><div class="hlabel">H5<span>Offers</span></div><div><p class="steps">offer standardized herbal extracts, plant-derived alkaloid salts/isolates, and finished herbal/Ayurvedic products → serve pharmaceutical and nutraceutical customers as a B2B ingredient supplier<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;offer standardized herbal extracts, plant-derived alkaloid salts/isolates, and finished herbal/Ayurvedic products&quot;</span> Company facts (registry-confirmed alkaloid production pioneer status) confirm this step has some real basis, though for which specific entity remains open — see p1_engine.</p></div></div><div class="hrow"><div class="hlabel">H4<span>Capability</span></div><div><p class="steps">run in-house extraction/isolation know-how for plant-derived actives → standardize phytochemical content → maintain quality-control from raw material through finished product<span class="genericflag">generic scaffold</span></p></div></div><div class="hrow"><div class="hlabel">H3<span>Capacity</span></div><div><p class="steps">operate extraction/processing facility with dedicated machinery → scale relative to raw-material sourcing volume<span class="genericflag">generic scaffold</span></p></div></div><div class="hrow"><div class="hlabel">H2<span>Customer experience</span></div><div><p class="steps">build direct export relationships with pharmaceutical/nutraceutical formulators → support VCSMPP/AYUSH Ministry certification requirements<span class="genericflag">generic scaffold</span></p></div></div><div class="hrow"><div class="hlabel">H1<span>Orders</span></div><div><p class="steps">export orders to international herbal-ingredient buyers → feed into pharmaceutical/nutraceutical/supplement manufacturers in US/EU/UAE demand centers → reorder tied to buyer&#x27;s own production cadence<span class="genericflag">generic scaffold</span></p><p class="hopp"><span class="k">Spotted at &quot;export orders to international herbal-ingredient buyers&quot;</span> confirming the correct entity first.</p></div></div>
+        <p class="hsrc">Steps are the segment&#x27;s generic scaffold (../segments/herbal-extracts-medicines.json) — no company-specific (A2/pursuit) operational intel was collected this pass, and given the identity ambiguity, treat every step here as provisional.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>A real patent-office citation, an expired website, and at least two candidate identities for the same company name. <b>Confirm who this actually is before doing anything else with this profile.</b></p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Hindustan Pharmaceuticals or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Hidden Champions of India — a DeepThought series on how India&#x27;s quiet world-beaters create wealth. No public financials found (sole proprietorship). Company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus ipindia.gov.in (Indian Patent Office, registry-confirmed) and hindphrm.com (candidate entity, unconfirmed match); market data from Market Research Future, Mordor Intelligence and organiser.org. This profile&#x27;s central issue — unresolved company identity — is documented in meta.provenance and should be resolved before publishing. Opportunities are DeepThought&#x27;s reading.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

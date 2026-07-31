@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "armstrong-international",
+    "series": "Hidden Champions of India",
+    "segmentRef": "steam-air-hot-water-solutions",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. This profile covers the Indian legal entity Armstrong International Private Limited, CIN U31200TN2007PTC065429, incorporated 20 Nov 2007 (Chengalpattu, Tamil Nadu) — NOT the US global parent (Armstrong International Inc., founded 1900, Three Rivers, Michigan), though the two are confirmed linked: Ryan Douglas Bloss, Global Director of Sales at the US parent, was appointed a Director of the Indian entity on 07 Jun 2024."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Armstrong International India: a US thermal-technology parent's Indian arm, currently running at a loss.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "Real proprietary steam-monitoring technology and a 2024 director appointment tying it formally to its US parent — sitting alongside a swing to negative ROE and ROCE in the latest filing year.", "tier": "company", "epistemic": "fact", "source": "Tofler; Tracxn director records", "fields": ["differentiation", "financials.roePct"] }
+  },
+  "snapshot": [
+    { "label": "Entity", "value": "Armstrong International Private Limited (India), CIN U31200TN2007PTC065429, incorporated 2007 — distinct from but linked to the US parent (founded 1900)", "tier": "company", "source": "Tofler; Tracxn", "fields": ["cin", "foundedYear"] },
+    { "label": "Revenue", "value": "₹100-200 Cr band (conflicting Tofler figures across FY24/FY25 snapshots)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Margins (FY25 snapshot)", "value": "Operating -5.0%, Net -4.1% — swung to a loss", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct"] },
+    { "label": "ROE / ROCE (FY25 snapshot)", "value": "-10.57% / -12.64%, Debt-to-Equity 0.24", "tier": "company", "source": "Tofler", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Employees", "value": "803-863 (conflicting sources)", "tier": "company", "source": "TheCompanyCheck; Tracxn", "fields": ["employees"] },
+    { "label": "US parent tie", "value": "Ryan Douglas Bloss (Global Director of Sales, US parent) appointed Director of the Indian entity, 07 Jun 2024", "tier": "company", "source": "Tracxn", "fields": ["product_improvement"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A real global-parent tie, currently running at a loss",
+    "blocks": [
+      { "text": "This is a genuine financial-data conflict, not just imprecision: one Tofler snapshot (FY2024) shows EBITDA up 10.3% YoY on a ₹100-500 Cr revenue band, while a separate Tofler financials-page fetch for a more recent period shows total revenue down 6.62%, EBITDA down 64.7%, and net profit swinging to a loss (down 132.13%), with negative net margin (-4.1%), negative ROE (-10.57%), and negative ROCE (-12.64%). Both are reported here since they conflict on the direction of the trend, not just its magnitude.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.roePct"] },
+      { "text": "It holds proprietary steam/energy-monitoring technology — the VERIS Accelabar meter and SAGE UMT automatic steam trap testing device — and manufactures steam condensate, heat transfer, humidification, and flow measurement systems aimed at reducing industrial energy waste. It is positioned as an official channel partner for hot water, condensate recovery, and pressure/temperature regulation systems.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation", "moat"] },
+      { "text": "The Indian entity's relationship to the global Armstrong International (a 5th-generation, US family-owned company founded in 1900) is real, not just a shared brand name — a June 2024 director appointment placed the US parent's own Global Director of Sales onto the Indian entity's board, a concrete governance link beyond marketing affiliation.", "tier": "company", "epistemic": "fact", "source": "Tracxn director records", "fields": ["product_improvement"] },
+      { "text": "Employee counts conflict between two directory sources (803 vs. 863, both circa late 2024), and ISO 9001 certification is confirmed only at the 2008 standard level with no evidence found of a 2015 upgrade — export footprint and export percentage of revenue were not found for the Indian entity specifically.", "tier": "company", "epistemic": "fact", "source": "TheCompanyCheck; Tracxn; IndiaMART", "fields": ["employees", "moat"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market with **real energy-efficiency/decarbonization tailwinds**, though vendor size estimates vary widely.", "evidence": "India steam trap market: $178.8M (2025) to $280.7M by 2034 (~5-7.2%/yr depending on source); global steam trap estimates range from $971M to $9.27B by scope, and a related condensate-recovery-device market is cited even larger at $102.4B-$126.9B — vendor market-boundary definitions differ substantially.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group; aggregated vendor reports", "fields": ["market.sizeRange"] },
+      { "point": "**Spirax Sarco dominates globally (~30% share)**, with Thermax as the closer, real India-listed comparable.", "evidence": "Thermax Limited (India, listed) posted ₹10,640 Cr FY25 revenue (+14% YoY) with an 11.5% 3-year average ROE — a genuinely profitable India-based peer in the same broad thermal-utility space, a useful contrast to Armstrong India's current negative returns.", "tier": "segment", "epistemic": "fact", "source": "Screener.in", "fields": ["peers"] },
+      { "point": "**Technology shift toward IoT/automated monitoring** plays directly to Armstrong's own VERIS/SAGE UMT product line.", "evidence": "The segment's structural shift from manual steam-trap inspection to automated monitoring is exactly the capability Armstrong's proprietary technology targets — a real alignment between company capability and segment direction, independent of the current financial softness.", "tier": "segment", "epistemic": "fact", "source": "aggregated market summary", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A real, technically-differentiated thermal-utility specialist with a governance-confirmed tie to a century-old US parent — currently working through a loss-making stretch that conflicting data sources make hard to characterize precisely. The underlying product/technology positioning looks sound; the open question is whether the FY25 loss is a one-off or the start of a trend.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group, aggregated vendor reports (shared steam-air-hot-water-solutions segment file, new this batch). Peer data: Spirax Sarco, Thermax Limited, Forbes Marshall."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research — with a real financial caveat attached.",
+    "items": [
+      { "lever": "market-access", "title": "Expanding the 'Circular Thermal' decarbonization approach beyond current energy-conservation offerings", "body": "The HVT sheet's own gap research names this directly — extending toward up to 80% total carbon reduction capability from waste-heat recovery — but given the current loss-making financial snapshot, this reads as an opportunity that needs the core business stabilized first, not a standalone growth lever.", "source": "HVT gap research (LinkedIn / Paul Ashley).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is reconciling the conflicting Tofler financial snapshots.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Reconcile the two conflicting Tofler revenue/EBITDA trend snapshots directly", "body": "Since one Tofler-derived snapshot shows EBITDA growth and another shows a swing to loss for what should be adjacent or overlapping periods, confirming the actual current financial trajectory directly with the company should precede any capability or opportunity conversation.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a steam/air/hot-water thermal-utility manufacturer in this segment — a directory-depth pass, not yet confirmed against Armstrong International's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer steam traps, condensate recovery units, humidification systems", "offer flow meters and automated trap-testing devices", "offer heat exchangers and water heaters/heat pumps"], "stepsTier": "segment", "spottedAt": "offer flow meters and automated trap-testing devices", "spotted": { "text": "Company facts (proprietary VERIS Accelabar meter and SAGE UMT automatic steam trap testing device) confirm this step is real for Armstrong International — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run manufacturing (metal fabrication/precision casting of trap bodies and valves)", "run calibration/testing labs", "provide field service, installation, and channel-partner coverage"], "stepsTier": "segment", "spottedAt": "provide field service, installation, and channel-partner coverage", "spotted": { "text": "Company facts (official channel partner for hot water, condensate recovery, pressure/temperature regulation) confirm this step is real for Armstrong International — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing plant sized for regional/global distribution", "maintain a distributor/channel-partner network"], "stepsTier": "segment", "spottedAt": "operate a manufacturing plant sized for regional/global distribution", "spotted": { "text": "Company facts (Chengalpattu, Tamil Nadu manufacturing facility) confirm this step is real for Armstrong International — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["provide applications engineering by industry segment (pharma, textile, food, power)", "provide energy-audit and predictive-maintenance services"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win orders via plant energy audits and capex cycles for new industrial facilities", "win orders via statutory/ESG compliance deadlines and trap replacement cycles"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/steam-air-hot-water-solutions.json) — no company-specific (A2/pursuit) operational intel was collected for Armstrong International this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A real, technically-differentiated Indian arm of a century-old US thermal-technology company, confirmed by a 2024 board appointment — currently working through a financially unclear stretch where two data sources disagree on direction. **Reconciling the actual current financial trajectory is the necessary first step.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Armstrong International or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler (conflicting snapshots, both reported); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus IndiaMART, Tracxn director records, and armstroninternational.com press material; market data from IMARC Group. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Tracxn", "IndiaMART", "ZaubaCorp", "IMARC Group", "Screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true current financial trajectory reconciling the conflicting Tofler snapshots, and the specific operational relationship between the Indian entity and its US parent — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

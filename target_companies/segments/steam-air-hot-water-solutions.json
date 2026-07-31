@@ -1,0 +1,42 @@
+{
+  "segmentName": "Steam, Air & Hot Water Thermal Utility Solutions",
+  "market": {
+    "worldSizeUSD_B_range": "India steam trap market: $178.8M (2025) to $280.7M by 2034 (~4.99%/yr, one source cites 7.2%/yr). Global steam trap market estimates vary widely by vendor scope: $4.57B (2024) to $5.57B (2029, 4.1%/yr); $4.8B (2025) to $9.27B (2035, 6.8%/yr); or a narrower $971M (2023) to $1,259M (2030, 3.65%/yr). A related but much larger 'closed steam condensate recovery device' market is cited at $102.4B (2025) to $126.9B (2029) — not directly comparable, vendor market-boundary definitions differ substantially.",
+    "cagrPctRange": [3.65, 7.2],
+    "exportGeographies": [],
+    "globalCompetitors": ["Spirax Sarco (UK, ~30% global share)", "TLV (Japan)", "Velan (Canada)", "Emerson", "ARI"],
+    "domesticSlice": "Asia-Pacific holds ~41-45.6% share, the fastest-growing region. Forbes Marshall (India, private, family-owned) and Thermax Limited (India, listed) are the direct India-based peers; Thermax posted ₹10,640 Cr FY25 revenue (+14% YoY), ~11.5% 3-yr average ROE."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Rising industrial energy-efficiency and decarbonization mandates are pushing demand for steam trap monitoring, condensate recovery, and waste-heat recovery",
+    "Technology shift from manual steam-trap inspection to IoT/automated monitoring is a clear premiumization/service trend in the category",
+    "India-specific PLI or steam-equipment scheme was not confirmed this pass; general industrial energy-efficiency push (PAT scheme, BEE mandates) is the likely structural driver"
+  ],
+  "adoptionStructure": {
+    "note": "Energy cost reduction, regulatory/ESG compliance pressure, uptime/reliability in process industries (textile, pharma, food, power), total cost of ownership vs. upfront equipment price, and increasingly digital monitoring/predictive-maintenance capability drive purchasing."
+  },
+  "peers": [
+    { "name": "Spirax Sarco", "note": "~30% global market share, segment leader", "source": "aggregated market report data" },
+    { "name": "Thermax Limited (India, listed)", "revenueCr_FY25": 10640, "revenueGrowthPct": 14, "netMarginPct": 6.0, "roePct3yrAvg": 11.5, "source": "Screener.in; simplywall.st" },
+    { "name": "Forbes Marshall (India, private)", "note": "family-owned direct India peer; no public financials found", "source": "search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["energy cost reduction", "regulatory/ESG compliance pressure", "uptime/reliability in process industries", "total cost of ownership", "digital monitoring/predictive-maintenance capability"],
+    "strongestPredictor": "energy-cost-reduction ROI combined with regulatory compliance pressure",
+    "source": "IMARC Group; aggregated market summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer steam traps, condensate recovery units, humidification systems", "offer flow meters and automated trap-testing devices", "offer heat exchangers and water heaters/heat pumps"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run manufacturing (metal fabrication/precision casting of trap bodies and valves)", "run calibration/testing labs", "provide field service, installation, and channel-partner coverage"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing plant sized for regional/global distribution", "maintain a distributor/channel-partner network"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["provide applications engineering by industry segment (pharma, textile, food, power)", "provide energy-audit and predictive-maintenance services"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win orders via plant energy audits and capex cycles for new industrial facilities", "win orders via statutory/ESG compliance deadlines and trap replacement cycles"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/india-steam-trap-market",
+    "https://www.screener.in/company/THERMAX/consolidated/",
+    "https://armstroninternational.com/blog/news-type/press-release/"
+  ]
+}

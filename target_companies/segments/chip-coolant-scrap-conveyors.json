@@ -1,0 +1,45 @@
+{
+  "segmentName": "Chip, Scrap & Coolant Management Conveyors",
+  "market": {
+    "worldSizeUSD_B_range": "Global chip conveyor market: $1,322M (2024) to $1,818M by 2031 (~4.6%/yr) per one source; $1.82B (2025) to $3.14B by 2034 (6.2%/yr) per another. Global coolant filtration systems market: $2.9B (2025) to $7.3B by 2036 (8.7%/yr, 2026-2036); coolant filtration cartridge modules growing 7-9%/yr (2026-2035). India-specific chip-conveyor/coolant-filtration market size was not found.",
+    "cagrPctRange": [4.6, 8.7],
+    "exportGeographies": ["not found beyond generic 'globally networked' self-description"],
+    "globalCompetitors": ["Hennig Inc.", "Mayfran International", "Jorgensen Conveyors (LNS Group)", "KNOLL Maschinenbau GmbH", "PRAB Inc."],
+    "domesticSlice": "Asia-Pacific is the fastest-growing/largest region for coolant filtration at ~7.1%/yr, vs. North America 5.8% and Europe 5.4%."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["metallography-petrography-equipment-consumables"],
+  "structureFacts": [
+    "Machine-tool industry capex and automation in metal-cutting operations drives demand; higher machining automation and lights-out/unattended manufacturing increases reliance on automated swarf/chip/coolant handling",
+    "Semiconductor fab expansion is cited as a specific driver of coolant filtration system demand growth",
+    "OEM bundling: chip/coolant conveyor vendors increasingly integrate with machine-tool OEMs at the design stage rather than being purely aftermarket add-ons"
+  ],
+  "adoptionStructure": {
+    "note": "Productivity/uptime (unattended chip removal enabling lights-out shifts), coolant recycling/cost savings, compliance with machine-tool OEM specs, and total filtration performance (fine particulate/tramp-oil removal affecting tool life and part quality) drive purchasing."
+  },
+  "peers": [
+    { "name": "Top 5 global players (Hennig, Mayfran International, Jorgensen Conveyors/LNS, KNOLL, PRAB)", "note": "together held ~38.5% of global chip conveyor market revenue in 2025", "source": "aggregated market report data" },
+    { "name": "Mayfran International", "note": "acquired by Tsubakimoto Chain (Japan) on 31 Aug 2012; Mayfran International Europe entity estimated ~$54M revenue (low-confidence broker estimate)", "parentRevenueJPY_B_FY2024": 279.19, "parentGrowthPct": 4.64, "source": "incfact.com; martini.ai; tipranks.com" },
+    { "name": "KNOLL Maschinenbau GmbH (Germany)", "note": "integrated with major German machine-tool OEMs (DMG Mori, Trumpf, Gildemeister), giving a privileged OEM-bundled position", "source": "aggregated search summary" },
+    { "name": "PRAB Inc. (US)", "note": "only vendor offering full stack — conveyors, chip processing, briquetting, fluid filtration, and industrial wastewater treatment under one brand", "source": "prab.com" }
+  ],
+  "customerValue": {
+    "drivers": ["productivity/uptime via unattended chip removal", "coolant recycling/cost savings", "OEM-spec compliance and design-stage integration", "filtration performance affecting tool life and part quality"],
+    "strongestPredictor": "OEM-spec compliance combined with design-stage integration",
+    "source": "PRAB/KNOLL positioning language, industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer chip/scrap/coolant conveyors (magnetic and screw types)", "offer chip crushers/shredders/wringers and centrifuges", "offer standalone and centralized coolant filtration systems"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run sheet-metal fabrication and precision welding capability", "run mechanical/electrical assembly and filtration-media engineering", "apply engineering to match machine-tool OEM chip/coolant specs"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["size manufacturing plant to machine-tool-industry order cadence", "access global engineering designs via JV/licensing structure with a multinational partner"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["co-design with machine-tool builders (OEM-integrated project engineering)", "provide installation/commissioning and after-sales service/spares support"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win direct OEM contracts with machine-tool builders", "win orders from end-user metalworking/automotive plants"] }
+  ],
+  "sources": [
+    "https://reports.valuates.com/market-reports/QYRE-Auto-9C12758/global-chip-conveyors",
+    "https://www.openpr.com/news/4525898/coolant-filtration-systems-market-accelerating-at-an-8-7-cagr",
+    "https://www.factmr.com/report/coolant-filtration-systems-market",
+    "https://www.prab.com/from-forklifts-to-automation-prab-powers-lights-out-manufacturing/",
+    "https://www.mivenmayfran.com/About+Us"
+  ]
+}

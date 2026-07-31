@@ -1,0 +1,44 @@
+{
+  "segmentName": "Power & Distribution Transformers, Substations",
+  "market": {
+    "worldSizeUSD_B_range": "India power & distribution transformer market: $4.50B (2025) to $6.37B by 2031 (5.81%/yr). India distribution transformer market (narrower): $1.8B (2025) to $2.76B by 2030 (8.98%/yr). Global power transformer market: estimates range $23.2-36.24B (2025), 4-6.9%/yr depending on source.",
+    "cagrPctRange": [5.81, 8.98],
+    "exportGeographies": ["Europe", "Middle East", "Africa", "South Asia", "Australasia (per Danish Power's own footprint) — US market currently blocked for one profiled company by lack of UL certification"],
+    "globalCompetitors": ["not individually named at global scale — see peers[] for listed Indian comparables"],
+    "domesticSlice": "India added 113,013 MVA of substation capacity in 2025-26 at the 220kV+ level, ~90% of the 126,007 MVA target; India targets 500 GW renewable energy capacity by 2030, requiring advanced grid transformers"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Rural electrification programs (Saubhagya Scheme, Rajiv Gandhi Grameen Vidyutikaran Yojna) have driven distribution-transformer demand for last-mile grid expansion",
+    "Renewable energy grid integration (500 GW target by 2030) requires advanced grid-connection transformer capability",
+    "India's substation capacity additions are running close to but slightly behind stated annual targets, suggesting genuine, not saturated, demand"
+  ],
+  "adoptionStructure": {
+    "note": "Long-cycle tender-based orders from utilities/PSUs and EPC contractors — not a repurchase-rate category, though equipment life-cycles (10-30+ years) create a long spares/service tail"
+  },
+  "peers": [
+    { "name": "Voltamp Transformers", "revenueCr": 2153.69, "fy": "FY25-26 (record)", "roePctAvg": 18.96, "ebitdaMarginPct_Q1FY27": 25, "source": "freepressjournal.in" },
+    { "name": "Indo Tech Transformers", "marketCapCr": 2570.04, "roePctLatest": 32.0, "roePctRecentAvg": 15.54, "source": "marketsmojo.com" },
+    { "name": "Transformers and Rectifiers India Ltd (TRIL)", "salesCAGRPct_2020_2024": 8.4, "netProfitCAGRPct": 55.9, "rocePct5yrAvg": 17, "roePct5yrAvg": 5.1, "note": "capability up to 1,200 kV", "source": "equitymaster.com" }
+  ],
+  "customerValue": {
+    "drivers": ["BIS licensing and type-test certificates", "utility/PSU vendor approvals (NTPC, PGCIL, state electricity boards)", "after-sales/field service support"],
+    "strongestPredictor": "utility/PSU vendor-approval status — a hard prerequisite for tender participation",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer distribution/power/inverter-duty transformers, control relay panels, compact substations", "engineer to BIS/IEC/customer specs"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house design/R&D for short-circuit-resilient designs", "winding (copper/aluminium), core assembly", "maintain type-testing facilities"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate rated MVA/annum manufacturing capacity across product lines", "hold voltage-class capability (e.g. up to 220kV or higher)"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain BIS licensing and type-test certificates", "hold utility/PSU vendor approvals", "provide after-sales/field service support"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win long-cycle tender-based orders from utilities/PSUs and EPC contractors", "supply direct OEM contracts to renewable IPPs (solar/wind)", "fulfil against project timelines", "reorder on grid-expansion or replacement cycles"] }
+  ],
+  "sources": [
+    "https://transformers-magazine.com/tm-news/india-power-and-distribution-transformer-market-to-reach-6-37-b-by-2031/",
+    "https://www.mordorintelligence.com/industry-reports/india-distribution-transformer-market",
+    "https://powerline.net.in/2026/05/05/demand-surge-key-trends-growth-drivers-and-outlook-for-the-transformer-industry/",
+    "https://www.freepressjournal.in/business/voltamp-transformers-reports-record-2153-crore-revenue-influx-despite-margin-pressure",
+    "https://www.equitymaster.com/detail.asp"
+  ]
+}

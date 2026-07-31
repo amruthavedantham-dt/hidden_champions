@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "recaero-india",
+    "series": "Hidden Champions of India",
+    "segmentRef": "aerospace-precision-machined-components",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U29113KA2004PTC184018 — a subsidiary of French group Recaero SAS (Verniolle, France, founded 1993), which also owns Recaero Composites, Recaero India and Recaero Formation."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Recaero India: an Airbus-approved supplier whose biggest customer is its own French parent.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Bidadi, Bangalore precision-machining unit with AS9100D and Airbus Approved Supplier status, mostly feeding Recaero SAS and Safran rather than the open market.", "tier": "company", "epistemic": "fact", "source": "recaero.fr; HVT row (moat, third-party)", "fields": ["moat", "gap_currently_monetized"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2004-2005 (India subsidiary); Bidadi unit operational since 2007", "tier": "company", "source": "Zaubacorp; recaero.fr", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹151 Cr · FY25 (+8.96% YoY)", "tier": "company", "source": "thecompanycheck.com", "fields": ["financials.revenueCr.FY25"] },
+    { "label": "PAT / EBITDA / ROE", "value": "Not found", "tier": "company", "source": "n/a", "fields": ["financials.patCr"] },
+    { "label": "Employees", "value": "219-238", "tier": "company", "source": "Tofler; thecompanycheck.com", "fields": ["employees"] },
+    { "label": "Certifications", "value": "AS9100D, ISO 9001:2015, Airbus Approved Supplier (third-party)", "tier": "company", "source": "TUV SUD certificate", "fields": ["moat"] },
+    { "label": "Parent group", "value": "Recaero SAS (France), 600+ employees across 4 subsidiaries", "tier": "company", "source": "recaero.fr", "fields": ["ownershipType"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A genuinely certified capability, mostly serving its own group",
+    "blocks": [
+      { "text": "Revenue reached ₹151 Cr in FY25, up 8.96% year-on-year — steady, if not fast, growth — with no PAT, EBITDA margin or ROE figure found for the standalone India entity.", "tier": "company", "epistemic": "fact", "source": "thecompanycheck.com; Tofler", "fields": ["financials.revenueCr"] },
+      { "text": "Its AS9100D and Airbus Approved Supplier certifications are third-party sourced to an actual TUV SUD certificate document, not just a company claim — the strongest-credibility moat evidence available for this company, even though the HVT sheet still marks it `needs_verify: yes`.", "tier": "company", "epistemic": "fact", "source": "HVT row (third-party, TUV SUD certificate); recaero.fr", "fields": ["moat"] },
+      { "text": "**A structural nuance worth naming plainly**: the HVT sheet's own gap research, sourced to trade data, states that Recaero India's major buyers are Recaero France (its own parent) and Safran Aircraft Engine — meaning a meaningful share of its 'export' activity is intra-group, not open-market sales to external customers. This isn't a red flag (captive manufacturing arms are a normal model in aerospace), but it changes what 'export capability' means here.", "tier": "company", "epistemic": "fact", "source": "HVT row (Volza trade data)", "fields": ["gap_currently_monetized"] },
+      { "text": "It runs 17+ CNC machines (up to 9-axis, 3-axis turn-mill) machining aluminum, Inconel, titanium and 15-5PH alloys, plus a dedicated sheet-metal shop and OEM-qualified welding (TIG, Plasma, Spot) — real, specific manufacturing capability across the hardest aerospace alloys.", "tier": "company", "epistemic": "fact", "source": "aviationspaceindia.com", "fields": ["differentiation", "product_improvement"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and structurally favored by India's own policy direction.**", "evidence": "India aerospace parts manufacturing: $13.6B (2023) to $21.48B by 2030 (6.8%/yr); India's defense indigenization is expected to rise from under 40% to potentially 70%+ over the coming decade.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research", "fields": ["market.sizeRange", "structureFacts"] },
+      { "point": "**AS9100/NADCAP certification is the real gate**, and Recaero India already clears it — the harder question is whether that clearance is being used beyond the group.", "evidence": "AS9100 certification functions as a de facto requirement for OEM approved-vendor-list status; Recaero India holds it independently of its parent relationship, meaning the qualification itself could support external customers too.", "tier": "segment", "epistemic": "fact", "source": "metaltek.com", "fields": ["customerValue"] },
+      { "point": "The closest listed peer shows **what a genuinely externally-diversified version of this business looks like.**", "evidence": "Azad Engineering posts ₹590 Cr revenue (+30% YoY) with 36.9% EBITDA margin, supplying GE, Honeywell, Rolls-Royce, Safran and Siemens as named external customers, plus new contracts with Mitsubishi Heavy Industries and Baker Hughes — a materially more diversified customer base than Recaero India's current parent-plus-Safran concentration.", "tier": "segment", "epistemic": "fact", "source": "business-standard.com", "fields": ["peers[0]"] }
+    ],
+    "reflect": { "text": "A genuinely certified, well-equipped precision-machining operation whose customer base is still mostly its own French parent group. The certification is real and portable — the question is whether the company will use it to diversify beyond the family.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, soic.in (shared aerospace-precision-machined-components segment file). Peer data: Azad Engineering (a materially more externally-diversified comparable)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Expanding export activity to external global buyers beyond Recaero SA", "body": "The HVT sheet's own gap research names this directly: current export activity is concentrated on the parent group (Recaero France) and Safran, with clear stated potential to expand to external global buyers beyond the family group — the AS9100D/Airbus-approved certification already exists to support that expansion.", "source": "HVT gap research (Volza trade data on Recaero SA).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Recaero India's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Pursue one external OEM RFQ using existing AS9100D/Airbus credentials", "body": "Use the already-earned AS9100D and Airbus Approved Supplier status to respond to one external OEM's RFQ (outside the Recaero/Safran relationship) as a test case, measuring how much of the qualification burden the existing certifications actually remove.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an aerospace precision-machined-components manufacturer in this segment — a directory-depth pass, not yet confirmed against Recaero India's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["manufacture precision-machined structural and engine components (aluminum, Inconel, titanium, 15-5PH alloys)", "offer sheet-metal assemblies and special-process capabilities (heat treatment, welding)", "cover Class 1-3 serial and short-cycle aerospace parts"], "stepsTier": "segment", "spottedAt": "cover Class 1-3 serial and short-cycle aerospace parts", "spotted": { "text": "Company facts (17+ CNC machines up to 9-axis, sheet-metal shop, OEM-qualified welding) confirm this step is real for Recaero India, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["maintain AS9100-certified quality management system", "hold NADCAP-accredited special processes", "operate multi-axis CNC machining, OEM-qualified welding"], "stepsTier": "segment", "spottedAt": "maintain AS9100-certified quality management system", "spotted": { "text": "Company facts (AS9100D + Airbus Approved Supplier status, TUV SUD-certified) confirm this step is real and independently verified for Recaero India, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate fleet of multi-axis CNC machines, dedicated sheet-metal shop, in-house heat-treatment line", "integrate into a global parent group's production network where applicable, for capacity backup/overflow"], "stepsTier": "segment", "spottedAt": "integrate into a global parent group's production network where applicable, for capacity backup/overflow", "spotted": { "text": "Company facts (integrated into Recaero SAS group's production network) confirm this step is real for Recaero India, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["reduce customer audit burden via AS9100D/NADCAP compliance", "maintain ITAR/EAR compliance where applicable", "support long design-life component qualification and traceability"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win long-term, multi-year supply agreements with aerospace tier-1/tier-2 primes", "fulfil platform-life-length orders", "expand via indigenous-program order flow (defense indigenization) beyond traditional commercial/export aerospace channel"], "stepsTier": "segment", "spottedAt": "win long-term, multi-year supply agreements with aerospace tier-1/tier-2 primes", "spotted": { "text": "Spotted at \"win long-term supply agreements\": current agreements are concentrated on Recaero France and Safran → expanding to external global buyers.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/aerospace-precision-machined-components.json) — no company-specific (A2/pursuit) operational intel was collected for Recaero India this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuinely certified, well-equipped aerospace machining shop, still mostly serving its own family. **The Airbus approval is real — using it beyond the parent group is the open question.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Recaero India or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from thecompanycheck.com and Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed — moat is third-party via an actual TUV SUD certificate) plus recaero.fr and aviationspaceindia.com; market data from Grand View Research and soic.in; peer figures from business-standard.com (Azad Engineering). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["thecompanycheck.com", "Tofler", "recaero.fr", "aviationspaceindia.com", "Grand View Research", "soic.in", "business-standard.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics on parent-group vs. external work, and real prospects for winning non-Recaero-group customers — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Kesowa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#4a3a0e; --field-deep:#332708; --leaf:#c9922e; --sprout:#f0c368;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(51,39,8,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .flag{background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.3); border-left:3px solid var(--soil); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .flag b{color:var(--soil);}
+  .confirm{background:rgba(201,146,46,.12); border:1px solid rgba(201,146,46,.35); border-left:3px solid var(--leaf); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .confirm b{color:var(--field);}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(201,146,46,.08);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+  .generictag{display:inline-block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.1); border:1px solid rgba(138,90,43,.3); border-radius:3px; padding:2px 6px; margin-left:8px;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  .verifybanner{background:#e4f2d9; color:#2f4a1c; font-family:"Spline Sans Mono",monospace; font-size:11.5px; letter-spacing:.03em; text-align:center; padding:9px 16px; border-bottom:2px solid #7fae4f;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <div class="verifybanner">meta.verified: true — sources checked against Zauba Corp/Tofler/IndiaFilings/The Company Check and direct company research</div>
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Kesowa: a 15-person Kolkata drone-data startup with a real Coal India project on its record — and a revenue line that just fell by nearly 40%.</h1>
+    <p class="subhead">A DPIIT-recognized SaaS layer over drone-captured imagery, built by two of its three original founders after the third stepped away at incorporation — with two independently confirmed government clients and one specific, named coal-mine safety survey.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">2019 (LLP) → 2020 (Pvt Ltd) · Kolkata</p></div>
+    <div class="snap"><p class="snap-label">Revenue</p><p class="snap-value">₹46.72 L · FY25 (-39% YoY)</p></div>
+    <div class="snap"><p class="snap-label">Employees</p><p class="snap-value">~14-16</p></div>
+    <div class="snap"><p class="snap-label">Funding</p><p class="snap-value">Sardar Patel Tech. Business Incubator (terms undisclosed)</p></div>
+    <div class="snap"><p class="snap-label">Confirmed clients</p><p class="snap-value">Kolkata Municipal Corp, WB Pollution Control Board, Eastern Coalfields (Coal India)</p></div>
+    <div class="snap"><p class="snap-label">Business model</p><p class="snap-value">Drone-data SaaS — not a drone manufacturer</p></div>
+  </section>
+
+  <div class="body">
+
+    <!-- PART 1 -->
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A real but very small operation, with one substantiated flagship project and a steep recent revenue drop</h2>
+      <p class="prose">Kesowa began as <b>Kesowa Infinite Ventures LLP</b> (LLPIN AAP-9584), founded <b>17 July 2019</b> in Kolkata by three co-founders — <b>Prayush Poddar</b> (CEO & CMO), <b>Vrint Poddar</b> (CTO), and <b>Vinayak Malhotra</b>. That LLP converted to the current entity, <b>Kesowa Infinite Ventures Private Limited</b> (CIN U31906WB2020PTC240808), on <b>24 October 2020</b>. Vinayak Malhotra does not appear as a director of the successor company, and his official director record (DIN 08512755) now shows only an unrelated current directorship — consistent with him stepping back around the conversion rather than continuing with the business.</p>
+      <p class="prose">Revenue was <b>₹46.72 lakh in FY2025, down 39% year-on-year</b> — a steep drop, not a minor softening. No cause was independently confirmed despite a direct search; this is a first-party question (e.g. whether a specific government project completed without a replacement contract yet lined up) that only the founders can really answer. The company runs on a very small base: ~14-16 employees, ₹5 lakh paid-up capital, recognized as a DPIIT (Startup India) startup. It has drawn investment from the <b>Sardar Patel Technology Business Incubator</b> (a Mumbai-based accelerator with 89 portfolio investments), though the specific amount and date weren't independently findable.</p>
+      <p class="prose">Kesowa's actual business is a <b>drone-data SaaS/analytics layer, not drone manufacturing</b> — MCA classifies its activity as "IT consulting and support services." Its two main products are the <b>Drone Call Center</b> (an on-demand aerial-intelligence platform, claiming "20x higher resolution" imagery) and <b>ARU Skynet/ARU Server</b> (drone-data management software with AI features including a Tree Count AI model and a Visual Pollution Index). These technical claims are self-published, with no independent benchmark or patent filing found to substantiate them. Whether Kesowa itself operates/pilots drones, or works entirely through third-party pilots processing imagery through its software, was not established despite a direct search.</p>
+      <div class="confirm"><b>The most credible evidence in this profile is a specific, named government/PSU project.</b> Kesowa completed a drone survey for Eastern Coalfields Limited (ECL), a real Coal India subsidiary, assessing haul-road and slope safety at its open-cast mine in Kalipahari, West Bengal, after the site had experienced heavy rain — producing a 3D model in place of a slower, more dangerous manual survey. That level of specific, checkable detail (named subsidiary, named location, a specific triggering event) is meaningfully stronger than a bare client-logo claim, even though it's still Kesowa's own published case study rather than independent press. Separately, an independent press source corroborates real project work with Kolkata Municipal Corporation and the West Bengal Pollution Control Board specifically. The remaining nine names on Kesowa's client list (including NKDA, Maharashtra Labour Welfare Board, Tamil Nadu, Nagpur Municipal Corporation, CESC, and others) are self-claimed only.</div>
+    </section>
+
+    <!-- PART 2 (LOCKED) -->
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">A fast-growing, policy-supported market — dominated in the public narrative by hardware makers Kesowa isn't one of</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">India's drone market is <b>growing at a healthy pace, with real government policy behind it.</b></p><p class="ev">$1.32 billion (2025) heading to $2.73 billion by 2034, an 8.45% CAGR (one source; a second puts 2024 at $1.58B — broadly consistent magnitude). A proposed PLI 2.0 scheme (~₹1,000 crore) targets 30% local drone production, on top of an existing ₹120 crore PLI allocation.</p></li>
+        <li class="insight"><p class="point">But the market's loudest names are <b>playing a different game entirely.</b></p><p class="ev">ideaForge, Garuda Aerospace, and Asteria Aerospace — the most-cited players — are drone HARDWARE manufacturers (ideaForge alone won ~₹100 crore in additional defense procurement in a single month, Nov 2025). Kesowa doesn't build drones; it builds software that analyzes what drones capture. These aren't real competitors so much as a different business entirely wearing the same industry label.</p></li>
+        <li class="insight"><p class="point">The closer comparison is a company most market write-ups don't lead with.</p><p class="ev">Skylark Drones — a drone-data-and-analytics services company, not a hardware maker — is the more meaningful peer for Kesowa's actual business model, even though it isn't independently sized here.</p></li>
+        <li class="insight"><p class="point">Government and PSU procurement is a <b>real, if narrow, demand channel</b> — and it's the one Kesowa has actually broken into.</p><p class="ev">Municipal corporations, pollution control boards, and coal-mining PSUs represent a recurring, tender-driven demand source distinct from the defense/consumer segments the bigger hardware names chase.</p></li>
+      </ul>
+      <p class="reflect">Kesowa is a genuinely tiny player — 14-16 people, under ₹50 lakh in revenue — inside a market whose public narrative is dominated by much larger hardware companies it doesn't actually compete with. Its real foothold is narrower and more specific: a small number of real government and PSU relationships, won project by project, in a market segment (drone-data services, not drone manufacturing) that gets less attention than the hardware story but is arguably the more honest description of what Kesowa actually does.</p>
+      <p class="src">Market data: IMARC Group, Custom Market Insights, Nexdigm, MarketsandMarkets. Peer research: company/press sources on Skylark Drones, ideaForge, Garuda Aerospace, Asteria Aerospace.</p>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">Four places worth a closer look, each built on something Kesowa already has or a gap already visible in its own numbers.</p>
+      <div class="opp"><p class="tag">Margin</p><h4>Diagnose the 39% revenue drop directly</h4><p>A drop this steep isn't self-explanatory. Pinning down whether a completed government project simply hasn't been replaced yet, or whether something more structural is at play, is the single most urgent open question here.</p><p class="oppsrc">The Company Check (FY25 revenue and YoY change).</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Turn the ECL project into independently verifiable proof</h4><p>The Eastern Coalfields case study is specific and credible, but it's still self-published. A named testimonial, a joint press mention, or an ECL/Coal India acknowledgment would convert a strong internal case study into external proof the next government tender committee can independently check.</p><p class="oppsrc">Kesowa's own ECL case study; SiliconIndia.</p></div>
+      <div class="opp"><p class="tag">Margin</p><h4>Substantiate the technical claims</h4><p>"20x higher resolution" and the Tree Count AI / Visual Pollution Index models are currently marketing language with no independent benchmark or patent behind them. Even a basic published accuracy metric, or a first patent filing, would give these claims real weight in a competitive tender.</p><p class="oppsrc">direct research pass (no patent/benchmark found).</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Clarify and formalize the drone-operations model</h4><p>Whether Kesowa flies its own drones or works through partner pilots wasn't established here, and it's not a small detail — it changes the pitch, the regulatory footprint (DGCA relevance), and how scalable the business actually is. Settling this internally, then stating it plainly to clients, removes an ambiguity a careful government buyer would eventually ask about anyway.</p><p class="oppsrc">direct research pass (unresolved).</p></div>
+    </section>
+
+    <!-- PART 4 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only Kesowa's own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Map FY25 revenue against the project calendar</h5><p>Lay FY24 and FY25 revenue against a timeline of which government/PSU projects started and ended in each period — this alone would likely show whether the decline is a timing gap or something else.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Request one written reference from ECL/Coal India</h5><p>A single short, quotable reference or letter of appreciation from the Eastern Coalfields project would upgrade the strongest case study in the portfolio from self-published to independently attributable.</p></div>
+        <div class="hvt"><p class="tag">Margin</p><h5>Publish one accuracy metric for the Tree Count AI model</h5><p>Pick the most mature AI feature and publish a simple, honest accuracy comparison against manual counting on one real project — a concrete number beats a resolution-multiplier claim in a technical evaluation.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Write one clear paragraph on the operating model</h5><p>State plainly, in one place, whether Kesowa's own team flies the drones or partners with licensed operators — removing the ambiguity before a prospective government client has to ask.</p></div>
+      </div>
+    </section>
+
+    <!-- PART 5 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below is how a drone-data SaaS/services company generally operates, matched wherever Kesowa's own confirmed facts fit; unconfirmed steps are marked as the segment's generic scaffold.</p>
+        <div class="hrow">
+          <div class="hlabel">H5<span>Offers</span></div>
+          <div><p class="steps">identify buyer (government/PSU agency or corporate client) → scope the specific problem (e.g. mine haul-road safety after heavy rain) → <b>win via prior project credibility and price</b> → deliver via drone survey + ARU platform analytics</p><p class="hopp"><span class="k">Spotted at "prior project credibility"</span> the ECL case study is real and specific but still self-published, not independently attributable → turn the ECL project into independently verifiable proof.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H4<span>Capability</span></div>
+          <div><p class="steps">maintain the ARU Skynet software platform → develop AI models (Tree Count AI, Visual Pollution Index) → <b>coordinate drone flight operations (own team and/or partner pilots — unconfirmed)</b> → produce client deliverables</p><p class="hopp"><span class="k">Spotted at "unconfirmed"</span> this operating-model ambiguity is a real open question, not just a research gap → clarify and formalize the drone-operations model.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H3<span>Capacity</span></div>
+          <div><p class="steps">plan drone flights against project scope and site access → capture aerial imagery/data on-site → <b>process and upload data via the ARU platform</b> → deliver analyzed output to the client <span class="generictag">generic</span></p><p class="hopp"><span class="k">Spotted at "process and upload"</span> the AI models running here have no published accuracy figure → substantiate the technical claims.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H2<span>Customer experience</span></div>
+          <div><p class="steps">onboard client (government tender or direct engagement) → execute the survey/monitoring project → deliver analysis and support interpretation → <b>pursue repeat/expanded engagements with the same agency</b></p><p class="hopp"><span class="k">Spotted at "repeat engagements"</span> FY25's steep revenue drop suggests this repeat/expansion motion isn't currently reliable → diagnose the 39% revenue drop directly.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H1<span>Orders</span></div>
+          <div><p class="steps">demand arises from a specific government/PSU need → project scoped and won (often via tender) → fulfil via drone survey + platform analytics → <b>recurring/repeat engagement if the relationship holds</b> <span class="generictag">generic</span></p><p class="hopp"><span class="k">Spotted at "if the relationship holds"</span> the same tension as H2 — the FY25 revenue decline likely traces to a gap right here → diagnose the 39% revenue drop directly.</p></div>
+        </div>
+        <p class="hsrc">Steps: generic drone-data-services value chain, matched against Kesowa's own confirmed facts where available (MCA/Zauba Corp records, SiliconIndia, company case study); unconfirmed steps marked generic.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>Kesowa's realest asset isn't its software feature list — it's a small number of genuine, specific government and PSU relationships, including a documented coal-mine safety survey most companies its size would never win. <span class="hi">The 39% revenue drop is the number that matters most right now</span>, and it isn't explained by anything public. Everything else here — the AI-model claims, the founding-team reshuffle, the funding — is smaller than that one open question.</p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Kesowa or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Identity from Zauba Corp, Tofler, and IndiaFilings (including LLP and DIN records); financials from The Company Check; client relationships from SiliconIndia (independent press) and Kesowa's own published case study; market data from IMARC Group, Custom Market Insights, and Nexdigm. Opportunities are DeepThought's reading. Two items (cause of the FY25 revenue decline; incubator-investment terms) were specifically searched for and confirmed not publicly findable — flagged as needing a direct conversation, not asserted or guessed.<br>
+    What an outside profile cannot see — the specific cause of the FY25 revenue decline, the true operating model behind drone flight execution, and the exact terms of the incubator investment — is what a closer engagement establishes.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

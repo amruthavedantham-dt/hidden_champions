@@ -1,0 +1,39 @@
+{
+  "segmentName": "Woven, Knitted & Non-Woven Interlinings (garment construction support fabric)",
+  "market": {
+    "worldSizeUSD_B_range": "Global garment interlining market: $3.65B (2025) to $4.67B by 2030 (5.0-5.3%/yr).",
+    "cagrPctRange": [5.0, 5.3],
+    "exportGeographies": ["not confirmed current for companies in this segment — general note: interlining demand is tied to India's own garment-export corridors (US/EU/UAE buyers of Indian-made apparel) since interlining is typically an internal input, not a directly-exported finished good"],
+    "globalCompetitors": ["Freudenberg (global market leader, 150+ locations)", "Chargeur", "QST", "Kufner", "Veratex", "Edmund Bell", "Block Bindings", "H&V", "NH Textil (Germany)", "Wendler (Germany)", "Evans Textile"],
+    "domesticSlice": "India's 'shirts' sub-segment of the interlining market is estimated at ~$0.90B, ~20% share of the global category, growing ~6.8%/yr — driven by India's shirt-manufacturing/export base and cost-effective TPV interlining adoption. Asia-Pacific is the largest and fastest-growing region for interlinings generally, led by China, India and Bangladesh's garment-manufacturing base."
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's garment-export corridors (principally serving US/EU/UAE apparel buyers) are the primary structural demand driver, since interlining is an internal construction input, not a standalone export product"
+  ],
+  "adoptionStructure": {
+    "note": "Recurring bulk/contract orders tied to seasonal fashion-buying cycles and the underlying apparel-export order book — not an independent repurchase-rate category"
+  },
+  "peers": [
+    { "name": "Bindal Cotex Pvt. Ltd.", "note": "India fusible-interlining maker since 1991/1993, Delhi; 21 employees (FY ending Mar 2024); ISO 9001:2000 (DNV Norway) certified; capacity 500,000+ m/month", "source": "Tracxn; btx.co.in" }
+  ],
+  "customerValue": {
+    "drivers": ["technical consultancy/testing support bundled with product", "sampling turnaround speed", "price-performance positioning versus European incumbents (Freudenberg et al.) for mid-to-high-end Indian garment exporters"],
+    "strongestPredictor": "not established from available research",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer woven, knitted, and non-woven interlining fabrics (fusible and sew-in)", "differentiate by GSM, stretch behavior, and certifications (Oeko-Tex/GRS)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run in-house weaving/knitting/coating lines", "develop application-specific formulations (collar/cuff, blazer canvas, stretch fabrics)", "maintain testing labs for bonding-strength/shrinkage/wash-durability", "hold certification compliance (Oeko-Tex, GRS, buying-house approvals)"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate installed production throughput", "maintain ready-stock inventory and multi-city warehousing to meet fast-fashion lead times"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["provide technical consultancy/testing support bundled with product", "deliver fast sampling turnaround", "compete on price-performance vs. European incumbents"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["receive recurring bulk/contract orders from garment manufacturers and export houses", "fulfil against seasonal fashion-buying cycles", "reorder tied to underlying apparel-export order books"] }
+  ],
+  "sources": [
+    "https://www.researchandmarkets.com/reports/6035193/garment-interlining-market-report",
+    "https://www.giiresearch.com/report/tbrc1931342-garment-interlining-global-market-report.html",
+    "https://www.businessresearchinsights.com/market-reports/interlinings-and-linings-market-100843",
+    "https://tracxn.com/d/companies/bindal-cotex/"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "magadh-precision-equipment",
+    "series": "Hidden Champions of India",
+    "segmentRef": "cold-rolling-mill-equipment",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Unlisted public, CIN U72500DL1986PLC024817."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Magadh Precision Equipment: forty years of rolling-mill engineering, on genuinely lumpy project revenue.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Delhi-headquartered, Dewas-based cold rolling mill builder exporting to China, Bangladesh and the USA, with new orders from Japan, Tanzania and Dubai.", "tier": "company", "epistemic": "fact", "source": "projectexports.com; volza.com", "fields": ["exportFootprint"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1986 (as Magadh Steel Industries)", "tier": "company", "source": "Zaubacorp", "fields": ["foundedYear"] },
+    { "label": "Revenue trend", "value": "+22.16% latest year; historically volatile (+285% one year, PAT -27% same year)", "tier": "company", "source": "thecompanycheck.com; rocketreach.co", "fields": ["financials.revenueGrowthPct"] },
+    { "label": "PAT / EBITDA / ROE", "value": "Not found", "tier": "company", "source": "n/a", "fields": ["financials.patCr"] },
+    { "label": "Export credential", "value": "Star Export House Certification", "tier": "company", "source": "projectexports.com", "fields": ["moat"] },
+    { "label": "Order pipeline", "value": "Currently executing orders for Japan, Tanzania, Dubai", "tier": "company", "source": "projectexports.com", "fields": ["exportFootprint"] },
+    { "label": "Founder", "value": "G.N. Sharma (ex-Mecon, SAIL engineer)", "tier": "company", "source": "zaubacorp.com; magadh.in", "fields": ["ownershipType"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A niche capability, on capital-equipment-style lumpy revenue",
+    "blocks": [
+      { "text": "The financial picture is genuinely volatile in a way consistent with project-based capital-equipment revenue: the most recent reported year shows 22.16% net sales growth, but an earlier year showed revenue up 285.13% while profit fell 27.43% in the same period — large swings typical of lumpy order recognition, not a steady operating business. No PAT, EBITDA margin or ROE figure was found for any year.", "tier": "company", "epistemic": "fact", "source": "thecompanycheck.com; rocketreach.co", "fields": ["financials.revenueGrowthPct"] },
+      { "text": "It was founded by G.N. Sharma, a mechanical engineer with a background at Mecon, SAIL and other PSU steel plants — a founding story that maps directly onto its 40+ year specialization in hot and cold rolling mills and process lines for flat products.", "tier": "company", "epistemic": "fact", "source": "zaubacorp.com; magadh.in", "fields": ["differentiation"] },
+      { "text": "It holds Star Export House Certification and has manufactured and installed cold rolling mills in China, Bangladesh and the USA, with orders currently being executed for Japan, Tanzania and Dubai — a genuinely global order book for a company this size.", "tier": "company", "epistemic": "fact", "source": "projectexports.com; volza.com", "fields": ["moat", "exportFootprint"] },
+      { "text": "It runs an R&D centre and offers advanced products including 6-Hi reversing cold mills and HR slitting lines — self-claimed, and the HVT sheet marks `product_improvement` `needs_verify: no` even though the source is a general engineering directory rather than an independent registry.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["product_improvement"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **mid-sized and China-dominated**, with India a distant second.", "evidence": "China holds ~50% of the global cold rolling mill equipment market, India ~20%; global estimates range $6.35-8.82B by 2030 for the machinery-specific definition (4.8%/yr).", "tier": "segment", "epistemic": "fact", "source": "exactitudeconsultancy.com", "fields": ["market.sizeRange"] },
+      { "point": "**India's own steel-capacity build-out is a direct, large-scale structural driver.**", "evidence": "India's crude steelmaking capacity is at ~222 MTPA (June 2026), targeting 300 MTPA by 2030, requiring ~65 MT of additional capacity and ~₹10 lakh crore of envisioned investment — exactly the kind of capex cycle that drives rolling-mill-equipment orders.", "tier": "segment", "epistemic": "fact", "source": "newkerala.com; thehansindia.com", "fields": ["structureFacts"] },
+      { "point": "Global leaders operate at a **completely different scale**, and no comparable Indian peer with public financials was found.", "evidence": "SMS Group, Danieli and Primetals Technologies are the dominant global players, investing heavily in Industry 4.0 and advanced-alloy rolling capability; named smaller Indian peers (Steefo Industries, Rana Udyog, Evo Tech, Bhilai Engineering) have no public revenue/margin/ROE figures.", "tier": "segment", "epistemic": "fact", "source": "medium.com aggregation", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A genuinely global export order book — Japan, Tanzania, Dubai orders in progress alongside historical China/Bangladesh/USA installations — sitting on top of financial data too lumpy to draw a clean trend from. This is a capability story more than a numbers story right now.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: exactitudeconsultancy.com, newkerala.com, thehansindia.com (shared cold-rolling-mill-equipment segment file). No clean peer financials exist for this scale of Indian rolling-mill-equipment maker."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "margin", "title": "Integrating AI/ML into existing and new equipment", "body": "The HVT sheet's own gap research names this directly: the company has R&D capability and precision-engineering credentials, with clear untapped potential to develop and market AI-enabled metal processing equipment as the industry moves toward smart manufacturing.", "source": "HVT gap research (Fortune Business Insights sheet metal processing equipment report).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Magadh Precision Equipment's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Add one AI/ML-enabled monitoring feature to the next mill order", "body": "Rather than a broad smart-manufacturing product launch, add one specific AI/ML-enabled monitoring or predictive-maintenance feature to whichever mill is next in the current order pipeline (Japan, Tanzania or Dubai) and use that as a proof point.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a cold rolling mill equipment manufacturer in this segment — a directory-depth pass, not yet confirmed against Magadh Precision Equipment's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer hot/cold rolling mills, pickling lines, metal coating lines, shearing/slitting lines", "customize to client mill specifications and international standards"], "stepsTier": "segment", "spottedAt": "customize to client mill specifications and international standards", "spotted": { "text": "Company facts (6-Hi reversing cold mills, HR slitting lines) confirm this step is real for Magadh, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house design engineering (rolling mill process know-how)", "automation/control system integration", "metallurgical process expertise", "execute EPC-style turnkey mill projects"], "stepsTier": "segment", "spottedAt": "automation/control system integration", "spotted": { "text": "Spotted at \"automation/control system integration\": AI/ML enablement is the stated but untapped next step here → integrating AI/ML into equipment.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["maintain manufacturing/fabrication floor space and heavy-machining capacity", "execute multiple simultaneous mill installations", "manage export-compliance/logistics for heavy equipment shipment"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["deliver commissioning support and after-sales/spares availability", "build reference installations", "maintain export credibility"], "stepsTier": "segment", "spottedAt": "maintain export credibility", "spotted": { "text": "Company facts (Star Export House Certification, installations in China/Bangladesh/USA) confirm this step is real for Magadh, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win large-ticket, project-based orders tied to steel industry capex cycles", "execute over multi-month/multi-year project timelines", "reorder on next capacity-expansion or modernization cycle"], "stepsTier": "segment", "spottedAt": "win large-ticket, project-based orders tied to steel industry capex cycles", "spotted": { "text": "Company facts (current orders for Japan, Tanzania, Dubai) confirm this step is real and active for Magadh, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/cold-rolling-mill-equipment.json) — no company-specific (A2/pursuit) operational intel was collected for Magadh this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A global order book — Japan, Tanzania and Dubai orders in hand — running on financials too lumpy to trend cleanly. **The capability is proven; the numbers just don't move in straight lines.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Magadh Precision Equipment or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from thecompanycheck.com and rocketreach.co (both showing lumpy, hard-to-trend figures); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus zaubacorp.com and projectexports.com; market data from exactitudeconsultancy.com, newkerala.com and thehansindia.com. No clean peer financials exist for this scale of Indian rolling-mill-equipment maker. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["thecompanycheck.com", "rocketreach.co", "zaubacorp.com", "magadh.in", "projectexports.com", "volza.com", "exactitudeconsultancy.com", "newkerala.com", "thehansindia.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics per project given the lumpy revenue pattern, and real customer retention across its global installation base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "segmentName": "Precision Forged & Machined Automotive/Off-Highway Components",
+  "market": {
+    "worldSizeUSD_B_range": "Global precision machining market: $123.54B (2025) to $228.75B by 2033 (8.1%/yr). Global metal forging market: $115.10B (2025) to $176.52B by 2032 (6.3%/yr). India forging market: $5.21B (2024) to $10.17B by 2033 (7.71%/yr, 2025-2033) per one IMARC estimate, or a narrower $3.36B (2024) to $6.01B by 2033 (6.18%/yr) per another IMARC scope.",
+    "cagrPctRange": [6.18, 8.1],
+    "exportGeographies": ["USA", "Germany", "UK", "Southeast Asia (via a US warehouse model for same-day delivery)"],
+    "globalCompetitors": [],
+    "domesticSlice": "Asia Pacific held 40.7% share of global precision machining in 2025. Sansera Engineering and Craftsman Automation are the closer, much larger Indian listed peers, both diversifying into aerospace/defence and semiconductor-adjacent components."
+  },
+  "subSegments": ["three-point linkage/agricultural components", "axle parts", "PTO drive shafts", "off-highway/mining/construction parts"],
+  "adjacentMarkets": ["precision-machined-components-assemblies"],
+  "structureFacts": [
+    "Auto-component makers (Sansera Engineering, Craftsman Automation) are pivoting into aerospace & defence and data-center/semiconductor-adjacent components to diversify away from automotive cyclicality",
+    "India's forging industry is increasingly export-oriented given lower production costs relative to Western OEM specs",
+    "IATF 16949 (automotive) and AS9100 (aerospace) act as market-access certifications gating OEM qualification"
+  ],
+  "adoptionStructure": {
+    "note": "Zero-defect/tight-tolerance quality assurance, full traceability, IATF/ISO compliance, in-house vertical integration (forging + machining + heat treatment + surface finishing + assembly + QA), logistics reliability, and total landed cost advantage vs. domestic Western manufacturing drive OEM vendor selection."
+  },
+  "peers": [
+    { "name": "Sansera Engineering (listed)", "revenueUSD_M_TTM": 354, "ebitdaMarginPct": 17.2, "note": "management targets '20-20-20' (20% growth/20% EBITDA margin/20% ROCE); competitors named: Akar Auto Industries, Kranti Industries, Balu Forge", "source": "aggregated Screener/PitchBook-sourced search" },
+    { "name": "Craftsman Automation (listed)", "note": "precision machining for powertrain components, aluminium die casting, sand casting; flagged by Goldman Sachs for potential upside on data-center/semiconductor tailwinds; detailed revenue/margin not retrieved this pass", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["zero-defect/tight-tolerance quality assurance", "full traceability", "IATF/ISO compliance", "in-house vertical integration", "logistics reliability (e.g. overseas warehousing for JIT delivery)", "total landed cost advantage vs. Western manufacturing"],
+    "strongestPredictor": "zero-defect quality assurance combined with in-house vertical integration",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer finished/machined forged components (linkage parts, axle parts, PTO drive shafts, off-highway parts)", "market to global OEM tier-1/tier-2 buyers"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["respond to quoting/RFQs against OEM drawings and specs", "manage sample/PPAP approval cycles"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["pass IATF 16949/ISO vendor-qualification audits", "run forging die design, heat-treatment scheduling, machining line allocation"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-term supply contracts/blanket POs with scheduled release quantities", "operate export logistics (e.g. overseas warehousing) to meet JIT delivery windows"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil multi-year OEM supply contracts", "win new orders via vendor qualification and trial-order cycles"] }
+  ],
+  "sources": [
+    "https://www.grandviewresearch.com/industry-analysis/precision-machining-market-report",
+    "https://www.maximizemarketresearch.com/market-report/global-metal-forging-market/65114/",
+    "https://www.imarcgroup.com/india-forging-market",
+    "https://www.imarcgroup.com/india-metal-forging-market"
+  ]
+}

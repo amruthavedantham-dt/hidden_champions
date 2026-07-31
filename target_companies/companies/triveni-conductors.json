@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "triveni-conductors",
+    "series": "Hidden Champions of India",
+    "segmentRef": "copper-winding-wires",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Unlisted public, CIN U31300MP1981PLC001744, incorporated 25 Dec 1981 (Dewas, Madhya Pradesh)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Triveni Conductors: a 44-year copper-wire maker growing fast, confirmed to lack a real R&D lab.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A 2023 performance-improving wire launch shows real product development happens — but the HVT sheet's own gap finding (no dedicated R&D/innovation lab) held up under independent verification, not just a QC testing setup.", "tier": "company", "epistemic": "fact", "source": "triveniconductors.com; independent verification", "fields": ["product_improvement", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1981 (Dewas unit, confirmed by multiple sources)", "tier": "company", "source": "ZaubaCorp; triveniconductors.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹200-300 Cr band FY24 (within Tofler's ₹100-500 Cr coarse bucket)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Growth", "value": "EBITDA +46.51% YoY, net worth +24.36% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.ebitdaGrowthPct"] },
+    { "label": "Employees (unreliable)", "value": "10 (single low-confidence source) — implausibly low for a multi-unit ₹200+ Cr manufacturer, likely reflects only registered/HO staff", "tier": "company", "source": "EasyLeadz", "fields": ["employees"] },
+    { "label": "R&D gap (confirmed)", "value": "Company's own site describes only in-line QC testing at Pithampur, no dedicated R&D/product-development lab or DSIR recognition found anywhere", "tier": "company", "source": "triveniconductors.com", "fields": ["gap_summary"] },
+    { "label": "2023 product launch", "value": "PE2-PP and HV4 submersible winding wire variants, claimed 20-25% motor performance improvement", "tier": "company", "source": "triveniconductors.com", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Real growth, a confirmed R&D gap, and one concrete 2023 product win",
+    "blocks": [
+      { "text": "Revenue sits in the ₹200-300 Cr band for FY24, with EBITDA growth of 46.51% YoY and net worth growth of 24.36% YoY — a genuinely growing business, though PAT, exact revenue, margins, ROE, and ROCE remain paywalled/not found.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.ebitdaGrowthPct"] },
+      { "text": "It is a leading manufacturer of submersible and super-enamelled copper winding wires in India, ISO 9001:2015 certified, with a capacity history tracing from 500 MT/year in 1981 to a current enamelled-wire capacity of ~2,500 MT/year and submersible-wire capacity of 1,200 MT (153,000 km/year, as of 2020).", "tier": "company", "epistemic": "fact", "source": "triveniconductors.com", "fields": ["differentiation", "moat"] },
+      { "text": "**The HVT sheet's own gap research names a real weakness — company lacks dedicated R&D — and this session's research confirms rather than contradicts it**: the company's website describes only an 'updated testing lab' for continuous quality checks at Pithampur, which is in-line QC testing, not a formal R&D/innovation facility. No mention of a dedicated R&D center or DSIR recognition was found anywhere. This is a genuine, confirmed capability gap, not just an unverified claim.", "tier": "company", "epistemic": "fact", "source": "triveniconductors.com (direct verification)", "fields": ["gap_summary"] },
+      { "text": "Despite the confirmed R&D-lab gap, the company did launch two new submersible winding wire variants in 2023 — PE2-PP and HV4 — claimed to improve submersible motor performance by 20-25% versus standard wire, a real, dated, concrete product development, even without a formally named R&D facility behind it. It also had trade-show presence at MCE Mostra 2024 (Milan) and ISK-SODEX 2023 (Istanbul), suggesting active European/Middle East market outreach, though no specific export countries or revenue percentage were found.", "tier": "company", "epistemic": "fact", "source": "triveniconductors.com", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market growing at a **real, if imprecisely-sized, ~9%/year clip**, with copper-price volatility as the dominant structural risk.", "evidence": "India winding wire market CAGR: ~9%/year (2026-2032) per 6Wresearch — no corroborated absolute market-size figure was found across vendors, but the growth rate itself has vendor support.", "tier": "segment", "epistemic": "fact", "source": "6Wresearch", "fields": ["market.sizeRange"] },
+      { "point": "**A larger, listed peer (Salzer Electronics) shows the same copper-cost margin pressure**, confirming this is a sector-wide dynamic, not company-specific.", "evidence": "Salzer Electronics Ltd posted Q3 FY26 revenue of ₹424 Cr (+24% YoY), with its Wires & Cables segment (~39.5% of FY24 revenue mix) explicitly flagged for margin pressure from copper/silver input cost inflation (~200bps impact) — the same cost dynamic Triveni Conductors faces at smaller scale.", "tier": "segment", "epistemic": "fact", "source": "HDFC Securities note", "fields": ["peers"] },
+      { "point": "**Performance-differentiated products (like PE2-PP/HV4) are exactly how smaller players compete against copper-price commoditization.**", "evidence": "In a segment where the dominant cost driver (LME copper pricing) is largely outside any manufacturer's control, product-level performance differentiation is one of the few remaining levers — Triveni's 2023 launch is a concrete example of this playing out.", "tier": "segment", "epistemic": "fact", "source": "aggregated industry summary", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A genuine 44-year manufacturer growing at a healthy clip, with an honestly-confirmed R&D gap (not a debunked overclaim, but a real, verified weakness the HVT's own gap research correctly identified) — and a concrete 2023 product launch that shows meaningful development still happens even without a dedicated lab. The employee-count figure found this session (10) is almost certainly wrong and shouldn't be used without a caveat.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: 6Wresearch (shared copper-winding-wires segment file, new this batch). Peer data: Salzer Electronics."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "capability-build", "title": "Establishing a dedicated testing center and R&D lab for the wire and cable industry", "body": "The HVT sheet's own gap research names this directly, and this session's research confirms the underlying weakness is real: the company currently has only in-line QC testing, not a formal R&D facility. A credible lever given the 2023 PE2-PP/HV4 launch already shows genuine product-development capability exists informally.", "source": "HVT gap research (dcmsme.gov.in Winding Wire report).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is confirming the real employee count before anything else.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Confirm actual total workforce directly, not just registered-office headcount", "body": "The only employee figure found (10, from a single directory source) is implausibly low for a multi-decade, multi-unit ₹200+ Cr manufacturer and likely reflects only registered/HO staff — a direct confirmation would materially improve confidence in any workforce-based analysis of this company.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a copper-winding-wire manufacturer in this segment — a directory-depth pass, not yet confirmed against Triveni Conductors' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer enamelled/submersible copper winding wire in various gauges", "offer performance-differentiated variants (e.g. motor-efficiency-improving insulation formulations)"], "stepsTier": "segment", "spottedAt": "offer performance-differentiated variants (e.g. motor-efficiency-improving insulation formulations)", "spotted": { "text": "Company facts (2023 PE2-PP and HV4 launch, 20-25% motor performance improvement claimed) confirm this step is real for Triveni Conductors — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run product engineering (insulation formulation, gauge/spec customization)", "run manufacturing (wire drawing, annealing, enamelling/insulation coating)", "run in-line QC testing"], "stepsTier": "segment", "spottedAt": "run in-line QC testing", "spotted": { "text": "Company facts (Pithampur plant QC testing lab, no dedicated R&D facility confirmed) — see p1_engine. This is the confirmed gap, not a strength.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate manufacturing units sized in MT/year capacity", "expand capacity incrementally tied to demand growth"], "stepsTier": "segment", "spottedAt": "operate manufacturing units sized in MT/year capacity", "spotted": { "text": "Company facts (~2,500 MT/year enamelled-wire capacity, 1,200 MT submersible-wire capacity) confirm this step is real for Triveni Conductors — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-standing B2B industrial supply relationships with motor/pump/transformer OEMs", "pursue trade-show-driven international market outreach"], "stepsTier": "segment", "spottedAt": "pursue trade-show-driven international market outreach", "spotted": { "text": "Company facts (MCE Mostra 2024 Milan, ISK-SODEX 2023 Istanbul trade-show presence) confirm this step is real for Triveni Conductors — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil repeat orders from motor manufacturers, pump OEMs, transformer makers", "procure copper cathode/rod as the dominant cost driver, exposed to LME pricing"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/copper-winding-wires.json) — no company-specific (A2/pursuit) operational intel was collected for Triveni Conductors this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuine 44-year manufacturer with real growth and a real 2023 product win — and a confirmed, not just alleged, gap in formal R&D infrastructure. **Establishing a real testing/R&D lab is a credible, well-supported next step, not a speculative one.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Triveni Conductors or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus triveniconductors.com; market data from 6Wresearch; peer data from HDFC Securities (Salzer Electronics). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "triveniconductors.com", "ZaubaCorp", "6Wresearch", "HDFC Securities", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true total workforce headcount, and export country/revenue-percentage detail — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

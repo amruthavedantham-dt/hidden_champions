@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "royal-engitech",
+    "series": "Hidden Champions of India",
+    "segmentRef": "precision-machined-components-assemblies",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U28999GJ2004PTC043674, incorporated 25 Feb 2004 (Ahmedabad, Gujarat); company's own marketing claims ~50 years/1965 founding — plausibly an earlier proprietorship later converted to Pvt Ltd, but unconfirmed."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Royal Engitech: a small precision-components maker with declining EBITDA and an unexplained 39-year founding gap.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "Real CNC/die-casting capability up to 3,000 kg — sitting on a sub-₹25 Cr revenue base with EBITDA and net profit both declining in the latest filing year.", "tier": "company", "epistemic": "fact", "source": "royalengitech.com; Tofler", "fields": ["differentiation", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "2004 (CIN incorporation, confirmed); company markets itself as ~50 years old (1965) — no document found bridging the two dates", "tier": "company", "source": "Tofler; ZaubaCorp vs. royalengitech.com", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹10-25 Cr band FY24, +1.35% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Growth (declining)", "value": "EBITDA -16.92% YoY, Net Profit -20.8% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.ebitdaGrowthPct"] },
+    { "label": "Capital", "value": "Authorized & paid-up capital ₹40 Lakh; outstanding charges ₹2.30 Cr (SBI loans)", "tier": "company", "source": "Falcon Ebiz; Tofler", "fields": ["financials.debtToEquity"] },
+    { "label": "Directors", "value": "4 directors, all with 22-year tenure (matching the 2004 incorporation, not the claimed 1965 founding)", "tier": "company", "source": "Tofler", "fields": ["foundedYear"] },
+    { "label": "Certification", "value": "ISO 9001:2015 (per company site; one aggregator snippet says 2008, likely outdated secondary source)", "tier": "company", "source": "royalengitech.com", "fields": ["moat"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Real capability, a small and currently softening financial base",
+    "blocks": [
+      { "text": "Revenue sits in the ₹10-25 Cr band for FY24, essentially flat (+1.35% YoY), while EBITDA (-16.92% YoY) and net profit (-20.8% YoY) both declined — a genuinely small company (₹40 Lakh paid-up capital) working through a soft year. Net worth grew 18.98% YoY even as profitability declined, and total assets grew 23.06% — suggesting capital investment or asset growth outpacing current-year earnings.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.ebitdaGrowthPct"] },
+      { "text": "It manufactures and exports high-tech precision engineered components and assemblies for diverse industries, with real, independently-described capability: CNC turned parts, aluminum gravity/pressure die casting up to 3,000 kg, cast iron/non-ferrous castings with machining, gears/timing pulleys up to 6m tooth capacity, and ground shafts.", "tier": "company", "epistemic": "fact", "source": "royalengitech.com", "fields": ["differentiation"] },
+      { "text": "It holds ISO 9001:2015 certification per its own website (the HVT sheet flags this `needs_verify: yes`, and one secondary aggregator snippet cites 2008 instead — the primary company source is treated as more authoritative here, but the discrepancy is noted).", "tier": "company", "epistemic": "fact", "source": "royalengitech.com", "fields": ["moat"] },
+      { "text": "The company's own marketing describes ~50 years of history (implying a 1965 founding), but the CIN's registered incorporation date is 25 Feb 2004 — and all four current directors show exactly 22-year tenure, matching 2004, not 1965. The most plausible explanation, consistent with a common Indian SME pattern, is an earlier unincorporated family business later formally converted to a Pvt Ltd company — but no document was found that confirms this bridge, so the gap remains genuinely unresolved.", "tier": "company", "epistemic": "fact", "source": "Tofler; ZaubaCorp vs. royalengitech.com", "fields": ["foundedYear"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market where **estimates vary substantially by scope**, but real precision-manufacturing demand exists.", "evidence": "India 'machine components' market: $228.80M (2024) to $334.50M by 2033 (3.90%/yr); a broader India precision-machining definition is cited at 8.1%/yr or a separate $8B estimate at 7.0%/yr — figures aren't directly reconcilable across vendor scope definitions.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "**Larger listed peers are pivoting to aerospace/defence** to escape automotive cyclicality — a structural trend Royal Engitech, at its current scale, isn't yet part of.", "evidence": "Craftsman Automation posted ₹5,046.57 Cr full-year revenue (+39.88% YoY); NRB Bearings, Sansera Engineering, and Craftsman are all named as diversifying into aerospace & defence — all vastly larger than Royal Engitech's sub-₹25 Cr scale, useful as directional benchmarks only.", "tier": "segment", "epistemic": "fact", "source": "MarketsMojo; Whalesbook", "fields": ["peers"] },
+      { "point": "**The tooling/fixture-development capability gap the HVT sheet names is real and specific**, not generic.", "evidence": "Royal Engitech's own site confirms in-house die-casting, gear-cutting, and shaft-grinding capability — exactly the kind of capability that could be sold as a distinct tooling/fixture-development service, per the HVT gap research, rather than only bundled into finished-component orders.", "tier": "segment", "epistemic": "fact", "source": "royalengitech.com", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A small, real precision manufacturer with genuine in-house capability (die-casting up to 3,000 kg, large-format gear cutting) — currently working through a soft year on both EBITDA and net profit. The unresolved founding-date gap is a minor identity wrinkle rather than a red flag, but worth a direct question if this company is engaged further.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group (shared precision-machined-components-assemblies segment file, new this batch). Peer data: Craftsman Automation, Sansera Engineering, Precision Camshafts (all much larger, directional only)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "product-expansion", "title": "Offering tooling and fixture development as a distinct, monetized service line", "body": "The HVT sheet's own gap research names this directly: Royal Engitech already has the capability to develop castings, forgings, high-precision machined components, tooling, and fixtures — but this isn't currently sold as a standalone offering. A credible near-term lever given the underlying capability is already confirmed in-house, not aspirational.", "source": "HVT gap research (royalengitech.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is understanding why EBITDA declined this year before pursuing new service lines.", "tier": "universal" },
+    "items": [
+      { "lever": "diagnosis", "title": "Diagnose the EBITDA/net-profit decline before launching a new service line", "body": "With EBITDA down 16.92% and net profit down 20.8% even as revenue held flat, understanding the cause (input costs, customer mix, one-off items) should precede investing in a new tooling/fixture-as-a-service offering — otherwise the new line risks launching into the same cost pressures affecting the core business.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a precision machined-components manufacturer in this segment — a directory-depth pass, not yet confirmed against Royal Engitech's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer CNC-turned parts, cast/forged components, gears, pulleys, shafts, sub-assemblies", "sell to OEMs across textile machinery, power transmission, pumps, valves, automotive, pharma equipment"], "stepsTier": "segment", "spottedAt": "offer CNC-turned parts, cast/forged components, gears, pulleys, shafts, sub-assemblies", "spotted": { "text": "Company facts (CNC turned parts, die-casting up to 3,000 kg, gears/timing pulleys up to 6m tooth capacity, ground shafts) confirm this step is real for Royal Engitech — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run CNC machining, casting (gravity/pressure die-casting), heat treatment", "run in-house tool & die making, assembly and QC/metrology"], "stepsTier": "segment", "spottedAt": "run in-house tool & die making, assembly and QC/metrology", "spotted": { "text": "Company facts (continuous investment in computerized technology and machinery) confirm this step is real for Royal Engitech — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate a machine-tool fleet (CNC lathes, die-casting presses) sized to OEM order volume", "maintain applications/program engineering per OEM customer"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-term customer contracts/approved-vendor status with OEMs", "handle export documentation/logistics for international customers"], "stepsTier": "segment", "spottedAt": "handle export documentation/logistics for international customers", "spotted": { "text": "Company facts (manufactures and exports precision engineered components) confirm this step is real for Royal Engitech — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win orders via OEM production ramp-ups and new-model tooling programs", "win orders via vendor-approval/RFQ cycles"], "stepsTier": "segment", "spottedAt": "win orders via vendor-approval/RFQ cycles", "spotted": { "text": "Spotted at 'vendor-approval/RFQ cycles': tooling/fixture development as a distinct service is the HVT's own named opportunity — see p3_opportunities.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/precision-machined-components-assemblies.json) — no company-specific (A2/pursuit) operational intel was collected for Royal Engitech this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A small, genuinely capable precision manufacturer working through a soft year on EBITDA and profit, with an unresolved 39-year gap in its own founding story. **Understanding the recent profit decline matters more than the founding-date mystery.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Royal Engitech or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler and Falcon Ebiz; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus royalengitech.com; market data from IMARC Group. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Falcon Ebiz", "royalengitech.com", "ZaubaCorp", "IMARC Group", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true story behind the 1965-vs-2004 founding gap, and the cause of this year's EBITDA/profit decline — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

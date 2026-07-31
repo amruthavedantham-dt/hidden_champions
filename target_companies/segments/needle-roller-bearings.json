@@ -1,0 +1,42 @@
+{
+  "segmentName": "Needle Roller Bearings",
+  "market": {
+    "worldSizeUSD_B_range": "Global needle roller bearings market: $5.27B (2025) to $6.81B by 2029 (6.6%/yr) per one estimate, vs. $8.636B (2025), 4.84%/yr (2026-2035) per another — vendor estimates disagree by ~60% on base size. India needle roller bearing market: $428M (2024), roughly flat YoY (described as having contracted modestly).",
+    "cagrPctRange": [4.84, 6.6],
+    "exportGeographies": ["not itemized — SNL Bearings states it exports to 'many countries across the globe' without specifics"],
+    "globalCompetitors": ["Schaeffler India", "Timken India", "SKF India", "NSK", "NBC Bearings (National Engineering Industries)"],
+    "domesticSlice": "Asia-Pacific holds ~45% of global share. NRB Bearings Ltd (India, listed, founded 1965) holds ~70% of India's organized needle roller bearing market as first mover, and owns 73.45% of SNL Bearings."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["precision-machined-components-assemblies"],
+  "structureFacts": [
+    "IATF 16949:2016 is the baseline quality certification required to supply automotive OEMs",
+    "EV transition is a structural risk/opportunity: needle roller bearings are heavily used in ICE transmissions; industry commentary suggests a pivot toward EV transmission/chassis applications to offset ICE-bearing demand decline",
+    "Aerospace & defence diversification is a broader industry trend among Indian auto-component/bearing makers (NRB, Sansera, Craftsman all cited pivoting this direction)"
+  ],
+  "adoptionStructure": {
+    "note": "OEM approved-vendor status (multi-year qualification cycles), IATF 16949 compliance, price competitiveness vs. imports, just-in-time delivery reliability, and increasingly EV-program-specific bearing designs drive purchasing."
+  },
+  "peers": [
+    { "name": "NRB Bearings Ltd", "note": "~70% share of India's organized needle roller bearing market; parent/promoter of SNL Bearings (73.45% ownership); reported an '18% revenue jump' with an aerospace pivot in recent commentary", "source": "Screener.in; Whalesbook" },
+    { "name": "Schaeffler India, Timken India, SKF India, NSK, NBC Bearings", "note": "named competitors; Schaeffler India trades at ~61x PE, Timken India ~50.8x PE vs. NRB/SNL at lower multiples, implying market views them as more auto-cyclical/lower-growth", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["OEM approved-vendor status via multi-year qualification", "IATF 16949 compliance", "price competitiveness vs. imports", "JIT delivery reliability", "EV-program-specific bearing design capability"],
+    "strongestPredictor": "OEM approved-vendor status combined with JIT delivery reliability",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer needle roller bearings (NRA/NRB/NRR variants)", "offer cages (small-end/big-end, KBK/KZK) and full-complement/cage-guided shells"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run precision grinding/heat treatment of rollers and races", "run cage stamping/forming", "design in-house special-purpose machines for low-cost automation"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a manufacturing plant with automotive-grade 100% inspection capability", "leverage scale/backing support from a larger parent company where applicable"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["run OEM account management/quality engineering (APQP/PPAP processes)", "maintain aftermarket/distribution sales relationships"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win orders via automotive OEM production schedules (JIT/long-term supply agreements)", "win orders via new vehicle-platform sourcing decisions shaped by EV transition"] }
+  ],
+  "sources": [
+    "https://www.screener.in/company/505827/",
+    "https://www.screener.in/company/NRBBEARING/consolidated/",
+    "https://www.whalesbook.com/news/English/industrial-goodsservices/NRB-Bearings-Powers-Up-with-18percent-Revenue-Jump-Eyes-Aerospace/699831c2057e346edab40495",
+    "https://snlbearings.in/"
+  ]
+}

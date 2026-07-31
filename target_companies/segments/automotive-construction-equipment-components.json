@@ -1,0 +1,40 @@
+{
+  "segmentName": "Automotive, Construction & Material-Handling Equipment Components",
+  "market": {
+    "worldSizeUSD_B_range": "India auto components market: $58.21B (2025) to $82.67B by 2034 — figures vary meaningfully by source/scope. India construction equipment market is highly source-dependent; earthmoving equipment holds ~56.62% share and is tied to India's ~$1.4T National Infrastructure Pipeline.",
+    "cagrPctRange": [],
+    "exportGeographies": ["Europe", "America (OEM exports; % of revenue not found)"],
+    "globalCompetitors": ["Kobelco", "Volvo", "Komatsu", "Caterpillar", "JCB", "Sany"],
+    "domesticSlice": "Bharat Forge (₹16,500 Cr FY25 revenue) is the closest large listed Indian peer by category but operates at roughly 18x the scale of a typical mid-tier multi-division components manufacturer in this space — not a close comparable. No true scale-comparable peer was found."
+  },
+  "subSegments": ["earthmoving/construction components", "material handling", "commercial vehicle components", "tractor/agri components", "concrete equipment components", "mining/material processing components"],
+  "adjacentMarkets": ["diesel-fuel-injection-parts", "lithium-ion-batteries"],
+  "structureFacts": [
+    "India's ~$1.4T National Infrastructure Pipeline is the primary structural demand driver for construction-equipment-linked component demand",
+    "Diversification across 5+ end-market divisions (earthmoving, material handling, commercial vehicles, agri, concrete, mining) reduces single-cycle exposure relative to a component supplier serving only one OEM category",
+    "Independent credit ratings (e.g. ICRA) are a meaningful, harder-to-fake signal of financial health in a segment where self-reported revenue figures vary widely across data aggregators"
+  ],
+  "adoptionStructure": {
+    "note": "IATF 16949 plus a broad ISO stack (9001/14001/45001/3834-2 welding-quality certification) is a baseline qualification requirement for supplying blue-chip global OEMs across earthmoving, commercial-vehicle, and agri equipment categories."
+  },
+  "peers": [
+    { "name": "Bharat Forge", "revenueCr_FY25": 16500, "note": "closest large listed Indian peer by category, ~18x scale of a typical mid-tier multi-division components manufacturer — not a close comparable", "source": "aggregated financial data" }
+  ],
+  "customerValue": {
+    "drivers": ["multi-division/multi-OEM diversification reducing single-cycle exposure", "certification stack (IATF 16949 + ISO 9001/14001/45001/3834-2) as a qualification gate", "independent credit rating as a trust signal to blue-chip global OEMs", "multi-plant geographic footprint for OEM proximity"],
+    "strongestPredictor": "certification-gated qualification combined with independent credit-rating validation",
+    "source": "surinauto.com; ICRA rating rationale; industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer fuel tanks, hydraulic tanks, booms, arms, frames, engine covers, and truck cabins/cowls", "offer FES, chassis components, truck decks, tippers, seating systems, and interiors", "serve earthmoving, construction, material handling, commercial vehicle, tractor/agri, concrete equipment, and mining industries"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["maintain IATF 16949 plus ISO 9001/14001/45001/3834-2 certification across multiple plants", "run R&D toward new component-line launches, supported by external funding", "maintain an independent credit rating (ICRA) as a financial-health signal"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate 10-12 plants across 7-8 Indian cities", "organize production across 5 business divisions by end-market"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["supply a large named blue-chip customer base spanning earthmoving, commercial-vehicle, and agri OEMs", "maintain multi-decade group heritage predating the current legal entity"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil OEM supply contracts predominantly in fuel/hydraulic tanks to construction equipment manufacturers", "pursue international market expansion (Southeast Asia, Middle East) beyond current export base"] }
+  ],
+  "sources": [
+    "https://www.preqin.com/data/profile/asset/surin-automotive-private-limited/625819",
+    "https://www.surinauto.com/quality/",
+    "aggregated market-size search across multiple vendor reports (auto components, construction equipment)"
+  ]
+}

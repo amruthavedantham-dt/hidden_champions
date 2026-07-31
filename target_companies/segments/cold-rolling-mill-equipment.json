@@ -1,0 +1,38 @@
+{
+  "segmentName": "Cold Rolling Mill Equipment (metal processing capital equipment)",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates vary by scope: $6.35B (2023) to $8.82B by 2030 (4.8%/yr) for the machinery-specific definition; a narrower estimate puts it at $1.47B (2023) to $2.09B by 2030 (5.1%/yr); the broader 'cold rolling mill market' (incl. finished product) ranges $6.5-16.5B depending on source.",
+    "cagrPctRange": [4.8, 5.6],
+    "exportGeographies": ["China", "Bangladesh", "USA", "Japan", "Tanzania", "Dubai (per Magadh Precision's own order/installation history)"],
+    "globalCompetitors": ["SMS Group", "Danieli", "Primetals Technologies — much larger, multinational, integrated plant-and-equipment suppliers, not directly scale-comparable to smaller Indian players"],
+    "domesticSlice": "China holds ~50% global share, India ~20%; Asia-Pacific is the fastest-growing region. India's crude steelmaking capacity is at ~222 MTPA (June 2026), targeting 300 MTPA by 2030 under the National Steel Policy — ~65 MT of additional capacity needed over the next five years, ~₹10 lakh crore of envisioned investment"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Major steel-industry capex (SAIL, Tata Steel, JSW Steel, JSPL, AMNS) is the direct demand driver — e.g. Tata Steel's ₹3,200 Cr scrap-based EAF green steel plant at Ludhiana",
+    "Global leaders are investing heavily in Industry 4.0, ultra-thin-gauge and advanced-alloy rolling capability, raising the technology bar even for smaller regional suppliers"
+  ],
+  "adoptionStructure": {
+    "note": "Long lead-time, large-ticket, project-based orders tied to steel industry capex cycles (new mill builds, capacity expansion, modernization/revamp) — inherently lumpy revenue recognition, not a repurchase-rate category"
+  },
+  "peers": [],
+  "customerValue": {
+    "drivers": ["track record of successful commissioning and after-sales/spares support", "reference installations (repeat business from steel mills)", "responsiveness during commissioning/ramp-up", "export credibility (Star Export House-type recognition)"],
+    "strongestPredictor": "not established from available research",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer hot/cold rolling mills, pickling lines, metal coating lines, shearing/slitting lines", "customize to client mill specifications and international standards"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["in-house design engineering (rolling mill process know-how)", "automation/control system integration", "metallurgical process expertise", "execute EPC-style turnkey mill projects"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["maintain manufacturing/fabrication floor space and heavy-machining capacity", "execute multiple simultaneous mill installations", "manage export-compliance/logistics for heavy equipment shipment"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["deliver commissioning support and after-sales/spares availability", "build reference installations", "maintain export credibility"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win large-ticket, project-based orders tied to steel industry capex cycles", "execute over multi-month/multi-year project timelines", "reorder on next capacity-expansion or modernization cycle"] }
+  ],
+  "sources": [
+    "https://exactitudeconsultancy.com/reports/35291/cold-rolling-mills-machine-market/",
+    "https://www.verifiedmarketreports.com/product/cold-rolling-mill-market/",
+    "https://www.newkerala.com/news/a/indias-steelmaking-capacity-reaches-222-mtpa-moves-closer-235.htm",
+    "https://www.thehansindia.com/business/india-pushes-steel-capacity-expansion-as-2030-target-enters-final-stretch-1034395"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "grace-bio-care",
+    "series": "Hidden Champions of India",
+    "segmentRef": "bio-pesticides-plant-growth-regulators",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private, CIN U99999GJ1999PTC037026."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Grace Bio Care: a Vadodara biopesticide maker whose profit just grew 159% in a year.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A family-run organic crop-input manufacturer with genuinely improving fundamentals, still on thin margins.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.patGrowthPct"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1999", "tier": "company", "source": "Zaubacorp (CIN)", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹50-75 Cr band · FY24 (+10.7% YoY)", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr.FY24"] },
+    { "label": "PAT growth", "value": "+159.33% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.patGrowthPct.FY24"] },
+    { "label": "Net margin / ROE", "value": "2.87% / 7.37%", "tier": "company", "source": "Tofler", "fields": ["financials.netMarginPct", "financials.roePct"] },
+    { "label": "EBITDA growth", "value": "+44.91% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.ebitdaGrowthPct"] },
+    { "label": "Leadership", "value": "Ramesh & Keyur Dalsania (27-yr and 15-yr director tenures)", "tier": "company", "source": "cleartax.in", "fields": ["ownershipType"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A capability the margin is starting to catch up to",
+    "blocks": [
+      { "text": "The trend is genuinely strong: revenue grew 10.7% to a ₹50-75 Cr band, but EBITDA grew 44.91% and PAT grew 159.33% — profit compounding far faster than the top line, even though net margin (2.87%) and ROE (7.37%) are both still modest in absolute terms. Net worth expanded 15.31% and debt-to-equity improved to -0.34.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.ebitdaGrowthPct", "financials.patGrowthPct", "financials.netMarginPct", "financials.roePct"] },
+      { "text": "It manufactures biodegradable fertilizers, insecticides and pesticides in both liquid and powder forms, with the HVT sheet citing organic-certified products among its offerings — self-claimed and flagged `needs_verify: yes`, sourced to a product listing rather than a certification body.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["moat"] },
+      { "text": "It runs an in-house R&D facility for crop-protection innovation, operating from a single facility in GIDC Estate, Manjusar, Savli, Vadodara, with roughly 66 employees.", "tier": "company", "epistemic": "fact", "source": "HVT row; indiamart.com", "fields": ["product_improvement"] },
+      { "text": "It's a genuinely long-running family business — directors Ramesh Thakarashibhai Dalsania and Keyur Rameshbhai Dalsania have 27-year and 15-year tenures respectively — with a product range spanning named lines like Bloomor-NB, Bio Dose Magnum, Gromax, Trichovin W.P. and Vertigra W.P.", "tier": "company", "epistemic": "fact", "source": "cleartax.in; HVT row", "fields": ["ownershipType"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **fast-growing, though estimates vary widely by methodology.**", "evidence": "India biopesticides: $242.16M (2025) to $381.23M by 2030 (9.5%/yr) on one estimate, with figures ranging as low as $32.7M (2022) to $68.6M (2030) on a narrower definition. India's PGR market grew at an extraordinary +21.9%/yr from 2013-2024, the highest globally, before moderating.", "tier": "segment", "epistemic": "fact", "source": "Mordor Intelligence; IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "**Government subsidy infrastructure is a direct structural tailwind** for exactly this category.", "evidence": "India's National Project on Organic Farming provides back-ended NABARD subsidies of up to 25-33% of outlay for biopesticide/biofertilizer production units — 56 biofertilizer units and 17 compost units have been established under the scheme to date.", "tier": "segment", "epistemic": "fact", "source": "nabard.org", "fields": ["structureFacts"] },
+      { "point": "A well-funded peer shows **what fast growth can look like in this exact category** — and Grace Bio Care's own growth rate isn't far off.", "evidence": "BioPrime AgriSolutions posted 153% one-year revenue CAGR after a $6M Series A round (Oct 2024) backed by government biotech incubators — Grace Bio Care's own 159% PAT growth, while a different metric, sits in a comparably fast-growth range without outside funding.", "tier": "segment", "epistemic": "fact", "source": "Tracxn; entrackr.com", "fields": ["peers[0]"] },
+      { "point": "The category also has **a real cautionary precedent worth knowing.**", "evidence": "Camson Bio Technologies, once India's first integrated agri-biotech company, is now defunct and under insolvency proceedings — a reminder that fast growth in this segment doesn't guarantee durability.", "tier": "segment", "epistemic": "fact", "source": "screener.in", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A family-run biopesticide maker whose profit is compounding far faster than its revenue, in a policy-subsidized category with both a well-funded growth story and a cautionary insolvency story as its nearest reference points. The trajectory looks like the former so far.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Mordor Intelligence, IMARC Group, nabard.org (shared bio-pesticides-plant-growth-regulators segment file). Peer data: Tracxn (BioPrime AgriSolutions), screener.in (Camson Bio Technologies)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place named in the company's own gap research.",
+    "items": [
+      { "lever": "margin", "title": "Turning in-house R&D into new product diversification", "body": "The HVT sheet's own gap research names this directly: the company has real R&D capability for crop-protection innovation, but the untapped potential is in expanding the product portfolio and market share beyond the current lineup.", "source": "HVT gap research (gracebiocare.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Grace Bio Care's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "margin", "title": "Identify which product line is driving the profit surge", "body": "Before broad product diversification, break down the 159% PAT growth by product line to see whether one or two SKUs are driving the improvement — and whether R&D investment should follow that signal rather than spread evenly across the portfolio.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a biopesticide/plant-growth-regulator manufacturer in this segment — a directory-depth pass, not yet confirmed against Grace Bio Care's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer bio-fertilizers, plant nutrients, wetting agents, biopesticides/bio-insecticides, plant growth regulators", "position on biodegradability/organic certification"], "stepsTier": "segment", "spottedAt": "position on biodegradability/organic certification", "spotted": { "text": "Company facts (Bloomor-NB, Bio Dose Magnum, Gromax, Trichovin W.P., Vertigra W.P. product lines) confirm this step is real for Grace Bio Care, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["manufacture biodegradable/organic-input formulations", "run in-house R&D for crop-protection innovation", "pursue organic/quality certification"], "stepsTier": "segment", "spottedAt": "run in-house R&D for crop-protection innovation", "spotted": { "text": "Spotted at \"in-house R&D\": this is the company's own stated diversification lever → turning R&D into new product diversification.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate manufacturing facility (liquid and powder forms)", "scale production against domestic and export demand"], "stepsTier": "segment", "spottedAt": "operate manufacturing facility (liquid and powder forms)", "spotted": { "text": "Company facts (single Vadodara GIDC facility, ~66 employees) confirm this step is real for Grace Bio Care, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["serve manufacturer-cum-exporter relationships across Indian Subcontinent and export markets", "engage subsidy-linked institutional buyers (NABARD-backed units) where applicable"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["distributor/direct farmer orders domestically", "export orders", "reorder tied to crop cycle and farming season"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/bio-pesticides-plant-growth-regulators.json) — no company-specific (A2/pursuit) operational intel was collected for Grace Bio Care this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Profit up 159% in a year, on a family business old enough to have a 27-year-tenured director. **The margin is still thin — but it's moving in exactly the right direction.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Grace Bio Care or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus cleartax.in and indiamart.com; market data from Mordor Intelligence, IMARC Group and nabard.org; peer figures from Tracxn (BioPrime AgriSolutions) and screener.in (Camson Bio Technologies). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "Zaubacorp", "cleartax.in", "indiamart.com", "Mordor Intelligence", "IMARC Group", "nabard.org", "Tracxn", "screener.in", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — which specific product line is driving the profit surge, and true customer retention across its export markets — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

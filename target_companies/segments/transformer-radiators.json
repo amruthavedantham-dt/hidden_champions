@@ -1,0 +1,37 @@
+{
+  "segmentName": "Transformer Radiators (cooling equipment for power/distribution transformers)",
+  "market": {
+    "worldSizeUSD_B_range": "Estimates diverge notably: $1.85B (2024) to $3.65B by 2033 (8.9%/yr) per one source; $2.8B (2025) to $4.7B by 2034 (5.9%/yr) per another. This is a genuinely niche sub-component category with poor data-source consistency — the broader transformer cooling device market (radiators, fans, oil pumps, heat exchangers) is estimated at 5-7%/yr (2026-2035) globally.",
+    "cagrPctRange": [5.0, 8.9],
+    "exportGeographies": ["Gulf/Middle East (per Tarang Engineering's own footprint)", "Dubai", "Indonesia", "Malaysia", "Oman", "Japan", "Australia", "Saudi Arabia"],
+    "globalCompetitors": ["ABB Ltd", "Siemens Energy", "CG Power and Industrial Solutions", "Hyundai Electric", "Jiangsu Huapeng Transformer", "Wilson Transformer Company — note these are primarily transformer OEMs, not radiator-specialist peers"],
+    "domesticSlice": "Asia-Pacific drives >50% of absolute value increase in the broader transformer cooling device market; Africa/Middle East shows the highest percentage growth (8-10%/yr) as utility infrastructure expands"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "Demand is structurally tied to the broader power-transformer/grid-expansion market (rural electrification, renewable grid integration, substation capacity additions), since radiators are an accessory/cooling component to transformer production, not a standalone demand driver",
+    "Rising electricity demand from data centers, EV charging networks, and urbanization is cited as an emerging driver of cooling-equipment demand generally"
+  ],
+  "adoptionStructure": {
+    "note": "Back-to-back/ancillary supply contracts driven by transformer OEMs' own order books — not an independent repurchase-rate category"
+  },
+  "peers": [],
+  "customerValue": {
+    "drivers": ["utility/PSU vendor approvals (PGCIL, RDSO, state electricity boards)", "OEM performance certificates", "on-time delivery tied to transformer production schedules"],
+    "strongestPredictor": "utility/PSU vendor-approval status, especially for high-voltage-class (e.g. 765kV) transformer programs",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer pressed-steel, hot-dip galvanized, stainless-steel, gooseneck/flanged/offset radiators", "size to voltage class (up to 765kV)"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["sheet-metal pressing, welding/fabrication", "hot-dip galvanizing", "design conforming to IEEMA/DIN/EN standards"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate steel-tonnage throughput per month", "maintain multi-plant footprint near transformer-manufacturing clusters"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["hold utility/PSU vendor approvals (PGCIL, RDSO, state electricity boards)", "provide OEM performance certificates", "deliver on-time tied to transformer production schedules"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["receive back-to-back/ancillary supply contracts driven by transformer OEMs' own order books", "fulfil against utility tenders/EPC project schedules", "fulfil export bulk orders"] }
+  ],
+  "sources": [
+    "https://www.openpr.com/news/4502572/transformer-radiator-market-size-accelerating-at-8-9-cagr",
+    "https://www.openpr.com/news/4069718/transformer-radiator-market-forecast-driven-by-global-grid",
+    "https://www.indexbox.io/blog/transformer-cooling-device-market-growth-to-accelerate-by-2035-on-grid-modernization-and-renewable-energy-integration/"
+  ]
+}

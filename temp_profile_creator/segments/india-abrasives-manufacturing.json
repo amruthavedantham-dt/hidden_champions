@@ -1,0 +1,56 @@
+{
+  "segmentName": "Abrasives manufacturing & distribution (India)",
+  "segments": [
+    {
+      "key": "india-abrasives-market",
+      "nature": "differentiated",
+      "market": {
+        "indiaSizeUSD_B_2024": 2.20,
+        "indiaSizeUSD_B_2033": 3.87,
+        "cagrPct_2025_2033": 6.02,
+        "altSizeUSD_M_2028": 5919.3,
+        "altCagrPct_2021_2028": 5.2,
+        "exportGeographies": [],
+        "globalCompetitors": [],
+        "domesticSlice": "India-specific figures; the global parent's own market context is separate and not sized here"
+      },
+      "shareIsMeaningful": false
+    }
+  ],
+  "subSegments": [],
+  "adjacentMarkets": [],
+  "structureFacts": [
+    "India's abrasives market is large and growing at a steady ~6% CAGR, but it is highly concentrated: Grindwell Norton (Saint-Gobain's Indian arm) and Carborundum Universal (CUMI) together control more than half of it (~26% and ~25-30% respectively) — a genuinely different structure from a fragmented category where a smaller player can win on niche positioning alone.",
+      "Global brand heritage does not automatically translate into Indian market share — a foreign parent's century-plus history and worldwide scale is a real asset, but the Indian market is dominated by two domestic-listed incumbents with direct Saint-Gobain/global-group backing of their own."
+    ],
+  "adoptionStructure": {
+    "note": "A B2B industrial-supply market (metalworking, construction, fabrication end-users) sold through distributors and direct industrial accounts — not a consumer or subscription market."
+  },
+  "peers": [
+    { "name": "Grindwell Norton (Saint-Gobain Abrasives India)", "marketSharePct": 26, "note": "The Indian arm of Saint-Gobain Abrasives (Norton); Saint-Gobain took a majority stake in 1996. Dominant listed player." },
+    { "name": "Carborundum Universal (CUMI)", "marketSharePct": 27.5, "note": "The other dominant player, ~25-30% share; one of the largest abrasives producers in the domestic market." },
+    { "name": "Wendt India", "note": "A smaller, listed, established Indian abrasives/precision-tooling player." },
+    { "name": "Asahi Diamond Industrial India, Hindustan Abrasives, Sterling Abrasives, Orient Abrasives, Bosch, Henkel Anand India", "note": "Other named players in the Indian market, not individually sized here." }
+  ],
+  "customerValue": {
+    "drivers": [
+      "Product consistency/quality for industrial end-users (metalworking, construction, fabrication) where abrasive failure has real cost/safety consequences.",
+      "Distributor relationships and on-the-ground availability — an industrial buyer needs reliable local supply, not just a strong global brand name.",
+      "Certification/safety-standard compliance (e.g. oSa) as a baseline trust signal, particularly for larger industrial accounts with their own procurement compliance requirements."
+    ],
+    "strongestPredictor": "Local distribution reliability and account relationships — in a concentrated B2B market, a smaller player's growth depends more on winning and keeping specific industrial accounts than on brand awareness alone."
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["identify buyer (industrial/fabrication end-user or distributor)", "quote against product spec and price", "win via product quality, certification, and brand heritage", "supply via direct account or distributor channel"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["draw on global group R&D/product range (parent-level product development)", "maintain local manufacturing/finishing at the Talegaon facility", "hold industry safety certifications (oSa)", "adapt global product catalogue to Indian market needs"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["plan production/import against order volume", "manufacture or finish product locally", "warehouse and distribute from the Talegaon facility", "fulfil direct and distributor orders"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["onboard industrial account or distributor", "fulfil recurring orders", "provide technical/application support", "retain the account against the two dominant domestic competitors"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["demand arises from industrial production/fabrication need", "order placed (direct or via distributor)", "fulfil", "recurring reorder as part of ongoing industrial supply relationship"] }
+  ],
+  "benchmarks": [],
+  "sources": [
+    "IMARC Group (India abrasives market sizing)",
+    "OpenPR/Grand View Research (India abrasives market context)",
+    "Screener.in, company research (Carborundum Universal, Grindwell Norton market share)"
+  ]
+}

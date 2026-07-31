@@ -1,0 +1,40 @@
+{
+  "segmentName": "Precision Sheet Metal Components & Assemblies",
+  "market": {
+    "worldSizeUSD_B_range": "India sheet metal fabrication market: $152.3M (2024) to $262.1M by 2033 (5.76%/yr, 2025-2033) per IMARC. Broader India metal fabrication market: $2.91B (2025) to $3.96B by 2031 (5.27%/yr) per one estimate, or 6.38%/yr by 2030 per another.",
+    "cagrPctRange": [5.27, 6.38],
+    "exportGeographies": ["Germany", "Finland", "USA", "Spain", "Israel", "China"],
+    "globalCompetitors": [],
+    "domesticSlice": "Craftsman Automation Ltd (listed, much larger diversified player, est. 1986, Coimbatore) covers sheet-metal fabrication including railway bogey fabrication and AC coach panels across 8 satellite units — sheet-metal sub-segment revenue not separately disclosed."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["enclosures-cabinets-racks", "precision-machined-components-assemblies"],
+  "structureFacts": [
+    "Growth drivers: automotive, aerospace, and heavy-machinery demand; infrastructure/construction; 'Make in India' policy push for local manufacturing and export capability",
+    "AS9100 and NADCAP certification adoption is cited as a structural shift enabling higher-margin export business (aero-engine components) for Indian sheet-metal players",
+    "EV production and renewable energy expansion also cited as regional (Asia-Pacific) demand drivers"
+  ],
+  "adoptionStructure": {
+    "note": "Precision/tolerance capability, certification (ISO 9001 baseline; AS9100/NADCAP for aerospace/defence customers), rapid prototyping/small-batch flexibility, multi-industry serviceability, and export compliance/quality systems for international customers drive vendor selection."
+  },
+  "peers": [
+    { "name": "Craftsman Automation Ltd (listed)", "note": "much larger diversified player; sheet-metal sub-segment (railway bogey fabrication, AC coach panels, housings) revenue not separately disclosed", "source": "craftsmanautomation.com" }
+  ],
+  "customerValue": {
+    "drivers": ["precision/tolerance capability", "ISO 9001 baseline plus AS9100/NADCAP for aerospace/defence", "rapid prototyping/small-batch flexibility", "multi-industry serviceability", "export compliance/quality systems"],
+    "strongestPredictor": "certification breadth (AS9100/NADCAP) combined with rapid prototyping flexibility",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer precision sheet metal components/assemblies via laser cutting, punching, forming, welding, coating", "serve automotive, medical, electronics, aerospace, defence, renewable energy customers"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run engineering (rapid prototyping, design-for-manufacturability, tooling design)", "run manufacturing (CNC punching/laser cutting, forming, welding, surface finishing, assembly)", "maintain in-house QC"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate a machine fleet (e.g. TRUMPF/AMADA-class equipment)", "scale production against OEM/Tier-1 order volume"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain direct OEM/Tier-1 relationships via RFQ-based multi-year component-supply contracts", "handle export orders via international customer qualification processes"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win orders via RFQ-based OEM/Tier-1 relationships", "procure sheet metal coil/stock (steel, aluminium, specialty alloys) and consumables"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/india-sheet-metal-fabrication-market",
+    "https://uniquepunch.in/the-quality-process/",
+    "https://www.craftsmanautomation.com/"
+  ]
+}

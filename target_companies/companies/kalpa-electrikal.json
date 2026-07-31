@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "kalpa-electrikal",
+    "series": "Hidden Champions of India",
+    "segmentRef": "control-instrument-distribution-transformers",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Private limited, CIN U31909KA1989PTC010542, incorporated 27 Nov 1989 (Bengaluru); company's own marketing claims 1978 founding — an 11-year gap, unresolved."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Kalpa Electrikal: real transformer-making capability and fast growth, backed by a patent claim that doesn't check out.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "₹128 Cr revenue growing 24%/year and EBITDA up 87.79% — sitting alongside a self-claimed '200+ patents' credential that a direct patent-office search found no trace of.", "tier": "company", "epistemic": "fact", "source": "Tofler; independent patent-registry search", "fields": ["financials.revenueCr", "product_improvement"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1989 (CIN incorporation); company markets itself as founded 1978 — an 11-year gap, unresolved", "tier": "company", "source": "ZaubaCorp vs. company marketing", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹128 Cr FY25, 1-yr CAGR +24%", "tier": "company", "source": "Tofler", "fields": ["financials.revenueCr"] },
+    { "label": "Growth", "value": "EBITDA +87.79% YoY, net worth +30.1% YoY", "tier": "company", "source": "Tofler", "fields": ["financials.ebitdaGrowthPct"] },
+    { "label": "Employees", "value": "494 (single-source, undated MCA-derived figure, unconfirmed by a second source)", "tier": "company", "source": "ZaubaCorp", "fields": ["employees"] },
+    { "label": "Patent claim (unverified)", "value": "Self-claims 200+ patents and DSIR-approved R&D — not found in Google Patents, IP India, or on the company's own facilities page", "tier": "company", "source": "independent multi-source search", "fields": ["product_improvement"] },
+    { "label": "Facility footprint (conflicting)", "value": "~15,000 m² across two Bengaluru locations (company site) vs. '9 manufacturing units' (marketing brochure) — not reconciled", "tier": "company", "source": "kalpaelectrikal.com vs. marketing material", "fields": ["employees"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Real, fast growth — but the marquee R&D claim doesn't hold up",
+    "blocks": [
+      { "text": "Revenue reached ₹128 Cr in FY25 with a striking 24% 1-year CAGR, and EBITDA grew 87.79% YoY alongside a 30.1% net worth increase — a genuinely fast-growing transformer manufacturer by the numbers available (PAT, margins, ROE, and ROCE remain paywalled/not found).", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.ebitdaGrowthPct"] },
+      { "text": "It manufactures instrument, control, power, and distribution transformers up to 33kV with custom designs, and holds ISO 9001:2015 certification confirmed independently — a real, verified quality-management credential, alongside CE certification and an ISI license (though the specific 100-3000 Amps amperage range self-claimed in the HVT sheet was not independently corroborated beyond a general ISI reference).", "tier": "company", "epistemic": "fact", "source": "kalpaelectrikal.com; ExportersIndia", "fields": ["differentiation", "moat"] },
+      { "text": "**The most consequential finding this session**: the HVT sheet's self-claimed '200+ patents and patent-pending technologies' plus DSIR-recognized R&D unit — sourced only from a Scribd marketing brochure — could not be corroborated anywhere. A direct Google Patents assignee search for 'Kalpa Electrikal' returned zero matches; an IP India targeted search returned no results; and the company's own facilities page describes a 'development department' with CAD tooling and testing labs (HV, Partial Discharge, Omicron CT Analyzer) but makes no mention of patents or DSIR recognition at all. This should be treated as unverified, likely marketing exaggeration, not a confirmed credential.", "tier": "company", "epistemic": "fact", "source": "kalpaelectrikal.com; Google Patents; IP India (independent verification)", "fields": ["product_improvement"] },
+      { "text": "It is actively recruiting export channel-partners across Africa for power transformer sales (a live, dated 2025 push), though no specific country list, signed distributor names, or export revenue percentage were found.", "tier": "company", "epistemic": "fact", "source": "company Facebook post, 2025", "fields": ["gap_currently_monetized"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market where **vendor estimates disagree by nearly 2x**, but a real, funded government demand driver exists.", "evidence": "India instrument transformers market: $311.4M (2025) to $461.4M by 2034 (4.47%/yr) per IMARC, vs. $615.4M (2022) to $831.79M by 2028 (5.1%/yr) per Research and Markets. India's RDSS scheme (₹3.03 lakh crore outlay) funds distribution transformer replacement across 52.53 lakh sanctioned units, though rollout is running behind schedule.", "tier": "segment", "epistemic": "fact", "source": "IMARC Group; Research and Markets; PIB", "fields": ["market.sizeRange"] },
+      { "point": "**A real, better-documented Indian peer exists for comparison**: Pragati Electricals shows similarly fast growth with cleaner disclosure.", "evidence": "Pragati Electricals Pvt Ltd posted ₹226 Cr FY25 revenue (+28% 1-yr CAGR) and EBITDA growth of +45.28% YoY, making epoxy resin cast MV/HV instrument transformers — a genuinely comparable-scale peer, though Kalpa's own ROE/ROCE remain unavailable for direct comparison.", "tier": "segment", "epistemic": "fact", "source": "Tofler", "fields": ["peers"] },
+      { "point": "**DISCOM tenders are L1 (lowest-bidder) driven** — a structural margin pressure that applies regardless of a supplier's technical credentials.", "evidence": "The dominant procurement channel in this segment (DISCOM/RDSS-linked tenders) rewards price competitiveness over differentiation, meaning even a well-certified, fast-growing manufacturer like Kalpa faces structural margin ceiling pressure from this channel.", "tier": "segment", "epistemic": "fact", "source": "aggregated industry summary", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A genuinely fast-growing transformer manufacturer on the topline and EBITDA-growth numbers available — but the specific R&D/patent credential that would most differentiate it from L1-tender-driven competitors doesn't survive independent verification. The growth story stands on its own; the patent claim should be dropped or directly re-verified with the company before being repeated.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: IMARC Group, Research and Markets, PIB (shared control-instrument-distribution-transformers segment file, new this batch). Peer data: Pragati Electricals."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "market-access", "title": "Converting the active Africa channel-partner push into signed distributor relationships", "body": "The HVT sheet's own gap research names Africa expansion directly, and this session's research confirms it's a live, current recruitment effort (2025) rather than an aspirational claim — a credible near-term lever, though its success should be tracked independently of the unverified patent/R&D claim.", "source": "HVT gap research (company Facebook post, 2025).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is retracting or re-verifying the patent claim directly with the company.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Ask the company directly for patent numbers or DSIR registration confirmation", "body": "Since the 200+ patents/DSIR claim could not be found in any patent database, government registry, or the company's own website, requesting specific patent numbers or a DSIR certificate directly should happen before this claim is used in any outward-facing material.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a control/instrument/distribution-transformer manufacturer in this segment — a directory-depth pass, not yet confirmed against Kalpa Electrikal's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer instrument, control, power, and distribution transformers as catalog and custom-engineered products", "market to DISCOMs, EPC contractors, panel builders, OEMs"], "stepsTier": "segment", "spottedAt": "offer instrument, control, power, and distribution transformers as catalog and custom-engineered products", "spotted": { "text": "Company facts (transformers up to 33kV, custom designs) confirm this step is real for Kalpa Electrikal — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run custom CAD-based design engineering for voltage/current ratings", "run manufacturing (winding, core assembly, resin casting/oil filling)", "run testing (HV, partial discharge, temperature rise)"], "stepsTier": "segment", "spottedAt": "run testing (HV, partial discharge, temperature rise)", "spotted": { "text": "Company facts (HV & Partial Discharge testing, Omicron CT Analyzer) confirm this step is real for Kalpa Electrikal — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate manufacturing units sized for DISCOM tender volumes", "source copper, CRGO steel, insulation materials subject to commodity price volatility"], "stepsTier": "segment", "spottedAt": "operate manufacturing units sized for DISCOM tender volumes", "spotted": { "text": "Company facts (~15,000 m² across two Bengaluru locations, conflicting with a separate '9 manufacturing units' claim) confirm this step is real for Kalpa Electrikal — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["respond to DISCOM tenders via L1 (lowest-bidder) bidding", "pursue private EPC contracts and export inquiries via trade fairs/channel partners"], "stepsTier": "segment", "spottedAt": "pursue private EPC contracts and export inquiries via trade fairs/channel partners", "spotted": { "text": "Company facts (active Africa channel-partner recruitment, 2025) confirm this step is real for Kalpa Electrikal — see p3_opportunities.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win orders via DISCOM/RDSS-linked tenders", "win orders via export channel-partner recruitment in new geographies"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/control-instrument-distribution-transformers.json) — no company-specific (A2/pursuit) operational intel was collected for Kalpa Electrikal this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuinely fast-growing transformer manufacturer on the numbers available — undercut by a marquee R&D/patent claim that independent verification could not substantiate anywhere. **The growth story doesn't need the unverified patent claim to stand on its own.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Kalpa Electrikal or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus kalpaelectrikal.com, ExportersIndia, and independent Google Patents/IP India verification; market data from IMARC Group, Research and Markets, PIB. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "kalpaelectrikal.com", "ExportersIndia", "ZaubaCorp", "IMARC Group", "Research and Markets", "PIB", "Google Patents", "IP India", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — actual patent filings or DSIR registration if they exist under a different name, and true current ROE/ROCE — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

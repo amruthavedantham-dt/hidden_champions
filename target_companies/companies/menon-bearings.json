@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "menon-bearings",
+    "series": "Hidden Champions of India",
+    "segmentRef": "engine-bearings-bushes-thrust-washers",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Listed (NSE: MENONBE, BSE: 523828), CIN L29130PN1991PLC062352 (found via research, not in HVT row)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Menon Bearings: a wealth-creation engine with a 51-part pipeline aimed at John Deere and Tata Motors.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A Kolhapur bi-metal bearings maker with 'ship to use' status from leading auto brands, growing profit 52% in a year and just landing a $3.73M Allison Transmission order.", "tier": "company", "epistemic": "fact", "source": "screener.in; scanx.trade", "fields": ["moat", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1991, by Ram Menon", "tier": "company", "source": "menonbearings.in", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹299 Cr · FY25-26 (from ₹243 Cr FY24-25, +23%)", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "₹38 Cr · FY25-26 (+52% YoY)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "OPM / ROE", "value": "22% / 22.3%", "tier": "company", "source": "screener.in", "fields": ["financials.opmPct", "financials.roePct"] },
+    { "label": "Certification", "value": "IATF 16949 (since 2018); 'Self certification/Single source/Ship to use' status", "tier": "company", "source": "menonbearings.in", "fields": ["moat"] },
+    { "label": "Recent order", "value": "$3.73M/year, Allison Transmission (June 2025)", "tier": "company", "source": "scanx.trade", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A wealth-creation engine, with a pipeline that keeps it going",
+    "blocks": [
+      { "text": "Revenue grew 23% to ₹299 Cr and PAT 52% to ₹38 Cr, with OPM at a healthy 22% and ROE at 22.3% — well above an industry average of roughly 8.9% cited in the same analysis, and ROCE at an even stronger 25.5%.", "tier": "company", "epistemic": "fact", "source": "screener.in; tijorifinance.com", "fields": ["financials.revenueCr", "financials.patCr", "financials.opmPct", "financials.roePct"] },
+      { "text": "It holds IATF 16949 certification (since 2018) governing its full manufacturing process, and — per a third-party source, not just its own site — has achieved 'Self certification / Single source / Ship to use' status with leading auto brands, an unusually high trust tier that lets a supplier's parts go directly onto the OEM line without incoming inspection.", "tier": "company", "epistemic": "fact", "source": "HVT row (third-party sourced for product_improvement); menonbearings.in", "fields": ["moat", "product_improvement"] },
+      { "text": "It has a robust pipeline of 51 new parts in development, targeting major customers including John Deere and Tata Motors — third-party confirmed, not a self-description — with over 50% of the new-business pipeline aimed at exports, where margins are better.", "tier": "company", "epistemic": "fact", "source": "finance.yahoo.com (third-party)", "fields": ["product_improvement", "exportFootprint"] },
+      { "text": "It commissioned a new Thrust Washer manufacturing unit (Unit III) with lead-free foundry technology in 2025, and won a $3.73M annual order from Allison Transmission plus a separate order for ~7.5 million pieces/year — both dated, specific wins, not vague growth claims. It operates across 24 countries, with export share currently ~30-34%, targeted to reach 37-40% by FY27.", "tier": "company", "epistemic": "fact", "source": "scanx.trade; menonbearings.in", "fields": ["recentMoves", "exportFootprint"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing, though India-specific estimates spread widely.**", "evidence": "India bearings market: $6.71-9.18B by 2030-2032, 10.2-13.5%/yr depending on source; the narrower India automotive bearing sub-segment specifically is more mature, growing only 4.15%/yr.", "tier": "segment", "epistemic": "fact", "source": "Grand View Research; GlobeNewswire (Astute Analytica)", "fields": ["market.sizeRange"] },
+      { "point": "**EV adoption is a real long-term headwind for the core product**, but near-term demand looks structurally sound.", "evidence": "Pure engine bearings face zero demand from battery-electric vehicles, but final ICE-platform production waves and a large in-operation ICE parc sustain near-term demand — and Menon's own diversification into aluminum die-casting and braking systems hedges some of this.", "tier": "segment", "epistemic": "fact", "source": "IndexBox analysis", "fields": ["structureFacts"] },
+      { "point": "The closest listed peer shows **what real scale in this exact segment looks like**, and where Menon still has room to grow.", "evidence": "NRB Bearings posts ₹1,335 Cr revenue (~4.5x Menon's scale) with 77% PAT growth, and just approved ₹270 Cr combined capex to expand capacity 15-25% — a signal the whole segment is investing for growth right now.", "tier": "segment", "epistemic": "fact", "source": "whalesbook.com", "fields": ["peers[0]"] }
+    ],
+    "reflect": { "text": "A genuinely strong operator — healthy margin, high ROE, real single-source trust status with OEMs — with a specific, named pipeline of future business already in motion. This is one of the cleaner, stronger financial profiles across this whole batch.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Grand View Research, GlobeNewswire (shared engine-bearings-bushes-thrust-washers segment file). Peer data: NRB Bearings (much larger), Precision Camshafts (different product, weaker comparable)."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Commissioning the dynamometer to enter the railway business", "body": "The HVT sheet's own gap research names this directly: a dynamometer for the brakes division — needed to enter the railway business — has faced delays, holding back a genuinely new market entry that would sit alongside the company's existing bearings/bushes/aluminum-casting lines.", "source": "HVT gap research (finance.yahoo.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Menon Bearings' own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Set a firm commissioning date for the dynamometer and track it publicly", "body": "Given the railway-business entry has already been delayed once, set and communicate a specific commissioning timeline for the dynamometer, and track adherence to it as a leading indicator before assuming the railway opportunity is on track.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an engine bearings/bushes manufacturer in this segment — a directory-depth pass, not yet confirmed against Menon Bearings' own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer bi-metal bearings, bushes, thrust washers, flange bearings", "cover engine displacement classes and adjacent segments (compressors, generators, marine, earthmovers, agriculture)"], "stepsTier": "segment", "spottedAt": "cover engine displacement classes and adjacent segments (compressors, generators, marine, earthmovers, agriculture)", "spotted": { "text": "Company facts (bi-metal components, aluminum casted products, brakes) confirm this step is real and diversified for Menon, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["in-house alloy/bimetal strip development", "precision machining, metallurgical R&D", "IATF 16949-governed process control", "tooling/die design for new-part validation"], "stepsTier": "segment", "spottedAt": "tooling/die design for new-part validation", "spotted": { "text": "Company facts (51 new parts in development for John Deere and Tata Motors) confirm this step is real and active for Menon, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate integrated manufacturing (bimetal, aluminum die-casting, braking systems units)", "add capacity via new dedicated production units", "maintain export-financing capacity to support scaling"], "stepsTier": "segment", "spottedAt": "add capacity via new dedicated production units", "spotted": { "text": "Spotted at \"add capacity\": the delayed dynamometer commissioning sits exactly here, blocking railway-market entry → commissioning the dynamometer.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain on-time delivery track record to OEMs", "run PPAP-driven new-part validation", "manage direct OEM relationships and global distributor network"], "stepsTier": "segment", "spottedAt": "manage direct OEM relationships and global distributor network", "spotted": { "text": "Company facts ('Self certification/Single source/Ship to use' status) confirm this step is real and unusually strong for Menon, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win OEM design-in contracts (multi-year platform-life supply)", "fulfil growing aftermarket/export order stream", "reorder as ICE parc ages or new platforms launch"], "stepsTier": "segment", "spottedAt": "fulfil growing aftermarket/export order stream", "spotted": { "text": "Company facts (Allison Transmission $3.73M order, 7.5M-piece/year order) confirm this step is real and growing for Menon, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/engine-bearings-bushes-thrust-washers.json) — no company-specific (A2/pursuit) operational intel was collected for Menon this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "Strong margins, single-source OEM trust, and a named 51-part pipeline already in motion. **The dynamometer delay is the one thing standing between this company and a genuinely new market.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Menon Bearings or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in and tijorifinance.com; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus menonbearings.in and finance.yahoo.com; market data from Grand View Research and GlobeNewswire; peer figures from whalesbook.com (NRB Bearings) and groww.in (Precision Camshafts). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "tijorifinance.com", "menonbearings.in", "scanx.trade", "finance.yahoo.com", "Grand View Research", "GlobeNewswire", "whalesbook.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — true unit economics on the new Thrust Washer Unit III, and real customer retention across its 24-country export base — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "cmr-green-technologies",
+    "series": "Hidden Champions of India",
+    "segmentRef": "aluminium-zinc-alloy-recycling",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Listed company, CIN U00337HR2005PLC085675, business commenced 2006 (Faridabad HQ). Listed on NSE/BSE 10 June 2026 (IPO ₹630.88 Cr, entirely OFS; listed at 39.6% NSE / 43.4% BSE premium)."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "CMR Green Technologies: India's largest non-ferrous metal recycler, freshly listed at a 43% premium.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "Real Toyota Tsusho and Nippon Light Metal joint ventures, ~70% share of India's liquid secondary aluminium market, and genuinely healthy 15% ROE — following a rocky FY2024 net loss year.", "tier": "company", "epistemic": "fact", "source": "screener.in; cmr.co.in", "fields": ["financials.roePct", "differentiation"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "Business commenced 2006, Faridabad HQ; listed NSE/BSE 10 June 2026", "tier": "company", "source": "cmr.co.in/about", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹8,640 Cr FY26 (up from ₹5,952 Cr FY24, which included a ₹839 Cr net loss year); Q4 FY26 revenue +45.4% YoY to ₹2,364.7 Cr", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr"] },
+    { "label": "PAT", "value": "₹228 Cr FY26 (recovering from a ₹839 Cr net loss in FY24 and ₹105-155 Cr in FY23/FY25)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr"] },
+    { "label": "ROE / ROCE", "value": "15% (1-yr and 5-yr avg) / 14%", "tier": "company", "source": "screener.in", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Debt position", "value": "Debt-to-Equity ≈0.96 (borrowings ₹1,426 Cr / equity ~₹1,532 Cr); outstanding indebtedness ₹1,303.22 Cr as of Dec 2025", "tier": "company", "source": "screener.in", "fields": ["financials.debtToEquity"] },
+    { "label": "Employees (conflicting)", "value": "784 permanent + 3,956 contractual (IPO prospectus, most authoritative) vs. ~1,000 (LeadIQ) vs. \"500+\" (careers page)", "tier": "company", "source": "IPO prospectus", "fields": ["employees"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A real market leader, recovering from a rocky FY2024",
+    "blocks": [
+      { "text": "This is a genuinely large, real business with a volatile recent history: revenue grew from ₹2,913 Cr (FY21) to ₹8,640 Cr (FY26), but FY2024 was a net-loss year (₹839 Cr loss) sandwiched between profitable years (₹105 Cr FY23, ₹155 Cr FY25, ₹228 Cr FY26). Current ROE (15%, both 1-yr and 5-yr average) and ROCE (14%) are genuinely healthy, though debt-to-equity of ~0.96 reflects meaningful leverage (₹1,426 Cr borrowings). Q4 FY26 showed strong momentum: revenue up 45.4% YoY.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.revenueCr", "financials.roePct"] },
+      { "text": "It is confirmed, not just self-claimed, as India's largest non-ferrous metal recycler by installed capacity — independently corroborated at ~4x the nearest domestic competitor's capacity — with combined production capacity exceeding 615,000 MTPA across 13 recycling facilities, ~70% market share in India's liquid secondary aluminium market, and 30-35% share in the automotive secondary aluminium segment specifically. It sources scrap through a global network spanning 73 countries.", "tier": "company", "epistemic": "fact", "source": "hdfcsky.com; tradejini.com; chittorgarh.net IPO note", "fields": ["differentiation"] },
+      { "text": "It holds real, verifiable joint ventures with major Japanese industrial partners: CMR Toyotsu (70:30 JV with Toyota Tsusho, established April 2014, two plants totaling 66,000 MT capacity), plus JVs with Nikkei MC Aluminium and Nippon Light Metal — genuine technology and capital partnerships, not marketing claims. Its DSIR-recognized in-house R&D unit is also independently confirmed, along with ISO 14001:2015, ISO 45001:2018, and IATF 16949:2016 certification.", "tier": "company", "epistemic": "fact", "source": "cmr.co.in/joint-ventures; cmr.co.in/certifications", "fields": ["product_improvement", "moat"] },
+      { "text": "Its 'Direct Liquid Metal Supply' and regenerative-burner technology are confirmed real, differentiated capabilities — eliminating a die-caster's own ingot-remelting step and cutting fuel/melt-loss waste, using regenerative burners, metal circulation furnaces, heavy media flotation, and induction/XRT/LIBS sorting across its plants. The June 2026 IPO was structured entirely as an offer-for-sale, meaning it raised no fresh capital for the company itself — a detail worth noting when assessing growth-funding capacity going forward.", "tier": "company", "epistemic": "fact", "source": "cmr.co.in/equipment-and-technology", "fields": ["gap_currently_monetized"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A genuinely large, fast-growing India recycling market, with **real policy tailwinds beyond generic ESG framing**.", "evidence": "India aluminium scrap market: $3.8B (2024) to $11.2B by 2034 (10.8%/yr); the Steel Scrap Recycling Policy 2019 and Vehicle Scrappage Policy both structurally increase non-ferrous scrap supply, directly feeding CMR's core input.", "tier": "segment", "epistemic": "fact", "source": "Allied Market Research; ceerapub.nls.ac.in", "fields": ["market.sizeRange"] },
+      { "point": "**Two real, comparably-scaled listed peers exist**, both showing strong recent growth — a genuine competitive benchmark, unlike most companies in this batch.", "evidence": "Gravita India posted 9M FY26 revenue of ₹3,093 Cr (+9%) with PAT ₹286 Cr (+31%) and a ₹1,500 Cr capex plan targeting 700,000+ MTPA; Pondy Oxides & Chemicals posted Q1 FY26 revenue of ₹604.22 Cr (+35.56% YoY) with PAT up 94.21%.", "tier": "segment", "epistemic": "fact", "source": "aggregated Q1 results; business-standard.com", "fields": ["peers"] },
+      { "point": "**Secondary aluminium's ~95% energy-cost advantage over primary production** is a real, structural, permanent tailwind for the whole segment.", "evidence": "This energy-cost gap, combined with automotive lightweighting/EV adoption structurally increasing demand for secondary aluminium alloys, is a durable driver independent of any single company's execution.", "tier": "segment", "epistemic": "fact", "source": "aggregated industry summary", "fields": ["structureFacts"] }
+    ],
+    "reflect": { "text": "A genuinely large, verified market leader with real JV backing, real technology differentiation, and a fresh public listing at a strong premium — this is one of the most substantively documented companies in this batch. The FY2024 net-loss year is worth understanding (given it's recent enough to matter), but the overall trajectory into FY26 shows real recovery and momentum.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Allied Market Research, Market Research Future (shared aluminium-zinc-alloy-recycling segment file, new this batch). Peer data: Gravita India, Pondy Oxides & Chemicals."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "product-expansion", "title": "Expanding Direct Liquid Metal Supply and regenerative burner technology to more operations/customers", "body": "The HVT sheet's own gap research names this directly — broader application of these confirmed, real energy-saving technologies across the customer base — a credible lever given both technologies are already operational and independently verified, not aspirational.", "source": "HVT gap research (cmr.co.in/equipment-and-technology).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is understanding what drove the FY2024 net loss.", "tier": "universal" },
+    "items": [
+      { "lever": "diagnosis", "title": "Understand the FY2024 net-loss driver before treating the recovery as fully secured", "body": "With FY2024 showing an ₹839 Cr net loss sandwiched between profitable years, confirming what specifically drove that loss (commodity price swings, one-off impairment, working-capital issue) would clarify whether the FY25-26 recovery reflects a resolved issue or ongoing volatility risk — particularly relevant now that the company carries public shareholder scrutiny post-listing.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an aluminium/zinc alloy recycler in this segment — a directory-depth pass, not yet confirmed against CMR Green Technologies' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer recycled aluminium/zinc alloy ingots and liquid metal supply", "offer aluminium billets, dross, and segregated furnace-ready scrap fractions"], "stepsTier": "segment", "spottedAt": "offer recycled aluminium/zinc alloy ingots and liquid metal supply", "spotted": { "text": "Company facts (Direct Liquid Metal Supply, confirmed real and differentiated) confirm this step is real for CMR Green Technologies — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run scrap sorting (XRT, LIBS, induction-based, colour sorters, heavy media flotation)", "run melting/alloying via regenerative-burner furnaces and metal circulation furnaces"], "stepsTier": "segment", "spottedAt": "run melting/alloying via regenerative-burner furnaces and metal circulation furnaces", "spotted": { "text": "Company facts (regenerative burners, metal circulation furnaces, DSIR-recognized R&D) confirm this step is real for CMR Green Technologies — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["run global scrap sourcing networks across many countries", "operate multiple recycling facilities sized in MTPA"], "stepsTier": "segment", "spottedAt": "operate multiple recycling facilities sized in MTPA", "spotted": { "text": "Company facts (13 recycling facilities, >615,000 MTPA combined capacity, sourcing across 73 countries) confirm this step is real for CMR Green Technologies — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain framework/annual supply agreements with automotive die-casters and foundries", "manage JIT liquid-metal delivery logistics"], "stepsTier": "segment", "spottedAt": "manage JIT liquid-metal delivery logistics", "spotted": { "text": "Company facts (JVs with Toyota Tsusho, Nikkei MC Aluminium, Nippon Light Metal) confirm this step is real for CMR Green Technologies — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil purchase orders from auto-component makers, foundries, die-casters, and industrial OEMs", "price benchmarked to LME aluminium/zinc"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/aluminium-zinc-alloy-recycling.json) — no company-specific (A2/pursuit) operational intel was collected for CMR Green Technologies this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A genuinely verified market leader — real JVs with Toyota Tsusho and Nippon Light Metal, real proprietary technology, and a strong post-IPO market debut — recovering from a real FY2024 net-loss year. **Understanding that loss year matters now that the company carries public shareholder scrutiny.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in CMR Green Technologies or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in (audited, listed-company data); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus cmr.co.in and IPO prospectus/note documentation; market data from Allied Market Research and Market Research Future; peer figures from aggregated Q1 results and business-standard.com. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "cmr.co.in", "hdfcsky.com", "tradejini.com", "chittorgarh.net", "outlookmoney.com", "goodreturns.in", "Allied Market Research", "Market Research Future", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the specific driver behind the FY2024 net loss, and post-IPO capital-allocation plans given the offering raised no fresh capital for the company — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

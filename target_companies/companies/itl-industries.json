@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "itl-industries",
+    "series": "Hidden Champions of India",
+    "segmentRef": "band-circular-sawing-machines",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Listed company (BSE, since 1993), CIN L28939MP1989PLC005037 confirmed as the sole correct CIN — an alternate CIN cited in one source (U74140GJ2006PLC049662) belongs to an entirely unrelated Ahmedabad entity, 'SIHL Consultancy Limited,' not 'SIHL Fincap Ltd' as the HVT row stated and certainly not ITL Industries; both SIHL entities are confirmed unrelated to ITL Industries."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "ITL Industries: a real 1987 metal-sawing pioneer whose own installation-count claim doesn't survive a second look.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A confirmed 1996 KASTO Germany tech tie-up and steady decade-long growth — sitting next to a 15,000+/16,500+ self-claimed installation count that an independent source puts at roughly 1,500+, a tenfold gap.", "tier": "company", "epistemic": "fact", "source": "myindiamyglory.com; indiamart.com", "fields": ["differentiation", "financials.revenueCr"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1985, as partnership firm 'Indore Tools' (₹2.75 lakh starting capital), founders Er. Rajendra Jain and Mr. Mahendra Jain; converted to public limited and BSE-listed 1993", "tier": "company", "source": "myindiamyglory.com; itl.co.in/company-history", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹203 Cr FY26 (10-yr Sales CAGR 14%, 5-yr CAGR 18%)", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr"] },
+    { "label": "Returns", "value": "ROE 12% (10-yr avg), ROCE 14.0%, Operating Margin 7% (FY26), Debt-to-Equity 0.26", "tier": "company", "source": "screener.in", "fields": ["financials.roePct", "financials.rocePct"] },
+    { "label": "Ownership structure (unusual)", "value": "Promoter holding only 44.98% (Public 55.03%) — notably low for a listed manufacturer", "tier": "company", "source": "screener.in", "fields": ["ownershipType"] },
+    { "label": "Installation-count discrepancy", "value": "Self-claims 15,000+ installations/16,500+ machines worldwide; an independent source states ~1,500+ machines commissioned by end-2023, exporting to 25 countries — a roughly tenfold gap, unresolved", "tier": "company", "source": "HVT row vs. indiamart.com/itl-industries", "fields": ["differentiation"] },
+    { "label": "Employee count", "value": "Wildly inconsistent across sources: 30, 38, 220, or 501-1,000 depending on source — none authoritative", "tier": "company", "source": "EasyLeadz; Crunchbase (all low confidence)", "fields": ["employees"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "Real, decades-old technology pedigree, and one self-claim that needed a second look",
+    "blocks": [
+      { "text": "Revenue reached ₹203 Cr in FY26, with a genuinely steady long-term growth record: 10-year sales CAGR of 14%, accelerating to 18% over the most recent 5 years. ROE stands at 12% (10-year average) and ROCE at 14.0% — solid, if not exceptional, returns, with moderate leverage (debt-to-equity 0.26). One notable structural feature: promoter holding is only 44.98%, unusually low for a listed Indian manufacturer, meaning public shareholders collectively hold a majority stake.", "tier": "company", "epistemic": "fact", "source": "screener.in", "fields": ["financials.revenueCr", "financials.roePct"] },
+      { "text": "It has a real, independently-confirmed technology pedigree: founded in 1985 as the partnership firm 'Indore Tools,' it introduced India's first indigenously designed High Speed Double Column Bandsaw Machine in 1987 (corroborating the HVT's differentiation claim independently), converted to a public limited company and listed on BSE in 1993, entered a 1996 technology tie-up with KASTO Maschinenfabrik GmbH of Germany for High Speed Power Hacksawing Machines, and introduced India's first NC Carbide Circular Saw Machines in 2007.", "tier": "company", "epistemic": "fact", "source": "myindiamyglory.com; itl.co.in/company-history", "fields": ["differentiation", "product_improvement"] },
+      { "text": "**This is the central finding of this profile**: the HVT sheet's self-claimed '15,000+ installations, 16,500+ machines worldwide' could not be corroborated and is directly contradicted by an independent source stating that by the end of 2023, more than 1,500 ITL machines had been commissioned across India and internationally, with exports to 25 countries — a roughly tenfold gap between the self-claim and the independently-found figure. This may reflect a specific product-line or time-period figure being conflated with a lifetime total, but as stated, the two numbers directly contradict each other and should not both be treated as accurate.", "tier": "company", "epistemic": "fact", "source": "indiamart.com/itl-industries/profile.html", "fields": ["differentiation"] },
+      { "text": "Employee count is genuinely unreliable across all sources checked — ranging from 30 to over 1,000 depending on the directory, with no figure standing out as authoritative. The company's own DSIR-recognized in-house R&D unit is registry-confirmed (unlike the installation-count claim), and the HVT sheet's own gap research names IoT-enabled circular saw machines as an under-monetized capability — no independent source confirms ITL has actually shipped or productized this capability, consistent with the HVT's own framing of it as a gap, not a current strength.", "tier": "company", "epistemic": "fact", "source": "dsir.gov.in registry; EasyLeadz; Crunchbase", "fields": ["employees", "product_improvement"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A market with **wide vendor disagreement on size (~50% spread)**, and a real, dated technology-partner comparable.", "evidence": "Global bandsaw machine market estimates range from $2.36B (2024)-$3.39B by 2034 to as high as $4.96B by 2034 depending on vendor; ITL's own historical technology partner KASTO Maschinenbau posted €101.6M revenue with ~700 employees (2013 figure, dated), giving a rough sense of a mature European peer's scale.", "tier": "segment", "epistemic": "fact", "source": "GlobeNewswire/Fact.MR; directindustry.com", "fields": ["market.sizeRange"] },
+      { "point": "**Competition is shifting toward digital/IoT integration rather than pure mechanical performance** — directly relevant to ITL's own named-but-unconfirmed IoT gap.", "evidence": "Market commentary notes competition 'increasingly revolves around product differentiation, after-sales service, and digital integration rather than pure mechanical performance' — a real structural trend that supports the relevance of ITL's own IoT ambitions, even though independent confirmation of actual IoT product shipments wasn't found.", "tier": "segment", "epistemic": "fact", "source": "aggregated industry summary", "fields": ["structureFacts"] },
+      { "point": "**Behringer Saws (US arm of a German parent) is a smaller, more directly comparable-scale peer** than the much larger KASTO or Amada.", "evidence": "Behringer Saws, Inc. posts ~$6.8M revenue (US subsidiary only) with 33 employees — closer in scale to a realistic direct comparison than the larger multinational players, though still a fraction of ITL's ₹203 Cr (~$24M) revenue.", "tier": "segment", "epistemic": "fact", "source": "growjo.com", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A genuinely old, technologically credentialed manufacturer with real steady growth and a documented, real 1996 German technology tie-up — the installation-count discrepancy is the clear thing to resolve before repeating the company's own self-claim, since an independent source puts the real figure at roughly a tenth of what's claimed. This doesn't undermine the underlying business, which shows solid decade-long growth on its own merits.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: GlobeNewswire/Fact.MR, Zion Market Research, Allied Market Research (shared band-circular-sawing-machines segment file, new this batch). Peer data: KASTO Maschinenbau, Behringer Saws, EVERISING Machine Co."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "product-expansion", "title": "Productizing and shipping IoT-enabled circular saw machines for Industry 4.0", "body": "The HVT sheet's own gap research names this directly — real-time monitoring, predictive maintenance, and intelligent energy analysis — and this session's research found no independent evidence the capability has actually been productized yet, consistent with the HVT's own framing as a named-but-unmonetized opportunity.", "source": "HVT gap research (LinkedIn / ITL Industries).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is reconciling the installation-count discrepancy directly.", "tier": "universal" },
+    "items": [
+      { "lever": "trust", "title": "Reconcile the 15,000+/16,500+ self-claim against the independently-found ~1,500+ figure", "body": "Given the roughly tenfold gap between the company's own claimed installation count and an independent source's figure, requesting clarification directly (e.g., whether the larger figure refers to cumulative unit-years, a broader product category, or a different counting methodology) should happen before either figure is used in outward-facing material.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a band/circular-saw machine manufacturer in this segment — a directory-depth pass, not yet confirmed against ITL Industries' own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer band saw machines (manual/semi-automatic/automatic/NC/CNC) and circular saw machines", "offer saw blades/consumables and after-sales service contracts"], "stepsTier": "segment", "spottedAt": "offer band saw machines (manual/semi-automatic/automatic/NC/CNC) and circular saw machines", "spotted": { "text": "Company facts (India's first indigenously designed High Speed Double Column Bandsaw Machine, 1987; India's first NC Carbide Circular Saw Machines, 2007) confirm this step is real for ITL Industries — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run precision machine-tool manufacturing (frame, drive, blade-guide systems)", "run in-house R&D for indigenous designs"], "stepsTier": "segment", "spottedAt": "run in-house R&D for indigenous designs", "spotted": { "text": "Company facts (DSIR-recognized in-house R&D unit, registry-confirmed) confirm this step is real for ITL Industries — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["source components (motors, control systems, blades)", "operate a domestic manufacturing base (Indore) serving both India and export markets"], "stepsTier": "segment", "spottedAt": "operate a domestic manufacturing base (Indore) serving both India and export markets", "spotted": { "text": "Company facts (Indore manufacturing base, exports to 25 countries per independent source) confirm this step is real for ITL Industries — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["sell direct and via distributors to engineering/metalworking/fabrication industries", "maintain a service and spares network, technology partnerships for capability transfer"], "stepsTier": "segment", "spottedAt": "maintain a service and spares network, technology partnerships for capability transfer", "spotted": { "text": "Company facts (1996 KASTO Maschinenfabrik/Germany technology tie-up) confirm this step is real for ITL Industries — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["win capital-equipment purchase orders from steel fabricators, engineering workshops, automotive component makers", "win orders via technology partnerships for capability transfer"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/band-circular-sawing-machines.json) — no company-specific (A2/pursuit) operational intel was collected for ITL Industries this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A real, decades-old metal-sawing pioneer with a documented 1996 German technology partnership and steady long-term growth — undercut by a self-claimed installation count that an independent source puts at roughly a tenth of what's stated. **Reconciling that discrepancy is the clearest, most important next step.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in ITL Industries or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in (audited, listed-company data); company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus itl.co.in/company-history, myindiamyglory.com, and indiamart.com (which surfaced the installation-count discrepancy); market data from GlobeNewswire/Fact.MR, Zion Market Research, Allied Market Research. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "itl.co.in", "myindiamyglory.com", "indiamart.com", "dsir.gov.in", "GlobeNewswire/Fact.MR", "Zion Market Research", "Allied Market Research", "growjo.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true, reconciled installation-count figure, and actual current total employee headcount from the company's own annual report — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

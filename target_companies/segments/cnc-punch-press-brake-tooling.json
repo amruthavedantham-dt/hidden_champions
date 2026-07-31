@@ -1,0 +1,36 @@
+{
+  "segmentName": "CNC Punch Press & Press Brake Tooling",
+  "market": {
+    "worldSizeUSD_B_range": "Global press brake machine market: $800.2M (2026) to $1,211.2M by 2033 (6.1%/yr). Global punch press market: $3.5B (2024) to $5.7B by 2033 (6.0%/yr, 2026-2033). India machine tool market (broader category): forecast to grow by $3.08B from 2024-2029 (11.6%/yr). Note: these figures are for the machines themselves, not the tooling/dies/punches — a clean standalone tooling-segment TAM was not found; treat the above as adjacent/proxy indicators only.",
+    "cagrPctRange": [6.0, 11.6],
+    "exportGeographies": ["GCC", "EU", "USA (dealer-onboarding claim, unverified this pass)"],
+    "globalCompetitors": ["Trumpf", "Amada", "Prima Power", "Murata Machinery", "ERMAKSAN", "Metalcraft", "Haco", "Tailift Group", "LVD Group"],
+    "domesticSlice": "No India-specific direct tooling peer was identified in research — suggesting either a relatively uncrowded specialized domestic niche, or that peers are too small/private to surface in search."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["precision-sheet-metal-components", "mechanical-power-presses"],
+  "structureFacts": [
+    "Technology shift toward fully automatic/CNC and servo-electric press brakes (fastest-growing category) is driving demand for compatible precision tooling",
+    "India's growth is catalyzed by expanding metal fabrication (switchgears, elevators) and 2W/3W EV platform growth creating incremental demand for mid-range CNC press-brake tooling"
+  ],
+  "adoptionStructure": {
+    "note": "Tool life/wear reduction (lowering total tooling cost over machine lifetime), dimensional accuracy for sheet-metal fabrication, vendor trust and after-sales support, and price competitiveness vs. import substitution drive purchasing."
+  },
+  "peers": [],
+  "customerValue": {
+    "drivers": ["tool life/wear reduction", "dimensional accuracy", "vendor trust and after-sales support", "price competitiveness vs. imports"],
+    "strongestPredictor": "tool life/wear reduction combined with responsive after-sales support",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer custom CNC punch/press-brake tooling (punches, dies, embossing tools)", "sell to sheet-metal fabricators serving switchgear, elevator, and general metal-fabrication OEMs"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["provide technical consultation on tool design against customer's punch-press/brake machine specs and part drawings", "run prototype/sample tooling validation and tool-life testing"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["run batch manufacturing of tooling sets", "pursue AS9100 certification for aerospace-adjacent customer access"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["build a dealer network across export geographies (GCC/EU/USA)", "provide vendor trust/after-sales support"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil repeat/replacement tooling orders as tools wear", "win new-tool orders tied to customer's new part programs"] }
+  ],
+  "sources": [
+    "https://www.persistencemarketresearch.com/market-research/press-brake-machine-market.asp",
+    "https://www.technavio.com/report/machine-tools-market-in-india-industry-analysis"
+  ]
+}

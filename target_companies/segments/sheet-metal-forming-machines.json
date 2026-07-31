@@ -1,0 +1,42 @@
+{
+  "segmentName": "Sheet Metal Forming Machines (agency/integration model)",
+  "market": {
+    "worldSizeUSD_B_range": "India Sheet Metal Fabrication Market: $152.3M (2024) to $262.1M by 2033 (5.76%/yr, 2025-2033). India Sheet Metal Market (broader definition): 7.7%/yr projected (2025-2030). Global Sheet Metal Machinery Market: 4.50%/yr (2023-2030); Asia-Pacific sheet-metal-forming-machine segment projected ~6.5%/yr, driven by China and India industrialization. Metal Forming Tools Market (adjacent/broader category): 8.4%/yr globally.",
+    "cagrPctRange": [4.5, 8.4],
+    "exportGeographies": ["Southeast Asia (EV parts, one named customer switch documented)"],
+    "globalCompetitors": ["Trumpf (Germany, since 1923)", "Bystronic (Switzerland)", "LVD (Belgium)", "Durma (Turkey)"],
+    "domesticSlice": "Indian CNC press-brake/forming-machine makers referenced in directories include L&T and several smaller domestic brands, not independently verified as direct competitors to agency-model players."
+  },
+  "subSegments": [],
+  "adjacentMarkets": ["press-brake-cnc-fiber-laser-machines", "coil-processing-forming-lines"],
+  "structureFacts": [
+    "Growth drivers cited: automotive, construction, and general industrial demand; urbanization and infrastructure development; automation adoption; 'Make in India' and domestic manufacturing policy support",
+    "A meaningful sub-set of Indian 'manufacturers' in this space actually operate as exclusive-agency/distribution-and-integration businesses for international OEM brands, layered with local service and light engineering, rather than as ground-up equipment OEMs themselves — this segment file frames the value chain to fit that agency/integration model, not a pure-manufacturer model",
+    "In an agency/integration model, market position is better read as a 'channel/service' player benefiting from end-user capex growth in downstream sectors, rather than as a machine-building competitor to Trumpf/Bystronic/LVD"
+  ],
+  "adoptionStructure": {
+    "note": "Precision/repeatability, machine uptime and local service support, total cost of ownership, and compatibility with automotive/appliance/construction sheet-metal specs drive purchasing — inferred generically from industry-report framing, not independently company-verified."
+  },
+  "peers": [
+    { "name": "Trumpf, Bystronic, LVD, Durma", "note": "global leaders in press brakes/laser cutting for sheet metal forming; not direct peers to India-based agency/integration players, but the technology brands such players often represent or compete against", "source": "aggregated cncwmt.com / adhmt.com reports" }
+  ],
+  "customerValue": {
+    "drivers": ["access to world-class international technology with local support", "certified sub-systems (e.g. UL/ATEX/TUV-tested chemical/sealing systems)", "in-house R&D/engineering layered on top of represented brands"],
+    "strongestPredictor": "combination of credible international brand access and responsive local engineering/service",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["represent/resell stamping presses, laser cutting systems, deburring/polishing machines, dispensing/sealing systems, and surface-finishing equipment from partner OEM brands", "provide locally engineered value-add and integration"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["provide mechanical/hydraulic/servo-press application engineering", "integrate CNC controls and tooling", "run an in-house R&D facility for local adaptation"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate import/local-value-add/service capacity rather than large-scale OEM production capacity", "scale service/engineering headcount against client project volume"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["provide pre-sales application engineering", "provide installation/commissioning, after-sales service, spares and consumables supply, and operator training"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["sell directly to automotive/appliance/construction/general-engineering fabricators and job shops", "pursue export orders via demonstrated customer wins (e.g. EV parts supplier expansion)"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/india-sheet-metal-fabrication-market",
+    "https://www.grandviewresearch.com/horizon/outlook/sheet-metal-market/india",
+    "https://www.cognitivemarketresearch.com/sheet-metal-machinery-report",
+    "https://www.fortunebusinessinsights.com/press-release/metal-forming-tools-market-9468",
+    "https://www.magal.co.in/about-us/"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "segmentName": "Ductile & Grey Iron Castings (Automotive/Industrial)",
+  "market": {
+    "worldSizeUSD_B_range": "Global grey & ductile iron castings market: $120.7B (2024) to $212.4B by 2032 (6.5%/yr) per one vendor, vs. a materially smaller $49.32B (2024) to $80.53B by 2033 (5.9%/yr) per another — ~2.4x discrepancy, likely reflecting different scope definitions (raw castings vs. finished cast components). India accounted for 12.1% of the global iron-casting market in 2025; India segment CAGR 8.4% (2026-2033), projected to reach $28,412.1M by 2033 — the fastest-growing APAC sub-market.",
+    "cagrPctRange": [5.9, 8.4],
+    "exportGeographies": ["USA", "Germany", "Sweden", "Italy", "Netherlands", "Poland", "Mexico", "Argentina", "Korea", "South Africa", "Saudi Arabia"],
+    "globalCompetitors": [],
+    "domesticSlice": "Kirloskar Ferrous Industries (listed) posted ₹6,564.23 Cr FY25 standalone net sales (+6.8% YoY), PAT ₹294.04 Cr, ~11.7% 3-yr average ROE. Nelcast Ltd (listed) posted ₹1,251.7 Cr FY25 revenue, improving to ₹1,342.4 Cr FY26 (+5.8% YoY) with PAT margin improving to 9.3% — India's largest jobbing foundry for ductile/grey iron, 160,000 MT/year capacity, >36% of revenue from exports."
+  },
+  "subSegments": ["pump-and-valve castings", "automotive housing/component castings"],
+  "adjacentMarkets": ["pump-cast-components"],
+  "structureFacts": [
+    "PED 2014/68/EU certification is a specific EU regulatory gate for pressure-equipment castings (pumps/valves/oil&gas use cases), differentiating suppliers who can serve EU industrial-equipment OEMs",
+    "Rising raw-material (pig iron, scrap, coke) and energy costs are a persistent industry margin pressure, compounded during periods of geopolitical disruption to logistics/petrochemical-linked inputs",
+    "Larger listed players (Kirloskar Ferrous, Nelcast) increasingly integrate iron-making with casting to buffer input-cost volatility — a capability smaller/regional foundries typically lack"
+  ],
+  "adoptionStructure": {
+    "note": "Zero-defect quality commitment, regulatory/pressure-equipment certification (PED) for oil&gas/hydraulics/pumps&valves customers, NPD collaboration capability (3D modeling/2D drawing/tooling design), and capacity/lead-time reliability drive vendor selection."
+  },
+  "peers": [
+    { "name": "Kirloskar Ferrous Industries (listed)", "revenueCr_FY25": 6564.23, "revenueGrowthPct": 6.8, "patCr_FY25": 294.04, "roePct3yrAvg": 11.7, "source": "aggregated Screener-sourced summary" },
+    { "name": "Nelcast Ltd (listed)", "revenueCr_FY25": 1251.7, "revenueCr_FY26": 1342.4, "revenueGrowthPct_FY26": 5.8, "patMarginPct_FY26": 9.3, "roePct3yrAvg": 7.66, "note": "India's largest jobbing foundry for ductile/grey iron, 160,000 MT/year capacity, >36% of revenue from exports", "source": "Marketsmojo; Screener-sourced summaries" },
+    { "name": "Electrosteel Castings", "revenueCr_2023": 7360.42, "note": "largest ductile-iron-pipe maker in the Indian subcontinent, 280,000 MT/year capacity — DI-pipe-focused, an adjacent rather than directly comparable product line", "source": "aggregated search summary" }
+  ],
+  "customerValue": {
+    "drivers": ["zero-defect quality commitment", "PED/regulatory pressure-equipment certification", "NPD collaboration capability", "capacity/lead-time reliability, particularly under raw-material/logistics shocks"],
+    "strongestPredictor": "regulatory certification (PED) combined with capacity/lead-time reliability",
+    "source": "aggregated industry summary"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer finished/machined grey iron, ductile iron, and alloy cast-iron castings", "serve automotive, industrial, energy, oil&gas, mining, hydraulics, construction, pumps&valves end markets"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["run customer engineering collaboration (3D modeling → 2D drawing → tooling/manufacturing design)", "pass PED/ISO audit and certification checkpoints for regulated end-uses"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["run melting/moulding production (green sand, high-pressure moulding lines) sized in TPA", "manage raw-material (pig iron, scrap, alloying elements) availability, especially under supply shocks"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-term supply agreements with automotive/industrial OEMs", "handle export logistics to multiple countries"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["fulfil OEM supply volumes tied to underlying vehicle/equipment production schedules", "expand capacity as a forward bet on order-book growth"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/india-foundry-casting-market",
+    "https://www.grandviewresearch.com",
+    "https://www.siddharthfoundry.com/aboutus.php"
+  ]
+}

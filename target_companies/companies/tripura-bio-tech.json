@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "tripura-bio-tech",
+    "series": "Hidden Champions of India",
+    "segmentRef": "bio-pesticides-plant-growth-regulators",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-28",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Unlisted public, CIN U24219TG1997PLC114003, incorporated 1997; product line since 2012."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Tripura Bio-Tech: a real organic-agrochemical registrant with an export-approved product it isn't yet exporting.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A DSIR-registered R&D unit anchors this Telangana organic-inputs maker — but no certifications, patents, or current exports could be independently confirmed this pass.", "tier": "company", "epistemic": "fact", "source": "DSIR registry; HVT gap research", "fields": ["product_improvement", "gap_currently_monetized"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1997 (incorporation); product line since 2012", "tier": "company", "source": "CIN data; HVT row", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹1-100 Cr band (FY2021, Tofler) / ~$6.3M ≈ ₹52-53 Cr (2025 estimate)", "tier": "company", "source": "Tofler; 2025 third-party estimate", "fields": ["financials.revenueCr"] },
+    { "label": "PAT / Net worth", "value": "PAT +328.85% YoY (FY2024, absolute figure paywalled); net worth +65.15% (FY2024)", "tier": "company", "source": "Tofler", "fields": ["financials.patGrowthPct"] },
+    { "label": "EBITDA / ROE", "value": "EBITDA +8.29% YoY (FY2021); ROE -0.22%", "tier": "company", "source": "Tofler", "fields": ["financials.roePct"] },
+    { "label": "Employees", "value": "51-200 (RocketReach estimate)", "tier": "company", "source": "RocketReach", "fields": ["employees"] },
+    { "label": "Export status", "value": "Approved for export (Neem Oil Based EC containing Azadirachtin 0.03%) but not confirmed as currently exporting", "tier": "company", "source": "HVT gap research (chemrobotics.com)", "fields": ["gap_currently_monetized"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A real registrant, thin on independently confirmable detail",
+    "blocks": [
+      { "text": "Financial signals are mixed and mostly dated: revenue sits in the ₹1-100 Cr Tofler band for FY2021, with a separate 2025 estimate of ~$6.3M (~₹52-53 Cr) — the two aren't directly comparable given the gap in vintage. PAT reportedly grew 328.85% YoY in FY2024 (absolute figure paywalled, not found), net worth grew 65.15% the same year, but ROE remains negative at -0.22% — a company still working toward consistent profitability despite recent PAT growth.", "tier": "company", "epistemic": "fact", "source": "Tofler", "fields": ["financials.revenueCr", "financials.roePct"] },
+      { "text": "It specializes in developing organic solutions for farming, livestock feed, and food ingredients, with a moat built on adherence to organic certification standards to ensure product quality — both self-claimed on directory listings (JustDial), not independently verified this pass.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["differentiation", "moat"] },
+      { "text": "It holds a DSIR-registered in-house R&D unit — a registry-confirmed credential, not merely self-claimed, distinguishing it from many peers in this segment where R&D claims go unverified.", "tier": "company", "epistemic": "fact", "source": "DSIR registry (indiascienceandtechnology.gov.in)", "fields": ["product_improvement"] },
+      { "text": "The HVT sheet's own gap research surfaces a specific, real detail: the company holds export approval for a Neem Oil Based EC product containing Azadirachtin 0.03%, but whether it is currently being exported is not explicitly stated in available sources — an approved-but-unconfirmed-monetized capability, distinct from either a live export business or a purely aspirational one.", "tier": "company", "epistemic": "fact", "source": "HVT gap research (chemrobotics.com agropat filing)", "fields": ["gap_currently_monetized"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "A **genuinely fast-growing India niche**, though market-size estimates vary widely by methodology.", "evidence": "India biopesticides market estimates range from $82.2M (2024) to $381.23M by 2030 depending on source/scope (9.23-9.5%/yr); India's PGR CAGR was +21.9%/yr 2013-2024, the highest globally, forecast to moderate to 12.70%/yr going forward.", "tier": "segment", "epistemic": "fact", "source": "Mordor Intelligence; IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "**Government subsidy channels are a real, structural demand driver** for organic-input manufacturers like Tripura Bio-Tech.", "evidence": "India's National Project on Organic Farming (NPOF, since 2004) provides back-ended NABARD subsidies (up to 25-33% of outlay) for biopesticide/biofertilizer production units — 56 biofertilizer units and 17 compost units established under the scheme to date.", "tier": "segment", "epistemic": "fact", "source": "NABARD", "fields": ["structureFacts"] },
+      { "point": "**Peer outcomes in this segment range from well-funded growth to outright insolvency** — a genuinely bimodal segment.", "evidence": "BioPrime AgriSolutions raised $8.07M and grew revenue 153% YoY (FY2025); Camson Bio Technologies, once India's first integrated agri-biotech company, entered NCLT insolvency proceedings in Feb 2020 — both real, documented outcomes within the same segment.", "tier": "segment", "epistemic": "fact", "source": "Tracxn; screener.in", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A real, decades-old registrant with a genuine DSIR R&D credential and a specific, concrete export-approved product — but this pass found no certifications, patents, or confirmed current exports to substantiate the broader organic-positioning claims. The unconfirmed export-monetization status is the single most concrete, checkable gap here.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Mordor Intelligence, IMARC Group, NABARD (shared bio-pesticides-plant-growth-regulators segment file, reused from batch 3's Grace Bio Care profile). Peer data: BioPrime AgriSolutions, Multiplex Group, Camson Bio Technologies."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "market-access", "title": "Activating the existing Neem Oil Based EC export approval", "body": "The HVT sheet's own gap research names this directly: the company already holds export approval for its Azadirachtin 0.03% Neem Oil Based EC product, but current monetization of that approval is unconfirmed — leveraging an already-approved product for international sales is a lower-friction opportunity than developing new export-ready products from scratch.", "source": "HVT gap research (chemrobotics.com agropat filing).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is simply confirming current export status directly.", "tier": "universal" },
+    "items": [
+      { "lever": "market-access", "title": "Confirm whether the Neem Oil Based EC export approval is currently being used", "body": "Directly confirm with the company whether the already-approved Azadirachtin 0.03% Neem Oil Based EC product is being actively exported, and if not, what's blocking activation — a lower-cost diagnostic step before any broader growth-strategy conversation.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a biopesticide/PGR manufacturer in this segment — a directory-depth pass, not yet confirmed against Tripura Bio-Tech's own stated process beyond what the HVT row documents, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer bio-fertilizers, plant nutrients, wetting agents, biopesticides/bio-insecticides, plant growth regulators", "position on biodegradability/organic certification"], "stepsTier": "segment", "spottedAt": "position on biodegradability/organic certification", "spotted": { "text": "Company facts (specializes in organic solutions for farming, livestock feed, food ingredients; moat built on organic certification adherence) confirm this step is real for Tripura Bio-Tech — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["manufacture biodegradable/organic-input formulations", "run in-house R&D for crop-protection innovation", "pursue organic/quality certification"], "stepsTier": "segment", "spottedAt": "run in-house R&D for crop-protection innovation", "spotted": { "text": "Company facts (DSIR-registered in-house R&D unit, registry-confirmed) confirm this step is real for Tripura Bio-Tech — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate manufacturing facility (liquid and powder forms)", "scale production against domestic and export demand"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["serve manufacturer-cum-exporter relationships across Indian Subcontinent and export markets", "engage subsidy-linked institutional buyers (NABARD-backed units) where applicable"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["distributor/direct farmer orders domestically", "export orders", "reorder tied to crop cycle and farming season"], "stepsTier": "segment", "spottedAt": "export orders", "spotted": { "text": "Spotted at 'export orders': the Neem Oil Based EC product is export-approved but currently-monetized status is unconfirmed — see p3_opportunities.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/bio-pesticides-plant-growth-regulators.json, reused from batch 3's Grace Bio Care profile) — no company-specific (A2/pursuit) operational intel was collected for Tripura Bio-Tech this pass beyond what the HVT row and fresh research already document, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "A real, DSIR-credentialed organic-inputs registrant with one specific, checkable gap: an export-approved product whose current export status is unconfirmed. **Confirming that single fact is the clearest, lowest-cost next step.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Tripura Bio-Tech or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from Tofler; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus the DSIR registry and chemrobotics.com agropat filings; market data from Mordor Intelligence, IMARC Group and NABARD. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["Tofler", "DSIR registry (indiascienceandtechnology.gov.in)", "chemrobotics.com", "Mordor Intelligence", "IMARC Group", "NABARD", "RocketReach", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — whether the Neem Oil Based EC export approval is actually being used, and current (post-2021) revenue at company-verified precision — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

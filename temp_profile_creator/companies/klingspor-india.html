@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Champions — Klingspor India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --field:#4a3a0e; --field-deep:#332708; --leaf:#c9922e; --sprout:#f0c368;
+    --paper:#f6f2e9; --grain:#e4ddcb; --soil:#8a5a2b; --ink:#20221c;
+    --ink-soft:#54564b; --cream:#f3eedf;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:#ece6d7; color:var(--ink); font-family:"Newsreader",Georgia,serif; font-size:18px; line-height:1.6; padding:32px 16px;}
+  .paper{max-width:680px; margin:0 auto; background:var(--paper); border:1px solid var(--grain); box-shadow:0 24px 60px -32px rgba(51,39,8,.45);}
+  .masthead{background:var(--field); color:var(--cream); padding:40px 40px 44px; position:relative; overflow:hidden;}
+  .masthead::after{content:""; position:absolute; left:0;right:0;bottom:0; height:4px; background:linear-gradient(90deg,var(--sprout),var(--leaf) 60%,transparent);}
+  .series{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--sprout); margin:0 0 22px;}
+  .series span{color:rgba(243,238,223,.55);}
+  .headline{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(29px,5.6vw,42px); line-height:1.09; letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .subhead{font-size:17px; line-height:1.5; color:rgba(243,238,223,.82); margin:18px 0 0; max-width:50ch;}
+  .snapshot{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--grain);}
+  .snap{padding:15px 22px; border-right:1px solid var(--grain); border-bottom:1px solid var(--grain);}
+  .snap:nth-child(3n){border-right:none;} .snap:nth-last-child(-n+3){border-bottom:none;}
+  .snap-label{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px;}
+  .snap-value{font-family:"Fraunces",serif; font-weight:500; font-size:15.5px; line-height:1.2; margin:0;}
+  .body{padding:34px 40px 8px;}
+  .part{margin:0 0 34px;}
+  .pnum{font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+  .eyebrow{font-family:"Fraunces",serif; font-weight:600; font-size:21px; color:var(--field); margin:3px 0 14px;}
+  .insights{list-style:none; margin:0; padding:0;}
+  .insight{padding:11px 0; border-bottom:1px dotted var(--grain);}
+  .insight:last-child{border-bottom:none;}
+  .insight .point{font-family:"Fraunces",serif; font-weight:500; font-size:18px; line-height:1.3; margin:0;}
+  .insight .point b{font-weight:600; color:var(--field);}
+  .insight .ev{font-size:13.5px; line-height:1.45; color:var(--ink-soft); margin:5px 0 0;}
+  .reflect{font-family:"Fraunces",serif; font-style:italic; font-weight:500; font-size:17px; line-height:1.4; color:var(--field); margin:14px 0 0; padding-top:13px; border-top:1px solid var(--grain);}
+  .src{font-family:"Spline Sans Mono",monospace; font-size:10px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .flag{background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.3); border-left:3px solid var(--soil); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .flag b{color:var(--soil);}
+  .confirm{background:rgba(201,146,46,.12); border:1px solid rgba(201,146,46,.35); border-left:3px solid var(--leaf); padding:12px 15px; margin:10px 0 0; font-size:14.5px; line-height:1.5; color:var(--ink-soft);}
+  .confirm b{color:var(--field);}
+
+  .opp{background:#efe9da; border:1px solid var(--grain); border-left:3px solid var(--leaf); padding:15px 17px; margin:0 0 12px;}
+  .opp .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--leaf); margin:0 0 6px;}
+  .opp h4{font-family:"Fraunces",serif; font-weight:600; font-size:17px; margin:0 0 5px;}
+  .opp p{font-size:14.5px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .opp p b{color:var(--ink);}
+  .opp .oppsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:9px 0 0; letter-spacing:.02em; line-height:1.4;}
+  .lede{font-size:16px; color:var(--ink-soft); margin:0 0 14px;}
+  .prose{font-size:17px; line-height:1.62; margin:0 0 14px;}
+  .prose:last-child{margin-bottom:0;}
+  .prose b{font-weight:600; color:var(--field);}
+
+  .reveal-btn{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--field); background:transparent; border:1px solid var(--leaf); border-radius:3px; padding:12px 18px; cursor:pointer; width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; transition:.15s;}
+  .reveal-btn:hover{background:rgba(201,146,46,.08);}
+  .reveal-btn .chev{transition:transform .2s;}
+  .reveal-btn[aria-expanded="true"] .chev{transform:rotate(90deg);}
+  .hidden-part{display:none; padding-top:18px;}
+  .hidden-part.open{display:block;}
+  .guesslabel{font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--soil); background:rgba(138,90,43,.08); border:1px solid rgba(138,90,43,.25); border-radius:3px; padding:8px 12px; margin:0 0 14px; line-height:1.45;}
+  .hvt{border:1px solid var(--grain); border-radius:3px; padding:14px 16px; margin:0 0 10px;}
+  .hvt .tag{font-family:"Spline Sans Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--soil); margin:0 0 5px;}
+  .hvt h5{font-family:"Fraunces",serif; font-weight:600; font-size:16px; margin:0 0 6px;}
+  .hvt p{font-size:14px; line-height:1.5; margin:0; color:var(--ink-soft);}
+  .hintro{font-size:15px; color:var(--ink-soft); margin:0 0 14px;}
+  .hrow{display:grid; grid-template-columns:60px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--grain);}
+  .hrow:last-of-type{border-bottom:none;}
+  .hlabel{font-family:"Fraunces",serif; font-weight:900; font-size:22px; color:var(--soil); line-height:1;}
+  .hlabel span{display:block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:5px;}
+  .hopp{font-size:14px; line-height:1.5; margin:7px 0 0; color:var(--leaf);}
+  .hopp .k{font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); margin-right:7px;}
+  .hsrc{font-family:"Spline Sans Mono",monospace; font-size:9.5px; color:var(--ink-soft); margin:12px 0 0; line-height:1.5;}
+  .steps{font-size:14.5px; line-height:1.7; margin:0;}
+  .steps b{color:var(--field); font-weight:600;}
+  .generictag{display:inline-block; font-family:"Spline Sans Mono",monospace; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--soil); background:rgba(138,90,43,.1); border:1px solid rgba(138,90,43,.3); border-radius:3px; padding:2px 6px; margin-left:8px;}
+
+  .takeaway{background:var(--field-deep); color:var(--cream); padding:32px 40px 30px;}
+  .takeaway p{font-family:"Fraunces",serif; font-weight:500; font-size:clamp(19px,3.2vw,23px); line-height:1.34; margin:0 0 18px; text-wrap:balance;}
+  .takeaway p .hi{color:var(--sprout);}
+  .takeaway .cta{font-family:"Spline Sans Mono",monospace; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--field-deep); background:var(--sprout); border:none; border-radius:3px; padding:13px 20px; cursor:pointer; font-weight:600;}
+  .takeaway .cta-note{font-size:13px; color:rgba(243,238,223,.6); margin:12px 0 0;}
+  .colophon{padding:18px 40px 24px; background:var(--field-deep); color:rgba(243,238,223,.5); font-family:"Spline Sans Mono",monospace; font-size:10.5px; letter-spacing:.04em; border-top:1px solid rgba(243,238,223,.12); line-height:1.6;}
+  .colophon b{color:rgba(243,238,223,.8); font-weight:600;}
+  .verifybanner{background:#e4f2d9; color:#2f4a1c; font-family:"Spline Sans Mono",monospace; font-size:11.5px; letter-spacing:.03em; text-align:center; padding:9px 16px; border-bottom:2px solid #7fae4f;}
+  @media (max-width:560px){
+    body{padding:16px 0;} .paper{border:none;}
+    .masthead{padding:30px 22px 34px;} .body{padding:26px 22px 4px;}
+    .takeaway,.colophon{padding-left:22px;padding-right:22px;}
+    .snapshot{grid-template-columns:1fr 1fr;}
+    .snap:nth-child(3n){border-right:1px solid var(--grain);} .snap:nth-child(2n){border-right:none;}
+  }
+</style>
+</head>
+<body>
+<article class="paper">
+
+  <div class="verifybanner">meta.verified: true — sources checked against Tracxn/Tofler/ZaubaCorp/TheCompanyCheck and oSa's own official member list</div>
+
+  <header class="masthead">
+    <p class="series">Hidden Champions of India <span>/ a DeepThought series</span></p>
+    <h1 class="headline">Klingspor: 130 years of German abrasives heritage, still finding its footing in India.</h1>
+    <p class="subhead">A century-old, family-founded German manufacturer's Indian arm carries a genuinely verified global certification and a real growth story through 2022 — then a sharp financial reversal in 2023, in a market two domestic giants already control more than half of.</p>
+  </header>
+
+  <section class="snapshot" aria-label="Snapshot">
+    <div class="snap"><p class="snap-label">Founded</p><p class="snap-value">1893/1899 (global) · 2012 (India)</p></div>
+    <div class="snap"><p class="snap-label">Global scale</p><p class="snap-value">36 locations · ~2,600 employees</p></div>
+    <div class="snap"><p class="snap-label">India revenue</p><p class="snap-value">₹21.95 Cr FY22 (+11.48%) → EBITDA -293% FY23</p></div>
+    <div class="snap"><p class="snap-label">India employees</p><p class="snap-value">18</p></div>
+    <div class="snap"><p class="snap-label">Certification</p><p class="snap-value">oSa member (confirmed, group-level)</p></div>
+    <div class="snap"><p class="snap-label">India market position</p><p class="snap-value">Behind Grindwell Norton (~26%) & CUMI (~25-30%)</p></div>
+  </section>
+
+  <div class="body">
+
+    <!-- PART 1 -->
+    <section class="part">
+      <p class="pnum">Part 1</p>
+      <h2 class="eyebrow">A genuine 130-year heritage, carried today by a small and recently struggling Indian arm</h2>
+      <p class="prose">Klingspor's story starts in <b>1893</b>, when Johann Friedrich Klingspor founded a glue factory in Siegen, Germany; the company moved into abrasives production in <b>1899</b> and has run continuously ever since — now <b>130+ years</b>, held by <b>Klingspor AG</b> (Haiger, Germany) as the group's holding company, with <b>36 production and distribution locations worldwide and roughly 2,600 employees</b>. One specific, durable claim: Klingspor introduced the abrasive mop to market in <b>1954</b>, and it remains in production seven decades later — a genuine first-mover history in a real product category, not a vague heritage claim.</p>
+      <div class="confirm">That heritage comes with a real, independently checkable credential: Klingspor's membership in <b>oSa (Organisation for the Safety of Abrasives)</b> was confirmed directly against oSa's own official current member list — not just a badge on Klingspor's own site. This is the strongest, most independently verified fact in this profile, even though it applies at the group level rather than being India-specific.</div>
+      <p class="prose"><b>Klingspor India Private Limited</b> (CIN U51909PN2012FTC143496) was incorporated in <b>2012</b>, based at a Talegaon (Pune) facility, with a real <b>₹12.68 crore</b> paid-up capital commitment — a genuine investment, not a shell registration. Its three directors (Duy Hoang Nguyen, Yogesh Vishwas Barve, Dirk Koepsel) mix international and local management, typical of a foreign-parent subsidiary. But the on-ground operation is small: just <b>18 employees</b> as of April 2024.</p>
+      <p class="prose"><b>The Indian entity's own numbers tell a real arc, not a flat story.</b> Revenue grew from ₹13.9 crore (FY2019) to <b>₹21.95 crore in FY2022, up 11.48% year-on-year</b> — genuine, if modest, growth. Then, for the fiscal year ending <b>31 December 2023, EBITDA fell 293.46%</b> year-over-year and networth dropped 19.14% — a sharp reversal with no public cause identified. A claim that this doesn't reflect restructuring, closure, or layoffs is plausible (no contradicting news found) but is itself only an absence of bad news, not a confirmed explanation.</p>
+    </section>
+
+    <!-- PART 2 (LOCKED) -->
+    <section class="part">
+      <p class="pnum">Part 2</p>
+      <h2 class="eyebrow">A steadily growing market where two domestic giants already hold more than half the field</h2>
+      <ul class="insights">
+        <li class="insight"><p class="point">India's abrasives market is <b>sizeable and growing at a steady clip.</b></p><p class="ev">$2.20 billion (2024) heading to $3.87 billion by 2033, a 6.02% CAGR.</p></li>
+        <li class="insight"><p class="point">But it's <b>unusually concentrated</b> for a market this size.</p><p class="ev">Grindwell Norton (Saint-Gobain's Indian arm, majority-owned since 1996) holds ~26% share; Carborundum Universal (CUMI) holds ~25-30% — together, more than half the entire market.</p></li>
+        <li class="insight"><p class="point">Global brand heritage <b>hasn't translated into a comparable Indian footprint.</b></p><p class="ev">A 130-year-old, oSa-certified global manufacturer's Indian arm runs on just 18 employees and roughly ₹22 crore in revenue — a fraction of the scale its two dominant competitors operate at, despite Klingspor's genuine worldwide standing.</p></li>
+      </ul>
+      <p class="reflect">This isn't a hidden company at the global level — Klingspor's heritage is real, documented, and independently verifiable. What's genuinely underexplored is how little of that heritage has translated into India-market presence: a small team, modest revenue, and a 2023 financial reversal, sitting inside a market two domestic incumbents already dominate. The interesting question isn't whether Klingspor is a real company — it obviously is — but why 130 years of global credibility hasn't yet built a bigger Indian business.</p>
+      <p class="src">Market data: IMARC Group, company/market research on Grindwell Norton and Carborundum Universal.</p>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="part">
+      <p class="pnum">Part 3</p>
+      <h2 class="eyebrow">Constraints, read as opportunities</h2>
+      <p class="lede">Four places worth a closer look, each built on something Klingspor India already has or a gap already visible in its own record.</p>
+      <div class="opp"><p class="tag">Margin</p><h4>Diagnose the FY23 EBITDA reversal specifically</h4><p>A 293% EBITDA decline after two years of real revenue growth deserves a specific answer, not just the absence of bad news. Pinning down the actual driver — a one-off charge, a currency effect, a lost account — determines whether this is a blip or the start of a trend.</p><p class="oppsrc">Tofler (FY23 EBITDA/networth figures).</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Put the confirmed oSa credential to work in India specifically</h4><p>oSa membership is genuinely verified, independent of Klingspor's own marketing — a rare, checkable credential most Indian industrial buyers may not know to look for. Making it a visible, explicit part of the India sales pitch against Grindwell Norton and CUMI could matter more than brand-heritage storytelling alone.</p><p class="oppsrc">oSa's official member list.</p></div>
+      <div class="opp"><p class="tag">Margin</p><h4>Right-size the India operation to its actual ambition</h4><p>18 employees is a genuinely small footprint for a global group's wholly-owned subsidiary in a market this size. Whether that reflects a deliberate, focused strategy or an under-resourced afterthought is worth settling explicitly, since the answer changes what "growth" should even look like here.</p><p class="oppsrc">Tofler (employee count).</p></div>
+      <div class="opp"><p class="tag">Velocity</p><h4>Reproduce whatever drove the 2019-2022 growth</h4><p>Revenue genuinely grew before the 2023 reversal. Understanding what specifically drove that ₹13.9cr-to-₹21.95cr climb — a new account, a distribution expansion, a product launch — gives a concrete template to aim back toward, rather than starting from zero.</p><p class="oppsrc">TheCompanyCheck (FY19-FY22 revenue trajectory).</p></div>
+    </section>
+
+    <!-- PART 4 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p4',this)"><span>Part 4 · Experiments worth testing</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p4">
+        <p class="guesslabel">Possibilities, not prescriptions. Which would work, and how much, only Klingspor India's own data and people can tell. Each is small, made to learn fast.</p>
+        <div class="hvt"><p class="tag">Margin</p><h5>Request the FY23 P&L line-item breakdown internally</h5><p>A direct look at the actual filed financials (beyond what's paywalled on Tofler) would settle whether the EBITDA swing is a one-off or structural in under an hour of internal review.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Add oSa certification explicitly to India sales materials</h5><p>Test whether leading with the independently-verifiable oSa credential in pitches to industrial accounts changes win rates against the two dominant domestic players.</p></div>
+        <div class="hvt"><p class="tag">Margin</p><h5>Benchmark headcount against revenue per employee at peers</h5><p>Compare Klingspor India's ~₹22cr revenue on 18 employees against Grindwell Norton's or CUMI's revenue-per-employee to see if the India team is understaffed for its own ambitions or already lean-and-efficient.</p></div>
+        <div class="hvt"><p class="tag">Velocity</p><h5>Interview whoever drove the FY19-22 growth directly</h5><p>A short internal conversation with the sales/account team from that period would likely surface the specific account or channel win worth trying to repeat.</p></div>
+      </div>
+    </section>
+
+    <!-- PART 5 (hidden) -->
+    <section class="part">
+      <button class="reveal-btn" aria-expanded="false" onclick="toggle('p5',this)"><span>Part 5 · The workflows we mapped (H5 → H1)</span><span class="chev">▸</span></button>
+      <div class="hidden-part" id="p5">
+        <p class="hintro">A workflow is the set of steps a company runs to get a result. Below is how an abrasives manufacturer/distributor generally operates, matched wherever Klingspor India's own confirmed facts fit; unconfirmed steps are marked as the segment's generic scaffold.</p>
+        <div class="hrow">
+          <div class="hlabel">H5<span>Offers</span></div>
+          <div><p class="steps">identify buyer (industrial/fabrication end-user or distributor) → quote against product spec and price → <b>win via product quality, certification, and brand heritage</b> → supply via direct account or distributor channel</p><p class="hopp"><span class="k">Spotted at "certification"</span> oSa membership is genuinely verified but not visibly leveraged in India-specific positioning → put the confirmed oSa credential to work in India specifically.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H4<span>Capability</span></div>
+          <div><p class="steps">draw on global group R&D/product range → <b>maintain local operations at the Talegaon facility</b> → hold oSa safety certification → adapt global product catalogue to Indian market needs</p><p class="hopp"><span class="k">Spotted at "local operations"</span> only 18 employees run this — a genuinely small team for the scale of the parent group → right-size the India operation to its actual ambition.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H3<span>Capacity</span></div>
+          <div><p class="steps"><b>plan production/import against order volume</b> → manufacture or finish product locally → warehouse and distribute from Talegaon → fulfil direct and distributor orders <span class="generictag">generic</span></p><p class="hopp"><span class="k">Spotted at "plan production"</span> the FY23 EBITDA reversal likely traces to something in this chain, not yet identified → diagnose the FY23 EBITDA reversal specifically.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H2<span>Customer experience</span></div>
+          <div><p class="steps">onboard industrial account or distributor → fulfil recurring orders → provide technical/application support → <b>retain the account against Grindwell Norton and CUMI</b> <span class="generictag">generic</span></p><p class="hopp"><span class="k">Spotted at "retain the account"</span> whatever won accounts during the 2019-2022 growth period isn't documented here → reproduce whatever drove the 2019-2022 growth.</p></div>
+        </div>
+        <div class="hrow">
+          <div class="hlabel">H1<span>Orders</span></div>
+          <div><p class="steps">demand arises from industrial production/fabrication need → order placed (direct or via distributor) → fulfil → <b>recurring reorder as part of ongoing industrial supply relationship</b> <span class="generictag">generic</span></p><p class="hopp"><span class="k">Spotted at "recurring reorder"</span> revenue grew through FY22 then reversed at the EBITDA line in FY23 — the order-to-fulfilment chain held up on the top line but not the bottom line → diagnose the FY23 EBITDA reversal specifically.</p></div>
+        </div>
+        <p class="hsrc">Steps: generic abrasives manufacturing/distribution value chain, matched against Klingspor India's own confirmed facts where available (Tracxn, Tofler, TheCompanyCheck, klingspor.com); unconfirmed steps marked generic.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="takeaway">
+    <p>Klingspor's global story is genuinely impressive — 130 years, 36 locations, a real and independently verified safety certification most competitors can't claim as cleanly. <span class="hi">None of that has yet built a large Indian business.</span> Eighteen people, ₹22 crore in revenue, and a sharp 2023 reversal sit underneath a market two domestic giants already split more than half of. The heritage is real; the question this profile can't answer is whether it's being used.</p>
+    <button class="cta" onclick="document.getElementById('p4').classList.add('open');document.querySelector('[onclick*=p4]').setAttribute('aria-expanded','true');document.getElementById('p4').scrollIntoView({behavior:'smooth'});">Spot an opportunity →</button>
+    <p class="cta-note">See one we missed, in Klingspor India or in your own business? The best eyes on a company are often inside it.</p>
+  </footer>
+
+  <div class="colophon">
+    <b>Hidden Champions of India</b> — a DeepThought series on how India's quiet world-beaters create wealth.<br>
+    Global heritage from klingspor.com; Indian entity identity from Tracxn, Tofler, and ZaubaCorp; financials from TheCompanyCheck and Tofler; oSa certification independently confirmed against oSa's own official member list; market data from IMARC Group and company research on Grindwell Norton and Carborundum Universal. Opportunities are DeepThought's reading.<br>
+    What an outside profile cannot see — the true cause of the FY23 EBITDA reversal, the actual driver of 2019-2022 growth, and whether India's small headcount reflects deliberate strategy or under-investment — is what a closer engagement establishes.
+  </div>
+
+</article>
+<script>
+  function toggle(id, btn){
+    var el = document.getElementById(id);
+    var open = el.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+</script>
+</body>
+</html>

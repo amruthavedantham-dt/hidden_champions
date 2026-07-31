@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "hindustan-pharmaceuticals",
+    "series": "Hidden Champions of India",
+    "segmentRef": "herbal-extracts-medicines",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Sole proprietorship per HVT row. **Unresolved identity ambiguity — read before using this profile**: 'Hindustan Pharmaceuticals' is a generic enough name that two distinct candidate identities surfaced. The HVT sheet's own notes field found GST registrations for a proprietorship (owner: Sanjeev Kumar) and a separate partnership entity under similar names. This session's research instead disambiguated to a specific, plausible match: a herbal-extract exporter in Amritsar, Punjab (hindphrm.com), founded 1971 by Raman Gupta, exporting since 1995. These may or may not be the same entity — not resolved."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Hindustan Pharmaceuticals: a patent-office-confirmed alkaloid pioneer, behind an unresolved identity question.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "A company the Indian Patent Office itself cites as a pioneer in Indian alkaloid production — sole proprietorship, no financials found, name shared with at least one other registered entity.", "tier": "company", "epistemic": "fact", "source": "HVT row (ipindia.gov.in)", "fields": ["differentiation"] }
+  },
+  "snapshot": [
+    { "label": "Candidate identity", "value": "Amritsar herbal exporter, founded 1971 (Raman Gupta) — unconfirmed match", "tier": "company", "source": "hindphrm.com", "fields": ["foundedYear"] },
+    { "label": "Differentiation source", "value": "Indian Patent Office exam paper (registry-confirmed)", "tier": "company", "source": "ipindia.gov.in", "fields": ["differentiation"] },
+    { "label": "Revenue / PAT / ROE", "value": "Not found (no public filings for a sole proprietorship)", "tier": "company", "source": "n/a", "fields": ["financials.revenueCr"] },
+    { "label": "Website", "value": "Domain expired — hindustanpharmaceuticals.com is parked for sale", "tier": "company", "source": "hugedomains.com", "fields": ["ownershipType"] },
+    { "label": "Certifications claimed", "value": "WHO-GMP/WHO-CGMP, TUV Nord ISO 9001, USFDA site registration", "tier": "company", "source": "chemdmart.com (self-claimed, needs_verify: yes per HVT)", "fields": ["moat"] },
+    { "label": "Export activity", "value": "Herbal extracts since 1995 (candidate entity)", "tier": "company", "source": "hindphrm.com", "fields": ["exportFootprint"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A registry-confirmed claim, behind a genuinely uncertain identity",
+    "blocks": [
+      { "text": "The single strongest fact in this entire profile is also the one most worth double-checking against the identity ambiguity: an Indian Patent Office patent-agent examination paper names 'Hindustan Pharmaceuticals' as a pioneer in alkaloid production in India — a registry-confirmed source, the strongest credibility tier this project uses, not a self-claim. But which 'Hindustan Pharmaceuticals' the exam paper refers to was not independently re-confirmed this session.", "tier": "company", "epistemic": "fact", "source": "HVT row; ipindia.gov.in (Indian Patent Office)", "fields": ["differentiation"] },
+      { "text": "The company's own listed website (hindustanpharmaceuticals.com) is an expired, parked domain now for sale — meaning even a direct check of 'the company's own claims' isn't currently possible through the channel the HVT sheet points to.", "tier": "company", "epistemic": "fact", "source": "hugedomains.com", "fields": ["ownershipType"] },
+      { "text": "This session's research instead found a plausible candidate: a herbal-extract exporter based in Amritsar, Punjab (hindphrm.com), founded in 1971 by Raman Gupta, exporting medicinal herbs and herbal extracts since 1995 — consistent with the HVT sheet's 'herbal-extracts-medicines' sector and segment classification, but not confirmed as the same legal entity the patent-office source or the HVT sheet's own notes field describes.", "tier": "company", "epistemic": "fact", "source": "hindphrm.com", "fields": ["foundedYear", "exportFootprint"] },
+      { "text": "The HVT sheet's own notes field independently documents the identity problem: GST registrations exist for a proprietorship (named owner: Sanjeev Kumar) and, separately, a partnership entity under a similar name — the HVT tool itself could not cleanly resolve which entity its own pillar research describes.", "tier": "company", "epistemic": "fact", "source": "HVT row notes field", "fields": ["ownershipType"] },
+      { "text": "It claims to hold WHO-GMP/WHO-CGMP, TUV Nord ISO 9001 and USFDA site registration, and to have patented a drug 'important for public health in India' — both self-claimed via a third-party directory (chemdmart.com), and the HVT sheet flags both `moat` and `product_improvement` `needs_verify: yes`.", "tier": "company", "epistemic": "fact", "source": "HVT row (self-claimed)", "fields": ["moat", "product_improvement"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large and growing very fast**, with India specifically outpacing the global rate.", "evidence": "Global herbal medicine market: $100-251B (2024-25) to $396-516B by 2034-35 depending on methodology; India's own herbal medicine market is growing faster still, $7.26B (2025) to $30.0B by 2035, ~15.2%/yr.", "tier": "segment", "epistemic": "fact", "source": "Market Research Future; Mordor Intelligence", "fields": ["market.sizeRange"] },
+      { "point": "**Export demand is real and geographically concentrated**, matching where a genuine herbal exporter would want to be.", "evidence": "India's Ayush exports doubled over the past decade to $2.16B across 150 countries; the US alone absorbed 34.95% of Ayush exports, with raw herbs and extracts making up 60-70% of export volume — a category the candidate Amritsar entity's own 1995-onward export history fits.", "tier": "segment", "epistemic": "fact", "source": "organiser.org (Ayush export data)", "fields": ["exportFootprint"] },
+      { "point": "Named peers in this category are **all substantially larger** — no scale-comparable peer was found.", "evidence": "Dabur India (₹12,404 Cr revenue), Himalaya Wellness (~$440M), Shree Baidyanath (₹761 Cr) all operate at a scale many multiples above what a small sole-proprietorship exporter would show — useful as market-structure context, not a benchmark.", "tier": "segment", "epistemic": "fact", "source": "aggregated industry reporting", "fields": ["peers"] }
+    ],
+    "reflect": { "text": "A registry-confirmed pioneer claim sitting inside a name and legal-entity picture this research genuinely could not pin down. The market opportunity is real regardless; which specific company gets credit for the patent-office claim is the thing to resolve first.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Market Research Future, Mordor Intelligence, organiser.org (shared herbal-extracts-medicines segment file). No peer financials are meaningful here given the unresolved identity."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One place named in the company's own gap research — contingent on the identity question being resolved first.",
+    "items": [
+      { "lever": "velocity", "title": "Scaling herbal essentials for export markets", "body": "The HVT sheet's own gap research names this directly: the company has stated intent and existing certifications to scale herbal-essential exports internationally, but the untapped potential can't be sized or acted on until it's clear which legal entity actually holds those certifications and that export history.", "source": "HVT gap research (business-standard.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions — and the honest first step here is resolving identity, not testing a growth lever.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Confirm which entity the patent-office citation and the HVT sheet's pillar claims actually describe", "body": "Before any export-scaling discussion, get a direct confirmation (company registration documents, GST certificate, or a direct conversation) of which 'Hindustan Pharmaceuticals' — the Amritsar herbal exporter this research found, the Sanjeev-Kumar proprietorship the HVT sheet's own notes found, or a third, different entity — is the actual subject of this profile.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for an herbal extract/medicine manufacturer in this segment — a directory-depth pass, not yet confirmed against this company's own stated process (and complicated by the identity ambiguity above), so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer standardized herbal extracts, plant-derived alkaloid salts/isolates, and finished herbal/Ayurvedic products", "serve pharmaceutical and nutraceutical customers as a B2B ingredient supplier"], "stepsTier": "segment", "spottedAt": "offer standardized herbal extracts, plant-derived alkaloid salts/isolates, and finished herbal/Ayurvedic products", "spotted": { "text": "Company facts (registry-confirmed alkaloid production pioneer status) confirm this step has some real basis, though for which specific entity remains open — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run in-house extraction/isolation know-how for plant-derived actives", "standardize phytochemical content", "maintain quality-control from raw material through finished product"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate extraction/processing facility with dedicated machinery", "scale relative to raw-material sourcing volume"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["build direct export relationships with pharmaceutical/nutraceutical formulators", "support VCSMPP/AYUSH Ministry certification requirements"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["export orders to international herbal-ingredient buyers", "feed into pharmaceutical/nutraceutical/supplement manufacturers in US/EU/UAE demand centers", "reorder tied to buyer's own production cadence"], "stepsTier": "segment", "spottedAt": "export orders to international herbal-ingredient buyers", "spotted": { "text": "Spotted at \"export orders\": stated intent to scale exports exists, but which entity's certifications back that intent is unresolved → confirming the correct entity first.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/herbal-extracts-medicines.json) — no company-specific (A2/pursuit) operational intel was collected this pass, and given the identity ambiguity, treat every step here as provisional."
+  },
+  "takeaway": { "text": "A real patent-office citation, an expired website, and at least two candidate identities for the same company name. **Confirm who this actually is before doing anything else with this profile.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Hindustan Pharmaceuticals or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. No public financials found (sole proprietorship). Company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus ipindia.gov.in (Indian Patent Office, registry-confirmed) and hindphrm.com (candidate entity, unconfirmed match); market data from Market Research Future, Mordor Intelligence and organiser.org. This profile's central issue — unresolved company identity — is documented in meta.provenance and should be resolved before publishing. Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["ipindia.gov.in", "hindphrm.com", "chemdmart.com", "hugedomains.com", "Market Research Future", "Mordor Intelligence", "organiser.org", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — which legal entity this profile actually describes, and its true financial and operational scale — is what a closer engagement establishes, and is the priority here before anything else.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}

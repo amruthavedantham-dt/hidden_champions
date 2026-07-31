@@ -1,0 +1,45 @@
+{
+  "segmentName": "Automotive Injection-Molded Plastic Components",
+  "market": {
+    "worldSizeUSD_B_range": "India automotive plastics: $1.51B (2025) to $2.22B by 2034 (4.25%/yr) per one estimate — though the HVT sheet's own alignment research cites a much larger figure ($2,147.1B in 2025), which appears to be a unit/scale error in that source and is not used here. Broader India injection-molded plastics market (all end-uses): $27.84B (2024), 5.5%/yr. Global automotive plastics: estimates diverge widely, $31.6-47.1B (2025), 5.6-13.5%/yr depending on scope.",
+    "cagrPctRange": [4.25, 13.5],
+    "exportGeographies": ["not itemized for the injection-molded-plastics segment specifically — India auto component exports overall: US ~26-27% of FY26 exports, Germany 9%, North America ~32%, Europe ~29.5% (fastest-growing major region, +9%)"],
+    "globalCompetitors": ["not individually named — see peers[] for listed Indian comparables"],
+    "domesticSlice": "India total auto component exports ~$24B, +5% YoY; ACMA targets $100B exports within 7-8 years"
+  },
+  "subSegments": [],
+  "adjacentMarkets": [
+    { "name": "EV plastics market", "sizeUSD_B_range": "$8.91B by 2030 (22%/yr) to $17.32B by 2031 (28.16%/yr, 2026-2031) depending on forecast — North America currently ~40% share", "note": "EVs use significantly more engineered plastics (PA, PC, PE, PP) for battery enclosures, charging ports, and lightweight structural parts to offset battery mass" }
+  ],
+  "structureFacts": [
+    "Vehicle lightweighting trends are structurally increasing plastic content per vehicle across ICE and EV platforms alike",
+    "EV-driven component changes (battery enclosures, charging infrastructure) are creating new plastic-part categories beyond traditional interior/under-bonnet trim"
+  ],
+  "adoptionStructure": {
+    "note": "Long-term nomination-based supply contracts tied to vehicle model life cycles — not a repurchase-rate category"
+  },
+  "peers": [
+    { "name": "Sundram Fasteners", "revenueUSD_M": 621.3, "roePctAvg": 16.28, "roePctLatest": 13.68, "note": "auto components incl. plastics-adjacent lines, not a pure plastics comparable", "source": "zoominfo.com; marketsmojo.com" },
+    { "name": "Craftsman Automation", "revenueCr": 8069, "patCr": 384, "revenueCAGRPct": 21, "roePct3yrAvg": 13.1, "rocePct": 9.74, "source": "screener.in" },
+    { "name": "Samvardhana Motherson International", "revenueCr": 126104, "fy": "FY2025", "roePct3yrAvg": 11.6, "rocePct": 17.2, "note": "company-wide, not plastics-division-specific", "source": "screener.in" }
+  ],
+  "customerValue": {
+    "drivers": ["JIT/just-in-time delivery reliability to OEM lines", "PPAP/APQP quality documentation", "engineering change management responsiveness", "proximity/co-location to OEM plants"],
+    "strongestPredictor": "not established from available research — inferred from OEM nomination-process structure",
+    "source": "industry structure inference"
+  },
+  "valueChain": [
+    { "hId": "H5", "hName": "Offers", "steps": ["offer injection-molded plastic components (interior trim, under-bonnet, structural/semi-structural parts)", "engineer to OEM/Tier-1 specs (TS16949/IATF-certified)", "bundle with in-house paint/surface finishing where offered"] },
+    { "hId": "H4", "hName": "Capability", "steps": ["tool design and mold-making", "multi-tonnage injection molding (small to large-tonnage presses)", "paint/surface-coating lines, plastic welding, assembly"] },
+    { "hId": "H3", "hName": "Capacity", "steps": ["operate multiple press-tonnage bands (typically 50T-1500T)", "run multi-shift high-volume production", "maintain multi-plant footprint near OEM clusters"] },
+    { "hId": "H2", "hName": "Customer experience", "steps": ["deliver JIT to OEM assembly lines", "maintain PPAP/APQP quality documentation", "manage engineering change requests"] },
+    { "hId": "H1", "hName": "Orders", "steps": ["win nomination-based supply contracts via RFQ/vendor-approval processes", "fulfil against vehicle model production schedules", "reorder tied to model life cycle", "requalify for next-generation platforms"] }
+  ],
+  "sources": [
+    "https://www.imarcgroup.com/india-automotive-plastics-market",
+    "https://www.grandviewresearch.com/industry-analysis/india-injection-molding-plastic-market-report",
+    "https://www.autocarpro.in/news/auto-component-exports-rise-5-percent-acma-expects-trade-deals-to-drive-next-growth-phase-133469",
+    "https://www.marketresearchfuture.com/reports/electric-vehicle-plastic-market-24950",
+    "https://www.screener.in/company/CRAFTSMAN/consolidated/"
+  ]
+}

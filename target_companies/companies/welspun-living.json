@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "schemaVersion": "3.0",
+    "profileId": "welspun-living",
+    "series": "Hidden Champions of India",
+    "segmentRef": "towels-bedding-rugs",
+    "researchDepth": "directory",
+    "verified": true,
+    "generatedAt": "2026-07-27",
+    "provenance": "HVT sheet row (differentiation/moat/product_improvement/alignment/gap, reviewed) + fresh financial research this session. Listed, CIN L17110GJ1985PLC033271."
+  },
+  "masthead": {
+    "kicker": "Hidden Champions of India / a DeepThought series",
+    "headline": { "text": "Welspun Living: a deep-tech bet on manufacturing inside the tariff wall it's currently getting hurt by.", "tier": "universal", "epistemic": "interpretation", "source": "DT framing" },
+    "subhead": { "text": "India's #1 US home-textiles supplier, whose FY26 profit fell 67% on tariff-related shipment deferrals — now building pillow plants in Ohio and Nevada.", "tier": "company", "epistemic": "fact", "source": "business-standard.com; matrixbcg.com", "fields": ["financials.patCr", "recentMoves"] }
+  },
+  "snapshot": [
+    { "label": "Founded", "value": "1985, as Welspun Winilon Silk Mills", "tier": "company", "source": "Wikipedia", "fields": ["foundedYear"] },
+    { "label": "Revenue", "value": "₹9,399 Cr · FY26 (from ₹10,545 Cr FY25, -11%)", "tier": "company", "source": "screener.in", "fields": ["financials.revenueCr.FY26"] },
+    { "label": "PAT", "value": "₹213 Cr · FY26 (from ₹644 Cr FY25, -67%)", "tier": "company", "source": "screener.in", "fields": ["financials.patCr.FY26"] },
+    { "label": "OPM / ROE", "value": "8% (from 12%) / 11%", "tier": "company", "source": "screener.in", "fields": ["financials.opmPct", "financials.roePct"] },
+    { "label": "Patents", "value": "47+ patented technologies", "tier": "company", "source": "welspunliving.com", "fields": ["differentiation"] },
+    { "label": "US manufacturing bet", "value": "$50M Ohio pillow plant (2024) + $13M Nevada plant (2026)", "tier": "company", "source": "matrixbcg.com; scanx.trade", "fields": ["recentMoves"] }
+  ],
+  "p1_engine": {
+    "eyebrow": "A deep-tech bet on manufacturing its way around the tariff that just hurt it",
+    "blocks": [
+      { "text": "FY26 was a genuinely difficult year: revenue fell 11% to ₹9,399 Cr, PAT fell 67% to ₹213 Cr, and OPM compressed from 12% to 8% — the company itself attributes this to tariff-related shipment deferrals and unfavorable product mix, not a demand collapse. ROE held at 11%.", "tier": "company", "epistemic": "fact", "source": "screener.in; business-standard.com", "fields": ["financials.revenueCr", "financials.patCr", "financials.opmPct", "financials.roePct"] },
+      { "text": "It holds 47+ patented technologies including Nanocore® (allergen barrier), Wel-Trak® (supply-chain traceability) and HYGROCOTTON® (absorbency/softness process), plus OEKO-TEX Standard 100, GOTS, GRS certification and 'Made in Green by OEKO-TEX' status — the first Indian bed/bath manufacturer to receive it. It also ranks in DJSI's top 3 percentile globally on ESG.", "tier": "company", "epistemic": "fact", "source": "welspunliving.com", "fields": ["moat", "product_improvement"] },
+      { "text": "It's the #1 home-textiles supplier to the US market, with exports at ~67% US, ~17% EU and distribution in 50+ countries — genuinely concentrated exposure to exactly the market where the tariff pressure originates.", "tier": "company", "epistemic": "fact", "source": "hometextileviews.com", "fields": ["exportFootprint"] },
+      { "text": "It responded with real capital, not just commentary: a $50M Ohio pillow plant (6.7M-pillow initial capacity, operational since ~September 2024) and a $13M Nevada pillow plant (commercial production began March 2026) — US-based manufacturing that sidesteps the tariff exposure directly. FY25 capex was ₹860 Cr, with ₹577 Cr planned for FY26, plus a ₹304 Cr terry-towel facility expansion and a ₹121 Cr Anjar modernization approved mid-2026.", "tier": "company", "epistemic": "fact", "source": "matrixbcg.com; scanx.trade; careratings.com", "fields": ["recentMoves"] }
+    ]
+  },
+  "p2_market": {
+    "eyebrow": "The market it sells into",
+    "insights": [
+      { "point": "The field is **large, with India's own segment growing at a comparable or faster clip**, depending on methodology.", "evidence": "Global home textiles: $230.99B (2025) to $338.37B by 2032 (5.60%/yr). India home textile market: $4.51B (2025) to $6.78B by 2034 (4.65%/yr) per one source, or as fast as 8.4%/yr per another.", "tier": "segment", "epistemic": "fact", "source": "Fortune Business Insights; IMARC Group", "fields": ["market.sizeRange"] },
+      { "point": "**Every major listed peer shows the same recent pain** — this is a sector-wide tariff shock, not a Welspun-specific stumble.", "evidence": "Indo Count Industries' FY26 PAT fell 49.33% YoY on nearly flat revenue, with ROE dropping from a 16.93% 5-year average to 9.92% in the latest half-year — the same margin-compression pattern visible at Welspun.", "tier": "segment", "epistemic": "fact", "source": "business-standard.com; marketsmojo.com", "fields": ["peers[0]"] },
+      { "point": "**Trident Ltd shows the segment can still deliver strong results**, a useful counterpoint.", "evidence": "Trident posted ₹6,933 Cr TTM revenue with ₹409 Cr TTM profit and 11.34% ROE, with Q1 FY27 profit up 55% QoQ — proof the tariff shock hasn't uniformly depressed every player equally.", "tier": "segment", "epistemic": "fact", "source": "marketfeed.com", "fields": ["peers[1]"] }
+    ],
+    "reflect": { "text": "The largest, most patent-rich player in Indian home textiles just had its worst profit year in the recent record, for a reason (US tariffs) that's hitting the whole sector — and it's the one responding with real US-based manufacturing capacity, not just cost-cutting.", "tier": "derived", "epistemic": "interpretation" },
+    "sourceNote": "Market data: Fortune Business Insights, IMARC Group, Mordor Intelligence (shared towels-bedding-rugs segment file). Peer data: Trident Ltd, Indo Count Industries."
+  },
+  "p3_opportunities": {
+    "eyebrow": "Constraints, read as opportunities",
+    "lede": "One clear place worth watching, named directly in the company's own gap research.",
+    "items": [
+      { "lever": "velocity", "title": "Building domestic B2C presence toward 50,000 stores by FY27", "body": "The HVT sheet's own gap research names this directly: Welspun dominates as India's largest home-textile exporter and #1 US supplier, but its domestic Indian market share remains a comparatively untapped opportunity — the company has stated a specific target of strengthening B2C presence to reach 50,000 stores by FY27.", "source": "HVT gap research (welspunliving.com).", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1", "fields": ["gap_activation_path"] }
+    ]
+  },
+  "p4_experiments": {
+    "eyebrow": "Experiments worth testing",
+    "guesslabel": { "text": "Possibilities, not prescriptions. Which would work, and how much, only Welspun Living's own data and people can tell. Each is small, made to learn fast.", "tier": "universal" },
+    "items": [
+      { "lever": "velocity", "title": "Track the Ohio and Nevada plants' margin against tariff-affected exports", "body": "As the Nevada plant ramps up commercial production, compare its landed cost and margin directly against tariff-affected India-to-US exports for the same product category, to quantify exactly how much the US manufacturing bet actually offsets the tariff pain seen in FY26.", "tier": "derived", "epistemic": "interpretation", "opportunityRef": "opp-1", "flags": { "gated": true } }
+    ]
+  },
+  "p5_workflows": {
+    "eyebrow": "The workflows we mapped (H5 → H1)",
+    "intro": { "text": "A workflow is the set of steps a company runs to get a result. Below are the generic steps for a home textiles (towels/bedding/rugs) manufacturer in this segment — a directory-depth pass, not yet confirmed against Welspun's own stated process, so marked generic throughout.", "tier": "universal" },
+    "horizontals": [
+      { "hId": "H5", "hName": "Offers", "steps": ["offer branded and private-label towels, bed linen, and rugs/flooring products", "sell to big-box retail, hospitality, and direct-to-consumer channels"], "stepsTier": "segment", "spottedAt": "sell to big-box retail, hospitality, and direct-to-consumer channels", "spotted": { "text": "Company facts (Christy, Spaces, Disney Home brands; private label for major US retailers) confirm this step is real and central for Welspun, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H4", "hName": "Capability", "steps": ["run vertically integrated cotton yarn-to-finished-product manufacturing", "develop proprietary process/tech (traceability, absorbency/softness processes)", "hold OEKO-TEX/GOTS/GRS-certified sustainable production"], "stepsTier": "segment", "spottedAt": "develop proprietary process/tech (traceability, absorbency/softness processes)", "spotted": { "text": "Company facts (47+ patents, Nanocore®, Wel-Trak®, HYGROCOTTON®) confirm this step is real and unusually deep for Welspun, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H3", "hName": "Capacity", "steps": ["operate large-scale India manufacturing", "build emerging manufacturing footprint in export destination countries to shorten lead times and hedge tariff exposure"], "stepsTier": "segment", "spottedAt": "build emerging manufacturing footprint in export destination countries to shorten lead times and hedge tariff exposure", "spotted": { "text": "Company facts (Ohio and Nevada pillow plants, $63M combined US investment) confirm this step is real and actively expanding for Welspun, not just generic — see p1_engine.", "tier": "company", "epistemic": "fact" }, "source": "segment generic scaffold; company facts overlaid from HVT row", "flags": { "gated": true, "generic": true } },
+      { "hId": "H2", "hName": "Customer experience", "steps": ["maintain long-standing private-label/vendor relationships with major US/EU retailers", "provide full-chain traceability and sustainability credentials for retailer vendor scorecards", "support PLI-scheme-backed cost competitiveness"], "stepsTier": "segment", "spottedAt": null, "spotted": null, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } },
+      { "hId": "H1", "hName": "Orders", "steps": ["fulfil retail seasonal buying cycles (back-to-school, holiday)", "execute multi-year private-label supply contracts", "manage exposure to cotton price cycles and tariff-timing effects on shipment scheduling"], "stepsTier": "segment", "spottedAt": "manage exposure to cotton price cycles and tariff-timing effects on shipment scheduling", "spotted": { "text": "Spotted at \"manage tariff-timing effects\": this is exactly what caused the FY26 profit decline, and exactly what the domestic B2C push is meant to diversify away from → building domestic B2C presence.", "tier": "derived", "epistemic": "opportunity", "opportunityRef": "opp-1" }, "source": "segment generic scaffold", "flags": { "gated": true, "generic": true } }
+    ],
+    "sourceNote": "Steps are the segment's generic scaffold (../segments/towels-bedding-rugs.json) — no company-specific (A2/pursuit) operational intel was collected for Welspun this pass beyond what the HVT row already documents, so every step is marked generic per contract discipline."
+  },
+  "takeaway": { "text": "The worst profit year in recent memory, caused by exactly the tariff exposure the company is now spending real capital to escape. **The Ohio and Nevada plants are the honest answer to the FY26 numbers, not a separate story.**", "tier": "universal", "epistemic": "interpretation" },
+  "cta": { "label": "Spot an opportunity →", "note": "See one we missed, in Welspun Living or in your own business? The best eyes on a company are often inside it.", "tier": "universal" },
+  "colophon": {
+    "text": "Hidden Champions of India — a DeepThought series on how India's quiet world-beaters create wealth. Financials from screener.in and business-standard.com; company facts from the HVT pillar research (differentiation/moat/product_improvement/alignment/gap, reviewed) plus welspunliving.com, matrixbcg.com and careratings.com; market data from Fortune Business Insights, IMARC Group and Mordor Intelligence; peer figures from marketfeed.com (Trident) and marketsmojo.com (Indo Count). Opportunities are DeepThought's reading.",
+    "tier": "universal",
+    "sources": ["screener.in", "business-standard.com", "welspunliving.com", "matrixbcg.com", "scanx.trade", "careratings.com", "Fortune Business Insights", "IMARC Group", "marketfeed.com", "company-reported"]
+  },
+  "engagementTier": {
+    "note": "What an outside profile cannot see — the true margin comparison between US-manufactured and India-exported product, and real customer retention across its major US/EU retail relationships — is what a closer engagement establishes.",
+    "items": ["retention", "customerValue(company-specific)", "trueUnitEconomics"]
+  }
+}
