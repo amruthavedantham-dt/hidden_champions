@@ -25,6 +25,10 @@ function onOpen() {
     .addItem('Clear Search Cache (This Row)', 'menuClearCacheForRow')
     .addItem('Clear Search Cache (All)', 'menuClearCacheAll')
     .addItem('Repair Review Column Defaults (Run Once)', 'repairReviewDefaults_')
+    .addSeparator()
+    .addItem('CRM: Export selected rows (download)', 'menuCrmExportSelectedDownload')
+    .addItem('CRM: Export selected rows to Drive', 'menuCrmExportSelectedToDrive')
+    .addItem('CRM: Export ALL auto-confirmed to Drive', 'menuCrmExportAllAutoConfirmedToDrive')
     .addToUi();
 }
 
