@@ -37,10 +37,24 @@ function isSelfPublishedDomain_(url) {
 // nabl-india.org — non-.gov.in but the same category: the actual certifying
 // body's own domain, already seen in real claims (Jaishil's OMRI listing,
 // Natesan's NABL certification).
+// texmin.gov.in/pli.texmin.gov.in added 2026-08-07 for TechnoSport, whose moat
+// is confirmed by the Ministry of Textiles' own published PLI applicants list
+// (pli.texmin.gov.in/Applicants_list, Row 69, naming Techno Sportswear and its
+// subsidiary against one approved project at Sipcot Perundurai). Same failure
+// mode as Eldorado and Natesan above — a genuine approving-authority domain
+// that would otherwise be force-downgraded to self-claimed, except here it
+// would have destroyed the ONLY registry-confirmed pillar on the row. Both
+// forms are listed for the same self-documenting reason as bis.gov.in /
+// standards.bis.gov.in, even though the substring match makes the parent
+// domain sufficient on its own. First non-R&D registry on this list: PLI is an
+// incentive-approval body rather than a certification or IP registry, so it
+// widens what "registry-confirmed" covers — worth remembering when the next
+// sector-specific approval scheme (Ministry of Textiles or otherwise) shows up.
 const OFFICIAL_REGISTRY_DOMAINS = [
   'dsir.gov.in', 'ipindia.gov.in', 'ipindiaservices.gov.in', 'mca.gov.in', 'gst.gov.in',
   's3waas.gov.in', 'nstmis-dst.org', 'indiascienceandtechnology.gov.in', 'dst.gov.in',
-  'bis.gov.in', 'standards.bis.gov.in', 'udyamregistration.gov.in', 'omri.org', 'nabl-india.org'
+  'bis.gov.in', 'standards.bis.gov.in', 'udyamregistration.gov.in', 'omri.org', 'nabl-india.org',
+  'texmin.gov.in', 'pli.texmin.gov.in'
 ];
 
 function isOfficialRegistryDomain_(url) {
