@@ -16,6 +16,7 @@ function onOpen() {
     .addItem('Build Review Queue', 'buildReviewQueue')
     .addItem('Show Pipeline Summary', 'buildPipelineSummaryAndThinRows_')
     .addItem('Show Cost Summary', 'buildCostSummary')
+    .addItem('Reconcile Historical Serper Cost...', 'menuReconcileHistoricalSerperCost')
     .addItem('Estimate Batch Cost...', 'menuEstimateBatchCost')
     .addItem('Show Batch Failures', 'showBatchFailures')
     .addSeparator()

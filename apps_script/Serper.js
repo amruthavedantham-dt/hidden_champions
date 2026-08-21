@@ -118,28 +118,90 @@ function fetchSerperResults_(companyName, queryType, query, runId, liveCallFn) {
     return [];
   }
 
-  TokenLog.logSerper(runId, companyName, queryType, results.length);
+  TokenLog.logSerper(runId, companyName, queryType, results.length, 'search');
 
   // Only scrape the #1 result per query (cost control) — this is what makes
   // it real "search+fetch" per §4 instead of snippet-only, which was too
   // thin to carry specifics like patent counts or product names.
   if (results.length > 0 && results[0].link) {
-    results[0].full_text = scrapeWithGuards_(results[0].link);
+    results[0].full_text = scrapeWithGuards_(results[0].link, companyName, queryType, runId);
   }
 
   writeCacheEntries_(companyName, queryType, query, results);
   return results;
 }
 
-// Best-effort full-page fetch, wrapped with the same circuit-breaker/rate-
-// limiter discipline as the search calls — BUT scrape failures (paywalls,
-// timeouts — common and expected) do NOT count toward the breaker the way a
-// hard Serper /search API error does; a blocked scrape isn't evidence Serper
-// itself is unreliable.
-function scrapeWithGuards_(url) {
+// Best-effort full-page fetch. Tries a FREE direct fetch first and only pays
+// for scrape.serper.dev when that fails. The sibling pipelines (Manufacturing
+// c4.js, RocketReach techLeadership.js) have always scraped Tofler/Zauba with
+// a bare UrlFetchApp request at zero API cost, and most pages surfaced here
+// are ordinary HTML that yields to the same treatment — this pipeline was the
+// only one routing every page fetch through a paid endpoint, at up to one
+// extra billable call per query. Serper's scraper stays as the fallback
+// because it genuinely wins on JS-rendered and bot-blocked pages a direct
+// request can't reach.
+//
+// Scrape failures (paywalls, timeouts — common and expected) still do NOT
+// count toward the circuit breaker the way a hard Serper /search API error
+// does; a blocked scrape isn't evidence Serper itself is unreliable.
+//
+// The paid fallback is now logged as queryType + '_SCRAPE', which it never
+// was before: scrape.serper.dev calls were invisible to BOTH SERPER_LOG and
+// the circuit breaker, so no amount of reading the cost summary could show
+// what they cost or whether they were silently failing.
+function scrapeWithGuards_(url, companyName, queryType, runId) {
+  const direct = fetchPageDirect_(url);
+  if (direct) return direct;
+
   rateLimit('SERPER');
   const text = callSerperScrape_(url);
+  TokenLog.logSerper(runId, companyName, String(queryType || '') + '_SCRAPE', text ? 1 : 0, 'scrape');
   return text;
+}
+
+// Free page fetch — no API key, no credits, bounded only by the Apps Script
+// UrlFetchApp quota. Returns '' whenever the page can't be read usefully, so
+// the caller knows to fall back to the paid scraper. Same browser User-Agent
+// and paywall detection the sibling pipelines already use.
+function fetchPageDirect_(url) {
+  try {
+    const response = UrlFetchApp.fetch(url, {
+      muteHttpExceptions: true,
+      followRedirects:    true,
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36' }
+    });
+    if (response.getResponseCode() !== 200) return '';
+
+    const html = response.getContentText();
+    if (!html || html.length < 500) return '';
+    if (/get pro|subscribe|unlock|sign up to view|login to view|please login/i.test(html)) return '';
+
+    const text = htmlToText_(html);
+    // A page that strips down to almost nothing is usually JS-rendered — the
+    // markup arrived but the content didn't. That is exactly the case Serper's
+    // scraper handles, so treat it as a miss rather than returning a shell and
+    // letting thin evidence through as if it were a real page read.
+    return text.length >= 200 ? text.slice(0, 3000) : '';
+  } catch (e) {
+    return '';
+  }
+}
+
+// Matches what callSerperScrape_ returns (plain text, 3000-char cap) so both
+// paths hand the same shape of evidence to RAW_EVIDENCE and the cache.
+function htmlToText_(html) {
+  return String(html)
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 // Was previously a full read-all/clearContent-all/write-back-the-rest of

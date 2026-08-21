@@ -10,7 +10,19 @@ function setupHVTSheet() {
     // Migrate by COLUMN NAME, not position, so existing rows survive any
     // future schema edit instead of only surviving a same-shape rewrite.
     migratedRows = readHvtRowsByColumnName_(hvtSheet);
-    hvtSheet.clear();
+    // clear() alone clears content/formats but leaves existing data
+    // validation rules attached to their cells. If a future schema change
+    // inserts/reorders columns, a physical cell that used to hold one
+    // column's value (validated against one enum) can become the target of
+    // a differently-named column (validated against a different enum) —
+    // writing that column's migrated value into a cell still carrying the
+    // OLD validation rule throws "violates the data validation rules".
+    // clearContent()+clearDataValidations() wipes both, so the validation
+    // rules set up below are the only ones in effect after this runs.
+    const fullRange = hvtSheet.getRange(1, 1, hvtSheet.getMaxRows(), hvtSheet.getMaxColumns());
+    fullRange.clearContent();
+    fullRange.clearDataValidations();
+    fullRange.clearFormat();
   }
 
   hvtSheet.getRange(1, 1, 1, HVT_HEADERS.length).setValues([HVT_HEADERS]);

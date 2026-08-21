@@ -11,7 +11,7 @@ function runIdentityResolution(companyName, website, runId) {
   }
 
   EventLog.info(runId, companyName, website, 'identity_resolution', 'start', 'Identity resolution started');
-  const websiteText = scrapeWithGuards_(website);
+  const websiteText = scrapeWithGuards_(website, companyName, 'identity_website', runId);
   const existingSegmentRefs = getExistingSegmentRefs_(companyName);
 
   const prompt = buildIdentityPrompt_(companyName, website, identitySnippets, websiteText, existingSegmentRefs);

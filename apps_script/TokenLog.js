@@ -15,7 +15,15 @@ const GEMINI_COST_RATES = {
   'gemini-2.5-flash': { inputPerMillion: 0.30, outputPerMillion: 2.50, thinkingPerMillion: 2.50 },
   'gemini-2.0-flash': { inputPerMillion: 0.10, outputPerMillion: 0.40, thinkingPerMillion: 0 }
 };
+// Confirmed against the account's actual recharge: $50 for 50,000 credits =
+// $0.001/credit (2026-08-20). Both endpoints bill 1 credit per call. They
+// are SEPARATE billable calls: a query whose #1 result falls through to the
+// paid scraper (fetchPageDirect_ failed) spends 2 credits total, not 1 — one
+// for /search, one for scrape.serper.dev. Keeping the rates as two constants
+// (even though they're equal today) means a future Serper repricing of one
+// endpoint but not the other doesn't silently mis-cost SERPER_LOG.
 const SERPER_COST_PER_CALL = 0.001;
+const SERPER_SCRAPE_COST_PER_CALL = 0.001;
 
 function ensureLogSheet_(name, headers) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -49,10 +57,15 @@ const TokenLog = {
     }
   },
 
-  logSerper: function (runId, company, queryType, resultsCount) {
+  // callType: 'search' (default) for /search, /patents, /news — or 'scrape'
+  // for a paid scrape.serper.dev call. Each is its own billed credit, so
+  // logging must use the matching rate rather than assuming every row is a
+  // search call.
+  logSerper: function (runId, company, queryType, resultsCount, callType) {
     try {
       const sheet = ensureLogSheet_(SERPER_LOG_SHEET_NAME, SERPER_LOG_HEADERS);
-      sheet.appendRow([new Date(), runId || '', company || '', queryType || '', resultsCount || 0, SERPER_COST_PER_CALL, SERPER_COST_PER_CALL * INR_PER_USD]);
+      const rate = callType === 'scrape' ? SERPER_SCRAPE_COST_PER_CALL : SERPER_COST_PER_CALL;
+      sheet.appendRow([new Date(), runId || '', company || '', queryType || '', resultsCount || 0, rate, rate * INR_PER_USD]);
     } catch (e) {
       Logger.log('WARNING: TokenLog.logSerper failed — ' + e.message);
     }
