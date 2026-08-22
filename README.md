@@ -32,21 +32,36 @@ Sheet. Given a company name + website, it:
 - structures the evidence into the four pillars via Gemini, with closed
   vocabularies and source-fidelity checks enforced in code
   (`Gemini.js`, `Config.js`, `Vocabularies.js`),
+- writes a short per-company narrative summary once characterization is
+  done (`runCompanySummary`, menu item 5 — lives in `Gemini.js`),
 - batches this across many companies with checkpointing, retries, and a
   circuit breaker for API failures (`Batch.js`, `BatchFailures.js`,
   `CircuitBreaker.js`, `RateLimiter.js`),
 - tracks cost and progress (`TokenLog.js`, `CostSummary.js`,
-  `PipelineSummary.js`, `EventLog.js`, `Triage.js`).
+  `PipelineSummary.js`, `EventLog.js`, `Triage.js`),
+- regression-tests the pipeline's own output against a frozen, known-correct
+  evidence snapshot for a fixed set of companies (`Calibration.js`),
+- exports finished HVT rows as a JSON file (or Drive file) in the CRM's
+  import format, for an operator to manually upload — this never talks to
+  the CRM directly, no URL or token, and never writes back to the sheet
+  (`Export.js`).
 
 **How to use it:** open the bound Sheet, type a company's `company_name`
 and `website` into a row, then run the menu items under **Hidden
-Champions** in order (Run Serper Grounding → Resolve Identity → Run
-Sector-Context Grounding → Run Gemini Structure), or use the batch menu
-items to process many rows at once. Local source is managed with
+Champions** in order (1. Run Serper Grounding → 2. Resolve Identity → 3.
+Run Sector-Context Grounding → 4. Run Gemini Structure → 5. Run Company
+Summary), or use the batch menu items to process many rows at once. Later
+menu sections cover review/reporting (Build Review Queue, Pipeline/Cost
+Summary, Batch Failures), calibration, cache maintenance, and the CRM
+export tools described above. Local source is managed with
 [`clasp`](https://github.com/google/clasp) — after editing a file here,
 push it live with `clasp push` from this folder. Script Properties
 `SERPER_API_KEY` and `GEMINI_API_KEY` must be set on the bound script
 first (not stored in this repo).
+
+A separate variant of this pipeline, adding an independent automated
+validation pass on top of everything above, lives outside this repo — see
+[Hidden Champions with Validation](https://github.com/amruthavedantham-dt/hcp-with-validation).
 
 ### `context/`
 Reference material and specs that the rest of the project builds on —
@@ -87,6 +102,9 @@ entries in `temp_profile_creator/`.
   scale (pre-screening rules, field mapping, decision tables).
 - `gen_html.py` — regenerates a company's `.html` preview from its `.json`:
   `python3 gen_html.py <company>.json <company>.html`.
+- `hcp-import-ready/` — CRM-import-format JSON files produced by
+  `apps_script/Export.js`'s CRM export tools, waiting to be manually
+  uploaded through the CRM's own import screen.
 
 ### `temp_profile_creator/`
 The same profile-generation process as above, but for companies **without**
